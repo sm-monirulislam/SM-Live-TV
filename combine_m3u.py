@@ -8,7 +8,8 @@ m3u_files = [
     "Aynaott.m3u",
     "SM All TV.m3u",
     "Toffee.m3u",
-    "Fancode.m3u"
+    "Fancode.m3u",
+    "jadoo.m3u"   # 🆕 নতুন ফাইল যোগ করা হয়েছে
 ]
 
 output_file = "Combined_Live_TV.m3u"
