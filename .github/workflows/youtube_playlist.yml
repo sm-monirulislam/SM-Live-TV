@@ -2,8 +2,8 @@ name: "📺 Build YouTube Playlist"
 
 on:
   schedule:
-    - cron: "0 */4 * * *"  # প্রতি ৪ ঘন্টা পরপর চলবে
-  workflow_dispatch: {}    # Manual Run
+    - cron: "0 */4 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -23,6 +23,7 @@ jobs:
 
     - name: ✅ Install Dependencies
       run: |
+        pip install yt-dlp
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: ▶️ Run YouTube Playlist Script
