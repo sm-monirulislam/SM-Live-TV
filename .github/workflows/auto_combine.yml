@@ -22,7 +22,7 @@ jobs:
           python-version: '3.x'
 
       - name: ▶️ Run Combine Script
-        run: python combine_m3u.py
+        run: python Script/combine_m3u.py   # <-- ফোল্ডারের নাম যোগ করা হয়েছে
 
       - name: 💾 Commit & Push Combined Playlist
         run: |
