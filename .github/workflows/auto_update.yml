@@ -2,7 +2,7 @@ name: Auto Update Fancode M3U Playlist
 
 on:
   schedule:
-    - cron: '0 */2 * * *'   # প্রতি ২ ঘন্টায় রান করবে
+    - cron: '*/2 * * * *'   # প্রতি ২ মিনিটে রান করবে
   workflow_dispatch:         # ম্যানুয়ালি চালানো যাবে
 
 permissions:
