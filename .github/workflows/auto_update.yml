@@ -27,7 +27,7 @@ jobs:
         run: pip install requests
 
       - name: Run Update Script
-        run: python update_playlist.py
+        run: python Script/update_playlist.py   # ← এখানে Script ফোল্ডারসহ দেওয়া হয়েছে
 
       - name: Commit and Push Updated Playlist
         env:
