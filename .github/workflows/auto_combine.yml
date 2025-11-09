@@ -1,6 +1,7 @@
 name: 🎬 Auto Combine M3U Playlist
 
 on:
+  workflow_dispatch: {}       # ✅ ম্যানুয়ালি চালানো যাবে
   workflow_run:
     workflows: ["Auto Update Fancode M3U Playlist", "🔁 Auto Update CricHD Playlist"]
     types: [completed]
@@ -10,8 +11,9 @@ permissions:
 
 jobs:
   combine:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
+
     steps:
       - name: 🧩 Checkout Repository
         uses: actions/checkout@v4
@@ -24,14 +26,29 @@ jobs:
       - name: ▶️ Run Combine Script
         run: python Script/combine_m3u.py
 
-      - name: 💾 Commit & Push Combined Playlist
+      - name: 🧾 Generate Status JSON
+        run: |
+          echo "{" > status.json
+          echo "  \"Fancode\": \"Success\"," >> status.json
+          echo "  \"CricHD\": \"Success\"," >> status.json
+          echo "  \"Combined\": \"Success\"," >> status.json
+          echo "  \"Last_Run\": \"$(date '+%Y-%m-%d %H:%M:%S')\"" >> status.json
+          echo "}" >> status.json
+          cat status.json
+
+      - name: 💾 Commit & Push Combined Playlist + Status (Safe Push)
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+
+          # ✅ Sync before pushing
+          git fetch origin main
+          git rebase origin/main || true
+
           if [ -f Combined_Live_TV.m3u ]; then
-            git add Combined_Live_TV.m3u
-            git commit -m "🔄 Auto update Combined_Live_TV.m3u" || echo "No changes to commit"
-            git push || true
+            git add Combined_Live_TV.m3u status.json
+            git commit -m "🔄 Auto update Combined_Live_TV.m3u & status.json [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"
+            git push origin HEAD:main || (git pull --rebase origin main && git push origin HEAD:main)
           else
             echo "❌ Combined_Live_TV.m3u not found!"
             exit 1
