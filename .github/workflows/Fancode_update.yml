@@ -1,0 +1,44 @@
+name: Auto Update Fancode M3U Playlist
+
+on:
+schedule:
+- cron: '*/5 * * * *'   # প্রতি ৫ মিনিটে রান করবে
+workflow_dispatch:         # ম্যানুয়ালি চালানো যাবে
+
+permissions:
+contents: write
+
+jobs:
+update:
+runs-on: ubuntu-latest
+
+steps:  
+  - name: Checkout Repository  
+    uses: actions/checkout@v4  
+    with:  
+      persist-credentials: false  
+
+  - name: Setup Python  
+    uses: actions/setup-python@v5  
+    with:  
+      python-version: '3.x'  
+
+  - name: Install Dependencies  
+    run: pip install requests  
+
+  - name: Run Update Script  
+    run: python Script/update_playlist.py   # ← এখানে Script ফোল্ডারসহ দেওয়া হয়েছে  
+
+  - name: Commit and Push Updated Playlist  
+    env:  
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+    run: |  
+      git config --global user.name "github-actions[bot]"  
+      git config --global user.email "github-actions[bot]@users.noreply.github.com"  
+      if [ -f Fancode.m3u ]; then  
+        git add Fancode.m3u  
+        git commit -m "Auto update Fancode.m3u $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"  
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.ref }}  
+      else  
+        echo "❌ Fancode.m3u file not found"  
+      fi
