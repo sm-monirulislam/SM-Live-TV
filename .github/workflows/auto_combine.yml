@@ -1,15 +1,17 @@
 name: 🎬 Auto Combine M3U Playlist
 
 on:
-  workflow_dispatch:          # ✅ ম্যানুয়ালি ও orchestrator.yml থেকে চালানো যাবে
+  workflow_run:
+    workflows: ["Auto Update Fancode M3U Playlist", "🔁 Auto Update CricHD Playlist"]
+    types: [completed]
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  combine:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-
     steps:
       - name: 🧩 Checkout Repository
         uses: actions/checkout@v4
@@ -20,7 +22,7 @@ jobs:
           python-version: '3.x'
 
       - name: ▶️ Run Combine Script
-        run: python Script/combine_m3u.py   # ✅ সঠিক path দেওয়া আছে
+        run: python Script/combine_m3u.py
 
       - name: 💾 Commit & Push Combined Playlist
         run: |
