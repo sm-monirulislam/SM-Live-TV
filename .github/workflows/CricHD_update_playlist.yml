@@ -24,10 +24,16 @@ jobs:
       - name: 🎬 Generate CricHD Playlist
         run: python Script/auto_playlist.py
 
-      - name: 💾 Commit & Push updates
+      - name: 💾 Commit & Push updates (Safe Push)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # ✅ Remote branch sync (important)
+          git fetch origin main
+          git rebase origin/main || true
+
+          # ✅ Commit & push
           git add Sports.m3u
           git commit -m "🔁 Auto update Sports playlist [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"
-          git push
+          git push origin HEAD:main || (git pull --rebase origin main && git push origin HEAD:main)
