@@ -6,6 +6,7 @@ on:
   workflow_dispatch: {}        # ম্যানুয়ালি চালানো যাবে
 
 permissions:
+  actions: write          # 🟢 WORKFLOW TRIGGER করার অনুমতি
   contents: write
 
 jobs:
@@ -20,11 +21,13 @@ jobs:
       - name: ⚙️ Trigger Fancode Auto Update
         uses: benc-uk/workflow-dispatch@v1
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}     # 🟢 টোকেন যুক্ত করা হয়েছে
           workflow: auto_update.yml
           ref: main
 
       - name: ⚙️ Trigger CricHD Playlist Update
         uses: benc-uk/workflow-dispatch@v1
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}     # 🟢 টোকেন যুক্ত করা হয়েছে
           workflow: CricHD_update_playlist.yml
           ref: main
