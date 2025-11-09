@@ -1,0 +1,30 @@
+name: 🚀 Master Orchestrator — Run Update Workflows
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"      # প্রতি ২ ঘণ্টায় রান হবে
+  workflow_dispatch: {}        # ম্যানুয়ালি চালানো যাবে
+
+permissions:
+  contents: write
+
+jobs:
+  run-updates:
+    name: "🎯 Run Fancode & CricHD Workflows"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🏁 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Trigger Fancode Auto Update
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: auto_update.yml
+          ref: main
+
+      - name: ⚙️ Trigger CricHD Playlist Update
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: CricHD_update_playlist.yml
+          ref: main
