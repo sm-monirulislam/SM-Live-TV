@@ -1,9 +1,7 @@
 name: 🎬 Auto Combine M3U Playlist
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"   # প্রতি ৩০ মিনিট পরপর অটো রান
-  workflow_dispatch:          # চাইলে ম্যানুয়ালি রান করা যাবে
+  workflow_dispatch:          # ✅ ম্যানুয়ালি ও orchestrator.yml থেকে চালানো যাবে
 
 permissions:
   contents: write
@@ -22,7 +20,7 @@ jobs:
           python-version: '3.x'
 
       - name: ▶️ Run Combine Script
-        run: python Script/combine_m3u.py   # <-- ফোল্ডারের নাম যোগ করা হয়েছে
+        run: python Script/combine_m3u.py   # ✅ সঠিক path দেওয়া আছে
 
       - name: 💾 Commit & Push Combined Playlist
         run: |
