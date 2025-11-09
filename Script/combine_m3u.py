@@ -15,7 +15,7 @@ m3u_files = [
     "KALKATA.m3u"
 ]
 
-# 🔹 তোমার JSON ফাইলের নাম
+# 🔹 JSON ফাইলের নাম
 json_file = "Bangla Channel.json"
 
 output_file = "Combined_Live_TV.m3u"
@@ -47,16 +47,16 @@ for file_name in m3u_files:
 
     combined_content += f"\n# 📁 Source: {file_name}\n" + "\n".join(new_lines) + "\n"
 
-# 🔸 Step 2: JSON ফাইল থেকে ডেটা যোগ করা
+# 🔸 Step 2: JSON ফাইল থেকে ডেটা যোগ করা (group-title = JSON ফাইলের নাম)
 if os.path.exists(json_file):
     with open(json_file, "r", encoding="utf-8") as jf:
         try:
             json_data = json.load(jf)
+            json_group_name = os.path.splitext(os.path.basename(json_file))[0]  # e.g. "Bangla Channel"
             combined_content += f"\n# 📁 Source: {json_file}\n"
 
-            # ✅ তোমার দেওয়া ফরম্যাট অনুযায়ী পড়া
+            # ✅ JSON পড়া তোমার ফরম্যাট অনুযায়ী
             for channel_name, info in json_data.items():
-                group = info.get("group", "Bangla")
                 logo = info.get("tvg_logo", "")
                 links = info.get("links", [])
                 if links and isinstance(links, list):
@@ -65,7 +65,7 @@ if os.path.exists(json_file):
                     url = ""
 
                 if url:
-                    combined_content += f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{channel_name}\n{url}\n'
+                    combined_content += f'#EXTINF:-1 tvg-logo="{logo}" group-title="{json_group_name}",{channel_name}\n{url}\n'
         except Exception as e:
             combined_content += f"# ⚠️ Error reading {json_file}: {e}\n"
 else:
@@ -75,8 +75,8 @@ else:
 bd_time = datetime.utcnow() + timedelta(hours=6)
 combined_content += f"\n# ✅ Last updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} Bangladesh Time\n"
 
-# 🔸 Step 4: আউটপুট সংরক্ষণ করা
+# 🔸 Step 4: ফাইনাল আউটপুট সংরক্ষণ
 with open(output_file, "w", encoding="utf-8") as out:
     out.write(combined_content)
 
-print("✅ Combined_Live_TV.m3u created successfully with M3U + Bangla Channel.json!")
+print("✅ Combined_Live_TV.m3u created successfully with JSON group-title = script name!")
