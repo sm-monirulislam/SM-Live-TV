@@ -1,35 +1,36 @@
 name: 🔁 Auto Update CricHD Playlist
 
 on:
-schedule:
-- cron: "*/5 * * * *"   # ⏰ প্রতি ৫ মিনিট পর অটো আপডেট
-workflow_dispatch:        # 🧑‍💻 ম্যানুয়ালি চালানো যাবে
+  schedule:
+    - cron: "*/5 * * * *"   # ⏰ প্রতি ৫ মিনিট পর অটো আপডেট
+  workflow_dispatch:         # 🧑‍💻 ম্যানুয়ালি চালানো যাবে
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
-update:
-runs-on: ubuntu-latest
-steps:
-- name: 📦 Checkout repository
-uses: actions/checkout@v4
+  update:
+    runs-on: ubuntu-latest
 
-- name: 🐍 Setup Python  
-    uses: actions/setup-python@v5  
-    with:  
-      python-version: "3.x"  
+    steps:
+      - name: 📦 Checkout repository
+        uses: actions/checkout@v4
 
-  - name: 📥 Install dependencies  
-    run: pip install requests  
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
-  - name: 🎬 Generate CricHD Playlist  
-    run: python Script/auto_playlist.py   # ✅ ফোল্ডারসহ পাথ ঠিক করা হয়েছে  
+      - name: 📥 Install dependencies
+        run: pip install requests
 
-  - name: 💾 Commit & Push updates  
-    run: |  
-      git config --global user.name "github-actions[bot]"  
-      git config --global user.email "github-actions[bot]@users.noreply.github.com"  
-      git add Sports.m3u  
-      git commit -m "🔁 Auto update Sports playlist [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"  
-      git push
+      - name: 🎬 Generate CricHD Playlist
+        run: python Script/auto_playlist.py   # ✅ ফোল্ডারসহ পাথ ঠিক আছে
+
+      - name: 💾 Commit & Push updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add Sports.m3u
+          git commit -m "🔁 Auto update Sports playlist [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"
+          git push
