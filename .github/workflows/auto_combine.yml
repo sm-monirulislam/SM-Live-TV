@@ -1,38 +1,39 @@
 name: 🎬 Auto Combine M3U Playlist
 
 on:
-schedule:
-- cron: "*/30 * * * *"   # প্রতি ৩০ মিনিট পরপর অটো রান
-workflow_dispatch:          # চাইলে ম্যানুয়ালি রান করা যাবে
+  schedule:
+    - cron: "*/30 * * * *"   # ⏰ প্রতি ৩০ মিনিট পরপর অটো রান
+  workflow_dispatch:          # 🧑‍💻 চাইলে ম্যানুয়ালি রান করা যাবে
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-steps:  
-  - name: 🧩 Checkout Repository  
-    uses: actions/checkout@v4  
+    steps:
+      - name: 🧩 Checkout Repository
+        uses: actions/checkout@v4
 
-  - name: 🐍 Set up Python  
-    uses: actions/setup-python@v5  
-    with:  
-      python-version: '3.x'  
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
-  - name: ▶️ Run Combine Script  
-    run: python Script/combine_m3u.py   # <-- ফোল্ডারের নাম যোগ করা হয়েছে  
+      - name: ▶️ Run Combine Script
+        run: python Script/combine_m3u.py   # ✅ Script ফোল্ডারসহ পাথ ঠিক আছে
 
-  - name: 💾 Commit & Push Combined Playlist  
-    run: |  
-      git config --global user.name "GitHub Actions"  
-      git config --global user.email "actions@github.com"  
-      if [ -f Combined_Live_TV.m3u ]; then  
-        git add Combined_Live_TV.m3u  
-        git commit -m "🔄 Auto update Combined_Live_TV.m3u" || echo "No changes to commit"  
-        git push || true  
-      else  
-        echo "❌ Combined_Live_TV.m3u not found!"  
-        exit 1  
-      fi
+      - name: 💾 Commit & Push Combined Playlist
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          if [ -f Combined_Live_TV.m3u ]; then
+            git add Combined_Live_TV.m3u
+            git commit -m "🔄 Auto update Combined_Live_TV.m3u [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"
+            git push || true
+          else
+            echo "❌ Combined_Live_TV.m3u not found!"
+            exit 1
+          fi
