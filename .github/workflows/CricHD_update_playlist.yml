@@ -1,7 +1,7 @@
 name: 🔁 Auto Update CricHD Playlist
 
 on:
-  workflow_dispatch:        # ✅ ম্যানুয়ালি বা orchestrator থেকে চালানো যাবে
+  workflow_dispatch: {}        # ✅ Manual + Orchestrator Trigger
 
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
         run: pip install requests
 
       - name: 🎬 Generate CricHD Playlist
-        run: python Script/auto_playlist.py   # ✅ ফোল্ডারসহ পাথ ঠিক করা আছে
+        run: python Script/auto_playlist.py
 
       - name: 💾 Commit & Push updates
         run: |
