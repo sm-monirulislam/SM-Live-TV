@@ -16,7 +16,7 @@ jobs:
       - name: 📦 Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0    # ✅ সম্পূর্ণ git history আনবে (pull conflict এড়াতে)
+          fetch-depth: 0    # ✅ সম্পূর্ণ git history আনবে
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -35,9 +35,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          git pull --rebase origin main   # ✅ আগে রিমোটের পরিবর্তন টেনে নেয়
-          
+
+          # ✅ লোকাল পরিবর্তন stash করে pull করা
+          git stash || true
+          git pull origin main --rebase || true
+          git stash pop || true
+
           git add Sports.m3u
           git commit -m "🔁 Auto update Sports playlist [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main || true
