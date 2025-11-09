@@ -1,41 +1,42 @@
-name: 🎬 Auto Combine M3U Playlist
+name: Auto Update Fancode M3U Playlist
 
 on:
-  workflow_run:
-    workflows: ["Auto Update Fancode M3U Playlist", "🔁 Auto Update CricHD Playlist"]
-    types:
-      - completed
+  workflow_dispatch: {}        # ✅ Manual + Orchestrator Trigger
 
 permissions:
   contents: write
 
 jobs:
-  combine:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  update:
     runs-on: ubuntu-latest
-    name: "🧩 Combine All Playlists"
 
     steps:
-      - name: 🧩 Checkout Repository
+      - name: 📦 Checkout Repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
-      - name: 🐍 Set up Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: ▶️ Run Combine Script
-        run: python Script/combine_m3u.py
+      - name: 📥 Install Dependencies
+        run: pip install requests
 
-      - name: 💾 Commit & Push Combined Playlist
+      - name: 🎬 Run Update Script
+        run: python Script/update_playlist.py
+
+      - name: 💾 Commit and Push Updated Playlist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          if [ -f Combined_Live_TV.m3u ]; then
-            git add Combined_Live_TV.m3u
-            git commit -m "🔄 Auto update Combined_Live_TV.m3u" || echo "No changes to commit"
-            git push || true
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -f Fancode.m3u ]; then
+            git add Fancode.m3u
+            git commit -m "Auto update Fancode.m3u $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
           else
-            echo "❌ Combined_Live_TV.m3u not found!"
-            exit 1
+            echo "❌ Fancode.m3u file not found"
           fi
