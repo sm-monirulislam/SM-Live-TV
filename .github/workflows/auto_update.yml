@@ -1,42 +1,41 @@
-name: Auto Update Fancode M3U Playlist
+name: 🎬 Auto Combine M3U Playlist
 
 on:
-  workflow_dispatch:         # ✅ ম্যানুয়ালি ও orchestrator.yml থেকে চালানো যাবে
+  workflow_run:
+    workflows: ["Auto Update Fancode M3U Playlist", "🔁 Auto Update CricHD Playlist"]
+    types:
+      - completed
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  combine:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+    name: "🧩 Combine All Playlists"
 
     steps:
-      - name: 📦 Checkout Repository
+      - name: 🧩 Checkout Repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
-      - name: 🐍 Setup Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: 📥 Install Dependencies
-        run: pip install requests
+      - name: ▶️ Run Combine Script
+        run: python Script/combine_m3u.py
 
-      - name: 🎬 Run Update Script
-        run: python Script/update_playlist.py   # ✅ Script ফোল্ডারের পাথ ঠিক আছে
-
-      - name: 💾 Commit and Push Updated Playlist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 💾 Commit & Push Combined Playlist
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -f Fancode.m3u ]; then
-            git add Fancode.m3u
-            git commit -m "Auto update Fancode.m3u $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"
-            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          if [ -f Combined_Live_TV.m3u ]; then
+            git add Combined_Live_TV.m3u
+            git commit -m "🔄 Auto update Combined_Live_TV.m3u" || echo "No changes to commit"
+            git push || true
           else
-            echo "❌ Fancode.m3u file not found"
+            echo "❌ Combined_Live_TV.m3u not found!"
+            exit 1
           fi
