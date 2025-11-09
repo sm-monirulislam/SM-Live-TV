@@ -2,8 +2,8 @@ name: 🚀 Master Orchestrator — Run Update Workflows
 
 on:
   schedule:
-    - cron: "0 */2 * * *"      # প্রতি ২ ঘণ্টায় রান হবে
-  workflow_dispatch: {}        # 🧑‍💻 Manual Run
+    - cron: "*/10 * * * *"     # ⏰ প্রতি ১০ মিনিটে রান হবে
+  workflow_dispatch: {}         # 🧑‍💻 Manual Run ও থাকবে
 
 permissions:
   actions: write
