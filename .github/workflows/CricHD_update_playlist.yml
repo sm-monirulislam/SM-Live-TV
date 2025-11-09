@@ -24,7 +24,7 @@ jobs:
         run: pip install requests
 
       - name: 🎬 Generate CricHD Playlist
-        run: python auto_playlist.py
+        run: python Script/auto_playlist.py   # ✅ ফোল্ডারসহ পাথ ঠিক করা হয়েছে
 
       - name: 💾 Commit & Push updates
         run: |
