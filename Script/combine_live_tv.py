@@ -61,17 +61,23 @@ for file_name in m3u_files:
         continue
 
     group_name = os.path.splitext(os.path.basename(file_name))[0]
-    with open(file_name, "r", encoding="utf-8") as f:
+    with open(file_name, "r", encoding="utf-8-sig") as f:
         lines = f.read().splitlines()
 
     current_logo = ""
     current_name = ""
     for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+
         if line.startswith("#EXTINF"):
             logo_match = re.search(r'tvg-logo="(.*?)"', line)
             current_logo = logo_match.group(1) if logo_match else ""
             if "," in line:
                 current_name = line.split(",", 1)[1].strip()
+            else:
+                current_name = "Unknown Channel"
         elif line.startswith("http"):
             add_channel(current_name, line, current_logo, group_name)
 
@@ -80,17 +86,23 @@ for file_name in m3u_files:
 # 🔹 Load JSON File
 # -----------------------------
 if os.path.exists(json_file):
-    with open(json_file, "r", encoding="utf-8") as jf:
+    with open(json_file, "r", encoding="utf-8-sig") as jf:
         try:
             json_data = json.load(jf)
             json_group_name = os.path.splitext(os.path.basename(json_file))[0]
             for channel_name, info in json_data.items():
                 logo = info.get("tvg_logo", "")
                 links = info.get("links", [])
-                if links and isinstance(links, list):
+                if links and isinstance(links, list) and len(links) > 0:
                     url = links[0].get("url", "")
                     if url:
                         add_channel(channel_name, url, logo, json_group_name)
+                    else:
+                        print(f"⚠️ No URL found for: {channel_name}")
+                else:
+                    print(f"⚠️ Invalid or empty links for: {channel_name}")
+        except json.JSONDecodeError as e:
+            print(f"❌ JSON Decode Error in {json_file}: {e}")
         except Exception as e:
             print(f"⚠️ Error reading {json_file}: {e}")
 else:
