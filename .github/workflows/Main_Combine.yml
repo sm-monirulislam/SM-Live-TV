@@ -1,9 +1,9 @@
-name: 🎬 Auto Combine M3U Playlist
+name: 🔁 Auto Combine IPTV & Check Links
 
 on:
   schedule:
-    - cron: "*/20 * * * *"   # ⏰ প্রতি ২০ মিনিট পরপর অটো রান
-  workflow_dispatch:          # 🧑‍💻 চাইলে ম্যানুয়ালি রান করা যাবে
+    - cron: "*/30 * * * *"   # ⏱️ প্রতি ৩০ মিনিটে রান হবে
+  workflow_dispatch:          # 🧑‍💻 ম্যানুয়ালি চালানো যাবে
 
 permissions:
   contents: write
@@ -13,27 +13,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🧩 Checkout Repository
+      - name: 📦 Checkout Repository
         uses: actions/checkout@v4
 
-      - name: 🐍 Set up Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: ▶️ Run Combine Script
-        run: python Script/combine_m3u.py   # ✅ Script ফোল্ডারসহ পাথ ঠিক আছে
-
-      - name: 💾 Commit & Push Combined Playlist
+      - name: 📚 Install Dependencies
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          pip install requests
 
-          if [ -f Combined_Live_TV.m3u ]; then
-            git add Combined_Live_TV.m3u
-            git commit -m "🔄 Auto update Combined_Live_TV.m3u [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"
-            git push || true
-          else
-            echo "❌ Combined_Live_TV.m3u not found!"
-            exit 1
-          fi
+      - name: ⚙️ Run Combine Script from /Script Folder
+        run: |
+          cd Script
+          python combine_check.py
+        working-directory: ./  # root directory of repo
+
+      - name: 💾 Commit Updated Files
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add Script/Combined_Live_TV.m3u Script/offline.m3u Script/invalid_links.log || true
+          git commit -m "🔁 Auto update IPTV files [$(date)]" || echo "No changes to commit"
+          git push
