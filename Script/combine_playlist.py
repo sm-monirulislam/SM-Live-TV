@@ -30,13 +30,14 @@ def clean_name(name):
 
 channels = {}
 
+
 # -----------------------------
 # 🔹 Add Channel
 # -----------------------------
 def add_channel(name, url, logo, group, ref=None, origin=None):
     cname = clean_name(name)
     if not url.startswith("http"):
-        return  # ⚠️ Offline লিংক স্কিপ করবে
+        return  # ⚠️ Offline বা invalid লিংক বাদ
 
     data = {
         "name": name.strip(),
@@ -44,13 +45,13 @@ def add_channel(name, url, logo, group, ref=None, origin=None):
         "logo": logo.strip(),
         "group": group.strip()
     }
-    # ✅ শুধুমাত্র যদি থাকে
+    # ✅ Referrer / Origin থাকলে যোগ করবে
     if ref:
         data["ref"] = ref.strip()
     if origin:
         data["origin"] = origin.strip()
 
-    # ✅ আগেরটা রিপ্লেস করবে (ডুপলিকেট রাখবে না)
+    # ✅ Duplicate না রেখে চ্যানেল রিপ্লেস করবে
     channels[cname] = data
 
 
@@ -113,7 +114,7 @@ for f in m3u_files:
 
 
 # -----------------------------
-# 🔹 Load Sports.m3u (Ref/Origin as per Sports file)
+# 🔹 Load Sports.m3u (Full block + its own ref/origin)
 # -----------------------------
 sports_blocks = []
 if os.path.exists(sports_file):
@@ -198,8 +199,7 @@ def write_combined_m3u(file_path, data_dict, sports_blocks):
 
 
 # -----------------------------
-# 🔹 Final Write + Summary
+# 🔹 Run + Summary
 # -----------------------------
 write_combined_m3u(output_file, channels, sports_blocks)
-
 print(f"\n✅ Combined_Live_TV.m3u created successfully with {len(channels)} channels.")
