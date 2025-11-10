@@ -13,10 +13,10 @@ m3u_files = [
     "Toffee.m3u",
     "Fancode.m3u",
     "jadoo.m3u",
-    "Sports.m3u",
     "KALKATA.m3u"
 ]
 
+sports_file = "Sports.m3u"
 json_file = "Bangla Channel.json"
 output_file = "Combined_Live_TV.m3u"
 duplicate_file = "Duplicate.m3u"
@@ -28,9 +28,6 @@ def clean_name(name):
     """Channel name normalize করে lowercase এ নেয়"""
     return re.sub(r'\s+', ' ', name.strip().lower())
 
-# -----------------------------
-# 🔹 Step 1: Combine All M3U + JSON
-# -----------------------------
 channels = {}
 duplicates = {}
 
@@ -44,16 +41,15 @@ def add_channel(name, url, logo, group):
     }
 
     if cname in channels:
-        # যদি একই নামের channel আগে থেকেই থাকে = duplicate
         if cname not in duplicates:
-            duplicates[cname] = [channels[cname]]  # প্রথমটি সংরক্ষণ করো
+            duplicates[cname] = [channels[cname]]
         duplicates[cname].append(data)
     else:
         channels[cname] = data
 
 
 # -----------------------------
-# 🔹 Load M3U Files
+# 🔹 Load Normal M3U Files
 # -----------------------------
 for file_name in m3u_files:
     if not os.path.exists(file_name):
@@ -80,6 +76,26 @@ for file_name in m3u_files:
                 current_name = "Unknown Channel"
         elif line.startswith("http"):
             add_channel(current_name, line, current_logo, group_name)
+
+
+# -----------------------------
+# 🔹 Load Sports.m3u (Keep Full Block)
+# -----------------------------
+sports_blocks = []
+if os.path.exists(sports_file):
+    with open(sports_file, "r", encoding="utf-8-sig") as f:
+        lines = f.read().splitlines()
+
+    current_block = []
+    for line in lines:
+        if line.strip():
+            current_block.append(line)
+            if line.startswith("http"):
+                sports_blocks.append("\n".join(current_block))
+                current_block = []
+
+else:
+    print(f"⚠️ Missing file: {sports_file}")
 
 
 # -----------------------------
@@ -110,25 +126,37 @@ else:
 
 
 # -----------------------------
-# 🔹 Step 2: Write Combined File
+# 🔹 Write Combined File
 # -----------------------------
-def write_m3u(file_path, data_dict):
+def write_combined_m3u(file_path, data_dict, sports_blocks):
     content = "#EXTM3U\n\n"
+
+    # ✅ Sports.m3u full blocks first
+    if sports_blocks:
+        content += "# ---------- 🏏 SPORTS CHANNELS (from Sports.m3u) ----------\n\n"
+        for block in sports_blocks:
+            content += block + "\n\n"
+
+    # ✅ Then other channels
+    content += "# ---------- 📺 OTHER CHANNELS ----------\n\n"
     for info in data_dict.values():
         content += (
             f'#EXTINF:-1 tvg-logo="{info["logo"]}" group-title="{info["group"]}",{info["name"]}\n'
-            f'{info["url"]}\n'
+            f'{info["url"]}\n\n'
         )
+
     bd_time = datetime.utcnow() + timedelta(hours=6)
-    content += f"\n# ✅ Last updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} Bangladesh Time\n"
+    content += f"# ✅ Last updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} Bangladesh Time\n"
+
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
 
-# Combined (unique)
-write_m3u(output_file, channels)
+
+write_combined_m3u(output_file, channels, sports_blocks)
+
 
 # -----------------------------
-# 🔹 Step 3: Write Duplicate Channels (if any)
+# 🔹 Write Duplicates (if any)
 # -----------------------------
 if duplicates:
     print(f"⚠️ Found {len(duplicates)} duplicate channel names.")
@@ -150,8 +178,9 @@ else:
     with open(duplicate_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n# ✅ No duplicate channels found.\n")
 
+
 # -----------------------------
-# 🔹 Step 4: Summary
+# 🔹 Summary
 # -----------------------------
 print("✅ Combined_Live_TV.m3u created successfully.")
 if duplicates:
