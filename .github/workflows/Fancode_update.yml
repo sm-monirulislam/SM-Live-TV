@@ -27,7 +27,7 @@ jobs:
         run: pip install requests
 
       - name: 🎬 Run Update Script
-        run: python Script/update_playlist.py   # ✅ Script ফোল্ডারসহ পাথ ঠিক আছে
+        run: python Script/Fancode_playlist.py   # ✅ নতুন স্ক্রিপ্ট নাম
 
       - name: 💾 Commit and Push Updated Playlist
         env:
