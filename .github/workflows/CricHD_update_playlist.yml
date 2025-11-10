@@ -1,46 +1,46 @@
-name: 🔁 Auto Update CricHD Playlist
-
-on:
-  schedule:
-    - cron: "*/10 * * * *"   # ⏰ প্রতি ১০ মিনিট পর অটো আপডেট
-  workflow_dispatch:         # 🧑‍💻 ম্যানুয়ালি চালানো যাবে
-
-permissions:
-  contents: write
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: 📦 Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0    # ✅ সম্পূর্ণ git history আনবে
-
-      - name: 🐍 Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
-      - name: 📥 Install dependencies
-        run: pip install requests
-
-      - name: 🎬 Generate CricHD Playlist
-        run: python Script/auto_playlist.py   # ✅ পাথ ঠিক আছে
-
-      - name: 💾 Commit & Push updates
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # ✅ লোকাল পরিবর্তন stash করে pull করা
-          git stash || true
-          git pull origin main --rebase || true
-          git stash pop || true
-
-          git add Sports.m3u
-          git commit -m "🔁 Auto update Sports playlist [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"
+name: 🔁 Auto Update CricHD Playlist  
+  
+on:  
+  schedule:  
+    - cron: "*/10 * * * *"   # ⏰ প্রতি ১০ মিনিট পর অটো আপডেট  
+  workflow_dispatch:         # 🧑‍💻 ম্যানুয়ালি চালানো যাবে  
+  
+permissions:  
+  contents: write  
+  
+jobs:  
+  update:  
+    runs-on: ubuntu-latest  
+  
+    steps:  
+      - name: 📦 Checkout repository  
+        uses: actions/checkout@v4  
+        with:  
+          fetch-depth: 0    # ✅ সম্পূর্ণ git history আনবে  
+  
+      - name: 🐍 Setup Python  
+        uses: actions/setup-python@v5  
+        with:  
+          python-version: "3.x"  
+  
+      - name: 📥 Install dependencies  
+        run: pip install requests  
+  
+      - name: 🎬 Generate CricHD Playlist  
+        run: python Script/CricHD_playlist.py   # ✅ নতুন নাম ব্যবহার করা হয়েছে  
+  
+      - name: 💾 Commit & Push updates  
+        env:  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+        run: |  
+          git config --global user.name "github-actions[bot]"  
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"  
+  
+          # ✅ লোকাল পরিবর্তন stash করে pull করা  
+          git stash || true  
+          git pull origin main --rebase || true  
+          git stash pop || true  
+  
+          git add Sports.m3u  
+          git commit -m "🔁 Auto update Sports playlist [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes to commit"  
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main || true
