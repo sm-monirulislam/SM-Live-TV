@@ -1,8 +1,8 @@
-name: 🔁 Auto Combine IPTV & Check Links
+name: 🔁 Auto Combine IPTV (with Duplicate Report)
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # ⏱️ প্রতি ৩০ মিনিটে রান হবে
+    - cron: "*/30 * * * *"   # ⏱️ প্রতি ৩০ মিনিটে অটো রান হবে
   workflow_dispatch:          # 🧑‍💻 ম্যানুয়ালি চালানো যাবে
 
 permissions:
@@ -27,12 +27,12 @@ jobs:
 
       - name: ⚙️ Run combine_check.py (from Script folder)
         run: |
-          python Script/combine_check.py   # ← এখন রুট থেকে কল হবে
+          python Script/combine_check.py
 
       - name: 💾 Commit Updated Files
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add Combined_Live_TV.m3u offline.m3u invalid_links.log || true
-          git commit -m "🔁 Auto update IPTV files [$(date)]" || echo "No changes to commit"
+          git add Combined_Live_TV.m3u offline.m3u invalid_links.log Duplicate.m3u || true
+          git commit -m "🔁 Auto update IPTV + Duplicate report [$(date)]" || echo "No changes to commit"
           git push
