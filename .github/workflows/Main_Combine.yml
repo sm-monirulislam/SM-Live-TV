@@ -25,16 +25,14 @@ jobs:
         run: |
           pip install requests
 
-      - name: ⚙️ Run Combine Script from /Script Folder
+      - name: ⚙️ Run combine_check.py (from Script folder)
         run: |
-          cd Script
-          python combine_check.py
-        working-directory: ./  # root directory of repo
+          python Script/combine_check.py   # ← এখন রুট থেকে কল হবে
 
       - name: 💾 Commit Updated Files
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add Script/Combined_Live_TV.m3u Script/offline.m3u Script/invalid_links.log || true
+          git add Combined_Live_TV.m3u offline.m3u invalid_links.log || true
           git commit -m "🔁 Auto update IPTV files [$(date)]" || echo "No changes to commit"
           git push
