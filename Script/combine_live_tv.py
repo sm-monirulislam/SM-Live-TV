@@ -18,50 +18,67 @@ m3u_files = [
 
 sports_file = "Sports.m3u"
 json_file = "Bangla Channel.json"
+
 output_file = "Combined_Live_TV.m3u"
-duplicate_file = "Duplicate.m3u"
 
 # -----------------------------
-# 🔹 Helper: Clean Channel Name
+# 🔹 Helper
 # -----------------------------
 def clean_name(name):
-    """Channel name normalize করে lowercase এ নেয়"""
+    """চ্যানেলের নাম ক্লিন করে lowercase রিটার্ন করে"""
     return re.sub(r'\s+', ' ', name.strip().lower())
 
 channels = {}
-duplicates = {}
 
-def add_channel(name, url, logo, group):
+# -----------------------------
+# 🔹 Add Channel
+# -----------------------------
+def add_channel(name, url, logo, group, ref=None, origin=None):
     cname = clean_name(name)
+    if not url.startswith("http"):
+        return  # ⚠️ Offline লিংক স্কিপ করবে
+
     data = {
         "name": name.strip(),
         "url": url.strip(),
         "logo": logo.strip(),
         "group": group.strip()
     }
+    # ✅ শুধুমাত্র যদি থাকে
+    if ref:
+        data["ref"] = ref.strip()
+    if origin:
+        data["origin"] = origin.strip()
 
-    if cname in channels:
-        if cname not in duplicates:
-            duplicates[cname] = [channels[cname]]
-        duplicates[cname].append(data)
-    else:
-        channels[cname] = data
+    # ✅ আগেরটা রিপ্লেস করবে (ডুপলিকেট রাখবে না)
+    channels[cname] = data
 
 
 # -----------------------------
-# 🔹 Load Normal M3U Files
+# 🔹 Function: Load a single M3U file
 # -----------------------------
-for file_name in m3u_files:
+def load_m3u(file_name):
+    """একটি m3u ফাইল থেকে Referrer/Origin collect করে শুধুমাত্র ওই ফাইলের চ্যানেলগুলোতে apply করবে"""
     if not os.path.exists(file_name):
         print(f"⚠️ Missing file: {file_name}")
-        continue
+        return
+
+    has_ref = has_origin = False
+    with open(file_name, "r", encoding="utf-8-sig") as f:
+        content = f.read()
+        if "#EXTVLCOPT:http-referrer=" in content:
+            has_ref = True
+        if "#EXTVLCOPT:http-origin=" in content:
+            has_origin = True
 
     group_name = os.path.splitext(os.path.basename(file_name))[0]
     with open(file_name, "r", encoding="utf-8-sig") as f:
         lines = f.read().splitlines()
 
-    current_logo = ""
     current_name = ""
+    current_logo = ""
+    ref = origin = None
+
     for line in lines:
         line = line.strip()
         if not line:
@@ -72,14 +89,31 @@ for file_name in m3u_files:
             current_logo = logo_match.group(1) if logo_match else ""
             if "," in line:
                 current_name = line.split(",", 1)[1].strip()
-            else:
-                current_name = "Unknown Channel"
+        elif line.startswith("#EXTVLCOPT:http-referrer="):
+            ref = line.replace("#EXTVLCOPT:http-referrer=", "").strip()
+        elif line.startswith("#EXTVLCOPT:http-origin="):
+            origin = line.replace("#EXTVLCOPT:http-origin=", "").strip()
         elif line.startswith("http"):
-            add_channel(current_name, line, current_logo, group_name)
+            add_channel(
+                current_name,
+                line,
+                current_logo,
+                group_name,
+                ref if has_ref else None,
+                origin if has_origin else None
+            )
+            ref = origin = None
 
 
 # -----------------------------
-# 🔹 Load Sports.m3u (Keep Full Block)
+# 🔹 Load All M3U Files
+# -----------------------------
+for f in m3u_files:
+    load_m3u(f)
+
+
+# -----------------------------
+# 🔹 Load Sports.m3u (Ref/Origin as per Sports file)
 # -----------------------------
 sports_blocks = []
 if os.path.exists(sports_file):
@@ -87,103 +121,85 @@ if os.path.exists(sports_file):
         lines = f.read().splitlines()
 
     current_block = []
-    for line in lines:
-        if line.strip():
-            current_block.append(line)
-            if line.startswith("http"):
-                sports_blocks.append("\n".join(current_block))
-                current_block = []
+    ref = origin = ""
+    current_name = ""
+    current_logo = ""
 
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+
+        if line.startswith("#EXTINF"):
+            logo_match = re.search(r'tvg-logo="(.*?)"', line)
+            current_logo = logo_match.group(1) if logo_match else ""
+            current_name = line.split(",", 1)[1].strip() if "," in line else "Unknown Channel"
+        elif line.startswith("#EXTVLCOPT:http-referrer="):
+            ref = line.replace("#EXTVLCOPT:http-referrer=", "").strip()
+        elif line.startswith("#EXTVLCOPT:http-origin="):
+            origin = line.replace("#EXTVLCOPT:http-origin=", "").strip()
+        elif line.startswith("http"):
+            add_channel(current_name, line, current_logo, "Sports", ref, origin)
+            sports_blocks.append("\n".join(current_block + [line]))
+            current_block = []
+            ref = origin = ""
+        current_block.append(line)
 else:
     print(f"⚠️ Missing file: {sports_file}")
 
 
 # -----------------------------
-# 🔹 Load JSON File
+# 🔹 Load JSON
 # -----------------------------
 if os.path.exists(json_file):
-    with open(json_file, "r", encoding="utf-8-sig") as jf:
-        try:
-            json_data = json.load(jf)
-            json_group_name = os.path.splitext(os.path.basename(json_file))[0]
-            for channel_name, info in json_data.items():
-                logo = info.get("tvg_logo", "")
-                links = info.get("links", [])
-                if links and isinstance(links, list) and len(links) > 0:
-                    url = links[0].get("url", "")
-                    if url:
-                        add_channel(channel_name, url, logo, json_group_name)
-                    else:
-                        print(f"⚠️ No URL found for: {channel_name}")
-                else:
-                    print(f"⚠️ Invalid or empty links for: {channel_name}")
-        except json.JSONDecodeError as e:
-            print(f"❌ JSON Decode Error in {json_file}: {e}")
-        except Exception as e:
-            print(f"⚠️ Error reading {json_file}: {e}")
+    try:
+        with open(json_file, "r", encoding="utf-8-sig") as jf:
+            data = json.load(jf)
+        group = os.path.splitext(os.path.basename(json_file))[0]
+        for ch_name, info in data.items():
+            logo = info.get("tvg_logo", "")
+            links = info.get("links", [])
+            if isinstance(links, list) and links:
+                url = links[0].get("url", "")
+                if url:
+                    add_channel(ch_name, url, logo, group)
+    except Exception as e:
+        print(f"❌ JSON Error in {json_file}: {e}")
 else:
-    print(f"⚠️ Missing JSON file: {json_file}")
+    print(f"⚠️ Missing file: {json_file}")
 
 
 # -----------------------------
-# 🔹 Write Combined File
+# 🔹 Write Combined Output
 # -----------------------------
 def write_combined_m3u(file_path, data_dict, sports_blocks):
     content = "#EXTM3U\n\n"
 
-    # ✅ Sports.m3u full blocks first
     if sports_blocks:
-        content += "# ---------- 🏏 SPORTS CHANNELS (from Sports.m3u) ----------\n\n"
+        content += "# ---------- 🏏 SPORTS CHANNELS ----------\n\n"
         for block in sports_blocks:
             content += block + "\n\n"
 
-    # ✅ Then other channels
     content += "# ---------- 📺 OTHER CHANNELS ----------\n\n"
-    for info in data_dict.values():
-        content += (
-            f'#EXTINF:-1 tvg-logo="{info["logo"]}" group-title="{info["group"]}",{info["name"]}\n'
-            f'{info["url"]}\n\n'
-        )
+
+    for info in sorted(data_dict.values(), key=lambda x: x["name"].lower()):
+        content += f'#EXTINF:-1 tvg-logo="{info["logo"]}" group-title="{info["group"]}",{info["name"]}\n'
+        if "ref" in info:
+            content += f'#EXTVLCOPT:http-referrer={info["ref"]}\n'
+        if "origin" in info:
+            content += f'#EXTVLCOPT:http-origin={info["origin"]}\n'
+        content += f'{info["url"]}\n\n'
 
     bd_time = datetime.utcnow() + timedelta(hours=6)
-    content += f"# ✅ Last updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} Bangladesh Time\n"
+    content += f"# ✅ Last updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} BD Time\n"
 
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
 
 
+# -----------------------------
+# 🔹 Final Write + Summary
+# -----------------------------
 write_combined_m3u(output_file, channels, sports_blocks)
 
-
-# -----------------------------
-# 🔹 Write Duplicates (if any)
-# -----------------------------
-if duplicates:
-    print(f"⚠️ Found {len(duplicates)} duplicate channel names.")
-    dup_content = "#EXTM3U\n\n"
-    for cname, dup_list in duplicates.items():
-        dup_content += f"# 🔁 Duplicate: {dup_list[0]['name']}\n"
-        for info in dup_list:
-            dup_content += (
-                f'#EXTINF:-1 tvg-logo="{info["logo"]}" group-title="{info["group"]}",{info["name"]}\n'
-                f'{info["url"]}\n'
-            )
-        dup_content += "\n"
-    bd_time = datetime.utcnow() + timedelta(hours=6)
-    dup_content += f"# ⚠️ Duplicate list generated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} Bangladesh Time\n"
-
-    with open(duplicate_file, "w", encoding="utf-8") as f:
-        f.write(dup_content)
-else:
-    with open(duplicate_file, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n\n# ✅ No duplicate channels found.\n")
-
-
-# -----------------------------
-# 🔹 Summary
-# -----------------------------
-print("✅ Combined_Live_TV.m3u created successfully.")
-if duplicates:
-    print(f"⚠️ Duplicate.m3u saved with {len(duplicates)} duplicate channel entries.")
-else:
-    print("✅ No duplicate channels found.")
+print(f"\n✅ Combined_Live_TV.m3u created successfully with {len(channels)} channels.")
