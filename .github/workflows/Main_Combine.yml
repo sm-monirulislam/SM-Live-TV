@@ -1,38 +1,63 @@
-name: 🔁 Auto Combine IPTV (with Duplicate Report)
+name: 🎬 Auto Combine Live TV Playlists
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # ⏱️ প্রতি ৩০ মিনিটে অটো রান হবে
-  workflow_dispatch:          # 🧑‍💻 ম্যানুয়ালি চালানো যাবে
+    - cron: "*/30 * * * *"   # ⏰ প্রতি ৩০ মিনিট পর রান করবে
+  workflow_dispatch:          # 🧑‍💻 চাইলে ম্যানুয়ালি চালানো যাবে
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  combine:
     runs-on: ubuntu-latest
 
     steps:
+      # 🧩 Step 1: Checkout Repository
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
 
+      # 🧩 Step 2: Setup Python
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.11"
 
-      - name: 📚 Install Dependencies
+      # 🧩 Step 3: Install Requirements (if any)
+      - name: 📦 Install Dependencies
         run: |
-          pip install requests
+          pip install --upgrade pip
+          # প্রয়োজনে অতিরিক্ত লাইব্রেরি ইনস্টল করো, যেমন:
+          # pip install requests
 
-      - name: ⚙️ Run combine_check.py (from Script folder)
+      # 🧩 Step 4: Run the Python Script (যেটা Script ফোল্ডারে আছে)
+      - name: 🧠 Run Combine Script
         run: |
-          python Script/combine_check.py
+          python Script/combine_live_tv.py
 
-      - name: 💾 Commit Updated Files
+      # 🧩 Step 5: Check if Output Files Changed
+      - name: 🔍 Check if Files Changed
+        id: changes
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add Combined_Live_TV.m3u offline.m3u invalid_links.log Duplicate.m3u || true
-          git commit -m "🔁 Auto update IPTV + Duplicate report [$(date)]" || echo "No changes to commit"
+          git add Combined_Live_TV.m3u Duplicate.m3u
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      # 🧩 Step 6: Commit & Push Only If Changed
+      - name: 💾 Commit & Push Changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
+          git commit -m "🔁 Auto-update Combined_Live_TV.m3u & Duplicate.m3u [$(date +'%Y-%m-%d %H:%M:%S')]"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 🧩 Step 7: Log if Nothing Changed
+      - name: ✅ No Changes Found
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "✅ No changes detected. Skipping commit."
