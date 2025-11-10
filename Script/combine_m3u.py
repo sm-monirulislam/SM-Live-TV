@@ -1,9 +1,12 @@
 import os
 import json
-from datetime import datetime, timedelta
 import re
+import requests
+from datetime import datetime, timedelta
 
-# যেসব m3u ফাইল একত্র হবে
+# -----------------------------
+# 🔹 Input Files
+# -----------------------------
 m3u_files = [
     "Jagobd.m3u",
     "AynaOTT.m3u",
@@ -15,68 +18,140 @@ m3u_files = [
     "KALKATA.m3u"
 ]
 
-# 🔹 JSON ফাইলের নাম
 json_file = "Bangla Channel.json"
-
 output_file = "Combined_Live_TV.m3u"
-combined_content = "#EXTM3U\n\n"
+offline_file = "offline.m3u"
+log_file = "invalid_links.log"
 
-# 🔸 Step 1: সব M3U ফাইল একত্র করা
+# -----------------------------
+# 🔹 Helper: Check if stream link is valid
+# -----------------------------
+def is_stream_alive(url):
+    try:
+        if not url.startswith("http"):
+            return False
+        response = requests.head(url, timeout=5, allow_redirects=True)
+        return response.status_code == 200
+    except:
+        return False
+
+# -----------------------------
+# 🔹 Helper: Clean & Normalize Channel Name
+# -----------------------------
+def clean_name(name):
+    return re.sub(r'\s+', ' ', name.strip().lower())
+
+# -----------------------------
+# 🔹 Step 1: Merge all M3U files
+# -----------------------------
+combined_channels = {}
+
+def add_channel(name, url, logo, group):
+    cname = clean_name(name)
+    if cname not in combined_channels:  # avoid duplicates
+        combined_channels[cname] = {
+            "name": name.strip(),
+            "url": url.strip(),
+            "logo": logo.strip(),
+            "group": group.strip()
+        }
+
 for file_name in m3u_files:
     if not os.path.exists(file_name):
-        combined_content += f"# ⚠️ Missing file: {file_name}\n"
+        print(f"⚠️ Missing file: {file_name}")
         continue
 
     group_name = os.path.splitext(os.path.basename(file_name))[0]
     with open(file_name, "r", encoding="utf-8") as f:
-        content = f.read().strip()
+        lines = f.read().splitlines()
 
-    if content.startswith("#EXTM3U"):
-        content = content.replace("#EXTM3U", "").strip()
-
-    new_lines = []
-    for line in content.splitlines():
+    current_logo = ""
+    current_name = ""
+    for line in lines:
         if line.startswith("#EXTINF"):
-            if 'group-title="' in line:
-                line = re.sub(r'group-title="(.*?)"', f'group-title="{group_name}"', line)
-            else:
-                parts = line.split(",", 1)
-                if len(parts) == 2:
-                    line = f'{parts[0]} group-title="{group_name}",{parts[1]}'
-        new_lines.append(line)
+            logo_match = re.search(r'tvg-logo="(.*?)"', line)
+            current_logo = logo_match.group(1) if logo_match else ""
+            if "," in line:
+                current_name = line.split(",", 1)[1].strip()
+        elif line.startswith("http"):
+            add_channel(current_name, line, current_logo, group_name)
 
-    combined_content += f"\n# 📁 Source: {file_name}\n" + "\n".join(new_lines) + "\n"
-
-# 🔸 Step 2: JSON ফাইল থেকে ডেটা যোগ করা (group-title = JSON ফাইলের নাম)
+# -----------------------------
+# 🔹 Step 2: Add channels from JSON
+# -----------------------------
 if os.path.exists(json_file):
     with open(json_file, "r", encoding="utf-8") as jf:
         try:
             json_data = json.load(jf)
-            json_group_name = os.path.splitext(os.path.basename(json_file))[0]  # e.g. "Bangla Channel"
-            combined_content += f"\n# 📁 Source: {json_file}\n"
+            json_group_name = os.path.splitext(os.path.basename(json_file))[0]
 
-            # ✅ JSON পড়া তোমার ফরম্যাট অনুযায়ী
             for channel_name, info in json_data.items():
                 logo = info.get("tvg_logo", "")
                 links = info.get("links", [])
                 if links and isinstance(links, list):
                     url = links[0].get("url", "")
-                else:
-                    url = ""
-
-                if url:
-                    combined_content += f'#EXTINF:-1 tvg-logo="{logo}" group-title="{json_group_name}",{channel_name}\n{url}\n'
+                    if url:
+                        add_channel(channel_name, url, logo, json_group_name)
         except Exception as e:
-            combined_content += f"# ⚠️ Error reading {json_file}: {e}\n"
+            print(f"⚠️ Error reading {json_file}: {e}")
 else:
-    combined_content += f"# ⚠️ Missing JSON file: {json_file}\n"
+    print(f"⚠️ Missing JSON file: {json_file}")
 
-# 🔸 Step 3: সর্বশেষ আপডেট টাইম
-bd_time = datetime.utcnow() + timedelta(hours=6)
-combined_content += f"\n# ✅ Last updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} Bangladesh Time\n"
+# -----------------------------
+# 🔹 Step 3: Validate Stream Links
+# -----------------------------
+print("\n🔍 Checking all stream links (please wait)...\n")
 
-# 🔸 Step 4: ফাইনাল আউটপুট সংরক্ষণ
-with open(output_file, "w", encoding="utf-8") as out:
-    out.write(combined_content)
+valid_channels = {}
+offline_channels = {}
+log_entries = []
 
-print("✅ Combined_Live_TV.m3u created successfully with JSON group-title = script name!")
+for cname, info in combined_channels.items():
+    url = info["url"]
+    now = (datetime.utcnow() + timedelta(hours=6)).strftime("%Y-%m-%d %H:%M:%S")
+    if is_stream_alive(url):
+        valid_channels[cname] = info
+        print(f"✅ LIVE: {info['name']}")
+    else:
+        offline_channels[cname] = info
+        entry = f"[{now}] ❌ {info['name']} | {url}"
+        log_entries.append(entry)
+        print(f"❌ OFFLINE: {info['name']}")
+
+# -----------------------------
+# 🔹 Step 4: Generate Final M3U Files
+# -----------------------------
+def write_m3u(file_path, channels_dict):
+    content = "#EXTM3U\n\n"
+    for info in channels_dict.values():
+        content += (
+            f'#EXTINF:-1 tvg-logo="{info["logo"]}" group-title="{info["group"]}",{info["name"]}\n'
+            f'{info["url"]}\n'
+        )
+    bd_time = datetime.utcnow() + timedelta(hours=6)
+    content += f"\n# ✅ Last updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} Bangladesh Time\n"
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
+write_m3u(output_file, valid_channels)
+write_m3u(offline_file, offline_channels)
+
+# -----------------------------
+# 🔹 Step 5: Append Log File (time-based)
+# -----------------------------
+with open(log_file, "a", encoding="utf-8") as log:
+    if log_entries:
+        log.write("\n".join(log_entries) + "\n")
+    else:
+        now = (datetime.utcnow() + timedelta(hours=6)).strftime("%Y-%m-%d %H:%M:%S")
+        log.write(f"[{now}] ✅ All channels are working fine!\n")
+
+# -----------------------------
+# 🔹 Step 6: Summary
+# -----------------------------
+print("\n📊 Summary Report:")
+print(f"✅ Total LIVE Channels: {len(valid_channels)}")
+print(f"❌ Total OFFLINE Channels: {len(offline_channels)}")
+print(f"💾 Saved to: {output_file} (LIVE)")
+print(f"💾 Saved to: {offline_file} (OFFLINE)")
+print(f"🪵 Log updated: {log_file}")
