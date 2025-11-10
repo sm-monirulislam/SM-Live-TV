@@ -23,7 +23,7 @@ jobs:
 
       - name: ⚙️ Run Combine Script
         run: |
-          python script/combine_playlist.py
+          python Script/combine_playlist.py
 
       - name: 💾 Commit & Push Updated Playlist
         run: |
