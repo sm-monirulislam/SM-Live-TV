@@ -23,24 +23,30 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 🧩 Step 3: Install Requirements (if any)
+      # 🧩 Step 3: Install Dependencies
       - name: 📦 Install Dependencies
         run: |
           pip install --upgrade pip
-          # প্রয়োজনে অতিরিক্ত লাইব্রেরি ইনস্টল করো, যেমন:
-          # pip install requests
 
-      # 🧩 Step 4: Run the Python Script (যেটা Script ফোল্ডারে আছে)
+      # 🧩 Step 4: Run the Python Script
+      # ⚠️ যদি স্ক্রিপ্টটি "Script/" ফোল্ডারে থাকে, নিচের লাইনে সেই path রাখো
       - name: 🧠 Run Combine Script
         run: |
-          python Script/combine_live_tv.py
+          if [ -f "Script/combine_live_tv.py" ]; then
+            python Script/combine_live_tv.py
+          elif [ -f "combine_live_tv.py" ]; then
+            python combine_live_tv.py
+          else
+            echo "❌ Script not found!"
+            exit 1
+          fi
 
-      # 🧩 Step 5: Check if Output Files Changed
+      # 🧩 Step 5: Check for Output Changes
       - name: 🔍 Check if Files Changed
         id: changes
         run: |
           git add Combined_Live_TV.m3u Duplicate.m3u
-          if git diff --cached --quiet; then
+          if [ -z "$(git diff --staged --name-only)" ]; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -49,13 +55,13 @@ jobs:
       # 🧩 Step 6: Commit & Push Only If Changed
       - name: 💾 Commit & Push Changes
         if: steps.changes.outputs.changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "actions@github.com"
           git commit -m "🔁 Auto-update Combined_Live_TV.m3u & Duplicate.m3u [$(date +'%Y-%m-%d %H:%M:%S')]"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref }}
 
       # 🧩 Step 7: Log if Nothing Changed
       - name: ✅ No Changes Found
