@@ -1,0 +1,40 @@
+name: 📺 Auto Update AynaOTT M3U
+
+on:
+  workflow_dispatch:  # 👉 ম্যানুয়ালি রান করা যাবে
+  schedule:
+    - cron: "*/15 * * * *"  # ⏰ প্রতি ১৫ মিনিটে স্বয়ংক্রিয়ভাবে রান হবে (UTC টাইম)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # ✅ GitHub Actions কে push করার অনুমতি দেয়
+
+    steps:
+    - name: 🔹 Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}  # ✅ ডিফল্ট GitHub টোকেন
+
+    - name: 🔹 Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+
+    - name: 🔹 Install dependencies
+      run: |
+        pip install requests
+
+    - name: 🔹 Run AynaOTT Playlist Generator
+      run: |
+        python Script/aynaott_auto.py  # ✅ Script ফোল্ডারের ভিতরের স্ক্রিপ্ট রান হবে
+
+    - name: 🔹 Commit and Push Updated M3U
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add AynaOTT.m3u
+        git commit -m "✅ Auto Updated AynaOTT.m3u on $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+        git push origin HEAD:${{ github.ref }}  # ✅ বর্তমান ব্রাঞ্চে push করবে
