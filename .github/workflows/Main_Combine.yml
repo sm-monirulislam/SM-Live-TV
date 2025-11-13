@@ -3,15 +3,20 @@ name: 📺 Auto Combine Live TV M3U
 on:
   workflow_dispatch:  # 👉 ম্যানুয়ালি চালানো যাবে
   schedule:
-    - cron: "*/30 * * * *"  # ⏰ প্রতি ৩০ মিনিটে রান হবে (UTC টাইম অনুযায়ী)
+    - cron: "*/25 * * * *"  # ⏰ প্রতি ২৫ মিনিটে রান হবে (UTC টাইম অনুযায়ী)
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write   # ✅ Push করার অনুমতি
+
     steps:
     - name: 🔹 Checkout repository
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: 🐍 Set up Python
       uses: actions/setup-python@v5
@@ -26,12 +31,14 @@ jobs:
       run: |
         python Script/combine_playlist.py
 
+    - name: 🔄 Pull latest changes to avoid push conflict
+      run: |
+        git pull origin main --rebase || true
+
     - name: 🕒 Commit and push updated M3U
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "actions@github.com"
         git add Combined_Live_TV.m3u
-        git commit -m "✅ Auto updated Combined_Live_TV.m3u at $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git commit -m "✅ Auto updated Combined_Live_TV.m3u at $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"
+        git push origin HEAD:${{ github.ref }}
