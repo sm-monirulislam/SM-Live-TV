@@ -24,6 +24,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      # 🔧 Ensure clean working directory before doing anything
+      - name: "🧹 Sync with remote to avoid conflicts"
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: "🐍 Setup Python"
         uses: actions/setup-python@v5
         with:
@@ -37,21 +43,24 @@ jobs:
 
       - name: "🕷️ Run EPG Scraper"
         run: |
-          python Script/epg_scraper.py   # <-- নতুন পথ
+          python Script/epg_scraper.py
 
       - name: "📝 Commit & 🚀 Push epg.xml (if changed)"
-        shell: bash
         run: |
-          set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add epg.xml || true
+
+          # কোনো পরিবর্তন আছে কি না চেক করা
           if git diff --cached --quiet; then
             echo "No changes in epg.xml"
-          else
-            BRANCH="${GITHUB_REF_NAME:-$(git rev-parse --abbrev-ref HEAD)}"
-            git pull --rebase origin "${BRANCH}" || true
-            git commit -m "🔄 EPG update ($(date '+%Y-%m-%d %H:%M:%S %Z'))"
-            git push origin "${BRANCH}"
+            exit 0
           fi
+
+          # আবারো নিরাপদ অবস্থায় সিঙ্ক করে নেওয়া
+          git fetch origin main
+          git reset --soft origin/main
+
+          git commit -m "🔄 EPG update ($(date '+%Y-%m-%d %H:%M:%S %Z'))"
+          git push origin main
