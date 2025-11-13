@@ -1,0 +1,57 @@
+name: "🧭 Generate & Publish EPG"
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # ⏰ প্রতি 15 মিনিটে অটো রান (UTC)
+  workflow_call: {}
+  workflow_dispatch: {}
+
+permissions:
+  contents: write  # commit & push করার জন্য
+
+concurrency:
+  group: epg-pipeline-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: "🛠️ Build EPG"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "📥 Checkout repository"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: "🐍 Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: "📦 Install Dependencies"
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml playwright pytz
+          playwright install chromium
+
+      - name: "🕷️ Run EPG Scraper"
+        run: |
+          python Script/epg_scraper.py   # <-- নতুন পথ
+
+      - name: "📝 Commit & 🚀 Push epg.xml (if changed)"
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add epg.xml || true
+          if git diff --cached --quiet; then
+            echo "No changes in epg.xml"
+          else
+            BRANCH="${GITHUB_REF_NAME:-$(git rev-parse --abbrev-ref HEAD)}"
+            git pull --rebase origin "${BRANCH}" || true
+            git commit -m "🔄 EPG update ($(date '+%Y-%m-%d %H:%M:%S %Z'))"
+            git push origin "${BRANCH}"
+          fi
