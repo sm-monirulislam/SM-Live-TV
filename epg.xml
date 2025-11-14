@@ -1298,9 +1298,6 @@
     <display-name>&amp;TV HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/4c/%26TV_HD_%282025%29.svg"/>
   </channel>
-  <programme start="20251114204500 +0600" stop="20251114214200 +0600" channel="AndTV.in">
-    <title lang="bn">Comedy Circus</title>
-  </programme>
   <programme start="20251114214200 +0600" stop="20251114223000 +0600" channel="AndTV.in">
     <title lang="bn">Chhoriyan Chali Gaon</title>
   </programme>
@@ -1386,6 +1383,9 @@
     <title lang="bn">Happu Ki Ultan Paltan</title>
   </programme>
   <programme start="20251115193000 +0600" stop="20251115200000 +0600" channel="AndTV.in">
+    <title lang="bn">Happu Ki Ultan Paltan</title>
+  </programme>
+  <programme start="20251115200000 +0600" stop="20251115203000 +0600" channel="AndTV.in">
     <title lang="bn">Happu Ki Ultan Paltan</title>
   </programme>
   <channel id="starjalsha.in">
@@ -1702,10 +1702,7 @@
     <display-name>Star Sports 3 HD</display-name>
     <icon src="https://i.pinimg.com/originals/c7/5d/56/c75d563b3cda837cd3fb1ce5ff5089cd.png"/>
   </channel>
-  <programme start="20251114213000 +0600" stop="20251114220000 +0600" channel="starsports3.in">
-    <title lang="bn">3rd ODI: Australia v India; One-Day International Crick...</title>
-  </programme>
-  <programme start="20251114220000 +0600" stop="20251114221500 +0600" channel="starsports3.in">
+  <programme start="20251114214500 +0600" stop="20251114221500 +0600" channel="starsports3.in">
     <title lang="bn">India vs Australia - 4th T20I; Cricket Highlights</title>
   </programme>
   <programme start="20251114221500 +0600" stop="20251114223000 +0600" channel="starsports3.in">
@@ -1791,6 +1788,9 @@
   </programme>
   <programme start="20251115164500 +0600" stop="20251115170000 +0600" channel="starsports3.in">
     <title lang="bn">WPL 2025: UPW vs RCB - 18th Match; Cricket Highlights</title>
+  </programme>
+  <programme start="20251115170000 +0600" stop="20251115173000 +0600" channel="starsports3.in">
+    <title lang="bn">Qualifier 1: Puneri Paltan vs. Dabang Delhi KC; Pro Kab...</title>
   </programme>
   <channel id="starsportsselect1.in">
     <display-name>Star Sports Select 1 HD</display-name>
@@ -3601,13 +3601,13 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251114003000 +0600" stop="20251114010000 +0600" channel="aljazeera.com">
-    <title lang="bn">101 East</title>
+    <title lang="bn">Inside Story</title>
   </programme>
   <programme start="20251114010000 +0600" stop="20251114013000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251114013000 +0600" stop="20251114020000 +0600" channel="aljazeera.com">
-    <title lang="bn">Witness</title>
+    <title lang="bn">The Big Picture</title>
   </programme>
   <programme start="20251114020000 +0600" stop="20251114030000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
@@ -3616,13 +3616,13 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251114033000 +0600" stop="20251114040000 +0600" channel="aljazeera.com">
-    <title lang="bn">Inside Story</title>
+    <title lang="bn">101 East</title>
   </programme>
   <programme start="20251114040000 +0600" stop="20251114043000 +0600" channel="aljazeera.com">
-    <title lang="bn">The Bottom Line</title>
+    <title lang="bn">News Live</title>
   </programme>
   <programme start="20251114043000 +0600" stop="20251114050000 +0600" channel="aljazeera.com">
-    <title lang="bn">earthrise: Systems Change</title>
+    <title lang="bn">Witness</title>
   </programme>
   <programme start="20251114050000 +0600" stop="20251114060000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
@@ -3631,43 +3631,43 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251114063000 +0600" stop="20251114070000 +0600" channel="aljazeera.com">
-    <title lang="bn">The Stream</title>
-  </programme>
-  <programme start="20251114070000 +0600" stop="20251114080000 +0600" channel="aljazeera.com">
-    <title lang="bn">Newshour</title>
-  </programme>
-  <programme start="20251114080000 +0600" stop="20251114083000 +0600" channel="aljazeera.com">
-    <title lang="bn">News Live</title>
-  </programme>
-  <programme start="20251114083000 +0600" stop="20251114210000 +0600" channel="aljazeera.com">
-    <title lang="bn">Risking it All</title>
-  </programme>
-  <programme start="20251114210000 +0600" stop="20251114213000 +0600" channel="aljazeera.com">
-    <title lang="bn">News Live</title>
-  </programme>
-  <programme start="20251114213000 +0600" stop="20251114220000 +0600" channel="aljazeera.com">
     <title lang="bn">Inside Story</title>
   </programme>
-  <programme start="20251114220000 +0600" stop="20251114223000 +0600" channel="aljazeera.com">
-    <title lang="bn">News Live</title>
-  </programme>
-  <programme start="20251114223000 +0600" stop="20251114230000 +0600" channel="aljazeera.com">
+  <programme start="20251114070000 +0600" stop="20251114073000 +0600" channel="aljazeera.com">
     <title lang="bn">The Bottom Line</title>
   </programme>
-  <programme start="20251114230000 +0600" stop="20251115000000 +0600" channel="aljazeera.com">
+  <programme start="20251114073000 +0600" stop="20251114080000 +0600" channel="aljazeera.com">
+    <title lang="bn">earthrise: Systems Change</title>
+  </programme>
+  <programme start="20251114080000 +0600" stop="20251114090000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
+  </programme>
+  <programme start="20251114090000 +0600" stop="20251114093000 +0600" channel="aljazeera.com">
+    <title lang="bn">News Live</title>
+  </programme>
+  <programme start="20251114093000 +0600" stop="20251114100000 +0600" channel="aljazeera.com">
+    <title lang="bn">The Stream</title>
+  </programme>
+  <programme start="20251114100000 +0600" stop="20251114110000 +0600" channel="aljazeera.com">
+    <title lang="bn">Newshour</title>
+  </programme>
+  <programme start="20251114110000 +0600" stop="20251114113000 +0600" channel="aljazeera.com">
+    <title lang="bn">News Live</title>
+  </programme>
+  <programme start="20251114113000 +0600" stop="20251115000000 +0600" channel="aljazeera.com">
+    <title lang="bn">Risking it All</title>
   </programme>
   <programme start="20251115000000 +0600" stop="20251115003000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115003000 +0600" stop="20251115010000 +0600" channel="aljazeera.com">
-    <title lang="bn">Counting the Cost</title>
+    <title lang="bn">Inside Story</title>
   </programme>
   <programme start="20251115010000 +0600" stop="20251115013000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115013000 +0600" stop="20251115020000 +0600" channel="aljazeera.com">
-    <title lang="bn">The Stream</title>
+    <title lang="bn">The Bottom Line</title>
   </programme>
   <programme start="20251115020000 +0600" stop="20251115030000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
@@ -3676,10 +3676,13 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115033000 +0600" stop="20251115040000 +0600" channel="aljazeera.com">
-    <title lang="bn">Inside Story</title>
+    <title lang="bn">Counting the Cost</title>
   </programme>
-  <programme start="20251115040000 +0600" stop="20251115050000 +0600" channel="aljazeera.com">
-    <title lang="bn">Al Jazeera World</title>
+  <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="aljazeera.com">
+    <title lang="bn">News Live</title>
+  </programme>
+  <programme start="20251115043000 +0600" stop="20251115050000 +0600" channel="aljazeera.com">
+    <title lang="bn">The Stream</title>
   </programme>
   <programme start="20251115050000 +0600" stop="20251115060000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
@@ -3688,22 +3691,19 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115063000 +0600" stop="20251115070000 +0600" channel="aljazeera.com">
-    <title lang="bn">UpFront</title>
+    <title lang="bn">Inside Story</title>
   </programme>
   <programme start="20251115070000 +0600" stop="20251115080000 +0600" channel="aljazeera.com">
+    <title lang="bn">Al Jazeera World</title>
+  </programme>
+  <programme start="20251115080000 +0600" stop="20251115090000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
-  </programme>
-  <programme start="20251115080000 +0600" stop="20251115083000 +0600" channel="aljazeera.com">
-    <title lang="bn">News Live</title>
-  </programme>
-  <programme start="20251115083000 +0600" stop="20251115090000 +0600" channel="aljazeera.com">
-    <title lang="bn">Fault Lines</title>
   </programme>
   <programme start="20251115090000 +0600" stop="20251115093000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="aljazeera.com">
-    <title lang="bn">Inside Story</title>
+    <title lang="bn">UpFront</title>
   </programme>
   <programme start="20251115100000 +0600" stop="20251115110000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
@@ -3712,7 +3712,7 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115113000 +0600" stop="20251115120000 +0600" channel="aljazeera.com">
-    <title lang="bn">Talk to Al Jazeera</title>
+    <title lang="bn">Fault Lines</title>
   </programme>
   <programme start="20251115120000 +0600" stop="20251115123000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
@@ -3727,70 +3727,70 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115143000 +0600" stop="20251115150000 +0600" channel="aljazeera.com">
-    <title lang="bn">Apocalypse Maybe</title>
+    <title lang="bn">Talk to Al Jazeera</title>
   </programme>
   <programme start="20251115150000 +0600" stop="20251115153000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="aljazeera.com">
-    <title lang="bn">Risking it All</title>
-  </programme>
-  <programme start="20251115160000 +0600" stop="20251115163000 +0600" channel="aljazeera.com">
-    <title lang="bn">News Live</title>
-  </programme>
-  <programme start="20251115163000 +0600" stop="20251115170000 +0600" channel="aljazeera.com">
     <title lang="bn">Inside Story</title>
   </programme>
+  <programme start="20251115160000 +0600" stop="20251115170000 +0600" channel="aljazeera.com">
+    <title lang="bn">Newshour</title>
+  </programme>
   <programme start="20251115170000 +0600" stop="20251115173000 +0600" channel="aljazeera.com">
-    <title lang="bn">The Bottom Line</title>
+    <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115173000 +0600" stop="20251115180000 +0600" channel="aljazeera.com">
-    <title lang="bn">earthrise: Systems Change</title>
+    <title lang="bn">Apocalypse Maybe</title>
   </programme>
   <programme start="20251115180000 +0600" stop="20251115183000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115183000 +0600" stop="20251115190000 +0600" channel="aljazeera.com">
-    <title lang="bn">The Stream</title>
+    <title lang="bn">Risking it All</title>
   </programme>
   <programme start="20251115190000 +0600" stop="20251115193000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115193000 +0600" stop="20251115200000 +0600" channel="aljazeera.com">
-    <title lang="bn">Counting the Cost</title>
+    <title lang="bn">Inside Story</title>
   </programme>
   <programme start="20251115200000 +0600" stop="20251115203000 +0600" channel="aljazeera.com">
-    <title lang="bn">News Live</title>
+    <title lang="bn">The Bottom Line</title>
   </programme>
   <programme start="20251115203000 +0600" stop="20251115210000 +0600" channel="aljazeera.com">
-    <title lang="bn">Talk to Al Jazeera</title>
+    <title lang="bn">earthrise: Systems Change</title>
   </programme>
   <programme start="20251115210000 +0600" stop="20251115213000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115213000 +0600" stop="20251115220000 +0600" channel="aljazeera.com">
-    <title lang="bn">Inside Story</title>
+    <title lang="bn">The Stream</title>
   </programme>
   <programme start="20251115220000 +0600" stop="20251115223000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251115223000 +0600" stop="20251115230000 +0600" channel="aljazeera.com">
-    <title lang="bn">Risking it All</title>
+    <title lang="bn">Counting the Cost</title>
   </programme>
-  <programme start="20251115230000 +0600" stop="20251116000000 +0600" channel="aljazeera.com">
-    <title lang="bn">Newshour</title>
+  <programme start="20251115230000 +0600" stop="20251115233000 +0600" channel="aljazeera.com">
+    <title lang="bn">News Live</title>
+  </programme>
+  <programme start="20251115233000 +0600" stop="20251116000000 +0600" channel="aljazeera.com">
+    <title lang="bn">Talk to Al Jazeera</title>
   </programme>
   <programme start="20251116000000 +0600" stop="20251116003000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251116003000 +0600" stop="20251116010000 +0600" channel="aljazeera.com">
-    <title lang="bn">Apocalypse Maybe</title>
+    <title lang="bn">Inside Story</title>
   </programme>
   <programme start="20251116010000 +0600" stop="20251116013000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251116013000 +0600" stop="20251116020000 +0600" channel="aljazeera.com">
-    <title lang="bn">UpFront</title>
+    <title lang="bn">Risking it All</title>
   </programme>
   <programme start="20251116020000 +0600" stop="20251116030000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
@@ -3799,10 +3799,13 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251116033000 +0600" stop="20251116040000 +0600" channel="aljazeera.com">
-    <title lang="bn">Inside Story</title>
+    <title lang="bn">Apocalypse Maybe</title>
   </programme>
-  <programme start="20251116040000 +0600" stop="20251116050000 +0600" channel="aljazeera.com">
-    <title lang="bn">Witness</title>
+  <programme start="20251116040000 +0600" stop="20251116043000 +0600" channel="aljazeera.com">
+    <title lang="bn">News Live</title>
+  </programme>
+  <programme start="20251116043000 +0600" stop="20251116050000 +0600" channel="aljazeera.com">
+    <title lang="bn">UpFront</title>
   </programme>
   <programme start="20251116050000 +0600" stop="20251116060000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
@@ -3811,15 +3814,27 @@
     <title lang="bn">News Live</title>
   </programme>
   <programme start="20251116063000 +0600" stop="20251116070000 +0600" channel="aljazeera.com">
-    <title lang="bn">Talk to Al Jazeera</title>
+    <title lang="bn">Inside Story</title>
   </programme>
   <programme start="20251116070000 +0600" stop="20251116080000 +0600" channel="aljazeera.com">
+    <title lang="bn">Witness</title>
+  </programme>
+  <programme start="20251116080000 +0600" stop="20251116090000 +0600" channel="aljazeera.com">
     <title lang="bn">Newshour</title>
   </programme>
-  <programme start="20251116080000 +0600" stop="20251116083000 +0600" channel="aljazeera.com">
+  <programme start="20251116090000 +0600" stop="20251116093000 +0600" channel="aljazeera.com">
     <title lang="bn">News Live</title>
   </programme>
-  <programme start="20251116083000 +0600" stop="20251116090000 +0600" channel="aljazeera.com">
+  <programme start="20251116093000 +0600" stop="20251116100000 +0600" channel="aljazeera.com">
+    <title lang="bn">Talk to Al Jazeera</title>
+  </programme>
+  <programme start="20251116100000 +0600" stop="20251116110000 +0600" channel="aljazeera.com">
+    <title lang="bn">Newshour</title>
+  </programme>
+  <programme start="20251116110000 +0600" stop="20251116113000 +0600" channel="aljazeera.com">
+    <title lang="bn">News Live</title>
+  </programme>
+  <programme start="20251116113000 +0600" stop="20251116120000 +0600" channel="aljazeera.com">
     <title lang="bn">101 East</title>
   </programme>
   <channel id="WION.in">
@@ -3926,180 +3941,450 @@
     <display-name>CGTN</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/512px-CGTN.svg.png"/>
   </channel>
-  <programme start="20251114011500 +0600" stop="20251114020000 +0600" channel="CGTN.cn">
-    <title lang="bn">快乐大巴-2025-46</title>
+  <programme start="20251114000000 +0600" stop="20251114001500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
   </programme>
-  <programme start="20251114020000 +0600" stop="20251114023500 +0600" channel="CGTN.cn">
-    <title lang="bn">智慧树-2025-227</title>
+  <programme start="20251114001500 +0600" stop="20251114003000 +0600" channel="CGTN.cn">
+    <title lang="bn">Sports Scene</title>
   </programme>
-  <programme start="20251114023500 +0600" stop="20251114055000 +0600" channel="CGTN.cn">
-    <title lang="bn">动画大放映（周末黄金版）-2025-140</title>
+  <programme start="20251114003000 +0600" stop="20251114010000 +0600" channel="CGTN.cn">
+    <title lang="bn">Assignment Asia</title>
   </programme>
-  <programme start="20251114055000 +0600" stop="20251114063800 +0600" channel="CGTN.cn">
-    <title lang="bn">走向大西南-17/23</title>
+  <programme start="20251114010000 +0600" stop="20251114013000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
   </programme>
-  <programme start="20251114063800 +0600" stop="20251114072800 +0600" channel="CGTN.cn">
-    <title lang="bn">走向大西南-18/23</title>
+  <programme start="20251114013000 +0600" stop="20251114020000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Heat</title>
   </programme>
-  <programme start="20251114072800 +0600" stop="20251114081800 +0600" channel="CGTN.cn">
-    <title lang="bn">走向大西南-19/23</title>
+  <programme start="20251114020000 +0600" stop="20251114023000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
   </programme>
-  <programme start="20251114081800 +0600" stop="20251114140000 +0600" channel="CGTN.cn">
-    <title lang="bn">再见</title>
+  <programme start="20251114023000 +0600" stop="20251114030000 +0600" channel="CGTN.cn">
+    <title lang="bn">Sports Scene</title>
   </programme>
-  <programme start="20251114140000 +0600" stop="20251114154500 +0600" channel="CGTN.cn">
-    <title lang="bn">动画大放映（周末早间版）-2025-92</title>
+  <programme start="20251114030000 +0600" stop="20251114031500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
   </programme>
-  <programme start="20251114154500 +0600" stop="20251114164500 +0600" channel="CGTN.cn">
-    <title lang="bn">七巧板-2025-46</title>
+  <programme start="20251114031500 +0600" stop="20251114040000 +0600" channel="CGTN.cn">
+    <title lang="bn">Global Business</title>
   </programme>
-  <programme start="20251114164500 +0600" stop="20251114200000 +0600" channel="CGTN.cn">
-    <title lang="bn">动画大放映（周末黄金版）-2025-140</title>
+  <programme start="20251114040000 +0600" stop="20251114043000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
   </programme>
-  <programme start="20251114200000 +0600" stop="20251114223000 +0600" channel="CGTN.cn">
-    <title lang="bn">动漫世界-2025-319</title>
+  <programme start="20251114043000 +0600" stop="20251114050000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Vibe</title>
   </programme>
-  <programme start="20251114223000 +0600" stop="20251115004000 +0600" channel="CGTN.cn">
-    <title lang="bn">熊出没-逆转时空</title>
+  <programme start="20251114050000 +0600" stop="20251114051500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
   </programme>
-  <programme start="20251115004000 +0600" stop="20251115023500 +0600" channel="CGTN.cn">
-    <title lang="bn">动画大放映（周末下午版）-2025-247</title>
+  <programme start="20251114051500 +0600" stop="20251114060000 +0600" channel="CGTN.cn">
+    <title lang="bn">Africa Live</title>
   </programme>
-  <programme start="20251115023500 +0600" stop="20251115055000 +0600" channel="CGTN.cn">
-    <title lang="bn">动画大放映（周末黄金版）-2025-141</title>
+  <programme start="20251114060000 +0600" stop="20251114063000 +0600" channel="CGTN.cn">
+    <title lang="bn">Asia Today</title>
   </programme>
-  <programme start="20251115055000 +0600" stop="20251115063800 +0600" channel="CGTN.cn">
-    <title lang="bn">走向大西南-20/23</title>
+  <programme start="20251114063000 +0600" stop="20251114070000 +0600" channel="CGTN.cn">
+    <title lang="bn">Dialogue</title>
   </programme>
-  <programme start="20251115063800 +0600" stop="20251115072800 +0600" channel="CGTN.cn">
-    <title lang="bn">走向大西南-21/23</title>
+  <programme start="20251114070000 +0600" stop="20251114071500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
   </programme>
-  <programme start="20251115072800 +0600" stop="20251115075800 +0600" channel="CGTN.cn">
-    <title lang="bn">电影-羊城暗哨</title>
+  <programme start="20251114071500 +0600" stop="20251114080000 +0600" channel="CGTN.cn">
+    <title lang="bn">China 24</title>
+  </programme>
+  <programme start="20251114080000 +0600" stop="20251114083000 +0600" channel="CGTN.cn">
+    <title lang="bn">Global Business</title>
+  </programme>
+  <programme start="20251114083000 +0600" stop="20251114090000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Point With Liu Xin</title>
+  </programme>
+  <programme start="20251114090000 +0600" stop="20251114093000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251114093000 +0600" stop="20251114100000 +0600" channel="CGTN.cn">
+    <title lang="bn">World Insight With Tian Wei</title>
+  </programme>
+  <programme start="20251114100000 +0600" stop="20251114103000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251114103000 +0600" stop="20251114110000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Vibe</title>
+  </programme>
+  <programme start="20251114110000 +0600" stop="20251114120000 +0600" channel="CGTN.cn">
+    <title lang="bn">Global Business</title>
+  </programme>
+  <programme start="20251114120000 +0600" stop="20251114130000 +0600" channel="CGTN.cn">
+    <title lang="bn">Africa Live</title>
+  </programme>
+  <programme start="20251114130000 +0600" stop="20251114140000 +0600" channel="CGTN.cn">
+    <title lang="bn">Global Business</title>
+  </programme>
+  <programme start="20251114140000 +0600" stop="20251114143000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251114143000 +0600" stop="20251114150000 +0600" channel="CGTN.cn">
+    <title lang="bn">World Insight With Tian Wei</title>
+  </programme>
+  <programme start="20251114150000 +0600" stop="20251114153000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251114153000 +0600" stop="20251114160000 +0600" channel="CGTN.cn">
+    <title lang="bn">Dialogue</title>
+  </programme>
+  <programme start="20251114160000 +0600" stop="20251114163000 +0600" channel="CGTN.cn">
+    <title lang="bn">Global Business</title>
+  </programme>
+  <programme start="20251114163000 +0600" stop="20251114170000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Point With Liu Xin</title>
+  </programme>
+  <programme start="20251114170000 +0600" stop="20251114180000 +0600" channel="CGTN.cn">
+    <title lang="bn">Americas Now</title>
+  </programme>
+  <programme start="20251114180000 +0600" stop="20251114183000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Heat</title>
+  </programme>
+  <programme start="20251114183000 +0600" stop="20251114190000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251114190000 +0600" stop="20251114200000 +0600" channel="CGTN.cn">
+    <title lang="bn">Global Business</title>
+  </programme>
+  <programme start="20251114200000 +0600" stop="20251114203000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251114203000 +0600" stop="20251114210000 +0600" channel="CGTN.cn">
+    <title lang="bn">China 24</title>
+  </programme>
+  <programme start="20251114210000 +0600" stop="20251114213000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251114213000 +0600" stop="20251114220000 +0600" channel="CGTN.cn">
+    <title lang="bn">World Insight With Tian Wei</title>
+  </programme>
+  <programme start="20251114220000 +0600" stop="20251114221500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251114221500 +0600" stop="20251114223000 +0600" channel="CGTN.cn">
+    <title lang="bn">Sports Scene</title>
+  </programme>
+  <programme start="20251114223000 +0600" stop="20251114230000 +0600" channel="CGTN.cn">
+    <title lang="bn">Travelogue</title>
+  </programme>
+  <programme start="20251114230000 +0600" stop="20251115000000 +0600" channel="CGTN.cn">
+    <title lang="bn">Global Watch</title>
+  </programme>
+  <programme start="20251115000000 +0600" stop="20251115010000 +0600" channel="CGTN.cn">
+    <title lang="bn">Big Story</title>
+  </programme>
+  <programme start="20251115010000 +0600" stop="20251115013000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115013000 +0600" stop="20251115020000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Heat</title>
+  </programme>
+  <programme start="20251115020000 +0600" stop="20251115023000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115023000 +0600" stop="20251115030000 +0600" channel="CGTN.cn">
+    <title lang="bn">Sports Scene</title>
+  </programme>
+  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115033000 +0600" stop="20251115040000 +0600" channel="CGTN.cn">
+    <title lang="bn">Biz Talk</title>
+  </programme>
+  <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115043000 +0600" stop="20251115050000 +0600" channel="CGTN.cn">
+    <title lang="bn">Inheritors</title>
+  </programme>
+  <programme start="20251115050000 +0600" stop="20251115051500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115051500 +0600" stop="20251115060000 +0600" channel="CGTN.cn">
+    <title lang="bn">Africa Live</title>
+  </programme>
+  <programme start="20251115060000 +0600" stop="20251115063000 +0600" channel="CGTN.cn">
+    <title lang="bn">Asia Today</title>
+  </programme>
+  <programme start="20251115063000 +0600" stop="20251115070000 +0600" channel="CGTN.cn">
+    <title lang="bn">Leaders Talk</title>
+  </programme>
+  <programme start="20251115070000 +0600" stop="20251115071500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115071500 +0600" stop="20251115080000 +0600" channel="CGTN.cn">
+    <title lang="bn">China 24</title>
+  </programme>
+  <programme start="20251115080000 +0600" stop="20251115083000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115083000 +0600" stop="20251115090000 +0600" channel="CGTN.cn">
+    <title lang="bn">Biz Talk</title>
+  </programme>
+  <programme start="20251115090000 +0600" stop="20251115093000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="CGTN.cn">
+    <title lang="bn">Assignment Asia</title>
+  </programme>
+  <programme start="20251115100000 +0600" stop="20251115103000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115103000 +0600" stop="20251115110000 +0600" channel="CGTN.cn">
+    <title lang="bn">Inheritors</title>
+  </programme>
+  <programme start="20251115110000 +0600" stop="20251115113000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115113000 +0600" stop="20251115120000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Agenda</title>
+  </programme>
+  <programme start="20251115120000 +0600" stop="20251115123000 +0600" channel="CGTN.cn">
+    <title lang="bn">Africa Live</title>
+  </programme>
+  <programme start="20251115123000 +0600" stop="20251115130000 +0600" channel="CGTN.cn">
+    <title lang="bn">Talk Africa</title>
+  </programme>
+  <programme start="20251115130000 +0600" stop="20251115133000 +0600" channel="CGTN.cn">
+    <title lang="bn">Sports Scene</title>
+  </programme>
+  <programme start="20251115133000 +0600" stop="20251115140000 +0600" channel="CGTN.cn">
+    <title lang="bn">Biz Talk</title>
+  </programme>
+  <programme start="20251115140000 +0600" stop="20251115143000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115143000 +0600" stop="20251115150000 +0600" channel="CGTN.cn">
+    <title lang="bn">Travelogue</title>
+  </programme>
+  <programme start="20251115150000 +0600" stop="20251115153000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Agenda</title>
+  </programme>
+  <programme start="20251115160000 +0600" stop="20251115163000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115163000 +0600" stop="20251115170000 +0600" channel="CGTN.cn">
+    <title lang="bn">Leaders Talk</title>
+  </programme>
+  <programme start="20251115170000 +0600" stop="20251115180000 +0600" channel="CGTN.cn">
+    <title lang="bn">Full Frame</title>
+  </programme>
+  <programme start="20251115180000 +0600" stop="20251115183000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115183000 +0600" stop="20251115190000 +0600" channel="CGTN.cn">
+    <title lang="bn">Assignment Asia</title>
+  </programme>
+  <programme start="20251115190000 +0600" stop="20251115193000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115193000 +0600" stop="20251115200000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Agenda</title>
+  </programme>
+  <programme start="20251115200000 +0600" stop="20251115210000 +0600" channel="CGTN.cn">
+    <title lang="bn">Big Story</title>
+  </programme>
+  <programme start="20251115210000 +0600" stop="20251115213000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115213000 +0600" stop="20251115220000 +0600" channel="CGTN.cn">
+    <title lang="bn">Inheritors</title>
+  </programme>
+  <programme start="20251115220000 +0600" stop="20251115221500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251115221500 +0600" stop="20251115223000 +0600" channel="CGTN.cn">
+    <title lang="bn">Sports Scene</title>
+  </programme>
+  <programme start="20251115223000 +0600" stop="20251115230000 +0600" channel="CGTN.cn">
+    <title lang="bn">Leaders Talk</title>
+  </programme>
+  <programme start="20251115230000 +0600" stop="20251116000000 +0600" channel="CGTN.cn">
+    <title lang="bn">Global Watch</title>
+  </programme>
+  <programme start="20251116000000 +0600" stop="20251116010000 +0600" channel="CGTN.cn">
+    <title lang="bn">Full Frame</title>
+  </programme>
+  <programme start="20251116010000 +0600" stop="20251116013000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116013000 +0600" stop="20251116020000 +0600" channel="CGTN.cn">
+    <title lang="bn">Biz Talk</title>
+  </programme>
+  <programme start="20251116020000 +0600" stop="20251116023000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116023000 +0600" stop="20251116030000 +0600" channel="CGTN.cn">
+    <title lang="bn">Sports Scene</title>
+  </programme>
+  <programme start="20251116030000 +0600" stop="20251116033000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116033000 +0600" stop="20251116040000 +0600" channel="CGTN.cn">
+    <title lang="bn">Talk Africa</title>
+  </programme>
+  <programme start="20251116040000 +0600" stop="20251116043000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116043000 +0600" stop="20251116050000 +0600" channel="CGTN.cn">
+    <title lang="bn">Faces Of Africa</title>
+  </programme>
+  <programme start="20251116050000 +0600" stop="20251116051500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116051500 +0600" stop="20251116060000 +0600" channel="CGTN.cn">
+    <title lang="bn">Africa Live</title>
+  </programme>
+  <programme start="20251116060000 +0600" stop="20251116070000 +0600" channel="CGTN.cn">
+    <title lang="bn">Zoom In</title>
+  </programme>
+  <programme start="20251116070000 +0600" stop="20251116071500 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116071500 +0600" stop="20251116080000 +0600" channel="CGTN.cn">
+    <title lang="bn">China 24</title>
+  </programme>
+  <programme start="20251116080000 +0600" stop="20251116083000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116083000 +0600" stop="20251116090000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Agenda</title>
+  </programme>
+  <programme start="20251116090000 +0600" stop="20251116100000 +0600" channel="CGTN.cn">
+    <title lang="bn">Big Story</title>
+  </programme>
+  <programme start="20251116100000 +0600" stop="20251116103000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116103000 +0600" stop="20251116110000 +0600" channel="CGTN.cn">
+    <title lang="bn">Travelogue</title>
+  </programme>
+  <programme start="20251116110000 +0600" stop="20251116113000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today</title>
+  </programme>
+  <programme start="20251116113000 +0600" stop="20251116120000 +0600" channel="CGTN.cn">
+    <title lang="bn">Razor</title>
   </programme>
   <channel id="cna.sg">
     <display-name>Channel News Asia</display-name>
     <icon src="https://logowik.com/content/uploads/images/cna-channel-news-asia9392.jpg"/>
   </channel>
-  <programme start="20251114000000 +0600" stop="20251114010000 +0600" channel="cna.sg">
-    <title lang="bn">Xylvie&amp;#x27;s World Of Brick Art</title>
+  <programme start="20251114000000 +0600" stop="20251114003000 +0600" channel="cna.sg">
+    <title lang="bn">Zero Waste Kitchen</title>
   </programme>
-  <programme start="20251114010000 +0600" stop="20251114010200 +0600" channel="cna.sg">
-    <title lang="bn">Headline News</title>
+  <programme start="20251114003000 +0600" stop="20251114010000 +0600" channel="cna.sg">
+    <title lang="bn">CNA Correspondent</title>
   </programme>
-  <programme start="20251114010200 +0600" stop="20251114013000 +0600" channel="cna.sg">
-    <title lang="bn">Talking Point</title>
-  </programme>
-  <programme start="20251114013000 +0600" stop="20251114020000 +0600" channel="cna.sg">
-    <title lang="bn">In Search Of Heat</title>
-  </programme>
-  <programme start="20251114020000 +0600" stop="20251114030000 +0600" channel="cna.sg">
-    <title lang="bn">East Asia Tonight</title>
+  <programme start="20251114010000 +0600" stop="20251114030000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251114030000 +0600" stop="20251114040000 +0600" channel="cna.sg">
-    <title lang="bn">Chinese Matchmakers</title>
+    <title lang="bn">Xylvie&amp;#x27;s World Of Brick Art</title>
   </programme>
-  <programme start="20251114040000 +0600" stop="20251114050000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Tonight</title>
-  </programme>
-  <programme start="20251114050000 +0600" stop="20251114060000 +0600" channel="cna.sg">
-    <title lang="bn">Japan Hour</title>
-  </programme>
-  <programme start="20251114060000 +0600" stop="20251114070000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Tonight</title>
-  </programme>
-  <programme start="20251114070000 +0600" stop="20251114080000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Hour</title>
-  </programme>
-  <programme start="20251114080000 +0600" stop="20251114080300 +0600" channel="cna.sg">
+  <programme start="20251114040000 +0600" stop="20251114040200 +0600" channel="cna.sg">
     <title lang="bn">Headline News</title>
   </programme>
-  <programme start="20251114080300 +0600" stop="20251114090000 +0600" channel="cna.sg">
-    <title lang="bn">East Asia Tonight</title>
-  </programme>
-  <programme start="20251114090000 +0600" stop="20251114100000 +0600" channel="cna.sg">
-    <title lang="bn">Chinese Matchmakers</title>
-  </programme>
-  <programme start="20251114100000 +0600" stop="20251114110000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Tonight</title>
-  </programme>
-  <programme start="20251114110000 +0600" stop="20251114120000 +0600" channel="cna.sg">
-    <title lang="bn">Chinese Matchmakers</title>
-  </programme>
-  <programme start="20251114120000 +0600" stop="20251114130000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Tonight</title>
-  </programme>
-  <programme start="20251114130000 +0600" stop="20251114140000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Hour</title>
-  </programme>
-  <programme start="20251114140000 +0600" stop="20251114150000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Tonight</title>
-  </programme>
-  <programme start="20251114150000 +0600" stop="20251114153000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Now</title>
-  </programme>
-  <programme start="20251114153000 +0600" stop="20251114160000 +0600" channel="cna.sg">
-    <title lang="bn">On The Red Dot</title>
-  </programme>
-  <programme start="20251114160000 +0600" stop="20251114163000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Now</title>
-  </programme>
-  <programme start="20251114163000 +0600" stop="20251114170000 +0600" channel="cna.sg">
+  <programme start="20251114040200 +0600" stop="20251114043000 +0600" channel="cna.sg">
     <title lang="bn">Talking Point</title>
   </programme>
-  <programme start="20251114170000 +0600" stop="20251114173000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Now</title>
-  </programme>
-  <programme start="20251114173000 +0600" stop="20251114180000 +0600" channel="cna.sg">
+  <programme start="20251114043000 +0600" stop="20251114050000 +0600" channel="cna.sg">
     <title lang="bn">In Search Of Heat</title>
   </programme>
-  <programme start="20251114180000 +0600" stop="20251114180200 +0600" channel="cna.sg">
+  <programme start="20251114050000 +0600" stop="20251114060000 +0600" channel="cna.sg">
+    <title lang="bn">East Asia Tonight</title>
+  </programme>
+  <programme start="20251114060000 +0600" stop="20251114070000 +0600" channel="cna.sg">
+    <title lang="bn">Chinese Matchmakers</title>
+  </programme>
+  <programme start="20251114070000 +0600" stop="20251114080000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Tonight</title>
+  </programme>
+  <programme start="20251114080000 +0600" stop="20251114090000 +0600" channel="cna.sg">
+    <title lang="bn">Japan Hour</title>
+  </programme>
+  <programme start="20251114090000 +0600" stop="20251114100000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Tonight</title>
+  </programme>
+  <programme start="20251114100000 +0600" stop="20251114110000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Hour</title>
+  </programme>
+  <programme start="20251114110000 +0600" stop="20251114110300 +0600" channel="cna.sg">
     <title lang="bn">Headline News</title>
   </programme>
-  <programme start="20251114180200 +0600" stop="20251114190000 +0600" channel="cna.sg">
+  <programme start="20251114110300 +0600" stop="20251114120000 +0600" channel="cna.sg">
+    <title lang="bn">East Asia Tonight</title>
+  </programme>
+  <programme start="20251114120000 +0600" stop="20251114130000 +0600" channel="cna.sg">
+    <title lang="bn">Chinese Matchmakers</title>
+  </programme>
+  <programme start="20251114130000 +0600" stop="20251114140000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Tonight</title>
+  </programme>
+  <programme start="20251114140000 +0600" stop="20251114150000 +0600" channel="cna.sg">
+    <title lang="bn">Chinese Matchmakers</title>
+  </programme>
+  <programme start="20251114150000 +0600" stop="20251114160000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Tonight</title>
+  </programme>
+  <programme start="20251114160000 +0600" stop="20251114170000 +0600" channel="cna.sg">
     <title lang="bn">Singapore Hour</title>
+  </programme>
+  <programme start="20251114170000 +0600" stop="20251114180000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Tonight</title>
+  </programme>
+  <programme start="20251114180000 +0600" stop="20251114183000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Now</title>
+  </programme>
+  <programme start="20251114183000 +0600" stop="20251114190000 +0600" channel="cna.sg">
+    <title lang="bn">On The Red Dot</title>
   </programme>
   <programme start="20251114190000 +0600" stop="20251114193000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251114193000 +0600" stop="20251114200000 +0600" channel="cna.sg">
-    <title lang="bn">On The Red Dot</title>
+    <title lang="bn">Talking Point</title>
   </programme>
   <programme start="20251114200000 +0600" stop="20251114203000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251114203000 +0600" stop="20251114210000 +0600" channel="cna.sg">
-    <title lang="bn">Zero Waste Kitchen</title>
+    <title lang="bn">In Search Of Heat</title>
   </programme>
   <programme start="20251114210000 +0600" stop="20251114210200 +0600" channel="cna.sg">
     <title lang="bn">Headline News</title>
   </programme>
   <programme start="20251114210200 +0600" stop="20251114220000 +0600" channel="cna.sg">
-    <title lang="bn">Insight</title>
+    <title lang="bn">Singapore Hour</title>
   </programme>
   <programme start="20251114220000 +0600" stop="20251114223000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251114223000 +0600" stop="20251114230000 +0600" channel="cna.sg">
-    <title lang="bn">CNA Correspondent</title>
+    <title lang="bn">On The Red Dot</title>
   </programme>
   <programme start="20251114230000 +0600" stop="20251114233000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251114233000 +0600" stop="20251115000000 +0600" channel="cna.sg">
-    <title lang="bn">In Search Of Heat</title>
+    <title lang="bn">Zero Waste Kitchen</title>
   </programme>
   <programme start="20251115000000 +0600" stop="20251115000200 +0600" channel="cna.sg">
     <title lang="bn">Headline News</title>
   </programme>
   <programme start="20251115000200 +0600" stop="20251115010000 +0600" channel="cna.sg">
-    <title lang="bn">The Internet &amp;amp; Us</title>
+    <title lang="bn">Insight</title>
   </programme>
   <programme start="20251115010000 +0600" stop="20251115013000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251115013000 +0600" stop="20251115020000 +0600" channel="cna.sg">
-    <title lang="bn">Talking Point</title>
+    <title lang="bn">CNA Correspondent</title>
   </programme>
   <programme start="20251115020000 +0600" stop="20251115023000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
@@ -4111,180 +4396,198 @@
     <title lang="bn">Headline News</title>
   </programme>
   <programme start="20251115030200 +0600" stop="20251115040000 +0600" channel="cna.sg">
-    <title lang="bn">Japan Hour</title>
+    <title lang="bn">The Internet &amp;amp; Us</title>
   </programme>
   <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Tonight</title>
+    <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251115043000 +0600" stop="20251115050000 +0600" channel="cna.sg">
-    <title lang="bn">Money Mind</title>
-  </programme>
-  <programme start="20251115050000 +0600" stop="20251115050200 +0600" channel="cna.sg">
-    <title lang="bn">Headline News</title>
-  </programme>
-  <programme start="20251115050200 +0600" stop="20251115060000 +0600" channel="cna.sg">
-    <title lang="bn">Through Time</title>
-  </programme>
-  <programme start="20251115060000 +0600" stop="20251115063000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Tonight</title>
-  </programme>
-  <programme start="20251115063000 +0600" stop="20251115070000 +0600" channel="cna.sg">
-    <title lang="bn">On The Red Dot</title>
-  </programme>
-  <programme start="20251115070000 +0600" stop="20251115070300 +0600" channel="cna.sg">
-    <title lang="bn">Headline News</title>
-  </programme>
-  <programme start="20251115070300 +0600" stop="20251115080000 +0600" channel="cna.sg">
-    <title lang="bn">Chinese Matchmakers</title>
-  </programme>
-  <programme start="20251115080000 +0600" stop="20251115080300 +0600" channel="cna.sg">
-    <title lang="bn">Headline News</title>
-  </programme>
-  <programme start="20251115080300 +0600" stop="20251115083000 +0600" channel="cna.sg">
-    <title lang="bn">CNA Correspondent</title>
-  </programme>
-  <programme start="20251115083000 +0600" stop="20251115090000 +0600" channel="cna.sg">
-    <title lang="bn">Money Mind</title>
-  </programme>
-  <programme start="20251115090000 +0600" stop="20251115093000 +0600" channel="cna.sg">
-    <title lang="bn">Zero Waste Kitchen</title>
-  </programme>
-  <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="cna.sg">
     <title lang="bn">Talking Point</title>
   </programme>
-  <programme start="20251115100000 +0600" stop="20251115103000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Tonight</title>
+  <programme start="20251115050000 +0600" stop="20251115053000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Now</title>
   </programme>
-  <programme start="20251115103000 +0600" stop="20251115110000 +0600" channel="cna.sg">
-    <title lang="bn">On The Red Dot</title>
+  <programme start="20251115053000 +0600" stop="20251115060000 +0600" channel="cna.sg">
+    <title lang="bn">In Search Of Heat</title>
   </programme>
-  <programme start="20251115110000 +0600" stop="20251115120000 +0600" channel="cna.sg">
-    <title lang="bn">Chinese Matchmakers</title>
+  <programme start="20251115060000 +0600" stop="20251115060200 +0600" channel="cna.sg">
+    <title lang="bn">Headline News</title>
   </programme>
-  <programme start="20251115120000 +0600" stop="20251115123000 +0600" channel="cna.sg">
+  <programme start="20251115060200 +0600" stop="20251115070000 +0600" channel="cna.sg">
+    <title lang="bn">Japan Hour</title>
+  </programme>
+  <programme start="20251115070000 +0600" stop="20251115073000 +0600" channel="cna.sg">
     <title lang="bn">Asia Tonight</title>
   </programme>
-  <programme start="20251115123000 +0600" stop="20251115130000 +0600" channel="cna.sg">
-    <title lang="bn">In Search Of Heat</title>
-  </programme>
-  <programme start="20251115130000 +0600" stop="20251115140000 +0600" channel="cna.sg">
-    <title lang="bn">Through Time</title>
-  </programme>
-  <programme start="20251115140000 +0600" stop="20251115143000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Tonight</title>
-  </programme>
-  <programme start="20251115143000 +0600" stop="20251115150000 +0600" channel="cna.sg">
-    <title lang="bn">CNA Correspondent</title>
-  </programme>
-  <programme start="20251115150000 +0600" stop="20251115153000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Now</title>
-  </programme>
-  <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="cna.sg">
+  <programme start="20251115073000 +0600" stop="20251115080000 +0600" channel="cna.sg">
     <title lang="bn">Money Mind</title>
   </programme>
-  <programme start="20251115160000 +0600" stop="20251115163000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Now</title>
-  </programme>
-  <programme start="20251115163000 +0600" stop="20251115170000 +0600" channel="cna.sg">
-    <title lang="bn">In Search Of Heat</title>
-  </programme>
-  <programme start="20251115170000 +0600" stop="20251115173000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Now</title>
-  </programme>
-  <programme start="20251115173000 +0600" stop="20251115180000 +0600" channel="cna.sg">
-    <title lang="bn">Talking Point</title>
-  </programme>
-  <programme start="20251115180000 +0600" stop="20251115180200 +0600" channel="cna.sg">
+  <programme start="20251115080000 +0600" stop="20251115080200 +0600" channel="cna.sg">
     <title lang="bn">Headline News</title>
   </programme>
-  <programme start="20251115180200 +0600" stop="20251115190000 +0600" channel="cna.sg">
+  <programme start="20251115080200 +0600" stop="20251115090000 +0600" channel="cna.sg">
     <title lang="bn">Through Time</title>
+  </programme>
+  <programme start="20251115090000 +0600" stop="20251115093000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Tonight</title>
+  </programme>
+  <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="cna.sg">
+    <title lang="bn">On The Red Dot</title>
+  </programme>
+  <programme start="20251115100000 +0600" stop="20251115100300 +0600" channel="cna.sg">
+    <title lang="bn">Headline News</title>
+  </programme>
+  <programme start="20251115100300 +0600" stop="20251115110000 +0600" channel="cna.sg">
+    <title lang="bn">Chinese Matchmakers</title>
+  </programme>
+  <programme start="20251115110000 +0600" stop="20251115110300 +0600" channel="cna.sg">
+    <title lang="bn">Headline News</title>
+  </programme>
+  <programme start="20251115110300 +0600" stop="20251115113000 +0600" channel="cna.sg">
+    <title lang="bn">CNA Correspondent</title>
+  </programme>
+  <programme start="20251115113000 +0600" stop="20251115120000 +0600" channel="cna.sg">
+    <title lang="bn">Money Mind</title>
+  </programme>
+  <programme start="20251115120000 +0600" stop="20251115123000 +0600" channel="cna.sg">
+    <title lang="bn">Zero Waste Kitchen</title>
+  </programme>
+  <programme start="20251115123000 +0600" stop="20251115130000 +0600" channel="cna.sg">
+    <title lang="bn">Talking Point</title>
+  </programme>
+  <programme start="20251115130000 +0600" stop="20251115133000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Tonight</title>
+  </programme>
+  <programme start="20251115133000 +0600" stop="20251115140000 +0600" channel="cna.sg">
+    <title lang="bn">On The Red Dot</title>
+  </programme>
+  <programme start="20251115140000 +0600" stop="20251115150000 +0600" channel="cna.sg">
+    <title lang="bn">Chinese Matchmakers</title>
+  </programme>
+  <programme start="20251115150000 +0600" stop="20251115153000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Tonight</title>
+  </programme>
+  <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="cna.sg">
+    <title lang="bn">In Search Of Heat</title>
+  </programme>
+  <programme start="20251115160000 +0600" stop="20251115170000 +0600" channel="cna.sg">
+    <title lang="bn">Through Time</title>
+  </programme>
+  <programme start="20251115170000 +0600" stop="20251115173000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Tonight</title>
+  </programme>
+  <programme start="20251115173000 +0600" stop="20251115180000 +0600" channel="cna.sg">
+    <title lang="bn">CNA Correspondent</title>
+  </programme>
+  <programme start="20251115180000 +0600" stop="20251115183000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Now</title>
+  </programme>
+  <programme start="20251115183000 +0600" stop="20251115190000 +0600" channel="cna.sg">
+    <title lang="bn">Money Mind</title>
   </programme>
   <programme start="20251115190000 +0600" stop="20251115193000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251115193000 +0600" stop="20251115200000 +0600" channel="cna.sg">
-    <title lang="bn">Zero Waste Kitchen</title>
+    <title lang="bn">In Search Of Heat</title>
   </programme>
   <programme start="20251115200000 +0600" stop="20251115203000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251115203000 +0600" stop="20251115210000 +0600" channel="cna.sg">
-    <title lang="bn">Money Mind</title>
+    <title lang="bn">Talking Point</title>
   </programme>
   <programme start="20251115210000 +0600" stop="20251115210200 +0600" channel="cna.sg">
     <title lang="bn">Headline News</title>
   </programme>
   <programme start="20251115210200 +0600" stop="20251115220000 +0600" channel="cna.sg">
-    <title lang="bn">Japan Hour</title>
+    <title lang="bn">Through Time</title>
   </programme>
   <programme start="20251115220000 +0600" stop="20251115223000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251115223000 +0600" stop="20251115230000 +0600" channel="cna.sg">
-    <title lang="bn">In Search Of Heat</title>
+    <title lang="bn">Zero Waste Kitchen</title>
   </programme>
   <programme start="20251115230000 +0600" stop="20251115233000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251115233000 +0600" stop="20251116000000 +0600" channel="cna.sg">
-    <title lang="bn">On The Red Dot</title>
+    <title lang="bn">Money Mind</title>
   </programme>
   <programme start="20251116000000 +0600" stop="20251116000200 +0600" channel="cna.sg">
     <title lang="bn">Headline News</title>
   </programme>
   <programme start="20251116000200 +0600" stop="20251116010000 +0600" channel="cna.sg">
-    <title lang="bn">Chinese Matchmakers</title>
+    <title lang="bn">Japan Hour</title>
   </programme>
   <programme start="20251116010000 +0600" stop="20251116013000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251116013000 +0600" stop="20251116020000 +0600" channel="cna.sg">
-    <title lang="bn">Money Mind</title>
+    <title lang="bn">In Search Of Heat</title>
   </programme>
   <programme start="20251116020000 +0600" stop="20251116023000 +0600" channel="cna.sg">
     <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251116023000 +0600" stop="20251116030000 +0600" channel="cna.sg">
-    <title lang="bn">Talking Point</title>
+    <title lang="bn">On The Red Dot</title>
   </programme>
   <programme start="20251116030000 +0600" stop="20251116030200 +0600" channel="cna.sg">
     <title lang="bn">Headline News</title>
   </programme>
   <programme start="20251116030200 +0600" stop="20251116040000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Hour</title>
+    <title lang="bn">Chinese Matchmakers</title>
   </programme>
   <programme start="20251116040000 +0600" stop="20251116043000 +0600" channel="cna.sg">
-    <title lang="bn">Asia Tonight</title>
+    <title lang="bn">Asia Now</title>
   </programme>
   <programme start="20251116043000 +0600" stop="20251116050000 +0600" channel="cna.sg">
-    <title lang="bn">In Search Of Heat</title>
-  </programme>
-  <programme start="20251116050000 +0600" stop="20251116050200 +0600" channel="cna.sg">
-    <title lang="bn">Headline News</title>
-  </programme>
-  <programme start="20251116050200 +0600" stop="20251116060000 +0600" channel="cna.sg">
-    <title lang="bn">Through Time</title>
-  </programme>
-  <programme start="20251116060000 +0600" stop="20251116063000 +0600" channel="cna.sg">
-    <title lang="bn">Singapore Tonight</title>
-  </programme>
-  <programme start="20251116063000 +0600" stop="20251116070000 +0600" channel="cna.sg">
-    <title lang="bn">Talking Point</title>
-  </programme>
-  <programme start="20251116070000 +0600" stop="20251116070300 +0600" channel="cna.sg">
-    <title lang="bn">Headline News</title>
-  </programme>
-  <programme start="20251116070300 +0600" stop="20251116080000 +0600" channel="cna.sg">
-    <title lang="bn">Through Time</title>
-  </programme>
-  <programme start="20251116080000 +0600" stop="20251116080300 +0600" channel="cna.sg">
-    <title lang="bn">Headline News</title>
-  </programme>
-  <programme start="20251116080300 +0600" stop="20251116083000 +0600" channel="cna.sg">
     <title lang="bn">Money Mind</title>
   </programme>
-  <programme start="20251116083000 +0600" stop="20251116090000 +0600" channel="cna.sg">
+  <programme start="20251116050000 +0600" stop="20251116053000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Now</title>
+  </programme>
+  <programme start="20251116053000 +0600" stop="20251116060000 +0600" channel="cna.sg">
+    <title lang="bn">Talking Point</title>
+  </programme>
+  <programme start="20251116060000 +0600" stop="20251116060200 +0600" channel="cna.sg">
+    <title lang="bn">Headline News</title>
+  </programme>
+  <programme start="20251116060200 +0600" stop="20251116070000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Hour</title>
+  </programme>
+  <programme start="20251116070000 +0600" stop="20251116073000 +0600" channel="cna.sg">
+    <title lang="bn">Asia Tonight</title>
+  </programme>
+  <programme start="20251116073000 +0600" stop="20251116080000 +0600" channel="cna.sg">
+    <title lang="bn">In Search Of Heat</title>
+  </programme>
+  <programme start="20251116080000 +0600" stop="20251116080200 +0600" channel="cna.sg">
+    <title lang="bn">Headline News</title>
+  </programme>
+  <programme start="20251116080200 +0600" stop="20251116090000 +0600" channel="cna.sg">
+    <title lang="bn">Through Time</title>
+  </programme>
+  <programme start="20251116090000 +0600" stop="20251116093000 +0600" channel="cna.sg">
+    <title lang="bn">Singapore Tonight</title>
+  </programme>
+  <programme start="20251116093000 +0600" stop="20251116100000 +0600" channel="cna.sg">
+    <title lang="bn">Talking Point</title>
+  </programme>
+  <programme start="20251116100000 +0600" stop="20251116100300 +0600" channel="cna.sg">
+    <title lang="bn">Headline News</title>
+  </programme>
+  <programme start="20251116100300 +0600" stop="20251116110000 +0600" channel="cna.sg">
+    <title lang="bn">Through Time</title>
+  </programme>
+  <programme start="20251116110000 +0600" stop="20251116110300 +0600" channel="cna.sg">
+    <title lang="bn">Headline News</title>
+  </programme>
+  <programme start="20251116110300 +0600" stop="20251116113000 +0600" channel="cna.sg">
+    <title lang="bn">Money Mind</title>
+  </programme>
+  <programme start="20251116113000 +0600" stop="20251116120000 +0600" channel="cna.sg">
     <title lang="bn">CNA Correspondent</title>
   </programme>
   <channel id="TRT World">
