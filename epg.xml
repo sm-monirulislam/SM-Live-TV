@@ -702,9 +702,6 @@
     <display-name>ENT | Dangal TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/3/36/Dangalv2.png"/>
   </channel>
-  <programme start="20251114210000 +0600" stop="20251114220000 +0600" channel="DangalTV.in">
-    <title lang="bn">Gehna Zevar Ya Zanjeer</title>
-  </programme>
   <programme start="20251114220000 +0600" stop="20251114223000 +0600" channel="DangalTV.in">
     <title lang="bn">Deewani</title>
   </programme>
@@ -748,12 +745,6 @@
     <display-name>ENT | COLORS HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/19/Colorstv-logo-black-background.jpg"/>
   </channel>
-  <programme start="20251114210000 +0600" stop="20251114213000 +0600" channel="COLORS.in">
-    <title lang="bn">Binddii</title>
-  </programme>
-  <programme start="20251114213000 +0600" stop="20251114230000 +0600" channel="COLORS.in">
-    <title lang="bn">Pati Patni Aur Panga</title>
-  </programme>
   <programme start="20251114230000 +0600" stop="20251115003000 +0600" channel="COLORS.in">
     <title lang="bn">Bigg Boss</title>
   </programme>
@@ -828,9 +819,6 @@
     <display-name>STAR BHARAT HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/b/b9/Star_bharat_hd_clean.png"/>
   </channel>
-  <programme start="20251114213000 +0600" stop="20251114220000 +0600" channel="STARBHARATHD">
-    <title lang="bn">Kya Haal, Mr. Paanchal?</title>
-  </programme>
   <programme start="20251114220000 +0600" stop="20251114223000 +0600" channel="STARBHARATHD">
     <title lang="bn">Kya Haal, Mr. Paanchal?</title>
   </programme>
@@ -843,7 +831,10 @@
   <programme start="20251115003000 +0600" stop="20251115013000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
-  <programme start="20251115013000 +0600" stop="20251115020000 +0600" channel="STARBHARATHD">
+  <programme start="20251115013000 +0600" stop="20251115023000 +0600" channel="STARBHARATHD">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251115023000 +0600" stop="20251115030000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
   <channel id="STARBHARAT">
@@ -890,12 +881,6 @@
     <display-name>&amp;TV HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/4c/%26TV_HD_%282025%29.svg"/>
   </channel>
-  <programme start="20251114210000 +0600" stop="20251114213000 +0600" channel="AndTV.in">
-    <title lang="bn">Comedy Circus</title>
-  </programme>
-  <programme start="20251114213000 +0600" stop="20251114223000 +0600" channel="AndTV.in">
-    <title lang="bn">Comedy Circus</title>
-  </programme>
   <programme start="20251114223000 +0600" stop="20251114230000 +0600" channel="AndTV.in">
     <title lang="bn">Bhabi ji Ghar Par Hai!</title>
   </programme>
@@ -912,6 +897,12 @@
     <title lang="bn">Bhabi ji Ghar Par Hai!</title>
   </programme>
   <programme start="20251115010000 +0600" stop="20251115013000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20251115013000 +0600" stop="20251115020000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20251115020000 +0600" stop="20251115023000 +0600" channel="AndTV.in">
     <title lang="bn">Bhabi ji Ghar Par Hai!</title>
   </programme>
   <channel id="starjalsha.in">
@@ -954,21 +945,21 @@
     <display-name>Star Sports 2 4K</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/c/c3/SS2_Crop.jpg"/>
   </channel>
-  <programme start="20251114210000 +0600" stop="20251114213000 +0600" channel="starsports2hd.in">
-    <title lang="bn">1st Test: India vs. South Africa; Test Cricket</title>
-  </programme>
   <channel id="starsports3.in">
     <display-name>Star Sports 3 HD</display-name>
     <icon src="https://i.pinimg.com/originals/c7/5d/56/c75d563b3cda837cd3fb1ce5ff5089cd.png"/>
   </channel>
-  <programme start="20251114210000 +0600" stop="20251114220000 +0600" channel="starsports3.in">
-    <title lang="bn">ICC World T20 Highlights</title>
-  </programme>
   <programme start="20251114220000 +0600" stop="20251114223000 +0600" channel="starsports3.in">
     <title lang="bn">ICC Champions Trophy Highlights</title>
   </programme>
-  <programme start="20251114223000 +0600" stop="20251114230000 +0600" channel="starsports3.in">
+  <programme start="20251114223000 +0600" stop="20251114233000 +0600" channel="starsports3.in">
     <title lang="bn">TATA IPL 2026 Retention Special</title>
+  </programme>
+  <programme start="20251114233000 +0600" stop="20251115000000 +0600" channel="starsports3.in">
+    <title lang="bn">1st T20: Australia v India; T20 Cricket</title>
+  </programme>
+  <programme start="20251115000000 +0600" stop="20251115003000 +0600" channel="starsports3.in">
+    <title lang="bn">1st Test: India vs. South Africa; Test Cricket</title>
   </programme>
   <channel id="starsportsselect1.in">
     <display-name>Star Sports Select 1 HD</display-name>
@@ -994,12 +985,6 @@
     <display-name>NEWS | Republic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/f/fe/Republic-logo2.svg"/>
   </channel>
-  <programme start="20251115023000 +0600" stop="20251115030000 +0600" channel="RepublicTV.in">
-    <title lang="bn">R News</title>
-  </programme>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="RepublicTV.in">
-    <title lang="bn">R News</title>
-  </programme>
   <programme start="20251115033000 +0600" stop="20251115040000 +0600" channel="RepublicTV.in">
     <title lang="bn">The Debate Late Tonight</title>
   </programme>
@@ -1033,14 +1018,17 @@
   <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="RepublicTV.in">
     <title lang="bn">Get Me Right</title>
   </programme>
+  <programme start="20251115100000 +0600" stop="20251115103000 +0600" channel="RepublicTV.in">
+    <title lang="bn">This Is Exclusive</title>
+  </programme>
+  <programme start="20251115103000 +0600" stop="20251115110000 +0600" channel="RepublicTV.in">
+    <title lang="bn">Trending</title>
+  </programme>
   <channel id="TimesNowNavbharat">
     <display-name>NEWS | Times Now Navbhara</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD1300003OW_20240131T032351SQUARE.png_20240131032352.png"/>
   </channel>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">News Ki Paathshaala</title>
-  </programme>
-  <programme start="20251115033000 +0600" stop="20251115043000 +0600" channel="TimesNowNavbharat">
+  <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="TimesNowNavbharat">
     <title lang="bn">Sankalp</title>
   </programme>
   <programme start="20251115043000 +0600" stop="20251115053000 +0600" channel="TimesNowNavbharat">
@@ -1075,6 +1063,9 @@
   </programme>
   <programme start="20251115113000 +0600" stop="20251115120000 +0600" channel="TimesNowNavbharat">
     <title lang="bn">Times Now NavBharat Live</title>
+  </programme>
+  <programme start="20251115120000 +0600" stop="20251115123000 +0600" channel="TimesNowNavbharat">
+    <title lang="bn">Times Drive Show</title>
   </programme>
   <channel id="StarPlus.in">
     <display-name>ENT | Star Plus</display-name>
@@ -1123,10 +1114,7 @@
     <display-name>ENT | Ishara TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/7/75/Ishara_tv.png"/>
   </channel>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="IsharaTV.in">
-    <title lang="bn">Crime Files</title>
-  </programme>
-  <programme start="20251115033000 +0600" stop="20251115053000 +0600" channel="IsharaTV.in">
+  <programme start="20251115050000 +0600" stop="20251115053000 +0600" channel="IsharaTV.in">
     <title lang="bn">Shrimad Bhagwat Katha Acharyaji</title>
   </programme>
   <programme start="20251115053000 +0600" stop="20251115083000 +0600" channel="IsharaTV.in">
@@ -1162,18 +1150,15 @@
   <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="IsharaTV.in">
     <title lang="bn">Bindiya Sarkar</title>
   </programme>
+  <programme start="20251115160000 +0600" stop="20251115163000 +0600" channel="IsharaTV.in">
+    <title lang="bn">Bindiya Sarkar</title>
+  </programme>
   <channel id="EpicTV.in_TVWISH">
     <display-name>ENT | Epic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/41/Epic_TV_%282021%29.jpg"/>
   </channel>
-  <programme start="20251115022500 +0600" stop="20251115025500 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
-  </programme>
-  <programme start="20251115025500 +0600" stop="20251115032500 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Itihaas Ki Thaali Se</title>
-  </programme>
-  <programme start="20251115032500 +0600" stop="20251115035000 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Giant Hubs (2019)</title>
+  <programme start="20251115032000 +0600" stop="20251115035000 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Giant Hubs(2019)</title>
   </programme>
   <programme start="20251115035000 +0600" stop="20251115044500 +0600" channel="EpicTV.in_TVWISH">
     <title lang="bn">Destruction Decoded</title>
@@ -1205,6 +1190,12 @@
   <programme start="20251115080000 +0600" stop="20251115082500 +0600" channel="EpicTV.in_TVWISH">
     <title lang="bn">Samagri, Sampatti Aur Sauda</title>
   </programme>
+  <programme start="20251115082500 +0600" stop="20251115090500 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Regiment Diaries</title>
+  </programme>
+  <programme start="20251115090500 +0600" stop="20251115093500 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Odd Jobs</title>
+  </programme>
   <channel id="DANGAL2">
     <display-name>ENT | DANGAL2</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/a/ac/Dangal_2.png"/>
@@ -1233,13 +1224,7 @@
     <display-name>Zee Bangla Cinema</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/5/59/Zee_Bangla_Cinema_%282025%29.svg"/>
   </channel>
-  <programme start="20251115023000 +0600" stop="20251115030000 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">S.I.T</title>
-  </programme>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">Bedeni Jyotsnar Amar Prem</title>
-  </programme>
-  <programme start="20251115033000 +0600" stop="20251115053000 +0600" channel="zeebanglacinema.in">
+  <programme start="20251115050000 +0600" stop="20251115053000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Bhalobasar Jeet</title>
   </programme>
   <programme start="20251115053000 +0600" stop="20251115063000 +0600" channel="zeebanglacinema.in">
@@ -1269,8 +1254,14 @@
   <programme start="20251115123000 +0600" stop="20251115150000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Projapati</title>
   </programme>
-  <programme start="20251115150000 +0600" stop="20251115153000 +0600" channel="zeebanglacinema.in">
+  <programme start="20251115150000 +0600" stop="20251115173000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Nagin Kanya</title>
+  </programme>
+  <programme start="20251115173000 +0600" stop="20251115200000 +0600" channel="zeebanglacinema.in">
+    <title lang="bn">Suorani Duorani</title>
+  </programme>
+  <programme start="20251115200000 +0600" stop="20251115203000 +0600" channel="zeebanglacinema.in">
+    <title lang="bn">Bedeni Jyotsnar Amar Prem</title>
   </programme>
   <channel id="colorsbanglacinemahd.in">
     <display-name>COLORS BANGLA CINEMA HD</display-name>
@@ -1282,17 +1273,14 @@
   <programme start="20251115003000 +0600" stop="20251115014500 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Chore Chore Mastuto Bhai</title>
   </programme>
-  <programme start="20251115014500 +0600" stop="20251115030000 +0600" channel="colorsbanglacinemahd.in">
+  <programme start="20251115014500 +0600" stop="20251115033000 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Bhoy (2012)</title>
-  </programme>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="colorsbanglacinemahd.in">
-    <title lang="bn">Bagh Bandi Khela</title>
   </programme>
   <programme start="20251115033000 +0600" stop="20251115040000 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Shiv Shakti (1988)</title>
   </programme>
   <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="colorsbanglacinemahd.in">
-    <title lang="bn">Shiv Shakti (1988)</title>
+    <title lang="bn">Shiva Shakti(1988)</title>
   </programme>
   <programme start="20251115043000 +0600" stop="20251115050000 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Rann (2010)</title>
@@ -1300,8 +1288,11 @@
   <programme start="20251115050000 +0600" stop="20251115071500 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Maear Kotha</title>
   </programme>
-  <programme start="20251115071500 +0600" stop="20251115101000 +0600" channel="colorsbanglacinemahd.in">
+  <programme start="20251115071500 +0600" stop="20251115074500 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Sei to Abar Kache Ele</title>
+  </programme>
+  <programme start="20251115074500 +0600" stop="20251115101000 +0600" channel="colorsbanglacinemahd.in">
+    <title lang="bn">Jamai Raja (2014)</title>
   </programme>
   <programme start="20251115101000 +0600" stop="20251115133000 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">The Don (1953)</title>
@@ -1319,10 +1310,7 @@
     <display-name>AKASH 8</display-name>
     <icon src="https://static.wikia.nocookie.net/etv-gspn-bangla/images/3/34/Aakash_Aath_logo_%282013%29.png"/>
   </channel>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="akashaat.in">
-    <title lang="bn">Abujh Mon(2016)</title>
-  </programme>
-  <programme start="20251115033000 +0600" stop="20251115043000 +0600" channel="akashaat.in">
+  <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="akashaat.in">
     <title lang="bn">Akashe Superstar</title>
   </programme>
   <programme start="20251115043000 +0600" stop="20251115050000 +0600" channel="akashaat.in">
@@ -1355,8 +1343,11 @@
   <programme start="20251115110000 +0600" stop="20251115113000 +0600" channel="akashaat.in">
     <title lang="bn">Om Sai Ram</title>
   </programme>
-  <programme start="20251115113000 +0600" stop="20251115120000 +0600" channel="akashaat.in">
+  <programme start="20251115113000 +0600" stop="20251115123000 +0600" channel="akashaat.in">
     <title lang="bn">Akashe Superstar</title>
+  </programme>
+  <programme start="20251115123000 +0600" stop="20251115130000 +0600" channel="akashaat.in">
+    <title lang="bn">Police Files</title>
   </programme>
   <channel id="sunbangla.in">
     <display-name>SUN Bangla</display-name>
@@ -1405,10 +1396,7 @@
     <display-name>Enter 10 Bangla</display-name>
     <icon src="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg"/>
   </channel>
-  <programme start="20251115022700 +0600" stop="20251115025700 +0600" channel="enter10bangla.in">
-    <title lang="bn">Crime Alert</title>
-  </programme>
-  <programme start="20251115025700 +0600" stop="20251115034200 +0600" channel="enter10bangla.in">
+  <programme start="20251115031200 +0600" stop="20251115034200 +0600" channel="enter10bangla.in">
     <title lang="bn">Crime Alert</title>
   </programme>
   <programme start="20251115034200 +0600" stop="20251115042500 +0600" channel="enter10bangla.in">
@@ -1441,17 +1429,17 @@
   <programme start="20251115142900 +0600" stop="20251115152900 +0600" channel="enter10bangla.in">
     <title lang="bn">Crime Alert</title>
   </programme>
-  <programme start="20251115152900 +0600" stop="20251115155900 +0600" channel="enter10bangla.in">
+  <programme start="20251115152900 +0600" stop="20251115163100 +0600" channel="enter10bangla.in">
+    <title lang="bn">Crime Alert</title>
+  </programme>
+  <programme start="20251115163100 +0600" stop="20251115170100 +0600" channel="enter10bangla.in">
     <title lang="bn">Crime Alert</title>
   </programme>
   <channel id="sangeetbangla.in">
     <display-name>SANGEET BANGLA</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/d/da/Sangeet_Bangla_logo_2006.png"/>
   </channel>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="sangeetbangla.in">
-    <title lang="bn">SB Public Demand</title>
-  </programme>
-  <programme start="20251115033000 +0600" stop="20251115043000 +0600" channel="sangeetbangla.in">
+  <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="sangeetbangla.in">
     <title lang="bn">Howrah Bridge</title>
   </programme>
   <programme start="20251115043000 +0600" stop="20251115053000 +0600" channel="sangeetbangla.in">
@@ -1484,8 +1472,11 @@
   <programme start="20251115133000 +0600" stop="20251115143000 +0600" channel="sangeetbangla.in">
     <title lang="bn">Popular Choice</title>
   </programme>
-  <programme start="20251115143000 +0600" stop="20251115150000 +0600" channel="sangeetbangla.in">
+  <programme start="20251115143000 +0600" stop="20251115153000 +0600" channel="sangeetbangla.in">
     <title lang="bn">Amar Superstar</title>
+  </programme>
+  <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="sangeetbangla.in">
+    <title lang="bn">SB All Time Hits</title>
   </programme>
   <channel id="sonymaxhd.in">
     <display-name>SONY MAX HD</display-name>
@@ -1495,12 +1486,6 @@
     <display-name>SONY SAB HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/18/SONY_SAB_SD.png"/>
   </channel>
-  <programme start="20251115023000 +0600" stop="20251115030000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah(2008)</title>
-  </programme>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
-  </programme>
   <programme start="20251115033000 +0600" stop="20251115040000 +0600" channel="sonysabhd.in">
     <title lang="bn">Gatha Shiv Parivaar Ki Ganesh Kartikey</title>
   </programme>
@@ -1534,16 +1519,16 @@
   <programme start="20251115083000 +0600" stop="20251115090000 +0600" channel="sonysabhd.in">
     <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
   </programme>
+  <programme start="20251115090000 +0600" stop="20251115093000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Itti Si Khushi</title>
+  </programme>
+  <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Pushpa Impossible (2022)</title>
+  </programme>
   <channel id="RepublicBangla.in">
     <display-name>Republic Bangla</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/9/93/R.Bangla_logo_with_tagline.jpg"/>
   </channel>
-  <programme start="20251115023000 +0600" stop="20251115030000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">Kishalayer Agnibaan</title>
-  </programme>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">Kishalayer Agnibaan</title>
-  </programme>
   <programme start="20251115033000 +0600" stop="20251115040000 +0600" channel="RepublicBangla.in">
     <title lang="bn">Banglar Primetime</title>
   </programme>
@@ -1577,15 +1562,18 @@
   <programme start="20251115083000 +0600" stop="20251115090000 +0600" channel="RepublicBangla.in">
     <title lang="bn">CHA Adda R Khabor</title>
   </programme>
+  <programme start="20251115090000 +0600" stop="20251115093000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">Hawa Kemon</title>
+  </programme>
+  <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">R Bangla Live 100% News</title>
+  </programme>
   <channel id="DisneyJunior.in">
     <display-name>Disney Junior</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/3/36/2019_Disney_Junior_logo.svg"/>
   </channel>
-  <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="DisneyJunior.in">
-    <title lang="bn">The Lion Guard(2015)</title>
-  </programme>
-  <programme start="20251115033000 +0600" stop="20251115063000 +0600" channel="DisneyJunior.in">
-    <title lang="bn">Mickey Mouse Clubhouse (2009)</title>
+  <programme start="20251115060000 +0600" stop="20251115063000 +0600" channel="DisneyJunior.in">
+    <title lang="bn">Mickey Mouse Clubhouse(2009)</title>
   </programme>
   <programme start="20251115063000 +0600" stop="20251115073000 +0600" channel="DisneyJunior.in">
     <title lang="bn">PJ Masks (2015)</title>
@@ -1618,6 +1606,9 @@
     <title lang="bn">Mickey Mouse Funhouse</title>
   </programme>
   <programme start="20251115150000 +0600" stop="20251115153000 +0600" channel="DisneyJunior.in">
+    <title lang="bn">Alice&amp;#x27;s Wonderland Bakery</title>
+  </programme>
+  <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="DisneyJunior.in">
     <title lang="bn">Alice&amp;#x27;s Wonderland Bakery</title>
   </programme>
   <channel id="DDBharati.in">
@@ -2840,19 +2831,19 @@
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/1d/WION_World_Is_One_News.svg"/>
   </channel>
   <programme start="20251114000000 +0600" stop="20251114003000 +0600" channel="WION.in">
-    <title lang="bn">WION Climate Tracker</title>
+    <title lang="bn">Speed News</title>
   </programme>
   <programme start="20251114003000 +0600" stop="20251114010000 +0600" channel="WION.in">
     <title lang="bn">Top Stories</title>
   </programme>
   <programme start="20251114010000 +0600" stop="20251114013000 +0600" channel="WION.in">
-    <title lang="bn">Speed News</title>
+    <title lang="bn">WION Climate Tracker</title>
   </programme>
   <programme start="20251114013000 +0600" stop="20251114020000 +0600" channel="WION.in">
     <title lang="bn">Top Stories</title>
   </programme>
   <programme start="20251114020000 +0600" stop="20251114023000 +0600" channel="WION.in">
-    <title lang="bn">Top Stories</title>
+    <title lang="bn">Speed News</title>
   </programme>
   <programme start="20251114023000 +0600" stop="20251114030000 +0600" channel="WION.in">
     <title lang="bn">Top Stories</title>
@@ -2873,356 +2864,398 @@
     <title lang="bn">Top Stories</title>
   </programme>
   <programme start="20251114053000 +0600" stop="20251114060000 +0600" channel="WION.in">
-    <title lang="bn">WION Dispatch</title>
+    <title lang="bn">Top Stories</title>
   </programme>
   <programme start="20251114060000 +0600" stop="20251114063000 +0600" channel="WION.in">
-    <title lang="bn">Wion World Of Sport</title>
+    <title lang="bn">Top Stories</title>
   </programme>
   <programme start="20251114063000 +0600" stop="20251114070000 +0600" channel="WION.in">
-    <title lang="bn">Top Stories</title>
-  </programme>
-  <programme start="20251114070000 +0600" stop="20251114073000 +0600" channel="WION.in">
-    <title lang="bn">The West Asia Post</title>
-  </programme>
-  <programme start="20251114073000 +0600" stop="20251114080000 +0600" channel="WION.in">
-    <title lang="bn">Race To Power</title>
-  </programme>
-  <programme start="20251114080000 +0600" stop="20251114083000 +0600" channel="WION.in">
-    <title lang="bn">WION Fineprint</title>
-  </programme>
-  <programme start="20251114083000 +0600" stop="20251114090000 +0600" channel="WION.in">
-    <title lang="bn">Gravitas</title>
-  </programme>
-  <programme start="20251114090000 +0600" stop="20251114093000 +0600" channel="WION.in">
-    <title lang="bn">Gravitas</title>
-  </programme>
-  <programme start="20251114093000 +0600" stop="20251114100000 +0600" channel="WION.in">
-    <title lang="bn">WION Pulse</title>
-  </programme>
-  <programme start="20251114100000 +0600" stop="20251114103000 +0600" channel="WION.in">
-    <title lang="bn">WION E-Club</title>
-  </programme>
-  <programme start="20251114103000 +0600" stop="20251114110000 +0600" channel="WION.in">
-    <title lang="bn">Gravitas</title>
-  </programme>
-  <programme start="20251114110000 +0600" stop="20251114113000 +0600" channel="WION.in">
-    <title lang="bn">Gravitas</title>
-  </programme>
-  <programme start="20251114113000 +0600" stop="20251114120000 +0600" channel="WION.in">
-    <title lang="bn">Top Stories</title>
-  </programme>
-  <programme start="20251114120000 +0600" stop="20251114123000 +0600" channel="WION.in">
-    <title lang="bn">WION Pulse</title>
-  </programme>
-  <programme start="20251114123000 +0600" stop="20251114130000 +0600" channel="WION.in">
     <title lang="bn">WION Dispatch</title>
   </programme>
-  <programme start="20251114130000 +0600" stop="20251114133000 +0600" channel="WION.in">
+  <programme start="20251114070000 +0600" stop="20251114073000 +0600" channel="WION.in">
+    <title lang="bn">Wion World Of Sport</title>
+  </programme>
+  <programme start="20251114073000 +0600" stop="20251114080000 +0600" channel="WION.in">
     <title lang="bn">Top Stories</title>
   </programme>
-  <programme start="20251114133000 +0600" stop="20251114140000 +0600" channel="WION.in">
+  <programme start="20251114080000 +0600" stop="20251114083000 +0600" channel="WION.in">
     <title lang="bn">The West Asia Post</title>
   </programme>
-  <programme start="20251114140000 +0600" stop="20251114143000 +0600" channel="WION.in">
-    <title lang="bn">Gravitas</title>
+  <programme start="20251114083000 +0600" stop="20251114090000 +0600" channel="WION.in">
+    <title lang="bn">Race To Power</title>
   </programme>
-  <programme start="20251114143000 +0600" stop="20251114150000 +0600" channel="WION.in">
-    <title lang="bn">Gravitas</title>
-  </programme>
-  <programme start="20251114150000 +0600" stop="20251114153000 +0600" channel="WION.in">
-    <title lang="bn">WION Pulse</title>
-  </programme>
-  <programme start="20251114153000 +0600" stop="20251114160000 +0600" channel="WION.in">
-    <title lang="bn">Top Stories</title>
-  </programme>
-  <programme start="20251114160000 +0600" stop="20251114163000 +0600" channel="WION.in">
+  <programme start="20251114090000 +0600" stop="20251114093000 +0600" channel="WION.in">
     <title lang="bn">WION Fineprint</title>
   </programme>
+  <programme start="20251114093000 +0600" stop="20251114100000 +0600" channel="WION.in">
+    <title lang="bn">Gravitas</title>
+  </programme>
+  <programme start="20251114100000 +0600" stop="20251114103000 +0600" channel="WION.in">
+    <title lang="bn">Gravitas</title>
+  </programme>
+  <programme start="20251114103000 +0600" stop="20251114110000 +0600" channel="WION.in">
+    <title lang="bn">WION Pulse</title>
+  </programme>
+  <programme start="20251114110000 +0600" stop="20251114113000 +0600" channel="WION.in">
+    <title lang="bn">WION E-Club</title>
+  </programme>
+  <programme start="20251114113000 +0600" stop="20251114120000 +0600" channel="WION.in">
+    <title lang="bn">Gravitas</title>
+  </programme>
+  <programme start="20251114120000 +0600" stop="20251114123000 +0600" channel="WION.in">
+    <title lang="bn">Gravitas</title>
+  </programme>
+  <programme start="20251114123000 +0600" stop="20251114130000 +0600" channel="WION.in">
+    <title lang="bn">Top Stories</title>
+  </programme>
+  <programme start="20251114130000 +0600" stop="20251114133000 +0600" channel="WION.in">
+    <title lang="bn">WION Pulse</title>
+  </programme>
+  <programme start="20251114133000 +0600" stop="20251114140000 +0600" channel="WION.in">
+    <title lang="bn">WION Dispatch</title>
+  </programme>
+  <programme start="20251114140000 +0600" stop="20251114143000 +0600" channel="WION.in">
+    <title lang="bn">Top Stories</title>
+  </programme>
+  <programme start="20251114143000 +0600" stop="20251114150000 +0600" channel="WION.in">
+    <title lang="bn">The West Asia Post</title>
+  </programme>
+  <programme start="20251114150000 +0600" stop="20251114153000 +0600" channel="WION.in">
+    <title lang="bn">Gravitas</title>
+  </programme>
+  <programme start="20251114153000 +0600" stop="20251114160000 +0600" channel="WION.in">
+    <title lang="bn">Gravitas</title>
+  </programme>
+  <programme start="20251114160000 +0600" stop="20251114163000 +0600" channel="WION.in">
+    <title lang="bn">WION Pulse</title>
+  </programme>
   <programme start="20251114163000 +0600" stop="20251114170000 +0600" channel="WION.in">
+    <title lang="bn">Top Stories</title>
+  </programme>
+  <programme start="20251114170000 +0600" stop="20251114173000 +0600" channel="WION.in">
+    <title lang="bn">WION Fineprint</title>
+  </programme>
+  <programme start="20251114173000 +0600" stop="20251114180000 +0600" channel="WION.in">
     <title lang="bn">The West Asia Post</title>
   </programme>
   <channel id="CGTN.cn">
     <display-name>CGTN</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/512px-CGTN.svg.png"/>
   </channel>
-  <programme start="20251114001500 +0600" stop="20251114010000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251114000100 +0600" stop="20251114004300 +0600" channel="CGTN.cn">
+    <title lang="bn">誓盟-(四套)-37/39</title>
   </programme>
-  <programme start="20251114010000 +0600" stop="20251114013000 +0600" channel="CGTN.cn">
-    <title lang="bn">Memory of China</title>
+  <programme start="20251114004300 +0600" stop="20251114012400 +0600" channel="CGTN.cn">
+    <title lang="bn">誓盟-(四套)-38/39</title>
   </programme>
-  <programme start="20251114013000 +0600" stop="20251114020000 +0600" channel="CGTN.cn">
-    <title lang="bn">China Showbiz</title>
+  <programme start="20251114012400 +0600" stop="20251114020600 +0600" channel="CGTN.cn">
+    <title lang="bn">誓盟-(四套)-39/39</title>
   </programme>
-  <programme start="20251114020000 +0600" stop="20251114023000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251114020600 +0600" stop="20251114025200 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮1/32</title>
   </programme>
-  <programme start="20251114023000 +0600" stop="20251114031500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251114025200 +0600" stop="20251114034200 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮2/32</title>
   </programme>
-  <programme start="20251114031500 +0600" stop="20251114040000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251114034200 +0600" stop="20251114034700 +0600" channel="CGTN.cn">
+    <title lang="bn">国家公园精彩片段-6</title>
   </programme>
-  <programme start="20251114040000 +0600" stop="20251114043000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251114034700 +0600" stop="20251114041500 +0600" channel="CGTN.cn">
+    <title lang="bn">走遍中国-2025-182</title>
   </programme>
-  <programme start="20251114043000 +0600" stop="20251114050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Across the Strait</title>
+  <programme start="20251114041500 +0600" stop="20251114050000 +0600" channel="CGTN.cn">
+    <title lang="bn">远方的家2025-102</title>
   </programme>
   <programme start="20251114050000 +0600" stop="20251114053000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+    <title lang="bn">中国新闻</title>
   </programme>
   <programme start="20251114053000 +0600" stop="20251114060000 +0600" channel="CGTN.cn">
-    <title lang="bn">Asia Today</title>
+    <title lang="bn">中国文艺-2025-228</title>
   </programme>
-  <programme start="20251114060000 +0600" stop="20251114064500 +0600" channel="CGTN.cn">
-    <title lang="bn">On the Way</title>
+  <programme start="20251114060000 +0600" stop="20251114063000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251114064500 +0600" stop="20251114070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Nostalgia</title>
+  <programme start="20251114063000 +0600" stop="20251114070000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日亚洲</title>
   </programme>
   <programme start="20251114070000 +0600" stop="20251114073000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+    <title lang="bn">百城头牌菜（第二季）-7</title>
   </programme>
   <programme start="20251114073000 +0600" stop="20251114080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Focus Today</title>
+    <title lang="bn">海峡两岸-2025-318</title>
   </programme>
-  <programme start="20251114080000 +0600" stop="20251114084500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251114080000 +0600" stop="20251114083000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251114084500 +0600" stop="20251114093000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251114083000 +0600" stop="20251114090000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日关注</title>
   </programme>
-  <programme start="20251114093000 +0600" stop="20251114100000 +0600" channel="CGTN.cn">
-    <title lang="bn">China Showbiz</title>
+  <programme start="20251114090000 +0600" stop="20251114093000 +0600" channel="CGTN.cn">
+    <title lang="bn">鲁健访谈-2025-46</title>
   </programme>
-  <programme start="20251114100000 +0600" stop="20251114104500 +0600" channel="CGTN.cn">
-    <title lang="bn">Music Fair</title>
+  <programme start="20251114093000 +0600" stop="20251114100300 +0600" channel="CGTN.cn">
+    <title lang="bn">新闻联播</title>
   </programme>
-  <programme start="20251114104500 +0600" stop="20251114113000 +0600" channel="CGTN.cn">
-    <title lang="bn">м/ф Cartoon City</title>
+  <programme start="20251114100300 +0600" stop="20251114104500 +0600" channel="CGTN.cn">
+    <title lang="bn">正是青春璀璨时-(四套)-6/42</title>
   </programme>
-  <programme start="20251114113000 +0600" stop="20251114120000 +0600" channel="CGTN.cn">
-    <title lang="bn">National Treasures found</title>
+  <programme start="20251114104500 +0600" stop="20251114112600 +0600" channel="CGTN.cn">
+    <title lang="bn">正是青春璀璨时-(四套)-7/42</title>
   </programme>
-  <programme start="20251114120000 +0600" stop="20251114123000 +0600" channel="CGTN.cn">
-    <title lang="bn">Memory of China</title>
+  <programme start="20251114112600 +0600" stop="20251114120800 +0600" channel="CGTN.cn">
+    <title lang="bn">正是青春璀璨时-(四套)-8/42</title>
   </programme>
-  <programme start="20251114123000 +0600" stop="20251114130000 +0600" channel="CGTN.cn">
-    <title lang="bn">Across the Strait</title>
+  <programme start="20251114120800 +0600" stop="20251114123800 +0600" channel="CGTN.cn">
+    <title lang="bn">中国文艺-2025-228</title>
+  </programme>
+  <programme start="20251114123800 +0600" stop="20251114124800 +0600" channel="CGTN.cn">
+    <title lang="bn">远方的家-传世古建-6</title>
+  </programme>
+  <programme start="20251114124800 +0600" stop="20251114125100 +0600" channel="CGTN.cn">
+    <title lang="bn">记住乡愁-片段展播-2024-10</title>
+  </programme>
+  <programme start="20251114125100 +0600" stop="20251114130000 +0600" channel="CGTN.cn">
+    <title lang="bn">记住乡愁-片段展播-2025-8</title>
   </programme>
   <programme start="20251114130000 +0600" stop="20251114133000 +0600" channel="CGTN.cn">
-    <title lang="bn">Network News</title>
+    <title lang="bn">新闻联播</title>
   </programme>
   <programme start="20251114133000 +0600" stop="20251114140000 +0600" channel="CGTN.cn">
-    <title lang="bn">China Showbiz</title>
+    <title lang="bn">鲁健访谈-2025-46</title>
   </programme>
-  <programme start="20251114140000 +0600" stop="20251114143000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251114140000 +0600" stop="20251114141000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251114143000 +0600" stop="20251114150000 +0600" channel="CGTN.cn">
-    <title lang="bn">Focus Today</title>
+  <programme start="20251114141000 +0600" stop="20251114150000 +0600" channel="CGTN.cn">
+    <title lang="bn">远方的家2025-102</title>
   </programme>
-  <programme start="20251114150000 +0600" stop="20251114154500 +0600" channel="CGTN.cn">
-    <title lang="bn">On the Way</title>
+  <programme start="20251114150000 +0600" stop="20251114153000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251114154500 +0600" stop="20251114155500 +0600" channel="CGTN.cn">
-    <title lang="bn">Nostalgia</title>
+  <programme start="20251114153000 +0600" stop="20251114160000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日关注</title>
   </programme>
-  <programme start="20251114155500 +0600" stop="20251114163000 +0600" channel="CGTN.cn">
-    <title lang="bn">Discoveries</title>
+  <programme start="20251114160000 +0600" stop="20251114163000 +0600" channel="CGTN.cn">
+    <title lang="bn">国家记忆-2025-167</title>
   </programme>
   <programme start="20251114163000 +0600" stop="20251114170000 +0600" channel="CGTN.cn">
-    <title lang="bn">Memory of China</title>
+    <title lang="bn">鲁健访谈-2025-46</title>
   </programme>
   <programme start="20251114170000 +0600" stop="20251114173000 +0600" channel="CGTN.cn">
-    <title lang="bn">Chinese Story</title>
+    <title lang="bn">海峡两岸-2025-318</title>
   </programme>
   <programme start="20251114173000 +0600" stop="20251114180000 +0600" channel="CGTN.cn">
-    <title lang="bn">Across the Strait</title>
+    <title lang="bn">今日亚洲</title>
   </programme>
-  <programme start="20251114180000 +0600" stop="20251114190000 +0600" channel="CGTN.cn">
-    <title lang="bn">Global News</title>
+  <programme start="20251114180000 +0600" stop="20251114183000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251114190000 +0600" stop="20251114191500 +0600" channel="CGTN.cn">
-    <title lang="bn">Nostalgia</title>
+  <programme start="20251114183000 +0600" stop="20251114190000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日关注</title>
   </programme>
-  <programme start="20251114191500 +0600" stop="20251114200000 +0600" channel="CGTN.cn">
-    <title lang="bn">On the Way</title>
+  <programme start="20251114190000 +0600" stop="20251114200000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日环球</title>
   </programme>
-  <programme start="20251114200000 +0600" stop="20251114203000 +0600" channel="CGTN.cn">
-    <title lang="bn">Memory of China</title>
+  <programme start="20251114200000 +0600" stop="20251114202600 +0600" channel="CGTN.cn">
+    <title lang="bn">今日亚洲</title>
   </programme>
-  <programme start="20251114203000 +0600" stop="20251114211500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251114202600 +0600" stop="20251114212600 +0600" channel="CGTN.cn">
+    <title lang="bn">中国文艺-致敬经典2025-45</title>
   </programme>
-  <programme start="20251114211500 +0600" stop="20251114220000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251114212600 +0600" stop="20251114222600 +0600" channel="CGTN.cn">
+    <title lang="bn">环球综艺秀-2025-45</title>
   </programme>
-  <programme start="20251114220000 +0600" stop="20251114230000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251114222600 +0600" stop="20251114230000 +0600" channel="CGTN.cn">
+    <title lang="bn">海峡两岸-2025-318</title>
   </programme>
-  <programme start="20251114230000 +0600" stop="20251114233000 +0600" channel="CGTN.cn">
-    <title lang="bn">National Treasures found</title>
+  <programme start="20251114230000 +0600" stop="20251115000000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251114233000 +0600" stop="20251115001500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115000000 +0600" stop="20251115002900 +0600" channel="CGTN.cn">
+    <title lang="bn">华人故事-2025-47</title>
   </programme>
-  <programme start="20251115001500 +0600" stop="20251115010000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115002900 +0600" stop="20251115011500 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮3/32</title>
   </programme>
-  <programme start="20251115010000 +0600" stop="20251115013000 +0600" channel="CGTN.cn">
-    <title lang="bn">Memory of China</title>
+  <programme start="20251115011500 +0600" stop="20251115020100 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮4/32</title>
   </programme>
-  <programme start="20251115013000 +0600" stop="20251115020000 +0600" channel="CGTN.cn">
-    <title lang="bn">China Showbiz</title>
+  <programme start="20251115020100 +0600" stop="20251115024800 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮5/32</title>
   </programme>
-  <programme start="20251115020000 +0600" stop="20251115023000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251115024800 +0600" stop="20251115033400 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮6/32</title>
   </programme>
-  <programme start="20251115023000 +0600" stop="20251115031500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115033400 +0600" stop="20251115042300 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮7/32</title>
   </programme>
-  <programme start="20251115031500 +0600" stop="20251115040000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115042300 +0600" stop="20251115042800 +0600" channel="CGTN.cn">
+    <title lang="bn">国家公园精彩片段-7</title>
   </programme>
-  <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="CGTN.cn">
-    <title lang="bn">Talk With Lujian</title>
+  <programme start="20251115042800 +0600" stop="20251115044300 +0600" channel="CGTN.cn">
+    <title lang="bn">平凡匠心-2025-91</title>
   </programme>
-  <programme start="20251115043000 +0600" stop="20251115050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Across the Strait</title>
+  <programme start="20251115044300 +0600" stop="20251115050000 +0600" channel="CGTN.cn">
+    <title lang="bn">平凡匠心-2025-92</title>
   </programme>
-  <programme start="20251115050000 +0600" stop="20251115053000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251115050000 +0600" stop="20251115060000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国文艺-致敬经典2025-46</title>
   </programme>
-  <programme start="20251115053000 +0600" stop="20251115060000 +0600" channel="CGTN.cn">
-    <title lang="bn">Asia Today</title>
+  <programme start="20251115060000 +0600" stop="20251115063000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251115060000 +0600" stop="20251115064500 +0600" channel="CGTN.cn">
-    <title lang="bn">On the Way</title>
-  </programme>
-  <programme start="20251115064500 +0600" stop="20251115070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Nostalgia</title>
+  <programme start="20251115063000 +0600" stop="20251115070000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日亚洲</title>
   </programme>
   <programme start="20251115070000 +0600" stop="20251115073000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+    <title lang="bn">深度国际-2025年11月-3</title>
   </programme>
   <programme start="20251115073000 +0600" stop="20251115080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Focus Today</title>
+    <title lang="bn">海峡两岸-2025-319</title>
   </programme>
-  <programme start="20251115080000 +0600" stop="20251115084500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115080000 +0600" stop="20251115083000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251115084500 +0600" stop="20251115093000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115083000 +0600" stop="20251115090000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日关注</title>
   </programme>
-  <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="CGTN.cn">
-    <title lang="bn">China Showbiz</title>
+  <programme start="20251115090000 +0600" stop="20251115093000 +0600" channel="CGTN.cn">
+    <title lang="bn">走遍中国-2025-175</title>
   </programme>
-  <programme start="20251115100000 +0600" stop="20251115104500 +0600" channel="CGTN.cn">
-    <title lang="bn">Music Fair</title>
+  <programme start="20251115093000 +0600" stop="20251115100200 +0600" channel="CGTN.cn">
+    <title lang="bn">新闻联播</title>
   </programme>
-  <programme start="20251115104500 +0600" stop="20251115113000 +0600" channel="CGTN.cn">
-    <title lang="bn">м/ф Cartoon City</title>
+  <programme start="20251115100200 +0600" stop="20251115110000 +0600" channel="CGTN.cn">
+    <title lang="bn">健康中国-2025-45</title>
   </programme>
-  <programme start="20251115113000 +0600" stop="20251115123000 +0600" channel="CGTN.cn">
-    <title lang="bn">China Showbiz</title>
+  <programme start="20251115110000 +0600" stop="20251115114200 +0600" channel="CGTN.cn">
+    <title lang="bn">正是青春璀璨时-(四套)-9/42</title>
   </programme>
-  <programme start="20251115123000 +0600" stop="20251115130000 +0600" channel="CGTN.cn">
-    <title lang="bn">Across the Strait</title>
+  <programme start="20251115114200 +0600" stop="20251115122500 +0600" channel="CGTN.cn">
+    <title lang="bn">正是青春璀璨时-(四套)-10/42</title>
+  </programme>
+  <programme start="20251115122500 +0600" stop="20251115125100 +0600" channel="CGTN.cn">
+    <title lang="bn">中国缘-2025-45</title>
+  </programme>
+  <programme start="20251115125100 +0600" stop="20251115130000 +0600" channel="CGTN.cn">
+    <title lang="bn">记住乡愁-片段展播-2025-10</title>
   </programme>
   <programme start="20251115130000 +0600" stop="20251115133000 +0600" channel="CGTN.cn">
-    <title lang="bn">Network News</title>
+    <title lang="bn">新闻联播</title>
   </programme>
-  <programme start="20251115133000 +0600" stop="20251115140000 +0600" channel="CGTN.cn">
-    <title lang="bn">International Depth</title>
+  <programme start="20251115133000 +0600" stop="20251115134300 +0600" channel="CGTN.cn">
+    <title lang="bn">平凡匠心-2025-91</title>
   </programme>
-  <programme start="20251115140000 +0600" stop="20251115143000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251115134300 +0600" stop="20251115141200 +0600" channel="CGTN.cn">
+    <title lang="bn">华人故事-2025-47</title>
   </programme>
-  <programme start="20251115143000 +0600" stop="20251115150000 +0600" channel="CGTN.cn">
-    <title lang="bn">Focus Today</title>
+  <programme start="20251115141200 +0600" stop="20251115144000 +0600" channel="CGTN.cn">
+    <title lang="bn">深度国际-2025年11月-3</title>
   </programme>
-  <programme start="20251115150000 +0600" stop="20251115161000 +0600" channel="CGTN.cn">
-    <title lang="bn">Discoveries</title>
+  <programme start="20251115144000 +0600" stop="20251115144800 +0600" channel="CGTN.cn">
+    <title lang="bn">国家公园精彩片段-14</title>
   </programme>
-  <programme start="20251115161000 +0600" stop="20251115163000 +0600" channel="CGTN.cn">
-    <title lang="bn">Dreamchaser</title>
+  <programme start="20251115144800 +0600" stop="20251115145200 +0600" channel="CGTN.cn">
+    <title lang="bn">记住乡愁-片段展播-2024-5</title>
   </programme>
-  <programme start="20251115163000 +0600" stop="20251115173000 +0600" channel="CGTN.cn">
-    <title lang="bn">Universal Show</title>
+  <programme start="20251115145200 +0600" stop="20251115150000 +0600" channel="CGTN.cn">
+    <title lang="bn">记住乡愁-片段展播-2024-12</title>
+  </programme>
+  <programme start="20251115150000 +0600" stop="20251115153000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
+  </programme>
+  <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日关注</title>
+  </programme>
+  <programme start="20251115160000 +0600" stop="20251115170000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国文艺-致敬经典2025-46</title>
+  </programme>
+  <programme start="20251115170000 +0600" stop="20251115173000 +0600" channel="CGTN.cn">
+    <title lang="bn">海峡两岸-2025-319</title>
   </programme>
   <programme start="20251115173000 +0600" stop="20251115180000 +0600" channel="CGTN.cn">
-    <title lang="bn">Across the Strait</title>
+    <title lang="bn">今日亚洲</title>
   </programme>
-  <programme start="20251115180000 +0600" stop="20251115190000 +0600" channel="CGTN.cn">
-    <title lang="bn">Global News</title>
+  <programme start="20251115180000 +0600" stop="20251115183000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251115190000 +0600" stop="20251115191500 +0600" channel="CGTN.cn">
-    <title lang="bn">Nostalgia</title>
+  <programme start="20251115183000 +0600" stop="20251115190000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日关注</title>
   </programme>
-  <programme start="20251115191500 +0600" stop="20251115201500 +0600" channel="CGTN.cn">
-    <title lang="bn">China Showbiz</title>
+  <programme start="20251115190000 +0600" stop="20251115200200 +0600" channel="CGTN.cn">
+    <title lang="bn">今日环球</title>
   </programme>
-  <programme start="20251115201500 +0600" stop="20251115210000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115200200 +0600" stop="20251115202900 +0600" channel="CGTN.cn">
+    <title lang="bn">国家记忆-2025-163</title>
   </programme>
-  <programme start="20251115210000 +0600" stop="20251115214500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115202900 +0600" stop="20251115205900 +0600" channel="CGTN.cn">
+    <title lang="bn">国家记忆-2025-164</title>
   </programme>
-  <programme start="20251115214500 +0600" stop="20251115220000 +0600" channel="CGTN.cn">
-    <title lang="bn">Nostalgia</title>
+  <programme start="20251115205900 +0600" stop="20251115212600 +0600" channel="CGTN.cn">
+    <title lang="bn">国家记忆-2025-165</title>
   </programme>
-  <programme start="20251115220000 +0600" stop="20251115230000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251115212600 +0600" stop="20251115215300 +0600" channel="CGTN.cn">
+    <title lang="bn">国家记忆-2025-166</title>
   </programme>
-  <programme start="20251115230000 +0600" stop="20251115233000 +0600" channel="CGTN.cn">
-    <title lang="bn">International Depth</title>
+  <programme start="20251115215300 +0600" stop="20251115222600 +0600" channel="CGTN.cn">
+    <title lang="bn">国家记忆-2025-167</title>
   </programme>
-  <programme start="20251115233000 +0600" stop="20251116001500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115222600 +0600" stop="20251115230000 +0600" channel="CGTN.cn">
+    <title lang="bn">海峡两岸-2025-319</title>
   </programme>
-  <programme start="20251116001500 +0600" stop="20251116010000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251115230000 +0600" stop="20251116000100 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251116010000 +0600" stop="20251116020000 +0600" channel="CGTN.cn">
-    <title lang="bn">Special Program for Opera</title>
+  <programme start="20251116000100 +0600" stop="20251116004700 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮4/32</title>
   </programme>
-  <programme start="20251116020000 +0600" stop="20251116023000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251116004700 +0600" stop="20251116013300 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮5/32</title>
   </programme>
-  <programme start="20251116023000 +0600" stop="20251116031500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251116013300 +0600" stop="20251116022000 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮6/32</title>
   </programme>
-  <programme start="20251116031500 +0600" stop="20251116040000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251116022000 +0600" stop="20251116030600 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮7/32</title>
+  </programme>
+  <programme start="20251116030600 +0600" stop="20251116035500 +0600" channel="CGTN.cn">
+    <title lang="bn">黄河在咆哮8/32</title>
+  </programme>
+  <programme start="20251116035500 +0600" stop="20251116040000 +0600" channel="CGTN.cn">
+    <title lang="bn">国家公园精彩片段-9</title>
   </programme>
   <programme start="20251116040000 +0600" stop="20251116050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Universal Show</title>
+    <title lang="bn">健康中国-2025-46</title>
   </programme>
-  <programme start="20251116050000 +0600" stop="20251116053000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+  <programme start="20251116050000 +0600" stop="20251116060000 +0600" channel="CGTN.cn">
+    <title lang="bn">环球综艺秀-2025-46</title>
   </programme>
-  <programme start="20251116053000 +0600" stop="20251116063000 +0600" channel="CGTN.cn">
-    <title lang="bn">China&amp;#x27;s Public Opinion Field</title>
-  </programme>
-  <programme start="20251116063000 +0600" stop="20251116070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Around China</title>
+  <programme start="20251116060000 +0600" stop="20251116070000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国舆论场-2025-46</title>
   </programme>
   <programme start="20251116070000 +0600" stop="20251116073000 +0600" channel="CGTN.cn">
-    <title lang="bn">China News</title>
+    <title lang="bn">走遍中国-2025-220住进风景里72小时-6</title>
   </programme>
   <programme start="20251116073000 +0600" stop="20251116080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Focus Today</title>
+    <title lang="bn">海峡两岸-2025-320</title>
   </programme>
-  <programme start="20251116080000 +0600" stop="20251116084500 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251116080000 +0600" stop="20251116083000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国新闻</title>
   </programme>
-  <programme start="20251116084500 +0600" stop="20251116093000 +0600" channel="CGTN.cn">
-    <title lang="bn">х/ф TV Drama</title>
+  <programme start="20251116083000 +0600" stop="20251116090000 +0600" channel="CGTN.cn">
+    <title lang="bn">今日关注</title>
   </programme>
-  <programme start="20251116093000 +0600" stop="20251116100000 +0600" channel="CGTN.cn">
-    <title lang="bn">Music Fair</title>
+  <programme start="20251116090000 +0600" stop="20251116093000 +0600" channel="CGTN.cn">
+    <title lang="bn">中国缘-2025-46</title>
+  </programme>
+  <programme start="20251116093000 +0600" stop="20251116100200 +0600" channel="CGTN.cn">
+    <title lang="bn">新闻联播</title>
+  </programme>
+  <programme start="20251116100200 +0600" stop="20251116102800 +0600" channel="CGTN.cn">
+    <title lang="bn">国宝发现-2025-46</title>
+  </programme>
+  <programme start="20251116102800 +0600" stop="20251116105800 +0600" channel="CGTN.cn">
+    <title lang="bn">正是青春璀璨时-(四套)-11/42</title>
   </programme>
   <channel id="cna.sg">
     <display-name>Channel News Asia</display-name>
@@ -3779,358 +3812,424 @@
     <display-name>BloombergTV.us</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/9/93/Bloomberg_tv_2016.svg"/>
   </channel>
-  <programme start="20251114000000 +0600" stop="20251114020000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg: The Opening Trade</title>
+  <programme start="20251114000000 +0600" stop="20251114003000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Daybreak: Europe</title>
   </programme>
-  <programme start="20251114020000 +0600" stop="20251114030000 +0600" channel="Bloomberg TV">
-    <title lang="bn">The Pulse with Francine Lacqua</title>
-  </programme>
-  <programme start="20251114030000 +0600" stop="20251114040000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Brief</title>
-  </programme>
-  <programme start="20251114040000 +0600" stop="20251114060000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Surveillance</title>
-  </programme>
-  <programme start="20251114060000 +0600" stop="20251114090000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: The Open</title>
-  </programme>
-  <programme start="20251114090000 +0600" stop="20251114100000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: European Close</title>
-  </programme>
-  <programme start="20251114100000 +0600" stop="20251114110000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: Balance of Power</title>
-  </programme>
-  <programme start="20251114110000 +0600" stop="20251114113000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Real Yield</title>
-  </programme>
-  <programme start="20251114113000 +0600" stop="20251114120000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets</title>
-  </programme>
-  <programme start="20251114120000 +0600" stop="20251114143000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: The Close</title>
-  </programme>
-  <programme start="20251114143000 +0600" stop="20251114150000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: What&amp;#x27;d You Miss?</title>
-  </programme>
-  <programme start="20251114150000 +0600" stop="20251114160000 +0600" channel="Bloomberg TV">
+  <programme start="20251114003000 +0600" stop="20251114010000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Tech</title>
   </programme>
+  <programme start="20251114010000 +0600" stop="20251114030000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg: The Opening Trade</title>
+  </programme>
+  <programme start="20251114030000 +0600" stop="20251114040000 +0600" channel="Bloomberg TV">
+    <title lang="bn">The Pulse with Francine Lacqua</title>
+  </programme>
+  <programme start="20251114040000 +0600" stop="20251114050000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Brief</title>
+  </programme>
+  <programme start="20251114050000 +0600" stop="20251114070000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Surveillance</title>
+  </programme>
+  <programme start="20251114070000 +0600" stop="20251114100000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: The Open</title>
+  </programme>
+  <programme start="20251114100000 +0600" stop="20251114110000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: European Close</title>
+  </programme>
+  <programme start="20251114110000 +0600" stop="20251114120000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: Balance of Power</title>
+  </programme>
+  <programme start="20251114120000 +0600" stop="20251114123000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Real Yield</title>
+  </programme>
+  <programme start="20251114123000 +0600" stop="20251114130000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets</title>
+  </programme>
+  <programme start="20251114130000 +0600" stop="20251114153000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: The Close</title>
+  </programme>
+  <programme start="20251114153000 +0600" stop="20251114160000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: What&amp;#x27;d You Miss?</title>
+  </programme>
   <programme start="20251114160000 +0600" stop="20251114170000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Tech</title>
+  </programme>
+  <programme start="20251114170000 +0600" stop="20251114180000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251114170000 +0600" stop="20251114173000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
-  </programme>
-  <programme start="20251114173000 +0600" stop="20251114180000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Athlete Empire</title>
   </programme>
   <programme start="20251114180000 +0600" stop="20251114183000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
+    <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251114183000 +0600" stop="20251114190000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
+    <title lang="bn">Athlete Empire</title>
   </programme>
   <programme start="20251114190000 +0600" stop="20251114193000 +0600" channel="Bloomberg TV">
-    <title lang="bn">The David Rubenstein Show</title>
+    <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251114193000 +0600" stop="20251114200000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
-  </programme>
-  <programme start="20251114200000 +0600" stop="20251114210000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251114210000 +0600" stop="20251114213000 +0600" channel="Bloomberg TV">
     <title lang="bn">Leaders with Lacqua</title>
   </programme>
-  <programme start="20251114213000 +0600" stop="20251114220000 +0600" channel="Bloomberg TV">
+  <programme start="20251114200000 +0600" stop="20251114203000 +0600" channel="Bloomberg TV">
+    <title lang="bn">The David Rubenstein Show</title>
+  </programme>
+  <programme start="20251114203000 +0600" stop="20251114210000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Studio 1.0</title>
+  </programme>
+  <programme start="20251114210000 +0600" stop="20251114220000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wall Street Week</title>
   </programme>
   <programme start="20251114220000 +0600" stop="20251114223000 +0600" channel="Bloomberg TV">
     <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251114223000 +0600" stop="20251114230000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+    <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251114230000 +0600" stop="20251114233000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+    <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251114233000 +0600" stop="20251115000000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Athlete Empire</title>
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
   </programme>
   <programme start="20251115000000 +0600" stop="20251115003000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
   </programme>
   <programme start="20251115003000 +0600" stop="20251115010000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Athlete Empire</title>
+  </programme>
+  <programme start="20251115010000 +0600" stop="20251115013000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
-  <programme start="20251115010000 +0600" stop="20251115020000 +0600" channel="Bloomberg TV">
+  <programme start="20251115013000 +0600" stop="20251115020000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Studio 1.0</title>
+  </programme>
+  <programme start="20251115020000 +0600" stop="20251115030000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251115020000 +0600" stop="20251115023000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
-  </programme>
-  <programme start="20251115023000 +0600" stop="20251115030000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+    <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115033000 +0600" stop="20251115040000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
-  </programme>
-  <programme start="20251115040000 +0600" stop="20251115050000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251115050000 +0600" stop="20251115053000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Green</title>
-  </programme>
-  <programme start="20251115053000 +0600" stop="20251115060000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Athlete Empire</title>
-  </programme>
-  <programme start="20251115060000 +0600" stop="20251115063000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
-  </programme>
-  <programme start="20251115063000 +0600" stop="20251115070000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
-  <programme start="20251115070000 +0600" stop="20251115073000 +0600" channel="Bloomberg TV">
-    <title lang="bn">The David Rubenstein Show</title>
-  </programme>
-  <programme start="20251115073000 +0600" stop="20251115080000 +0600" channel="Bloomberg TV">
+  <programme start="20251115040000 +0600" stop="20251115043000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
   </programme>
-  <programme start="20251115080000 +0600" stop="20251115090000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251115090000 +0600" stop="20251115093000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
-  </programme>
-  <programme start="20251115093000 +0600" stop="20251115100000 +0600" channel="Bloomberg TV">
+  <programme start="20251115043000 +0600" stop="20251115050000 +0600" channel="Bloomberg TV">
     <title lang="bn">Leaders with Lacqua</title>
   </programme>
-  <programme start="20251115100000 +0600" stop="20251115103000 +0600" channel="Bloomberg TV">
+  <programme start="20251115050000 +0600" stop="20251115060000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wall Street Week</title>
+  </programme>
+  <programme start="20251115060000 +0600" stop="20251115063000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Green</title>
+  </programme>
+  <programme start="20251115063000 +0600" stop="20251115070000 +0600" channel="Bloomberg TV">
     <title lang="bn">Athlete Empire</title>
+  </programme>
+  <programme start="20251115070000 +0600" stop="20251115073000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Leaders with Lacqua</title>
+  </programme>
+  <programme start="20251115073000 +0600" stop="20251115080000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Studio 1.0</title>
+  </programme>
+  <programme start="20251115080000 +0600" stop="20251115083000 +0600" channel="Bloomberg TV">
+    <title lang="bn">The David Rubenstein Show</title>
+  </programme>
+  <programme start="20251115083000 +0600" stop="20251115090000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+  </programme>
+  <programme start="20251115090000 +0600" stop="20251115100000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wall Street Week</title>
+  </programme>
+  <programme start="20251115100000 +0600" stop="20251115103000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251115103000 +0600" stop="20251115110000 +0600" channel="Bloomberg TV">
     <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115110000 +0600" stop="20251115113000 +0600" channel="Bloomberg TV">
-    <title lang="bn">The David Rubenstein Show</title>
+    <title lang="bn">Athlete Empire</title>
   </programme>
   <programme start="20251115113000 +0600" stop="20251115120000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Green</title>
+    <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115120000 +0600" stop="20251115123000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
+    <title lang="bn">The David Rubenstein Show</title>
   </programme>
   <programme start="20251115123000 +0600" stop="20251115130000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
+    <title lang="bn">Bloomberg Green</title>
   </programme>
   <programme start="20251115130000 +0600" stop="20251115133000 +0600" channel="Bloomberg TV">
     <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115133000 +0600" stop="20251115140000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Athlete Empire</title>
+    <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115140000 +0600" stop="20251115143000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+    <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115143000 +0600" stop="20251115150000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Athlete Empire</title>
+  </programme>
+  <programme start="20251115150000 +0600" stop="20251115153000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
   </programme>
-  <programme start="20251115150000 +0600" stop="20251115160000 +0600" channel="Bloomberg TV">
+  <programme start="20251115153000 +0600" stop="20251115160000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+  </programme>
+  <programme start="20251115160000 +0600" stop="20251115170000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251115160000 +0600" stop="20251115163000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
-  </programme>
-  <programme start="20251115163000 +0600" stop="20251115170000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251115170000 +0600" stop="20251115173000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251115173000 +0600" stop="20251115180000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
+    <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251115180000 +0600" stop="20251115183000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Leaders with Lacqua</title>
+    <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251115183000 +0600" stop="20251115190000 +0600" channel="Bloomberg TV">
     <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115190000 +0600" stop="20251115193000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+    <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115193000 +0600" stop="20251115200000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+    <title lang="bn">Leaders with Lacqua</title>
   </programme>
   <programme start="20251115200000 +0600" stop="20251115203000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
   </programme>
   <programme start="20251115203000 +0600" stop="20251115210000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
   </programme>
   <programme start="20251115210000 +0600" stop="20251115213000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Athlete Empire</title>
+    <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
   <programme start="20251115213000 +0600" stop="20251115220000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
-  <programme start="20251115220000 +0600" stop="20251115230000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251115230000 +0600" stop="20251115233000 +0600" channel="Bloomberg TV">
-    <title lang="bn">LEADERS with Francine Lacqua</title>
-  </programme>
-  <programme start="20251115233000 +0600" stop="20251116000000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Worldwide Business with Kathy Ireland</title>
-  </programme>
-  <programme start="20251116000000 +0600" stop="20251116003000 +0600" channel="Bloomberg TV">
+  <programme start="20251115220000 +0600" stop="20251115223000 +0600" channel="Bloomberg TV">
     <title lang="bn">Athlete Empire</title>
   </programme>
-  <programme start="20251116003000 +0600" stop="20251116010000 +0600" channel="Bloomberg TV">
+  <programme start="20251115223000 +0600" stop="20251115230000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
+  <programme start="20251115230000 +0600" stop="20251116000000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wall Street Week</title>
+  </programme>
+  <programme start="20251116000000 +0600" stop="20251116003000 +0600" channel="Bloomberg TV">
+    <title lang="bn">LEADERS with Francine Lacqua</title>
+  </programme>
+  <programme start="20251116003000 +0600" stop="20251116010000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Worldwide Business with Kathy Ireland</title>
+  </programme>
   <programme start="20251116010000 +0600" stop="20251116013000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
+    <title lang="bn">Athlete Empire</title>
   </programme>
   <programme start="20251116013000 +0600" stop="20251116020000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
-  <programme start="20251116020000 +0600" stop="20251116030000 +0600" channel="Bloomberg TV">
+  <programme start="20251116020000 +0600" stop="20251116023000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Studio 1.0</title>
+  </programme>
+  <programme start="20251116023000 +0600" stop="20251116030000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Studio 1.0</title>
+  </programme>
+  <programme start="20251116030000 +0600" stop="20251116040000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251116030000 +0600" stop="20251116033000 +0600" channel="Bloomberg TV">
-    <title lang="bn">LEADERS with Francine Lacqua</title>
-  </programme>
-  <programme start="20251116033000 +0600" stop="20251116040000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
   </programme>
   <programme start="20251116040000 +0600" stop="20251116043000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Green</title>
+    <title lang="bn">LEADERS with Francine Lacqua</title>
   </programme>
   <programme start="20251116043000 +0600" stop="20251116050000 +0600" channel="Bloomberg TV">
-    <title lang="bn">LEADERS with Francine Lacqua</title>
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
   </programme>
   <programme start="20251116050000 +0600" stop="20251116053000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Athlete Empire</title>
-  </programme>
-  <programme start="20251116053000 +0600" stop="20251116060000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Studio 1.0</title>
-  </programme>
-  <programme start="20251116060000 +0600" stop="20251116080000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wall Street Week</title>
-  </programme>
-  <programme start="20251116080000 +0600" stop="20251116083000 +0600" channel="Bloomberg TV">
-    <title lang="bn">The David Rubenstein Show</title>
-  </programme>
-  <programme start="20251116083000 +0600" stop="20251116090000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Green</title>
   </programme>
-  <programme start="20251116090000 +0600" stop="20251116093000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
-  </programme>
-  <programme start="20251116093000 +0600" stop="20251116100000 +0600" channel="Bloomberg TV">
+  <programme start="20251116053000 +0600" stop="20251116060000 +0600" channel="Bloomberg TV">
     <title lang="bn">LEADERS with Francine Lacqua</title>
   </programme>
-  <programme start="20251116100000 +0600" stop="20251116110000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wall Street Week</title>
+  <programme start="20251116060000 +0600" stop="20251116063000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Athlete Empire</title>
   </programme>
-  <programme start="20251116110000 +0600" stop="20251116113000 +0600" channel="Bloomberg TV">
-    <title lang="bn">LEADERS with Francine Lacqua</title>
-  </programme>
-  <programme start="20251116113000 +0600" stop="20251116120000 +0600" channel="Bloomberg TV">
-    <title lang="bn">LEADERS with Francine Lacqua</title>
-  </programme>
-  <programme start="20251116120000 +0600" stop="20251116123000 +0600" channel="Bloomberg TV">
-    <title lang="bn">The David Rubenstein Show</title>
-  </programme>
-  <programme start="20251116123000 +0600" stop="20251116130000 +0600" channel="Bloomberg TV">
+  <programme start="20251116063000 +0600" stop="20251116070000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Studio 1.0</title>
   </programme>
-  <programme start="20251116130000 +0600" stop="20251116133000 +0600" channel="Bloomberg TV">
-    <title lang="bn">LEADERS with Francine Lacqua</title>
-  </programme>
-  <programme start="20251116133000 +0600" stop="20251116140000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
-  </programme>
-  <programme start="20251116140000 +0600" stop="20251116150000 +0600" channel="Bloomberg TV">
+  <programme start="20251116070000 +0600" stop="20251116090000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Wall Street Week</title>
   </programme>
+  <programme start="20251116090000 +0600" stop="20251116093000 +0600" channel="Bloomberg TV">
+    <title lang="bn">The David Rubenstein Show</title>
+  </programme>
+  <programme start="20251116093000 +0600" stop="20251116100000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Green</title>
+  </programme>
+  <programme start="20251116100000 +0600" stop="20251116103000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+  </programme>
+  <programme start="20251116103000 +0600" stop="20251116110000 +0600" channel="Bloomberg TV">
+    <title lang="bn">LEADERS with Francine Lacqua</title>
+  </programme>
+  <programme start="20251116110000 +0600" stop="20251116120000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wall Street Week</title>
+  </programme>
+  <programme start="20251116120000 +0600" stop="20251116123000 +0600" channel="Bloomberg TV">
+    <title lang="bn">LEADERS with Francine Lacqua</title>
+  </programme>
+  <programme start="20251116123000 +0600" stop="20251116130000 +0600" channel="Bloomberg TV">
+    <title lang="bn">LEADERS with Francine Lacqua</title>
+  </programme>
+  <programme start="20251116130000 +0600" stop="20251116133000 +0600" channel="Bloomberg TV">
+    <title lang="bn">The David Rubenstein Show</title>
+  </programme>
+  <programme start="20251116133000 +0600" stop="20251116140000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Studio 1.0</title>
+  </programme>
+  <programme start="20251116140000 +0600" stop="20251116143000 +0600" channel="Bloomberg TV">
+    <title lang="bn">LEADERS with Francine Lacqua</title>
+  </programme>
+  <programme start="20251116143000 +0600" stop="20251116150000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wealth with David Rubenstein</title>
+  </programme>
   <programme start="20251116150000 +0600" stop="20251116160000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Wall Street Week</title>
+  </programme>
+  <programme start="20251116160000 +0600" stop="20251116170000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Daybreak: Australia</title>
   </programme>
-  <programme start="20251116160000 +0600" stop="20251116180000 +0600" channel="Bloomberg TV">
+  <programme start="20251116170000 +0600" stop="20251116190000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Daybreak: Asia</title>
   </programme>
-  <programme start="20251116180000 +0600" stop="20251116190000 +0600" channel="Bloomberg TV">
+  <programme start="20251116190000 +0600" stop="20251116200000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets: China Open</title>
   </programme>
-  <programme start="20251116190000 +0600" stop="20251116210000 +0600" channel="Bloomberg TV">
+  <programme start="20251116200000 +0600" stop="20251116220000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets: Asia</title>
   </programme>
-  <programme start="20251116210000 +0600" stop="20251116230000 +0600" channel="Bloomberg TV">
+  <programme start="20251116220000 +0600" stop="20251117000000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Daybreak: Middle East</title>
   </programme>
-  <programme start="20251116230000 +0600" stop="20251117000000 +0600" channel="Bloomberg TV">
+  <programme start="20251117000000 +0600" stop="20251117010000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Daybreak: Europe</title>
   </programme>
-  <programme start="20251117000000 +0600" stop="20251117010000 +0600" channel="Bloomberg TV">
+  <programme start="20251117010000 +0600" stop="20251117020000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets: Europe</title>
   </programme>
-  <programme start="20251117010000 +0600" stop="20251117020000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: European Open</title>
-  </programme>
   <programme start="20251117020000 +0600" stop="20251117030000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Surveillance: Early Edition</title>
+    <title lang="bn">Bloomberg Markets: European Open</title>
   </programme>
   <programme start="20251117030000 +0600" stop="20251117040000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Surveillance: Early Edition</title>
   </programme>
   <programme start="20251117040000 +0600" stop="20251117050000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Surveillance: Early Edition</title>
+  </programme>
+  <programme start="20251117050000 +0600" stop="20251117060000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Surveillance</title>
   </programme>
-  <programme start="20251117050000 +0600" stop="20251117070000 +0600" channel="Bloomberg TV">
+  <programme start="20251117060000 +0600" stop="20251117080000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Surveillance</title>
-  </programme>
-  <programme start="20251117070000 +0600" stop="20251117080000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: The Open</title>
   </programme>
   <programme start="20251117080000 +0600" stop="20251117090000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: Americas</title>
+    <title lang="bn">Bloomberg Markets: The Open</title>
   </programme>
   <programme start="20251117090000 +0600" stop="20251117100000 +0600" channel="Bloomberg TV">
-    <title lang="bn">Bloomberg Markets: European Close</title>
+    <title lang="bn">Bloomberg Markets: Americas</title>
   </programme>
   <programme start="20251117100000 +0600" stop="20251117110000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: European Close</title>
+  </programme>
+  <programme start="20251117110000 +0600" stop="20251117120000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets: Balance of Power</title>
   </programme>
-  <programme start="20251117110000 +0600" stop="20251117113000 +0600" channel="Bloomberg TV">
+  <programme start="20251117120000 +0600" stop="20251117123000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets</title>
   </programme>
-  <programme start="20251117113000 +0600" stop="20251117120000 +0600" channel="Bloomberg TV">
+  <programme start="20251117123000 +0600" stop="20251117130000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets</title>
   </programme>
-  <programme start="20251117120000 +0600" stop="20251117143000 +0600" channel="Bloomberg TV">
+  <programme start="20251117130000 +0600" stop="20251117153000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets: The Close</title>
   </programme>
-  <programme start="20251117143000 +0600" stop="20251117150000 +0600" channel="Bloomberg TV">
+  <programme start="20251117153000 +0600" stop="20251117160000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets: What&amp;#x27;d You Miss?</title>
   </programme>
-  <programme start="20251117150000 +0600" stop="20251117160000 +0600" channel="Bloomberg TV">
+  <programme start="20251117160000 +0600" stop="20251117170000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Daybreak: Australia</title>
   </programme>
-  <programme start="20251117160000 +0600" stop="20251117180000 +0600" channel="Bloomberg TV">
+  <programme start="20251117170000 +0600" stop="20251117190000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Daybreak: Asia</title>
   </programme>
-  <programme start="20251117180000 +0600" stop="20251117190000 +0600" channel="Bloomberg TV">
+  <programme start="20251117190000 +0600" stop="20251117200000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets: China Open</title>
   </programme>
-  <programme start="20251117190000 +0600" stop="20251117210000 +0600" channel="Bloomberg TV">
+  <programme start="20251117200000 +0600" stop="20251117220000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Markets: Asia</title>
   </programme>
-  <programme start="20251117210000 +0600" stop="20251117213000 +0600" channel="Bloomberg TV">
+  <programme start="20251117220000 +0600" stop="20251118000000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Daybreak: Middle East</title>
+  </programme>
+  <programme start="20251118000000 +0600" stop="20251118010000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Daybreak: Europe</title>
+  </programme>
+  <programme start="20251118010000 +0600" stop="20251118020000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: Europe</title>
+  </programme>
+  <programme start="20251118020000 +0600" stop="20251118030000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: European Open</title>
+  </programme>
+  <programme start="20251118030000 +0600" stop="20251118040000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Tech</title>
+  </programme>
+  <programme start="20251118040000 +0600" stop="20251118050000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Surveillance: Early Edition</title>
+  </programme>
+  <programme start="20251118050000 +0600" stop="20251118060000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Surveillance</title>
+  </programme>
+  <programme start="20251118060000 +0600" stop="20251118080000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Surveillance</title>
+  </programme>
+  <programme start="20251118080000 +0600" stop="20251118090000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: The Open</title>
+  </programme>
+  <programme start="20251118090000 +0600" stop="20251118100000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: Americas</title>
+  </programme>
+  <programme start="20251118100000 +0600" stop="20251118110000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: European Close</title>
+  </programme>
+  <programme start="20251118110000 +0600" stop="20251118120000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: Balance of Power</title>
+  </programme>
+  <programme start="20251118120000 +0600" stop="20251118123000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets</title>
+  </programme>
+  <programme start="20251118123000 +0600" stop="20251118130000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets</title>
+  </programme>
+  <programme start="20251118130000 +0600" stop="20251118153000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: The Close</title>
+  </programme>
+  <programme start="20251118153000 +0600" stop="20251118160000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: What&amp;#x27;d You Miss?</title>
+  </programme>
+  <programme start="20251118160000 +0600" stop="20251118170000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Daybreak: Australia</title>
+  </programme>
+  <programme start="20251118170000 +0600" stop="20251118190000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Daybreak: Asia</title>
+  </programme>
+  <programme start="20251118190000 +0600" stop="20251118200000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: China Open</title>
+  </programme>
+  <programme start="20251118200000 +0600" stop="20251118220000 +0600" channel="Bloomberg TV">
+    <title lang="bn">Bloomberg Markets: Asia</title>
+  </programme>
+  <programme start="20251118220000 +0600" stop="20251118223000 +0600" channel="Bloomberg TV">
     <title lang="bn">Bloomberg Daybreak: Middle East</title>
   </programme>
   <channel id="YouTube">
