@@ -1102,13 +1102,7 @@
     <display-name>STAR BHARAT</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/7/7b/Star_Bharat_2022.png"/>
   </channel>
-  <programme start="20251114173500 +0600" stop="20251114180500 +0600" channel="STARBHARAT">
-    <title lang="bn">To Be Announced</title>
-  </programme>
-  <programme start="20251114180500 +0600" stop="20251114181000 +0600" channel="STARBHARAT">
-    <title lang="bn">To Be Announced</title>
-  </programme>
-  <programme start="20251114181000 +0600" stop="20251114181500 +0600" channel="STARBHARAT">
+  <programme start="20251114174500 +0600" stop="20251114181500 +0600" channel="STARBHARAT">
     <title lang="bn">To Be Announced</title>
   </programme>
   <programme start="20251114181500 +0600" stop="20251114182000 +0600" channel="STARBHARAT">
@@ -1190,6 +1184,12 @@
     <title lang="bn">To Be Announced</title>
   </programme>
   <programme start="20251114231000 +0600" stop="20251114231500 +0600" channel="STARBHARAT">
+    <title lang="bn">To Be Announced</title>
+  </programme>
+  <programme start="20251114231500 +0600" stop="20251114232000 +0600" channel="STARBHARAT">
+    <title lang="bn">To Be Announced</title>
+  </programme>
+  <programme start="20251114232000 +0600" stop="20251114232500 +0600" channel="STARBHARAT">
     <title lang="bn">To Be Announced</title>
   </programme>
   <channel id="EpicTV.in">
@@ -1416,9 +1416,6 @@
     <display-name>Star Sports 1 HD</display-name>
     <icon src="hhttp://openboxv8s.com/india/star_sports_in_1_hindi.png"/>
   </channel>
-  <programme start="20251114171500 +0600" stop="20251114174500 +0600" channel="starsports1hd.in">
-    <title lang="bn">ICC Women's World Cup; Cricket Countdown</title>
-  </programme>
   <programme start="20251114174500 +0600" stop="20251114181500 +0600" channel="starsports1hd.in">
     <title lang="bn">Qualifier 1: Puneri Paltan vs. Dabang Delhi KC; Pro Kab...</title>
   </programme>
@@ -1506,13 +1503,13 @@
   <programme start="20251115053000 +0600" stop="20251115060000 +0600" channel="starsports1hd.in">
     <title lang="bn">ICC T20 World Cup 2024 India vs South Africa Final; T20...</title>
   </programme>
+  <programme start="20251115060000 +0600" stop="20251115063000 +0600" channel="starsports1hd.in">
+    <title lang="bn">2nd T20: India vs Australia; T20 Cricket</title>
+  </programme>
   <channel id="starsports1hindi.in">
     <display-name>Star Sports 1 Hindi</display-name>
     <icon src="https://static.epg.best/cn/StarSports1.cn.png"/>
   </channel>
-  <programme start="20251114171500 +0600" stop="20251114174500 +0600" channel="starsports1hindi.in">
-    <title lang="bn">ICC Women's World Cup; Cricket Countdown</title>
-  </programme>
   <programme start="20251114174500 +0600" stop="20251114181500 +0600" channel="starsports1hindi.in">
     <title lang="bn">Qualifier 1: Puneri Paltan vs. Dabang Delhi KC; Pro Kab...</title>
   </programme>
@@ -1599,6 +1596,9 @@
   </programme>
   <programme start="20251115060000 +0600" stop="20251115063000 +0600" channel="starsports1hindi.in">
     <title lang="bn">2nd T20: India vs Australia; T20 Cricket</title>
+  </programme>
+  <programme start="20251115063000 +0600" stop="20251115064500 +0600" channel="starsports1hindi.in">
+    <title lang="bn">3rd ODI: Australia v India; One-Day International Crick...</title>
   </programme>
   <channel id="starsports.tamil">
     <display-name>Star Sports Tamil 1</display-name>
@@ -1702,9 +1702,6 @@
     <display-name>Star Sports 3 HD</display-name>
     <icon src="https://i.pinimg.com/originals/c7/5d/56/c75d563b3cda837cd3fb1ce5ff5089cd.png"/>
   </channel>
-  <programme start="20251114171500 +0600" stop="20251114174500 +0600" channel="starsports3.in">
-    <title lang="bn">ICC Women's World Cup; Cricket Countdown</title>
-  </programme>
   <programme start="20251114174500 +0600" stop="20251114181500 +0600" channel="starsports3.in">
     <title lang="bn">Qualifier 1: Puneri Paltan vs. Dabang Delhi KC; Pro Kab...</title>
   </programme>
@@ -1791,6 +1788,9 @@
   </programme>
   <programme start="20251115050000 +0600" stop="20251115053000 +0600" channel="starsports3.in">
     <title lang="bn">ICC T20 World Cup 2024 India vs South Africa Final; T20...</title>
+  </programme>
+  <programme start="20251115053000 +0600" stop="20251115060000 +0600" channel="starsports3.in">
+    <title lang="bn">2nd T20: India vs Australia; T20 Cricket</title>
   </programme>
   <channel id="starsportsselect1.in">
     <display-name>Star Sports Select 1 HD</display-name>
@@ -2235,10 +2235,7 @@
     <display-name>Zee Bangla Cinema</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/5/59/Zee_Bangla_Cinema_%282025%29.svg"/>
   </channel>
-  <programme start="20251114170700 +0600" stop="20251114173700 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">Satru Mitra</title>
-  </programme>
-  <programme start="20251114173700 +0600" stop="20251114200000 +0600" channel="zeebanglacinema.in">
+  <programme start="20251114193000 +0600" stop="20251114200000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Barkane</title>
   </programme>
   <programme start="20251114200000 +0600" stop="20251114203000 +0600" channel="zeebanglacinema.in">
@@ -2271,8 +2268,11 @@
   <programme start="20251115030000 +0600" stop="20251115033000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Bedeni Jyotsnar Amar Prem</title>
   </programme>
-  <programme start="20251115033000 +0600" stop="20251115040000 +0600" channel="zeebanglacinema.in">
+  <programme start="20251115033000 +0600" stop="20251115053000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Bhalobasar Jeet</title>
+  </programme>
+  <programme start="20251115053000 +0600" stop="20251115060000 +0600" channel="zeebanglacinema.in">
+    <title lang="bn">Patanjali Yog - By Yogrishi Swami Ramdev</title>
   </programme>
   <channel id="colorsbanglacinemahd.in">
     <display-name>COLORS BANGLA CINEMA HD</display-name>
