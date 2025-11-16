@@ -16,7 +16,7 @@ jobs:
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # ⭐ full history প্রয়োজন conflict fixed এর জন্য
+          fetch-depth: 0   # Full history for merge/rebase
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -27,26 +27,26 @@ jobs:
         run: pip install requests
 
       - name: 🎬 Run Update Script
-        run: python Script/Fancode_playlist.py   # আপনার স্ক্রিপ্ট
+        run: python Script/Fancode_playlist.py
 
-      - name: 🛠 Pull Latest Before Commit (Fix Conflict)
+      - name: 🛠 Pull Latest Before Commit (Rebase Fix)
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # ⭐ সবসময় সর্বশেষ আপডেট নেবে conflict ছাড়া
+          git pull --rebase origin main || true
 
-          # ⭐ রিমোট থেকে সর্বশেষ পরিবর্তন মার্জ করবে
-          git pull --rebase origin "${GITHUB_REF##*/}" || true
-
-      - name: 💾 Commit and Push Updated Playlist
+      - name: 💾 Commit & Push Updated Playlist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f Fancode.m3u ]; then
             git add Fancode.m3u
-            git commit -m "🔁 Auto update Fancode.m3u [$(date '+%Y-%m-%d %H:%M:%S')]" || echo "No changes"
+            git commit -m "🔁 Auto update Fancode.m3u ($(date '+%Y-%m-%d %H:%M:%S'))" || true
 
-            # ⭐ সঠিকভাবে push করবে (no conflict)
-            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
+            # ⭐ Conflict-free push
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
 
           else
             echo "❌ Fancode.m3u file not found"
