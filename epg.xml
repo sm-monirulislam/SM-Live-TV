@@ -1237,7 +1237,10 @@
     <display-name>Aaj Tak HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/9/93/Aaj_Tak_HD_v2.png"/>
   </channel>
-  <programme start="20251116134000 +0600" stop="20251116141000 +0600" channel="AajTak.in">
+  <programme start="20251116133000 +0600" stop="20251116140000 +0600" channel="AajTak.in">
+    <title lang="bn">Non-Stop 100</title>
+  </programme>
+  <programme start="20251116140000 +0600" stop="20251116141000 +0600" channel="AajTak.in">
     <title lang="bn">News Show</title>
   </programme>
   <programme start="20251116141000 +0600" stop="20251116143000 +0600" channel="AajTak.in">
@@ -1460,6 +1463,9 @@
     <display-name>Epic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/41/Epic_TV_%282021%29.jpg"/>
   </channel>
+  <programme start="20251116125500 +0600" stop="20251116134500 +0600" channel="EpicTV.in">
+    <title lang="bn">Destruction Decoded</title>
+  </programme>
   <programme start="20251116134500 +0600" stop="20251116143500 +0600" channel="EpicTV.in">
     <title lang="bn">Naval War Of 1971</title>
   </programme>
@@ -2366,7 +2372,10 @@
     <display-name>Star Sports Select 1 HD</display-name>
     <icon src="https://static.epg.best/in/StarSportsSelect1.in.png"/>
   </channel>
-  <programme start="20251116134500 +0600" stop="20251116141500 +0600" channel="starsportsselect1.in">
+  <programme start="20251116133000 +0600" stop="20251116140000 +0600" channel="starsportsselect1.in">
+    <title lang="bn">Hobart Hurricanes v Brisbane Heat; Women's Big Bash</title>
+  </programme>
+  <programme start="20251116140000 +0600" stop="20251116141500 +0600" channel="starsportsselect1.in">
     <title lang="bn">Sydney Thunder v Sydney Sixers; Women's Big Bash</title>
   </programme>
   <programme start="20251116141500 +0600" stop="20251116143000 +0600" channel="starsportsselect1.in">
@@ -2747,7 +2756,10 @@
     <display-name>ENT | Epic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/41/Epic_TV_%282021%29.jpg"/>
   </channel>
-  <programme start="20251116140500 +0600" stop="20251116143500 +0600" channel="EpicTV.in_TVWISH">
+  <programme start="20251116131500 +0600" stop="20251116134500 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Destruction Decoded</title>
+  </programme>
+  <programme start="20251116134500 +0600" stop="20251116143500 +0600" channel="EpicTV.in_TVWISH">
     <title lang="bn">Naval War Of 1971</title>
   </programme>
   <programme start="20251116143500 +0600" stop="20251116150500 +0600" channel="EpicTV.in_TVWISH">
@@ -2782,9 +2794,6 @@
   </programme>
   <programme start="20251116200000 +0600" stop="20251116203000 +0600" channel="EpicTV.in_TVWISH">
     <title lang="bn">Raja Rasoi Aur Anya Kahaniyaan</title>
-  </programme>
-  <programme start="20251116203000 +0600" stop="20251116205500 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Bharat Ratna</title>
   </programme>
   <channel id="DANGAL2">
     <display-name>ENT | DANGAL2</display-name>
