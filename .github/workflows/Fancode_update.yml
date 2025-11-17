@@ -2,7 +2,7 @@ name: 🔁 Auto Update Fancode M3U Playlist
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # ⏰ প্রতি ১০ মিনিটে রান করবে
+    - cron: "*/10 * * * *"   # ⏰ every 10 minutes
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ jobs:
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # Full history for merge/rebase
+          fetch-depth: 0  # Full history for merge/rebase
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -34,8 +34,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # ⭐ সবসময় সর্বশেষ আপডেট নেবে conflict ছাড়া
-          git pull --rebase origin main || true
+          # Pull the latest changes with rebase to avoid conflicts
+          git pull --rebase origin main
 
       - name: 💾 Commit & Push Updated Playlist
         env:
@@ -45,9 +45,8 @@ jobs:
             git add Fancode.m3u
             git commit -m "🔁 Auto update Fancode.m3u ($(date '+%Y-%m-%d %H:%M:%S'))" || true
 
-            # ⭐ Conflict-free push
+            # Push changes
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
-
           else
             echo "❌ Fancode.m3u file not found"
           fi
