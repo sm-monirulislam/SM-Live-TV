@@ -2,7 +2,7 @@ name: 🔁 Auto Update Fancode M3U Playlist
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # ⏰ every 10 minutes
+    - cron: "*/10 * * * *"   # ⏰ প্রতি ১০ মিনিটে
   workflow_dispatch:
 
 permissions:
@@ -34,8 +34,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Pull the latest changes with rebase to avoid conflicts
+          # Check if there are uncommitted changes
+          if [[ $(git status --porcelain) ]]; then
+            # Stash uncommitted changes
+            git stash -u
+            echo "Changes have been stashed."
+          else
+            echo "No uncommitted changes."
+          fi
+
+          # Pull the latest changes with rebase
           git pull --rebase origin main
+
+          # If there were stashed changes, apply them
+          if git stash list | grep -q "stash@{0}"; then
+            git stash pop
+            echo "Stashed changes have been applied."
+          fi
 
       - name: 💾 Commit & Push Updated Playlist
         env:
