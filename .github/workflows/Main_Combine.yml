@@ -3,31 +3,40 @@ name: 📺 Auto Combine Live TV M3U
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/22 * * * *"   # প্রতি ২২ মিনিটে রান হবে (UTC)
+    - cron: "*/22 * * * *"   # প্রতি ২২ মিনিটে রান
 
-# 👉 একাধিক workflow একসাথে রান হওয়া বন্ধ করবে
-concurrency:
-  group: global-workflows
-  cancel-in-progress: false     # যাতে আগের workflow ক্যানসেল না হয়
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-    - name: ⏳ Wait 2 minutes if queued
-      run: sleep 120     # ২ মিনিট অপেক্ষা করবে
+
+    - name: 🔍 Check if any workflow is running
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO: ${{ github.repository }}
+      run: |
+        echo "🔄 Checking for active workflows..."
+
+        RUNNING=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
+          "https://api.github.com/repos/$REPO/actions/runs?status=in_progress&per_page=1" | jq '.total_count')
+
+        if [ "$RUNNING" -gt 0 ]; then
+          echo "⚠️ Another workflow is running. Waiting 2 minutes..."
+          sleep 120
+        else
+          echo "🟢 No workflow running. Starting immediately..."
+        fi
 
     - name: 🔹 Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
 
-    - name: 🐍 Set up Python
+    - name: 🐍 Setup Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.x'
@@ -45,7 +54,7 @@ jobs:
         git fetch origin
         git reset --soft origin/main
 
-    - name: 🕒 Commit and Push Updated M3U
+    - name: 🕒 Commit & Push Updates
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "actions@github.com"
