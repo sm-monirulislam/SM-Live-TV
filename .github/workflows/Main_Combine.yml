@@ -3,7 +3,12 @@ name: 📺 Auto Combine Live TV M3U
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/22 * * * *"   # ⏰ প্রতি ২২ মিনিটে রান হবে (UTC)
+    - cron: "*/22 * * * *"   # প্রতি ২২ মিনিটে রান হবে (UTC)
+
+# 👉 একাধিক workflow একসাথে রান হওয়া বন্ধ করবে
+concurrency:
+  group: global-workflows
+  cancel-in-progress: false     # যাতে আগের workflow ক্যানসেল না হয়
 
 jobs:
   build:
@@ -13,6 +18,9 @@ jobs:
       contents: write
 
     steps:
+    - name: ⏳ Wait 2 minutes if queued
+      run: sleep 120     # ২ মিনিট অপেক্ষা করবে
+
     - name: 🔹 Checkout repository
       uses: actions/checkout@v4
       with:
