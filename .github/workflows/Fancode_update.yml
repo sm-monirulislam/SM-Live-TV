@@ -2,7 +2,7 @@ name: 🔁 Auto Update Fancode M3U Playlist
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # ⏰ প্রতি ১০ মিনিটে
+    - cron: "0 * * * *"   # ⏰ প্রতি ১ ঘণ্টায়
   workflow_dispatch:
 
 permissions:
