@@ -3,7 +3,7 @@ name: 📺 Auto Combine Live TV M3U
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/22 * * * *"   # প্রতি ২২ মিনিটে রান
+    - cron: "0 */3 * * *"   # প্রতি ৩ ঘণ্টায় রান
 
 permissions:
   contents: write
