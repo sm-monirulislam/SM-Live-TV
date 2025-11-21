@@ -1,16 +1,15 @@
 name: 📺 Auto Update AynaOTT M3U
 
 on:
-  workflow_dispatch:  # 👉 ম্যানুয়ালি রান করা যাবে
-  schedule:
-    - cron: "*/30 * * * *"  # ⏰ প্রতি ৩০ মিনিটে অটো রান (UTC)
+  workflow_dispatch:
+  workflow_call:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write  # Push করার অনুমতি
+      contents: write
 
     steps:
     - name: 🔹 Checkout repository
@@ -43,5 +42,5 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
         git add AynaOTT.m3u
-        git diff --staged --quiet || git.commit -m "✅ Auto Updated AynaOTT.m3u on $(date '+%Y-%m-%d %H:%M:%S')"
+        git diff --staged --quiet || git commit -m "✅ Auto Updated AynaOTT.m3u"
         git push origin main
