@@ -1,4 +1,4 @@
-name: 🔁 Auto Update Fancode M3U Playlist
+name: 🔁 Auto Update Fancode Playlist
 
 on:
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
       - name: 📥 Install Dependencies
         run: pip install requests
 
-      - name: 🎬 Run Update Script
+      - name: ▶️ Run Update Script
         run: python Script/Fancode_playlist.py
 
       - name: 💾 Commit & Push Safely
@@ -35,10 +35,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Detect changes
           if git status --porcelain | grep "Fancode.m3u"; then
+            echo "🟢 Changes found, committing..."
             git add Fancode.m3u
             git commit -m "🔁 Auto update Fancode.m3u"
+
+            echo "📥 Pulling latest changes..."
+            git pull --rebase origin main
+
+            echo "📤 Pushing to GitHub..."
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
-            echo "⚠️ No changes in Fancode.m3u"
+            echo "⚠️ No changes found in Fancode.m3u"
           fi
