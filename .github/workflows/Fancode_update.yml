@@ -28,29 +28,17 @@ jobs:
       - name: 🎬 Run Update Script
         run: python Script/Fancode_playlist.py
 
-      - name: 🔄 Force Sync With Remote (Error-Proof)
+      - name: 💾 Commit & Push Safely
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Fetch latest remote
-          git fetch origin main
-
-          # Reset local branch to remote (GUARANTEED CLEAN)
-          git reset --hard origin/main
-
-          # Copy generated Fancode.m3u again (because reset deleted it)
-          cp Fancode.m3u Fancode.m3u || true
-
-      - name: 💾 Commit & Push (No Fast-Forward Errors Ever)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [ -f Fancode.m3u ]; then
+          if git status --porcelain | grep "Fancode.m3u"; then
             git add Fancode.m3u
-            git commit -m "🔁 Auto update Fancode.m3u" || echo "No changes"
-
+            git commit -m "🔁 Auto update Fancode.m3u"
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
-            echo "❌ Fancode.m3u file not found"
+            echo "⚠️ No changes in Fancode.m3u"
           fi
