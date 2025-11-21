@@ -28,17 +28,19 @@ jobs:
       - name: 🎬 Generate CricHD Playlist
         run: python Script/CricHD_playlist.py
 
-      - name: 💾 Commit & Push updates
+      - name: 💾 Commit & Push updates (Safe, No Reset)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git stash || true
-          git pull origin main --rebase || true
-          git stash.pop || true
-
-          git add Sports.m3u
-          git commit -m "🔁 Auto update Sports playlist" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main || true
+          # Check if Sports.m3u actually changed
+          if git status --porcelain | grep "Sports.m3u"; then
+            echo "🟢 Changes found, committing..."
+            git add Sports.m3u
+            git commit -m "🔁 Auto update Sports playlist"
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
+          else
+            echo "⚠️ No changes detected in Sports.m3u"
+          fi
