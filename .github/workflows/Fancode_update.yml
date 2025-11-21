@@ -33,17 +33,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stash local uncommitted changes
+          # Stash local changes (if any)
           git stash -u || true
 
-          # Fetch latest remote
-          git.fetch origin main
+          # Fetch remote
+          git fetch origin main
 
-          # Rebase safely
-          git.rebase origin/main || true
+          # Rebase with remote
+          git rebase origin/main || true
 
-          # Bring stashed changes back (ignore error if none)
-          git stash.pop || true
+          # Apply stashed changes
+          git stash pop || true
 
       - name: 💾 Commit & Safe Push
         env:
@@ -53,7 +53,7 @@ jobs:
             git add Fancode.m3u
             git commit -m "🔁 Auto update Fancode.m3u" || echo "No changes to commit"
 
-            # Safe force push: solves non-fast-forward error
+            # Safe force push (no fast-forward error)
             git push --force-with-lease https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
             echo "❌ Fancode.m3u file not found"
