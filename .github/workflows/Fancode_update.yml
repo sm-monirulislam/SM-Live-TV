@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📦 Checkout repository
+      - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -28,16 +28,22 @@ jobs:
       - name: 🎬 Run Update Script
         run: python Script/Fancode_playlist.py
 
-      - name: 🔄 Prepare for Commit (Rebase Safe)
+      - name: 🔄 Sync with Remote (Stash + Rebase Safe)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Fetch latest remote changes
-          git fetch origin main
+          # Stash local uncommitted changes
+          git stash -u || true
 
-          # Rebase current changes safely
-          git rebase origin/main || git rebase --skip
+          # Fetch latest remote
+          git.fetch origin main
+
+          # Rebase safely
+          git.rebase origin/main || true
+
+          # Bring stashed changes back (ignore error if none)
+          git stash.pop || true
 
       - name: 💾 Commit & Safe Push
         env:
@@ -47,7 +53,7 @@ jobs:
             git add Fancode.m3u
             git commit -m "🔁 Auto update Fancode.m3u" || echo "No changes to commit"
 
-            # Safe-force push (prevents fast-forward error)
+            # Safe force push: solves non-fast-forward error
             git push --force-with-lease https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
             echo "❌ Fancode.m3u file not found"
