@@ -40,6 +40,11 @@ jobs:
             echo "🟢 Changes found, committing..."
             git add Sports.m3u
             git commit -m "🔁 Auto update Sports playlist"
+
+            echo "📥 Pulling latest changes to avoid conflicts..."
+            git pull --rebase origin main
+
+            echo "📤 Pushing changes..."
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
             echo "⚠️ No changes detected in Sports.m3u"
