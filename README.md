@@ -9,11 +9,6 @@
 
 ## 🟢 Live Workflow Status
 
-| Workflow | Status |
-|-----------|--------|
-| 🎯 **Main Orchestrator** | ![Main Orchestrator](https://github.com/sm-monirulislam/SM-Live-TV/actions/workflows/main_orchestrator.yml/badge.svg) |
-| ⚙️ **Fancode Auto Update** | ![Fancode Update](https://github.com/sm-monirulislam/SM-Live-TV/actions/workflows/auto_update.yml/badge.svg) |
-| 🏏 **CricHD Auto Update** | ![CricHD Update](https://github.com/sm-monirulislam/SM-Live-TV/actions/workflows/CricHD_update_playlist.yml/badge.svg) |
 
 > 🟢 = Running successfully | 🔴 = Error or failed | ⏳ = In progress
 
