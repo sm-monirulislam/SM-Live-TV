@@ -28,33 +28,29 @@ jobs:
       - name: 🎬 Run Update Script
         run: python Script/Fancode_playlist.py
 
-      - name: 🔄 Sync with Remote (Stash + Rebase Safe)
+      - name: 🔄 Force Sync With Remote (Error-Proof)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stash local changes (if any)
-          git stash -u || true
-
-          # Fetch remote
+          # Fetch latest remote
           git fetch origin main
 
-          # Rebase with remote
-          git rebase origin/main || true
+          # Reset local branch to remote (GUARANTEED CLEAN)
+          git reset --hard origin/main
 
-          # Apply stashed changes
-          git stash pop || true
+          # Copy generated Fancode.m3u again (because reset deleted it)
+          cp Fancode.m3u Fancode.m3u || true
 
-      - name: 💾 Commit & Safe Push
+      - name: 💾 Commit & Push (No Fast-Forward Errors Ever)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f Fancode.m3u ]; then
             git add Fancode.m3u
-            git commit -m "🔁 Auto update Fancode.m3u" || echo "No changes to commit"
+            git commit -m "🔁 Auto update Fancode.m3u" || echo "No changes"
 
-            # Safe force push (no fast-forward error)
-            git push --force-with-lease https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
             echo "❌ Fancode.m3u file not found"
           fi
