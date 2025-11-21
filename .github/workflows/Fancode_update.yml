@@ -1,9 +1,8 @@
 name: 🔁 Auto Update Fancode M3U Playlist
 
 on:
-  schedule:
-    - cron: "0 * * * *"   # ⏰ প্রতি ১ ঘণ্টায়
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: write
@@ -16,7 +15,7 @@ jobs:
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Full history for merge/rebase
+          fetch-depth: 0
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -33,23 +32,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Check if there are uncommitted changes
-          if [[ $(git status --porcelain) ]]; then
-            # Stash uncommitted changes
+
+          if [[ $(git.status --porcelain) ]]; then
             git stash -u
-            echo "Changes have been stashed."
-          else
-            echo "No uncommitted changes."
           fi
 
-          # Pull the latest changes with rebase
-          git pull --rebase origin main
+          git.pull --rebase origin main || true
 
-          # If there were stashed changes, apply them
           if git stash list | grep -q "stash@{0}"; then
-            git stash pop
-            echo "Stashed changes have been applied."
+            git stash.pop || true
           fi
 
       - name: 💾 Commit & Push Updated Playlist
@@ -58,9 +49,7 @@ jobs:
         run: |
           if [ -f Fancode.m3u ]; then
             git add Fancode.m3u
-            git commit -m "🔁 Auto update Fancode.m3u ($(date '+%Y-%m-%d %H:%M:%S'))" || true
-
-            # Push changes
+            git commit -m "🔁 Auto update Fancode.m3u" || true
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
             echo "❌ Fancode.m3u file not found"
