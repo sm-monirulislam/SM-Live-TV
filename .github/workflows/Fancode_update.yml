@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📦 Checkout Repository
+      - name: 📦 Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -28,29 +28,27 @@ jobs:
       - name: 🎬 Run Update Script
         run: python Script/Fancode_playlist.py
 
-      - name: 🛠 Pull Latest Before Commit (Rebase Fix)
+      - name: 🔄 Prepare for Commit (Rebase Safe)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          if [[ $(git.status --porcelain) ]]; then
-            git stash -u
-          fi
+          # Fetch latest remote changes
+          git fetch origin main
 
-          git.pull --rebase origin main || true
+          # Rebase current changes safely
+          git rebase origin/main || git rebase --skip
 
-          if git stash list | grep -q "stash@{0}"; then
-            git stash.pop || true
-          fi
-
-      - name: 💾 Commit & Push Updated Playlist
+      - name: 💾 Commit & Safe Push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f Fancode.m3u ]; then
             git add Fancode.m3u
-            git commit -m "🔁 Auto update Fancode.m3u" || true
-            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
+            git commit -m "🔁 Auto update Fancode.m3u" || echo "No changes to commit"
+
+            # Safe-force push (prevents fast-forward error)
+            git push --force-with-lease https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
             echo "❌ Fancode.m3u file not found"
           fi
