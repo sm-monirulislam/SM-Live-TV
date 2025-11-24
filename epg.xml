@@ -663,15 +663,6 @@
     <display-name>NEWS | TV9 Bharatvarsh</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/a/ad/TV9_Bharatvarsh.jpeg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124153000 +0600" channel="TV9Bharatvarsh">
-    <title lang="bn">Loud &amp; Clear</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="TV9Bharatvarsh">
-    <title lang="bn">Satta Ki Kahani</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="TV9Bharatvarsh">
-    <title lang="bn">3:30 pm Spl</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124173000 +0600" channel="TV9Bharatvarsh">
     <title lang="bn">Full &amp; Final</title>
   </programme>
@@ -753,22 +744,19 @@
   <programme start="20251125153000 +0600" stop="20251125160000 +0600" channel="TV9Bharatvarsh">
     <title lang="bn">3 Pm Spl</title>
   </programme>
+  <programme start="20251125160000 +0600" stop="20251125163000 +0600" channel="TV9Bharatvarsh">
+    <title lang="bn">3:30 pm Spl</title>
+  </programme>
+  <programme start="20251125163000 +0600" stop="20251125173000 +0600" channel="TV9Bharatvarsh">
+    <title lang="bn">Full &amp; Final</title>
+  </programme>
+  <programme start="20251125173000 +0600" stop="20251125180000 +0600" channel="TV9Bharatvarsh">
+    <title lang="bn">Bharatvarsh ka No 1 bulletin</title>
+  </programme>
   <channel id="ZEEBUSINESS">
     <display-name>NEWS | ZEE BUSINESS</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/0/07/Zee_Business_%282025%29.svg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="ZEEBUSINESS">
-    <title lang="bn">Final Trade</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="ZEEBUSINESS">
-    <title lang="bn">Final Trade</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="ZEEBUSINESS">
-    <title lang="bn">Final Trade</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="ZEEBUSINESS">
-    <title lang="bn">Commodity Superfast</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="ZEEBUSINESS">
     <title lang="bn">News Live</title>
   </programme>
@@ -847,22 +835,22 @@
   <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="ZEEBUSINESS">
     <title lang="bn">Bazar Aaj Aur Kal</title>
   </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="ZEEBUSINESS">
+    <title lang="bn">Money Guru</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="ZEEBUSINESS">
+    <title lang="bn">Aapki Khabar, Aapka Fayda</title>
+  </programme>
+  <programme start="20251125063000 +0600" stop="20251125070000 +0600" channel="ZEEBUSINESS">
+    <title lang="bn">Bazar Aaj Aur Kal</title>
+  </programme>
+  <programme start="20251125070000 +0600" stop="20251125073000 +0600" channel="ZEEBUSINESS">
+    <title lang="bn">Money Guru</title>
+  </programme>
   <channel id="ZEENews">
     <display-name>NEWS | ZEE News</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/c/c4/Zee_News_HD.jpg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="ZEENews">
-    <title lang="bn">2 Baje 2 Min 2 Khabar</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="ZEENews">
-    <title lang="bn">Zee Special</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="ZEENews">
-    <title lang="bn">Trishul</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="ZEENews">
-    <title lang="bn">Zee Special</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="ZEENews">
     <title lang="bn">Fast N Facts</title>
   </programme>
@@ -940,6 +928,18 @@
   </programme>
   <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="ZEENews">
     <title lang="bn">News Bulletin</title>
+  </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="ZEENews">
+    <title lang="bn">News Bulletin</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="ZEENews">
+    <title lang="bn">News Bulletin</title>
+  </programme>
+  <programme start="20251125063000 +0600" stop="20251125070000 +0600" channel="ZEENews">
+    <title lang="bn">Namaste Zee</title>
+  </programme>
+  <programme start="20251125070000 +0600" stop="20251125073000 +0600" channel="ZEENews">
+    <title lang="bn">Namaste Zee</title>
   </programme>
   <channel id="DangalTV.in">
     <display-name>ENT | Dangal TV</display-name>
@@ -1127,15 +1127,6 @@
     <display-name>India TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/10/India_TV_Orange.jpg"/>
   </channel>
-  <programme start="20251124142800 +0600" stop="20251124152800 +0600" channel="IndiaTV.in">
-    <title lang="bn">Kahani Kursi Ki</title>
-  </programme>
-  <programme start="20251124152800 +0600" stop="20251124155800 +0600" channel="IndiaTV.in">
-    <title lang="bn">Rajdharma</title>
-  </programme>
-  <programme start="20251124155800 +0600" stop="20251124162800 +0600" channel="IndiaTV.in">
-    <title lang="bn">Rajdharma</title>
-  </programme>
   <programme start="20251124162800 +0600" stop="20251124172800 +0600" channel="IndiaTV.in">
     <title lang="bn">Aaj Ki Badi Khabar</title>
   </programme>
@@ -1217,19 +1208,19 @@
   <programme start="20251125105800 +0600" stop="20251125112800 +0600" channel="IndiaTV.in">
     <title lang="bn">Special Report</title>
   </programme>
+  <programme start="20251125112800 +0600" stop="20251125115800 +0600" channel="IndiaTV.in">
+    <title lang="bn">Abhi Abhi</title>
+  </programme>
+  <programme start="20251125115800 +0600" stop="20251125122800 +0600" channel="IndiaTV.in">
+    <title lang="bn">Abhi Abhi</title>
+  </programme>
+  <programme start="20251125122800 +0600" stop="20251125125800 +0600" channel="IndiaTV.in">
+    <title lang="bn">Prahar</title>
+  </programme>
   <channel id="DDNews.in">
     <display-name>DD News</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/d/d6/DD_News_new_logo_2024.jpg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="DDNews.in">
-    <title lang="bn">News Punch</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="DDNews.in">
-    <title lang="bn">Samachar</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124163000 +0600" channel="DDNews.in">
-    <title lang="bn">Iss Waqt</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="DDNews.in">
     <title lang="bn">Samachar</title>
   </programme>
@@ -1311,22 +1302,19 @@
   <programme start="20251125150000 +0600" stop="20251125153000 +0600" channel="DDNews.in">
     <title lang="bn">Cyber Alert</title>
   </programme>
+  <programme start="20251125153000 +0600" stop="20251125163000 +0600" channel="DDNews.in">
+    <title lang="bn">Iss Waqt</title>
+  </programme>
+  <programme start="20251125163000 +0600" stop="20251125170000 +0600" channel="DDNews.in">
+    <title lang="bn">Samachar</title>
+  </programme>
+  <programme start="20251125170000 +0600" stop="20251125173000 +0600" channel="DDNews.in">
+    <title lang="bn">Samachar</title>
+  </programme>
   <channel id="CNBCAwaaz">
     <display-name>CNBC Awaaz</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/18/CNBC_Awaaz_2025.svg"/>
   </channel>
-  <programme start="20251124142700 +0600" stop="20251124145700 +0600" channel="CNBCAwaaz">
-    <title lang="bn">Kamai Ka Adda</title>
-  </programme>
-  <programme start="20251124145700 +0600" stop="20251124152700 +0600" channel="CNBCAwaaz">
-    <title lang="bn">Kamai Ka Adda</title>
-  </programme>
-  <programme start="20251124152700 +0600" stop="20251124155700 +0600" channel="CNBCAwaaz">
-    <title lang="bn">Kamai Ka Adda</title>
-  </programme>
-  <programme start="20251124155700 +0600" stop="20251124162700 +0600" channel="CNBCAwaaz">
-    <title lang="bn">Commodity Call</title>
-  </programme>
   <programme start="20251124162700 +0600" stop="20251124165700 +0600" channel="CNBCAwaaz">
     <title lang="bn">Awaaz Samachar</title>
   </programme>
@@ -1405,16 +1393,22 @@
   <programme start="20251125034000 +0600" stop="20251125040000 +0600" channel="CNBCAwaaz">
     <title lang="bn">Takkar</title>
   </programme>
+  <programme start="20251125040000 +0600" stop="20251125042000 +0600" channel="CNBCAwaaz">
+    <title lang="bn">Consumer Adda</title>
+  </programme>
+  <programme start="20251125042000 +0600" stop="20251125044000 +0600" channel="CNBCAwaaz">
+    <title lang="bn">Awaaz Adda</title>
+  </programme>
+  <programme start="20251125044000 +0600" stop="20251125050000 +0600" channel="CNBCAwaaz">
+    <title lang="bn">Awaaz Adda</title>
+  </programme>
+  <programme start="20251125050000 +0600" stop="20251125052000 +0600" channel="CNBCAwaaz">
+    <title lang="bn">Your Money</title>
+  </programme>
   <channel id="BharatSamacharTV.in">
     <display-name>Bharat Samachar TV</display-name>
     <icon src="https://bharatsamachartv.com/images/logo.png"/>
   </channel>
-  <programme start="20251124145500 +0600" stop="20251124152500 +0600" channel="BharatSamacharTV.in">
-    <title lang="bn">100 Samachar</title>
-  </programme>
-  <programme start="20251124152500 +0600" stop="20251124163000 +0600" channel="BharatSamacharTV.in">
-    <title lang="bn">3 Pm Badi Khabar</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="BharatSamacharTV.in">
     <title lang="bn">Breaking News</title>
   </programme>
@@ -1499,22 +1493,16 @@
   <programme start="20251125052500 +0600" stop="20251125055500 +0600" channel="BharatSamacharTV.in">
     <title lang="bn">Full &amp; Final Bulletin</title>
   </programme>
+  <programme start="20251125055500 +0600" stop="20251125062500 +0600" channel="BharatSamacharTV.in">
+    <title lang="bn">TVC</title>
+  </programme>
+  <programme start="20251125062500 +0600" stop="20251125065500 +0600" channel="BharatSamacharTV.in">
+    <title lang="bn">TVC</title>
+  </programme>
   <channel id="Abp.in">
     <display-name>ABP News</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/e/eb/ABP_News.svg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="Abp.in">
-    <title lang="bn">Khabar Fatafat</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="Abp.in">
-    <title lang="bn">Saas Bahu Aur Saazish</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="Abp.in">
-    <title lang="bn">Saas Bahu Aur Saazish</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="Abp.in">
-    <title lang="bn">Khabar Filmi Hai</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="Abp.in">
     <title lang="bn">Khabar Gawah Hain</title>
   </programme>
@@ -1593,26 +1581,23 @@
   <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="Abp.in">
     <title lang="bn">Special Report</title>
   </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="Abp.in">
+    <title lang="bn">Special Report</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="Abp.in">
+    <title lang="bn">Special Report</title>
+  </programme>
+  <programme start="20251125063000 +0600" stop="20251125070000 +0600" channel="Abp.in">
+    <title lang="bn">Special Report</title>
+  </programme>
+  <programme start="20251125070000 +0600" stop="20251125073000 +0600" channel="Abp.in">
+    <title lang="bn">Special Report</title>
+  </programme>
   <channel id="AajTak.in">
     <display-name>Aaj Tak HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/9/93/Aaj_Tak_HD_v2.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="AajTak.in">
-    <title lang="bn">Newsroom</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="AajTak.in">
-    <title lang="bn">Newsroom</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="AajTak.in">
-    <title lang="bn">Mera Gaon Mera Desh</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="AajTak.in">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20251124163000 +0600" stop="20251124165500 +0600" channel="AajTak.in">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20251124165500 +0600" stop="20251124171000 +0600" channel="AajTak.in">
+  <programme start="20251124164000 +0600" stop="20251124171000 +0600" channel="AajTak.in">
     <title lang="bn">News</title>
   </programme>
   <programme start="20251124171000 +0600" stop="20251124174000 +0600" channel="AajTak.in">
@@ -1687,29 +1672,26 @@
   <programme start="20251125023000 +0600" stop="20251125030000 +0600" channel="AajTak.in">
     <title lang="bn">News</title>
   </programme>
+  <programme start="20251125030000 +0600" stop="20251125033000 +0600" channel="AajTak.in">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20251125033000 +0600" stop="20251125040000 +0600" channel="AajTak.in">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20251125040000 +0600" stop="20251125043000 +0600" channel="AajTak.in">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20251125043000 +0600" stop="20251125050000 +0600" channel="AajTak.in">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="AajTak.in">
+    <title lang="bn">News</title>
+  </programme>
   <channel id="ZEETV.tv">
     <display-name>ZEE TV HD</display-name>
     <icon src="https://1000logos.net/wp-content/uploads/2025/05/Zee-TV-Logo-768x432.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Vasudha</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Jagadhatri</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124155900 +0600" channel="ZEETV.tv">
-    <title lang="bn">Ek Nazar</title>
-  </programme>
-  <programme start="20251124155900 +0600" stop="20251124160000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Saru</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Tum Se Tum Tak</title>
-  </programme>
-  <programme start="20251124163000 +0600" stop="20251124165900 +0600" channel="ZEETV.tv">
-    <title lang="bn">Ek Nazar</title>
-  </programme>
-  <programme start="20251124165900 +0600" stop="20251124170000 +0600" channel="ZEETV.tv">
+  <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="ZEETV.tv">
     <title lang="bn">Ganga Mai Ki Betiyaan</title>
   </programme>
   <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="ZEETV.tv">
@@ -1781,16 +1763,28 @@
   <programme start="20251125030000 +0600" stop="20251125033000 +0600" channel="ZEETV.tv">
     <title lang="bn">Vasudha</title>
   </programme>
+  <programme start="20251125033000 +0600" stop="20251125035300 +0600" channel="ZEETV.tv">
+    <title lang="bn">Ganga Mai Ki Betiyaan</title>
+  </programme>
+  <programme start="20251125035300 +0600" stop="20251125041500 +0600" channel="ZEETV.tv">
+    <title lang="bn">Jagriti - Ek Nayi Subah</title>
+  </programme>
+  <programme start="20251125041500 +0600" stop="20251125043800 +0600" channel="ZEETV.tv">
+    <title lang="bn">Jaane Anjaane Hum Mile</title>
+  </programme>
+  <programme start="20251125043800 +0600" stop="20251125050100 +0600" channel="ZEETV.tv">
+    <title lang="bn">Saru</title>
+  </programme>
+  <programme start="20251125050100 +0600" stop="20251125052400 +0600" channel="ZEETV.tv">
+    <title lang="bn">Vasudha</title>
+  </programme>
+  <programme start="20251125052400 +0600" stop="20251125054700 +0600" channel="ZEETV.tv">
+    <title lang="bn">Ganga Mai Ki Betiyaan</title>
+  </programme>
   <channel id="STARBHARATHD">
     <display-name>STAR BHARAT HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/b/b9/Star_bharat_hd_clean.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124153000 +0600" channel="STARBHARATHD">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124163000 +0600" channel="STARBHARATHD">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124173000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
@@ -1872,19 +1866,19 @@
   <programme start="20251125130000 +0600" stop="20251125133000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
-  <programme start="20251125133000 +0600" stop="20251125140000 +0600" channel="STARBHARATHD">
+  <programme start="20251125133000 +0600" stop="20251125143000 +0600" channel="STARBHARATHD">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251125143000 +0600" stop="20251125153000 +0600" channel="STARBHARATHD">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251125153000 +0600" stop="20251125160000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
   <channel id="STARBHARAT">
     <display-name>STAR BHARAT</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/7/7b/Star_Bharat_2022.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124153000 +0600" channel="STARBHARAT">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124163000 +0600" channel="STARBHARAT">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124173000 +0600" channel="STARBHARAT">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
@@ -1966,26 +1960,20 @@
   <programme start="20251125130000 +0600" stop="20251125133000 +0600" channel="STARBHARAT">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
-  <programme start="20251125133000 +0600" stop="20251125140000 +0600" channel="STARBHARAT">
+  <programme start="20251125133000 +0600" stop="20251125143000 +0600" channel="STARBHARAT">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251125143000 +0600" stop="20251125153000 +0600" channel="STARBHARAT">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251125153000 +0600" stop="20251125160000 +0600" channel="STARBHARAT">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
   <channel id="EpicTV.in">
     <display-name>Epic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/41/Epic_TV_%282021%29.jpg"/>
   </channel>
-  <programme start="20251124145000 +0600" stop="20251124153500 +0600" channel="EpicTV.in">
-    <title lang="bn">Raja Rasoi Aur Anya Kahaniyaan</title>
-  </programme>
-  <programme start="20251124153500 +0600" stop="20251124160500 +0600" channel="EpicTV.in">
-    <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
-  </programme>
-  <programme start="20251124160500 +0600" stop="20251124163000 +0600" channel="EpicTV.in">
-    <title lang="bn">Tyohaar Ki Thaali</title>
-  </programme>
-  <programme start="20251124163000 +0600" stop="20251124165500 +0600" channel="EpicTV.in">
-    <title lang="bn">Itihaas Ki Thaali Se</title>
-  </programme>
-  <programme start="20251124165500 +0600" stop="20251124170000 +0600" channel="EpicTV.in">
+  <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="EpicTV.in">
     <title lang="bn">Ekaant</title>
   </programme>
   <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="EpicTV.in">
@@ -2063,22 +2051,22 @@
   <programme start="20251125021500 +0600" stop="20251125024500 +0600" channel="EpicTV.in">
     <title lang="bn">Kissa Currency Ka</title>
   </programme>
+  <programme start="20251125024500 +0600" stop="20251125032500 +0600" channel="EpicTV.in">
+    <title lang="bn">Mid Wicket Tales</title>
+  </programme>
+  <programme start="20251125032500 +0600" stop="20251125035500 +0600" channel="EpicTV.in">
+    <title lang="bn">Mid Wicket Tales</title>
+  </programme>
+  <programme start="20251125035500 +0600" stop="20251125042500 +0600" channel="EpicTV.in">
+    <title lang="bn">Destruction Decoded</title>
+  </programme>
+  <programme start="20251125042500 +0600" stop="20251125045500 +0600" channel="EpicTV.in">
+    <title lang="bn">Epicpedia</title>
+  </programme>
   <channel id="E24.in">
     <display-name>E24</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/48/E24_new.jpg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="E24.in">
-    <title lang="bn">Mast Melodies</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="E24.in">
-    <title lang="bn">Party On My Mind</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="E24.in">
-    <title lang="bn">Party On My Mind</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="E24.in">
-    <title lang="bn">Party On My Mind</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="E24.in">
     <title lang="bn">U, Me aur Tv</title>
   </programme>
@@ -2157,16 +2145,22 @@
   <programme start="20251125040000 +0600" stop="20251125043000 +0600" channel="E24.in">
     <title lang="bn">Bhangra Junction</title>
   </programme>
+  <programme start="20251125043000 +0600" stop="20251125050000 +0600" channel="E24.in">
+    <title lang="bn">Bhangra Junction</title>
+  </programme>
+  <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="E24.in">
+    <title lang="bn">Bollywood Reporter</title>
+  </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="E24.in">
+    <title lang="bn">Karare Hits</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="E24.in">
+    <title lang="bn">Karare Hits</title>
+  </programme>
   <channel id="DDNational.in@HD">
     <display-name>DD National HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/2/2a/Ddnational2023.png"/>
   </channel>
-  <programme start="20251124133000 +0600" stop="20251124160000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Vidrohi</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Chitrahar / Filler</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="DDNational.in@HD">
     <title lang="bn">Malgudi Days</title>
   </programme>
@@ -2251,13 +2245,16 @@
   <programme start="20251125110000 +0600" stop="20251125113000 +0600" channel="DDNational.in@HD">
     <title lang="bn">Katha Sarita - Anaaro</title>
   </programme>
+  <programme start="20251125113000 +0600" stop="20251125120000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Sasural Jhunki Ka</title>
+  </programme>
+  <programme start="20251125120000 +0600" stop="20251125123000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Devanchal Ki Prem Katha</title>
+  </programme>
   <channel id="AndTV.in">
     <display-name>&amp;TV HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/4c/%26TV_HD_%282025%29.svg"/>
   </channel>
-  <programme start="20251124133000 +0600" stop="20251124153000 +0600" channel="AndTV.in">
-    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
-  </programme>
   <programme start="20251124153000 +0600" stop="20251124182200 +0600" channel="AndTV.in">
     <title lang="bn">Hamara Dil Aapke Paas Hai</title>
   </programme>
@@ -2345,16 +2342,13 @@
   <programme start="20251125081200 +0600" stop="20251125084200 +0600" channel="AndTV.in">
     <title lang="bn">Bhabi ji Ghar Par Hai!</title>
   </programme>
+  <programme start="20251125084200 +0600" stop="20251125090300 +0600" channel="AndTV.in">
+    <title lang="bn">Happu Ki Ultan Paltan</title>
+  </programme>
   <channel id="starjalsha.in">
     <display-name>Star Jalsha</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png"/>
   </channel>
-  <programme start="20251124133000 +0600" stop="20251124153000 +0600" channel="starjalsha.in">
-    <title lang="bn">Tapur Tupur</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124163000 +0600" channel="starjalsha.in">
-    <title lang="bn">Tumi Chherona Haat Pothe</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124173000 +0600" channel="starjalsha.in">
     <title lang="bn">Khelaghor</title>
   </programme>
@@ -2438,6 +2432,12 @@
   </programme>
   <programme start="20251125090000 +0600" stop="20251125093000 +0600" channel="starjalsha.in">
     <title lang="bn">Compass</title>
+  </programme>
+  <programme start="20251125093000 +0600" stop="20251125100000 +0600" channel="starjalsha.in">
+    <title lang="bn">Parashuram</title>
+  </programme>
+  <programme start="20251125100000 +0600" stop="20251125103000 +0600" channel="starjalsha.in">
+    <title lang="bn">Shubho Bibaho</title>
   </programme>
   <channel id="colorsBangla.in">
     <display-name>Colors Bangla HD</display-name>
@@ -2531,18 +2531,6 @@
     <display-name>Zee Bangla TV</display-name>
     <icon src="http://openboxv8s.com/india/zee_bangla.jpg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="zeebangla.in">
-    <title lang="bn">Tui Amar Hero</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="zeebangla.in">
-    <title lang="bn">Parineeta</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="zeebangla.in">
-    <title lang="bn">Phulki</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="zeebangla.in">
-    <title lang="bn">Joyar Bhata</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="zeebangla.in">
     <title lang="bn">Rannaghar</title>
   </programme>
@@ -2621,22 +2609,22 @@
   <programme start="20251125080000 +0600" stop="20251125083000 +0600" channel="zeebangla.in">
     <title lang="bn">Kusum</title>
   </programme>
+  <programme start="20251125083000 +0600" stop="20251125090000 +0600" channel="zeebangla.in">
+    <title lang="bn">Tui Amar Hero</title>
+  </programme>
+  <programme start="20251125090000 +0600" stop="20251125093000 +0600" channel="zeebangla.in">
+    <title lang="bn">Amader Dadamoni</title>
+  </programme>
+  <programme start="20251125093000 +0600" stop="20251125100000 +0600" channel="zeebangla.in">
+    <title lang="bn">Kusum</title>
+  </programme>
+  <programme start="20251125100000 +0600" stop="20251125103000 +0600" channel="zeebangla.in">
+    <title lang="bn">Chirodini Tumi Je Amar</title>
+  </programme>
   <channel id="indiatoday.in">
     <display-name>India Today</display-name>
     <icon src="https://images.seeklogo.com/logo-png/44/1/india-today-logo-png_seeklogo-440312.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="indiatoday.in">
-    <title lang="bn">Lunch Break</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="indiatoday.in">
-    <title lang="bn">In Da Club</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="indiatoday.in">
-    <title lang="bn">Bt: Market Close</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="indiatoday.in">
-    <title lang="bn">News</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="indiatoday.in">
     <title lang="bn">News</title>
   </programme>
@@ -2715,22 +2703,22 @@
   <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="indiatoday.in">
     <title lang="bn">News</title>
   </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="indiatoday.in">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="indiatoday.in">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20251125063000 +0600" stop="20251125070000 +0600" channel="indiatoday.in">
+    <title lang="bn">Newstrack</title>
+  </programme>
+  <programme start="20251125070000 +0600" stop="20251125073000 +0600" channel="indiatoday.in">
+    <title lang="bn">Newstrack</title>
+  </programme>
   <channel id="ndtvenglish">
     <display-name>NDTV English</display-name>
     <icon src="https://logotyp.us/file/ndtv.svg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="ndtvenglish">
-    <title lang="bn">Southern View</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="ndtvenglish">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="ndtvenglish">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="ndtvenglish">
-    <title lang="bn">News</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="ndtvenglish">
     <title lang="bn">News</title>
   </programme>
@@ -2809,22 +2797,22 @@
   <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="ndtvenglish">
     <title lang="bn">News</title>
   </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="ndtvenglish">
+    <title lang="bn">India Matters</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="ndtvenglish">
+    <title lang="bn">India Matters</title>
+  </programme>
+  <programme start="20251125063000 +0600" stop="20251125070000 +0600" channel="ndtvenglish">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20251125070000 +0600" stop="20251125073000 +0600" channel="ndtvenglish">
+    <title lang="bn">News</title>
+  </programme>
   <channel id="ndtvindia">
     <display-name>NDTV India</display-name>
     <icon src="https://logotyp.us/file/ndtv.svg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="ndtvindia">
-    <title lang="bn">Dopeher Khabar</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="ndtvindia">
-    <title lang="bn">Dhuandhar 100</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="ndtvindia">
-    <title lang="bn">News NDTV India</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="ndtvindia">
-    <title lang="bn">NDTV India Special Report</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="ndtvindia">
     <title lang="bn">4 Ka Alarm</title>
   </programme>
@@ -2903,23 +2891,23 @@
   <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="ndtvindia">
     <title lang="bn">News NDTV India</title>
   </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="ndtvindia">
+    <title lang="bn">News NDTV India</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="ndtvindia">
+    <title lang="bn">News NDTV India</title>
+  </programme>
+  <programme start="20251125063000 +0600" stop="20251125070000 +0600" channel="ndtvindia">
+    <title lang="bn">Good Morning India</title>
+  </programme>
+  <programme start="20251125070000 +0600" stop="20251125073000 +0600" channel="ndtvindia">
+    <title lang="bn">Good Morning India</title>
+  </programme>
   <channel id="starsports1hd.in">
     <display-name>Star Sports 1 HD</display-name>
     <icon src="hhttp://openboxv8s.com/india/star_sports_in_1_hindi.png"/>
   </channel>
-  <programme start="20251124132000 +0600" stop="20251124153000 +0600" channel="starsports1hd.in">
-    <title lang="bn">Live - 1st Test Day 4: Australia vs. England; The Ashes</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="starsports1hd.in">
-    <title lang="bn">Tamil Thalaivas vs. Dabang Delhi K.C.; Pro Kabaddi High...</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124161500 +0600" channel="starsports1hd.in">
-    <title lang="bn">Road To Glory ICC Women's WC</title>
-  </programme>
-  <programme start="20251124161500 +0600" stop="20251124164500 +0600" channel="starsports1hd.in">
-    <title lang="bn">Qualifier 1: Puneri Paltan vs. Dabang Delhi KC; Pro Kab...</title>
-  </programme>
-  <programme start="20251124164500 +0600" stop="20251124170000 +0600" channel="starsports1hd.in">
+  <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="starsports1hd.in">
     <title lang="bn">WPL 2025: MI vs GG - 19th Match; Cricket Highlights</title>
   </programme>
   <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="starsports1hd.in">
@@ -2997,26 +2985,23 @@
   <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="starsports1hd.in">
     <title lang="bn">ICC World T20I 2024 - India vs Pakistan; T20 Cricket</title>
   </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="starsports1hd.in">
+    <title lang="bn">IDFC FIRST Bank IND vs AFG Test 2024 Highlights</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125061500 +0600" channel="starsports1hd.in">
+    <title lang="bn">1st T20I IND v ENG; IDFC FIRST Bank IND vs ENG T20I 202...</title>
+  </programme>
+  <programme start="20251125061500 +0600" stop="20251125063000 +0600" channel="starsports1hd.in">
+    <title lang="bn">ICC CWC Highlights</title>
+  </programme>
+  <programme start="20251125063000 +0600" stop="20251125070000 +0600" channel="starsports1hd.in">
+    <title lang="bn">ICC CWC 2023: India vs New Zealand, 1st Semi-final; One...</title>
+  </programme>
   <channel id="starsports1hindi.in">
     <display-name>Star Sports 1 Hindi</display-name>
     <icon src="https://static.epg.best/cn/StarSports1.cn.png"/>
   </channel>
-  <programme start="20251124144500 +0600" stop="20251124151500 +0600" channel="starsports1hindi.in">
-    <title lang="bn">Gujarat Giants vs. Dabang Delhi K.C., 75th Match; Pro K...</title>
-  </programme>
-  <programme start="20251124151500 +0600" stop="20251124153000 +0600" channel="starsports1hindi.in">
-    <title lang="bn">WPL 2025: UPW vs RCB - 18th Match; Cricket Highlights</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="starsports1hindi.in">
-    <title lang="bn">Tamil Thalaivas vs. Dabang Delhi K.C.; Pro Kabaddi High...</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124161500 +0600" channel="starsports1hindi.in">
-    <title lang="bn">Road To Glory ICC Women's WC</title>
-  </programme>
-  <programme start="20251124161500 +0600" stop="20251124164500 +0600" channel="starsports1hindi.in">
-    <title lang="bn">Qualifier 1: Puneri Paltan vs. Dabang Delhi KC; Pro Kab...</title>
-  </programme>
-  <programme start="20251124164500 +0600" stop="20251124170000 +0600" channel="starsports1hindi.in">
+  <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="starsports1hindi.in">
     <title lang="bn">WPL 2025: MI vs GG - 19th Match; Cricket Highlights</title>
   </programme>
   <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="starsports1hindi.in">
@@ -3091,22 +3076,25 @@
   <programme start="20251125040000 +0600" stop="20251125043000 +0600" channel="starsports1hindi.in">
     <title lang="bn">1st ODI India vs England; IDFC FIRST Bank India vs Engl...</title>
   </programme>
+  <programme start="20251125043000 +0600" stop="20251125050000 +0600" channel="starsports1hindi.in">
+    <title lang="bn">ICC T20 World Cup 2024 India vs South Africa Final; T20...</title>
+  </programme>
+  <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="starsports1hindi.in">
+    <title lang="bn">ICC World T20I 2024 - India vs Pakistan; T20 Cricket</title>
+  </programme>
+  <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="starsports1hindi.in">
+    <title lang="bn">IDFC FIRST Bank IND vs AFG Test 2024 Highlights</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125061500 +0600" channel="starsports1hindi.in">
+    <title lang="bn">1st T20I IND v ENG; IDFC FIRST Bank IND vs ENG T20I 202...</title>
+  </programme>
+  <programme start="20251125061500 +0600" stop="20251125063000 +0600" channel="starsports1hindi.in">
+    <title lang="bn">ICC CWC Highlights</title>
+  </programme>
   <channel id="starsports.tamil">
     <display-name>Star Sports Tamil 1</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/f/fb/Star_Sports_Tamil.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="starsports.tamil">
-    <title lang="bn">ICC Women's World Cup; Cricket Countdown</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="starsports.tamil">
-    <title lang="bn">WPL 2025: GG vs RCB - 1st Match; Cricket Highlights</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="starsports.tamil">
-    <title lang="bn">Total KBD Countdown</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="starsports.tamil">
-    <title lang="bn">ICC Women's World Cup; Cricket Countdown</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="starsports.tamil">
     <title lang="bn">WPL 2025: GG vs DC - 17th Match; Cricket Highlights</title>
   </programme>
@@ -3185,13 +3173,22 @@
   <programme start="20251125020000 +0600" stop="20251125023000 +0600" channel="starsports.tamil">
     <title lang="bn">ICC World T20 Highlights</title>
   </programme>
+  <programme start="20251125023000 +0600" stop="20251125030000 +0600" channel="starsports.tamil">
+    <title lang="bn">India vs Australia - 4th T20I; Cricket Highlights</title>
+  </programme>
+  <programme start="20251125030000 +0600" stop="20251125031500 +0600" channel="starsports.tamil">
+    <title lang="bn">India v Bangladesh 2024; T20 Cricket</title>
+  </programme>
+  <programme start="20251125031500 +0600" stop="20251125033000 +0600" channel="starsports.tamil">
+    <title lang="bn">ICC World T20 Highlights</title>
+  </programme>
+  <programme start="20251125033000 +0600" stop="20251125040000 +0600" channel="starsports.tamil">
+    <title lang="bn">South Africa vs India, 1st T20I; T20 Cricket</title>
+  </programme>
   <channel id="starsports2hd.in">
     <display-name>Star Sports 2 4K</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/c/c3/SS2_Crop.jpg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124163000 +0600" channel="starsports2hd.in">
-    <title lang="bn">Live - 2nd Test, Day 3: India vs. South Africa; Test Cr...</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="starsports2hd.in">
     <title lang="bn">Live - Test: India vs. South Africa; Cricket Post Show</title>
   </programme>
@@ -3279,29 +3276,14 @@
   <programme start="20251125053000 +0600" stop="20251125060000 +0600" channel="starsports2hd.in">
     <title lang="bn">3rd ODI: India v England; One-Day International Cricket</title>
   </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="starsports2hd.in">
+    <title lang="bn">ICC Champions Trophy Highlights</title>
+  </programme>
   <channel id="starsports3.in">
     <display-name>Star Sports 3 HD</display-name>
     <icon src="https://i.pinimg.com/originals/c7/5d/56/c75d563b3cda837cd3fb1ce5ff5089cd.png"/>
   </channel>
-  <programme start="20251124144500 +0600" stop="20251124151500 +0600" channel="starsports3.in">
-    <title lang="bn">Gujarat Giants vs. Dabang Delhi K.C., 75th Match; Pro K...</title>
-  </programme>
-  <programme start="20251124151500 +0600" stop="20251124153000 +0600" channel="starsports3.in">
-    <title lang="bn">Ajman Titans v Royal Champs; Abu Dhabi T10 League</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124154500 +0600" channel="starsports3.in">
-    <title lang="bn">Quetta Qavalry v Aspin Stallions; Abu Dhabi T10 League</title>
-  </programme>
-  <programme start="20251124154500 +0600" stop="20251124160000 +0600" channel="starsports3.in">
-    <title lang="bn">Northern Warriors v Vista Riders; Abu Dhabi T10 League</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124161500 +0600" channel="starsports3.in">
-    <title lang="bn">Road To Glory ICC Women's WC</title>
-  </programme>
-  <programme start="20251124161500 +0600" stop="20251124164500 +0600" channel="starsports3.in">
-    <title lang="bn">Qualifier 1: Puneri Paltan vs. Dabang Delhi KC; Pro Kab...</title>
-  </programme>
-  <programme start="20251124164500 +0600" stop="20251124170000 +0600" channel="starsports3.in">
+  <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="starsports3.in">
     <title lang="bn">TATA WPL Auction: Most Wanted 2026</title>
   </programme>
   <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="starsports3.in">
@@ -3373,22 +3355,28 @@
   <programme start="20251125033000 +0600" stop="20251125040000 +0600" channel="starsports3.in">
     <title lang="bn">1st ODI India vs England; IDFC FIRST Bank India vs Engl...</title>
   </programme>
+  <programme start="20251125040000 +0600" stop="20251125043000 +0600" channel="starsports3.in">
+    <title lang="bn">ICC T20 World Cup 2024 India vs South Africa Final; T20...</title>
+  </programme>
+  <programme start="20251125043000 +0600" stop="20251125050000 +0600" channel="starsports3.in">
+    <title lang="bn">ICC World T20I 2024 - India vs Pakistan; T20 Cricket</title>
+  </programme>
+  <programme start="20251125050000 +0600" stop="20251125053000 +0600" channel="starsports3.in">
+    <title lang="bn">IDFC FIRST Bank IND vs AFG Test 2024 Highlights</title>
+  </programme>
+  <programme start="20251125053000 +0600" stop="20251125054500 +0600" channel="starsports3.in">
+    <title lang="bn">1st T20I IND v ENG; IDFC FIRST Bank IND vs ENG T20I 202...</title>
+  </programme>
+  <programme start="20251125054500 +0600" stop="20251125060000 +0600" channel="starsports3.in">
+    <title lang="bn">ICC CWC Highlights</title>
+  </programme>
+  <programme start="20251125060000 +0600" stop="20251125063000 +0600" channel="starsports3.in">
+    <title lang="bn">ICC CWC 2023: India vs New Zealand, 1st Semi-final; One...</title>
+  </programme>
   <channel id="starsportsselect1.in">
     <display-name>Star Sports Select 1 HD</display-name>
     <icon src="https://static.epg.best/in/StarSportsSelect1.in.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="starsportsselect1.in">
-    <title lang="bn">Liverpool vs. Bournemouth; Premier League Highlights</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="starsportsselect1.in">
-    <title lang="bn">Arsenal V Leeds United; Premier League: Match Highlight...</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="starsportsselect1.in">
-    <title lang="bn">Wolverhampton Wanderers vs. Manchester City; Premier Le...</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="starsportsselect1.in">
-    <title lang="bn">Arsenal vs. Chelsea; Premier League Highlights</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="starsportsselect1.in">
     <title lang="bn">1st T20: Australia v India; T20 Cricket</title>
   </programme>
@@ -3467,19 +3455,22 @@
   <programme start="20251125081500 +0600" stop="20251125083000 +0600" channel="starsportsselect1.in">
     <title lang="bn">1st Test: Australia vs England; Test Cricket</title>
   </programme>
+  <programme start="20251125083000 +0600" stop="20251125093000 +0600" channel="starsportsselect1.in">
+    <title lang="bn">Premier League Review</title>
+  </programme>
+  <programme start="20251125093000 +0600" stop="20251125100000 +0600" channel="starsportsselect1.in">
+    <title lang="bn">Manchester United vs. Everton; Premier League Highlight...</title>
+  </programme>
+  <programme start="20251125100000 +0600" stop="20251125103000 +0600" channel="starsportsselect1.in">
+    <title lang="bn">Burnley vs. Chelsea; Premier League Highlights</title>
+  </programme>
+  <programme start="20251125103000 +0600" stop="20251125110000 +0600" channel="starsportsselect1.in">
+    <title lang="bn">Liverpool vs. Nottingham Forest; Premier League Highlig...</title>
+  </programme>
   <channel id="starsportsselect2.in">
     <display-name>Star Sports Select 2 HD</display-name>
     <icon src="http://openboxv8s.com/india/star_sports2_in.jpg"/>
   </channel>
-  <programme start="20251124134500 +0600" stop="20251124151500 +0600" channel="starsportsselect2.in">
-    <title lang="bn">Live - Janakpur Bolts vs. Biratnagar Kings; Nepal Premi...</title>
-  </programme>
-  <programme start="20251124151500 +0600" stop="20251124154500 +0600" channel="starsportsselect2.in">
-    <title lang="bn">Women's Big Bash</title>
-  </programme>
-  <programme start="20251124154500 +0600" stop="20251124160000 +0600" channel="starsportsselect2.in">
-    <title lang="bn">Burnley vs. Chelsea; Premier League Highlights</title>
-  </programme>
   <programme start="20251124160000 +0600" stop="20251124180000 +0600" channel="starsportsselect2.in">
     <title lang="bn">Live - Sudurpaschim Royals vs. Karnali Yaks; Nepal Prem...</title>
   </programme>
@@ -3561,16 +3552,19 @@
   <programme start="20251125120000 +0600" stop="20251125123000 +0600" channel="starsportsselect2.in">
     <title lang="bn">2019/20 - Chelsea vs Arsenal; Premier League Classic Ma...</title>
   </programme>
+  <programme start="20251125123000 +0600" stop="20251125130000 +0600" channel="starsportsselect2.in">
+    <title lang="bn">Brisbane Heat v Sydney Thunder; Women's Big Bash</title>
+  </programme>
+  <programme start="20251125130000 +0600" stop="20251125131500 +0600" channel="starsportsselect2.in">
+    <title lang="bn">Sydney Sixers v Melbourne Stars; Women's Big Bash</title>
+  </programme>
+  <programme start="20251125131500 +0600" stop="20251125133000 +0600" channel="starsportsselect2.in">
+    <title lang="bn">Premier League Review</title>
+  </programme>
   <channel id="sonyten1.in">
     <display-name>Sony Ten 1 HD</display-name>
     <icon src="https://static.epg.best/in/SonyTEN1.in.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="sonyten1.in">
-    <title lang="bn">2025: India A vs. United Arab Emirates; Asia Cup Rising...</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="sonyten1.in">
-    <title lang="bn">2025: India A vs Pakistan A; Asia Cup Rising Stars Cric...</title>
-  </programme>
   <programme start="20251124153000 +0600" stop="20251124190000 +0600" channel="sonyten1.in">
     <title lang="bn">2025: India A vs Pakistan A; Asia Cup Rising Stars Cric...</title>
   </programme>
@@ -3655,13 +3649,16 @@
   <programme start="20251125150000 +0600" stop="20251125153000 +0600" channel="sonyten1.in">
     <title lang="bn">2025: India A vs Pakistan A; Asia Cup Rising Stars Cric...</title>
   </programme>
+  <programme start="20251125153000 +0600" stop="20251125190000 +0600" channel="sonyten1.in">
+    <title lang="bn">2025: India A vs Pakistan A; Asia Cup Rising Stars Cric...</title>
+  </programme>
+  <programme start="20251125190000 +0600" stop="20251125193000 +0600" channel="sonyten1.in">
+    <title lang="bn">Sri Lanka vs. Hong Kong; Asia Cup Rising Stars Cricket...</title>
+  </programme>
   <channel id="sonyten2.in">
     <display-name>Sony Ten 2 HD</display-name>
     <icon src="https://static.epg.best/in/SonyTEN2.in.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124153000 +0600" channel="sonyten2.in">
-    <title lang="bn">WWE: EVOLVE</title>
-  </programme>
   <programme start="20251124153000 +0600" stop="20251124173000 +0600" channel="sonyten2.in">
     <title lang="bn">Liverpool vs. Real Madrid; UEFA Champions League Soccer</title>
   </programme>
@@ -3753,15 +3750,6 @@
     <display-name>Sony Ten 3 HD</display-name>
     <icon src="https://static.epg.best/in/SonyTEN3.in.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="sonyten3.in">
-    <title lang="bn">2025: Super Four: Sri Lanka vs. Bangladesh; Asia Cup Hi...</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124160000 +0600" channel="sonyten3.in">
-    <title lang="bn">UFC 318: Holloway vs. Poirier 3</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="sonyten3.in">
-    <title lang="bn">1st T20 :England v India; Women's T20 Cricket</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124173000 +0600" channel="sonyten3.in">
     <title lang="bn">Twenty20 Cricket</title>
   </programme>
@@ -3840,25 +3828,22 @@
   <programme start="20251125143000 +0600" stop="20251125150000 +0600" channel="sonyten3.in">
     <title lang="bn">2025: Super Four: India vs. Pakistan; Asia Cup Highligh...</title>
   </programme>
-  <programme start="20251125150000 +0600" stop="20251125153000 +0600" channel="sonyten3.in">
+  <programme start="20251125150000 +0600" stop="20251125160000 +0600" channel="sonyten3.in">
     <title lang="bn">UFC 316: Dvalishvili vs. O'Malley 2; MMA</title>
+  </programme>
+  <programme start="20251125160000 +0600" stop="20251125163000 +0600" channel="sonyten3.in">
+    <title lang="bn">2nd T20 :England v India; Women's T20 Cricket</title>
+  </programme>
+  <programme start="20251125163000 +0600" stop="20251125173000 +0600" channel="sonyten3.in">
+    <title lang="bn">Twenty20 Cricket</title>
+  </programme>
+  <programme start="20251125173000 +0600" stop="20251125180000 +0600" channel="sonyten3.in">
+    <title lang="bn">Qarabag v Chelsea; UEFA Champions League Football</title>
   </programme>
   <channel id="RepublicTV.in">
     <display-name>NEWS | Republic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/f/fe/Republic-logo2.svg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="RepublicTV.in">
-    <title lang="bn">Live And Breaking</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="RepublicTV.in">
-    <title lang="bn">Live And Breaking</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="RepublicTV.in">
-    <title lang="bn">Live And Breaking</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="RepublicTV.in">
-    <title lang="bn">Live And Breaking</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="RepublicTV.in">
     <title lang="bn">Live And Breaking</title>
   </programme>
@@ -3886,23 +3871,23 @@
   <programme start="20251124203000 +0600" stop="20251124210000 +0600" channel="RepublicTV.in">
     <title lang="bn">The Debate With Arnab Goswami @ 8</title>
   </programme>
+  <programme start="20251124210000 +0600" stop="20251124213000 +0600" channel="RepublicTV.in">
+    <title lang="bn">The Debate With Arnab Goswami @ 8</title>
+  </programme>
+  <programme start="20251124213000 +0600" stop="20251124220000 +0600" channel="RepublicTV.in">
+    <title lang="bn">The Debate With Arnab Goswami @ 9</title>
+  </programme>
+  <programme start="20251124220000 +0600" stop="20251124223000 +0600" channel="RepublicTV.in">
+    <title lang="bn">The Debate With Arnab Goswami @ 9</title>
+  </programme>
+  <programme start="20251124223000 +0600" stop="20251124230000 +0600" channel="RepublicTV.in">
+    <title lang="bn">The Debate Late Tonight</title>
+  </programme>
   <channel id="TimesNowNavbharat">
     <display-name>NEWS | Times Now Navbhara</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD1300003OW_20240131T032351SQUARE.png_20240131032352.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">Navbharat 10x10</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">Times Now NavBharat Live</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">Times Now NavBharat Live</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">Times Now NavBharat Live</title>
-  </programme>
-  <programme start="20251124163000 +0600" stop="20251124173000 +0600" channel="TimesNowNavbharat">
+  <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="TimesNowNavbharat">
     <title lang="bn">Prime At 4</title>
   </programme>
   <programme start="20251124173000 +0600" stop="20251124183000 +0600" channel="TimesNowNavbharat">
@@ -3928,6 +3913,18 @@
   </programme>
   <programme start="20251125003000 +0600" stop="20251125010000 +0600" channel="TimesNowNavbharat">
     <title lang="bn">Aark Media</title>
+  </programme>
+  <programme start="20251125010000 +0600" stop="20251125013000 +0600" channel="TimesNowNavbharat">
+    <title lang="bn">Late Night Bulletin</title>
+  </programme>
+  <programme start="20251125013000 +0600" stop="20251125023000 +0600" channel="TimesNowNavbharat">
+    <title lang="bn">Sankalp</title>
+  </programme>
+  <programme start="20251125023000 +0600" stop="20251125033000 +0600" channel="TimesNowNavbharat">
+    <title lang="bn">News Ki Paathshaala</title>
+  </programme>
+  <programme start="20251125033000 +0600" stop="20251125040000 +0600" channel="TimesNowNavbharat">
+    <title lang="bn">Sankalp</title>
   </programme>
   <channel id="StarPlus.in">
     <display-name>ENT | Star Plus</display-name>
@@ -3976,18 +3973,6 @@
     <display-name>ENT | Ishara TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/7/75/Ishara_tv.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="IsharaTV.in">
-    <title lang="bn">Har Har Bhakti</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="IsharaTV.in">
-    <title lang="bn">Deewani</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="IsharaTV.in">
-    <title lang="bn">Bindiya Sarkar</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="IsharaTV.in">
-    <title lang="bn">Bindiya Sarkar</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="IsharaTV.in">
     <title lang="bn">Bindiya Sarkar</title>
   </programme>
@@ -4015,23 +4000,23 @@
   <programme start="20251124203000 +0600" stop="20251124210000 +0600" channel="IsharaTV.in">
     <title lang="bn">Rang Jaun Tere Rang Mein</title>
   </programme>
+  <programme start="20251124210000 +0600" stop="20251124213000 +0600" channel="IsharaTV.in">
+    <title lang="bn">Rang Jaun Tere Rang Mein</title>
+  </programme>
+  <programme start="20251124213000 +0600" stop="20251124220000 +0600" channel="IsharaTV.in">
+    <title lang="bn">Mrs. Kaushik Ki Paanch Bahuein</title>
+  </programme>
+  <programme start="20251124220000 +0600" stop="20251124223000 +0600" channel="IsharaTV.in">
+    <title lang="bn">Mrs. Kaushik Ki Paanch Bahuein</title>
+  </programme>
+  <programme start="20251124223000 +0600" stop="20251124230000 +0600" channel="IsharaTV.in">
+    <title lang="bn">Mrs. Kaushik Ki Paanch Bahuein</title>
+  </programme>
   <channel id="EpicTV.in_TVWISH">
     <display-name>ENT | Epic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/41/Epic_TV_%282021%29.jpg"/>
   </channel>
-  <programme start="20251124150500 +0600" stop="20251124153500 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Raja Rasoi Aur Anya Kahaniyaan</title>
-  </programme>
-  <programme start="20251124153500 +0600" stop="20251124160500 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
-  </programme>
-  <programme start="20251124160500 +0600" stop="20251124163000 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Tyohaar Ki Thaali</title>
-  </programme>
-  <programme start="20251124163000 +0600" stop="20251124165500 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Itihaas Ki Thaali Se</title>
-  </programme>
-  <programme start="20251124165500 +0600" stop="20251124170000 +0600" channel="EpicTV.in_TVWISH">
+  <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="EpicTV.in_TVWISH">
     <title lang="bn">Ekaant</title>
   </programme>
   <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="EpicTV.in_TVWISH">
@@ -4057,6 +4042,18 @@
   </programme>
   <programme start="20251124192500 +0600" stop="20251124193000 +0600" channel="EpicTV.in_TVWISH">
     <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
+  </programme>
+  <programme start="20251124193000 +0600" stop="20251124202000 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Giant Hubs (2019)</title>
+  </programme>
+  <programme start="20251124202000 +0600" stop="20251124205000 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Epic Tales Of Love</title>
+  </programme>
+  <programme start="20251124205000 +0600" stop="20251124210000 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Raja Rasoi Aur Anya Kahaniyan</title>
+  </programme>
+  <programme start="20251124210000 +0600" stop="20251124212500 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Raja Rasoi Aur Anya Kahaniyaan</title>
   </programme>
   <channel id="DANGAL2">
     <display-name>ENT | DANGAL2</display-name>
@@ -4085,7 +4082,7 @@
     <icon src="https://static.wikia.nocookie.net/logopedia/images/a/ad/Bhojpuri_cinema.png"/>
   </channel>
   <programme start="20251124171400 +0600" stop="20251124174400 +0600" channel="BhojpuriCinema.in">
-    <title lang="bn">Sasu Ji Badhai Ho</title>
+    <title lang="bn">Badhai Debe Aiba Na</title>
   </programme>
   <programme start="20251124174400 +0600" stop="20251124210000 +0600" channel="BhojpuriCinema.in">
     <title lang="bn">Vivah 3</title>
@@ -4103,30 +4100,12 @@
     <display-name>B4U Movies</display-name>
     <icon src="https://b4umovies.in/images/logo.jpg"/>
   </channel>
-  <programme start="20251124160900 +0600" stop="20251124163900 +0600" channel="B4UMovies.in">
-    <title lang="bn">Mela(2000)</title>
-  </programme>
-  <programme start="20251124163900 +0600" stop="20251124193000 +0600" channel="B4UMovies.in">
-    <title lang="bn">Balidaan (1985)</title>
-  </programme>
-  <programme start="20251124193000 +0600" stop="20251125000800 +0600" channel="B4UMovies.in">
-    <title lang="bn">Kranti (1981)</title>
-  </programme>
-  <programme start="20251125000800 +0600" stop="20251125015800 +0600" channel="B4UMovies.in">
-    <title lang="bn">Main Hoon Lucky the Racer (2014)</title>
-  </programme>
-  <programme start="20251125015800 +0600" stop="20251125022800 +0600" channel="B4UMovies.in">
-    <title lang="bn">Yeh Hai Judgement Hanged Till Death</title>
-  </programme>
   <channel id="B4UKadak.in">
     <display-name>B4U Kadak</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/a/ab/B4U_Kadak.jpeg"/>
   </channel>
-  <programme start="20251124143100 +0600" stop="20251124150100 +0600" channel="B4UKadak.in">
-    <title lang="bn">Jaane Jigar(1998)</title>
-  </programme>
-  <programme start="20251124150100 +0600" stop="20251124184000 +0600" channel="B4UKadak.in">
-    <title lang="bn">Kyon Ki (2005)</title>
+  <programme start="20251124181000 +0600" stop="20251124184000 +0600" channel="B4UKadak.in">
+    <title lang="bn">Kyon Ki...Its Fate(2005)</title>
   </programme>
   <programme start="20251124184000 +0600" stop="20251124222500 +0600" channel="B4UKadak.in">
     <title lang="bn">Baazigar (1993)</title>
@@ -4152,9 +4131,6 @@
     <display-name>Zee Bangla Cinema</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/5/59/Zee_Bangla_Cinema_%282025%29.svg"/>
   </channel>
-  <programme start="20251124093000 +0600" stop="20251124123000 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">Bedeni Jyotsnar Amar Prem</title>
-  </programme>
   <programme start="20251124123000 +0600" stop="20251124200000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Debibaran</title>
   </programme>
@@ -4171,7 +4147,7 @@
     <title lang="bn">Sonar Jalshaghar</title>
   </programme>
   <programme start="20251125005600 +0600" stop="20251125012600 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">Patanjali Yog - By Yogrishi Swami Ramdev</title>
+    <title lang="bn">Satya Mithya</title>
   </programme>
   <programme start="20251125012600 +0600" stop="20251125020000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Bedeni Jyotsnar Amar Prem</title>
@@ -4188,35 +4164,35 @@
   <programme start="20251125053000 +0600" stop="20251125083000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Patanjali Yog - By Yogrishi Swami Ramdev</title>
   </programme>
-  <programme start="20251125083000 +0600" stop="20251125090000 +0600" channel="zeebanglacinema.in">
+  <programme start="20251125083000 +0600" stop="20251125093000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Sakaler Sure</title>
+  </programme>
+  <programme start="20251125093000 +0600" stop="20251125100000 +0600" channel="zeebanglacinema.in">
+    <title lang="bn">Bedeni Jyotsnar Amar Prem</title>
   </programme>
   <channel id="colorsbanglacinemahd.in">
     <display-name>COLORS BANGLA CINEMA HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/2/2d/Colors-Bangla-Logo-new.jpg"/>
   </channel>
-  <programme start="20251124102500 +0600" stop="20251124133000 +0600" channel="colorsbanglacinemahd.in">
-    <title lang="bn">Dui Prithibi (2010)</title>
-  </programme>
-  <programme start="20251124133000 +0600" stop="20251124155500 +0600" channel="colorsbanglacinemahd.in">
+  <programme start="20251124133000 +0600" stop="20251124171000 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Satrur Muqubila</title>
   </programme>
-  <programme start="20251124155500 +0600" stop="20251124162500 +0600" channel="colorsbanglacinemahd.in">
-    <title lang="bn">Bindaas(2010)</title>
-  </programme>
-  <programme start="20251124162500 +0600" stop="20251124171000 +0600" channel="colorsbanglacinemahd.in">
-    <title lang="bn">Amader Sansar</title>
-  </programme>
-  <programme start="20251124171000 +0600" stop="20251124200000 +0600" channel="colorsbanglacinemahd.in">
+  <programme start="20251124171000 +0600" stop="20251124193000 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Mahaan</title>
+  </programme>
+  <programme start="20251124193000 +0600" stop="20251124200000 +0600" channel="colorsbanglacinemahd.in">
+    <title lang="bn">Amader Sansar</title>
   </programme>
   <programme start="20251124200000 +0600" stop="20251124203000 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Premi (2017)</title>
   </programme>
-  <programme start="20251124203000 +0600" stop="20251124232500 +0600" channel="colorsbanglacinemahd.in">
+  <programme start="20251124203000 +0600" stop="20251124231500 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Bandhan (1998)</title>
   </programme>
-  <programme start="20251124232500 +0600" stop="20251125003000 +0600" channel="colorsbanglacinemahd.in">
+  <programme start="20251124231500 +0600" stop="20251124234500 +0600" channel="colorsbanglacinemahd.in">
+    <title lang="bn">Kencho Khunrte Keute</title>
+  </programme>
+  <programme start="20251124234500 +0600" stop="20251125003000 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Shiva (1990)</title>
   </programme>
   <programme start="20251125003000 +0600" stop="20251125021000 +0600" channel="colorsbanglacinemahd.in">
@@ -4231,21 +4207,18 @@
   <programme start="20251125043000 +0600" stop="20251125072500 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Akritagya</title>
   </programme>
-  <programme start="20251125072500 +0600" stop="20251125075500 +0600" channel="colorsbanglacinemahd.in">
+  <programme start="20251125072500 +0600" stop="20251125102500 +0600" channel="colorsbanglacinemahd.in">
     <title lang="bn">Debdas</title>
+  </programme>
+  <programme start="20251125102500 +0600" stop="20251125105500 +0600" channel="colorsbanglacinemahd.in">
+    <title lang="bn">Dui Prithibi (2010)</title>
   </programme>
   <channel id="akashaat.in">
     <display-name>AKASH 8</display-name>
     <icon src="https://static.wikia.nocookie.net/etv-gspn-bangla/images/3/34/Aakash_Aath_logo_%282013%29.png"/>
   </channel>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="akashaat.in">
-    <title lang="bn">Police Files</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="akashaat.in">
-    <title lang="bn">Aakash Barta</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124180000 +0600" channel="akashaat.in">
-    <title lang="bn">Jiban Trishna (1957)</title>
+  <programme start="20251124173000 +0600" stop="20251124180000 +0600" channel="akashaat.in">
+    <title lang="bn">Jiban Trishna(1957)</title>
   </programme>
   <programme start="20251124180000 +0600" stop="20251124183000 +0600" channel="akashaat.in">
     <title lang="bn">Radhuni</title>
@@ -4274,17 +4247,20 @@
   <programme start="20251124233000 +0600" stop="20251125010000 +0600" channel="akashaat.in">
     <title lang="bn">Police Files</title>
   </programme>
-  <programme start="20251125010000 +0600" stop="20251125013000 +0600" channel="akashaat.in">
+  <programme start="20251125010000 +0600" stop="20251125033000 +0600" channel="akashaat.in">
     <title lang="bn">Jiban Trishna (1957)</title>
+  </programme>
+  <programme start="20251125033000 +0600" stop="20251125043000 +0600" channel="akashaat.in">
+    <title lang="bn">Akashe Superstar</title>
+  </programme>
+  <programme start="20251125043000 +0600" stop="20251125050000 +0600" channel="akashaat.in">
+    <title lang="bn">Radhuni</title>
   </programme>
   <channel id="sunbangla.in">
     <display-name>SUN Bangla</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/en/b/b3/Sun_Bangla.png"/>
   </channel>
-  <programme start="20251124152300 +0600" stop="20251124155300 +0600" channel="sunbangla.in">
-    <title lang="bn">Lakh Takar Lokkhi Labh</title>
-  </programme>
-  <programme start="20251124155300 +0600" stop="20251124165600 +0600" channel="sunbangla.in">
+  <programme start="20251124162600 +0600" stop="20251124165600 +0600" channel="sunbangla.in">
     <title lang="bn">Lakh Takar Lokkhi Labh</title>
   </programme>
   <programme start="20251124165600 +0600" stop="20251124175900 +0600" channel="sunbangla.in">
@@ -4320,17 +4296,14 @@
   <programme start="20251125073000 +0600" stop="20251125080000 +0600" channel="sunbangla.in">
     <title lang="bn">Roopoamati</title>
   </programme>
+  <programme start="20251125080000 +0600" stop="20251125083000 +0600" channel="sunbangla.in">
+    <title lang="bn">Ramayan (1961)</title>
+  </programme>
   <channel id="enter10bangla.in">
     <display-name>Enter 10 Bangla</display-name>
     <icon src="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg"/>
   </channel>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="enter10bangla.in">
-    <title lang="bn">Crime Alert</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124163000 +0600" channel="enter10bangla.in">
-    <title lang="bn">Crime Alert</title>
-  </programme>
-  <programme start="20251124163000 +0600" stop="20251124230000 +0600" channel="enter10bangla.in">
+  <programme start="20251124223000 +0600" stop="20251124230000 +0600" channel="enter10bangla.in">
     <title lang="bn">Crime Alert</title>
   </programme>
   <programme start="20251124230000 +0600" stop="20251124235300 +0600" channel="enter10bangla.in">
@@ -4360,20 +4333,20 @@
   <programme start="20251125045900 +0600" stop="20251125054400 +0600" channel="enter10bangla.in">
     <title lang="bn">Crime Alert</title>
   </programme>
-  <programme start="20251125054400 +0600" stop="20251125061400 +0600" channel="enter10bangla.in">
+  <programme start="20251125054400 +0600" stop="20251125063100 +0600" channel="enter10bangla.in">
     <title lang="bn">Crime Alert</title>
+  </programme>
+  <programme start="20251125063100 +0600" stop="20251125093000 +0600" channel="enter10bangla.in">
+    <title lang="bn">Jungle Book (1967)</title>
+  </programme>
+  <programme start="20251125093000 +0600" stop="20251125100000 +0600" channel="enter10bangla.in">
+    <title lang="bn">Naagmani (1991)</title>
   </programme>
   <channel id="sangeetbangla.in">
     <display-name>SANGEET BANGLA</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/d/da/Sangeet_Bangla_logo_2006.png"/>
   </channel>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="sangeetbangla.in">
-    <title lang="bn">SB Public Demand</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124163000 +0600" channel="sangeetbangla.in">
-    <title lang="bn">SB All Time Hits</title>
-  </programme>
-  <programme start="20251124163000 +0600" stop="20251124173000 +0600" channel="sangeetbangla.in">
+  <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="sangeetbangla.in">
     <title lang="bn">Nonstop Hits</title>
   </programme>
   <programme start="20251124173000 +0600" stop="20251124183000 +0600" channel="sangeetbangla.in">
@@ -4403,8 +4376,14 @@
   <programme start="20251125013000 +0600" stop="20251125023000 +0600" channel="sangeetbangla.in">
     <title lang="bn">Amar Superstar</title>
   </programme>
-  <programme start="20251125023000 +0600" stop="20251125030000 +0600" channel="sangeetbangla.in">
+  <programme start="20251125023000 +0600" stop="20251125033000 +0600" channel="sangeetbangla.in">
     <title lang="bn">SB Public Demand</title>
+  </programme>
+  <programme start="20251125033000 +0600" stop="20251125043000 +0600" channel="sangeetbangla.in">
+    <title lang="bn">Howrah Bridge</title>
+  </programme>
+  <programme start="20251125043000 +0600" stop="20251125050000 +0600" channel="sangeetbangla.in">
+    <title lang="bn">SB Supaarhitz</title>
   </programme>
   <channel id="sonymaxhd.in">
     <display-name>SONY MAX HD</display-name>
@@ -4414,20 +4393,8 @@
     <display-name>SONY SAB HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/18/SONY_SAB_SD.png"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah(2008)</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Gatha Shiv Parivaar Ki Ganesh Kartikey</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Itti Si Khushi</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Pushpa Impossible (2022)</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
+    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah(2008)</title>
   </programme>
   <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="sonysabhd.in">
     <title lang="bn">Gatha Shiv Parivaar Ki Ganesh Kartikey</title>
@@ -4453,22 +4420,22 @@
   <programme start="20251124210000 +0600" stop="20251124213000 +0600" channel="sonysabhd.in">
     <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
   </programme>
+  <programme start="20251124213000 +0600" stop="20251124220000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Itti Si Khushi</title>
+  </programme>
+  <programme start="20251124220000 +0600" stop="20251124223000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Pushpa Impossible (2022)</title>
+  </programme>
+  <programme start="20251124223000 +0600" stop="20251124230000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Eken Babu</title>
+  </programme>
+  <programme start="20251124230000 +0600" stop="20251124233000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Itti Si Khushi</title>
+  </programme>
   <channel id="RepublicBangla.in">
     <display-name>Republic Bangla</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/9/93/R.Bangla_logo_with_tagline.jpg"/>
   </channel>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">R Bangla Live 100% News</title>
-  </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">Fataak News</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">R Bangla Live 100% News</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">Fataak News</title>
-  </programme>
   <programme start="20251124163000 +0600" stop="20251124170000 +0600" channel="RepublicBangla.in">
     <title lang="bn">R Bangla Live 100% News</title>
   </programme>
@@ -4496,26 +4463,26 @@
   <programme start="20251124203000 +0600" stop="20251124210000 +0600" channel="RepublicBangla.in">
     <title lang="bn">Jawab Chay Bangla</title>
   </programme>
+  <programme start="20251124210000 +0600" stop="20251124213000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">Jawab Chay Bangla</title>
+  </programme>
+  <programme start="20251124213000 +0600" stop="20251124220000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">Banglar Primetime</title>
+  </programme>
+  <programme start="20251124220000 +0600" stop="20251124223000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">Fataak News</title>
+  </programme>
+  <programme start="20251124223000 +0600" stop="20251124230000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">Banglar Khabor Ki</title>
+  </programme>
   <channel id="DisneyJunior.in">
     <display-name>Disney Junior</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/3/36/2019_Disney_Junior_logo.svg"/>
   </channel>
-  <programme start="20251124093000 +0600" stop="20251124143000 +0600" channel="DisneyJunior.in">
-    <title lang="bn">Nursery Rhymes</title>
-  </programme>
-  <programme start="20251124143000 +0600" stop="20251124150000 +0600" channel="DisneyJunior.in">
+  <programme start="20251124113000 +0600" stop="20251124170000 +0600" channel="DisneyJunior.in">
     <title lang="bn">Bluey</title>
   </programme>
-  <programme start="20251124150000 +0600" stop="20251124153000 +0600" channel="DisneyJunior.in">
-    <title lang="bn">Alice&amp;#x27;s Wonderland Bakery</title>
-  </programme>
-  <programme start="20251124153000 +0600" stop="20251124160000 +0600" channel="DisneyJunior.in">
-    <title lang="bn">Alice&amp;#x27;s Wonderland Bakery</title>
-  </programme>
-  <programme start="20251124160000 +0600" stop="20251124163000 +0600" channel="DisneyJunior.in">
-    <title lang="bn">Mickey Mouse Funhouse</title>
-  </programme>
-  <programme start="20251124163000 +0600" stop="20251124173000 +0600" channel="DisneyJunior.in">
+  <programme start="20251124170000 +0600" stop="20251124173000 +0600" channel="DisneyJunior.in">
     <title lang="bn">Pupstruction</title>
   </programme>
   <programme start="20251124173000 +0600" stop="20251124203000 +0600" channel="DisneyJunior.in">
@@ -4524,7 +4491,10 @@
   <programme start="20251124203000 +0600" stop="20251124210000 +0600" channel="DisneyJunior.in">
     <title lang="bn">Nursery Rhymes</title>
   </programme>
-  <programme start="20251124210000 +0600" stop="20251124233000 +0600" channel="DisneyJunior.in">
+  <programme start="20251124210000 +0600" stop="20251124213000 +0600" channel="DisneyJunior.in">
+    <title lang="bn">Mickey Mouse Clubhouse (2009)</title>
+  </programme>
+  <programme start="20251124213000 +0600" stop="20251124233000 +0600" channel="DisneyJunior.in">
     <title lang="bn">Mickey Mouse Clubhouse (2009)</title>
   </programme>
   <programme start="20251124233000 +0600" stop="20251125033000 +0600" channel="DisneyJunior.in">
@@ -4536,8 +4506,17 @@
   <programme start="20251125063000 +0600" stop="20251125073000 +0600" channel="DisneyJunior.in">
     <title lang="bn">PJ Masks (2015)</title>
   </programme>
-  <programme start="20251125073000 +0600" stop="20251125080000 +0600" channel="DisneyJunior.in">
+  <programme start="20251125073000 +0600" stop="20251125093000 +0600" channel="DisneyJunior.in">
     <title lang="bn">Mickey Mouse Funhouse</title>
+  </programme>
+  <programme start="20251125093000 +0600" stop="20251125100000 +0600" channel="DisneyJunior.in">
+    <title lang="bn">Nursery Rhymes</title>
+  </programme>
+  <programme start="20251125100000 +0600" stop="20251125103000 +0600" channel="DisneyJunior.in">
+    <title lang="bn">Pupstruction</title>
+  </programme>
+  <programme start="20251125103000 +0600" stop="20251125110000 +0600" channel="DisneyJunior.in">
+    <title lang="bn">Pupstruction</title>
   </programme>
   <channel id="DDBharati.in">
     <display-name>DD Bharati</display-name>
