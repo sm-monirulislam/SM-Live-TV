@@ -2,30 +2,19 @@ name: 🔁 Sync Combined_Live_TV.m3u to Public Repo
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/30 * * * *"   # প্রতি 30 মিনিট অটো রান
   workflow_dispatch:
-
-concurrency:
-  group: sync-combined-live-tv
-  cancel-in-progress: false
 
 jobs:
   sync-file:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
 
     steps:
-      - name: 🔍 Wait if another workflow is running
-        uses: softprops/turnstyle@v1
-        with:
-          poll-interval-seconds: 10
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Checkout Private Repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          repository: sm-monirulislam/Toffee-Auto-Update-Playlist
 
       - name: Configure Git Identity
         run: |
