@@ -25,7 +25,7 @@ jobs:
         run: pip install requests
 
       - name: 🎬 Build RoarZone.m3u
-        run: python scripts/make_roarzone_m3u.py
+        run: python Script/Roar-Zone.py
 
       - name: 🚀 Commit Changes
         run: |
