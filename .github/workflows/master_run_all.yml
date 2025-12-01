@@ -1,9 +1,9 @@
 name: 🚀 Run All Playlist Updates (Main Controller)
 
 on:
-  workflow_dispatch:     # 👉 ম্যানুয়ালি চালানো যাবে
+  workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"   # ⏰ প্রতি ৩০ মিনিটে অটো রান (UTC)
+    - cron: "*/30 * * * *"
 
 jobs:
   aynaott:
