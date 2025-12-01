@@ -25,7 +25,7 @@ jobs:
 
       - name: ▶️ Run Playlist Combiner
         run: |
-          python script/combine_playlist.py
+          python Script/combine_playlist.py
 
       - name: 🔄 Commit & Push Updated Files
         run: |
