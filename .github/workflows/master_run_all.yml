@@ -18,5 +18,5 @@ jobs:
     uses: ./.github/workflows/Fancode_update.yml
 
   roarzone:
-    needs: roarzone
+    needs: fancode
     uses: ./.github/workflows/Roar-Zone.yml
