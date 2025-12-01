@@ -1,18 +1,18 @@
 name: 🚀 Run All Playlist Updates (Main Controller)
 
 on:
-workflow_dispatch:     # 👉 ম্যানুয়ালি চালানো যাবে
-schedule:
-- cron: "*/30 * * * *"   # ⏰ প্রতি ৩০ মিনিটে অটো রান (UTC)
+  workflow_dispatch:     # 👉 ম্যানুয়ালি চালানো যাবে
+  schedule:
+    - cron: "*/30 * * * *"   # ⏰ প্রতি ৩০ মিনিটে অটো রান (UTC)
 
 jobs:
-aynaott:
-uses: ./.github/workflows/auto_aynaott.yml
+  aynaott:
+    uses: ./.github/workflows/auto_aynaott.yml
 
-crichd:
-needs: aynaott
-uses: ./.github/workflows/CricHD_update_playlist.yml
+  crichd:
+    needs: aynaott
+    uses: ./.github/workflows/CricHD_update_playlist.yml
 
-fancode:
-needs: crichd
-uses: ./.github/workflows/Fancode_update.yml
+  fancode:
+    needs: crichd
+    uses: ./.github/workflows/Fancode_update.yml
