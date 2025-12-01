@@ -17,7 +17,8 @@ m3u_files = [
     "Fancode.m3u",
     "jadoo.m3u",
     "Sports.m3u",
-    "KALKATA.m3u"
+    "KALKATA.m3u",
+    "RoarZone.m3u"   # ✅ Added as you requested
 ]
 
 json_file = "Bangla Channel.json"
