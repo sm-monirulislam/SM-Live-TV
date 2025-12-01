@@ -1,9 +1,9 @@
-name: 🔁 Auto Generate RoarZone.m3u
+name: 🔁 RoarZone Auto Update Playlist
 
 on:
   schedule:
-    - cron: "*/20 * * * *"   # প্রতি 20 মিনিটে auto update
-  workflow_dispatch:
+    - cron: "*/10 * * * *"   # ⏱ প্রতি 10 মিনিটে চলবে
+  workflow_dispatch:         # ▶️ ম্যানুয়ালি চালাতে পারবে
 
 permissions:
   contents: write
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📦 Checkout Repo
+      - name: 📥 Checkout Repository
         uses: actions/checkout@v4
 
       - name: 🐍 Setup Python
@@ -21,16 +21,23 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: 📥 Install Dependencies
-        run: pip install requests
-
-      - name: 🎬 Build RoarZone.m3u
-        run: python Script/Roar-Zone.py
-
-      - name: 🚀 Commit Changes
+      - name: 📦 Install Required Packages
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Actions"
+          pip install requests
+
+      - name: 🔄 Run Auto Playlist Script
+        run: |
+          python3 roarzone.py
+
+      - name: 💾 Commit & Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
           git add RoarZone.m3u
-          git diff --quiet || git commit -m "Auto update RoarZone.m3u"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "🔄 Auto-update RoarZone.m3u - $(date)"
+            git push
+          else
+            echo "⚠️ No changes to commit."
+          fi
