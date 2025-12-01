@@ -27,7 +27,7 @@ jobs:
 
       - name: 🔄 Run Auto Playlist Script
         run: |
-          python3 roarzone.py
+          python3 Script/Roar-Zone.py
 
       - name: 💾 Commit & Push Changes
         run: |
