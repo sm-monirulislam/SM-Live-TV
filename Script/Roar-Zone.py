@@ -1,30 +1,81 @@
 import requests
+import json
+import os
+from datetime import datetime
 
-JSON_URL = "https://raw.githubusercontent.com/sm-monirulislam/RoarZone-Auto-Update-playlist/refs/heads/main/RoarZone.json"
-OUTPUT = "RoarZone.m3u"
+# ✅ নতুন API URL
+API_URL = "https://raw.githubusercontent.com/sm-monirulislam/RoarZone-Auto-Update-playlist/refs/heads/main/RoarZone.json"
 
-def main():
-    print("Downloading JSON...")
-    response = requests.get(JSON_URL)
-    data = response.json()
+def generate_playlist():
+    print("🚀 Starting Auto Playlist Generator...")
+    print("📡 Fetching data from API...")
 
-    m3u_lines = ["#EXTM3U"]
+    try:
+        response = requests.get(API_URL, timeout=20)
+        response.raise_for_status()
 
-    for item in data:
-        title = item.get("title", "Unknown")
-        logo = item.get("logo", "")
-        category = item.get("category", "Others")
-        url = item.get("stream_url", "")
+        try:
+            data = response.json()
 
-        extinf = f'#EXTINF:-1 tvg-logo="{logo}" group-title="{category}",{title}'
-        m3u_lines.append(extinf)
-        m3u_lines.append(url)
+        except json.JSONDecodeError:
+            data = json.loads(response.text.strip())
 
-    with open(OUTPUT, "w", encoding="utf-8") as f:
-        f.write("\n".join(m3u_lines))
+    except Exception as e:
+        print(f"❌ API Fetch Error: {e}")
+        return False
 
-    print("Generated:", OUTPUT)
+    # ⬇️ তোমার API সরাসরি list আকারে আসে
+    if not isinstance(data, list) or len(data) == 0:
+        print("⚠️ Invalid API response or empty list.")
+        return False
+
+    file_path = "RoarZone.m3u"
+
+    try:
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+
+            channel_count = 0
+
+            for item in data:
+                if not isinstance(item, dict):
+                    continue
+
+                name = item.get("title", "Unknown")
+                logo = item.get("logo", "")
+                group = item.get("category", "Others")
+                url = item.get("stream_url")
+
+                if not url:
+                    continue  # stream url না থাকলে skip
+
+                f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
+                f.write(f"{url}\n")
+
+                channel_count += 1
+
+            f.write(f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+
+        if channel_count == 0:
+            print("⚠️ No channels found — playlist empty.")
+        else:
+            print(f"✅ Playlist generated successfully with {channel_count} channels.")
+
+        return True
+
+    except Exception as e:
+        print(f"❌ Error writing playlist file: {e}")
+        return False
 
 
 if __name__ == "__main__":
-    main()
+    print("=========================================")
+    print("🎯 RoarZone Auto Update M3U Playlist Script")
+    print("=========================================")
+    success = generate_playlist()
+    print("=========================================")
+    if not success:
+        print("❌ Process failed.")
+        exit(1)
+    else:
+        print("✅ Process completed successfully!")
