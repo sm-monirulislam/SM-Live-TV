@@ -16,3 +16,7 @@ jobs:
   fancode:
     needs: crichd
     uses: ./.github/workflows/Fancode_update.yml
+
+  roarzone:
+    needs: roarzone
+    uses: ./.github/workflows/Roar-Zone.yml
