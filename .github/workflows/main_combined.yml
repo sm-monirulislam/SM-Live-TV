@@ -1,0 +1,55 @@
+name: 🔁 Auto Update IPTV Playlist
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # প্রতি ঘন্টায় রান
+  workflow_dispatch:        # Manual run
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 📦 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 📥 Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp
+
+      - name: ▶️ Run Playlist Combiner Script
+        run: |
+          python Script/combine_playlist.py
+
+      - name: 🔍 Check if Output Changed
+        id: git-check
+        run: |
+          git add Combined_Live_TV.m3u offline.m3u
+
+          # Check if files changed
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "➡️ No changes found. Skipping commit."
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "➡️ Changes detected. Ready to commit."
+          fi
+
+      - name: 🔄 Commit & Push Updated Files
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          git commit -m "🔁 Auto Update Playlist: $(date +"%Y-%m-%d %H:%M:%S")"
+          git push
+
+      - name: ✔ Finished
+        run: echo "🎉 Playlist update workflow completed!"
