@@ -1,10 +1,14 @@
 import os
 import json
-from datetime import datetime, timedelta
+import asyncio
+import aiohttp
 import re
+from datetime import datetime, timedelta
 from io import StringIO
 
-# 🔹 M3U ফাইল তালিকা
+# -------------------------
+# FILE LIST CONFIG
+# -------------------------
 m3u_files = [
     "Jagobd.m3u",
     "AynaOTT.m3u",
@@ -16,99 +20,183 @@ m3u_files = [
     "KALKATA.m3u"
 ]
 
-# 🔹 JSON ফাইল ও আউটপুট ফাইল
 json_file = "Bangla Channel.json"
-output_file = "Combined_Live_TV.m3u"
+output_live = "Combined_Live_TV.m3u"
+output_dead = "offline.m3u"
 
-# 🔸 হেডার
-buf = StringIO()
-buf.write("#EXTM3U\n\n")
-
-# Precompiled regex
-re_group_title = re.compile(r'group-title="(.*?)"')
 EXTINF_PREFIX = "#EXTINF:"
+re_group_title = re.compile(r'group-title="(.*?)"')
 
-# 🔸 Step 1: সব M3U ফাইল একত্র করা
-for file_name in m3u_files:
-    if not os.path.exists(file_name):
-        buf.write(f"# ⚠️ Missing file: {file_name}\n")
-        continue
 
-    group_name = os.path.splitext(os.path.basename(file_name))[0]
-
+# ========================================================
+# 🔥 SMART Stream Checker (HEAD → Retry → GET Chunk)
+# ========================================================
+async def smart_check(session, url):
+    # Step 1: HEAD
     try:
+        async with session.head(url, timeout=4) as r:
+            if r.status == 200:
+                return True
+    except:
+        pass
+
+    # Step 2: Retry
+    await asyncio.sleep(0.2)
+    try:
+        async with session.head(url, timeout=4) as r:
+            if r.status == 200:
+                return True
+    except:
+        pass
+
+    # Step 3: Small GET
+    try:
+        async with session.get(url, timeout=6) as r:
+            chunk = await r.content.read(1024)
+            if r.status == 200 and len(chunk) > 0:
+                return True
+    except:
+        pass
+
+    return False
+
+
+# ========================================================
+# 🔥 Main Combine + Check Logic
+# ========================================================
+async def main():
+    live_buf = StringIO()
+    dead_buf = StringIO()
+
+    live_buf.write("#EXTM3U\n\n")
+    dead_buf.write("#EXTM3U\n\n")
+
+    all_entries = []  # store (extinf, url)
+    total_found = 0
+
+    # -------------------------------
+    # Step 1: Combine all M3U files
+    # -------------------------------
+    for file_name in m3u_files:
+        if not os.path.exists(file_name):
+            continue
+
+        group_name = os.path.splitext(os.path.basename(file_name))[0]
+
         with open(file_name, "r", encoding="utf-8", errors="replace") as f:
             lines = [l.strip() for l in f if l.strip()]
-    except Exception as e:
-        buf.write(f"# ⚠️ Error reading {file_name}: {e}\n")
-        continue
 
-    if not lines:
-        continue
+        i = 0
+        n = len(lines)
 
-    buf.write(f"\n# 📁 Source: {file_name}\n")
+        while i < n:
+            line = lines[i]
 
-    i = 0
-    n = len(lines)
-    while i < n:
-        line = lines[i]
+            if line.startswith(EXTINF_PREFIX):
+                # Replace or add group-title
+                if 'group-title="' in line:
+                    line = re_group_title.sub(f'group-title="{group_name}"', line)
+                else:
+                    parts = line.split(",", 1)
+                    if len(parts) == 2:
+                        line = f'{parts[0]} group-title="{group_name}",{parts[1]}'
 
-        if line.startswith(EXTINF_PREFIX):
-            # group-title যোগ/রিপ্লেস
-            if 'group-title="' in line:
-                line = re_group_title.sub(f'group-title="{group_name}"', line)
+                segment = [line]
+                j = i + 1
+                while j < n and not lines[j].startswith(EXTINF_PREFIX):
+                    segment.append(lines[j])
+                    j += 1
+
+                url = segment[-1]
+                all_entries.append((segment[0], url))
+                total_found += 1
+                i = j
             else:
-                parts = line.split(",", 1)
-                if len(parts) == 2:
-                    line = f'{parts[0]} group-title="{group_name}",{parts[1]}'
+                i += 1
 
-            # পরবর্তী লাইনগুলো একত্র করা (referrer/origin/url)
-            segment_lines = [line]
-            j = i + 1
-            while j < n and not lines[j].startswith(EXTINF_PREFIX):
-                segment_lines.append(lines[j])
-                j += 1
-
-            buf.write("\n".join(segment_lines) + "\n")
-            i = j
-        else:
-            i += 1
-
-# 🔸 Step 2: JSON ফাইল থেকে ডেটা যোগ করা
-if os.path.exists(json_file):
-    try:
+    # -------------------------------
+    # Step 2: Add JSON channels
+    # -------------------------------
+    if os.path.exists(json_file):
         with open(json_file, "r", encoding="utf-8") as jf:
             json_data = json.load(jf)
 
-        json_group_name = os.path.splitext(os.path.basename(json_file))[0]
-        buf.write(f"\n# 📁 Source: {json_file}\n")
+        group_name = os.path.splitext(os.path.basename(json_file))[0]
 
-        for channel_name, info in (json_data or {}).items():
-            logo = info.get("tvg_logo", "")
-            links = info.get("links", [])
+        for name, info in json_data.items():
             url = ""
-            if isinstance(links, list) and links:
-                url = (links[0] or {}).get("url", "")
+            if "links" in info and info["links"]:
+                url = info["links"][0].get("url", "")
+
             if not url:
                 continue
 
-            buf.write(
-                f'#EXTINF:-1 tvg-logo="{logo}" group-title="{json_group_name}",{channel_name}\n{url}\n'
+            extinf = (
+                f'#EXTINF:-1 tvg-logo="{info.get("tvg_logo","")}" '
+                f'group-title="{group_name}",{name}'
             )
+            all_entries.append((extinf, url))
+            total_found += 1
 
-    except Exception as e:
-        buf.write(f"# ⚠️ Error reading {json_file}: {e}\n")
-else:
-    buf.write(f"# ⚠️ Missing JSON file: {json_file}\n")
+    print(f"\n🔍 Total streams found: {total_found}\n")
 
-# 🔸 Step 3: সর্বশেষ আপডেট টাইম (Bangladesh Time)
-bd_time = datetime.utcnow() + timedelta(hours=6)
-buf.write(f"\n# ✅ Last updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} Bangladesh Time\n")
+    # -------------------------------
+    # Step 3: Smart Check All URLs
+    # -------------------------------
+    alive_list = []
+    dead_list = []
 
-# 🔸 Step 4: আউটপুট লিখে দাও
-try:
-    with open(output_file, "w", encoding="utf-8") as out:
-        out.write(buf.getvalue())
-    print("✅ Combined_Live_TV.m3u created successfully with referrer/origin support (no duplicate filter)!")
-except Exception as e:
-    print(f"⚠️ Error writing output file: {e}")
+    async with aiohttp.ClientSession() as session:
+        tasks = [smart_check(session, url) for _, url in all_entries]
+        results = await asyncio.gather(*tasks)
+
+    for i, status in enumerate(results):
+        extinf, url = all_entries[i]
+
+        if status:
+            alive_list.append((extinf, url))
+            print(f"✔ LIVE: {url}")
+        else:
+            dead_list.append((extinf, url))
+            print(f"✘ DEAD: {url}")
+
+    # -------------------------------
+    # Step 4: Write LIVE playlist
+    # -------------------------------
+    for ext, url in alive_list:
+        live_buf.write(f"{ext}\n{url}\n\n")
+
+    # -------------------------------
+    # Step 5: Write DEAD playlist
+    # -------------------------------
+    for ext, url in dead_list:
+        dead_buf.write(f"{ext}\n{url}\n\n")
+
+    # Timestamp
+    bd_time = datetime.utcnow() + timedelta(hours=6)
+    stamp = f"# Last Updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} BD Time\n"
+
+    live_buf.write(stamp)
+    dead_buf.write(stamp)
+
+    # Save files
+    with open(output_live, "w", encoding="utf-8") as lf:
+        lf.write(live_buf.getvalue())
+
+    with open(output_dead, "w", encoding="utf-8") as df:
+        df.write(dead_buf.getvalue())
+
+    # Summary
+    print("\n=====================================")
+    print("    ✅ Playlist Build Completed")
+    print("=====================================")
+    print(f"Total Found : {total_found}")
+    print(f"Alive       : {len(alive_list)}")
+    print(f"Dead        : {len(dead_list)}")
+    print(f"Output Live : {output_live}")
+    print(f"Output Dead : {output_dead}")
+    print("=====================================\n")
+
+
+# Run async
+asyncio.run(main())
