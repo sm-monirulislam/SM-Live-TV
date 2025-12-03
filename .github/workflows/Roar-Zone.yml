@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: write
-  id-token: write     # ✅ Push permission fix
+  id-token: write
 
 jobs:
   update:
@@ -16,7 +16,8 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: true     # ✅ Token save থাকে
+          persist-credentials: true
+          fetch-depth: 0           # ✅ Full history needed for pull
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -40,6 +41,10 @@ jobs:
 
           if ! git diff --cached --quiet; then
             git commit -m "🔄 Auto-update RoarZone.m3u - $(date)"
+
+            # ✅ MOST IMPORTANT FIX — Pull before push
+            git pull --rebase
+
             git push
           else
             echo "⚠️ No changes to commit."
