@@ -18,7 +18,7 @@ m3u_files = [
     "jadoo.m3u",
     "Sports.m3u",
     "KALKATA.m3u",
-    "RoarZone.m3u"   # ✅ Added as you requested
+    "RoarZone.m3u"
 ]
 
 json_file = "Bangla Channel.json"
@@ -28,12 +28,16 @@ output_dead = "offline.m3u"
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
+# -------------------------
+# ⛔ এই গ্রুপগুলোর লিংক চেক হবে না
+# -------------------------
+skip_check_groups = ["RoarZone", "Fancode"]
+
 
 # ========================================================
 # 🔥 Smart Live Checker Function
 # ========================================================
 async def smart_check(session, url):
-    # HEAD
     try:
         async with session.head(url, timeout=4) as r:
             if r.status == 200:
@@ -41,7 +45,6 @@ async def smart_check(session, url):
     except:
         pass
 
-    # Retry
     await asyncio.sleep(0.2)
     try:
         async with session.head(url, timeout=4) as r:
@@ -50,7 +53,6 @@ async def smart_check(session, url):
     except:
         pass
 
-    # GET test chunk
     try:
         async with session.get(url, timeout=6) as r:
             chunk = await r.content.read(1024)
@@ -72,7 +74,7 @@ async def main():
     live_buf.write("#EXTM3U\n\n")
     dead_buf.write("#EXTM3U\n\n")
 
-    all_entries = []  # (extinf, url)
+    all_entries = []
     total_found = 0
 
     # -------------------------------
@@ -94,7 +96,7 @@ async def main():
             line = lines[i]
 
             if line.startswith(EXTINF_PREFIX):
-                # group-title replace/add
+
                 if 'group-title="' in line:
                     line = re_group_title.sub(f'group-title="{group_name}"', line)
                 else:
@@ -104,6 +106,7 @@ async def main():
 
                 segment = [line]
                 j = i + 1
+
                 while j < n and not lines[j].startswith(EXTINF_PREFIX):
                     segment.append(lines[j])
                     j += 1
@@ -161,8 +164,6 @@ async def main():
                 i += 1
 
     print(f"\n🔄 Rechecking {len(recheck_entries)} old offline links...\n")
-
-    # Add recheck list to main check list
     all_entries.extend(recheck_entries)
 
     # -------------------------------
@@ -178,6 +179,22 @@ async def main():
     for i, status in enumerate(results):
         extinf, url = all_entries[i]
 
+        # --------------------------
+        # ⛔ Skip Checking Groups
+        # --------------------------
+        grp = ""
+        m = re_group_title.search(extinf)
+        if m:
+            grp = m.group(1)
+
+        if grp in skip_check_groups:
+            alive_list.append((extinf, url))
+            print(f"⏭ SKIPPED (Auto-LIVE): {grp} → {url}")
+            continue
+
+        # --------------------------
+        # Normal Smart Check
+        # --------------------------
         if status:
             alive_list.append((extinf, url))
             print(f"✔ LIVE: {url}")
@@ -194,7 +211,6 @@ async def main():
     for ext, url in dead_list:
         dead_buf.write(f"{ext}\n{url}\n\n")
 
-    # Timestamp
     bd_time = datetime.utcnow() + timedelta(hours=6)
     stamp = f"# Last Updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} BD Time\n"
 
@@ -207,9 +223,6 @@ async def main():
     with open(output_dead, "w", encoding="utf-8") as df:
         df.write(dead_buf.getvalue())
 
-    # -------------------------------
-    # Summary
-    # -------------------------------
     print("\n=====================================")
     print("    ✅ Playlist Build Completed")
     print("=====================================")
