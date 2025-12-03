@@ -96,7 +96,6 @@ async def main():
             line = lines[i]
 
             if line.startswith(EXTINF_PREFIX):
-
                 if 'group-title="' in line:
                     line = re_group_title.sub(f'group-title="{group_name}"', line)
                 else:
@@ -142,29 +141,7 @@ async def main():
             all_entries.append((extinf, url))
             total_found += 1
 
-    # -------------------------------
-    # Step 3: Re-check previous offline file
-    # -------------------------------
-    recheck_entries = []
-
-    if os.path.exists(output_dead):
-        with open(output_dead, "r", encoding="utf-8") as off:
-            lines = [l.strip() for l in off if l.strip()]
-
-        i = 0
-        n = len(lines)
-
-        while i < n:
-            if lines[i].startswith(EXTINF_PREFIX):
-                ext = lines[i]
-                url = lines[i + 1]
-                recheck_entries.append((ext, url))
-                i += 2
-            else:
-                i += 1
-
-    print(f"\n🔄 Rechecking {len(recheck_entries)} old offline links...\n")
-    all_entries.extend(recheck_entries)
+    # ⚠️ Step 3 removed fully — offline.m3u old links WON’T be reloaded
 
     # -------------------------------
     # Step 4: Smart Check All URLs
@@ -179,9 +156,7 @@ async def main():
     for i, status in enumerate(results):
         extinf, url = all_entries[i]
 
-        # --------------------------
-        # ⛔ Skip Checking Groups
-        # --------------------------
+        # Skip checking selected groups
         grp = ""
         m = re_group_title.search(extinf)
         if m:
@@ -192,9 +167,6 @@ async def main():
             print(f"⏭ SKIPPED (Auto-LIVE): {grp} → {url}")
             continue
 
-        # --------------------------
-        # Normal Smart Check
-        # --------------------------
         if status:
             alive_list.append((extinf, url))
             print(f"✔ LIVE: {url}")
@@ -227,7 +199,6 @@ async def main():
     print("    ✅ Playlist Build Completed")
     print("=====================================")
     print(f"Total Found : {total_found}")
-    print(f"Rechecked   : {len(recheck_entries)}")
     print(f"Alive       : {len(alive_list)}")
     print(f"Dead        : {len(dead_list)}")
     print(f"Output Live : {output_live}")
