@@ -1,7 +1,8 @@
 name: 🔁 RoarZone Auto Update Playlist
 
 on:
-  workflow_dispatch:   # ▶️ শুধু ম্যানুয়ালি রান করা যাবে
+  workflow_call:        # ✅ main controller থেকে কল করার জন্য আবশ্যক
+  workflow_dispatch:    # ▶️ ম্যানুয়ালি রান করা যাবে
 
 permissions:
   contents: write
