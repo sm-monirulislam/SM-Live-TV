@@ -2,8 +2,8 @@ import requests
 import json
 from datetime import datetime
 
-# ✅ API URL
-API_URL = "https://raw.githubusercontent.com/hasanhabibmottakin/AynaOTT/refs/heads/main/rest_api.json"
+# ✅ NEW API URL
+API_URL = "https://raw.githubusercontent.com/sm-monirulislam/AynaOTT-auto-update-playlist/refs/heads/main/AynaOTT.json"
 
 def generate_playlist():
     print("🚀 Starting Auto Playlist Generator...")
@@ -12,13 +12,12 @@ def generate_playlist():
     try:
         response = requests.get(API_URL, timeout=20)
         response.raise_for_status()
-        data = response.json()
+        data = response.json()   # API gives LIST
     except Exception as e:
         print(f"❌ API Fetch Error: {e}")
         return False
 
-    channels = data.get("channels", [])
-    if not channels:
+    if not isinstance(data, list) or len(data) == 0:
         print("⚠️ No channels found in API response.")
         return False
 
@@ -29,19 +28,21 @@ def generate_playlist():
             f.write("#EXTM3U\n")
 
             channel_count = 0
-            for ch in channels:
+            for ch in data:
                 if not isinstance(ch, dict):
                     continue
 
                 name = ch.get("title", "Unknown Channel")
                 logo = ch.get("logo", "")
-                group = ch.get("category", "AynaOTT")
-                url = ch.get("url", "").strip()  # ← পুরো URL সহ (যেমন token-সহ)
+                url = ch.get("url", "").strip()
 
                 if not url:
                     continue
 
-                # ✅ প্রতিটি চ্যানেল লিখো
+                # ✅ category fixed → "Ayna"
+                group = "Ayna"
+
+                # Write M3U line
                 f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
                 f.write(f"{url}\n\n")
 
