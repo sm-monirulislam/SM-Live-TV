@@ -28,9 +28,7 @@ output_dead = "offline.m3u"
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
-# -------------------------
-# ⛔ এই গ্রুপগুলোর লিংক চেক হবে না
-# -------------------------
+# যেগুলোর লিংক চেক হবে না
 skip_check_groups = ["RoarZone", "Fancode", "Sports"]
 
 
@@ -96,22 +94,29 @@ async def main():
             line = lines[i]
 
             if line.startswith(EXTINF_PREFIX):
+
+                # Always enforce group-title
                 if 'group-title="' in line:
                     line = re_group_title.sub(f'group-title="{group_name}"', line)
                 else:
-                    parts = line.split(",", 1)
-                    if len(parts) == 2:
-                        line = f'{parts[0]} group-title="{group_name}",{parts[1]}'
+                    line = re.sub(
+                        r'#EXTINF:-1(.*?),',
+                        rf'#EXTINF:-1\1 group-title="{group_name}",',
+                        line
+                    )
 
-                segment = [line]
+                # Collect full block (EXTVLCOPT, extra headers, URL)
+                block = [line]
                 j = i + 1
 
-                while j < n and not lines[j].startswith(EXTINF_PREFIX):
-                    segment.append(lines[j])
+                while j < n:
+                    if lines[j].startswith(EXTINF_PREFIX):
+                        break
+                    block.append(lines[j])
                     j += 1
 
-                url = segment[-1]
-                all_entries.append((segment[0], url))
+                url = block[-1]
+                all_entries.append((block, url))
                 total_found += 1
                 i = j
             else:
@@ -138,7 +143,8 @@ async def main():
                 f'#EXTINF:-1 tvg-logo="{info.get("tvg_logo","")}" '
                 f'group-title="{group_name}",{name}'
             )
-            all_entries.append((extinf, url))
+            block = [extinf, url]
+            all_entries.append((block, url))
             total_found += 1
 
     # -------------------------------
@@ -152,34 +158,40 @@ async def main():
         results = await asyncio.gather(*tasks)
 
     for i, status in enumerate(results):
-        extinf, url = all_entries[i]
+        block, url = all_entries[i]
+
+        # Extract group
+        grp = ""
+        if 'group-title="' in block[0]:
+            match = re_group_title.search(block[0])
+            if match:
+                grp = match.group(1)
 
         # Skip checking selected groups
-        grp = ""
-        m = re_group_title.search(extinf)
-        if m:
-            grp = m.group(1)
-
         if grp in skip_check_groups:
-            alive_list.append((extinf, url))
+            alive_list.append(block)
             print(f"⏭ SKIPPED (Auto-LIVE): {grp} → {url}")
             continue
 
         if status:
-            alive_list.append((extinf, url))
+            alive_list.append(block)
             print(f"✔ LIVE: {url}")
         else:
-            dead_list.append((extinf, url))
+            dead_list.append(block)
             print(f"✘ DEAD: {url}")
 
     # -------------------------------
     # Step 5: Write LIVE + DEAD files
     # -------------------------------
-    for ext, url in alive_list:
-        live_buf.write(f"{ext}\n{url}\n\n")
+    for block in alive_list:
+        for line in block:
+            live_buf.write(line + "\n")
+        live_buf.write("\n")
 
-    for ext, url in dead_list:
-        dead_buf.write(f"{ext}\n{url}\n\n")
+    for block in dead_list:
+        for line in block:
+            dead_buf.write(line + "\n")
+        dead_buf.write("\n")
 
     bd_time = datetime.utcnow() + timedelta(hours=6)
     stamp = f"# Last Updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} BD Time\n"
