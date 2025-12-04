@@ -31,7 +31,7 @@ re_group_title = re.compile(r'group-title="(.*?)"')
 # -------------------------
 # ⛔ এই গ্রুপগুলোর লিংক চেক হবে না
 # -------------------------
-skip_check_groups = ["RoarZone", "Fancode"]
+skip_check_groups = ["RoarZone", "Fancode", "Sports"]
 
 
 # ========================================================
@@ -140,8 +140,6 @@ async def main():
             )
             all_entries.append((extinf, url))
             total_found += 1
-
-    # ⚠️ Step 3 removed fully — offline.m3u old links WON’T be reloaded
 
     # -------------------------------
     # Step 4: Smart Check All URLs
