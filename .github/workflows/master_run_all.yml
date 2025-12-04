@@ -1,27 +1,26 @@
 name: 🚀 Run All Playlist Updates (Main Controller)
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:        # ম্যানুয়ালি চালানো যাবে
   schedule:
-    - cron: "*/30 * * * *"   # প্রতি ৩০ মিনিটে অটো রান (UTC)
+    - cron: "*/30 * * * *"  # প্রতি ৩০ মিনিটে অটো রান (UTC)
 
 jobs:
 
   aynaott:
     uses: ./.github/workflows/auto_aynaott.yml
-    continue-on-error: true   # ❗ Fail হলেও workflow থামবে না
 
   crichd:
     needs: aynaott
+    if: ${{ always() }}                         # আগেরটি fail করলেও চলে যাবে
     uses: ./.github/workflows/CricHD_update_playlist.yml
-    continue-on-error: true
 
   fancode:
     needs: crichd
+    if: ${{ always() }}
     uses: ./.github/workflows/Fancode_update.yml
-    continue-on-error: true
 
   roarzone:
     needs: fancode
+    if: ${{ always() }}
     uses: ./.github/workflows/Roar-Zone.yml
-    continue-on-error: true
