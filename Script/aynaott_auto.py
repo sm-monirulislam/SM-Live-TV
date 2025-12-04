@@ -35,12 +35,10 @@ def generate_playlist():
                 name = ch.get("title", "Unknown Channel")
                 logo = ch.get("logo", "")
                 url = ch.get("url", "").strip()
+                group = ch.get("category", "Ayna")  # ✅ now using API category
 
                 if not url:
                     continue
-
-                # ✅ category fixed → "Ayna"
-                group = "Ayna"
 
                 # Write M3U line
                 f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
