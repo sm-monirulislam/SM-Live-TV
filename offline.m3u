@@ -378,9 +378,6 @@ https://tvsen6.aynascope.net/3abnkids/index.m3u8?e=1764955015&u=78be6644-0a65-48
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/696694fafe7d31babacde647eef0177f" group-title="AynaOTT",SKY CINEMA ANIMATION
 https://tvsen7.aynascope.net/skycinemanimation/index.m3u8?e=1764955015&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=b9b66d7422bd0e14f5aa9221861c7870
 
-#EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/b9a858f2c21480053e6510b897708a76" group-title="AynaOTT",Kids TV
-http://origin5.mediacdn.ru/live/kidstv/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/a84b43edea7ba6fe2371cc9f7b1936e3" group-title="AynaOTT",Network 10
 https://tvsen6.aynascope.net/Network10/index.m3u8?e=1764955017&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=604f5365854f3952678e59a318a9caad
 
@@ -1167,9 +1164,6 @@ http://live.matribhumitv.com/music-bangla/index.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/49/Sananda_TV_logo.jpeg" group-title="Bangla Channel",Sananda TV
 https://live.sanonda.tv/sanonda/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/00/SONY_AATH.png" group-title="Bangla Channel",SONY AATH HD
-https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5e/Sun_Bangla_Logo.png" group-title="Bangla Channel",SUN Bangla
 https://smart.bengaldigital.live/sun-bangla-paid/index.m3u8
 
@@ -1218,9 +1212,6 @@ https://smart.bengaldigital.live/ZeeCinema/index.m3u8
 #EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23199/dabangg/logo_20250324_190201_63.png" group-title="Bangla Channel",MU | Dabangg
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/dabangg/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/9Q7G21N6/Deewana.png" group-title="Bangla Channel",MU | DEEWANA HD
-https://live20.bozztv.com/giatvplayout7/giatv-209592/tracks-v1a1/mono.ts.m3u8
-
 #EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/22973/maiboli/logo_20231219_215344_67.png" group-title="Bangla Channel",MU | Maiboli
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/maiboli/master.m3u8
 
@@ -1235,6 +1226,9 @@ http://208.86.19.13:81/102.stream/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/greece/attica-tv-gr.png" group-title="Bangla Channel",EN | ATTICA
 https://atticatv.siliconweb.com/atticatv/atticaliveabr/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/Channel_31_logo_2020.png" group-title="Bangla Channel",EN | Channel 31
+https://i.mjh.nz/.r/c31.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10108_h15_ab.png" group-title="Bangla Channel",EN | CTV Winnipeg (CKY)
 http://38.143.48.212:9981/stream/channelid/741174107?profile=pass
@@ -1254,17 +1248,8 @@ http://38.143.48.212:9981/stream/channelid/41831820?profile=pass
 #EXTINF:-1 tvg-logo="https://cdn.titantv.com/i4fXAxGXCj88NotOCDfyK-YZKL1vqYrc0fXzRxmrvPg.png" group-title="Bangla Channel",EN | My 9
 http://208.86.19.13:81/105.stream/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/0c/TV_BRICS.svg" group-title="Bangla Channel",EN | TV BRICS English
-https://engbrics.mediacdn.ru/cdn/brics/english/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://emergencyuk.org/wp-content/uploads/2017/03/Aljazeera-logo-English-1024x768.png" group-title="Bangla Channel",Al Jazeera English HD
 https://live-hls-web-aje.getaj.net/AJE/04.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/00/SONY_AATH.png" group-title="Bangla Channel",0. Gopal Var
-https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://gia.tv/streams/pptv/208314.jpg?1750373428" group-title="Bangla Channel",0. Tom and Jerry 2
-https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/88/Tom_and_Jerry_Logo.jpg" group-title="Bangla Channel",0. Tom and Jerry 3
 http://live.iill.top/huya.php?id=11352879
@@ -1293,11 +1278,11 @@ http://main.light-ott.net:80/play/live.php?mac=00:1A:79:00:12:f4&stream=908587&e
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Boing_Plus_logo_2020.svg/735px-Boing_Plus_logo_2020.svg.png?20201201165658" group-title="Bangla Channel",Boing Plus
 http://77.39.161.42:55555/Boing%20Plus
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/db/Motu-patlu-cover.jpg" group-title="Bangla Channel",Cartoon Anima
+https://live20.bozztv.com/giatvplayout7/giatv-209624/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7f/Disney_International_HD_logo.png" group-title="Bangla Channel",Disney International HD
 http://116.90.120.149:8000/play/a0e9/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
-https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/catchy-comedy-us.png" group-title="Bangla Channel",EN | Catchy Comedy
 https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-decades/index.m3u8
@@ -1398,4 +1383,4 @@ https://amg18570-amg18570c1-freelivesports-emea-5535.playouts.now.amagi.tv/ts-eu
 #EXTINF:-1 tvg-logo="https://media.unreel.me/prod/freelivesports/logo/09fa93ff-a539-4d81-bbbf-da599e11e77c" group-title="Bangla Channel",GOLF | Unbeaten (Worldwide)
 https://amg00721-amg00721c6-freelivesports-emea-9595.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00721-inverleigh-unbtn3row-freelivesportsemea/playlist.m3u8
 
-# Last Updated: 2025-12-06 02:17:56 BD Time
+# Last Updated: 2025-12-06 03:14:31 BD Time
