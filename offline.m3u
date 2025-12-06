@@ -21,9 +21,6 @@ http://103.101.197.10:8989/M_Movies/index.m3u8
 #EXTINF:-1 tvg-logo="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/football-logo-design-template-bebebf8ff1c25b66b504d37afaee99f0_screen.jpg?ts=1686017774" group-title="Jagobd",group-title="Jagobd",Football match
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/matribhumitv.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzayWMQexbfPV-jTx3ZNoq-XOmlHKSX1SCjg&s" group-title="Jagobd",group-title="Jagobd",Probashi
-http://158.69.24.53:8080/probashi_tv/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzj8YBjuvHZWJapU6iJCxtP-5o8xzLhikH9PsuWNRW-o-4W3osEyvV7U2&s=10" group-title="Jagobd",group-title="Jagobd",Mbangla tv
 https://jolshabd.com/live/mbanglatv/playlist.m3u8
 
@@ -696,6 +693,9 @@ https://4afghls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/3f65c82ae89dc9894e0fdadf21ab9d96" group-title="AynaOTT",Revolt
 https://tvsen6.aynascope.net/revolt/index.m3u8?e=1764955125&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=cc8a05739afa053bfa2c545a91b81008
 
+#EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/0d7976633a35b044d736e57b240a4e97" group-title="AynaOTT",Hadi TV
+https://live.ishiacloud.com/haditv.co.uk/haditv1.m3u8
+
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/173eba7209534d3643be6a57215bfff1" group-title="AynaOTT",Iran Press
 https://live.presstv.ir/hls/presstv_5_482/index.m3u8
 # Updated on: 2025-12-05 15:45:38
@@ -714,9 +714,6 @@ http://103.135.132.54:88/tsportshd/index.m3u8
 
 #EXTINF:-1 group-title="SM All TV" tvg-logo="https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/images/images%20(6)%20(9).jpeg",T Sports (5) (5) (6) (6) (6) (6)
 https://live.tsports.com/mobile_hls/tsports_live_2/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://probashinews24.tv/images/logo.png" group-title="SM All TV", Probashi TV
-http://158.69.24.53:8080/probashi_tv/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://alponatvbd.com/logo.png" group-title="SM All TV", Alpona TV
 https://mtlivestream.com/hls-mtlive/aplive/index.m3u8
@@ -864,9 +861,6 @@ http://41.205.93.154/STARSPORTS1/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/ZTxVYed.png" group-title="SM All TV",Star Sports Select 1
 http://front-main.eagle-4k.me/play/live.php?mac=00:1A:79:BD:42:AC&stream=276734&extension=.m3u8
-
-#EXTINF:-1 tvg-logo="https://dtat2ks7dludr.cloudfront.net/spnsportsindia/channel_logos/SONY_SportsTen1_HD.png" group-title="SM All TV",Sony Sports 1 HD
-https://stalker.tnm3us.workers.dev/62593.m3u8
 
 #EXTINF:-1 tvg-logo="https://dtat2ks7dludr.cloudfront.net/spnsportsindia/channel_logos/SONY_SportsTen3_HD.png" group-title="SM All TV",Sony Sports 3 HD
 http://front-main.eagle-4k.me/play/live.php?mac=00:1A:79:BD:42:AC&stream=276739&extension=.m3u8
@@ -1257,6 +1251,9 @@ http://live.iill.top/huya.php?id=11352879
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/canada/cartoon-network-ca.png" group-title="Bangla Channel",1. Cartoon Network
 http://38.143.48.212:9981/stream/channelid/1520310405?profile=pass
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c0/Disney_Channel_2022.svg" group-title="Bangla Channel",1. Disney Channel East
+http://kstv.us:8080/live/Purn3542/38791114838/40725.ts
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6e/Disney_Channel_2017.svg" group-title="Bangla Channel",1. Disney Channel Hindi
 http://116.90.120.149:8000/play/a0bx/index.m3u8
 
@@ -1275,14 +1272,8 @@ http://main.light-ott.net:80/play/live.php?mac=00:1A:79:00:12:f4&stream=908587&e
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Boing_Plus_logo_2020.svg/735px-Boing_Plus_logo_2020.svg.png?20201201165658" group-title="Bangla Channel",Boing Plus
 http://77.39.161.42:55555/Boing%20Plus
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/db/Motu-patlu-cover.jpg" group-title="Bangla Channel",Cartoon Anima
-https://live20.bozztv.com/giatvplayout7/giatv-209624/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7f/Disney_International_HD_logo.png" group-title="Bangla Channel",Disney International HD
 http://116.90.120.149:8000/play/a0e9/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
-https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/catchy-comedy-us.png" group-title="Bangla Channel",EN | Catchy Comedy
 https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-decades/index.m3u8
@@ -1365,9 +1356,6 @@ http://135.125.238.26:8080/catena-36-1149991-streamer-nz_sky_sport_2/video.m3u8?
 #EXTINF:-1 tvg-logo="" group-title="Bangla Channel",--Live(Solh Live Sports)--
 http://cors.tundracast.com:2000/https://wo.cma.footballii.ir/hls2/solh.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/4b/M-Sport_%28logo%29.png" group-title="Bangla Channel",FB | M-Sports HD
-http://live.matribhumitv.com/matribhumi-sports/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/ORF_Sport_%2B_Logo_2024.svg/2560px-ORF_Sport_%2B_Logo_2024.svg.png" group-title="Bangla Channel",FB | ORF Sport+ HD
 http://212.186.45.34:9981/stream/channelid/906723447?profile=pass
 
@@ -1383,4 +1371,4 @@ https://amg18570-amg18570c1-freelivesports-emea-5535.playouts.now.amagi.tv/ts-eu
 #EXTINF:-1 tvg-logo="https://media.unreel.me/prod/freelivesports/logo/09fa93ff-a539-4d81-bbbf-da599e11e77c" group-title="Bangla Channel",GOLF | Unbeaten (Worldwide)
 https://amg00721-amg00721c6-freelivesports-emea-9595.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00721-inverleigh-unbtn3row-freelivesportsemea/playlist.m3u8
 
-# Last Updated: 2025-12-06 19:22:59 BD Time
+# Last Updated: 2025-12-06 20:13:10 BD Time
