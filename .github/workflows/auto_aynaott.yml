@@ -12,30 +12,52 @@ jobs:
       contents: write
 
     steps:
+
+    # --------------------------
+    # 1. Checkout Repo
+    # --------------------------
     - name: 🔹 Checkout repository
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
 
+    # --------------------------
+    # 2. Install Python
+    # --------------------------
     - name: 🔹 Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: "3.x"
 
+    # --------------------------
+    # 3. Install dependencies
+    # --------------------------
     - name: 🔹 Install dependencies
-      run: |
-        pip install requests
+      run: pip install requests
 
+    # --------------------------
+    # 4. Run Auto M3U Generator
+    #    (Never fail even if API returns no data)
+    # --------------------------
     - name: 🔹 Run AynaOTT Playlist Generator
       run: |
+        set +e
         python Script/aynaott_auto.py
+        echo "⚠️ Script completed (no error will stop workflow)."
+      continue-on-error: true
 
+    # --------------------------
+    # 5. Pull to avoid conflicts
+    # --------------------------
     - name: 🔄 Pull latest changes (avoid conflict)
       run: |
         git fetch origin main
         git pull --rebase origin main || true
 
+    # --------------------------
+    # 6. Commit + Push Updated File
+    # --------------------------
     - name: 💾 Commit and Push Updated M3U
       run: |
         git config --global user.name "github-actions[bot]"
@@ -43,4 +65,4 @@ jobs:
 
         git add AynaOTT.m3u
         git diff --staged --quiet || git commit -m "✅ Auto Updated AynaOTT.m3u"
-        git push origin main
+        git push origin main || true
