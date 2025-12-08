@@ -655,9 +655,6 @@
     <display-name>ENT | COLORS HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/19/Colorstv-logo-black-background.jpg"/>
   </channel>
-  <programme start="20251208140000 +0600" stop="20251208183000 +0600" channel="COLORS.in">
-    <title lang="bn">Balika Vadhu</title>
-  </programme>
   <programme start="20251208183000 +0600" stop="20251208190000 +0600" channel="COLORS.in">
     <title lang="bn">Noyontara</title>
   </programme>
@@ -745,6 +742,9 @@
   <programme start="20251209220000 +0600" stop="20251209223000 +0600" channel="COLORS.in">
     <title lang="bn">Mangal Lakshmi - Lakshmi Ka Safar</title>
   </programme>
+  <programme start="20251209223000 +0600" stop="20251209230000 +0600" channel="COLORS.in">
+    <title lang="bn">Seher Hone Ko Hai</title>
+  </programme>
   <channel id="IndiaTV.in">
     <display-name>India TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/10/India_TV_Orange.jpg"/>
@@ -773,31 +773,7 @@
     <display-name>ZEE TV HD</display-name>
     <icon src="https://1000logos.net/wp-content/uploads/2025/05/Zee-TV-Logo-768x432.png"/>
   </channel>
-  <programme start="20251208160000 +0600" stop="20251208163000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Tum Se Tum Tak</title>
-  </programme>
-  <programme start="20251208163000 +0600" stop="20251208165900 +0600" channel="ZEETV.tv">
-    <title lang="bn">Ek Nazar</title>
-  </programme>
-  <programme start="20251208165900 +0600" stop="20251208170000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Ganga Mai Ki Betiyaan</title>
-  </programme>
-  <programme start="20251208170000 +0600" stop="20251208173000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Jagadhatri</title>
-  </programme>
-  <programme start="20251208173000 +0600" stop="20251208175900 +0600" channel="ZEETV.tv">
-    <title lang="bn">Ek Nazar</title>
-  </programme>
-  <programme start="20251208175900 +0600" stop="20251208180000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Saru</title>
-  </programme>
-  <programme start="20251208180000 +0600" stop="20251208183000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Ganga Mai Ki Betiyaan</title>
-  </programme>
-  <programme start="20251208183000 +0600" stop="20251208185900 +0600" channel="ZEETV.tv">
-    <title lang="bn">Ek Nazar</title>
-  </programme>
-  <programme start="20251208185900 +0600" stop="20251208190000 +0600" channel="ZEETV.tv">
+  <programme start="20251208183000 +0600" stop="20251208190000 +0600" channel="ZEETV.tv">
     <title lang="bn">Vasudha</title>
   </programme>
   <programme start="20251208190000 +0600" stop="20251208193000 +0600" channel="ZEETV.tv">
@@ -863,19 +839,34 @@
   <programme start="20251209032600 +0600" stop="20251209035500 +0600" channel="ZEETV.tv">
     <title lang="bn">Jagriti - Ek Nayi Subah</title>
   </programme>
+  <programme start="20251209035500 +0600" stop="20251209041700 +0600" channel="ZEETV.tv">
+    <title lang="bn">Saru</title>
+  </programme>
+  <programme start="20251209041700 +0600" stop="20251209044000 +0600" channel="ZEETV.tv">
+    <title lang="bn">Jaane Anjaane Hum Mile</title>
+  </programme>
+  <programme start="20251209044000 +0600" stop="20251209050200 +0600" channel="ZEETV.tv">
+    <title lang="bn">Ganga Mai Ki Betiyaan</title>
+  </programme>
+  <programme start="20251209050200 +0600" stop="20251209052500 +0600" channel="ZEETV.tv">
+    <title lang="bn">Vasudha</title>
+  </programme>
+  <programme start="20251209052500 +0600" stop="20251209054800 +0600" channel="ZEETV.tv">
+    <title lang="bn">Tum Se Tum Tak</title>
+  </programme>
+  <programme start="20251209054800 +0600" stop="20251209061500 +0600" channel="ZEETV.tv">
+    <title lang="bn">Jagriti - Ek Nayi Subah</title>
+  </programme>
+  <programme start="20251209061500 +0600" stop="20251209063700 +0600" channel="ZEETV.tv">
+    <title lang="bn">Vasudha</title>
+  </programme>
+  <programme start="20251209063700 +0600" stop="20251209070000 +0600" channel="ZEETV.tv">
+    <title lang="bn">Ganga Mai Ki Betiyaan</title>
+  </programme>
   <channel id="STARBHARATHD">
     <display-name>STAR BHARAT HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/b/b9/Star_bharat_hd_clean.png"/>
   </channel>
-  <programme start="20251208153000 +0600" stop="20251208163000 +0600" channel="STARBHARATHD">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
-  <programme start="20251208163000 +0600" stop="20251208173000 +0600" channel="STARBHARATHD">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
-  <programme start="20251208173000 +0600" stop="20251208183000 +0600" channel="STARBHARATHD">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
   <programme start="20251208183000 +0600" stop="20251208193000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India: F.I.R</title>
   </programme>
@@ -954,22 +945,22 @@
   <programme start="20251209133000 +0600" stop="20251209143000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
-  <programme start="20251209143000 +0600" stop="20251209150000 +0600" channel="STARBHARATHD">
+  <programme start="20251209143000 +0600" stop="20251209153000 +0600" channel="STARBHARATHD">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251209153000 +0600" stop="20251209163000 +0600" channel="STARBHARATHD">
+    <title lang="bn">Savdhaan India: F.I.R</title>
+  </programme>
+  <programme start="20251209163000 +0600" stop="20251209173000 +0600" channel="STARBHARATHD">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251209173000 +0600" stop="20251209180000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
   <channel id="STARBHARAT">
     <display-name>STAR BHARAT</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/7/7b/Star_Bharat_2022.png"/>
   </channel>
-  <programme start="20251208153000 +0600" stop="20251208163000 +0600" channel="STARBHARAT">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
-  <programme start="20251208163000 +0600" stop="20251208173000 +0600" channel="STARBHARAT">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
-  <programme start="20251208173000 +0600" stop="20251208183000 +0600" channel="STARBHARAT">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
   <programme start="20251208183000 +0600" stop="20251208193000 +0600" channel="STARBHARAT">
     <title lang="bn">Savdhaan India: F.I.R</title>
   </programme>
@@ -1048,7 +1039,16 @@
   <programme start="20251209133000 +0600" stop="20251209143000 +0600" channel="STARBHARAT">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
-  <programme start="20251209143000 +0600" stop="20251209150000 +0600" channel="STARBHARAT">
+  <programme start="20251209143000 +0600" stop="20251209153000 +0600" channel="STARBHARAT">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251209153000 +0600" stop="20251209163000 +0600" channel="STARBHARAT">
+    <title lang="bn">Savdhaan India: F.I.R</title>
+  </programme>
+  <programme start="20251209163000 +0600" stop="20251209173000 +0600" channel="STARBHARAT">
+    <title lang="bn">Savdhaan India - India Fights Back</title>
+  </programme>
+  <programme start="20251209173000 +0600" stop="20251209180000 +0600" channel="STARBHARAT">
     <title lang="bn">Savdhaan India - India Fights Back</title>
   </programme>
   <channel id="EpicTV.in">
@@ -1063,21 +1063,6 @@
     <display-name>DD National HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/2/2a/Ddnational2023.png"/>
   </channel>
-  <programme start="20251208133000 +0600" stop="20251208163000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Yakeen</title>
-  </programme>
-  <programme start="20251208163000 +0600" stop="20251208170000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Malgudi Days</title>
-  </programme>
-  <programme start="20251208170000 +0600" stop="20251208173000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Circus</title>
-  </programme>
-  <programme start="20251208173000 +0600" stop="20251208180000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Chaupai Ke Swar</title>
-  </programme>
-  <programme start="20251208180000 +0600" stop="20251208183000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Chitrahar Special</title>
-  </programme>
   <programme start="20251208183000 +0600" stop="20251208190000 +0600" channel="DDNational.in@HD">
     <title lang="bn">Gaon Se With Neelesh Mishra</title>
   </programme>
@@ -1153,25 +1138,25 @@
   <programme start="20251209063100 +0600" stop="20251209070000 +0600" channel="DDNational.in@HD">
     <title lang="bn">Guru Paduka Stotram By Swami Tejo Mayanand</title>
   </programme>
+  <programme start="20251209070000 +0600" stop="20251209073000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Sringaar Aarti From Ram Lalla Live</title>
+  </programme>
+  <programme start="20251209073000 +0600" stop="20251209080000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Geeta Gyan Amritam</title>
+  </programme>
+  <programme start="20251209080000 +0600" stop="20251209083000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Arogya yoga</title>
+  </programme>
+  <programme start="20251209083000 +0600" stop="20251209093000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Morning Show</title>
+  </programme>
+  <programme start="20251209093000 +0600" stop="20251209100000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Best Of Kakbhushandi Ramayana</title>
+  </programme>
   <channel id="AndTV.in">
     <display-name>&amp;TV HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/4c/%26TV_HD_%282025%29.svg"/>
   </channel>
-  <programme start="20251208140000 +0600" stop="20251208162800 +0600" channel="AndTV.in">
-    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
-  </programme>
-  <programme start="20251208162800 +0600" stop="20251208170000 +0600" channel="AndTV.in">
-    <title lang="bn">Happu Ki Ultan Paltan</title>
-  </programme>
-  <programme start="20251208170000 +0600" stop="20251208173200 +0600" channel="AndTV.in">
-    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
-  </programme>
-  <programme start="20251208173200 +0600" stop="20251208180200 +0600" channel="AndTV.in">
-    <title lang="bn">Happu Ki Ultan Paltan</title>
-  </programme>
-  <programme start="20251208180200 +0600" stop="20251208183000 +0600" channel="AndTV.in">
-    <title lang="bn">Happu Ki Ultan Paltan</title>
-  </programme>
   <programme start="20251208183000 +0600" stop="20251208190000 +0600" channel="AndTV.in">
     <title lang="bn">Happu Ki Ultan Paltan</title>
   </programme>
@@ -1244,8 +1229,23 @@
   <programme start="20251209063000 +0600" stop="20251209073000 +0600" channel="AndTV.in">
     <title lang="bn">Comedy Circus Ke Superstars</title>
   </programme>
-  <programme start="20251209073000 +0600" stop="20251209080000 +0600" channel="AndTV.in">
+  <programme start="20251209073000 +0600" stop="20251209083000 +0600" channel="AndTV.in">
     <title lang="bn">Comedy Circus Ke Superstars</title>
+  </programme>
+  <programme start="20251209083000 +0600" stop="20251209090000 +0600" channel="AndTV.in">
+    <title lang="bn">Happu Ki Ultan Paltan</title>
+  </programme>
+  <programme start="20251209090000 +0600" stop="20251209093000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20251209093000 +0600" stop="20251209100000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20251209100000 +0600" stop="20251209103000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20251209103000 +0600" stop="20251209110000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
   </programme>
   <channel id="starjalsha.in">
     <display-name>Star Jalsha</display-name>
@@ -1319,16 +1319,7 @@
     <display-name>NEWS | Times Now Navbhara</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD1300003OW_20240131T032351SQUARE.png_20240131032352.png"/>
   </channel>
-  <programme start="20251208160000 +0600" stop="20251208163000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">Times Now NavBharat Live</title>
-  </programme>
-  <programme start="20251208163000 +0600" stop="20251208173000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">Prime At 4</title>
-  </programme>
-  <programme start="20251208173000 +0600" stop="20251208183000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">Rashtravaad</title>
-  </programme>
-  <programme start="20251208183000 +0600" stop="20251208193000 +0600" channel="TimesNowNavbharat">
+  <programme start="20251208190000 +0600" stop="20251208193000 +0600" channel="TimesNowNavbharat">
     <title lang="bn">Desh Ka Mood Meter</title>
   </programme>
   <programme start="20251208193000 +0600" stop="20251208203000 +0600" channel="TimesNowNavbharat">
@@ -1414,23 +1405,8 @@
     <display-name>SONY SAB HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/18/SONY_SAB_SD.png"/>
   </channel>
-  <programme start="20251208160000 +0600" stop="20251208163000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Pushpa Impossible(2022)</title>
-  </programme>
-  <programme start="20251208163000 +0600" stop="20251208170000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
-  </programme>
-  <programme start="20251208170000 +0600" stop="20251208173000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Gatha Shiv Parivaar Ki Ganesh Kartikey</title>
-  </programme>
-  <programme start="20251208173000 +0600" stop="20251208180000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Itti Si Khushi</title>
-  </programme>
-  <programme start="20251208180000 +0600" stop="20251208183000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Pushpa Impossible (2022)</title>
-  </programme>
   <programme start="20251208183000 +0600" stop="20251208190000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
+    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah(2008)</title>
   </programme>
   <programme start="20251208190000 +0600" stop="20251208193000 +0600" channel="sonysabhd.in">
     <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
@@ -1452,6 +1428,21 @@
   </programme>
   <programme start="20251208220000 +0600" stop="20251208223000 +0600" channel="sonysabhd.in">
     <title lang="bn">Pushpa Impossible (2022)</title>
+  </programme>
+  <programme start="20251208223000 +0600" stop="20251208230000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Eken Babu</title>
+  </programme>
+  <programme start="20251208230000 +0600" stop="20251208233000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Maddam Sir (2020)</title>
+  </programme>
+  <programme start="20251208233000 +0600" stop="20251209000000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
+  </programme>
+  <programme start="20251209000000 +0600" stop="20251209003000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Pushpa Impossible (2022)</title>
+  </programme>
+  <programme start="20251209003000 +0600" stop="20251209010000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Maddam Sir (2020)</title>
   </programme>
   <channel id="RepublicBangla.in">
     <display-name>Republic Bangla</display-name>
@@ -2656,270 +2647,225 @@
     <display-name>WION</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/1d/WION_World_Is_One_News.svg"/>
   </channel>
-  <programme start="20251208003000 +0600" stop="20251208012900 +0600" channel="WION.in">
-    <title lang="bn">寰宇视野2025-326</title>
+  <programme start="20251208001400 +0600" stop="20251208004100 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251208012900 +0600" stop="20251208022800 +0600" channel="WION.in">
-    <title lang="bn">寰宇视野2025-327</title>
+  <programme start="20251208004100 +0600" stop="20251208012400 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:西北岁月39</title>
   </programme>
-  <programme start="20251208022800 +0600" stop="20251208032700 +0600" channel="WION.in">
-    <title lang="bn">全景自然2025-342</title>
+  <programme start="20251208012400 +0600" stop="20251208014900 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251208032700 +0600" stop="20251208042700 +0600" channel="WION.in">
-    <title lang="bn">魅力万象2025-343</title>
+  <programme start="20251208014900 +0600" stop="20251208023200 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战1</title>
   </programme>
-  <programme start="20251208042700 +0600" stop="20251208050000 +0600" channel="WION.in">
-    <title lang="bn">活力·源2025-359</title>
+  <programme start="20251208023200 +0600" stop="20251208025900 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251208050000 +0600" stop="20251208060000 +0600" channel="WION.in">
-    <title lang="bn">特别呈现2025-337</title>
+  <programme start="20251208025900 +0600" stop="20251208033000 +0600" channel="WION.in">
+    <title lang="bn">家政女皇</title>
   </programme>
-  <programme start="20251208060000 +0600" stop="20251208070400 +0600" channel="WION.in">
-    <title lang="bn">寰宇视野2025-342</title>
+  <programme start="20251208033000 +0600" stop="20251208035600 +0600" channel="WION.in">
+    <title lang="bn">河北新闻联播</title>
   </programme>
-  <programme start="20251208070400 +0600" stop="20251208080600 +0600" channel="WION.in">
-    <title lang="bn">故事中国2025-321</title>
+  <programme start="20251208035600 +0600" stop="20251208040000 +0600" channel="WION.in">
+    <title lang="bn">天气预报</title>
   </programme>
-  <programme start="20251208080600 +0600" stop="20251208082700 +0600" channel="WION.in">
-    <title lang="bn">9视频2025-342</title>
+  <programme start="20251208040000 +0600" stop="20251208043000 +0600" channel="WION.in">
+    <title lang="bn">转播中央台新闻联播</title>
   </programme>
-  <programme start="20251208082700 +0600" stop="20251208093100 +0600" channel="WION.in">
-    <title lang="bn">寰宇视野2025-342</title>
+  <programme start="20251208043000 +0600" stop="20251208043500 +0600" channel="WION.in">
+    <title lang="bn">广告</title>
   </programme>
-  <programme start="20251208093100 +0600" stop="20251208102700 +0600" channel="WION.in">
-    <title lang="bn">全景自然2025-342</title>
+  <programme start="20251208043500 +0600" stop="20251208052500 +0600" channel="WION.in">
+    <title lang="bn">民生剧场:我是刑警7</title>
   </programme>
-  <programme start="20251208102700 +0600" stop="20251208112300 +0600" channel="WION.in">
-    <title lang="bn">魅力万象2025-343</title>
+  <programme start="20251208052500 +0600" stop="20251208061600 +0600" channel="WION.in">
+    <title lang="bn">民生剧场:我是刑警8</title>
   </programme>
-  <programme start="20251208112300 +0600" stop="20251208115300 +0600" channel="WION.in">
-    <title lang="bn">活力·源2025-359</title>
+  <programme start="20251208061600 +0600" stop="20251208070200 +0600" channel="WION.in">
+    <title lang="bn">出彩河北人</title>
   </programme>
-  <programme start="20251208115300 +0600" stop="20251208125400 +0600" channel="WION.in">
-    <title lang="bn">特别呈现2025-337</title>
+  <programme start="20251208070200 +0600" stop="20251208080100 +0600" channel="WION.in">
+    <title lang="bn">电视剧:大决战10</title>
   </programme>
-  <programme start="20251208125400 +0600" stop="20251208131100 +0600" channel="WION.in">
-    <title lang="bn">9视频2025-342</title>
+  <programme start="20251208080100 +0600" stop="20251208083100 +0600" channel="WION.in">
+    <title lang="bn">你好京津冀</title>
   </programme>
-  <programme start="20251208131100 +0600" stop="20251208134600 +0600" channel="WION.in">
-    <title lang="bn">活力·源2025-359</title>
+  <programme start="20251208083100 +0600" stop="20251208083700 +0600" channel="WION.in">
+    <title lang="bn">天气预报</title>
   </programme>
-  <programme start="20251208134600 +0600" stop="20251208144600 +0600" channel="WION.in">
-    <title lang="bn">故事中国2025-321</title>
+  <programme start="20251208083700 +0600" stop="20251208091900 +0600" channel="WION.in">
+    <title lang="bn">晚间剧场:大秧歌3</title>
   </programme>
-  <programme start="20251208144600 +0600" stop="20251208154700 +0600" channel="WION.in">
-    <title lang="bn">全景自然2025-342</title>
+  <programme start="20251208091900 +0600" stop="20251208095700 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251208154700 +0600" stop="20251208164300 +0600" channel="WION.in">
-    <title lang="bn">魅力万象2025-343</title>
+  <programme start="20251208095700 +0600" stop="20251208103800 +0600" channel="WION.in">
+    <title lang="bn">晚间剧场:大秧歌4</title>
   </programme>
-  <programme start="20251208164300 +0600" stop="20251208165900 +0600" channel="WION.in">
-    <title lang="bn">9视频2025-342</title>
+  <programme start="20251208103800 +0600" stop="20251208110400 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251208165900 +0600" stop="20251208173100 +0600" channel="WION.in">
-    <title lang="bn">活力·源2025-359</title>
+  <programme start="20251208110400 +0600" stop="20251208114600 +0600" channel="WION.in">
+    <title lang="bn">晚间剧场:大秧歌5</title>
   </programme>
-  <programme start="20251208173100 +0600" stop="20251208182700 +0600" channel="WION.in">
-    <title lang="bn">特别呈现2025-337</title>
+  <programme start="20251208114600 +0600" stop="20251208121400 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251208182700 +0600" stop="20251208192600 +0600" channel="WION.in">
-    <title lang="bn">全景自然2025-342</title>
+  <programme start="20251208121400 +0600" stop="20251208125500 +0600" channel="WION.in">
+    <title lang="bn">晚间剧场:大秧歌6</title>
   </programme>
-  <programme start="20251208192600 +0600" stop="20251208202500 +0600" channel="WION.in">
-    <title lang="bn">魅力万象2025-343</title>
+  <programme start="20251208125500 +0600" stop="20251208140200 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251208202500 +0600" stop="20251208212700 +0600" channel="WION.in">
-    <title lang="bn">魅力万象2025-286</title>
+  <programme start="20251208140200 +0600" stop="20251208144400 +0600" channel="WION.in">
+    <title lang="bn">晚间剧场:大秧歌7</title>
   </programme>
-  <programme start="20251208212700 +0600" stop="20251208223100 +0600" channel="WION.in">
-    <title lang="bn">全景自然2025-330</title>
+  <programme start="20251208144400 +0600" stop="20251208153000 +0600" channel="WION.in">
+    <title lang="bn">晚间剧场:大秧歌8</title>
   </programme>
-  <programme start="20251208223100 +0600" stop="20251208233000 +0600" channel="WION.in">
-    <title lang="bn">全景自然2025-319</title>
+  <programme start="20251208153000 +0600" stop="20251208160000 +0600" channel="WION.in">
+    <title lang="bn">冀时全播报(上)</title>
   </programme>
-  <programme start="20251208233000 +0600" stop="20251209003000 +0600" channel="WION.in">
-    <title lang="bn">魅力万象2025-320</title>
+  <programme start="20251208160000 +0600" stop="20251208160100 +0600" channel="WION.in">
+    <title lang="bn">中华人民共和国国歌</title>
   </programme>
-  <programme start="20251209003000 +0600" stop="20251209012900 +0600" channel="WION.in">
-    <title lang="bn">全景自然2025-320</title>
+  <programme start="20251208160100 +0600" stop="20251208163000 +0600" channel="WION.in">
+    <title lang="bn">冀时全播报(下)</title>
   </programme>
-  <programme start="20251209012900 +0600" stop="20251209022800 +0600" channel="WION.in">
-    <title lang="bn">魅力万象2025-321</title>
+  <programme start="20251208163000 +0600" stop="20251208170000 +0600" channel="WION.in">
+    <title lang="bn">美丽河北慢直播</title>
   </programme>
-  <programme start="20251209022800 +0600" stop="20251209032700 +0600" channel="WION.in">
-    <title lang="bn">全景自然2025-343</title>
+  <programme start="20251208170000 +0600" stop="20251208171000 +0600" channel="WION.in">
+    <title lang="bn">天气预报</title>
   </programme>
-  <programme start="20251209032700 +0600" stop="20251209042700 +0600" channel="WION.in">
-    <title lang="bn">魅力万象2025-344</title>
+  <programme start="20251208171000 +0600" stop="20251208172800 +0600" channel="WION.in">
+    <title lang="bn">动画片:海底小纵队第六季</title>
   </programme>
-  <programme start="20251209042700 +0600" stop="20251209050000 +0600" channel="WION.in">
-    <title lang="bn">活力·源2025-360</title>
+  <programme start="20251208172800 +0600" stop="20251208181100 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战2</title>
   </programme>
-  <programme start="20251209050000 +0600" stop="20251209060000 +0600" channel="WION.in">
-    <title lang="bn">特别呈现2025-338</title>
+  <programme start="20251208181100 +0600" stop="20251208184200 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251209060000 +0600" stop="20251209070400 +0600" channel="WION.in">
-    <title lang="bn">寰宇视野2025-343</title>
+  <programme start="20251208184200 +0600" stop="20251208192500 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战3</title>
   </programme>
-  <programme start="20251209070400 +0600" stop="20251209080600 +0600" channel="WION.in">
-    <title lang="bn">故事中国2025-322</title>
+  <programme start="20251208192500 +0600" stop="20251208195400 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
   </programme>
-  <programme start="20251209080600 +0600" stop="20251209082700 +0600" channel="WION.in">
-    <title lang="bn">9视频2025-343</title>
+  <programme start="20251208195400 +0600" stop="20251208203700 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战4</title>
   </programme>
-  <programme start="20251209082700 +0600" stop="20251209085700 +0600" channel="WION.in">
-    <title lang="bn">寰宇视野2025-343</title>
+  <programme start="20251208203700 +0600" stop="20251208210700 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
+  </programme>
+  <programme start="20251208210700 +0600" stop="20251208215000 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战5</title>
+  </programme>
+  <programme start="20251208215000 +0600" stop="20251208221100 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
+  </programme>
+  <programme start="20251208221100 +0600" stop="20251208221300 +0600" channel="WION.in">
+    <title lang="bn">天气预报</title>
+  </programme>
+  <programme start="20251208221300 +0600" stop="20251208221900 +0600" channel="WION.in">
+    <title lang="bn">海洋预报</title>
+  </programme>
+  <programme start="20251208221900 +0600" stop="20251208230200 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战6</title>
+  </programme>
+  <programme start="20251208230200 +0600" stop="20251208233000 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
+  </programme>
+  <programme start="20251208233000 +0600" stop="20251209001300 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战7</title>
+  </programme>
+  <programme start="20251209001300 +0600" stop="20251209003900 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
+  </programme>
+  <programme start="20251209003900 +0600" stop="20251209012200 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战8</title>
+  </programme>
+  <programme start="20251209012200 +0600" stop="20251209014800 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
+  </programme>
+  <programme start="20251209014800 +0600" stop="20251209023100 +0600" channel="WION.in">
+    <title lang="bn">情感剧场:大决战9</title>
+  </programme>
+  <programme start="20251209023100 +0600" stop="20251209025800 +0600" channel="WION.in">
+    <title lang="bn">生活服务</title>
+  </programme>
+  <programme start="20251209025800 +0600" stop="20251209033000 +0600" channel="WION.in">
+    <title lang="bn">家政女皇</title>
+  </programme>
+  <programme start="20251209033000 +0600" stop="20251209035600 +0600" channel="WION.in">
+    <title lang="bn">河北新闻联播</title>
+  </programme>
+  <programme start="20251209035600 +0600" stop="20251209040000 +0600" channel="WION.in">
+    <title lang="bn">天气预报</title>
+  </programme>
+  <programme start="20251209040000 +0600" stop="20251209043000 +0600" channel="WION.in">
+    <title lang="bn">转播中央台新闻联播</title>
+  </programme>
+  <programme start="20251209043000 +0600" stop="20251209043600 +0600" channel="WION.in">
+    <title lang="bn">广告</title>
+  </programme>
+  <programme start="20251209043600 +0600" stop="20251209052600 +0600" channel="WION.in">
+    <title lang="bn">民生剧场:我是刑警9</title>
+  </programme>
+  <programme start="20251209052600 +0600" stop="20251209061600 +0600" channel="WION.in">
+    <title lang="bn">民生剧场:我是刑警10</title>
+  </programme>
+  <programme start="20251209061600 +0600" stop="20251209065900 +0600" channel="WION.in">
+    <title lang="bn">纪录片:大河之北第一季4</title>
+  </programme>
+  <programme start="20251209065900 +0600" stop="20251209080000 +0600" channel="WION.in">
+    <title lang="bn">电视剧:大决战11</title>
+  </programme>
+  <programme start="20251209080000 +0600" stop="20251209083000 +0600" channel="WION.in">
+    <title lang="bn">你好京津冀</title>
+  </programme>
+  <programme start="20251209083000 +0600" stop="20251209083600 +0600" channel="WION.in">
+    <title lang="bn">天气预报</title>
+  </programme>
+  <programme start="20251209083600 +0600" stop="20251209090600 +0600" channel="WION.in">
+    <title lang="bn">晚间剧场:大秧歌9</title>
   </programme>
   <channel id="CGTN.cn">
     <display-name>CGTN</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/512px-CGTN.svg.png"/>
   </channel>
-  <programme start="20251208000200 +0600" stop="20251208010300 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(1)</title>
+  <programme start="20251208000000 +0600" stop="20251208003000 +0600" channel="CGTN.cn">
+    <title lang="bn">Как это устроено? 25 с-н 26 с. Настенные кровати, десертные вазочки</title>
   </programme>
-  <programme start="20251208010300 +0600" stop="20251208020400 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(2)</title>
+  <programme start="20251208003000 +0600" stop="20251208010000 +0600" channel="CGTN.cn">
+    <title lang="bn">Как это сделано? 14 с-н 1 с. Алюминиевые банки, часы с кукушкой, доски для сёрфинга с веслом</title>
   </programme>
-  <programme start="20251208020400 +0600" stop="20251208030000 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(3)</title>
+  <programme start="20251208010000 +0600" stop="20251208020000 +0600" channel="CGTN.cn">
+    <title lang="bn">Охотники за старьем, 13 с-н 7 c</title>
+  </programme>
+  <programme start="20251208020000 +0600" stop="20251208030000 +0600" channel="CGTN.cn">
+    <title lang="bn">Реставраторы 3. 12 c</title>
   </programme>
   <programme start="20251208030000 +0600" stop="20251208033000 +0600" channel="CGTN.cn">
-    <title lang="bn">四川超安逸</title>
+    <title lang="bn">Охотники за крошечными домами 4. 4 с. Уменьшение в Калифорнии</title>
   </programme>
-  <programme start="20251208033000 +0600" stop="20251208035400 +0600" channel="CGTN.cn">
-    <title lang="bn">四川新闻联播</title>
+  <programme start="20251208033000 +0600" stop="20251208040000 +0600" channel="CGTN.cn">
+    <title lang="bn">Охотники за крошечными домами 4. 5 с. Пара военных в крошечном доме</title>
   </programme>
-  <programme start="20251208035400 +0600" stop="20251208040000 +0600" channel="CGTN.cn">
-    <title lang="bn">四川省城市天气预报</title>
+  <programme start="20251208040000 +0600" stop="20251208050000 +0600" channel="CGTN.cn">
+    <title lang="bn">Махинаторы, 12 с-н 1 с. Pontiac GTO: Чикаго</title>
   </programme>
-  <programme start="20251208040000 +0600" stop="20251208043000 +0600" channel="CGTN.cn">
-    <title lang="bn">转播中央台新闻联播</title>
+  <programme start="20251208050000 +0600" stop="20251208060000 +0600" channel="CGTN.cn">
+    <title lang="bn">Смертельный улов, 12 с-н 11 с. Без компромиссов</title>
   </programme>
-  <programme start="20251208043000 +0600" stop="20251208052200 +0600" channel="CGTN.cn">
-    <title lang="bn">沉默的荣耀(9)</title>
-  </programme>
-  <programme start="20251208052200 +0600" stop="20251208060900 +0600" channel="CGTN.cn">
-    <title lang="bn">沉默的荣耀(10)</title>
-  </programme>
-  <programme start="20251208060900 +0600" stop="20251208061700 +0600" channel="CGTN.cn">
-    <title lang="bn">国宝时刻</title>
-  </programme>
-  <programme start="20251208061700 +0600" stop="20251208070000 +0600" channel="CGTN.cn">
-    <title lang="bn">华西论健</title>
+  <programme start="20251208060000 +0600" stop="20251208070000 +0600" channel="CGTN.cn">
+    <title lang="bn">Смертельный улов, 12 с-н 12 с. Справедливая расплата</title>
   </programme>
   <programme start="20251208070000 +0600" stop="20251208073000 +0600" channel="CGTN.cn">
-    <title lang="bn">四川新闻联播</title>
-  </programme>
-  <programme start="20251208073000 +0600" stop="20251208075000 +0600" channel="CGTN.cn">
-    <title lang="bn">一路象北</title>
-  </programme>
-  <programme start="20251208075000 +0600" stop="20251208082800 +0600" channel="CGTN.cn">
-    <title lang="bn">前夜(21)</title>
-  </programme>
-  <programme start="20251208082800 +0600" stop="20251208090000 +0600" channel="CGTN.cn">
-    <title lang="bn">前夜(22)</title>
-  </programme>
-  <programme start="20251208090000 +0600" stop="20251208091100 +0600" channel="CGTN.cn">
-    <title lang="bn">前夜(22)</title>
-  </programme>
-  <programme start="20251208091100 +0600" stop="20251208095600 +0600" channel="CGTN.cn">
-    <title lang="bn">前夜(23)</title>
-  </programme>
-  <programme start="20251208095600 +0600" stop="20251208104400 +0600" channel="CGTN.cn">
-    <title lang="bn">华西论健</title>
-  </programme>
-  <programme start="20251208104400 +0600" stop="20251208110200 +0600" channel="CGTN.cn">
-    <title lang="bn">一路象北</title>
-  </programme>
-  <programme start="20251208110200 +0600" stop="20251208130000 +0600" channel="CGTN.cn">
-    <title lang="bn">百年巨匠</title>
-  </programme>
-  <programme start="20251208130000 +0600" stop="20251208142200 +0600" channel="CGTN.cn">
-    <title lang="bn">百年巨匠</title>
-  </programme>
-  <programme start="20251208142200 +0600" stop="20251208160100 +0600" channel="CGTN.cn">
-    <title lang="bn">百年巨匠</title>
-  </programme>
-  <programme start="20251208160100 +0600" stop="20251208163000 +0600" channel="CGTN.cn">
-    <title lang="bn">早安四川</title>
-  </programme>
-  <programme start="20251208163000 +0600" stop="20251208163500 +0600" channel="CGTN.cn">
-    <title lang="bn">早间气象</title>
-  </programme>
-  <programme start="20251208163500 +0600" stop="20251208170000 +0600" channel="CGTN.cn">
-    <title lang="bn">国宝时刻</title>
-  </programme>
-  <programme start="20251208170000 +0600" stop="20251208173000 +0600" channel="CGTN.cn">
-    <title lang="bn">茶啊二中Ⅴ(8)</title>
-  </programme>
-  <programme start="20251208173000 +0600" stop="20251208182100 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(4)</title>
-  </programme>
-  <programme start="20251208182100 +0600" stop="20251208191200 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(5)</title>
-  </programme>
-  <programme start="20251208191200 +0600" stop="20251208200300 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(6)</title>
-  </programme>
-  <programme start="20251208200300 +0600" stop="20251208205500 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(7)</title>
-  </programme>
-  <programme start="20251208205500 +0600" stop="20251208210000 +0600" channel="CGTN.cn">
-    <title lang="bn">午间气象播报</title>
-  </programme>
-  <programme start="20251208210000 +0600" stop="20251208220000 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(8)</title>
-  </programme>
-  <programme start="20251208220000 +0600" stop="20251208230000 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(9)</title>
-  </programme>
-  <programme start="20251208230000 +0600" stop="20251209000000 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(10)</title>
-  </programme>
-  <programme start="20251209000000 +0600" stop="20251209010000 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(11)</title>
-  </programme>
-  <programme start="20251209010000 +0600" stop="20251209020000 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(12)</title>
-  </programme>
-  <programme start="20251209020000 +0600" stop="20251209030000 +0600" channel="CGTN.cn">
-    <title lang="bn">义者无敌(13)</title>
-  </programme>
-  <programme start="20251209030000 +0600" stop="20251209033000 +0600" channel="CGTN.cn">
-    <title lang="bn">四川超安逸</title>
-  </programme>
-  <programme start="20251209033000 +0600" stop="20251209035500 +0600" channel="CGTN.cn">
-    <title lang="bn">四川新闻联播</title>
-  </programme>
-  <programme start="20251209035500 +0600" stop="20251209040000 +0600" channel="CGTN.cn">
-    <title lang="bn">四川省城市天气预报</title>
-  </programme>
-  <programme start="20251209040000 +0600" stop="20251209043500 +0600" channel="CGTN.cn">
-    <title lang="bn">转播中央台新闻联播</title>
-  </programme>
-  <programme start="20251209043500 +0600" stop="20251209052200 +0600" channel="CGTN.cn">
-    <title lang="bn">沉默的荣耀(11)</title>
-  </programme>
-  <programme start="20251209052200 +0600" stop="20251209061000 +0600" channel="CGTN.cn">
-    <title lang="bn">沉默的荣耀(12)</title>
-  </programme>
-  <programme start="20251209061000 +0600" stop="20251209062000 +0600" channel="CGTN.cn">
-    <title lang="bn">国宝时刻</title>
-  </programme>
-  <programme start="20251209062000 +0600" stop="20251209070000 +0600" channel="CGTN.cn">
-    <title lang="bn">川菜开放日</title>
-  </programme>
-  <programme start="20251209070000 +0600" stop="20251209073000 +0600" channel="CGTN.cn">
-    <title lang="bn">四川新闻联播</title>
-  </programme>
-  <programme start="20251209073000 +0600" stop="20251209080000 +0600" channel="CGTN.cn">
-    <title lang="bn">沸腾吧火锅Ⅱ</title>
-  </programme>
-  <programme start="20251209080000 +0600" stop="20251209084000 +0600" channel="CGTN.cn">
-    <title lang="bn">前夜(24)</title>
-  </programme>
-  <programme start="20251209084000 +0600" stop="20251209091000 +0600" channel="CGTN.cn">
-    <title lang="bn">前夜(25)</title>
+    <title lang="bn">Смертельный улов, 12 с-н 13 с. Пожар на море, Часть 1</title>
   </programme>
   <channel id="cna.sg">
     <display-name>Channel News Asia</display-name>
