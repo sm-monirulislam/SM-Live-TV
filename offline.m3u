@@ -775,6 +775,9 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8
 ############## 🧒 Kids ##############
 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d7/Duronto_TV_Logo.png" group-title="SM All TV",Kids Creation
+http://foxkids-online.ru/hls/test_240p264kbs/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/93/Nick-logo.png" group-title="SM All TV",Nick
 https://varun-iptv.netlify.app/m3u/Nick.m3u8
 
@@ -1161,6 +1164,9 @@ https://smart.bengaldigital.live/sun-bangla-paid/index.m3u8
 #EXTINF:-1 tvg-logo="http://openboxv8s.com/india/zee_bangla.jpg" group-title="Bangla Channel",Zee Bangla HD
 https://smart.bengaldigital.live/Zee-Bangla/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/b/bb/Independent_logo_2011.png" group-title="Bangla Channel",BD | Independent Television
+https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/true-crime-network-us.png" group-title="Bangla Channel",True Crime Network
 https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-truecrimenetwork/index.m3u8
 
@@ -1206,17 +1212,11 @@ https://smart.bengaldigital.live/ZeeCinema/index.m3u8
 #EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23199/dabangg/logo_20250324_190201_63.png" group-title="Bangla Channel",MU | Dabangg
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/dabangg/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/22994/haryana-beat/logo_20241127_213000_70.png" group-title="Bangla Channel",MU | Haryana Beat
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/haryana-beat/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/22973/maiboli/logo_20231219_215344_67.png" group-title="Bangla Channel",MU | Maiboli
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/maiboli/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2d/Mastiii_2023.jpg" group-title="Bangla Channel",MU | Mastiii
 https://sabliveyupp.akamaized.net/mastii/mastii_poc_800k.m3u8
-
-#EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23215/news-india-24x7/logo_20250611_205743_70.png" group-title="Bangla Channel",NEWS | News India 24X7
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/news-india-24x7/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/03/WNBC_%282023%29.svg" group-title="Bangla Channel",EN | 4 New York
 http://208.86.19.13:81/102.stream/index.m3u8
@@ -1242,6 +1242,9 @@ http://38.143.48.212:9981/stream/channelid/41831820?profile=pass
 #EXTINF:-1 tvg-logo="https://cdn.titantv.com/i4fXAxGXCj88NotOCDfyK-YZKL1vqYrc0fXzRxmrvPg.png" group-title="Bangla Channel",EN | My 9
 http://208.86.19.13:81/105.stream/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/0c/TV_BRICS.svg" group-title="Bangla Channel",EN | TV BRICS English
+https://engbrics.mediacdn.ru/cdn/brics/english/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://emergencyuk.org/wp-content/uploads/2017/03/Aljazeera-logo-English-1024x768.png" group-title="Bangla Channel",Al Jazeera English HD
 https://live-hls-web-aje.getaj.net/AJE/04.m3u8
 
@@ -1260,9 +1263,6 @@ http://116.90.120.149:8000/play/a0b3/index.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c5/Peppa_Pig.svg" group-title="Bangla Channel",1. Pappa Pig Pluto
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fb6c84dd37df3b4290c5livestitch/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d14fb6c84dd37df3b4290c5&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=985&terminate=false&userId=&profilesFromStream=true
 
-#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/QH3scR0Gc7LqcEF1vy9dkdkC6c176m2sgnYGBzyqAjlRScj60kS4cE9xyA7loUPp-1-RZ5MNcA=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",2. Ninja Hattori
-https://live20.bozztv.com/giatvplayout7/giatv-210448/tracks-v1a1/mono.ts.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/aa/Nickelodeon_Sonic_logo_2025.png" group-title="Bangla Channel",2. Sonic
 http://116.90.120.149:8000/play/a0cc/index.m3u8
 
@@ -1275,11 +1275,11 @@ http://77.39.161.42:55555/Boing%20Plus
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/db/Motu-patlu-cover.jpg" group-title="Bangla Channel",Cartoon Anima
 https://live20.bozztv.com/giatvplayout7/giatv-209624/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/cartoonito-it.png" group-title="Bangla Channel",Cartoonito
-http://181.78.4.250:8098/play/a067/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7f/Disney_International_HD_logo.png" group-title="Bangla Channel",Disney International HD
 http://116.90.120.149:8000/play/a0e9/index.m3u8
+
+#EXTINF:-1 tvg-logo="http://syidyacreationjr.com/wp-content/uploads/2017/11/boysrgb.jpg" group-title="Bangla Channel",Kid Screation
+http://foxkids-online.ru/hls/test_240p264kbs/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/catchy-comedy-us.png" group-title="Bangla Channel",EN | Catchy Comedy
 https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-decades/index.m3u8
@@ -1289,9 +1289,6 @@ https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-movies!/index.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Bangla Channel",AR | Arabic Song
 https://mbc1-enc.edgenextcdn.net/out/v1/90143f040feb40589d18c57863d9e829/index_3.m3u8
-
-#EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD3000004VR_20250107T030629SQUARE.png" group-title="Bangla Channel",EN | Def Jam
-https://d1t9jj3kgy7bur.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-m84lyt8jpwc3r/gigs.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.electricnow.tv/themes/custom/elec/electricnow/logo.png" group-title="Bangla Channel",EN | ELECTRO
 https://muzzik-live.morescreens.com/mts-9/576p/chunklist.m3u8
@@ -1368,4 +1365,4 @@ https://amg18570-amg18570c1-freelivesports-emea-5535.playouts.now.amagi.tv/ts-eu
 #EXTINF:-1 tvg-logo="https://media.unreel.me/prod/freelivesports/logo/09fa93ff-a539-4d81-bbbf-da599e11e77c" group-title="Bangla Channel",GOLF | Unbeaten (Worldwide)
 https://amg00721-amg00721c6-freelivesports-emea-9595.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00721-inverleigh-unbtn3row-freelivesportsemea/playlist.m3u8
 
-# Last Updated: 2025-12-09 04:15:27 BD Time
+# Last Updated: 2025-12-09 05:15:01 BD Time
