@@ -18,9 +18,11 @@ def fetch_matches(api_url):
     return r.json().get("matches", [])
 
 def generate_playlist():
+    written_urls = set()   # 🔥 duplicate checker
+    live_count = 0
+
     with open("Fancode.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        live_count = 0
 
         # 🔹 API 1 (NO URL change)
         for m in fetch_matches(API_1):
@@ -28,7 +30,7 @@ def generate_playlist():
                 continue
 
             url = m.get("adfree_url") or m.get("dai_url")
-            if not url:
+            if not url or url in written_urls:
                 continue
 
             name = m.get("title", "Unknown Match")
@@ -37,6 +39,8 @@ def generate_playlist():
 
             f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
             f.write(f"{url}\n")
+
+            written_urls.add(url)
             live_count += 1
 
         # 🔹 API 2 (ONLY here in → bd replace)
@@ -52,7 +56,7 @@ def generate_playlist():
             )
 
             url = convert_in_to_bd(url)
-            if not url:
+            if not url or url in written_urls:
                 continue
 
             name = m.get("title", "Unknown Match")
@@ -61,11 +65,13 @@ def generate_playlist():
 
             f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
             f.write(f"{url}\n")
+
+            written_urls.add(url)
             live_count += 1
 
         f.write(f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 
-    print(f"✅ Playlist ready — {live_count} LIVE matches added.")
+    print(f"✅ Done! {live_count} unique LIVE matches added.")
 
 if __name__ == "__main__":
     generate_playlist()
