@@ -28,8 +28,8 @@ output_dead = "offline.m3u"
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
-# যেগুলোর লিংক চেক হবে না
-skip_check_groups = ["RoarZone", "Fancode", "Sports"]
+# ❌ যেগুলোর লিংক চেক হবে না
+skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee"]
 
 
 # ========================================================
@@ -97,7 +97,9 @@ async def main():
 
                 # Always enforce group-title
                 if 'group-title="' in line:
-                    line = re_group_title.sub(f'group-title="{group_name}"', line)
+                    line = re_group_title.sub(
+                        f'group-title="{group_name}"', line
+                    )
                 else:
                     line = re.sub(
                         r'#EXTINF:-1(.*?),',
@@ -105,7 +107,7 @@ async def main():
                         line
                     )
 
-                # Collect full block (EXTVLCOPT, extra headers, URL)
+                # Collect full block
                 block = [line]
                 j = i + 1
 
@@ -148,7 +150,7 @@ async def main():
             total_found += 1
 
     # -------------------------------
-    # Step 4: Smart Check All URLs
+    # Step 3: Smart Check
     # -------------------------------
     alive_list = []
     dead_list = []
@@ -160,14 +162,13 @@ async def main():
     for i, status in enumerate(results):
         block, url = all_entries[i]
 
-        # Extract group
         grp = ""
         if 'group-title="' in block[0]:
             match = re_group_title.search(block[0])
             if match:
                 grp = match.group(1)
 
-        # Skip checking selected groups
+        # ⏭ Skip selected groups
         if grp in skip_check_groups:
             alive_list.append(block)
             print(f"⏭ SKIPPED (Auto-LIVE): {grp} → {url}")
@@ -181,7 +182,7 @@ async def main():
             print(f"✘ DEAD: {url}")
 
     # -------------------------------
-    # Step 5: Write LIVE + DEAD files
+    # Step 4: Write Files
     # -------------------------------
     for block in alive_list:
         for line in block:
