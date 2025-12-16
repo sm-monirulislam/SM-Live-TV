@@ -1,43 +1,50 @@
-name: 🔁 Toffee Auto Update Playlist
+name: 🔁 Auto Update Toffee Playlist
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"   # প্রতি ১২ ঘন্টায়
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      # 📦 Repo checkout
-      - name: 📦 Checkout repository
+      - name: 📦 Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      # 🐍 Python setup
-      - name: 🐍 Set up Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      # 📥 Dependencies
-      - name: 📥 Install dependencies
-        run: |
-          pip install requests
+      - name: 📥 Install Dependencies
+        run: pip install requests
 
-      # ▶ Run Toffee script (IMPORTANT FIX)
-      - name: ▶ Generate Toffee Playlist
-        run: |
-          python Script/toffee_live_tv.py
+      - name: ▶️ Run Update Script
+        run: python Script/toffee_live_tv.py
 
-      # 💾 Commit & Push updated M3U
-      - name: 💾 Commit & Push changes
+      - name: 💾 Commit & Push Safely
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add Toffee.m3u
-          git commit -m "🔁 Auto update Toffee.m3u" || echo "No changes to commit"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep "Toffee.m3u"; then
+            echo "🟢 Changes found, committing..."
+            git add Toffee.m3u
+            git commit -m "🔁 Auto update Toffee.m3u"
+
+            echo "📥 Pulling latest changes..."
+            git pull --rebase origin main
+
+            echo "📤 Pushing to GitHub..."
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
+          else
+            echo "⚠️ No changes found in Toffee.m3u"
+          fi
