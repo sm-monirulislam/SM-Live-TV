@@ -7,12 +7,7 @@ on:
 
 jobs:
 
-  aynaott:
-    uses: ./.github/workflows/auto_aynaott.yml
-
   crichd:
-    needs: aynaott
-    if: ${{ always() }}
     uses: ./.github/workflows/CricHD_update_playlist.yml
 
   fancode:
