@@ -645,6 +645,9 @@ https://newidco-kidspangtv-1-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="a8b5e07e-b775-415f-b71f-9391bacc9e30" tvg-name="Dios Te Ve Kids" tvg-logo="https://s3.aynaott.com/storage/6712a3c8a28689cfda4148faf095fa67" group-title="AynaOTT",Dios Te Ve Kids
 https://s.emisoras.tv:8081/diostevekids/index.m3u8
 
+#EXTINF:-1 tvg-id="1426f66b-7413-4bab-91a9-af2ac5c15474" tvg-name="SKY CINEMA ANIMATION" tvg-logo="https://s3.aynaott.com/storage/a6d7d9729aafd5055bfd5356b6fa8eef" group-title="AynaOTT",SKY CINEMA ANIMATION
+https://tvsen7.aynaott.com/skycinemanimation/index.m3u8
+
 #EXTINF:-1 tvg-id="53b34289-f9ac-456b-b934-e380f5ec684f" tvg-name="Sony TEN 2" tvg-logo="https://s3.aynaott.com/storage/8ab8956c9d9128f39ef21487a38f47a3" group-title="AynaOTT",Sony TEN 2
 https://tvsen3.aynascope.net/HsatAP9H/index.m3u8
 
@@ -854,6 +857,9 @@ https://tvsen6.aynaott.com/ytv/index.m3u8
 
 #EXTINF:-1 tvg-id="edebdbdf-3290-42e7-8cda-cc8584cb1c32" tvg-name="BRAVO" tvg-logo="https://s3.aynaott.com/storage/7604a2c87620363fce86b73731b8035d" group-title="AynaOTT",BRAVO
 https://tvsen7.aynaott.com/bravo/index.m3u8
+
+#EXTINF:-1 tvg-id="f3b88c27-c0ed-4a0b-a5fd-05cd9ab80a01" tvg-name="COOKING TV" tvg-logo="https://s3.aynaott.com/storage/bf9792dc04cace6a25407b6304a35046" group-title="AynaOTT",COOKING TV
+https://tvsen7.aynaott.com/cooking/index.m3u8
 
 #EXTINF:-1 tvg-id="63db4c23-d199-4be6-90a0-d46742c7d53e" tvg-name="TLC HD" tvg-logo="https://s3.aynaott.com/storage/ba3c9fa1144bc65322f8ae3a1bb69cc9" group-title="AynaOTT",TLC HD
 https://tvsen6.aynaott.com/tlc_hd/index.m3u8
@@ -1235,12 +1241,6 @@ http://66.102.120.18:8000/play/a04w/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://iconape.com/wp-content/files/da/323865/png/323865.png" group-title="SM All TV",Ten Sports
 http://filex.tv:8080/live/Multicity/1234/52106.ts
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0c/A_Sports_Logo.png" group-title="SM All TV",A Sports
-http://main.epgmaker.com/Ali130225/Cpyej2JL56Xy/804
-
-#EXTINF:-1 tvg-logo="https://aimages.willow.tv/wlo_logo_200_200.jpg" group-title="SM All TV",Willow Extra HD
-http://filex.tv:8080/live/Multicity/1234/52109.ts
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f4/Fox_Cricket_Logo.png" group-title="SM All TV",FOX Cricket 501
 http://y3fqd48g.megatv.fun/iptv/NRLXRWSBWBPLN4/19146/index.m3u8
@@ -2206,6 +2206,9 @@ https://cdn-1.pishow.tv/live/1456/master.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/75/Music_Bangla_new.jpeg" group-title="Bangla Channel",MU | MUSIC BANGLA
 http://live.matribhumitv.com/music-bangla/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Sangeet_Bangla_logo_2006.png" group-title="Bangla Channel",MU | SANGEET BANGLA
+http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/541.m3u8
+
 #EXTINF:-1 tvg-logo="https://cdn.dribbble.com/userupload/32075529/file/original-52b78ab450ff3dd796b6b99265e319f4.jpg" group-title="Bangla Channel",MU | ZB Music
 https://server.zillarbarta.com/zbmusic/tracks-v1a1/mono.m3u8
 
@@ -3169,6 +3172,12 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=36
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/44/ZooMoo_Kids_2020.svg" group-title="Bangla Channel",1. ZOO MOO
 https://zoomoo-samsungau.amagi.tv/playlist720p.m3u8
 
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/QH3scR0Gc7LqcEF1vy9dkdkC6c176m2sgnYGBzyqAjlRScj60kS4cE9xyA7loUPp-1-RZ5MNcA=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",2. Ninja Hattori
+https://live20.bozztv.com/giatvplayout7/giatv-210448/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d3/Pogo_2016.svg" group-title="Bangla Channel",2. POGO
+http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/453.m3u8
+
 #EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBC430000128_20250107T030729SQUARE.png" group-title="Bangla Channel",2. POP
 https://amg01753-narrativeentert-popkids-samsunguk-yjjil.amagi.tv/ts-eu-w1-n2/playlist/amg01753-narrativeentert-popkids-samsunguk/playlist.m3u8
 
@@ -3205,6 +3214,9 @@ https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5812b7d3249444e05d
 #EXTINF:-1 tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD490000209_20241104T163538SQUARE.png" group-title="Bangla Channel",Barbie and Friends
 https://d1xqdnwy1bo05f.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-jh1ol665g3amg/barb.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/db/Motu-patlu-cover.jpg" group-title="Bangla Channel",Cartoon Anima
+https://live20.bozztv.com/giatvplayout7/giatv-209624/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23195/cartoon-classics/logo_20241119_223053_61.png" group-title="Bangla Channel",Cartoon Classics
 https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/D6NOXKW7TYP8TG7YMYZH/hls3/now,-1m/m.m3u8
 
@@ -3217,6 +3229,9 @@ http://181.78.4.250:8098/play/a067/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/brazil/discovery-kids-br.png" group-title="Bangla Channel",Discovery Kids
 http://181.78.4.250:8098/play/a08h/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
+https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b4/Just_for_Laughs_2021.svg" group-title="Bangla Channel",Just for laughs (Pluto TV)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f48c95132a00075fd859/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 
@@ -3225,6 +3240,9 @@ https://d2z0ysa6dgxhlc.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 
 #EXTINF:-1 tvg-logo="http://syidyacreationjr.com/wp-content/uploads/2017/11/boysrgb.jpg" group-title="Bangla Channel",Kid Screation
 http://foxkids-online.ru/hls/test_240p264kbs/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia-fanon/images/b/ba/NickToons_UK_2007.svg" group-title="Bangla Channel",NICK Hindi
+http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/1034.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/pbs-kids-us.png" group-title="Bangla Channel",PBS Kids (Eastern Feed)
 https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8
@@ -3766,6 +3784,9 @@ http://ee0c5e74.akadatel.com/iptv/QRDWGTBMDHSDGK/19146/index.m3u8
 #EXTINF:-1 tvg-logo="https://static.epg.best/cn/StarSports1.cn.png" group-title="Bangla Channel",CR | Star Sports 1 Hindi
 https://starsportshindiii.pages.dev/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.epg.best/in/StarSports2.in.png" group-title="Bangla Channel",CR | Star Sports 2 HD
+http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/1370.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/0d/Arena_Sport_Premium_1_2021.png" group-title="Bangla Channel",FB | Arena Sport Premium 1
 https://tiger-hub.vercel.app/Arena-Sports/Premium-1/tracks-v1a1/mono.ts.m3u8
 
@@ -4048,4 +4069,4 @@ https://travelxp-travelxp-1-nz.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23195/viajar-tv/logo_20250102_223334_36.png" group-title="Bangla Channel",Viajar TV
 https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/VVP0MGDRUILC8BDR6S0M/hls3/now,-1m/m.m3u8
 
-# Last Updated: 2025-12-16 22:50:06 BD Time
+# Last Updated: 2025-12-16 23:20:08 BD Time
