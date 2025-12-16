@@ -12,7 +12,7 @@ jobs:
 
   crichd:
     needs: aynaott
-    if: ${{ always() }}                         # আগেরটি fail করলেও চলে যাবে
+    if: ${{ always() }}
     uses: ./.github/workflows/CricHD_update_playlist.yml
 
   fancode:
@@ -24,3 +24,8 @@ jobs:
     needs: fancode
     if: ${{ always() }}
     uses: ./.github/workflows/Roar-Zone.yml
+
+  toffee:
+    needs: roarzone
+    if: ${{ always() }}
+    uses: ./.github/workflows/toffee_main.yml
