@@ -567,9 +567,6 @@ https://4afghls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/3f65c82ae89dc9894e0fdadf21ab9d96" group-title="AynaOTT",Revolt
 https://tvsen6.aynascope.net/revolt/index.m3u8?e=1765854712&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=965dc571ea32c8f5bd71b4af037f7716
 
-#EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/0d7976633a35b044d736e57b240a4e97" group-title="AynaOTT",Hadi TV
-https://live.ishiacloud.com/haditv.co.uk/haditv1.m3u8
-
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/173eba7209534d3643be6a57215bfff1" group-title="AynaOTT",Iran Press
 https://live.presstv.ir/hls/presstv_5_482/index.m3u8
 # Updated on: 2025-12-16 01:55:12
@@ -650,8 +647,14 @@ http://front-main.eagle-4k.me/play/live.php?mac=00:1A:79:BD:42:AC&stream=276734&
 #EXTINF:-1 tvg-logo="https://dtat2ks7dludr.cloudfront.net/spnsportsindia/channel_logos/SONY_SportsTen3_HD.png" group-title="SM All TV",Sony Sports 3 HD
 http://front-main.eagle-4k.me/play/live.php?mac=00:1A:79:BD:42:AC&stream=276739&extension=.m3u8
 
+#EXTINF:-1 tvg-logo="https://iconape.com/wp-content/files/da/323865/png/323865.png" group-title="SM All TV",Ten Sports
+http://filex.tv:8080/live/Multicity/1234/52106.ts
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0c/A_Sports_Logo.png" group-title="SM All TV",A Sports
 http://main.epgmaker.com/Ali130225/Cpyej2JL56Xy/804
+
+#EXTINF:-1 tvg-logo="https://aimages.willow.tv/wlo_logo_200_200.jpg" group-title="SM All TV",Willow Extra HD
+http://filex.tv:8080/live/Multicity/1234/52109.ts
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d3/Sports18_logo.svg" group-title="SM All TV",Sports 18 HD
 https://ottamaka.vercel.app/api/play/sports18.m3u8
@@ -810,8 +813,8 @@ https://smart.bengaldigital.live/Zee-Bangla-Cinema/index.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/7/7e/Mon_Music_HD_2023.png" group-title="Bangla Channel",MU | Mon TV Music
 https://live-stream.utkalbongo.com/utkalbongo/stream7/hls/montvlivestream.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Sangeet_Bangla_logo_2006.png" group-title="Bangla Channel",MU | SANGEET BANGLA
-http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/541.m3u8
+#EXTINF:-1 tvg-logo="https://cdn.dribbble.com/userupload/32075529/file/original-52b78ab450ff3dd796b6b99265e319f4.jpg" group-title="Bangla Channel",MU | ZB Music
+https://server.zillarbarta.com/zbmusic/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e1/NTV_Bangladesh.svg" group-title="Bangla Channel",NTV SD
 http://103.230.105.252:1935/live/ntv/manifest.m3u8
@@ -954,8 +957,8 @@ https://live20.bozztv.com/giatvplayout7/giatv-209624/index.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7f/Disney_International_HD_logo.png" group-title="Bangla Channel",Disney International HD
 http://116.90.120.149:8000/play/a0e9/index.m3u8
 
-#EXTINF:-1 tvg-logo="http://syidyacreationjr.com/wp-content/uploads/2017/11/boysrgb.jpg" group-title="Bangla Channel",Kid Screation
-http://foxkids-online.ru/hls/test_240p264kbs/index.m3u8
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
+https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia-fanon/images/b/ba/NickToons_UK_2007.svg" group-title="Bangla Channel",NICK Hindi
 http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/1034.m3u8
@@ -1062,4 +1065,4 @@ https://amg18570-amg18570c1-freelivesports-emea-5535.playouts.now.amagi.tv/ts-eu
 #EXTINF:-1 tvg-logo="https://media.unreel.me/prod/freelivesports/logo/09fa93ff-a539-4d81-bbbf-da599e11e77c" group-title="Bangla Channel",GOLF | Unbeaten (Worldwide)
 https://amg00721-amg00721c6-freelivesports-emea-9595.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00721-inverleigh-unbtn3row-freelivesportsemea/playlist.m3u8
 
-# Last Updated: 2025-12-16 09:20:37 BD Time
+# Last Updated: 2025-12-16 10:31:39 BD Time
