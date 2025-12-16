@@ -841,9 +841,6 @@
     <display-name>NEWS | Republic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/f/fe/Republic-logo2.svg"/>
   </channel>
-  <programme start="20251216083000 +0600" stop="20251216090000 +0600" channel="RepublicTV.in">
-    <title lang="bn">The Debate Late Tonight</title>
-  </programme>
   <programme start="20251216090000 +0600" stop="20251216093000 +0600" channel="RepublicTV.in">
     <title lang="bn">Live-Live This Morning-Live This Morning</title>
   </programme>
@@ -880,14 +877,14 @@
   <programme start="20251216153000 +0600" stop="20251216160000 +0600" channel="RepublicTV.in">
     <title lang="bn">Live-Live And Breaking-Live And Breaking</title>
   </programme>
+  <programme start="20251216160000 +0600" stop="20251216163000 +0600" channel="RepublicTV.in">
+    <title lang="bn">Live-Live And Breaking-Live And Breaking</title>
+  </programme>
   <channel id="TimesNowNavbharat">
     <display-name>NEWS | Times Now Navbhara</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD1300003OW_20240131T032351SQUARE.png_20240131032352.png"/>
   </channel>
-  <programme start="20251216080000 +0600" stop="20251216083000 +0600" channel="TimesNowNavbharat">
-    <title lang="bn">Fit India Superhit Bullitien</title>
-  </programme>
-  <programme start="20251216083000 +0600" stop="20251216093000 +0600" channel="TimesNowNavbharat">
+  <programme start="20251216090000 +0600" stop="20251216093000 +0600" channel="TimesNowNavbharat">
     <title lang="bn">Fresh And Fast</title>
   </programme>
   <programme start="20251216093000 +0600" stop="20251216100000 +0600" channel="TimesNowNavbharat">
@@ -920,21 +917,18 @@
   <programme start="20251216160000 +0600" stop="20251216163000 +0600" channel="TimesNowNavbharat">
     <title lang="bn">Times Now NavBharat Live</title>
   </programme>
-  <programme start="20251216163000 +0600" stop="20251216170000 +0600" channel="TimesNowNavbharat">
+  <programme start="20251216163000 +0600" stop="20251216173000 +0600" channel="TimesNowNavbharat">
     <title lang="bn">Prime At 4</title>
+  </programme>
+  <programme start="20251216173000 +0600" stop="20251216180000 +0600" channel="TimesNowNavbharat">
+    <title lang="bn">Rashtravaad</title>
   </programme>
   <channel id="StarPlus.in">
     <display-name>ENT | Star Plus</display-name>
     <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/200/-/Star_Plus_HD.png"/>
   </channel>
-  <programme start="20251216073000 +0600" stop="20251216080000 +0600" channel="StarPlus.in">
-    <title lang="bn">Anupamaa(2020)</title>
-  </programme>
-  <programme start="20251216080000 +0600" stop="20251216083000 +0600" channel="StarPlus.in">
-    <title lang="bn">Yeh Rishta Kya Kehlata Hai (2021)</title>
-  </programme>
-  <programme start="20251216083000 +0600" stop="20251216093000 +0600" channel="StarPlus.in">
-    <title lang="bn">Udne Ki Aasha (2024)</title>
+  <programme start="20251216090000 +0600" stop="20251216093000 +0600" channel="StarPlus.in">
+    <title lang="bn">Udne Ki Aasha(2024)</title>
   </programme>
   <programme start="20251216093000 +0600" stop="20251216100000 +0600" channel="StarPlus.in">
     <title lang="bn">Anupamaa (2020)</title>
@@ -966,14 +960,17 @@
   <programme start="20251216203000 +0600" stop="20251216210000 +0600" channel="StarPlus.in">
     <title lang="bn">Aarti Anjali Awasthi</title>
   </programme>
+  <programme start="20251216210000 +0600" stop="20251216220000 +0600" channel="StarPlus.in">
+    <title lang="bn">Udne Ki Aasha (2024)</title>
+  </programme>
+  <programme start="20251216220000 +0600" stop="20251216223000 +0600" channel="StarPlus.in">
+    <title lang="bn">Yeh Rishta Kya Kehlata Hai (2021)</title>
+  </programme>
   <channel id="IsharaTV.in">
     <display-name>ENT | Ishara TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/7/75/Ishara_tv.png"/>
   </channel>
-  <programme start="20251216080000 +0600" stop="20251216083000 +0600" channel="IsharaTV.in">
-    <title lang="bn">Shrimad Bhagwat Katha Acharyaji</title>
-  </programme>
-  <programme start="20251216083000 +0600" stop="20251216113000 +0600" channel="IsharaTV.in">
+  <programme start="20251216110000 +0600" stop="20251216113000 +0600" channel="IsharaTV.in">
     <title lang="bn">Shrimad Bhagwat Katha Acharyaji</title>
   </programme>
   <programme start="20251216113000 +0600" stop="20251216120000 +0600" channel="IsharaTV.in">
@@ -1009,23 +1006,14 @@
   <programme start="20251216163000 +0600" stop="20251216170000 +0600" channel="IsharaTV.in">
     <title lang="bn">Bindiya Sarkar</title>
   </programme>
+  <programme start="20251216170000 +0600" stop="20251216173000 +0600" channel="IsharaTV.in">
+    <title lang="bn">Bindiya Sarkar</title>
+  </programme>
   <channel id="EpicTV.in_TVWISH">
     <display-name>ENT | Epic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/41/Epic_TV_%282021%29.jpg"/>
   </channel>
-  <programme start="20251216073000 +0600" stop="20251216080000 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Ekaant</title>
-  </programme>
-  <programme start="20251216080000 +0600" stop="20251216084500 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Emerald Forest - Part 1</title>
-  </programme>
-  <programme start="20251216084500 +0600" stop="20251216091500 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">What&amp;#x27;s In The Name</title>
-  </programme>
-  <programme start="20251216091500 +0600" stop="20251216093000 +0600" channel="EpicTV.in_TVWISH">
-    <title lang="bn">Indipedia</title>
-  </programme>
-  <programme start="20251216093000 +0600" stop="20251216095500 +0600" channel="EpicTV.in_TVWISH">
+  <programme start="20251216092500 +0600" stop="20251216095500 +0600" channel="EpicTV.in_TVWISH">
     <title lang="bn">Epic Ke Dus</title>
   </programme>
   <programme start="20251216095500 +0600" stop="20251216102500 +0600" channel="EpicTV.in_TVWISH">
@@ -1052,6 +1040,18 @@
   <programme start="20251216133500 +0600" stop="20251216140000 +0600" channel="EpicTV.in_TVWISH">
     <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
   </programme>
+  <programme start="20251216140000 +0600" stop="20251216142500 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
+  </programme>
+  <programme start="20251216142500 +0600" stop="20251216145000 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
+  </programme>
+  <programme start="20251216145000 +0600" stop="20251216153000 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
+  </programme>
+  <programme start="20251216153000 +0600" stop="20251216160000 +0600" channel="EpicTV.in_TVWISH">
+    <title lang="bn">Raja Rasoi Aur Andaaz Anokha</title>
+  </programme>
   <channel id="DANGAL2">
     <display-name>ENT | DANGAL2</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/a/ac/Dangal_2.png"/>
@@ -1060,13 +1060,7 @@
     <display-name>Bhojpuri Cinema</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/a/ad/Bhojpuri_cinema.png"/>
   </channel>
-  <programme start="20251216080000 +0600" stop="20251216083000 +0600" channel="BhojpuriCinema.in">
-    <title lang="bn">Lalaki Chunariya Odh Ke</title>
-  </programme>
-  <programme start="20251216083000 +0600" stop="20251216091500 +0600" channel="BhojpuriCinema.in">
-    <title lang="bn">Bhojpuriya Jhankaar</title>
-  </programme>
-  <programme start="20251216091500 +0600" stop="20251216121000 +0600" channel="BhojpuriCinema.in">
+  <programme start="20251216114000 +0600" stop="20251216121000 +0600" channel="BhojpuriCinema.in">
     <title lang="bn">Afsar Bitiya</title>
   </programme>
   <programme start="20251216121000 +0600" stop="20251216151500 +0600" channel="BhojpuriCinema.in">
@@ -1107,16 +1101,7 @@
     <display-name>Zee Bangla Cinema</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/5/59/Zee_Bangla_Cinema_%282025%29.svg"/>
   </channel>
-  <programme start="20251216073000 +0600" stop="20251216080000 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">Shri Krishnaleela</title>
-  </programme>
-  <programme start="20251216080000 +0600" stop="20251216083000 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">Shri Krishnaleela</title>
-  </programme>
-  <programme start="20251216083000 +0600" stop="20251216090000 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">Sakaler Sure</title>
-  </programme>
-  <programme start="20251216090000 +0600" stop="20251216110000 +0600" channel="zeebanglacinema.in">
+  <programme start="20251216103000 +0600" stop="20251216110000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Mahajan</title>
   </programme>
   <programme start="20251216110000 +0600" stop="20251216133000 +0600" channel="zeebanglacinema.in">
@@ -1144,6 +1129,15 @@
     <title lang="bn">Pooja (1996)</title>
   </programme>
   <programme start="20251217013000 +0600" stop="20251217020000 +0600" channel="zeebanglacinema.in">
+    <title lang="bn">Bedeni Jyotsnar Amar Prem</title>
+  </programme>
+  <programme start="20251217020000 +0600" stop="20251217023000 +0600" channel="zeebanglacinema.in">
+    <title lang="bn">Shriman Bhagoban Das</title>
+  </programme>
+  <programme start="20251217023000 +0600" stop="20251217030000 +0600" channel="zeebanglacinema.in">
+    <title lang="bn">S.I.T</title>
+  </programme>
+  <programme start="20251217030000 +0600" stop="20251217033000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Bedeni Jyotsnar Amar Prem</title>
   </programme>
   <channel id="colorsbanglacinemahd.in">
@@ -1285,17 +1279,8 @@
     <display-name>SONY SAB HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/18/SONY_SAB_SD.png"/>
   </channel>
-  <programme start="20251216073000 +0600" stop="20251216080000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Pushpa Impossible(2022)</title>
-  </programme>
-  <programme start="20251216080000 +0600" stop="20251216083000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Gatha Shiv Parivaar Ki Ganesh Kartikey</title>
-  </programme>
-  <programme start="20251216083000 +0600" stop="20251216090000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
-  </programme>
   <programme start="20251216090000 +0600" stop="20251216093000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Maddam Sir (2020)</title>
+    <title lang="bn">Maddam Sir(2020)</title>
   </programme>
   <programme start="20251216093000 +0600" stop="20251216100000 +0600" channel="sonysabhd.in">
     <title lang="bn">Maddam Sir (2020)</title>
@@ -1324,19 +1309,19 @@
   <programme start="20251216140000 +0600" stop="20251216143000 +0600" channel="sonysabhd.in">
     <title lang="bn">Pushpa Impossible (2022)</title>
   </programme>
+  <programme start="20251216143000 +0600" stop="20251216153000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
+  </programme>
+  <programme start="20251216153000 +0600" stop="20251216160000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Itti Si Khushi</title>
+  </programme>
+  <programme start="20251216160000 +0600" stop="20251216163000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Pushpa Impossible (2022)</title>
+  </programme>
   <channel id="RepublicBangla.in">
     <display-name>Republic Bangla</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/9/93/R.Bangla_logo_with_tagline.jpg"/>
   </channel>
-  <programme start="20251216073000 +0600" stop="20251216080000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">Live-R Bangla Live 100% News-R Bangla Live 100% News</title>
-  </programme>
-  <programme start="20251216080000 +0600" stop="20251216083000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">Bullet 50</title>
-  </programme>
-  <programme start="20251216083000 +0600" stop="20251216090000 +0600" channel="RepublicBangla.in">
-    <title lang="bn">Live-R Bangla Live 100% News-R Bangla Live 100% News</title>
-  </programme>
   <programme start="20251216090000 +0600" stop="20251216093000 +0600" channel="RepublicBangla.in">
     <title lang="bn">Live-R Bangla Live 100% News-R Bangla Live 100% News</title>
   </programme>
@@ -1366,6 +1351,15 @@
   </programme>
   <programme start="20251216133000 +0600" stop="20251216140000 +0600" channel="RepublicBangla.in">
     <title lang="bn">Live-R Bangla Live 100% News-R Bangla Live 100% News</title>
+  </programme>
+  <programme start="20251216140000 +0600" stop="20251216143000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">Live-R Bangla Live 100% News-R Bangla Live 100% News</title>
+  </programme>
+  <programme start="20251216143000 +0600" stop="20251216150000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">Live-R Bangla Live 100% News-R Bangla Live 100% News</title>
+  </programme>
+  <programme start="20251216150000 +0600" stop="20251216153000 +0600" channel="RepublicBangla.in">
+    <title lang="bn">Fataak News</title>
   </programme>
   <channel id="DisneyJunior.in">
     <display-name>Disney Junior</display-name>
@@ -2693,660 +2687,714 @@
     <display-name>WION</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/1d/WION_World_Is_One_News.svg"/>
   </channel>
-  <programme start="20251215002600 +0600" stop="20251215011500 +0600" channel="WION.in">
-    <title lang="bn">狂飙1/39</title>
+  <programme start="20251215003700 +0600" stop="20251215011300 +0600" channel="WION.in">
+    <title lang="bn">夕阳红-2025-350</title>
   </programme>
-  <programme start="20251215011500 +0600" stop="20251215020700 +0600" channel="WION.in">
-    <title lang="bn">狂飙2/39</title>
+  <programme start="20251215011300 +0600" stop="20251215014700 +0600" channel="WION.in">
+    <title lang="bn">天网-2025-233</title>
   </programme>
-  <programme start="20251215020700 +0600" stop="20251215023200 +0600" channel="WION.in">
-    <title lang="bn">世界战史-2025-232</title>
+  <programme start="20251215014700 +0600" stop="20251215022900 +0600" channel="WION.in">
+    <title lang="bn">剧懂法2025-46</title>
   </programme>
-  <programme start="20251215023200 +0600" stop="20251215025700 +0600" channel="WION.in">
-    <title lang="bn">军事纪录-2025-241</title>
+  <programme start="20251215022900 +0600" stop="20251215032000 +0600" channel="WION.in">
+    <title lang="bn">方圆剧阵2025-348</title>
   </programme>
-  <programme start="20251215025700 +0600" stop="20251215030300 +0600" channel="WION.in">
-    <title lang="bn">国防微视频-军歌嘹亮-光荣奔赴（战旗版）</title>
+  <programme start="20251215032000 +0600" stop="20251215035000 +0600" channel="WION.in">
+    <title lang="bn">热线12-2025-249</title>
   </programme>
-  <programme start="20251215030300 +0600" stop="20251215032900 +0600" channel="WION.in">
-    <title lang="bn">兵器面面观-2025-250</title>
+  <programme start="20251215035000 +0600" stop="20251215042300 +0600" channel="WION.in">
+    <title lang="bn">法律讲堂-2025-349</title>
   </programme>
-  <programme start="20251215032900 +0600" stop="20251215040000 +0600" channel="WION.in">
-    <title lang="bn">国防故事-2025-215</title>
+  <programme start="20251215042300 +0600" stop="20251215050700 +0600" channel="WION.in">
+    <title lang="bn">一线-2025-251</title>
   </programme>
-  <programme start="20251215040000 +0600" stop="20251215043300 +0600" channel="WION.in">
-    <title lang="bn">新闻联播</title>
+  <programme start="20251215050700 +0600" stop="20251215054100 +0600" channel="WION.in">
+    <title lang="bn">天网-2025-249</title>
   </programme>
-  <programme start="20251215043300 +0600" stop="20251215050300 +0600" channel="WION.in">
-    <title lang="bn">军事报道</title>
+  <programme start="20251215054100 +0600" stop="20251215063400 +0600" channel="WION.in">
+    <title lang="bn">方圆剧阵2025-349</title>
   </programme>
-  <programme start="20251215050300 +0600" stop="20251215050900 +0600" channel="WION.in">
-    <title lang="bn">国防微视频-军歌嘹亮-向着强大的现代化武警部队前进（战旗版）</title>
+  <programme start="20251215063400 +0600" stop="20251215070700 +0600" channel="WION.in">
+    <title lang="bn">剧懂人心（第二季）-15</title>
   </programme>
-  <programme start="20251215050900 +0600" stop="20251215054300 +0600" channel="WION.in">
-    <title lang="bn">防务新观察-2025-349</title>
+  <programme start="20251215070700 +0600" stop="20251215072800 +0600" channel="WION.in">
+    <title lang="bn">道德观察(日播版)-2025-349</title>
   </programme>
-  <programme start="20251215054300 +0600" stop="20251215061600 +0600" channel="WION.in">
-    <title lang="bn">军事纪实-2025-249</title>
+  <programme start="20251215072800 +0600" stop="20251215080300 +0600" channel="WION.in">
+    <title lang="bn">法律讲堂（文史版）-2025-249</title>
   </programme>
-  <programme start="20251215061600 +0600" stop="20251215065200 +0600" channel="WION.in">
-    <title lang="bn">军武零距离-2025-50(4K)</title>
+  <programme start="20251215080300 +0600" stop="20251215085100 +0600" channel="WION.in">
+    <title lang="bn">2025社会与法电视剧精选-远方的山楂树-39/48</title>
   </programme>
-  <programme start="20251215065200 +0600" stop="20251215074300 +0600" channel="WION.in">
-    <title lang="bn">大决战20/49</title>
+  <programme start="20251215085100 +0600" stop="20251215093900 +0600" channel="WION.in">
+    <title lang="bn">2025社会与法电视剧精选-远方的山楂树-40/48</title>
   </programme>
-  <programme start="20251215074300 +0600" stop="20251215083500 +0600" channel="WION.in">
-    <title lang="bn">大决战21/49</title>
+  <programme start="20251215093900 +0600" stop="20251215102500 +0600" channel="WION.in">
+    <title lang="bn">2025社会与法电视剧精选-远方的山楂树-41/48</title>
   </programme>
-  <programme start="20251215083500 +0600" stop="20251215090900 +0600" channel="WION.in">
-    <title lang="bn">军事纪实-2025-249</title>
+  <programme start="20251215102500 +0600" stop="20251215111600 +0600" channel="WION.in">
+    <title lang="bn">方圆剧阵2025-349</title>
   </programme>
-  <programme start="20251215090900 +0600" stop="20251215094700 +0600" channel="WION.in">
-    <title lang="bn">兵器面面观-2025-250</title>
-  </programme>
-  <programme start="20251215094700 +0600" stop="20251215150300 +0600" channel="WION.in">
+  <programme start="20251215111600 +0600" stop="20251215150300 +0600" channel="WION.in">
     <title lang="bn">再见</title>
   </programme>
-  <programme start="20251215150300 +0600" stop="20251215153300 +0600" channel="WION.in">
-    <title lang="bn">军事纪实-2025-249</title>
+  <programme start="20251215150300 +0600" stop="20251215153600 +0600" channel="WION.in">
+    <title lang="bn">法律讲堂-2025-278</title>
   </programme>
-  <programme start="20251215153300 +0600" stop="20251215160000 +0600" channel="WION.in">
-    <title lang="bn">国防故事-2025-215</title>
+  <programme start="20251215153600 +0600" stop="20251215161800 +0600" channel="WION.in">
+    <title lang="bn">一线-2025-251</title>
   </programme>
-  <programme start="20251215160000 +0600" stop="20251215162500 +0600" channel="WION.in">
-    <title lang="bn">世界战史-2025-232</title>
+  <programme start="20251215161800 +0600" stop="20251215165200 +0600" channel="WION.in">
+    <title lang="bn">天网-2025-249</title>
   </programme>
-  <programme start="20251215162500 +0600" stop="20251215163000 +0600" channel="WION.in">
-    <title lang="bn">国防微视频-军歌嘹亮-青春在一道杠上奔跑</title>
+  <programme start="20251215165200 +0600" stop="20251215173500 +0600" channel="WION.in">
+    <title lang="bn">现场-2025-40</title>
   </programme>
-  <programme start="20251215163000 +0600" stop="20251215165800 +0600" channel="WION.in">
-    <title lang="bn">国防军事早报</title>
+  <programme start="20251215173500 +0600" stop="20251215181000 +0600" channel="WION.in">
+    <title lang="bn">夕阳红-2025-351</title>
   </programme>
-  <programme start="20251215165800 +0600" stop="20251215172800 +0600" channel="WION.in">
-    <title lang="bn">时光军史馆-2025-37</title>
+  <programme start="20251215181000 +0600" stop="20251215190400 +0600" channel="WION.in">
+    <title lang="bn">方圆剧阵2025-161</title>
   </programme>
-  <programme start="20251215172800 +0600" stop="20251215180300 +0600" channel="WION.in">
-    <title lang="bn">兵器面面观-环球兵器大事件-2025-37</title>
+  <programme start="20251215190400 +0600" stop="20251215195800 +0600" channel="WION.in">
+    <title lang="bn">方圆剧阵2025-162</title>
   </programme>
-  <programme start="20251215180300 +0600" stop="20251215183500 +0600" channel="WION.in">
-    <title lang="bn">防务新观察-2025-349</title>
+  <programme start="20251215195800 +0600" stop="20251215203000 +0600" channel="WION.in">
+    <title lang="bn">法律讲堂-2025-349</title>
   </programme>
-  <programme start="20251215183500 +0600" stop="20251215190500 +0600" channel="WION.in">
-    <title lang="bn">军事纪实-2025-249</title>
+  <programme start="20251215203000 +0600" stop="20251215210000 +0600" channel="WION.in">
+    <title lang="bn">热线12-2025-249</title>
   </programme>
-  <programme start="20251215190500 +0600" stop="20251215193300 +0600" channel="WION.in">
-    <title lang="bn">兵器面面观-2025-250</title>
+  <programme start="20251215210000 +0600" stop="20251215212500 +0600" channel="WION.in">
+    <title lang="bn">生命线-2025-350</title>
   </programme>
-  <programme start="20251215193300 +0600" stop="20251215200100 +0600" channel="WION.in">
-    <title lang="bn">世界战史-2025-232</title>
+  <programme start="20251215212500 +0600" stop="20251215220900 +0600" channel="WION.in">
+    <title lang="bn">一线-2025-217</title>
   </programme>
-  <programme start="20251215200100 +0600" stop="20251215202800 +0600" channel="WION.in">
-    <title lang="bn">国防故事-2025-215</title>
+  <programme start="20251215220900 +0600" stop="20251215225800 +0600" channel="WION.in">
+    <title lang="bn">2025社会与法电视剧精选-远方的山楂树-42/48</title>
   </programme>
-  <programme start="20251215202800 +0600" stop="20251215205300 +0600" channel="WION.in">
-    <title lang="bn">军事纪录-2025-241</title>
+  <programme start="20251215225800 +0600" stop="20251215234700 +0600" channel="WION.in">
+    <title lang="bn">2025社会与法电视剧精选-远方的山楂树-43/48</title>
   </programme>
-  <programme start="20251215205300 +0600" stop="20251215210000 +0600" channel="WION.in">
-    <title lang="bn">国防微视频-军歌嘹亮-当那一天来临（福建舰2）</title>
+  <programme start="20251215234700 +0600" stop="20251216003700 +0600" channel="WION.in">
+    <title lang="bn">2025社会与法电视剧精选-远方的山楂树-44/48</title>
   </programme>
-  <programme start="20251215210000 +0600" stop="20251215213600 +0600" channel="WION.in">
-    <title lang="bn">正午国防军事</title>
+  <programme start="20251216003700 +0600" stop="20251216011300 +0600" channel="WION.in">
+    <title lang="bn">夕阳红-2025-351</title>
   </programme>
-  <programme start="20251215213600 +0600" stop="20251215221100 +0600" channel="WION.in">
-    <title lang="bn">防务新观察-2025-349</title>
+  <programme start="20251216011300 +0600" stop="20251216014700 +0600" channel="WION.in">
+    <title lang="bn">天网-2025-249</title>
   </programme>
-  <programme start="20251215221100 +0600" stop="20251215224100 +0600" channel="WION.in">
-    <title lang="bn">军营的味道-2025-50</title>
+  <programme start="20251216014700 +0600" stop="20251216022900 +0600" channel="WION.in">
+    <title lang="bn">剧懂法2025-47</title>
   </programme>
-  <programme start="20251215224100 +0600" stop="20251215230800 +0600" channel="WION.in">
-    <title lang="bn">兵器面面观-2025-250</title>
+  <programme start="20251216022900 +0600" stop="20251216032000 +0600" channel="WION.in">
+    <title lang="bn">方圆剧阵2025-349</title>
   </programme>
-  <programme start="20251215230800 +0600" stop="20251215233500 +0600" channel="WION.in">
-    <title lang="bn">军事纪录-2025-241</title>
+  <programme start="20251216032000 +0600" stop="20251216035000 +0600" channel="WION.in">
+    <title lang="bn">热线12-2025-250</title>
   </programme>
-  <programme start="20251215233500 +0600" stop="20251216002600 +0600" channel="WION.in">
-    <title lang="bn">狂飙3/39</title>
+  <programme start="20251216035000 +0600" stop="20251216042300 +0600" channel="WION.in">
+    <title lang="bn">法律讲堂-2025-350</title>
   </programme>
-  <programme start="20251216002600 +0600" stop="20251216011500 +0600" channel="WION.in">
-    <title lang="bn">狂飙4/39</title>
+  <programme start="20251216042300 +0600" stop="20251216050700 +0600" channel="WION.in">
+    <title lang="bn">一线-2025-252</title>
   </programme>
-  <programme start="20251216011500 +0600" stop="20251216020600 +0600" channel="WION.in">
-    <title lang="bn">狂飙5/39</title>
+  <programme start="20251216050700 +0600" stop="20251216054100 +0600" channel="WION.in">
+    <title lang="bn">天网-2025-250</title>
   </programme>
-  <programme start="20251216020600 +0600" stop="20251216023100 +0600" channel="WION.in">
-    <title lang="bn">世界战史-2025-233</title>
+  <programme start="20251216054100 +0600" stop="20251216063400 +0600" channel="WION.in">
+    <title lang="bn">方圆剧阵2025-350</title>
   </programme>
-  <programme start="20251216023100 +0600" stop="20251216025600 +0600" channel="WION.in">
-    <title lang="bn">军事纪录-2025-242</title>
+  <programme start="20251216063400 +0600" stop="20251216070700 +0600" channel="WION.in">
+    <title lang="bn">剧懂人心（第二季）-16</title>
   </programme>
-  <programme start="20251216025600 +0600" stop="20251216030200 +0600" channel="WION.in">
-    <title lang="bn">国防微视频-军歌嘹亮-青春在一道杠上奔跑</title>
+  <programme start="20251216070700 +0600" stop="20251216072800 +0600" channel="WION.in">
+    <title lang="bn">道德观察(日播版)-2025-350</title>
   </programme>
-  <programme start="20251216030200 +0600" stop="20251216032800 +0600" channel="WION.in">
-    <title lang="bn">兵器面面观-2025-251</title>
+  <programme start="20251216072800 +0600" stop="20251216080300 +0600" channel="WION.in">
+    <title lang="bn">法律讲堂（文史版）-2025-250</title>
   </programme>
-  <programme start="20251216032800 +0600" stop="20251216040000 +0600" channel="WION.in">
-    <title lang="bn">国防故事-2025-216</title>
+  <programme start="20251216080300 +0600" stop="20251216085100 +0600" channel="WION.in">
+    <title lang="bn">2025社会与法电视剧精选-远方的山楂树-42/48</title>
   </programme>
-  <programme start="20251216040000 +0600" stop="20251216043300 +0600" channel="WION.in">
-    <title lang="bn">新闻联播</title>
-  </programme>
-  <programme start="20251216043300 +0600" stop="20251216050300 +0600" channel="WION.in">
-    <title lang="bn">军事报道</title>
-  </programme>
-  <programme start="20251216050300 +0600" stop="20251216050900 +0600" channel="WION.in">
-    <title lang="bn">国防微视频-军歌嘹亮-当那一天来临（福建舰2）</title>
-  </programme>
-  <programme start="20251216050900 +0600" stop="20251216054300 +0600" channel="WION.in">
-    <title lang="bn">防务新观察-2025-350</title>
-  </programme>
-  <programme start="20251216054300 +0600" stop="20251216061600 +0600" channel="WION.in">
-    <title lang="bn">军事纪实-2025-250</title>
-  </programme>
-  <programme start="20251216061600 +0600" stop="20251216065200 +0600" channel="WION.in">
-    <title lang="bn">军事科技-2025-50</title>
-  </programme>
-  <programme start="20251216065200 +0600" stop="20251216074300 +0600" channel="WION.in">
-    <title lang="bn">大决战22/49</title>
-  </programme>
-  <programme start="20251216074300 +0600" stop="20251216083500 +0600" channel="WION.in">
-    <title lang="bn">大决战23/49</title>
-  </programme>
-  <programme start="20251216083500 +0600" stop="20251216090500 +0600" channel="WION.in">
-    <title lang="bn">军事纪实-2025-250</title>
+  <programme start="20251216085100 +0600" stop="20251216092100 +0600" channel="WION.in">
+    <title lang="bn">2025社会与法电视剧精选-远方的山楂树-43/48</title>
   </programme>
   <channel id="CGTN.cn">
     <display-name>CGTN</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/512px-CGTN.svg.png"/>
   </channel>
   <programme start="20251215000000 +0600" stop="20251215003000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 26 с-н 5 с. Шины горного велосипеда</title>
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251215003000 +0600" stop="20251215010000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 14 с-н 6 с. Аварийные испытания автомобилей, дельфтский фарфор, зонты</title>
+    <title lang="bn">Business Today</title>
   </programme>
-  <programme start="20251215010000 +0600" stop="20251215020000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем, 13 с-н 12 c</title>
+  <programme start="20251215010000 +0600" stop="20251215013000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251215020000 +0600" stop="20251215030000 +0600" channel="CGTN.cn">
-    <title lang="bn">Реставраторы 4. 2 c</title>
+  <programme start="20251215013000 +0600" stop="20251215020000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251215020000 +0600" stop="20251215023000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251215023000 +0600" stop="20251215030000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251215030000 +0600" stop="20251215033000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 15 с. Право на крошечный дом</title>
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251215033000 +0600" stop="20251215040000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 16 с. Нью-йоркская модница в крошечном доме</title>
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251215040000 +0600" stop="20251215050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 12 с-н 6 с. Datsun 240Z: Калифорния</title>
+  <programme start="20251215040000 +0600" stop="20251215043000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251215050000 +0600" stop="20251215060000 +0600" channel="CGTN.cn">
-    <title lang="bn">Смертельный улов, 12 с-н 14 с. Пожар на море: часть 2</title>
+  <programme start="20251215043000 +0600" stop="20251215044500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251215044500 +0600" stop="20251215050000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251215050000 +0600" stop="20251215053000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
+  </programme>
+  <programme start="20251215053000 +0600" stop="20251215060000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
   </programme>
   <programme start="20251215060000 +0600" stop="20251215070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Смертельный улов, 12 с-н 15 с. Кровь и кишки</title>
+    <title lang="bn">BBC News at One</title>
   </programme>
-  <programme start="20251215070000 +0600" stop="20251215080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Смертельный улов, 12 с-н 16 c</title>
+  <programme start="20251215070000 +0600" stop="20251215073000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
   </programme>
-  <programme start="20251215080000 +0600" stop="20251215090000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные 2. 3 с. В ад или в омут</title>
+  <programme start="20251215073000 +0600" stop="20251215074500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today – NYSE Opening Bell</title>
   </programme>
-  <programme start="20251215090000 +0600" stop="20251215100000 +0600" channel="CGTN.cn">
-    <title lang="bn">Гаражный ремонт, 1 c</title>
+  <programme start="20251215074500 +0600" stop="20251215080000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
+  </programme>
+  <programme start="20251215080000 +0600" stop="20251215083000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251215083000 +0600" stop="20251215090000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251215090000 +0600" stop="20251215093000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251215093000 +0600" stop="20251215094500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251215094500 +0600" stop="20251215100000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
   </programme>
   <programme start="20251215100000 +0600" stop="20251215103000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 16 с-н 11 c</title>
+    <title lang="bn">Verified Live</title>
   </programme>
   <programme start="20251215103000 +0600" stop="20251215110000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 13 с-н 8 с. Алюминиевые лодки / Альпийские рожки / Роскошные часы</title>
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251215110000 +0600" stop="20251215120000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж 2. 1 с. Вторая жизнь форда Эконолайн 1961 года</title>
+  <programme start="20251215110000 +0600" stop="20251215113000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News at Six</title>
   </programme>
-  <programme start="20251215120000 +0600" stop="20251215130000 +0600" channel="CGTN.cn">
-    <title lang="bn">Эд Стаффорд: игра на вылет 3. 4 с. Хуаншань</title>
+  <programme start="20251215113000 +0600" stop="20251215120000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251215130000 +0600" stop="20251215140000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные: Бразилия. 2 c</title>
+  <programme start="20251215120000 +0600" stop="20251215123000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
+  </programme>
+  <programme start="20251215123000 +0600" stop="20251215130000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
+  </programme>
+  <programme start="20251215130000 +0600" stop="20251215133000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context</title>
+  </programme>
+  <programme start="20251215133000 +0600" stop="20251215140000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context</title>
   </programme>
   <programme start="20251215140000 +0600" stop="20251215143000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мастера мореплавания, 2 с. Ночное погружение</title>
+    <title lang="bn">The Context USA</title>
   </programme>
   <programme start="20251215143000 +0600" stop="20251215150000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мастера мореплавания, 3 с. Восхождение</title>
+    <title lang="bn">The Context USA</title>
   </programme>
-  <programme start="20251215150000 +0600" stop="20251215160000 +0600" channel="CGTN.cn">
-    <title lang="bn">Аляска: последний рубеж: спецвыпуск 6. 2 c</title>
+  <programme start="20251215150000 +0600" stop="20251215153000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News at Ten</title>
+  </programme>
+  <programme start="20251215153000 +0600" stop="20251215160000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsnight</title>
   </programme>
   <programme start="20251215160000 +0600" stop="20251215170000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем: классические авто 3. 2 c</title>
+    <title lang="bn">BBC World News America</title>
   </programme>
-  <programme start="20251215170000 +0600" stop="20251215180000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж. 18 с. Преображение Satellite 69-го года: часть 2</title>
+  <programme start="20251215170000 +0600" stop="20251215173000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251215180000 +0600" stop="20251215190000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные: Бразилия. 2 c</title>
+  <programme start="20251215173000 +0600" stop="20251215180000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newscast</title>
+  </programme>
+  <programme start="20251215180000 +0600" stop="20251215183000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251215183000 +0600" stop="20251215190000 +0600" channel="CGTN.cn">
+    <title lang="bn">Talking Business</title>
   </programme>
   <programme start="20251215190000 +0600" stop="20251215193000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мастера мореплавания, 2 с. Ночное погружение</title>
+    <title lang="bn">Newsday</title>
   </programme>
-  <programme start="20251215193000 +0600" stop="20251215200000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мастера мореплавания, 3 с. Восхождение</title>
+  <programme start="20251215193000 +0600" stop="20251215194500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
   </programme>
-  <programme start="20251215200000 +0600" stop="20251215210000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 2 с. Volvo PV544 1963 года</title>
+  <programme start="20251215194500 +0600" stop="20251215200000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
   </programme>
-  <programme start="20251215210000 +0600" stop="20251215220000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем 9. 10 c</title>
+  <programme start="20251215200000 +0600" stop="20251215203000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsday</title>
   </programme>
-  <programme start="20251215220000 +0600" stop="20251215230000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 1 с. Mercedes 560SL 1987 года</title>
+  <programme start="20251215203000 +0600" stop="20251215204500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
   </programme>
-  <programme start="20251215230000 +0600" stop="20251216000000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 11 с-н 4 с. Citroen 2CV</title>
+  <programme start="20251215204500 +0600" stop="20251215210000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
+  </programme>
+  <programme start="20251215210000 +0600" stop="20251215213000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsday</title>
+  </programme>
+  <programme start="20251215213000 +0600" stop="20251215214500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
+  </programme>
+  <programme start="20251215214500 +0600" stop="20251215220000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
+  </programme>
+  <programme start="20251215220000 +0600" stop="20251215223000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251215223000 +0600" stop="20251215230000 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251215230000 +0600" stop="20251215233000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251215233000 +0600" stop="20251216000000 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
   </programme>
   <programme start="20251216000000 +0600" stop="20251216003000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 26 с-н 6 с. Рисоварки, мебель-трансформер</title>
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251216003000 +0600" stop="20251216010000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 14 с-н 7 с. Железная руда, волновые лотки, люстры</title>
+    <title lang="bn">Business Today</title>
   </programme>
-  <programme start="20251216010000 +0600" stop="20251216020000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем, 13 с-н 13 c</title>
+  <programme start="20251216010000 +0600" stop="20251216013000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251216020000 +0600" stop="20251216030000 +0600" channel="CGTN.cn">
-    <title lang="bn">Реставраторы 4. 3 c</title>
+  <programme start="20251216013000 +0600" stop="20251216020000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251216020000 +0600" stop="20251216023000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251216023000 +0600" stop="20251216030000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251216030000 +0600" stop="20251216033000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 17 с. Крошечный дом в Западной Вирджинии</title>
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251216033000 +0600" stop="20251216040000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 18 с. Крошечный дом в Техасе</title>
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251216040000 +0600" stop="20251216050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 12 с-н 7 с. Морока с Volkswagen 181</title>
+  <programme start="20251216040000 +0600" stop="20251216043000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251216050000 +0600" stop="20251216060000 +0600" channel="CGTN.cn">
-    <title lang="bn">Железная дорога Аляски 2. 1 с. Нападение гризли</title>
+  <programme start="20251216043000 +0600" stop="20251216044500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251216044500 +0600" stop="20251216050000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251216050000 +0600" stop="20251216053000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
+  </programme>
+  <programme start="20251216053000 +0600" stop="20251216060000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
   </programme>
   <programme start="20251216060000 +0600" stop="20251216070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Железная дорога Аляски 2. 2 с. Горная опасность</title>
+    <title lang="bn">BBC News at One</title>
   </programme>
-  <programme start="20251216070000 +0600" stop="20251216080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Пограничный контроль Италии. 8 c</title>
+  <programme start="20251216070000 +0600" stop="20251216073000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
   </programme>
-  <programme start="20251216080000 +0600" stop="20251216090000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные 2. 4 с. Путь искупления</title>
+  <programme start="20251216073000 +0600" stop="20251216074500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today – NYSE Opening Bell</title>
   </programme>
-  <programme start="20251216090000 +0600" stop="20251216100000 +0600" channel="CGTN.cn">
-    <title lang="bn">Гаражный ремонт, 2 c</title>
+  <programme start="20251216074500 +0600" stop="20251216080000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
+  </programme>
+  <programme start="20251216080000 +0600" stop="20251216083000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251216083000 +0600" stop="20251216090000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251216090000 +0600" stop="20251216093000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251216093000 +0600" stop="20251216094500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251216094500 +0600" stop="20251216100000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
   </programme>
   <programme start="20251216100000 +0600" stop="20251216103000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 16 с-н 12 c</title>
+    <title lang="bn">Verified Live</title>
   </programme>
   <programme start="20251216103000 +0600" stop="20251216110000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 13 с-н 9 с. Внедорожники / Горные лыжи / Лазерные резаки</title>
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251216110000 +0600" stop="20251216120000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж 2. 2 c</title>
+  <programme start="20251216110000 +0600" stop="20251216113000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News at Six</title>
   </programme>
-  <programme start="20251216120000 +0600" stop="20251216130000 +0600" channel="CGTN.cn">
-    <title lang="bn">Золотая лихорадка, 16 с-н 4 с. Кипеж на холмах</title>
+  <programme start="20251216113000 +0600" stop="20251216120000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251216130000 +0600" stop="20251216140000 +0600" channel="CGTN.cn">
-    <title lang="bn">Искатели опалов 8. 7 с. Неопознанный светящийся опал</title>
+  <programme start="20251216120000 +0600" stop="20251216123000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251216140000 +0600" stop="20251216150000 +0600" channel="CGTN.cn">
-    <title lang="bn">Скоростные копы. 8 c</title>
+  <programme start="20251216123000 +0600" stop="20251216130000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251216150000 +0600" stop="20251216160000 +0600" channel="CGTN.cn">
-    <title lang="bn">Аляска: последний рубеж: спецвыпуск 6. 3 с. Кровь гуще воды</title>
+  <programme start="20251216130000 +0600" stop="20251216133000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context</title>
+  </programme>
+  <programme start="20251216133000 +0600" stop="20251216140000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context</title>
+  </programme>
+  <programme start="20251216140000 +0600" stop="20251216143000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context USA</title>
+  </programme>
+  <programme start="20251216143000 +0600" stop="20251216150000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context USA</title>
+  </programme>
+  <programme start="20251216150000 +0600" stop="20251216153000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News at Ten</title>
+  </programme>
+  <programme start="20251216153000 +0600" stop="20251216160000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsnight</title>
   </programme>
   <programme start="20251216160000 +0600" stop="20251216170000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем: классические авто 3. 3 c</title>
+    <title lang="bn">BBC World News America</title>
   </programme>
-  <programme start="20251216170000 +0600" stop="20251216180000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж. 19 с. Разбитый GTO и порубленный Ford &amp;#x27;41: часть 1</title>
+  <programme start="20251216170000 +0600" stop="20251216173000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251216180000 +0600" stop="20251216190000 +0600" channel="CGTN.cn">
-    <title lang="bn">Золотая лихорадка, 16 с-н 4 с. Кипеж на холмах</title>
+  <programme start="20251216173000 +0600" stop="20251216180000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newscast</title>
   </programme>
-  <programme start="20251216190000 +0600" stop="20251216200000 +0600" channel="CGTN.cn">
-    <title lang="bn">Искатели опалов 8. 7 с. Неопознанный светящийся опал</title>
+  <programme start="20251216180000 +0600" stop="20251216183000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251216200000 +0600" stop="20251216210000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 3 с. Honda CVCC 1977 года</title>
+  <programme start="20251216183000 +0600" stop="20251216190000 +0600" channel="CGTN.cn">
+    <title lang="bn">Tech Now</title>
   </programme>
-  <programme start="20251216210000 +0600" stop="20251216220000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем 9. 11 c</title>
+  <programme start="20251216190000 +0600" stop="20251216193000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsday</title>
   </programme>
-  <programme start="20251216220000 +0600" stop="20251216230000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 2 с. Volvo PV544 1963 года</title>
+  <programme start="20251216193000 +0600" stop="20251216194500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
   </programme>
-  <programme start="20251216230000 +0600" stop="20251217000000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 11 с-н 5 с. Maserati 3200 GT</title>
+  <programme start="20251216194500 +0600" stop="20251216200000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
+  </programme>
+  <programme start="20251216200000 +0600" stop="20251216203000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsday</title>
+  </programme>
+  <programme start="20251216203000 +0600" stop="20251216204500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
+  </programme>
+  <programme start="20251216204500 +0600" stop="20251216210000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
+  </programme>
+  <programme start="20251216210000 +0600" stop="20251216213000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsday</title>
+  </programme>
+  <programme start="20251216213000 +0600" stop="20251216214500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
+  </programme>
+  <programme start="20251216214500 +0600" stop="20251216220000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
+  </programme>
+  <programme start="20251216220000 +0600" stop="20251216223000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251216223000 +0600" stop="20251216230000 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251216230000 +0600" stop="20251216233000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251216233000 +0600" stop="20251217000000 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
   </programme>
   <programme start="20251217000000 +0600" stop="20251217003000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 26 с-н 7 с. Стеклянные смесители, пожарные лестницы</title>
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251217003000 +0600" stop="20251217010000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 14 с-н 8 с. Ножи для устриц, освещение стадионов, алмазы</title>
+    <title lang="bn">Business Today</title>
   </programme>
-  <programme start="20251217010000 +0600" stop="20251217020000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем, 13 с-н 14 c</title>
+  <programme start="20251217010000 +0600" stop="20251217013000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251217020000 +0600" stop="20251217030000 +0600" channel="CGTN.cn">
-    <title lang="bn">Реставраторы 4. 4 c</title>
+  <programme start="20251217013000 +0600" stop="20251217020000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251217020000 +0600" stop="20251217023000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251217023000 +0600" stop="20251217030000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251217030000 +0600" stop="20251217033000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 19 с. Птица высокого полета в крошечном жилье</title>
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251217033000 +0600" stop="20251217040000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 20 с. Крошечный передвижной дом в Фениксе, Аризона</title>
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251217040000 +0600" stop="20251217050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 12 с-н 8 с. Desoto Firedome</title>
+  <programme start="20251217040000 +0600" stop="20251217043000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251217050000 +0600" stop="20251217060000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 12 с-н 16 с. Citroen HY Van</title>
+  <programme start="20251217043000 +0600" stop="20251217044500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251217044500 +0600" stop="20251217045500 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251217045500 +0600" stop="20251217060000 +0600" channel="CGTN.cn">
+    <title lang="bn">Politics Live</title>
   </programme>
   <programme start="20251217060000 +0600" stop="20251217070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 12 с-н 17 с. VW Corrado VR6</title>
+    <title lang="bn">BBC News at One</title>
   </programme>
-  <programme start="20251217070000 +0600" stop="20251217080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 12 с-н 18 с. Honda S2000</title>
+  <programme start="20251217070000 +0600" stop="20251217073000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
   </programme>
-  <programme start="20251217080000 +0600" stop="20251217090000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные 2. 5 с. Сад зла</title>
+  <programme start="20251217073000 +0600" stop="20251217074500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today – NYSE Opening Bell</title>
   </programme>
-  <programme start="20251217090000 +0600" stop="20251217100000 +0600" channel="CGTN.cn">
-    <title lang="bn">Гаражный ремонт, 3 c</title>
+  <programme start="20251217074500 +0600" stop="20251217080000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
+  </programme>
+  <programme start="20251217080000 +0600" stop="20251217083000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251217083000 +0600" stop="20251217090000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251217090000 +0600" stop="20251217093000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251217093000 +0600" stop="20251217094500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251217094500 +0600" stop="20251217100000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
   </programme>
   <programme start="20251217100000 +0600" stop="20251217103000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 16 с-н 13 c</title>
+    <title lang="bn">Verified Live</title>
   </programme>
   <programme start="20251217103000 +0600" stop="20251217110000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 13 с-н 10 с. Розетки / Кожаная обувь / Цепи</title>
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251217110000 +0600" stop="20251217120000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж 2. 3 c</title>
+  <programme start="20251217110000 +0600" stop="20251217113000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News at Six</title>
   </programme>
-  <programme start="20251217120000 +0600" stop="20251217130000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы: мировое турне 2. 7 с. Чехия: Шкода-110R</title>
+  <programme start="20251217113000 +0600" stop="20251217120000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251217130000 +0600" stop="20251217140000 +0600" channel="CGTN.cn">
-    <title lang="bn">Грузовиковая династия, 6 с. Дикий Бронко</title>
+  <programme start="20251217120000 +0600" stop="20251217123000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251217140000 +0600" stop="20251217150000 +0600" channel="CGTN.cn">
-    <title lang="bn">Быстрые и громкие 5. 14 c</title>
+  <programme start="20251217123000 +0600" stop="20251217130000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251217150000 +0600" stop="20251217160000 +0600" channel="CGTN.cn">
-    <title lang="bn">Аляска: последний рубеж: спецвыпуск 6. 4 c</title>
+  <programme start="20251217130000 +0600" stop="20251217133000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context</title>
+  </programme>
+  <programme start="20251217133000 +0600" stop="20251217140000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context</title>
+  </programme>
+  <programme start="20251217140000 +0600" stop="20251217143000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context USA</title>
+  </programme>
+  <programme start="20251217143000 +0600" stop="20251217150000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context USA</title>
+  </programme>
+  <programme start="20251217150000 +0600" stop="20251217153000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News at Ten</title>
+  </programme>
+  <programme start="20251217153000 +0600" stop="20251217160000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsnight</title>
   </programme>
   <programme start="20251217160000 +0600" stop="20251217170000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем: классические авто 3. 4 c</title>
+    <title lang="bn">BBC World News America</title>
   </programme>
-  <programme start="20251217170000 +0600" stop="20251217180000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж. 20 с. Разбитый GTO и порубленный Ford &amp;#x27;41: часть 2</title>
+  <programme start="20251217170000 +0600" stop="20251217173000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251217180000 +0600" stop="20251217190000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы: мировое турне 2. 7 с. Чехия: Шкода-110R</title>
+  <programme start="20251217173000 +0600" stop="20251217180000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newscast</title>
   </programme>
-  <programme start="20251217190000 +0600" stop="20251217200000 +0600" channel="CGTN.cn">
-    <title lang="bn">Грузовиковая династия, 6 с. Дикий Бронко</title>
+  <programme start="20251217180000 +0600" stop="20251217183000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251217200000 +0600" stop="20251217210000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 4 с. Chevy LUV 1980 года</title>
+  <programme start="20251217183000 +0600" stop="20251217190000 +0600" channel="CGTN.cn">
+    <title lang="bn">Nobel Minds</title>
   </programme>
-  <programme start="20251217210000 +0600" stop="20251217220000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем 9. 12 c</title>
+  <programme start="20251217190000 +0600" stop="20251217193000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsday</title>
   </programme>
-  <programme start="20251217220000 +0600" stop="20251217230000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 3 с. Honda CVCC 1977 года</title>
+  <programme start="20251217193000 +0600" stop="20251217194500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
   </programme>
-  <programme start="20251217230000 +0600" stop="20251218000000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 11 с-н 6 с. Chevrolet Camaro</title>
+  <programme start="20251217194500 +0600" stop="20251217200000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
+  </programme>
+  <programme start="20251217200000 +0600" stop="20251217203000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsday</title>
+  </programme>
+  <programme start="20251217203000 +0600" stop="20251217204500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
+  </programme>
+  <programme start="20251217204500 +0600" stop="20251217210000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
+  </programme>
+  <programme start="20251217210000 +0600" stop="20251217213000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsday</title>
+  </programme>
+  <programme start="20251217213000 +0600" stop="20251217214500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today Asia</title>
+  </programme>
+  <programme start="20251217214500 +0600" stop="20251217220000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC Sport</title>
+  </programme>
+  <programme start="20251217220000 +0600" stop="20251217223000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251217223000 +0600" stop="20251217230000 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251217230000 +0600" stop="20251217233000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251217233000 +0600" stop="20251218000000 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
   </programme>
   <programme start="20251218000000 +0600" stop="20251218003000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 26 с-н 8 с. Обучающие роботы, боксерские пояса</title>
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251218003000 +0600" stop="20251218010000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 14 с-н 9 с. Сыр чеддер, тренажёры СЛР</title>
+    <title lang="bn">Business Today</title>
   </programme>
-  <programme start="20251218010000 +0600" stop="20251218020000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем, 13 с-н 15 c</title>
+  <programme start="20251218010000 +0600" stop="20251218013000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251218020000 +0600" stop="20251218030000 +0600" channel="CGTN.cn">
-    <title lang="bn">Реставраторы 4. 5 c</title>
+  <programme start="20251218013000 +0600" stop="20251218020000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251218020000 +0600" stop="20251218023000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251218023000 +0600" stop="20251218030000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251218030000 +0600" stop="20251218033000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 21 с. Без детей в крошечном доме</title>
+    <title lang="bn">BBC News</title>
   </programme>
   <programme start="20251218033000 +0600" stop="20251218040000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 22 с. Простота в Сан-Диего, Калифорния</title>
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251218040000 +0600" stop="20251218050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 12 с-н 9 с. Лучшие машины США</title>
+  <programme start="20251218040000 +0600" stop="20251218043000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251218050000 +0600" stop="20251218060000 +0600" channel="CGTN.cn">
-    <title lang="bn">Золотой прииск Фредди Доджа 4. 2 с. Чудеса золотодобычи</title>
+  <programme start="20251218043000 +0600" stop="20251218044500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251218044500 +0600" stop="20251218050000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News</title>
+  </programme>
+  <programme start="20251218050000 +0600" stop="20251218053000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
+  </programme>
+  <programme start="20251218053000 +0600" stop="20251218060000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
   </programme>
   <programme start="20251218060000 +0600" stop="20251218070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Дьявольский каньон, 1 c</title>
+    <title lang="bn">BBC News at One</title>
   </programme>
-  <programme start="20251218070000 +0600" stop="20251218080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Искатели опалов 7. 6 с. В трясине</title>
+  <programme start="20251218070000 +0600" stop="20251218073000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
   </programme>
-  <programme start="20251218080000 +0600" stop="20251218090000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные 2. 6 с. Крысиный король</title>
+  <programme start="20251218073000 +0600" stop="20251218074500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today – NYSE Opening Bell</title>
   </programme>
-  <programme start="20251218090000 +0600" stop="20251218100000 +0600" channel="CGTN.cn">
-    <title lang="bn">Гаражный ремонт, 4 c</title>
+  <programme start="20251218074500 +0600" stop="20251218080000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News Now</title>
+  </programme>
+  <programme start="20251218080000 +0600" stop="20251218083000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251218083000 +0600" stop="20251218090000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251218090000 +0600" stop="20251218093000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
+  </programme>
+  <programme start="20251218093000 +0600" stop="20251218094500 +0600" channel="CGTN.cn">
+    <title lang="bn">Business Today</title>
+  </programme>
+  <programme start="20251218094500 +0600" stop="20251218100000 +0600" channel="CGTN.cn">
+    <title lang="bn">Verified Live</title>
   </programme>
   <programme start="20251218100000 +0600" stop="20251218103000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 16 с-н 14 c</title>
+    <title lang="bn">Verified Live</title>
   </programme>
   <programme start="20251218103000 +0600" stop="20251218110000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 13 с-н 11 с. Деревянные скульптуры / Кросс-тренажеры / Перьевые ручки</title>
+    <title lang="bn">BBC News</title>
   </programme>
-  <programme start="20251218110000 +0600" stop="20251218120000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж 2. 4 c</title>
+  <programme start="20251218110000 +0600" stop="20251218113000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News at Six</title>
   </programme>
-  <programme start="20251218120000 +0600" stop="20251218140000 +0600" channel="CGTN.cn">
-    <title lang="bn">Операция Спасение дома 7. 3 с. Там, где бродит бизон</title>
+  <programme start="20251218113000 +0600" stop="20251218120000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251218140000 +0600" stop="20251218150000 +0600" channel="CGTN.cn">
-    <title lang="bn">Гарпунные охотники. 6 с. Держи врагов ближе</title>
+  <programme start="20251218120000 +0600" stop="20251218123000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251218150000 +0600" stop="20251218160000 +0600" channel="CGTN.cn">
-    <title lang="bn">Аляска: последний рубеж: спецвыпуск 7. 1 c</title>
+  <programme start="20251218123000 +0600" stop="20251218130000 +0600" channel="CGTN.cn">
+    <title lang="bn">The World Today with Maryam Moshiri</title>
   </programme>
-  <programme start="20251218160000 +0600" stop="20251218170000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем: классические авто 3. 5 c</title>
+  <programme start="20251218130000 +0600" stop="20251218133000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context</title>
   </programme>
-  <programme start="20251218170000 +0600" stop="20251218180000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж. 21 с. Corvette &amp;#x27;57: часть 1</title>
+  <programme start="20251218133000 +0600" stop="20251218140000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context</title>
   </programme>
-  <programme start="20251218180000 +0600" stop="20251218200000 +0600" channel="CGTN.cn">
-    <title lang="bn">Операция Спасение дома 7. 3 с. Там, где бродит бизон</title>
+  <programme start="20251218140000 +0600" stop="20251218143000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context USA</title>
   </programme>
-  <programme start="20251218200000 +0600" stop="20251218210000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 5 с. Ford Mustang GT 1988 года</title>
+  <programme start="20251218143000 +0600" stop="20251218150000 +0600" channel="CGTN.cn">
+    <title lang="bn">The Context USA</title>
   </programme>
-  <programme start="20251218210000 +0600" stop="20251218220000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем 9. 13 с. Винтажный гараж</title>
+  <programme start="20251218150000 +0600" stop="20251218153000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC News at Ten</title>
   </programme>
-  <programme start="20251218220000 +0600" stop="20251218230000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 4 с. Chevy LUV 1980 года</title>
+  <programme start="20251218153000 +0600" stop="20251218160000 +0600" channel="CGTN.cn">
+    <title lang="bn">Newsnight</title>
   </programme>
-  <programme start="20251218230000 +0600" stop="20251219000000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 11 с-н 7 с. Автоамфибия</title>
-  </programme>
-  <programme start="20251219000000 +0600" stop="20251219003000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 26 с-н 9 c</title>
-  </programme>
-  <programme start="20251219003000 +0600" stop="20251219010000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 14 с-н 10 с. Форд-Транзит, прорезиненные плащи, солёная рыба</title>
-  </programme>
-  <programme start="20251219010000 +0600" stop="20251219020000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем, 14 с-н 1 c</title>
-  </programme>
-  <programme start="20251219020000 +0600" stop="20251219030000 +0600" channel="CGTN.cn">
-    <title lang="bn">Реставраторы 4. 6 c</title>
-  </programme>
-  <programme start="20251219030000 +0600" stop="20251219033000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 23 с. Крошечные потребности в Вашингтоне</title>
-  </programme>
-  <programme start="20251219033000 +0600" stop="20251219040000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за крошечными домами 4. 24 с. Крошечный дом для путешественников</title>
-  </programme>
-  <programme start="20251219040000 +0600" stop="20251219050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 12 с-н 10 с. Rover P5 B</title>
-  </programme>
-  <programme start="20251219050000 +0600" stop="20251219060000 +0600" channel="CGTN.cn">
-    <title lang="bn">Гений автодизайна, 10 с-н 16 с. Неделя из жизни</title>
-  </programme>
-  <programme start="20251219060000 +0600" stop="20251219063000 +0600" channel="CGTN.cn">
-    <title lang="bn">Трое мужчин, четыре колеса, 1 с. Ferrari F40</title>
-  </programme>
-  <programme start="20251219063000 +0600" stop="20251219070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Трое мужчин, четыре колеса, 2 с. Stovebolt Special</title>
-  </programme>
-  <programme start="20251219070000 +0600" stop="20251219080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Майк Брюер: Реальная сделка, 6 c</title>
-  </programme>
-  <programme start="20251219080000 +0600" stop="20251219090000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные 2. 7 с. Неожиданность</title>
-  </programme>
-  <programme start="20251219090000 +0600" stop="20251219100000 +0600" channel="CGTN.cn">
-    <title lang="bn">Гаражный ремонт, 5 с. Элитный автомотоспорт</title>
-  </programme>
-  <programme start="20251219100000 +0600" stop="20251219103000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 16 с-н 15 c</title>
-  </programme>
-  <programme start="20251219103000 +0600" stop="20251219110000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это устроено? 13 с-н 12 с. Оливковое масло / Погрузчики / Лыжные ботинки</title>
-  </programme>
-  <programme start="20251219110000 +0600" stop="20251219120000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж 2. 5 c</title>
-  </programme>
-  <programme start="20251219120000 +0600" stop="20251219130000 +0600" channel="CGTN.cn">
-    <title lang="bn">Полицейская камера 2. 13 с. В опасной ситуации</title>
-  </programme>
-  <programme start="20251219130000 +0600" stop="20251219133000 +0600" channel="CGTN.cn">
-    <title lang="bn">Ночной арест 2. 3 с. Мужья отвязались</title>
-  </programme>
-  <programme start="20251219133000 +0600" stop="20251219140000 +0600" channel="CGTN.cn">
-    <title lang="bn">Ночной арест 2. 4 с. Соседский дозор</title>
-  </programme>
-  <programme start="20251219140000 +0600" stop="20251219150000 +0600" channel="CGTN.cn">
-    <title lang="bn">Скоростная погоня 2. 3 с. Кошмар на автомагистрали</title>
-  </programme>
-  <programme start="20251219150000 +0600" stop="20251219160000 +0600" channel="CGTN.cn">
-    <title lang="bn">Аляска: последний рубеж: спецвыпуск 7. 3 c</title>
-  </programme>
-  <programme start="20251219160000 +0600" stop="20251219170000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем: классические авто 4. 1 c</title>
-  </programme>
-  <programme start="20251219170000 +0600" stop="20251219180000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мятежный гараж. 22 с. Corvette &amp;#x27;57: часть 2</title>
-  </programme>
-  <programme start="20251219180000 +0600" stop="20251219190000 +0600" channel="CGTN.cn">
-    <title lang="bn">Полицейская камера 2. 13 с. В опасной ситуации</title>
-  </programme>
-  <programme start="20251219190000 +0600" stop="20251219193000 +0600" channel="CGTN.cn">
-    <title lang="bn">Ночной арест 2. 3 с. Мужья отвязались</title>
-  </programme>
-  <programme start="20251219193000 +0600" stop="20251219200000 +0600" channel="CGTN.cn">
-    <title lang="bn">Ночной арест 2. 4 с. Соседский дозор</title>
-  </programme>
-  <programme start="20251219200000 +0600" stop="20251219210000 +0600" channel="CGTN.cn">
-    <title lang="bn">Махинаторы, 13 с-н 6 с. Chevy Corvair 1963 года</title>
-  </programme>
-  <programme start="20251219210000 +0600" stop="20251219220000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем 9. 14 с. Сельская жизнь</title>
-  </programme>
-  <programme start="20251219220000 +0600" stop="20251219223000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 11 с-н 2 c</title>
-  </programme>
-  <programme start="20251219223000 +0600" stop="20251219230000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 11 с-н 3 c</title>
-  </programme>
-  <programme start="20251219230000 +0600" stop="20251219233000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 11 с-н 4 c</title>
-  </programme>
-  <programme start="20251219233000 +0600" stop="20251220000000 +0600" channel="CGTN.cn">
-    <title lang="bn">Как это сделано? 11 с-н 5 c</title>
-  </programme>
-  <programme start="20251220000000 +0600" stop="20251220010000 +0600" channel="CGTN.cn">
-    <title lang="bn">Европейские дальнобойщики. 1 c</title>
-  </programme>
-  <programme start="20251220010000 +0600" stop="20251220020000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мегаперевозки, 5 c</title>
-  </programme>
-  <programme start="20251220020000 +0600" stop="20251220030000 +0600" channel="CGTN.cn">
-    <title lang="bn">Мегаперевозки, 6 c</title>
-  </programme>
-  <programme start="20251220030000 +0600" stop="20251220040000 +0600" channel="CGTN.cn">
-    <title lang="bn">Европейские дальнобойщики 4. 1 c</title>
-  </programme>
-  <programme start="20251220040000 +0600" stop="20251220050000 +0600" channel="CGTN.cn">
-    <title lang="bn">Европейские дальнобойщики 4. 2 c</title>
-  </programme>
-  <programme start="20251220050000 +0600" stop="20251220053000 +0600" channel="CGTN.cn">
-    <title lang="bn">Спасатели имущества 2. 2 с. Фермерский дом на северо-востоке США</title>
-  </programme>
-  <programme start="20251220053000 +0600" stop="20251220060000 +0600" channel="CGTN.cn">
-    <title lang="bn">Спасатели имущества 2. 3 с. Спасение в Колумбусе</title>
-  </programme>
-  <programme start="20251220060000 +0600" stop="20251220063000 +0600" channel="CGTN.cn">
-    <title lang="bn">Спасатели имущества 2. 4 с. Гостиница на холме</title>
-  </programme>
-  <programme start="20251220063000 +0600" stop="20251220070000 +0600" channel="CGTN.cn">
-    <title lang="bn">Спасатели имущества 2. 5 с. Причал на озере</title>
-  </programme>
-  <programme start="20251220070000 +0600" stop="20251220080000 +0600" channel="CGTN.cn">
-    <title lang="bn">Выживание без купюр 2. 4 с. Патагония</title>
-  </programme>
-  <programme start="20251220080000 +0600" stop="20251220090000 +0600" channel="CGTN.cn">
-    <title lang="bn">Выживание без купюр 2. 5 с. Филиппины</title>
-  </programme>
-  <programme start="20251220090000 +0600" stop="20251220100000 +0600" channel="CGTN.cn">
-    <title lang="bn">Аляска: последний рубеж 7. 1 c</title>
-  </programme>
-  <programme start="20251220100000 +0600" stop="20251220110000 +0600" channel="CGTN.cn">
-    <title lang="bn">Аляска: последний рубеж 7. 2 c</title>
-  </programme>
-  <programme start="20251220110000 +0600" stop="20251220120000 +0600" channel="CGTN.cn">
-    <title lang="bn">Аляска: последний рубеж 7. 3 c</title>
-  </programme>
-  <programme start="20251220120000 +0600" stop="20251220130000 +0600" channel="CGTN.cn">
-    <title lang="bn">Неизвестная экспедиция 8. 15 с. По следам Бонни и Клайда</title>
-  </programme>
-  <programme start="20251220130000 +0600" stop="20251220140000 +0600" channel="CGTN.cn">
-    <title lang="bn">Встречи с пришельцами: факт или вымысел, 7 с. Авария в Калифорнии</title>
-  </programme>
-  <programme start="20251220140000 +0600" stop="20251220150000 +0600" channel="CGTN.cn">
-    <title lang="bn">NASA: необъяснимые материалы 4. 8 c</title>
-  </programme>
-  <programme start="20251220150000 +0600" stop="20251220160000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные 2. 31 c</title>
-  </programme>
-  <programme start="20251220160000 +0600" stop="20251220170000 +0600" channel="CGTN.cn">
-    <title lang="bn">Голые и напуганные 2. 32 с. Испытания в Австралии</title>
-  </programme>
-  <programme start="20251220170000 +0600" stop="20251220180000 +0600" channel="CGTN.cn">
-    <title lang="bn">Металлоломщики 3. 1 c</title>
-  </programme>
-  <programme start="20251220180000 +0600" stop="20251220190000 +0600" channel="CGTN.cn">
-    <title lang="bn">Неизвестная экспедиция 8. 15 с. По следам Бонни и Клайда</title>
-  </programme>
-  <programme start="20251220190000 +0600" stop="20251220200000 +0600" channel="CGTN.cn">
-    <title lang="bn">Встречи с пришельцами: факт или вымысел, 7 с. Авария в Калифорнии</title>
-  </programme>
-  <programme start="20251220200000 +0600" stop="20251220203000 +0600" channel="CGTN.cn">
-    <title lang="bn">Охотники за старьем, 12 с-н 13 c</title>
+  <programme start="20251218160000 +0600" stop="20251218163000 +0600" channel="CGTN.cn">
+    <title lang="bn">BBC World News America</title>
   </programme>
   <channel id="cna.sg">
     <display-name>Channel News Asia</display-name>
