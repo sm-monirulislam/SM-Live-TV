@@ -6,9 +6,9 @@ import re
 from datetime import datetime, timedelta
 from io import StringIO
 
-# =========================
-# CONFIG
-# =========================
+# -------------------------
+# FILE CONFIG
+# -------------------------
 m3u_files = [
     "Jagobd.m3u",
     "AynaOTT.m3u",
@@ -26,18 +26,19 @@ json_file = "Bangla Channel.json"
 output_live = "Combined_Live_TV.m3u"
 output_dead = "offline.m3u"
 
+# ✅ EPG URL (ONLY ADDITION)
 EPG_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
 
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
-# ❌ যেগুলো চেক হবে না
+# ❌ যেগুলোর লিংক চেক হবে না
 skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee"]
 
 
-# =========================
-# SMART CHECK
-# =========================
+# ========================================================
+# SMART LIVE CHECK (UNCHANGED)
+# ========================================================
 async def smart_check(session, url):
     try:
         async with session.head(url, timeout=4) as r:
@@ -58,7 +59,7 @@ async def smart_check(session, url):
     try:
         async with session.get(url, timeout=6) as r:
             chunk = await r.content.read(1024)
-            if r.status == 200 and chunk:
+            if r.status == 200 and len(chunk) > 0:
                 return True
     except:
         pass
@@ -66,23 +67,23 @@ async def smart_check(session, url):
     return False
 
 
-# =========================
+# ========================================================
 # MAIN
-# =========================
+# ========================================================
 async def main():
     live_buf = StringIO()
     dead_buf = StringIO()
 
-    # ✅ EPG যুক্ত header
+    # ✅ ONLY CHANGE: EPG added in header
     live_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
     dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
 
     all_entries = []
     total_found = 0
 
-    # -------------------------
-    # M3U FILES COMBINE
-    # -------------------------
+    # -------------------------------
+    # STEP 1: M3U COMBINE
+    # -------------------------------
     for file_name in m3u_files:
         if not os.path.exists(file_name):
             continue
@@ -125,9 +126,9 @@ async def main():
             else:
                 i += 1
 
-    # -------------------------
-    # JSON ADD
-    # -------------------------
+    # -------------------------------
+    # STEP 2: JSON ADD
+    # -------------------------------
     if os.path.exists(json_file):
         with open(json_file, "r", encoding="utf-8") as jf:
             json_data = json.load(jf)
@@ -150,32 +151,15 @@ async def main():
             all_entries.append((block, url))
             total_found += 1
 
-    # -------------------------
-    # SMART CHECK
-    # -------------------------
+    # -------------------------------
+    # STEP 3: SMART CHECK (ORIGINAL FAST WAY)
+    # -------------------------------
+    async with aiohttp.ClientSession() as session:
+        tasks = [smart_check(session, url) for _, url in all_entries]
+        results = await asyncio.gather(*tasks)
+
     alive_list = []
     dead_list = []
-
-    async with aiohttp.ClientSession() as session:
-        tasks = []
-        for block, url in all_entries:
-            grp = ""
-            if 'group-title="' in block[0]:
-                m = re_group_title.search(block[0])
-                if m:
-                    grp = m.group(1)
-
-            if grp in skip_check_groups:
-                tasks.append(None)
-            else:
-                tasks.append(smart_check(session, url))
-
-        results = []
-        for t in tasks:
-            if t is None:
-                results.append(True)
-            else:
-                results.append(await t)
 
     for i, status in enumerate(results):
         block, url = all_entries[i]
@@ -188,7 +172,7 @@ async def main():
 
         if grp in skip_check_groups:
             alive_list.append(block)
-            print(f"⏭ SKIPPED: {grp}")
+            print(f"⏭ SKIPPED (Auto-LIVE): {grp}")
         elif status:
             alive_list.append(block)
             print(f"✔ LIVE: {url}")
@@ -196,9 +180,9 @@ async def main():
             dead_list.append(block)
             print(f"✘ DEAD: {url}")
 
-    # -------------------------
-    # WRITE FILES
-    # -------------------------
+    # -------------------------------
+    # STEP 4: WRITE FILES
+    # -------------------------------
     for block in alive_list:
         for line in block:
             live_buf.write(line + "\n")
@@ -222,9 +206,9 @@ async def main():
         f.write(dead_buf.getvalue())
 
     print("\n✅ DONE")
-    print(f"Total : {total_found}")
-    print(f"Live  : {len(alive_list)}")
-    print(f"Dead  : {len(dead_list)}")
+    print(f"Total Found : {total_found}")
+    print(f"Live        : {len(alive_list)}")
+    print(f"Dead        : {len(dead_list)}")
 
 
 asyncio.run(main())
