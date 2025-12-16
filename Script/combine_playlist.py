@@ -6,9 +6,9 @@ import re
 from datetime import datetime, timedelta
 from io import StringIO
 
-# -------------------------
-# FILE CONFIG
-# -------------------------
+# =========================
+# CONFIG
+# =========================
 m3u_files = [
     "Jagobd.m3u",
     "AynaOTT.m3u",
@@ -22,19 +22,22 @@ m3u_files = [
 ]
 
 json_file = "Bangla Channel.json"
+
 output_live = "Combined_Live_TV.m3u"
 output_dead = "offline.m3u"
+
+EPG_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
 
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
-# ❌ যেগুলোর লিংক চেক হবে না
+# ❌ যেগুলো চেক হবে না
 skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee"]
 
 
-# ========================================================
-# 🔥 Smart Live Checker Function
-# ========================================================
+# =========================
+# SMART CHECK
+# =========================
 async def smart_check(session, url):
     try:
         async with session.head(url, timeout=4) as r:
@@ -44,6 +47,7 @@ async def smart_check(session, url):
         pass
 
     await asyncio.sleep(0.2)
+
     try:
         async with session.head(url, timeout=4) as r:
             if r.status == 200:
@@ -54,7 +58,7 @@ async def smart_check(session, url):
     try:
         async with session.get(url, timeout=6) as r:
             chunk = await r.content.read(1024)
-            if r.status == 200 and len(chunk) > 0:
+            if r.status == 200 and chunk:
                 return True
     except:
         pass
@@ -62,22 +66,23 @@ async def smart_check(session, url):
     return False
 
 
-# ========================================================
-# 🔥 MAIN FUNCTION
-# ========================================================
+# =========================
+# MAIN
+# =========================
 async def main():
     live_buf = StringIO()
     dead_buf = StringIO()
 
-    live_buf.write("#EXTM3U\n\n")
-    dead_buf.write("#EXTM3U\n\n")
+    # ✅ EPG যুক্ত header
+    live_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
+    dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
 
     all_entries = []
     total_found = 0
 
-    # -------------------------------
-    # Step 1: M3U Combine
-    # -------------------------------
+    # -------------------------
+    # M3U FILES COMBINE
+    # -------------------------
     for file_name in m3u_files:
         if not os.path.exists(file_name):
             continue
@@ -95,7 +100,6 @@ async def main():
 
             if line.startswith(EXTINF_PREFIX):
 
-                # Always enforce group-title
                 if 'group-title="' in line:
                     line = re_group_title.sub(
                         f'group-title="{group_name}"', line
@@ -107,13 +111,10 @@ async def main():
                         line
                     )
 
-                # Collect full block
                 block = [line]
                 j = i + 1
 
-                while j < n:
-                    if lines[j].startswith(EXTINF_PREFIX):
-                        break
+                while j < n and not lines[j].startswith(EXTINF_PREFIX):
                     block.append(lines[j])
                     j += 1
 
@@ -124,9 +125,9 @@ async def main():
             else:
                 i += 1
 
-    # -------------------------------
-    # Step 2: JSON Add
-    # -------------------------------
+    # -------------------------
+    # JSON ADD
+    # -------------------------
     if os.path.exists(json_file):
         with open(json_file, "r", encoding="utf-8") as jf:
             json_data = json.load(jf)
@@ -149,41 +150,55 @@ async def main():
             all_entries.append((block, url))
             total_found += 1
 
-    # -------------------------------
-    # Step 3: Smart Check
-    # -------------------------------
+    # -------------------------
+    # SMART CHECK
+    # -------------------------
     alive_list = []
     dead_list = []
 
     async with aiohttp.ClientSession() as session:
-        tasks = [smart_check(session, url) for _, url in all_entries]
-        results = await asyncio.gather(*tasks)
+        tasks = []
+        for block, url in all_entries:
+            grp = ""
+            if 'group-title="' in block[0]:
+                m = re_group_title.search(block[0])
+                if m:
+                    grp = m.group(1)
+
+            if grp in skip_check_groups:
+                tasks.append(None)
+            else:
+                tasks.append(smart_check(session, url))
+
+        results = []
+        for t in tasks:
+            if t is None:
+                results.append(True)
+            else:
+                results.append(await t)
 
     for i, status in enumerate(results):
         block, url = all_entries[i]
 
         grp = ""
         if 'group-title="' in block[0]:
-            match = re_group_title.search(block[0])
-            if match:
-                grp = match.group(1)
+            m = re_group_title.search(block[0])
+            if m:
+                grp = m.group(1)
 
-        # ⏭ Skip selected groups
         if grp in skip_check_groups:
             alive_list.append(block)
-            print(f"⏭ SKIPPED (Auto-LIVE): {grp} → {url}")
-            continue
-
-        if status:
+            print(f"⏭ SKIPPED: {grp}")
+        elif status:
             alive_list.append(block)
             print(f"✔ LIVE: {url}")
         else:
             dead_list.append(block)
             print(f"✘ DEAD: {url}")
 
-    # -------------------------------
-    # Step 4: Write Files
-    # -------------------------------
+    # -------------------------
+    # WRITE FILES
+    # -------------------------
     for block in alive_list:
         for line in block:
             live_buf.write(line + "\n")
@@ -200,21 +215,16 @@ async def main():
     live_buf.write(stamp)
     dead_buf.write(stamp)
 
-    with open(output_live, "w", encoding="utf-8") as lf:
-        lf.write(live_buf.getvalue())
+    with open(output_live, "w", encoding="utf-8") as f:
+        f.write(live_buf.getvalue())
 
-    with open(output_dead, "w", encoding="utf-8") as df:
-        df.write(dead_buf.getvalue())
+    with open(output_dead, "w", encoding="utf-8") as f:
+        f.write(dead_buf.getvalue())
 
-    print("\n=====================================")
-    print("    ✅ Playlist Build Completed")
-    print("=====================================")
-    print(f"Total Found : {total_found}")
-    print(f"Alive       : {len(alive_list)}")
-    print(f"Dead        : {len(dead_list)}")
-    print(f"Output Live : {output_live}")
-    print(f"Output Dead : {output_dead}")
-    print("=====================================\n")
+    print("\n✅ DONE")
+    print(f"Total : {total_found}")
+    print(f"Live  : {len(alive_list)}")
+    print(f"Dead  : {len(dead_list)}")
 
 
 asyncio.run(main())
