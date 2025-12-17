@@ -27,17 +27,17 @@ json_file = "Bangla Channel.json"
 output_live = "Combined_Live_TV.m3u"
 output_dead = "offline.m3u"
 
-# ✅ EPG URL (ONLY ADDITION)
+# ✅ EPG URL
 EPG_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
 
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
-# ❌ যেগুলোর লিংক চেক হবে না
-skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee"]
+# ❌ যেগুলোর লিংক চেক হবে না (UPDATED)
+skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee", "AynaOTT"]
 
 # ========================================================
-# SMART LIVE CHECK (UNCHANGED LOGIC)
+# SMART LIVE CHECK
 # ========================================================
 
 async def smart_check(session, url):
@@ -68,7 +68,6 @@ async def main():
     live_buf = StringIO()
     dead_buf = StringIO()
 
-    # ✅ ONLY CHANGE: EPG added in header
     live_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
     dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
 
