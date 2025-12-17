@@ -9,6 +9,7 @@ from io import StringIO
 # -------------------------
 # FILE CONFIG
 # -------------------------
+
 m3u_files = [
     "Jagobd.m3u",
     "AynaOTT.m3u",
@@ -26,7 +27,7 @@ json_file = "Bangla Channel.json"
 output_live = "Combined_Live_TV.m3u"
 output_dead = "offline.m3u"
 
-# ✅ EPG URL (ONLY ADDITION)
+# ✅ EPG URL
 EPG_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
 
 EXTINF_PREFIX = "#EXTINF:"
@@ -35,10 +36,10 @@ re_group_title = re.compile(r'group-title="(.*?)"')
 # ❌ যেগুলোর লিংক চেক হবে না (UPDATED)
 skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee", "AynaOTT"]
 
+# ========================================================
+# SMART LIVE CHECK
+# ========================================================
 
-# ========================================================
-# SMART LIVE CHECK (UNCHANGED)
-# ========================================================
 async def smart_check(session, url):
     try:
         async with session.head(url, timeout=4) as r:
@@ -50,31 +51,23 @@ async def smart_check(session, url):
     await asyncio.sleep(0.2)
 
     try:
-        async with session.head(url, timeout=4) as r:
-            if r.status == 200:
-                return True
-    except:
-        pass
-
-    try:
         async with session.get(url, timeout=6) as r:
             chunk = await r.content.read(1024)
-            if r.status == 200 and len(chunk) > 0:
+            if r.status == 200 and chunk:
                 return True
     except:
         pass
 
     return False
 
-
 # ========================================================
 # MAIN
 # ========================================================
+
 async def main():
     live_buf = StringIO()
     dead_buf = StringIO()
 
-    # ✅ EPG added in header
     live_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
     dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
 
@@ -100,7 +93,6 @@ async def main():
             line = lines[i]
 
             if line.startswith(EXTINF_PREFIX):
-
                 if 'group-title="' in line:
                     line = re_group_title.sub(
                         f'group-title="{group_name}"', line
@@ -165,20 +157,16 @@ async def main():
         block, url = all_entries[i]
 
         grp = ""
-        if 'group-title="' in block[0]:
-            m = re_group_title.search(block[0])
-            if m:
-                grp = m.group(1)
+        m = re_group_title.search(block[0])
+        if m:
+            grp = m.group(1)
 
         if grp in skip_check_groups:
             alive_list.append(block)
-            print(f"⏭ SKIPPED (Auto-LIVE): {grp}")
         elif status:
             alive_list.append(block)
-            print(f"✔ LIVE: {url}")
         else:
             dead_list.append(block)
-            print(f"✘ DEAD: {url}")
 
     # -------------------------------
     # STEP 4: WRITE FILES
@@ -205,10 +193,10 @@ async def main():
     with open(output_dead, "w", encoding="utf-8") as f:
         f.write(dead_buf.getvalue())
 
-    print("\n✅ DONE")
-    print(f"Total Found : {total_found}")
-    print(f"Live        : {len(alive_list)}")
-    print(f"Dead        : {len(dead_list)}")
+    print("DONE")
+    print("Total:", total_found)
+    print("Live :", len(alive_list))
+    print("Dead :", len(dead_list))
 
 
 asyncio.run(main())
