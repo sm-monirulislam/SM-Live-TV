@@ -26,18 +26,23 @@ json_file = "Bangla Channel.json"
 output_live = "Combined_Live_TV.m3u"
 output_dead = "offline.m3u"
 
-# ✅ EPG URL (ONLY ADDITION)
+# ✅ EPG
 EPG_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
 
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
-# ❌ যেগুলোর লিংক চেক হবে না
+# ✅ NEWS REGEX
+re_news = re.compile(
+    r'(news|khobor|somoy|jamuna|independent|channel\s*24|ekattor|atn\s*news|dbc|banglavision|bbc|cnn|al\s*jazeera)',
+    re.IGNORECASE
+)
+
+# ❌ Skip check groups
 skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee"]
 
-
 # ========================================================
-# SMART LIVE CHECK (UNCHANGED)
+# SMART LIVE CHECK
 # ========================================================
 async def smart_check(session, url):
     try:
@@ -74,7 +79,6 @@ async def main():
     live_buf = StringIO()
     dead_buf = StringIO()
 
-    # ✅ ONLY CHANGE: EPG added in header
     live_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
     dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
 
@@ -112,6 +116,12 @@ async def main():
                         line
                     )
 
+                # ✅ FORCE NEWS CHANNEL GROUP
+                if re_news.search(line):
+                    line = re_group_title.sub(
+                        'group-title="News Channel"', line
+                    )
+
                 block = [line]
                 j = i + 1
 
@@ -127,7 +137,7 @@ async def main():
                 i += 1
 
     # -------------------------------
-    # STEP 2: JSON ADD
+    # STEP 2: JSON ADD (UNCHANGED)
     # -------------------------------
     if os.path.exists(json_file):
         with open(json_file, "r", encoding="utf-8") as jf:
@@ -152,7 +162,7 @@ async def main():
             total_found += 1
 
     # -------------------------------
-    # STEP 3: SMART CHECK (ORIGINAL FAST WAY)
+    # STEP 3: SMART CHECK
     # -------------------------------
     async with aiohttp.ClientSession() as session:
         tasks = [smart_check(session, url) for _, url in all_entries]
@@ -165,23 +175,28 @@ async def main():
         block, url = all_entries[i]
 
         grp = ""
-        if 'group-title="' in block[0]:
-            m = re_group_title.search(block[0])
-            if m:
-                grp = m.group(1)
+        m = re_group_title.search(block[0])
+        if m:
+            grp = m.group(1)
 
         if grp in skip_check_groups:
             alive_list.append(block)
-            print(f"⏭ SKIPPED (Auto-LIVE): {grp}")
         elif status:
             alive_list.append(block)
-            print(f"✔ LIVE: {url}")
         else:
             dead_list.append(block)
-            print(f"✘ DEAD: {url}")
 
     # -------------------------------
-    # STEP 4: WRITE FILES
+    # STEP 4: NEWS FIRST SORT
+    # -------------------------------
+    def is_news(block):
+        m = re_group_title.search(block[0])
+        return m and m.group(1) == "News Channel"
+
+    alive_list = sorted(alive_list, key=lambda b: (not is_news(b)))
+
+    # -------------------------------
+    # STEP 5: WRITE FILES
     # -------------------------------
     for block in alive_list:
         for line in block:
@@ -205,7 +220,7 @@ async def main():
     with open(output_dead, "w", encoding="utf-8") as f:
         f.write(dead_buf.getvalue())
 
-    print("\n✅ DONE")
+    print("✅ DONE")
     print(f"Total Found : {total_found}")
     print(f"Live        : {len(alive_list)}")
     print(f"Dead        : {len(dead_list)}")
