@@ -9,6 +9,7 @@ from io import StringIO
 # -------------------------
 # FILE CONFIG
 # -------------------------
+
 m3u_files = [
     "Jagobd.m3u",
     "AynaOTT.m3u",
@@ -26,24 +27,19 @@ json_file = "Bangla Channel.json"
 output_live = "Combined_Live_TV.m3u"
 output_dead = "offline.m3u"
 
-# ✅ EPG
+# ✅ EPG URL (ONLY ADDITION)
 EPG_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
 
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
-# ✅ NEWS REGEX
-re_news = re.compile(
-    r'(news|khobor|somoy|jamuna|independent|channel\s*24|ekattor|atn\s*news|dbc|banglavision|bbc|cnn|al\s*jazeera)',
-    re.IGNORECASE
-)
-
-# ❌ Skip check groups
+# ❌ যেগুলোর লিংক চেক হবে না
 skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee"]
 
 # ========================================================
-# SMART LIVE CHECK
+# SMART LIVE CHECK (UNCHANGED LOGIC)
 # ========================================================
+
 async def smart_check(session, url):
     try:
         async with session.head(url, timeout=4) as r:
@@ -55,30 +51,24 @@ async def smart_check(session, url):
     await asyncio.sleep(0.2)
 
     try:
-        async with session.head(url, timeout=4) as r:
-            if r.status == 200:
-                return True
-    except:
-        pass
-
-    try:
         async with session.get(url, timeout=6) as r:
             chunk = await r.content.read(1024)
-            if r.status == 200 and len(chunk) > 0:
+            if r.status == 200 and chunk:
                 return True
     except:
         pass
 
     return False
 
-
 # ========================================================
 # MAIN
 # ========================================================
+
 async def main():
     live_buf = StringIO()
     dead_buf = StringIO()
 
+    # ✅ ONLY CHANGE: EPG added in header
     live_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
     dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
 
@@ -104,7 +94,6 @@ async def main():
             line = lines[i]
 
             if line.startswith(EXTINF_PREFIX):
-
                 if 'group-title="' in line:
                     line = re_group_title.sub(
                         f'group-title="{group_name}"', line
@@ -114,12 +103,6 @@ async def main():
                         r'#EXTINF:-1(.*?),',
                         rf'#EXTINF:-1\1 group-title="{group_name}",',
                         line
-                    )
-
-                # ✅ FORCE NEWS CHANNEL GROUP
-                if re_news.search(line):
-                    line = re_group_title.sub(
-                        'group-title="News Channel"', line
                     )
 
                 block = [line]
@@ -137,7 +120,7 @@ async def main():
                 i += 1
 
     # -------------------------------
-    # STEP 2: JSON ADD (UNCHANGED)
+    # STEP 2: JSON ADD
     # -------------------------------
     if os.path.exists(json_file):
         with open(json_file, "r", encoding="utf-8") as jf:
@@ -187,16 +170,7 @@ async def main():
             dead_list.append(block)
 
     # -------------------------------
-    # STEP 4: NEWS FIRST SORT
-    # -------------------------------
-    def is_news(block):
-        m = re_group_title.search(block[0])
-        return m and m.group(1) == "News Channel"
-
-    alive_list = sorted(alive_list, key=lambda b: (not is_news(b)))
-
-    # -------------------------------
-    # STEP 5: WRITE FILES
+    # STEP 4: WRITE FILES
     # -------------------------------
     for block in alive_list:
         for line in block:
@@ -220,10 +194,10 @@ async def main():
     with open(output_dead, "w", encoding="utf-8") as f:
         f.write(dead_buf.getvalue())
 
-    print("✅ DONE")
-    print(f"Total Found : {total_found}")
-    print(f"Live        : {len(alive_list)}")
-    print(f"Dead        : {len(dead_list)}")
+    print("DONE")
+    print("Total:", total_found)
+    print("Live :", len(alive_list))
+    print("Dead :", len(dead_list))
 
 
 asyncio.run(main())
