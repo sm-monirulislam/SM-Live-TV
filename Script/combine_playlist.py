@@ -35,44 +35,37 @@ re_group_title = re.compile(r'group-title="(.*?)"')
 # ❌ যেগুলোর লিংক চেক হবে না
 skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee", "AynaOTT"]
 
+# -------------------------
+# CONCURRENCY CONTROL
+# -------------------------
+SEM = asyncio.Semaphore(20)   # একসাথে 20টা চেক
+
 # ========================================================
-# BETTER SMART CHECKER (ONLY CHANGE)
+# SMART CHECK (Semaphore + Retry)
 # ========================================================
 
-async def smart_check(session, url):
+async def smart_check(session, url, retries=2):
     headers = {
         "User-Agent": "Mozilla/5.0",
         "Accept": "*/*",
         "Connection": "keep-alive"
     }
 
-    # 1️⃣ Primary GET check (best for IPTV)
-    try:
-        async with session.get(
-            url,
-            timeout=aiohttp.ClientTimeout(total=7),
-            headers=headers,
-            allow_redirects=True
-        ) as r:
-            if r.status == 200:
-                chunk = await r.content.read(2048)
-                if chunk:
-                    return True
-    except:
-        pass
-
-    # 2️⃣ Fallback HEAD check
-    try:
-        async with session.head(
-            url,
-            timeout=aiohttp.ClientTimeout(total=4),
-            headers=headers,
-            allow_redirects=True
-        ) as r:
-            if r.status == 200:
-                return True
-    except:
-        pass
+    async with SEM:
+        for _ in range(retries + 1):
+            try:
+                async with session.get(
+                    url,
+                    timeout=aiohttp.ClientTimeout(total=7),
+                    headers=headers,
+                    allow_redirects=True
+                ) as r:
+                    if r.status == 200:
+                        chunk = await r.content.read(2048)
+                        if chunk:
+                            return True
+            except:
+                await asyncio.sleep(0.4)
 
     return False
 
@@ -173,7 +166,7 @@ async def main():
             dead.append(block)
 
     # -------------------------------
-    # HEADER (TOP OF PLAYLIST)
+    # HEADER
     # -------------------------------
     bd_time = datetime.utcnow() + timedelta(hours=6)
     header = (
