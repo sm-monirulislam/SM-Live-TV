@@ -32,24 +32,44 @@ EPG_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/hea
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
+# ❌ যেগুলোর লিংক চেক হবে না
 skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee", "AynaOTT"]
 
 # ========================================================
-# SMART CHECK
+# BETTER SMART CHECKER (ONLY CHANGE)
 # ========================================================
 
 async def smart_check(session, url):
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "*/*",
+        "Connection": "keep-alive"
+    }
+
+    # 1️⃣ Primary GET check (best for IPTV)
     try:
-        async with session.head(url, timeout=4) as r:
+        async with session.get(
+            url,
+            timeout=aiohttp.ClientTimeout(total=7),
+            headers=headers,
+            allow_redirects=True
+        ) as r:
             if r.status == 200:
-                return True
+                chunk = await r.content.read(2048)
+                if chunk:
+                    return True
     except:
         pass
 
+    # 2️⃣ Fallback HEAD check
     try:
-        async with session.get(url, timeout=6) as r:
-            chunk = await r.content.read(1024)
-            if r.status == 200 and chunk:
+        async with session.head(
+            url,
+            timeout=aiohttp.ClientTimeout(total=4),
+            headers=headers,
+            allow_redirects=True
+        ) as r:
+            if r.status == 200:
                 return True
     except:
         pass
@@ -173,7 +193,7 @@ async def main():
     dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
 
     # -------------------------------
-    # WRITE CHANNELS
+    # WRITE FILES
     # -------------------------------
     for block in alive:
         live_buf.write("\n".join(block) + "\n\n")
