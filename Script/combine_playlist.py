@@ -27,17 +27,15 @@ json_file = "Bangla Channel.json"
 output_live = "Combined_Live_TV.m3u"
 output_dead = "offline.m3u"
 
-# ✅ EPG URL
 EPG_URL = "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
 
 EXTINF_PREFIX = "#EXTINF:"
 re_group_title = re.compile(r'group-title="(.*?)"')
 
-# ❌ যেগুলোর লিংক চেক হবে না (UPDATED)
 skip_check_groups = ["RoarZone", "Fancode", "Sports", "Toffee", "AynaOTT"]
 
 # ========================================================
-# SMART LIVE CHECK
+# SMART CHECK
 # ========================================================
 
 async def smart_check(session, url):
@@ -47,8 +45,6 @@ async def smart_check(session, url):
                 return True
     except:
         pass
-
-    await asyncio.sleep(0.2)
 
     try:
         async with session.get(url, timeout=6) as r:
@@ -68,9 +64,6 @@ async def main():
     live_buf = StringIO()
     dead_buf = StringIO()
 
-    live_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
-    dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
-
     all_entries = []
     total_found = 0
 
@@ -87,12 +80,10 @@ async def main():
             lines = [l.strip() for l in f if l.strip()]
 
         i = 0
-        n = len(lines)
+        while i < len(lines):
+            if lines[i].startswith(EXTINF_PREFIX):
+                line = lines[i]
 
-        while i < n:
-            line = lines[i]
-
-            if line.startswith(EXTINF_PREFIX):
                 if 'group-title="' in line:
                     line = re_group_title.sub(
                         f'group-title="{group_name}"', line
@@ -105,16 +96,14 @@ async def main():
                     )
 
                 block = [line]
-                j = i + 1
-
-                while j < n and not lines[j].startswith(EXTINF_PREFIX):
-                    block.append(lines[j])
-                    j += 1
+                i += 1
+                while i < len(lines) and not lines[i].startswith(EXTINF_PREFIX):
+                    block.append(lines[i])
+                    i += 1
 
                 url = block[-1]
                 all_entries.append((block, url))
                 total_found += 1
-                i = j
             else:
                 i += 1
 
@@ -125,13 +114,14 @@ async def main():
         with open(json_file, "r", encoding="utf-8") as jf:
             json_data = json.load(jf)
 
-        group_name = os.path.splitext(os.path.basename(json_file))[0]
+        group_name = os.path.splitext(json_file)[0]
 
         for name, info in json_data.items():
-            url = ""
-            if "links" in info and info["links"]:
-                url = info["links"][0].get("url", "")
+            links = info.get("links", [])
+            if not links:
+                continue
 
+            url = links[0].get("url", "")
             if not url:
                 continue
 
@@ -139,53 +129,57 @@ async def main():
                 f'#EXTINF:-1 tvg-logo="{info.get("tvg_logo","")}" '
                 f'group-title="{group_name}",{name}'
             )
-            block = [extinf, url]
-            all_entries.append((block, url))
+            all_entries.append(([extinf, url], url))
             total_found += 1
 
     # -------------------------------
-    # STEP 3: SMART CHECK
+    # STEP 3: CHECK
     # -------------------------------
     async with aiohttp.ClientSession() as session:
-        tasks = [smart_check(session, url) for _, url in all_entries]
-        results = await asyncio.gather(*tasks)
+        results = await asyncio.gather(
+            *[smart_check(session, url) for _, url in all_entries]
+        )
 
-    alive_list = []
-    dead_list = []
+    alive, dead = [], []
 
-    for i, status in enumerate(results):
-        block, url = all_entries[i]
-
-        grp = ""
+    for idx, status in enumerate(results):
+        block, _ = all_entries[idx]
         m = re_group_title.search(block[0])
-        if m:
-            grp = m.group(1)
+        grp = m.group(1) if m else ""
 
-        if grp in skip_check_groups:
-            alive_list.append(block)
-        elif status:
-            alive_list.append(block)
+        if grp in skip_check_groups or status:
+            alive.append(block)
         else:
-            dead_list.append(block)
+            dead.append(block)
 
     # -------------------------------
-    # STEP 4: WRITE FILES
+    # HEADER (TOP OF PLAYLIST)
     # -------------------------------
-    for block in alive_list:
-        for line in block:
-            live_buf.write(line + "\n")
-        live_buf.write("\n")
-
-    for block in dead_list:
-        for line in block:
-            dead_buf.write(line + "\n")
-        dead_buf.write("\n")
-
     bd_time = datetime.utcnow() + timedelta(hours=6)
-    stamp = f"# Last Updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} BD Time\n"
+    header = (
+        "#=================================\n"
+        "# 🖥️ Developed by: Monirul Islam\n"
+        "# 🔗 Telegram: https://t.me/monirul_Islam_SM\n"
+        f"# 🕒 Last Updated: {bd_time.strftime('%Y-%m-%d %H:%M:%S')} (BD Time)\n"
+        f"# 📺 Channels Count: {len(alive)}\n"
+        "# 🔒 Usage: Personal / Educational\n"
+        "#=================================\n\n"
+    )
 
-    live_buf.write(stamp)
-    dead_buf.write(stamp)
+    live_buf.write(header)
+    live_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
+
+    dead_buf.write(header)
+    dead_buf.write(f'#EXTM3U url-tvg="{EPG_URL}"\n\n')
+
+    # -------------------------------
+    # WRITE CHANNELS
+    # -------------------------------
+    for block in alive:
+        live_buf.write("\n".join(block) + "\n\n")
+
+    for block in dead:
+        dead_buf.write("\n".join(block) + "\n\n")
 
     with open(output_live, "w", encoding="utf-8") as f:
         f.write(live_buf.getvalue())
@@ -195,8 +189,8 @@ async def main():
 
     print("DONE")
     print("Total:", total_found)
-    print("Live :", len(alive_list))
-    print("Dead :", len(dead_list))
+    print("Live :", len(alive))
+    print("Dead :", len(dead))
 
 
 asyncio.run(main())
