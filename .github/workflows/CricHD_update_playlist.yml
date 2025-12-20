@@ -23,9 +23,11 @@ jobs:
           python-version: "3.x"
 
       - name: 📥 Install dependencies
-        run: pip install requests
+        run: pip install requests python-dotenv
 
       - name: 🎬 Generate CricHD Playlist
+        env:
+          CRICHD_API_URL: ${{ secrets.CRICHD_API_URL }}   # ⬅️ Secret passed to Python script
         run: python Script/CricHD_playlist.py
 
       - name: 💾 Commit & Push updates (Safe, No Reset)
@@ -35,7 +37,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Check if Sports.m3u actually changed
+          # Only commit when Sports.m3u changed
           if git status --porcelain | grep "Sports.m3u"; then
             echo "🟢 Changes found, committing..."
             git add Sports.m3u
