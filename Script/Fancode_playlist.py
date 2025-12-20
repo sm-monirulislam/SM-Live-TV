@@ -1,8 +1,13 @@
+import os
 import requests
 from datetime import datetime
+from dotenv import load_dotenv
 
-API_1 = "https://raw.githubusercontent.com/IPTVFlixBD/Fancode-BD/refs/heads/main/data.json"
-API_2 = "https://raw.githubusercontent.com/jitendra-unatti/fancode/refs/heads/main/data/fancode.json"
+# Load secrets from .env file
+load_dotenv()
+
+API_1 = os.getenv("FANCODE_API_1")
+API_2 = os.getenv("FANCODE_API_2")
 
 def convert_in_to_bd(url):
     if not url:
@@ -18,13 +23,13 @@ def fetch_matches(api_url):
     return r.json().get("matches", [])
 
 def generate_playlist():
-    written_urls = set()   # 🔥 duplicate checker
+    written_urls = set()
     live_count = 0
 
     with open("Fancode.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
 
-        # 🔹 API 1 (NO URL change)
+        # API 1 (NO URL change)
         for m in fetch_matches(API_1):
             if str(m.get("status", "")).upper() != "LIVE":
                 continue
@@ -43,7 +48,7 @@ def generate_playlist():
             written_urls.add(url)
             live_count += 1
 
-        # 🔹 API 2 (ONLY here in → bd replace)
+        # API 2 (bd replace)
         for m in fetch_matches(API_2):
             if str(m.get("status", "")).upper() != "LIVE":
                 continue
