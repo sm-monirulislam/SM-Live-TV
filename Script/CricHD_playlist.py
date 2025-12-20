@@ -1,15 +1,24 @@
 import requests
 import json
+import os
 from datetime import datetime
+from dotenv import load_dotenv
 
-# ✅ CricHD JSON Source
-API_URL = "https://raw.githubusercontent.com/abusaeeidx/CricHd-playlists-Auto-Update-permanent/refs/heads/main/api.json"
+# Load secrets from .env
+load_dotenv()
+
+# ✅ API URL from Secret
+API_URL = os.getenv("CRICHD_API_URL")
 
 # ✅ Output M3U File
 OUTPUT_FILE = "Sports.m3u"
 
 def generate_playlist():
     print("🚀 Fetching CricHD JSON data...")
+
+    if not API_URL:
+        print("❌ ERROR: API Secret (CRICHD_API_URL) not found!")
+        return
 
     try:
         response = requests.get(API_URL, timeout=20)
@@ -34,7 +43,7 @@ def generate_playlist():
             if not link:
                 continue  # skip empty link
 
-            # ✅ Build each channel entry
+            # Build entry
             m3u_lines.append(f'#EXTINF:-1 tvg-logo="{logo}",{name}')
             if referer:
                 m3u_lines.append(f"#EXTVLCOPT:http-referrer={referer}")
@@ -45,7 +54,7 @@ def generate_playlist():
         except Exception as e:
             print(f"⚠️ Error processing channel: {e}")
 
-    # ✅ Save to file
+    # Save to file
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(m3u_lines))
 
