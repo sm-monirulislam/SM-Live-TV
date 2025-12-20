@@ -3,8 +3,12 @@ import json
 import os
 from datetime import datetime
 
-# ✅ নতুন API URL
-API_URL = "https://raw.githubusercontent.com/sm-monirulislam/RoarZone-Auto-Update-playlist/refs/heads/main/RoarZone.json"
+# ✅ API URL এখন environment variable থেকে নেওয়া হবে
+API_URL = os.getenv("ROARZONE_API_URL")
+
+if not API_URL:
+    print("❌ Environment variable 'ROARZONE_API_URL' সেট করা নেই!")
+    exit(1)
 
 def generate_playlist():
     print("🚀 Starting Auto Playlist Generator...")
@@ -16,7 +20,6 @@ def generate_playlist():
 
         try:
             data = response.json()
-
         except json.JSONDecodeError:
             data = json.loads(response.text.strip())
 
@@ -24,7 +27,6 @@ def generate_playlist():
         print(f"❌ API Fetch Error: {e}")
         return False
 
-    # ⬇️ তোমার API সরাসরি list আকারে আসে
     if not isinstance(data, list) or len(data) == 0:
         print("⚠️ Invalid API response or empty list.")
         return False
@@ -47,7 +49,7 @@ def generate_playlist():
                 url = item.get("stream_url")
 
                 if not url:
-                    continue  # stream url না থাকলে skip
+                    continue
 
                 f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
                 f.write(f"{url}\n")
