@@ -23,10 +23,14 @@ jobs:
           python-version: "3.x"
 
       - name: 📥 Install Dependencies
-        run: pip install requests
+        run: |
+          pip install requests python-dotenv
 
       - name: ▶️ Run Update Script
         run: python Script/Fancode_playlist.py
+        env:
+          FANCODE_API_1: ${{ secrets.FANCODE_API_1 }}
+          FANCODE_API_2: ${{ secrets.FANCODE_API_2 }}
 
       - name: 💾 Commit & Push Safely
         env:
@@ -42,7 +46,7 @@ jobs:
             git commit -m "🔁 Auto update Fancode.m3u"
 
             echo "📥 Pulling latest changes..."
-            git pull --rebase origin main
+            git pull --rebase origin main || echo "⚠️ Pull failed, skipping"
 
             echo "📤 Pushing to GitHub..."
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
