@@ -10,7 +10,6 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
@@ -23,29 +22,29 @@ jobs:
           python-version: "3.x"
 
       - name: 📥 Install Dependencies
-        run: pip install requests python-dotenv
+        run: pip install requests
 
       - name: ▶️ Run Update Script
-        env:
-          FANCODE_API_1: ${{ secrets.FANCODE_API_1 }}
-          FANCODE_API_2: ${{ secrets.FANCODE_API_2 }}
         run: python Script/Fancode_playlist.py
 
-      - name: 💾 Commit & Push Safely (No Conflict)
+      - name: 💾 Commit & Push Safely
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          echo "🔍 Checking for changes in Fancode.m3u..."
-          if git status --porcelain | grep -q "Fancode.m3u"; then
-            echo "🟢 Changes detected. Committing..."
+          # Detect changes
+          if git status --porcelain | grep "Fancode.m3u"; then
+            echo "🟢 Changes found, committing..."
             git add Fancode.m3u
             git commit -m "🔁 Auto update Fancode.m3u"
 
-            echo "🚀 Force pushing to main (no conflicts)..."
-            git push --force https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
+            echo "📥 Pulling latest changes..."
+            git pull --rebase origin main
+
+            echo "📤 Pushing to GitHub..."
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
-            echo "⚠️ No changes detected in Fancode.m3u"
+            echo "⚠️ No changes found in Fancode.m3u"
           fi
