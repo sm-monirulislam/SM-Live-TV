@@ -3,11 +3,6 @@ name: 🔁 Auto Update CricHD Playlist
 on:
   workflow_dispatch:
   workflow_call:
-    secrets:
-      CRICHD_API_URL:
-        required: true
-      GITHUB_TOKEN:
-        required: true
 
 permissions:
   contents: write
@@ -15,7 +10,6 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: 📦 Checkout repository
         uses: actions/checkout@v4
@@ -31,25 +25,26 @@ jobs:
         run: pip install requests
 
       - name: 🎬 Generate CricHD Playlist
-        env:
-          CRICHD_API_URL: ${{ secrets.CRICHD_API_URL }}
         run: python Script/CricHD_playlist.py
 
-      - name: 💾 Commit & Push updates (Force-Safe, No Conflict)
+      - name: 💾 Commit & Push updates (Safe, No Reset)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          echo "🔍 Checking for changes..."
-          if git status --porcelain | grep -q "Sports.m3u"; then
-            echo "🟢 Changes detected. Committing..."
+          # Check if Sports.m3u actually changed
+          if git status --porcelain | grep "Sports.m3u"; then
+            echo "🟢 Changes found, committing..."
             git add Sports.m3u
             git commit -m "🔁 Auto update Sports playlist"
 
-            echo "🚀 Force pushing changes (no conflicts)..."
-            git push --force https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
+            echo "📥 Pulling latest changes to avoid conflicts..."
+            git pull --rebase origin main
+
+            echo "📤 Pushing changes..."
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
           else
             echo "⚠️ No changes detected in Sports.m3u"
           fi
