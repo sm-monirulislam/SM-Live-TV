@@ -11,13 +11,12 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
           persist-credentials: true
-          fetch-depth: 0
+          fetch-depth: 0   # Full history needed for pull
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -25,29 +24,26 @@ jobs:
           python-version: "3.10"
 
       - name: 📦 Install Required Packages
-        run: pip install requests python-dotenv
+        run: |
+          pip install requests
 
       - name: 🔄 Run Auto Playlist Script
-        env:
-          ROARZONE_API_URL: ${{ secrets.ROARZONE_API_URL }}
-        run: python3 Script/Roar-Zone.py
-
-      - name: 💾 Commit & Push Changes Safely
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          python3 Script/Roar-Zone.py
 
-          echo "🔍 Checking for changes in RoarZone.m3u..."
+      - name: 💾 Commit & Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
           git add RoarZone.m3u
-
           if ! git diff --cached --quiet; then
-            echo "🟢 Changes detected. Committing..."
-            git commit -m "🔄 Auto-update RoarZone.m3u - $(date '+%Y-%m-%d %H:%M:%S')"
+            git commit -m "🔄 Auto-update RoarZone.m3u - $(date)"
 
-            echo "🚀 Force pushing changes (no conflict)..."
-            git push --force https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
+            # MOST IMPORTANT FIX — Pull before push
+            git pull --rebase
+
+            git push
           else
             echo "⚠️ No changes to commit."
           fi
