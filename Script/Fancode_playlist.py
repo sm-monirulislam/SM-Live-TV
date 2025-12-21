@@ -1,13 +1,10 @@
 import os
 import requests
 from datetime import datetime
-from dotenv import load_dotenv
 
-# Load secrets from .env file
-load_dotenv()
-
-API_1 = os.getenv("FANCODE_API_1")
-API_2 = os.getenv("FANCODE_API_2")
+# ✅ Get API URLs from environment (GitHub Secrets)
+API_1 = os.environ.get("FANCODE_API_1")
+API_2 = os.environ.get("FANCODE_API_2")
 
 def convert_in_to_bd(url):
     if not url:
@@ -18,11 +15,17 @@ def convert_in_to_bd(url):
     )
 
 def fetch_matches(api_url):
+    if not api_url:
+        return []
     r = requests.get(api_url, timeout=20)
     r.raise_for_status()
     return r.json().get("matches", [])
 
 def generate_playlist():
+    if not API_1 and not API_2:
+        print("❌ No API URLs provided via secrets")
+        return
+
     written_urls = set()
     live_count = 0
 
