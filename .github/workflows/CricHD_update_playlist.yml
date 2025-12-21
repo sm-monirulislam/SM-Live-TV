@@ -23,23 +23,23 @@ jobs:
           python-version: "3.x"
 
       - name: 📥 Install dependencies
-        run: pip install requests python-dotenv
+        run: pip install requests
 
       - name: 🎬 Generate CricHD Playlist
         env:
-          CRICHD_API_URL: ${{ secrets.CRICHD_API_URL }}   # ⬅️ Secret passed to Python script
+          CRICHD_API_URL: ${{ secrets.CRICHD_API_URL }}   # Secret passed to Python script
         run: python Script/CricHD_playlist.py
 
-      - name: 💾 Commit & Push updates (Safe, No Reset)
+      - name: 💾 Commit & Push updates (Safe)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Only commit when Sports.m3u changed
-          if git status --porcelain | grep "Sports.m3u"; then
-            echo "🟢 Changes found, committing..."
+          # Only commit if Sports.m3u changed
+          if git status --porcelain | grep -q "Sports.m3u"; then
+            echo "🟢 Changes detected, committing..."
             git add Sports.m3u
             git commit -m "🔁 Auto update Sports playlist"
 
