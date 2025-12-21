@@ -1,8 +1,10 @@
 import requests
+import os
 from datetime import datetime
 
-API_1 = "https://raw.githubusercontent.com/IPTVFlixBD/Fancode-BD/refs/heads/main/data.json"
-API_2 = "https://raw.githubusercontent.com/jitendra-unatti/fancode/refs/heads/main/data/fancode.json"
+# APIs from GitHub Secrets
+API_1 = os.environ.get("FANCODE_API_1")
+API_2 = os.environ.get("FANCODE_API_2")
 
 def convert_in_to_bd(url):
     if not url:
@@ -13,12 +15,18 @@ def convert_in_to_bd(url):
     )
 
 def fetch_matches(api_url):
+    if not api_url:
+        return []
     r = requests.get(api_url, timeout=20)
     r.raise_for_status()
     return r.json().get("matches", [])
 
 def generate_playlist():
-    written_urls = set()  # duplicate checker
+    if not API_1 or not API_2:
+        print("❌ Fancode API secrets not found")
+        return
+
+    written_urls = set()
     live_count = 0
 
     with open("Fancode.m3u", "w", encoding="utf-8") as f:
