@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "*/30 * * * *"  # Every 30 minutes (UTC)
 
+permissions:
+  contents: write
+
 jobs:
 
   crichd:
