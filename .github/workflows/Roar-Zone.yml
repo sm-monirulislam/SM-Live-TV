@@ -26,24 +26,29 @@ jobs:
       - name: 📦 Install Required Packages
         run: pip install requests
 
-      - name: 🔄 Run Auto Playlist Script
-        run: python Script/Roar-Zone.py
-
-      - name: 💾 Commit & Push Changes
+      # ✅ PULL BEFORE SCRIPT RUN
+      - name: 🔄 Sync with main branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Pull first (safe for reusable workflows)
           git pull --rebase origin main
 
-          git add RoarZone.m3u
+      - name: 🔄 Run Auto Playlist Script
+        env:
+          ROARZONE_API_URL: ${{ secrets.ROARZONE_API_URL }}
+        run: python Script/Roar-Zone.py
 
-          if git diff --cached --quiet; then
-            echo "⚠️ No changes to commit."
-          else
+      # ✅ COMMIT & PUSH (NO PULL HERE)
+      - name: 💾 Commit & Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git status --porcelain | grep "RoarZone.m3u"; then
+            git add RoarZone.m3u
             git commit -m "🔄 Auto-update RoarZone.m3u"
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
+          else
+            echo "⚠️ No changes to commit."
           fi
