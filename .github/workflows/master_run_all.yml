@@ -1,1 +1,34 @@
+name: 🚀 Run All Playlist Updates (Main Controller)
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+
+  crichd:
+    uses: ./.github/workflows/CricHD_update_playlist.yml
+    secrets: inherit
+
+  fancode:
+    needs: crichd
+    if: always()
+    uses: ./.github/workflows/Fancode_update.yml
+    secrets: inherit
+
+  roarzone:
+    needs: fancode
+    if: always()
+    uses: ./.github/workflows/Roar-Zone.yml
+    secrets: inherit
+
+  toffee:
+    needs: roarzone
+    if: always()
+    uses: ./.github/workflows/toffee_main.yml
+    secrets: inherit
