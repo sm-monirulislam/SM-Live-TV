@@ -3,15 +3,15 @@ import json
 import os
 from datetime import datetime
 
-# ✅ API URL এখন environment variable থেকে নেওয়া হবে
-API_URL = os.getenv("ROARZONE_API_URL")
+# ✅ Get API URL from environment variable (GitHub Secret)
+API_URL = os.environ.get("ROARZONE_API_URL")
 
 if not API_URL:
-    print("❌ Environment variable 'ROARZONE_API_URL' সেট করা নেই!")
+    print("❌ Environment variable 'ROARZONE_API_URL' is not set!")
     exit(1)
 
 def generate_playlist():
-    print("🚀 Starting Auto Playlist Generator...")
+    print("🚀 Starting RoarZone Auto Playlist Generator...")
     print("📡 Fetching data from API...")
 
     try:
@@ -36,7 +36,6 @@ def generate_playlist():
     try:
         with open(file_path, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-
             channel_count = 0
 
             for item in data:
@@ -53,7 +52,6 @@ def generate_playlist():
 
                 f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
                 f.write(f"{url}\n")
-
                 channel_count += 1
 
             f.write(f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
