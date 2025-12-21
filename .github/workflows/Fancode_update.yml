@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 jobs:
   update:
@@ -38,10 +39,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Pull first to avoid conflicts
+          # ✅ PULL FIRST (very important)
           git pull --rebase origin main
 
-          # Detect changes
+          # ✅ Commit only if file changed
           if git status --porcelain | grep "Fancode.m3u"; then
             echo "🟢 Changes found, committing..."
             git add Fancode.m3u
