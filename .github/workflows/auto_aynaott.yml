@@ -4,65 +4,67 @@ on:
   workflow_dispatch:
   workflow_call:
 
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
+      # --------------------------
+      # 1. Checkout Repo
+      # --------------------------
+      - name: 📦 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    # --------------------------
-    # 1. Checkout Repo
-    # --------------------------
-    - name: 🔹 Checkout repository
-      uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        fetch-depth: 0
+      # --------------------------
+      # 2. Setup Python
+      # --------------------------
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
-    # --------------------------
-    # 2. Install Python
-    # --------------------------
-    - name: 🔹 Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.x"
+      # --------------------------
+      # 3. Install dependencies
+      # --------------------------
+      - name: 📥 Install dependencies
+        run: pip install requests
 
-    # --------------------------
-    # 3. Install dependencies
-    # --------------------------
-    - name: 🔹 Install dependencies
-      run: pip install requests
+      # --------------------------
+      # 4. Pull FIRST (important)
+      # --------------------------
+      - name: 🔄 Sync with main branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
 
-    # --------------------------
-    # 4. Run Auto M3U Generator
-    #    (Never fail even if API returns no data)
-    # --------------------------
-    - name: 🔹 Run AynaOTT Playlist Generator
-      run: |
-        set +e
-        python Script/aynaott_auto.py
-        echo "⚠️ Script completed (no error will stop workflow)."
-      continue-on-error: true
+      # --------------------------
+      # 5. Run Auto M3U Generator
+      # --------------------------
+      - name: ▶️ Run AynaOTT Playlist Generator
+        env:
+          AYNAOTT_API_URL: ${{ secrets.AYNAOTT_API_URL }}
+        run: python Script/aynaott_auto.py
 
-    # --------------------------
-    # 5. Pull to avoid conflicts
-    # --------------------------
-    - name: 🔄 Pull latest changes (avoid conflict)
-      run: |
-        git fetch origin main
-        git pull --rebase origin main || true
-
-    # --------------------------
-    # 6. Commit + Push Updated File
-    # --------------------------
-    - name: 💾 Commit and Push Updated M3U
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-        git add AynaOTT.m3u
-        git diff --staged --quiet || git commit -m "✅ Auto Updated AynaOTT.m3u"
-        git push origin main || true
+      # --------------------------
+      # 6. Commit & Push ONLY
+      # --------------------------
+      - name: 💾 Commit & Push Updated M3U
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git status --porcelain | grep "AynaOTT.m3u"; then
+            git add AynaOTT.m3u
+            git commit -m "📺 Auto update AynaOTT.m3u"
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
+          else
+            echo "⚠️ No changes found in AynaOTT.m3u"
+          fi
