@@ -3,6 +3,11 @@ name: 🔁 Auto Update CricHD Playlist
 on:
   workflow_dispatch:
   workflow_call:
+    secrets:
+      CRICHD_API_URL:
+        required: true
+      GITHUB_TOKEN:
+        required: true
 
 permissions:
   contents: write
