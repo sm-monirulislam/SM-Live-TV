@@ -3,30 +3,25 @@ import json
 import os
 from datetime import datetime
 
-# ✅ Get API URL from environment variable (GitHub Secret)
-API_URL = os.environ.get("ROARZONE_API_URL")
-
-if not API_URL:
-    print("❌ Environment variable 'ROARZONE_API_URL' is not set!")
-    exit(1)
+# নতুন API URL
+API_URL = "https://raw.githubusercontent.com/sm-monirulislam/RoarZone-Auto-Update-playlist/refs/heads/main/RoarZone.json"
 
 def generate_playlist():
-    print("🚀 Starting RoarZone Auto Playlist Generator...")
+    print("🚀 Starting Auto Playlist Generator...")
     print("📡 Fetching data from API...")
 
     try:
         response = requests.get(API_URL, timeout=20)
         response.raise_for_status()
-
         try:
             data = response.json()
         except json.JSONDecodeError:
             data = json.loads(response.text.strip())
-
     except Exception as e:
         print(f"❌ API Fetch Error: {e}")
         return False
 
+    # তোমার API সরাসরি list আকারে আসে
     if not isinstance(data, list) or len(data) == 0:
         print("⚠️ Invalid API response or empty list.")
         return False
@@ -36,6 +31,7 @@ def generate_playlist():
     try:
         with open(file_path, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
+
             channel_count = 0
 
             for item in data:
@@ -48,10 +44,11 @@ def generate_playlist():
                 url = item.get("stream_url")
 
                 if not url:
-                    continue
+                    continue  # stream url না থাকলে skip
 
                 f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
                 f.write(f"{url}\n")
+
                 channel_count += 1
 
             f.write(f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
@@ -66,7 +63,6 @@ def generate_playlist():
     except Exception as e:
         print(f"❌ Error writing playlist file: {e}")
         return False
-
 
 if __name__ == "__main__":
     print("=========================================")
