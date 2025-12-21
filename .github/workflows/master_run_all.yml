@@ -1,7 +1,7 @@
 name: 🚀 Run All Playlist Updates (Main Controller)
 
 on:
-  workflow_dispatch:        # ম্যানুয়ালি চালানো যাবে
+  workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"  # প্রতি ৩০ মিনিটে অটো রান (UTC)
 
@@ -9,18 +9,31 @@ jobs:
 
   crichd:
     uses: ./.github/workflows/CricHD_update_playlist.yml
+    secrets:
+      CRICHD_API_URL: ${{ secrets.CRICHD_API_URL }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   fancode:
     needs: crichd
     if: ${{ always() }}
     uses: ./.github/workflows/Fancode_update.yml
+    secrets:
+      FANCODE_API_1: ${{ secrets.FANCODE_API_1 }}
+      FANCODE_API_2: ${{ secrets.FANCODE_API_2 }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   roarzone:
     needs: fancode
     if: ${{ always() }}
     uses: ./.github/workflows/Roar-Zone.yml
+    secrets:
+      ROARZONE_API_URL: ${{ secrets.ROARZONE_API_URL }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   toffee:
     needs: roarzone
     if: ${{ always() }}
     uses: ./.github/workflows/toffee_main.yml
+    secrets:
+      TOFFEE_API_URL: ${{ secrets.TOFFEE_API_URL }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
