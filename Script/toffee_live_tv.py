@@ -1,14 +1,19 @@
 import requests
+import os
 from datetime import datetime
 
-# ✅ Toffee JSON API
-API_URL = "https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update-Playlist/refs/heads/main/toffee_tv.json"
+# ✅ Toffee JSON API from GitHub Secret
+API_URL = os.environ.get("TOFFEE_API_URL")
 
 # ✅ Output file
 OUTPUT_FILE = "Toffee.m3u"
 
 def generate_playlist():
     print("🚀 Fetching Toffee channel list...")
+
+    if not API_URL:
+        print("⚠️ TOFFEE_API_URL secret not set (script will stop).")
+        return False
 
     try:
         r = requests.get(API_URL, timeout=20)
@@ -17,7 +22,7 @@ def generate_playlist():
         print(f"✅ Total channels: {len(channels)}")
     except Exception as e:
         print("❌ Failed to fetch JSON:", e)
-        return
+        return False
 
     m3u = ["#EXTM3U", ""]
 
@@ -32,20 +37,16 @@ def generate_playlist():
         ua = ch.get("user_agent", "")
         cookie = ch.get("cookie", "")
 
-        # EXTINF
         m3u.append(
             f'#EXTINF:-1 group-title="{group}" tvg-chno="" tvg-id="" tvg-logo="{logo}", {name}'
         )
 
-        # User-Agent
         if ua:
             m3u.append(f"#EXTVLCOPT:http-user-agent={ua}")
 
-        # Cookie (EXTHTTP format)
         if cookie:
             m3u.append(f'#EXTHTTP:{{"cookie":"{cookie}"}}')
 
-        # Stream URL
         m3u.append(link)
         m3u.append("")
 
@@ -54,6 +55,10 @@ def generate_playlist():
 
     print(f"✅ Playlist generated: {OUTPUT_FILE}")
     print("🕓 Updated:", datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC"))
+    return True
+
 
 if __name__ == "__main__":
-    generate_playlist()
+    success = generate_playlist()
+    if not success:
+        exit(1)
