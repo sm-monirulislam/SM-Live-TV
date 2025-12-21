@@ -23,7 +23,7 @@ jobs:
           python-version: "3.x"
 
       - name: 📥 Install Dependencies
-        run: pip install requests
+        run: pip install requests python-dotenv
 
       - name: ▶️ Run Update Script
         env:
@@ -31,24 +31,21 @@ jobs:
           FANCODE_API_2: ${{ secrets.FANCODE_API_2 }}
         run: python Script/Fancode_playlist.py
 
-      - name: 💾 Commit & Push Safely
+      - name: 💾 Commit & Push Safely (No Conflict)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Only commit if Fancode.m3u changed
+          echo "🔍 Checking for changes in Fancode.m3u..."
           if git status --porcelain | grep -q "Fancode.m3u"; then
-            echo "🟢 Changes detected, committing..."
+            echo "🟢 Changes detected. Committing..."
             git add Fancode.m3u
             git commit -m "🔁 Auto update Fancode.m3u"
 
-            echo "📥 Pulling latest changes to avoid conflicts..."
-            git pull --rebase origin main || echo "⚠️ Pull failed, skipping"
-
-            echo "📤 Pushing changes..."
-            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
+            echo "🚀 Force pushing to main (no conflicts)..."
+            git push --force https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
           else
             echo "⚠️ No changes detected in Fancode.m3u"
           fi
