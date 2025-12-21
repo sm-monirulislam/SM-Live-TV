@@ -1,12 +1,17 @@
 import requests
-import json
+import os
 from datetime import datetime
 
-# ✅ NEW API URL
-API_URL = "https://raw.githubusercontent.com/sm-monirulislam/AynaOTT-auto-update-playlist/refs/heads/main/AynaOTT.json"
+# ✅ API URL from GitHub Secret
+API_URL = os.environ.get("AYNAOTT_API_URL")
 
 def generate_playlist():
     print("🚀 Starting Auto Playlist Generator...")
+
+    if not API_URL:
+        print("❌ AYNAOTT_API_URL secret not found")
+        return False
+
     print("📡 Fetching data from API...")
 
     try:
@@ -35,18 +40,21 @@ def generate_playlist():
                 name = ch.get("title", "Unknown Channel")
                 logo = ch.get("logo", "")
                 url = ch.get("url", "").strip()
-                group = ch.get("category", "Ayna")  # ✅ now using API category
+                group = ch.get("category", "Ayna")
 
                 if not url:
                     continue
 
-                # Write M3U line
-                f.write(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n')
+                f.write(
+                    f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n'
+                )
                 f.write(f"{url}\n\n")
 
                 channel_count += 1
 
-            f.write(f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write(
+                f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+            )
 
         print(f"✅ Playlist generated successfully with {channel_count} channels.")
         return True
@@ -60,7 +68,9 @@ if __name__ == "__main__":
     print("=========================================")
     print("🎯 AynaOTT Auto Update M3U Playlist Script")
     print("=========================================")
+
     success = generate_playlist()
+
     print("=========================================")
     if not success:
         print("❌ Process failed.")
