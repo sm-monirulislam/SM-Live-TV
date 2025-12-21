@@ -26,25 +26,27 @@ jobs:
       - name: 📥 Install Dependencies
         run: pip install requests
 
+      # ✅ PULL BEFORE SCRIPT RUN
+      - name: 🔄 Sync with main branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+
       - name: ▶️ Run Update Script
         env:
           FANCODE_API_1: ${{ secrets.FANCODE_API_1 }}
           FANCODE_API_2: ${{ secrets.FANCODE_API_2 }}
         run: python Script/Fancode_playlist.py
 
+      # ✅ COMMIT ONLY (NO PULL HERE)
       - name: 💾 Commit & Push Safely
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # ✅ PULL FIRST (very important)
-          git pull --rebase origin main
-
-          # ✅ Commit only if file changed
           if git status --porcelain | grep "Fancode.m3u"; then
-            echo "🟢 Changes found, committing..."
             git add Fancode.m3u
             git commit -m "🔁 Auto update Fancode.m3u"
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} main
