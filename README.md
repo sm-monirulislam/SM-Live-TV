@@ -12,80 +12,6 @@ This project helps you host your M3U playlist on GitHub — always updated, clea
 
 ✔️ Offline/Dead link detection
 
-✔️ Saves bad links to offline.m3u
-
-✔️ Keeps previously offline links and checks again
-
-✔️ Fully automated GitHub Action (runs every hour)
-
-✔️ Clean, readable code structure
-
-✔️ Works on any device (Smart TV, Android, iOS, PC)
-
-
-
----
-
-📂 Project Structure
-
-/
-├── combine_playlist.py   # Main script to create playlist
-├── sources/              # Your channel source files (TXT/M3U)
-├── playlist.m3u          # Auto-generated output
-├── offline.m3u           # Offline channel list
-├── .github/workflows/
-│   └── auto_generate.yml # GitHub Action workflow
-└── README.md
-
-
----
-
-⚙️ Installation 
-
-1️⃣ Add your source M3U/TXT files
-
-Put all URL list files inside:
-
-/sources/
-
-2️⃣ Make sure Python dependencies are installed
-
-pip install -r requirements.txt
-
-
----
-
-▶️ How It Works
-
-1. Workflow runs every hour
-
-GitHub Actions triggers the script:
-
-combine_playlist.py
-
-2. Script performs:
-
-Load all channel URLs
-
-Check if each link is online
-
-Working links → added to playlist.m3u
-
-Dead links → added to offline.m3u
-
-Previously dead links are re-checked
-
-After cleanup, final playlist is published
-
-
-3. Updated playlist is pushed automatically
-
-You will always have a fresh, clean, working playlist URL:
-
-https://raw.githubusercontent.com/<username>/<repo>/main/playlist.m3u
-
-
----
 
 🧪 Run Locally
 
@@ -138,32 +64,46 @@ You can use your playlist link like:
 https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/Combined_Live_TV.m3u
 
 
----
+# 🚬 Credits
 
-💡 Tips
-
-Use VPN if some channels are region-locked
-
-Keep channel URLs updated
-
-Avoid copyrighted premium sources
-
-Use GitHub Actions free quota wisely
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=100&color=FF2C10&background=00000000&width=400&lines=Made+By+Monirul+Islam)](https://git.io/typing-svg)
 
 
-
----
-
-📝 License
-
-This project is open-source under MIT License.
-
-
----
-
-❤️ Contribution
-
-Pull requests are always welcome!
+# 📝Note
+* The following code is for educational purposes only. It demonstrates how to authenticate and stream IPTV. Do not use it for any illegal or harmful activities. If the code affects the revenue of the IPTV owners, please let me  and I will delete it.
+* Please give me proper credit if you share this content. Otherwise, I will take it down.
+* The codes of the repo are encrypted to ensure security. Please refrain from trying to run or deploy them 
+* Due to geo-restriction, the IPTV content is only available in Bangladesh.
 
 
----
+
+
+## CONNECT WITH US :
+
+
+[![Instagram](https://img.shields.io/badge/WEBSITE-VISIT-yellow?style=for-the-badge&logo=blogger)](https://Monirul.github.io)
+[![Instagram](https://img.shields.io/badge/TELEGRAM-CHANNEL-red?style=for-the-badge&logo=telegram)](https://t.me/monirul_Islam_SM)
+
+#### 👤 Project Maintainer
+**Monirul Islam**  
+Maintained with ❤️ in Bangladesh 🇧🇩
+# knowledged SM
+## Special Thanks <span style="font-size:45px;">👇</span>
+
+
+#### ℹ️ Project Info
+- 🔄 Auto Updated via GitHub Actions  
+- 📺 Live TV Playlist Support  
+- 🐍 Powered by Python  
+- 🇧🇩 Made in Bangladesh
+
+
+<a href="#">
+  <img 
+    title="SM Monirul Islam"
+    src="https://img.shields.io/badge/SM%20Monirul%20Islam-purple?style=for-the-badge&logo=github"
+    alt="SM Monirul Islam"
+  >
+</a>
+
+## Thanks For Using This Tool <span style="font-size:45px;">😘</span> <span style="font-size:45px;">😍</span>
