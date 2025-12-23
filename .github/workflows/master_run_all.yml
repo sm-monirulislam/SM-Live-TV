@@ -3,14 +3,13 @@ name: 🚀 Run All Playlist Updates (Main Controller)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/40 * * * *"
 
 permissions:
   contents: write
   id-token: write
 
 jobs:
-
   crichd:
     uses: ./.github/workflows/CricHD_update_playlist.yml
     secrets: inherit
