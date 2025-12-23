@@ -2,7 +2,7 @@ name: 🔁 Auto Update IPTV Playlist
 
 on:
   schedule:
-    - cron: "0 * * * *"   # প্রতি ঘন্টায় রান
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -10,14 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # ✅ push করার জন্য দরকার
+      contents: write
 
     steps:
 
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # ✅ full history
+          fetch-depth: 0
+
+      - name: 🔄 Pull Latest Changes
+        run: |
+          git pull origin main --rebase
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -40,16 +44,9 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "➡️ No changes found."
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "➡️ Changes detected."
           fi
-
-      - name: 🔄 Pull Latest Changes (Fix Push Conflict)
-        if: steps.git-check.outputs.changed == 'true'
-        run: |
-          git pull origin main --rebase
 
       - name: 🔄 Commit & Push Updated Files
         if: steps.git-check.outputs.changed == 'true'
@@ -59,6 +56,3 @@ jobs:
 
           git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')"
           git push origin main
-
-      - name: ✔ Finished
-        run: echo "🎉 Playlist update workflow completed!"
