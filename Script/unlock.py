@@ -2,7 +2,7 @@ import zipfile
 import os
 import sys
 
-ZIP_FILE = "combined.zip"   # 🔄 changed
+ZIP_FILE = "Script/combined.zip"   # 📁 folder path added
 EXTRACT_DIR = "main"
 
 password = os.environ.get("ZIP_PASSWORD")
