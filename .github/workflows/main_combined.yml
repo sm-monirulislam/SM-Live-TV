@@ -13,19 +13,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Repo Checkout
+      # 1️⃣ Checkout repo
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Python Setup
+      # 2️⃣ Setup Python
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 3️⃣ Install Dependencies
+      # 3️⃣ Install Python Dependencies
       - name: 📥 Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
@@ -38,17 +38,16 @@ jobs:
         env:
           ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }}
 
-      # 5️⃣ ▶️ Run Playlist Combiner
+      # 5️⃣ ▶️ Run Playlist Combiner (FIXED PATH)
       - name: ▶️ Run Playlist Combiner Script
         run: |
-          python Script/combine_playlist.py
+          python main/combine_playlist.py
 
       # 6️⃣ 🔍 Check if Output Changed
       - name: 🔍 Check if Output Changed
         id: git-check
         run: |
           git add Combined_Live_TV.m3u offline.m3u
-
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
