@@ -5,23 +5,18 @@ on:
     - cron: "0 * * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-playlist:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: 🔄 Pull Latest Changes
-        run: |
-          git pull origin main --rebase
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -33,6 +28,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install aiohttp
 
+      - name: 🔓 Unlock ZIP
+        run: |
+          python Script/unlock.py
+        env:
+          ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }}
+
       - name: ▶️ Run Playlist Combiner Script
         run: |
           python Script/combine_playlist.py
@@ -41,7 +42,6 @@ jobs:
         id: git-check
         run: |
           git add Combined_Live_TV.m3u offline.m3u
-
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
@@ -53,6 +53,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-
           git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin main
+          git push
