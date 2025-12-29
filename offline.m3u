@@ -1,7 +1,7 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2025-12-29 13:27:29 (BD Time)
+# 🕒 Last Updated: 2025-12-29 14:30:24 (BD Time)
 # 📺 Channels Count: 1279
 # 🔒 Usage: Personal / Educational
 #=================================
@@ -461,9 +461,6 @@ http://116.90.120.149:8000/play/a0cm/index.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/6/6e/T_Sports_HD_logo_2021.png" group-title="Bangla Channel",---Live(T Sports HD)---
 http://116.204.149.16/t_sports/index.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Bangla Channel",--Live(FOOTBALL)--
-https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/bitrate_3.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/45/Geo_Super.png" group-title="Bangla Channel",--Live(Geo Super)--
 http://116.90.120.149:8000/play/a021/index.m3u8
 
@@ -524,9 +521,6 @@ https://tiger-hub.vercel.app/Arena-Sports/8/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/4b/M-Sport_%28logo%29.png" group-title="Bangla Channel",FB | M-Sports HD
 http://live.matribhumitv.com/matribhumi-sports/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Puls_24_Logo_2022.svg/1200px-Puls_24_Logo_2022.svg.png" group-title="Bangla Channel",FB | Puls 24
-http://212.186.45.34:9981/stream/channelid/1840087075?profile=pass
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Sky_Sports_Premier_League_2020.svg" group-title="Bangla Channel",FB | SkySports premier League
 https://tiger-hub.vercel.app/SkySports-premire_League/tracks-v1a1/mono.m3u8
 
@@ -544,6 +538,9 @@ https://tiger-hub.vercel.app/SkySports-2_NZ/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sky-sports-main-cricket.jpg" group-title="Bangla Channel",FB+MIX | Sky Sports Mix
 https://tiger-hub.vercel.app/SkySports-mix/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.unreel.me/prod/freelivesports/logo/9cb9b4ff-2958-4179-bd0b-bc9a44888cc7" group-title="Bangla Channel",FIGHT | MMA TV
+https://streams2.sofast.tv/ptnr-sportstrible/title-MMA_Sportstrible/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/f6b049e4-885e-4551-85ac-8eef0b33d3a2/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://brandslogos.com/wp-content/uploads/images/wwe-logo.png" group-title="Bangla Channel",FIGHT | WWE
 https://smart.bengaldigital.live/WWE/index.m3u8
