@@ -31,3 +31,9 @@ jobs:
     if: always()
     uses: ./.github/workflows/toffee_main.yml
     secrets: inherit
+
+  aynaott:
+    needs: toffee
+    if: always()
+    uses: ./.github/workflows/auto_aynaott.yml
+    secrets: inherit
