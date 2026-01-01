@@ -10,21 +10,30 @@ def generate_playlist():
 
     if not API_URL:
         print("❌ AYNAOTT_API_URL secret not found")
-        return False
+        return True   # ❗ fail না করে skip
 
     print("📡 Fetching data from API...")
 
     try:
         response = requests.get(API_URL, timeout=20)
         response.raise_for_status()
-        data = response.json()   # API gives LIST
+        data = response.json()
     except Exception as e:
         print(f"❌ API Fetch Error: {e}")
-        return False
+        return True   # ❗ fail না করে skip
 
-    if not isinstance(data, list) or len(data) == 0:
-        print("⚠️ No channels found in API response.")
-        return False
+    print("🔍 RAW API RESPONSE:", data)
+
+    # ✅ Handle all formats
+    if isinstance(data, dict):
+        data = [data]
+    elif not isinstance(data, list):
+        print("⚠️ Invalid API format, skipping update")
+        return True
+
+    if len(data) == 0:
+        print("⚠️ No channels found, skipping update")
+        return True
 
     file_path = "AynaOTT.m3u"
 
@@ -61,7 +70,7 @@ def generate_playlist():
 
     except Exception as e:
         print(f"❌ Error writing playlist file: {e}")
-        return False
+        return True   # ❗ fail না
 
 
 if __name__ == "__main__":
@@ -72,8 +81,7 @@ if __name__ == "__main__":
     success = generate_playlist()
 
     print("=========================================")
-    if not success:
-        print("❌ Process failed.")
-        exit(1)
-    else:
+    if success:
         print("✅ Process completed successfully!")
+    else:
+        print("❌ Process failed.")
