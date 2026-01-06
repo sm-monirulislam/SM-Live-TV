@@ -1,12 +1,15 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-06 22:23:21 (BD Time)
-# 📺 Channels Count: 1227
+# 🕒 Last Updated: 2026-01-06 23:21:37 (BD Time)
+# 📺 Channels Count: 1222
 # 🔒 Usage: Personal / Educational
 #=================================
 
 #EXTM3U url-tvg="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
+
+#EXTINF:-1 tvg-logo="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/football-logo-design-template-bebebf8ff1c25b66b504d37afaee99f0_screen.jpg?ts=1686017774" group-title="Jagobd",group-title="Jagobd",Football match
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/matribhumitv.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.jagobd.com/wp-content/uploads/2025/05/eurobangla.jpg" group-title="Jagobd",group-title="Jagobd",Euro Bangla TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/eurobangla.stream/tracks-v1a1/mono.m3u8
@@ -16,6 +19,9 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc3dBTFlp6XVDNECQFzzP8r0x3f-iidkkBJac6gKarUtRoc5rFZxM3AxDW&s=10" group-title="Jagobd",group-title="Jagobd",SA TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/satvoff5666.stream/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7t7xNGrk/IMG-20251222-232617-913.jpg" group-title="SM All TV", Sami TV
+https://padmaonline.duckdns.org:8088/SamiTV/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.pbntv24.com/wp-content/uploads/2023/07/logo-pbn.jpg" group-title="SM All TV", PBN TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/pbntv.stream/playlist.m3u8
@@ -51,9 +57,6 @@ https://cdn-2.pishow.tv/live/228/228_1.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/2560px-HBO_logo.svg.png" group-title="SM All TV",HBO
 https://flussonic-lb.cdn.net/hbo/index.m3u8
 ############## 🏆 SPORTS ##############
-
-#EXTINF:-1 tvg-logo="https://dtat2ks7dludr.cloudfront.net/spnsportsindia/channel_logos/SONY_SportsTen1_HD.png" group-title="SM All TV",Sony Sports 1 HD
-https://stalker.tnm3us.workers.dev/62593.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e4/PTV_Sports.png" group-title="SM All TV",PTV Sports
 http://66.102.120.18:8000/play/a04w/index.m3u8
@@ -218,6 +221,9 @@ https://smart.bengaldigital.live/Zee-Bangla/index.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8e/Somoy_Television.svg" group-title="Bangla Channel",BD | SOMOY NEWS
 https://bozztv.com/rongo/rongo-somoy/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/18/DA_alternate_2017.svg" group-title="Bangla Channel",Destination America
+http://fl31.moveonjoy.com:80/Destination_America/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.12core.net/media/content/stream/07322366-d621-49bb-95f8-85e55b22022f/e8af698da12cf0c8f033d0bbe02054cf" group-title="Bangla Channel",Heritage+
 https://amg02132-sofast-heritage-samsungin-arawj.amagi.tv/ts-eu-w1-n2/playlist/amg02132-sofast-heritage-samsungin/playlist.m3u8
 
@@ -238,6 +244,9 @@ http://116.90.120.149:8000/play/a0b9/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/H1jhHDl.png" group-title="Bangla Channel",ENT | Star Utsav
 http://116.90.120.149:8000/play/a02t/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/HD.SUN.jpg" group-title="Bangla Channel",ENT | Sun TV
+https://livestream10.sunnxt.com/DolbyVision/SunTV_HDR/SunTV_HDR_Endpoints/SunTV-HDR10-IN-index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.theq.tv/wp-content/uploads/2023/10/The-Q-new-Logo.png" group-title="Bangla Channel",ENT | The Q TV
 https://vg-theqlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-306905/main.m3u8
@@ -295,6 +304,12 @@ https://atticatv.siliconweb.com/atticatv/atticaliveabr/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10108_h15_ab.png" group-title="Bangla Channel",EN | CTV Winnipeg (CKY)
 http://38.143.48.212:9981/stream/channelid/741174107?profile=pass
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/51/Discovery_Family.svg" group-title="Bangla Channel",EN | Discovery Family
+http://fl31.moveonjoy.com:80/DISCOVERY_FAMILY_CHANNEL/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/89/Discovery_Life_2016.jpg" group-title="Bangla Channel",EN | Discovery Life
+http://fl31.moveonjoy.com:80/DISCOVERY_LIFE/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.marschannels.com/files/channel_settings/img/1637571920876.svg" group-title="Bangla Channel",EN | FashionTV Asia HD
 https://fash1043.bstrm.net/slive/_definst_/ftv_ftv_sftv2_gp6_43313_default_1462_hls.smil/chunklist_b4628000_t64MTA4MHA=.m3u8
@@ -359,8 +374,14 @@ http://77.39.161.42:55555/Boing%20Plus
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7f/Disney_International_HD_logo.png" group-title="Bangla Channel",Disney International HD
 http://116.90.120.149:8000/play/a0e9/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
+https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia-fanon/images/b/ba/NickToons_UK_2007.svg" group-title="Bangla Channel",NICK Hindi
 http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/1034.m3u8
+
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_k6spR1AVLZ0ISqrFP-Z9JeBMHPpAc9T-pmFlG6_lSkNw=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",XilamTV
+https://xilam-animation-1-fr.samsung.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://s4.gifyu.com/images/image8c255c8f4e981429.png" group-title="Bangla Channel",EN | & FLIX
 https://edge3-moblive.yuppcdn.net:443/drm/smil:nflixdrm.smil/chunklist_b996000.m3u8
