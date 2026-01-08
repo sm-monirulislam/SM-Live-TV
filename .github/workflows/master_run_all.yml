@@ -20,14 +20,8 @@ jobs:
     uses: ./.github/workflows/Fancode_update.yml
     secrets: inherit
 
-  roarzone:
-    needs: fancode
-    if: always()
-    uses: ./.github/workflows/Roar-Zone.yml
-    secrets: inherit
-
   toffee:
-    needs: roarzone
+    needs: fancode
     if: always()
     uses: ./.github/workflows/toffee_main.yml
     secrets: inherit
