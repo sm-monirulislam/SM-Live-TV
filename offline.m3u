@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-08 21:28:26 (BD Time)
-# 📺 Channels Count: 1110
+# 🕒 Last Updated: 2026-01-08 21:58:10 (BD Time)
+# 📺 Channels Count: 1108
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -179,6 +179,9 @@ https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/1701-audio_113312_eng=113200-vid
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8e/Somoy_Television.svg" group-title="Bangla Channel",BD | SOMOY NEWS
 https://bozztv.com/rongo/rongo-somoy/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23215/tribe-tv/logo_20250429_225821_70.png" group-title="Bangla Channel",IN | Tribe TV
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/tribe-tv/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.12core.net/media/content/stream/07322366-d621-49bb-95f8-85e55b22022f/e8af698da12cf0c8f033d0bbe02054cf" group-title="Bangla Channel",Heritage+
 https://amg02132-sofast-heritage-samsungin-arawj.amagi.tv/ts-eu-w1-n2/playlist/amg02132-sofast-heritage-samsungin/playlist.m3u8
 
@@ -199,9 +202,6 @@ http://116.90.120.149:8000/play/a0b9/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/H1jhHDl.png" group-title="Bangla Channel",ENT | Star Utsav
 http://116.90.120.149:8000/play/a02t/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/HD.SUN.jpg" group-title="Bangla Channel",ENT | Sun TV
-https://livestream10.sunnxt.com/DolbyVision/SunTV_HDR/SunTV_HDR_Endpoints/SunTV-HDR10-IN-index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.theq.tv/wp-content/uploads/2023/10/The-Q-new-Logo.png" group-title="Bangla Channel",ENT | The Q TV
 https://vg-theqlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-306905/main.m3u8
@@ -334,6 +334,12 @@ https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://s4.gifyu.com/images/image8c255c8f4e981429.png" group-title="Bangla Channel",EN | & FLIX
 https://edge3-moblive.yuppcdn.net:443/drm/smil:nflixdrm.smil/chunklist_b996000.m3u8
+
+#EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23195/a-z-best-classic-tv/logo_20250205_004115_68.png" group-title="Bangla Channel",EN | a-z Best Classic TV
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/CUXB534IAMTJM7Z4BKKS/hls3/now,-1m/m.m3u8
+
+#EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23195/a-z-classic-flix/logo_20250205_005636_68.png" group-title="Bangla Channel",EN | a-z Classic Flix
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/8WOSAE6HHWJY8KP8BW2C/hls3/now,-1m/m.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/catchy-comedy-us.png" group-title="Bangla Channel",EN | Catchy Comedy
 https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-decades/index.m3u8
