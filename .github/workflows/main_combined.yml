@@ -2,7 +2,7 @@ name: 🔁 Auto Update IPTV Playlist
 
 on:
   schedule:
-    - cron: "0 * * * *"   # প্রতি ১ ঘন্টা পর চলবে
+    - cron: "*/45 * * * *"   # প্রতি ৪৫ মিনিট পর চলবে
   workflow_dispatch:
 
 permissions:
@@ -38,7 +38,7 @@ jobs:
         env:
           ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }}
 
-      # 5️⃣ ▶️ Run Playlist Combiner (FIXED PATH)
+      # 5️⃣ ▶️ Run Playlist Combiner
       - name: ▶️ Run Playlist Combiner Script
         run: |
           python main/combine_playlist.py
