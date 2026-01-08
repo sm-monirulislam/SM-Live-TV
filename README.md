@@ -64,7 +64,7 @@ You can use your playlist link like:
 https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/Combined_Live_TV.m3u
 
 
-# 🚬 Credits
+# 🛡️ Credits
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=100&color=FF2C10&background=00000000&width=400&lines=Made+By+Monirul+Islam)](https://git.io/typing-svg)
 
