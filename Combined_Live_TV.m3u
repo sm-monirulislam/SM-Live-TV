@@ -1,18 +1,12 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-13 17:00:27 (BD Time)
-# 📺 Channels Count: 1040
+# 🕒 Last Updated: 2026-01-13 17:20:44 (BD Time)
+# 📺 Channels Count: 1036
 # 🔒 Usage: Personal / Educational
 #=================================
 
 #EXTM3U url-tvg="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzayWMQexbfPV-jTx3ZNoq-XOmlHKSX1SCjg&s" group-title="Jagobd",group-title="Jagobd",Probashi
-http://158.69.24.53:8080/probashi_tv/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6xtv4erW9vj20YvFJ5LL_v05KcBCcKEuOQ&usqp=CAU" group-title="Jagobd",group-title="Jagobd",Movie Bagla
-http://alvetv.com/moviebanglatv/8080/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwaUF5gRgTQ31kirZy14fDEVgfNrx5hJwZg&s" group-title="Jagobd",group-title="Jagobd",Deepto TV
 https://byphdgllyk.gpcdn.net/hls/DeeptoTV/index.m3u8?v=1
@@ -890,9 +884,6 @@ https://tvsen7.aynascope.net/sjhdbd/index.m3u8?e=1768306573&u=78be6644-0a65-48ec
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/cb91d6750648d5fd4a51c7cb6ff9eeed" group-title="AynaOTT",Star Plus HD
 https://tvsen7.aynascope.net/sphdbd/index.m3u8?e=1768306574&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=e78af8e0fff351808070c1c4667c3449
 # Updated on: 2026-01-13 10:32:32
-
-#EXTINF:-1 tvg-logo="https://probashinews24.tv/images/logo.png" group-title="SM All TV", Probashi TV
-http://158.69.24.53:8080/probashi_tv/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://cbntvusa.net/wp-content/uploads/2024/01/cbntvusa-logo.png" group-title="SM All TV", CBN TV USA
 https://live.cbntvusa.net/hls/cbntv/index.m3u8
@@ -2634,6 +2625,9 @@ https://retroblast.tv/hls/0/stream.m3u8?cachebust=f224d41f
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/brazil/discovery-kids-br.png" group-title="Bangla Channel",Discovery Kids
 http://181.78.4.250:8098/play/a08h/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
+https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b4/Just_for_Laughs_2021.svg" group-title="Bangla Channel",Just for laughs (Pluto TV)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f48c95132a00075fd859/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 
@@ -2961,9 +2955,6 @@ http://hz1.teleport.cc/HLS/HD.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/4fun.tv_Logo_%282017%29.svg/1200px-4fun.tv_Logo_%282017%29.svg.png" group-title="Bangla Channel",OTHER | 4 Fun TV
 https://stream.4fun.tv:8888/hls/4f_low/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://a.jsrdn.com/hls/23195/4acetv/logo_20241125_195233_70.png" group-title="Bangla Channel",OTHER | 4ACETV
-https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/CVA0UNL2K6KH61IL162P/hls3/now,-1m/m.m3u8
-
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/_6TcpCK4f6BfoKArtanMuzYMWt9h2syEw3yb_5DEx-Ih0Qf8VU7q5B8vh-FV1iJxXA1jL8o0wPo=s72-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",OTHER | Afrobeats
 https://stream.ecable.tv/afrobeats/index.m3u8
 
@@ -3113,9 +3104,6 @@ https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA3)/01.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7c/Sport1_CEE_%282020-present%29.svg" group-title="Bangla Channel",--Live(Sport 1 HD)--
 http://178.23.88.55/Sport1/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://aimages.willow.tv/wlo_logo_200_200.jpg" group-title="Bangla Channel",--Live(Willow HD)--
-http://xxip9.top:8080/live/7656691303/chrisbolden765%40icloud.com/58847.m3u8
 
 #EXTINF:-1 tvg-logo="https://d229kpbsb5jevy.cloudfront.net/tv/150/150/bnw/Cricket-Gold-Channel_black.png" group-title="Bangla Channel",CR | Cricket Gold
 https://d1nj4u39ja4cn0.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/FLS-MuxIP-CricketGold/418.m3u8
