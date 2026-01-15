@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-15 21:00:39 (BD Time)
-# 📺 Channels Count: 1020
+# 🕒 Last Updated: 2026-01-15 21:27:06 (BD Time)
+# 📺 Channels Count: 1017
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -1620,9 +1620,6 @@ http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 #EXTINF:-1 tvg-id="enter10bangla.in" tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Enter%2010%20Bangla.jpeg" group-title="Bangla Channel",Enter10 Bangla HD
 https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_240p/chunks.m3u8
 
-#EXTINF:-1 tvg-id="ibtv.us" tvg-logo="https://yt3.googleusercontent.com/pQdSWGqiXZA5QEDm6A3dY2I-kg9IIlkF0YNXqvZKjaF12-HEcobFxEHPlbYNxxqitTlvPJewkT8=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",IB Tv Usa
-http://208.86.19.13:81/509.stream/index.m3u8
-
 #EXTINF:-1 tvg-id="KhushbooBangla.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e1/Khushboo_Bangla_logo_2017.png" group-title="Bangla Channel",Khushboo Bangla
 https://cdn-4.pishow.tv/live/1473/master.m3u8
 
@@ -1962,6 +1959,9 @@ http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ShemarooTV.in@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/1b/Shemaroo_TV.svg" group-title="Bangla Channel",ENT | Shemaroo TV
 https://cdn-3.pishow.tv/live/230/master.m3u8
 
+#EXTINF:-1 tvg-id="SunTV.in@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/HD.SUN.jpg" group-title="Bangla Channel",ENT | Sun TV
+https://livestream10.sunnxt.com/DolbyVision/SunTV_HDR/SunTV_HDR_Endpoints/SunTV-HDR10-IN-index.m3u8
+
 #EXTINF:-1 tvg-id="AbzyMovies.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/50/Abzy_movies.jpg" group-title="Bangla Channel",MOV | Abzy Movies
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/db8d4eca72d64748a00d0631debf542d/index.m3u8
 
@@ -2048,6 +2048,9 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 
 #EXTINF:-1 tvg-id="DEEWANAHD.in" tvg-logo="https://i.postimg.cc/9Q7G21N6/Deewana.png" group-title="Bangla Channel",MU | DEEWANA HD
 https://live20.bozztv.com/giatvplayout7/giatv-209592/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="HaryanaBeat.in" tvg-logo="https://a.jsrdn.com/hls/22994/haryana-beat/logo_20241127_213000_70.png" group-title="Bangla Channel",MU | Haryana Beat
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/haryana-beat/index.m3u8
 
 #EXTINF:-1 tvg-id="HindiHits.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e7/HITS-RADIO-2024.svg" group-title="Bangla Channel",MU | Hindi Hits HD
 http://146.59.253.52:8080/hindihitshd/index.m3u8
@@ -2433,14 +2436,8 @@ https://cloudfrontnet.vercel.app/tplay/playout/209869/master.m3u8
 #EXTINF:-1 tvg-id="DISNEYJR" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/48/DisneyJr3Dver.png" group-title="Bangla Channel",0. DISNEY JR
 http://fl61.moveonjoy.com:80/DISNEY_JR/index.m3u8
 
-#EXTINF:-1 tvg-id="doraemon" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e4/Doraemon2005.svg" group-title="Bangla Channel",0. Doraemon
-https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8
-
 #EXTINF:-1 tvg-id="duronto" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/e/ed/Duronto_TV_logo.png" group-title="Bangla Channel",0. Duronto TV
 https://tvsen4.aynaott.com/durontotv/index.m3u8
-
-#EXTINF:-1 tvg-id="GopalVar.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/00/SONY_AATH.png" group-title="Bangla Channel",0. Gopal Var
-https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
 
 #EXTINF:-1 tvg-id="Hooray Rhymes" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4600007TC_20250122T004830SQUARE.png" group-title="Bangla Channel",0. Hooray Rhymes
 https://cc-hqignh3tex8xc.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-hqignh3tex8xc/OTM/OTM_KidsToonsHindi-SCTE_SAMSUNG/playlist.m3u8
@@ -2466,14 +2463,8 @@ https://d3bxvshzgfq6in.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 #EXTINF:-1 tvg-id="Tiny POP" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD3200003T6_20250107T030811SQUARE.png" group-title="Bangla Channel",0. Tiny POP
 https://amg01753-narrativeentert-tinypop-samsunguk-hvvb7.amagi.tv/ts-eu-w1-n2/playlist/amg01753-narrativeentert-tinypop-samsunguk/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TomandJerry2" tvg-logo="https://gia.tv/streams/pptv/208314.jpg?1750373428" group-title="Bangla Channel",0. Tom and Jerry 2
-https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
-
 #EXTINF:-1 tvg-id="USBB1900004J9" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB1900004J9_20240520T214715SQUARE.png" group-title="Bangla Channel",0. Toon Goggles
 https://d1eg24xrsfr6kv.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-b4b1bzxkt1uzo-prod/tg/tg/tg.m3u8
-
-#EXTINF:-1 tvg-id="MotuPatlu" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/64/WowKidz_Logo.png" group-title="Bangla Channel",0. WowKidz (Motu Patlu)
-https://live20.bozztv.com/giatvplayout7/giatv-209622/index.m3u8
 
 #EXTINF:-1 tvg-id="US800003JM" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US800003JM_20240709T002122SQUARE.png" group-title="Bangla Channel",1. BBC Kids
 https://dmr1h4skdal9h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-msbj6srh7nhug/playlist.m3u8
