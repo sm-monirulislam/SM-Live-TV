@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-17 05:51:11 (BD Time)
-# 📺 Channels Count: 1086
+# 🕒 Last Updated: 2026-01-17 07:07:11 (BD Time)
+# 📺 Channels Count: 1088
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -242,6 +242,9 @@ https://e5.thetvapp.to/hls/AmericanHeroesChannel/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="AtticaTV.gr" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/greece/attica-tv-gr.png" group-title="Bangla Channel",EN | ATTICA
 https://atticatv.siliconweb.com/atticatv/atticaliveabr/playlist.m3u8
 
+#EXTINF:-1 tvg-id="MoreMax..Eastern.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cinemax-moremax-us.png?raw=true" group-title="Bangla Channel",EN | CINEMAX MOREMAX
+http://23.237.104.106:8080/USA_MOREMAX/index.m3u8
+
 #EXTINF:-1 tvg-id="CTV Winnipeg" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10108_h15_ab.png" group-title="Bangla Channel",EN | CTV Winnipeg (CKY)
 http://38.143.48.212:9981/stream/channelid/741174107?profile=pass
 
@@ -380,12 +383,6 @@ http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
 #EXTINF:-1 tvg-id="WORLDWIDEMUZZIK" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",OTHER | WORLD WIDE MUZZIK
 https://muzzik-live.morescreens.com/mts-5/playlist.m3u8
 
-#EXTINF:-1 tvg-id="92NewsHD" tvg-logo="https://92newshd.tv/frontn/images/92news-logo.png" group-title="Bangla Channel",NEWS | 92 News HD
-http://92news.vdn.dstreamone.net/92newshd/92hd/playlist.m3u8
-
-#EXTINF:-1 tvg-id="AlVelayatTV" tvg-logo="https://shialivetv.com/shialive/assets/img/velayatiran.jpg" group-title="Bangla Channel",Al Velayat TV
-https://nl2.livekadeh.com/hls2/velayattv_high.m3u8
-
 #EXTINF:-1 tvg-id="IBNTVAfrica.tz" tvg-logo="https://www.ibn-tv.co.tz/img/IBN-NewLogo.png" group-title="Bangla Channel",IBN TV Africa
 http://68.183.41.209:8080/live/5d9a537c64b9c/index.m3u8
 
@@ -475,9 +472,6 @@ https://tiger-hub.vercel.app/SkySports-2_NZ/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="skysports.max" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sky-sports-main-cricket.jpg" group-title="Bangla Channel",FB+MIX | Sky Sports Mix
 https://tiger-hub.vercel.app/SkySports-mix/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="MMA TV" tvg-logo="https://media.unreel.me/prod/freelivesports/logo/9cb9b4ff-2958-4179-bd0b-bc9a44888cc7" group-title="Bangla Channel",FIGHT | MMA TV
-https://streams2.sofast.tv/ptnr-sportstrible/title-MMA_Sportstrible/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/f6b049e4-885e-4551-85ac-8eef0b33d3a2/playlist.m3u8
 
 #EXTINF:-1 tvg-id="PeakFighting" tvg-logo="https://a.jsrdn.com/hls/23195/peak-fighting/logo_20250422_184955_68.png" group-title="Bangla Channel",FIGHT | Peak Fighting
 https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/WHO7DFHIX4DBKUFBSGIY/hls3/now,-1m,15s/m.m3u8
