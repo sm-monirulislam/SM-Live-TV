@@ -3,41 +3,34 @@ import json
 import os
 from datetime import datetime
 
-# API URL from GitHub Secret
+# GitHub Secret
 API_URL = os.environ.get("ROARZONE_API_URL")
+OUTPUT_FILE = "RoarZone.m3u"
 
 def generate_playlist():
-    print("🚀 Starting Auto Playlist Generator...")
-
     if not API_URL:
         print("❌ ROARZONE_API_URL secret not found")
         return False
 
-    print("📡 Fetching data from API...")
-
     try:
-        response = requests.get(API_URL, timeout=20)
-        response.raise_for_status()
-        try:
-            data = response.json()
-        except json.JSONDecodeError:
-            data = json.loads(response.text.strip())
+        r = requests.get(API_URL, timeout=20)
+        r.raise_for_status()
+        data = r.json()
     except Exception as e:
-        print(f"❌ API Fetch Error: {e}")
+        print(f"❌ API error: {e}")
         return False
 
-    # API must be a list
-    if not isinstance(data, list) or len(data) == 0:
-        print("⚠️ Invalid API response or empty list.")
+    # API must be list
+    if not isinstance(data, list) or not data:
+        print("❌ API response is not a list or empty")
         return False
 
-    file_path = "RoarZone.m3u"
+    channel_count = 0
+    seen_urls = set()
 
     try:
-        with open(file_path, "w", encoding="utf-8") as f:
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-
-            channel_count = 0
 
             for item in data:
                 if not isinstance(item, dict):
@@ -46,10 +39,12 @@ def generate_playlist():
                 name = item.get("title", "Unknown")
                 logo = item.get("logo", "")
                 group = item.get("category", "Others")
-                url = item.get("stream_url")
+                url = item.get("url")
 
-                if not url:
+                if not url or url in seen_urls:
                     continue
+
+                seen_urls.add(url)
 
                 f.write(
                     f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}\n'
@@ -62,28 +57,16 @@ def generate_playlist():
                 f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
             )
 
-        if channel_count == 0:
-            print("⚠️ No channels found — playlist empty.")
-        else:
-            print(f"✅ Playlist generated successfully with {channel_count} channels.")
-
+        print(f"✅ Playlist generated: {channel_count} channels")
         return True
 
     except Exception as e:
-        print(f"❌ Error writing playlist file: {e}")
+        print(f"❌ File write error: {e}")
         return False
 
 
 if __name__ == "__main__":
-    print("=========================================")
-    print("🎯 RoarZone Auto Update M3U Playlist Script")
-    print("=========================================")
-
+    print("🎯 RoarZone Auto M3U Generator")
     success = generate_playlist()
-
-    print("=========================================")
     if not success:
-        print("❌ Process failed.")
         exit(1)
-    else:
-        print("✅ Process completed successfully!")
