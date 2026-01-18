@@ -1,7 +1,7 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-18 21:15:14 (BD Time)
+# 🕒 Last Updated: 2026-01-18 21:50:33 (BD Time)
 # 📺 Channels Count: 1183
 # 🔒 Usage: Personal / Educational
 #=================================
@@ -194,9 +194,6 @@ https://amg01117-amg01117c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="E24.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/48/E24_new.jpg" group-title="Bangla Channel",ENT | E24
 https://live-e24.dailyhunt.in/eternowsa/live/amlst:E24_,b256,b512,b1024,b1824,.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="SunTV.in@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/HD.SUN.jpg" group-title="Bangla Channel",ENT | Sun TV
-https://livestream10.sunnxt.com/DolbyVision/SunTV_HDR/SunTV_HDR_Endpoints/SunTV-HDR10-IN-index.m3u8
-
 #EXTINF:-1 tvg-id="TheQTV.in" tvg-logo="https://www.theq.tv/wp-content/uploads/2023/10/The-Q-new-Logo.png" group-title="Bangla Channel",ENT | The Q TV
 https://vg-theqlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-306905/main.m3u8
 
@@ -220,9 +217,6 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 
 #EXTINF:-1 tvg-id="Mastiii.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2d/Mastiii_2023.jpg" group-title="Bangla Channel",MU | Mastiii
 https://sabliveyupp.akamaized.net/mastii/mastii_poc_800k.m3u8
-
-#EXTINF:-1 tvg-id="1stIndiaNews" tvg-logo="https://firstindianews.com/images/logo.png" group-title="Bangla Channel",NEWS | 1st India News
-https://xlbor37ydvaj-hls-live.wmncdn.net/firstindianewstv1/live.stream/index.m3u8
 
 #EXTINF:-1 tvg-id="4newyork.us" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/03/WNBC_%282023%29.svg" group-title="Bangla Channel",EN | 4 New York
 http://208.86.19.13:81/102.stream/index.m3u8
@@ -280,6 +274,9 @@ http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/453.m3u8
 
 #EXTINF:-1 tvg-id="BoingPlus" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Boing_Plus_logo_2020.svg/735px-Boing_Plus_logo_2020.svg.png?20201201165658" group-title="Bangla Channel",Boing Plus
 http://77.39.161.42:55555/Boing%20Plus
+
+#EXTINF:-1 tvg-id="DisneyJunior.eu" tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
+https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
 
 #EXTINF:-1 tvg-id="NICKHindi" tvg-logo="https://static.wikia.nocookie.net/logopedia-fanon/images/b/ba/NickToons_UK_2007.svg" group-title="Bangla Channel",NICK Hindi
 http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/1034.m3u8
@@ -371,11 +368,11 @@ http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
 #EXTINF:-1 tvg-id="WORLDWIDEMUZZIK" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",OTHER | WORLD WIDE MUZZIK
 https://muzzik-live.morescreens.com/mts-5/playlist.m3u8
 
-#EXTINF:-1 tvg-id="GeoKahani.pk" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d8/Geo_Kahani.png" group-title="Bangla Channel",ENT | Geo Kahani HD
-https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
-
 #EXTINF:-1 tvg-id="AlVelayatTV" tvg-logo="https://shialivetv.com/shialive/assets/img/velayatiran.jpg" group-title="Bangla Channel",Al Velayat TV
 https://nl2.livekadeh.com/hls2/velayattv_high.m3u8
+
+#EXTINF:-1 tvg-id="IBNTVAfrica.tz" tvg-logo="https://www.ibn-tv.co.tz/img/IBN-NewLogo.png" group-title="Bangla Channel",IBN TV Africa
+http://68.183.41.209:8080/live/5d9a537c64b9c/index.m3u8
 
 #EXTINF:-1 tvg-id="starsports1hd.in" tvg-logo="https://static.epg.best/cn/StarSports1.cn.png" group-title="Bangla Channel",---Live(Star Sports 1 HD)---
 http://41.205.93.154/STARSPORTS1/index.m3u8
@@ -442,6 +439,9 @@ https://tiger-hub.vercel.app/Arena-Sports/8/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-id="M-Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/4b/M-Sport_%28logo%29.png" group-title="Bangla Channel",FB | M-Sports HD
 http://live.matribhumitv.com/matribhumi-sports/index.m3u8
+
+#EXTINF:-1 tvg-id="OmanSportsTV" tvg-logo="https://cdn.livesoccertv.com/images/channels/thumbnails/oman-tv-sport.png" group-title="Bangla Channel",FB | Oman Sports TV
+https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b900000.m3u8
 
 #EXTINF:-1 tvg-id="skysports.premier" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Sky_Sports_Premier_League_2020.svg" group-title="Bangla Channel",FB | SkySports premier League
 https://tiger-hub.vercel.app/SkySports-premire_League/tracks-v1a1/mono.m3u8
