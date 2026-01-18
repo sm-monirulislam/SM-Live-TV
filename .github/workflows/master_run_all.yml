@@ -31,3 +31,9 @@ jobs:
     if: always()
     uses: ./.github/workflows/auto_aynaott.yml
     secrets: inherit
+
+  roarzone:
+    needs: aynaott
+    if: always()
+    uses: ./.github/workflows/Roar-Zone.yml
+    secrets: inherit
