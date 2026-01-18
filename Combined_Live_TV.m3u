@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-18 17:51:07 (BD Time)
-# 📺 Channels Count: 1112
+# 🕒 Last Updated: 2026-01-18 18:28:04 (BD Time)
+# 📺 Channels Count: 1113
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -2236,9 +2236,6 @@ http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ShemarooTV.in@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/1b/Shemaroo_TV.svg" group-title="Bangla Channel",ENT | Shemaroo TV
 https://cdn-3.pishow.tv/live/230/master.m3u8
 
-#EXTINF:-1 tvg-id="SunTV.in@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/HD.SUN.jpg" group-title="Bangla Channel",ENT | Sun TV
-https://livestream10.sunnxt.com/DolbyVision/SunTV_HDR/SunTV_HDR_Endpoints/SunTV-HDR10-IN-index.m3u8
-
 #EXTINF:-1 tvg-id="AbzyMovies.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/50/Abzy_movies.jpg" group-title="Bangla Channel",MOV | Abzy Movies
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/db8d4eca72d64748a00d0631debf542d/index.m3u8
 
@@ -2358,6 +2355,9 @@ https://d2lk5u59tns74c.cloudfront.net/out/v1/f913cf893c594f73b114216e74a2efbc/in
 
 #EXTINF:-1 tvg-id="PublicMusic" tvg-logo="https://i.imgur.com/0xS5lNT.png" group-title="Bangla Channel",MU | Public Music
 https://cdn-3.pishow.tv/live/441/master.m3u8
+
+#EXTINF:-1 tvg-id="PunjabiHits.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/Punjabi_Hits.jpg" group-title="Bangla Channel",MU | Punjabi Hits
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/punjabi-hits/index.m3u8
 
 #EXTINF:-1 tvg-id="SagaMusic.in" tvg-logo="https://a.jsrdn.com/hls/23146/saga-music/logo_20240322_183949_68.png" group-title="Bangla Channel",MU | Saga Music
 https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/saga-music/5e027b28-fb0e-49cc-9962-44babcc450ce/0.m3u8
@@ -2863,6 +2863,9 @@ https://retroblast.tv/hls/0/stream.m3u8?cachebust=f224d41f
 #EXTINF:-1 tvg-id="DiscoveryKids" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/brazil/discovery-kids-br.png" group-title="Bangla Channel",Discovery Kids
 http://181.78.4.250:8098/play/a08h/index.m3u8
 
+#EXTINF:-1 tvg-id="DisneyJunior.eu" tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
+https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
+
 #EXTINF:-1 tvg-id="Just for laughs – Pluto TV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b4/Just_for_Laughs_2021.svg" group-title="Bangla Channel",Just for laughs (Pluto TV)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f48c95132a00075fd859/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel
 
@@ -3117,9 +3120,6 @@ https://debate-elections-2019.akamaized.net/2dba917cc589465ead367550ab2af416/us-
 
 #EXTINF:-1 tvg-id="OxygenMusic" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6c/Oxygen_2017.svg" group-title="Bangla Channel",EN | Oxygen Music
 https://oxygenmusic.hu:2443/hls/oxygenmusic.m3u8
-
-#EXTINF:-1 tvg-id="PlayTV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/32/PlayTV2006.svg" group-title="Bangla Channel",EN | Play TV
-http://connectiktv.ddns.net:5000/playtv/@playtv/chunklist.m3u8
 
 #EXTINF:-1 tvg-id="PopstarTV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/44/PopStar_%282018%29.png" group-title="Bangla Channel",EN | Popstar! TV
 https://linear-10.frequency.stream/dist/zype/10/hls/master/playlist_1024x576.m3u8
@@ -3393,6 +3393,9 @@ https://amg17334-amg17334c1-freelivesports-emea-7386.playouts.now.amagi.tv/ts-eu
 
 #EXTINF:-1 tvg-id="MMAJunkie" tvg-logo="https://a.jsrdn.com/hls/22814/mma-junkie/logo_20231219_215607_30.png" group-title="Bangla Channel",FIGHT | MMA Junkie
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mma-junkie/master.m3u8
+
+#EXTINF:-1 tvg-id="MMA TV" tvg-logo="https://media.unreel.me/prod/freelivesports/logo/9cb9b4ff-2958-4179-bd0b-bc9a44888cc7" group-title="Bangla Channel",FIGHT | MMA TV
+https://streams2.sofast.tv/ptnr-sportstrible/title-MMA_Sportstrible/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/f6b049e4-885e-4551-85ac-8eef0b33d3a2/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MVMT Culture" tvg-logo="https://media.unreel.me/prod/freelivesports/logo/98403785-3bba-4f7d-bee8-0eada4d790c8" group-title="Bangla Channel",FIGHT | MVMT Culture
 https://d15g7z5n3epv7t.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/TheGrapplingNetwork-SportsTribal/236.m3u8
