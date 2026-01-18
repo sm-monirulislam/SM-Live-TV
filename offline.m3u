@@ -1,0 +1,466 @@
+#=================================
+# 🖥️ Developed by: Monirul Islam
+# 🔗 Telegram: https://t.me/monirul_Islam_SM
+# 🕒 Last Updated: 2026-01-18 17:34:39 (BD Time)
+# 📺 Channels Count: 1187
+# 🔒 Usage: Personal / Educational
+#=================================
+
+#EXTM3U url-tvg="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
+
+#EXTINF:-1 tvg-logo="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/football-logo-design-template-bebebf8ff1c25b66b504d37afaee99f0_screen.jpg?ts=1686017774" group-title="Jagobd",group-title="Jagobd",Football match
+http://103.101.197.10:8989/M_Movies/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.jagobd.com/wp-content/uploads/2016/02/channel24.jpg?x49520" group-title="Jagobd",group-title="Jagobd",Channel 24
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channel24-sg-e8e.stream/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7t7xNGrk/IMG-20251222-232617-913.jpg" group-title="SM All TV", Sami TV
+https://padmaonline.duckdns.org:8088/SamiTV/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.pbntv24.com/wp-content/uploads/2023/07/logo-pbn.jpg" group-title="SM All TV", PBN TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/pbntv.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://ssl.com.bd/sites/default/files/BTV%20Logo%20Gallery.png" group-title="SM All TV",BTV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/leielj83em5kg7h/somoy_news.png" group-title="SM All TV",Somoy TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://s4.gifyu.com/images/imagea02f4314e761661d.png" group-title="SM All TV",Ekattor TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/puf12xv5flgbnz5/channel24_bd.png" group-title="SM All TV",Channel 24
+https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/7xwwb8hetz3w8rp/independent_tv.png" group-title="SM All TV",Independent TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/k7z1dsec1jfjbkn/jamuna_tv_bd.png" group-title="SM All TV",Jamuna TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/4ldi1dp09s8o6bm/atn_news_bd.png" group-title="SM All TV",ATN News
+https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://s6.gifyu.com/images/image27cfa7002786c232.png" group-title="SM All TV",ATN Bangla
+https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.ntvbd.com/sites/default/files/aggregator/2020/02/17/ntv-channel_0.jpg" group-title="SM All TV",NTV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://s4.gifyu.com/images/image5c0bfa6b281be803.png" group-title="SM All TV",BanglaVision
+https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.tvpassport.com/image/station/240x135/channel-i-bangla.png" group-title="SM All TV",Channel I
+https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/0rPdpW9/MB-TV.jpg" group-title="SM All TV",Movie Bangla
+http://alvetv.com/moviebanglatv/8080/index.m3u8
+############## 🇮🇳 Indian-Bangla ##############
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d7/Duronto_TV_Logo.png" group-title="SM All TV",Duronto TV
+https://tvsen4.aynaott.com/durontotv/index.m3u8
+############## 🌍 Documentary ##############
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Animal_Planet_logo.svg/1280px-Animal_Planet_logo.svg.png" group-title="SM All TV",Animal Planet HD
+https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8
+############## 🎶 Music ##############
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e7/Gaan_Bangla_Logo_2021.jpg" group-title="SM All TV",Gaan Bangla
+https://tplay.live/originals/bengali-beats/index.m3u8
+############## 🎞️ English Movie ##############
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f0/611-cinemax.png" group-title="SM All TV",My Cinema
+https://mytime-tcl.amagi.tv/playlist.m3u8
+############## 🏆 SPORTS ##############
+
+#EXTINF:-1 tvg-logo="https://static.epg.best/qa/beINSports1.qa.png" group-title="SM All TV",BeIN Sports Extra
+https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
+############## 📻 FM-Radio ##############
+
+#EXTINF:-1 tvg-id="cartoonnetworkhd.in" tvg-name="" group-title="jadoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/2000px-Cartoon_Network_2010_logo.svg.png",IN: CARTOON NETWORK
+https://ranapk.online/OPPLEX/TATA/play.php?id=150478|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="nick.in" tvg-name="" group-title="jadoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/1200px-Nickelodeon_2009_logo.svg.png",IN: NICK
+https://ranapk.online/OPPLEX/TATA/play.php?id=150482|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="pogo.in" tvg-name="" group-title="jadoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/89/POGO-logo.png",IN: POGO
+https://ranapk.online/OPPLEX/TATA/play.php?id=150483|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="jadoo" tvg-logo="https://static.epg.best/in/SonyYAY.in.png",IN | SONY YAY
+https://ranapk.online/OPPLEX/TATA/play.php?id=26187|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="jadoo" tvg-logo="https://static.epg.best/in/NickHDPlus.in.png",IN: NICK SONIC
+https://ranapk.online/OPPLEX/TATA/play.php?id=34011|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="sonyten3hd.in" tvg-name="" group-title="jadoo" tvg-logo="https://static.epg.best/in/NickHDPlus.in.png",NICK HD+ [FHD]
+https://ranapk.online/OPPLEX/TATA/play.php?id=76722|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="discoverykids.in" tvg-name="" group-title="jadoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/220px-2016_Discovery_Kids_logo.svg.png",DISCOVERY KIDS
+https://ranapk.online/OPPLEX/TATA/play.php?id=76723|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="jadoo" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Disney_Junior.svg/1200px-Disney_Junior.svg.png",IN: DISNEY JUNIOR
+https://ranapk.online/OPPLEX/TATA/play.php?id=153175|User-Agent=
+
+#EXTINF:-1 tvg-id="388459" tvg-name="24/7 KIDS | DORAEMON" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png" group-title="jadoo",24/7 KIDS | DORAEMON
+https://ranapk.online/OPPLEX/TATA/play.php?id=388459|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="disneychannel.in" tvg-name="" group-title="jadoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/2014_Disney_Channel_logo.svg/1200px-2014_Disney_Channel_logo.svg.png",IN | DISNEY HD
+https://ranapk.online/OPPLEX/TATA/play.php?id=167551|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="jadoo" tvg-logo="",KIDS: CHUTTI TV
+https://ranapk.online/OPPLEX/TATA/play.php?id=150479|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="jadoo" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Hungama.png",IN: HUNGAMA**
+https://ranapk.online/OPPLEX/TATA/play.php?id=150480|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="jadoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c5/Cartoon_Network_HD%2B_India_logo.png",IN: CARTOON NETWORK HD+
+https://ranapk.online/OPPLEX/TATA/play.php?id=153154|User-Agent=
+
+#EXTINF:-1 tvg-id="" tvg-name="" group-title="jadoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Nick_Jr._logo_2009.svg/2560px-Nick_Jr._logo_2009.svg.png",IND: NICK JUNIOR
+https://ranapk.online/OPPLEX/TATA/play.php?id=153156|User-Agent=RANAPK
+
+#EXTINF:-1 tvg-id="B24C" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4lPPs9QsjYWuIKuwCxclbK7Adi02DQ3PZRqYpUFGgZXKAvcaWqB0Xs9E&s=10" group-title="Bangla Channel",B24C
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/b24c.stream/mono.m3u8
+
+#EXTINF:-1 tvg-id="BOISHAKHITV.bd" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/0/08/Boishakhi_TV_HD_logo_2022.png" group-title="Bangla Channel",BOISHAKHI TV
+https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8
+
+#EXTINF:-1 tvg-id="btv.bd" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/12/BTV_HD_Logo.svg" group-title="Bangla Channel",BTV HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
+
+#EXTINF:-1 tvg-id="MAASRANGA.bd" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png" group-title="Bangla Channel",MAASRANGA HD
+http://mtv.sunplex.live/MAASRANGA-TV/index.m3u8
+
+#EXTINF:-1 tvg-id="MagicBanglaTV" tvg-logo="https://magicbanglatv.com/images/logo-170679715465bba8620786e.png" group-title="Bangla Channel",Magic Bangla TV
+https://jolshabd.com/live/mbanglatv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="zeebanglacinema.in" tvg-logo="http://openboxv8s.com/india/zee_bangla_cinema.jpg" group-title="Bangla Channel",MOV | ZEE BANGLA CINEMA
+https://smart.bengaldigital.live/Zee-Bangla-Cinema/index.m3u8
+
+#EXTINF:-1 tvg-id="MUSICBANGLA" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/75/Music_Bangla_new.jpeg" group-title="Bangla Channel",MU | MUSIC BANGLA
+http://live.matribhumitv.com/music-bangla/index.m3u8
+
+#EXTINF:-1 tvg-id="sangeetbangla.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Sangeet_Bangla_logo_2006.png" group-title="Bangla Channel",MU | SANGEET BANGLA
+http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/541.m3u8
+
+#EXTINF:-1 tvg-id="mytv.bd" tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/My%20TV.svg.png" group-title="Bangla Channel",MY TV HD
+https://mytvbangla.com/0.m3u8
+
+#EXTINF:-1 tvg-id="ntv.bd" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e1/NTV_Bangladesh.svg" group-title="Bangla Channel",NTV HD
+https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/1716-audio_113462_eng=113200-video=1692000.m3u8
+
+#EXTINF:-1 tvg-id="Sanandatv" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/49/Sananda_TV_logo.jpeg" group-title="Bangla Channel",Sananda TV
+https://live.sanonda.tv/sanonda/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="sunbangla.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5e/Sun_Bangla_Logo.png" group-title="Bangla Channel",SUN Bangla
+https://smart.bengaldigital.live/sun-bangla-paid/index.m3u8
+
+#EXTINF:-1 tvg-id="zeebangla.in" tvg-logo="http://openboxv8s.com/india/zee_bangla.jpg" group-title="Bangla Channel",Zee Bangla HD
+https://smart.bengaldigital.live/Zee-Bangla/index.m3u8
+
+#EXTINF:-1 tvg-id="atnnews.in" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/4d/ATN_News_HD.png" group-title="Bangla Channel",BD | ATN News
+https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8
+
+#EXTINF:-1 tvg-id="channel24.bd" tvg-logo="https://yt3.googleusercontent.com/8Q8MCd6ypr2Hzbp60VE_stJPl063kQYfeTxdIQkAXRfhdzxByLl0sJYHsk43uTM4W_cOzwcbPQ=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",BD | Channel 24
+https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8
+
+#EXTINF:-1 tvg-id="ekattor.tv" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5d/Ekattor_TV_logo.png" group-title="Bangla Channel",BD | Ekattor TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/1705-audio_113352_eng=113200-video=1692000.m3u8
+
+#EXTINF:-1 tvg-id="INDEPENDENTTV.bd" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/b/bb/Independent_logo_2011.png" group-title="Bangla Channel",BD | Independent Television
+https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
+
+#EXTINF:-1 tvg-id="jamuna.tv" tvg-logo="https://www.freekaj.com/assets/images/stock/image/2024/01/14/65a43ac0d1ffc1705261760.jpg" group-title="Bangla Channel",BD | JAMUNA TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/1701-audio_113312_eng=113200-video=1692000.m3u8
+
+#EXTINF:-1 tvg-id="Heritage+" tvg-logo="https://static.12core.net/media/content/stream/07322366-d621-49bb-95f8-85e55b22022f/e8af698da12cf0c8f033d0bbe02054cf" group-title="Bangla Channel",Heritage+
+https://amg02132-sofast-heritage-samsungin-arawj.amagi.tv/ts-eu-w1-n2/playlist/amg02132-sofast-heritage-samsungin/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MilitaryTimes" tvg-logo="https://a.jsrdn.com/hls/22930/militarytimes/logo_20231219_215521_36.png" group-title="Bangla Channel",MilitaryTimes
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/sightline/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TrueCrimeNetwork" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/true-crime-network-us.png" group-title="Bangla Channel",True Crime Network
+https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-truecrimenetwork/index.m3u8
+
+#EXTINF:-1 tvg-id="AndTV.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4c/%26TV_HD_%282025%29.svg" group-title="Bangla Channel",ENT | &TV HD
+https://amg01117-amg01117c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="E24.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/48/E24_new.jpg" group-title="Bangla Channel",ENT | E24
+https://live-e24.dailyhunt.in/eternowsa/live/amlst:E24_,b256,b512,b1024,b1824,.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TheQTV.in" tvg-logo="https://www.theq.tv/wp-content/uploads/2023/10/The-Q-new-Logo.png" group-title="Bangla Channel",ENT | The Q TV
+https://vg-theqlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-306905/main.m3u8
+
+#EXTINF:-1 tvg-id="ZeeAmolTV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/9b/Anmol_TV_Logo_%282025%2C_Low_Quality%29.jpg" group-title="Bangla Channel",ENT | Zee Amol TV
+https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/chunklist_w1694401036.m3u8
+
+#EXTINF:-1 tvg-id="RDCMovies" tvg-logo="https://onezoo.net/wp-content/uploads/2024/07/ChatGPT-Image-Apr-14-2025-05_05_47-PM-200x300.png" group-title="Bangla Channel",MOV | RDC Movies
+https://janya-rdcmovies.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/230a723f-867d-4fa3-b2d2-a622ba994cd2/main.m3u8
+
+#EXTINF:-1 tvg-id="Zee Amol Cinema" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",MOV | Zee Amol Cinema
+https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/chunklist_w1694401036.m3u8
+
+#EXTINF:-1 tvg-id="ZEECINEMA.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8a/Zee_Cinema_2017_old.png" group-title="Bangla Channel",MOV | ZEE CINEMA HD
+https://smart.bengaldigital.live/ZeeCinema/index.m3u8
+
+#EXTINF:-1 tvg-id="Dabangg.in" tvg-logo="https://a.jsrdn.com/hls/23199/dabangg/logo_20250324_190201_63.png" group-title="Bangla Channel",MU | Dabangg
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/dabangg/master.m3u8
+
+#EXTINF:-1 tvg-id="Maiboli.in" tvg-logo="https://a.jsrdn.com/hls/22973/maiboli/logo_20231219_215344_67.png" group-title="Bangla Channel",MU | Maiboli
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/maiboli/master.m3u8
+
+#EXTINF:-1 tvg-id="Mastiii.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2d/Mastiii_2023.jpg" group-title="Bangla Channel",MU | Mastiii
+https://sabliveyupp.akamaized.net/mastii/mastii_poc_800k.m3u8
+
+#EXTINF:-1 tvg-id="MNTVMusic" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",MU | MNTV Music
+https://mntv.livebox.co.in/musichls/live.m3u8
+
+#EXTINF:-1 tvg-id="4newyork.us" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/03/WNBC_%282023%29.svg" group-title="Bangla Channel",EN | 4 New York
+http://208.86.19.13:81/102.stream/index.m3u8
+
+#EXTINF:-1 tvg-id="american-heroes-channel" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f1/American_Heroes_Channel.svg" group-title="Bangla Channel",EN | American Heroes Channel
+https://e5.thetvapp.to/hls/AmericanHeroesChannel/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="AtticaTV.gr" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/greece/attica-tv-gr.png" group-title="Bangla Channel",EN | ATTICA
+https://atticatv.siliconweb.com/atticatv/atticaliveabr/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CTV Winnipeg" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10108_h15_ab.png" group-title="Bangla Channel",EN | CTV Winnipeg (CKY)
+http://38.143.48.212:9981/stream/channelid/741174107?profile=pass
+
+#EXTINF:-1 tvg-id="FashionTVAsiaHD" tvg-logo="https://cdn.marschannels.com/files/channel_settings/img/1637571920876.svg" group-title="Bangla Channel",EN | FashionTV Asia HD
+https://fash1043.bstrm.net/slive/_definst_/ftv_ftv_sftv2_gp6_43313_default_1462_hls.smil/chunklist_b4628000_t64MTA4MHA=.m3u8
+
+#EXTINF:-1 tvg-id="fox.us" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e3/Fox_2019.svg" group-title="Bangla Channel",EN | Fox
+http://208.86.19.13:81/103.stream/index.m3u8
+
+#EXTINF:-1 tvg-id="fox2.us" tvg-logo="https://fox2now.com/wp-content/uploads/sites/14/2020/02/cropped-FOX2NOW.png" group-title="Bangla Channel",EN | Fox 2
+http://208.86.19.13:81/106.stream/index.m3u8
+
+#EXTINF:-1 tvg-id="GlobalToronto" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f7/Global_TV_2019.svg" group-title="Bangla Channel",EN | Global Toronto
+http://38.143.48.212:9981/stream/channelid/41831820?profile=pass
+
+#EXTINF:-1 tvg-id="my9.us" tvg-logo="https://cdn.titantv.com/i4fXAxGXCj88NotOCDfyK-YZKL1vqYrc0fXzRxmrvPg.png" group-title="Bangla Channel",EN | My 9
+http://208.86.19.13:81/105.stream/index.m3u8
+
+#EXTINF:-1 tvg-id="aljazeera.com" tvg-logo="https://emergencyuk.org/wp-content/uploads/2017/03/Aljazeera-logo-English-1024x768.png" group-title="Bangla Channel",Al Jazeera English HD
+https://live-hls-web-aje.getaj.net/AJE/04.m3u8
+
+#EXTINF:-1 tvg-id="BBCNews" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/62/BBC_News_2019.svg" group-title="Bangla Channel",BBC News
+https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Boomerang" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/hallmark-network-us.png" group-title="Bangla Channel",0. Boomerang
+https://e2.thetvapp.to/hls/Boomerang/tracks-v1a1/mono.m3u8?token=QqMZ-c8Lz3FDezbSedltLw&expires=1760730512&user_id=MjcuMTQ3LjE4Ni42MA==
+
+#EXTINF:-1 tvg-id="TomandJerry" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/26/-416014211062tg5cor5qw.png" group-title="Bangla Channel",0. Tom and Jerry
+https://tiger-hub.vercel.app/24×7_Tom&Jerry/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="TomandJerry3" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/88/Tom_and_Jerry_Logo.jpg" group-title="Bangla Channel",0. Tom and Jerry 3
+http://live.iill.top/huya.php?id=11352879
+
+#EXTINF:-1 tvg-id="BabyFirst" tvg-logo="https://babyfirsttv.com/wp-content/uploads/2024/03/babyfirst_logo_2022-1024x202.png" group-title="Bangla Channel",1. BabyFirst
+https://streams.sofast.tv/ptnr-yupptv/title-BABYFIRST-ENG_YuppTV/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c8d16110-566c-4e95-a1df-55d175e9e201/manifest.m3u8
+
+#EXTINF:-1 tvg-id="DisneyChannel.us@East" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c0/Disney_Channel_2022.svg" group-title="Bangla Channel",1. Disney Channel East
+http://kstv.us:8080/live/Purn3542/38791114838/40725.ts
+
+#EXTINF:-1 tvg-id="PappaPigPluto" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c5/Peppa_Pig.svg" group-title="Bangla Channel",1. Pappa Pig Pluto
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fb6c84dd37df3b4290c5livestitch/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d14fb6c84dd37df3b4290c5&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=985&terminate=false&userId=&profilesFromStream=true
+
+#EXTINF:-1 tvg-id="POGO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d3/Pogo_2016.svg" group-title="Bangla Channel",2. POGO
+http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/453.m3u8
+
+#EXTINF:-1 tvg-id="BoingPlus" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Boing_Plus_logo_2020.svg/735px-Boing_Plus_logo_2020.svg.png?20201201165658" group-title="Bangla Channel",Boing Plus
+http://77.39.161.42:55555/Boing%20Plus
+
+#EXTINF:-1 tvg-id="NICKHindi" tvg-logo="https://static.wikia.nocookie.net/logopedia-fanon/images/b/ba/NickToons_UK_2007.svg" group-title="Bangla Channel",NICK Hindi
+http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/1034.m3u8
+
+#EXTINF:-1 tvg-id="XilamTV.fr" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_k6spR1AVLZ0ISqrFP-Z9JeBMHPpAc9T-pmFlG6_lSkNw=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",XilamTV
+https://xilam-animation-1-fr.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AndFLIX" tvg-logo="https://s4.gifyu.com/images/image8c255c8f4e981429.png" group-title="Bangla Channel",EN | & FLIX
+https://edge3-moblive.yuppcdn.net:443/drm/smil:nflixdrm.smil/chunklist_b996000.m3u8
+
+#EXTINF:-1 tvg-id="CatchyComedy" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/catchy-comedy-us.png" group-title="Bangla Channel",EN | Catchy Comedy
+https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-decades/index.m3u8
+
+#EXTINF:-1 tvg-id="Movies!" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/movies-us.png" group-title="Bangla Channel",EN | Movies!
+https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-movies!/index.m3u8
+
+#EXTINF:-1 tvg-id="USANetwork" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/usa-us.png" group-title="Bangla Channel",EN | USA Network
+https://e2.thetvapp.to/hls/USANetworkEast/tracks-v1a1/mono.m3u8?token=wO9190-I8wRG5hLCzWKFiw&expires=1760730513&user_id=MjcuMTQ3LjE4Ni42MA==
+
+#EXTINF:-1 tvg-id="ATV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/austria/atv-at.png" group-title="Bangla Channel",OTHER | ATV
+https://strm.hdtvizlecanli.com/live/atv.m3u8
+
+#EXTINF:-1 tvg-id="DuniaSinema.ml" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6a/Dunia_Sinema_New.png" group-title="Bangla Channel",OTHER | Dunia Sinema (Malaysia)
+https://unifi-live05.secureswiftcontent.com/UnifiHD/live27-1080FHD.m3u8
+
+#EXTINF:-1 tvg-id="ArabicSong" tvg-logo="" group-title="Bangla Channel",AR | Arabic Song
+https://mbc1-enc.edgenextcdn.net/out/v1/90143f040feb40589d18c57863d9e829/index_3.m3u8
+
+#EXTINF:-1 tvg-id="ELECTRO" tvg-logo="https://www.electricnow.tv/themes/custom/elec/electricnow/logo.png" group-title="Bangla Channel",EN | ELECTRO
+https://muzzik-live.morescreens.com/mts-9/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Flashback" tvg-logo="https://flashbacktv.vip/assets/img/logo-header.svg" group-title="Bangla Channel",EN | Flashback
+https://muzzik-live.morescreens.com/mts-8/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Moba" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",EN | Moba
+https://muzzik-live.morescreens.com/mts-2/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="MTVHitsEurope.uk" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d6/MTV_Hits_2021.svg" group-title="Bangla Channel",EN | MTV Hits Europe
+http://45.88.92.3/tr3_MTVHits_SD/index.m3u8?token=test
+
+#EXTINF:-1 tvg-id="MUZZIK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/1c/Muzzik1996.png" group-title="Bangla Channel",EN | MUZZIK
+https://muzzik-live.morescreens.com/mts-6/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PopStar" tvg-logo="https://video.popstaronline.com/wp-content/uploads/2024/03/Popstar-Logo_NEW_v10_sq.png" group-title="Bangla Channel",EN | Pop Star
+https://muzzik-live.morescreens.com/mts-3/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Rock&Roll" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",EN | Rock&Roll
+https://muzzik-live.morescreens.com/mts-1/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Tik Tak" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/22/TikTak1989logo.png" group-title="Bangla Channel",EN | Tik Tak
+https://muzzik-live.morescreens.com/mts-a5/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Vevo '70s" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",EN | Vevo '70s
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5f32f26bcd8aea00071240e5livestitch/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus&profilesFromStream=true
+
+#EXTINF:-1 tvg-id="Vevo'80s" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/15/Vevo2016.svg" group-title="Bangla Channel",EN | Vevo '80s
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5fd7b8bf927e090007685853livestitch/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus&profilesFromStream=true
+
+#EXTINF:-1 tvg-id="Vevo Country" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",EN | Vevo Country
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5da0d75e84830900098a1ea0livestitch/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus&profilesFromStream=true
+
+#EXTINF:-1 tvg-id="Vevo Pop" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/15/Vevo2016.svg" group-title="Bangla Channel",EN | Vevo Pop
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5d93b635b43dd1a399b39eeelivestitch/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus&profilesFromStream=true
+
+#EXTINF:-1 tvg-id="Vevo True School Hip-Hop" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/15/Vevo2016.svg" group-title="Bangla Channel",EN | Vevo True School Hip-Hop
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/61d4c2817a823d00070ba53elivestitch/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus&profilesFromStream=true
+
+#EXTINF:-1 tvg-id="ZZ TV" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",EN | ZZ TV
+https://muzzik-live.morescreens.com/mts-a4/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Jeka" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",OTHER | Jeka
+https://muzzik-live.morescreens.com/mts-4/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="MUZZIKMIX" tvg-logo="https://static.hrvatskitelekom.hr/webresources/images/maxtv-new/programi/Muzzik_mix_250x250.png" group-title="Bangla Channel",OTHER | MUZZIK MIX
+https://muzzik-live.morescreens.com/mts-a7/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="MUZZIKSEE" tvg-logo="https://static.hrvatskitelekom.hr/webresources/images/maxtv-new/programi/Muzzik_mix_250x250.png" group-title="Bangla Channel",OTHER | MUZZIK SEE
+https://muzzik-live.morescreens.com/mts-6/576p/chunklist.m3u8
+
+#EXTINF:-1 tvg-id="Sense" tvg-logo="http://sense.tv/wp-content/uploads/2020/03/sense_white.png" group-title="Bangla Channel",OTHER | Sense
+https://muzzik-live.morescreens.com/mts-7/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Teleritmo" tvg-logo="https://d60d34ithxz8n.cloudfront.net/us-logos/94a358accfbdcb772eb78f3a592903f8.png" group-title="Bangla Channel",OTHER | Teleritmo
+http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
+
+#EXTINF:-1 tvg-id="WORLDWIDEMUZZIK" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",OTHER | WORLD WIDE MUZZIK
+https://muzzik-live.morescreens.com/mts-5/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AlVelayatTV" tvg-logo="https://shialivetv.com/shialive/assets/img/velayatiran.jpg" group-title="Bangla Channel",Al Velayat TV
+https://nl2.livekadeh.com/hls2/velayattv_high.m3u8
+
+#EXTINF:-1 tvg-id="starsports1hd.in" tvg-logo="https://static.epg.best/cn/StarSports1.cn.png" group-title="Bangla Channel",---Live(Star Sports 1 HD)---
+http://41.205.93.154/STARSPORTS1/index.m3u8
+
+#EXTINF:-1 tvg-id="Star Sports 1 Hindi" tvg-logo="http://103.175.242.10/assets/images/Star%20Sports%2011732941309.png" group-title="Bangla Channel",---Live(Star Sports 1 Hindi)---
+https://tiger-hub.vercel.app/Star_Sports-1_Hindy/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="GeoSuper.pk@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/45/Geo_Super.png" group-title="Bangla Channel",--Live(Geo Super)--
+http://116.90.120.149:8000/play/a021/index.m3u8
+
+#EXTINF:-1 tvg-id="LaLigatv(DAZN)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/18/DAZN_LALIGA_2024.svg" group-title="Bangla Channel",--Live(LaLiga TV DAZN)--
+https://tiger-hub.vercel.app/DAZN-LaLiga/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="LaLiga" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/83/LaLiga_SmartBank_TV_logo.svg" group-title="Bangla Channel",--Live(LaLiga TV)--
+https://tiger-hub.vercel.app/LaLiga_TV/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="PTVsports.pk" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/aa/Ptvsportslogo2023.png" group-title="Bangla Channel",--Live(PTV Sports)--
+https://tiger-hub.vercel.app/PTV-Sports/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="SkySport2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e3/Sky_Sports_2_2015.svg" group-title="Bangla Channel",--Live(Sky Sport 2)--
+http://135.125.238.26:8080/catena-36-1149991-streamer-nz_sky_sport_2/video.m3u8?token=f54abc11fcaeb75c0368edb767264658
+
+#EXTINF:-1 tvg-id="SkySportsFootball" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8c/Sky_Sports_Football_HD.png" group-title="Bangla Channel",--Live(Sky Sports Football)--
+https://tiger-hub.vercel.app/SkySports-Football/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="SkySportsCricket" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/20/IMG_9352.png" group-title="Bangla Channel",--Live(SkySports Cricket)--
+https://tiger-hub.vercel.app/Sky-Cricket/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="SolhLiveSports" tvg-logo="" group-title="Bangla Channel",--Live(Solh Live Sports)--
+http://cors.tundracast.com:2000/https://wo.cma.footballii.ir/hls2/solh.m3u8
+
+#EXTINF:-1 tvg-id="starsportsselect1.in" tvg-logo="https://static.epg.best/in/StarSportsSelect1.in.png" group-title="Bangla Channel",--Live(STAR SPORTS SELECT 1 HD)--
+https://tiger-hub.vercel.app/Starsports_Select-1/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="starsports2hd.in" tvg-logo="https://static.epg.best/in/StarSports2.in.png" group-title="Bangla Channel",CR | Star Sports 2 HD
+http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/1370.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSportPremium1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/0d/Arena_Sport_Premium_1_2021.png" group-title="Bangla Channel",FB | Arena Sport Premium 1
+https://tiger-hub.vercel.app/Arena-Sports/Premium-1/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSportspremium3" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/9f/Arena_Sport_Premium_3_2021.png" group-title="Bangla Channel",FB | Arena Sport Premium 3
+https://tiger-hub.vercel.app/Arena-Sports/Premium_3/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSports2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/07/Arena_Sport_2.png" group-title="Bangla Channel",FB | Arena Sports 2
+https://tiger-hub.vercel.app/Arena-Sports/2/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSports3" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5c/Arena_Sport_3.png" group-title="Bangla Channel",FB | Arena Sports 3
+https://tiger-hub.vercel.app/Arena-Sports/3/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSports4" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/Arena_Sport_4.png" group-title="Bangla Channel",FB | Arena Sports 4
+https://tiger-hub.vercel.app/Arena-Sports/4/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSports5" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/32/Arena_Sport_5.png" group-title="Bangla Channel",FB | Arena Sports 5
+https://tiger-hub.vercel.app/Arena-Sports/5/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSports6" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/62/Arena_Sport_6_2019.png" group-title="Bangla Channel",FB | Arena Sports 6
+https://tiger-hub.vercel.app/Arena-Sports/6/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSports7" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/a2/ARENASPORT_7.png" group-title="Bangla Channel",FB | Arena Sports 7
+https://tiger-hub.vercel.app/Arena-Sports/7/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="ArenaSports8" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4e/ARENASPORT_8.png" group-title="Bangla Channel",FB | Arena Sports 8
+https://tiger-hub.vercel.app/Arena-Sports/8/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="M-Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/4b/M-Sport_%28logo%29.png" group-title="Bangla Channel",FB | M-Sports HD
+http://live.matribhumitv.com/matribhumi-sports/index.m3u8
+
+#EXTINF:-1 tvg-id="skysports.premier" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Sky_Sports_Premier_League_2020.svg" group-title="Bangla Channel",FB | SkySports premier League
+https://tiger-hub.vercel.app/SkySports-premire_League/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="TYCSports" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4b/TYC01.png" group-title="Bangla Channel",FB | TYC Sports
+https://tiger-hub.vercel.app/TYC_Sports-Argentina/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="PremireSports1" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/a7/Premier_Sports_1_II.svg" group-title="Bangla Channel",FB+MIX | Premire Sports 1
+https://tiger-hub.vercel.app/Premier_Sports-1/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="skysports1.nz" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/dc/Sky_Sports_1_2015.svg" group-title="Bangla Channel",FB+MIX | Sky Sports 1
+https://tiger-hub.vercel.app/SkySports-1_NZ/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="skysports2.nz" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sky-sports-main-cricket.jpg" group-title="Bangla Channel",FB+MIX | Sky Sports 2
+https://tiger-hub.vercel.app/SkySports-2_NZ/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="skysports.max" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sky-sports-main-cricket.jpg" group-title="Bangla Channel",FB+MIX | Sky Sports Mix
+https://tiger-hub.vercel.app/SkySports-mix/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="PeakFighting" tvg-logo="https://a.jsrdn.com/hls/23195/peak-fighting/logo_20250422_184955_68.png" group-title="Bangla Channel",FIGHT | Peak Fighting
+https://d3s7x6kmqcnb6b.cloudfront.net/d/distro001a/WHO7DFHIX4DBKUFBSGIY/hls3/now,-1m,15s/m.m3u8
+
+#EXTINF:-1 tvg-id="wwe.in" tvg-logo="https://brandslogos.com/wp-content/uploads/images/wwe-logo.png" group-title="Bangla Channel",FIGHT | WWE
+https://smart.bengaldigital.live/WWE/index.m3u8
+
+#EXTINF:-1 tvg-id="Golf News Network" tvg-logo="https://media.unreel.me/prod/freelivesports/logo/53aee32e-de8f-4c66-b838-17fe2494d2d2" group-title="Bangla Channel",GOLF | Golf News Network
+https://amg18570-amg18570c1-freelivesports-emea-5535.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg18570-golfnewsnetwork-golfnewsnet-freelivesportsemea/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Unbeaten" tvg-logo="https://media.unreel.me/prod/freelivesports/logo/09fa93ff-a539-4d81-bbbf-da599e11e77c" group-title="Bangla Channel",GOLF | Unbeaten (Worldwide)
+https://amg00721-amg00721c6-freelivesports-emea-9595.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00721-inverleigh-unbtn3row-freelivesportsemea/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ESPN" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/34/ESPN.svg" group-title="Bangla Channel",MIXER | ESPN
+https://tiger-hub.vercel.app/ESPN/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="Nitro Circus TV" tvg-logo="https://media.unreel.me/prod/freelivesports/logo/a1df54a3-e23a-4b0c-bf5e-158e7c02609e" group-title="Bangla Channel",Racing | Nitro Circus TV
+https://amg13231-actve-amg13231c1-sportstribal-emea-1265.playouts.now.amagi.tv/playlist/amg13231-actvefast-bike-sportstribalemea/playlist.m3u8
+
