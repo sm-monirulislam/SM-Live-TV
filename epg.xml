@@ -738,9 +738,6 @@
     <display-name>ENT | Dangal TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/3/36/Dangalv2.png"/>
   </channel>
-  <programme start="20260118123000 +0600" stop="20260118133000 +0600" channel="DangalTV.in">
-    <title lang="bn">Mann Atisundar</title>
-  </programme>
   <programme start="20260118133000 +0600" stop="20260118183000 +0600" channel="DangalTV.in">
     <title lang="bn">Safal Hogi Teri Aradhana</title>
   </programme>
@@ -762,7 +759,10 @@
   <programme start="20260119000000 +0600" stop="20260119040500 +0600" channel="DangalTV.in">
     <title lang="bn">Mann Atisundar</title>
   </programme>
-  <programme start="20260119040500 +0600" stop="20260119083000 +0600" channel="DangalTV.in">
+  <programme start="20260119040500 +0600" stop="20260119043500 +0600" channel="DangalTV.in">
+    <title lang="bn">Ram Ratan Dhan Payo</title>
+  </programme>
+  <programme start="20260119043500 +0600" stop="20260119083000 +0600" channel="DangalTV.in">
     <title lang="bn">Ram Ratan Dhan Payo</title>
   </programme>
   <programme start="20260119083000 +0600" stop="20260119090000 +0600" channel="DangalTV.in">
@@ -832,9 +832,6 @@
     <display-name>ENT | COLORS HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/19/Colorstv-logo-black-background.jpg"/>
   </channel>
-  <programme start="20260118120000 +0600" stop="20260118133000 +0600" channel="COLORS.in">
-    <title lang="bn">Laughter Chefs Unlimited Entertainment</title>
-  </programme>
   <programme start="20260118133000 +0600" stop="20260118143000 +0600" channel="COLORS.in">
     <title lang="bn">Naagin</title>
   </programme>
@@ -919,8 +916,11 @@
   <programme start="20260119224000 +0600" stop="20260119231100 +0600" channel="COLORS.in">
     <title lang="bn">Mannat Harr Khushi Paane Ki</title>
   </programme>
-  <programme start="20260119231100 +0600" stop="20260119234100 +0600" channel="COLORS.in">
+  <programme start="20260119231100 +0600" stop="20260119234300 +0600" channel="COLORS.in">
     <title lang="bn">Doree</title>
+  </programme>
+  <programme start="20260119234300 +0600" stop="20260120001300 +0600" channel="COLORS.in">
+    <title lang="bn">Laughter Chefs Unlimited Entertainment</title>
   </programme>
   <channel id="IndiaTV.in">
     <display-name>India TV</display-name>
@@ -950,15 +950,6 @@
     <display-name>ZEE TV HD</display-name>
     <icon src="https://1000logos.net/wp-content/uploads/2025/05/Zee-TV-Logo-768x432.png"/>
   </channel>
-  <programme start="20260118123000 +0600" stop="20260118130000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Jagadhatri</title>
-  </programme>
-  <programme start="20260118130000 +0600" stop="20260118133000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Lakshmi Nivas</title>
-  </programme>
-  <programme start="20260118133000 +0600" stop="20260118140000 +0600" channel="ZEETV.tv">
-    <title lang="bn">Saru</title>
-  </programme>
   <programme start="20260118140000 +0600" stop="20260118143000 +0600" channel="ZEETV.tv">
     <title lang="bn">Tum Se Tum Tak</title>
   </programme>
@@ -1040,13 +1031,19 @@
   <programme start="20260119060000 +0600" stop="20260119061500 +0600" channel="ZEETV.tv">
     <title lang="bn">Jaane Anjaane Hum Mile</title>
   </programme>
+  <programme start="20260119061500 +0600" stop="20260119063000 +0600" channel="ZEETV.tv">
+    <title lang="bn">Vasudha</title>
+  </programme>
+  <programme start="20260119063000 +0600" stop="20260119070000 +0600" channel="ZEETV.tv">
+    <title lang="bn">Ganga Mai Ki Betiyaan</title>
+  </programme>
+  <programme start="20260119070000 +0600" stop="20260119073000 +0600" channel="ZEETV.tv">
+    <title lang="bn">Saru</title>
+  </programme>
   <channel id="STARBHARATHD">
     <display-name>STAR BHARAT HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/b/b9/Star_bharat_hd_clean.png"/>
   </channel>
-  <programme start="20260118123000 +0600" stop="20260118133000 +0600" channel="STARBHARATHD">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
   <programme start="20260118133000 +0600" stop="20260118143000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India: Naya Adhyay</title>
   </programme>
@@ -1134,13 +1131,13 @@
   <programme start="20260119130000 +0600" stop="20260119133000 +0600" channel="STARBHARATHD">
     <title lang="bn">Savdhaan India: Naya Adhyay</title>
   </programme>
+  <programme start="20260119133000 +0600" stop="20260119140000 +0600" channel="STARBHARATHD">
+    <title lang="bn">Savdhaan India: F.I.R</title>
+  </programme>
   <channel id="STARBHARAT">
     <display-name>STAR BHARAT</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/7/7b/Star_Bharat_2022.png"/>
   </channel>
-  <programme start="20260118123000 +0600" stop="20260118133000 +0600" channel="STARBHARAT">
-    <title lang="bn">Savdhaan India - India Fights Back</title>
-  </programme>
   <programme start="20260118133000 +0600" stop="20260118143000 +0600" channel="STARBHARAT">
     <title lang="bn">Savdhaan India: Naya Adhyay</title>
   </programme>
@@ -1228,6 +1225,9 @@
   <programme start="20260119130000 +0600" stop="20260119133000 +0600" channel="STARBHARAT">
     <title lang="bn">Savdhaan India: Naya Adhyay</title>
   </programme>
+  <programme start="20260119133000 +0600" stop="20260119140000 +0600" channel="STARBHARAT">
+    <title lang="bn">Savdhaan India: F.I.R</title>
+  </programme>
   <channel id="EpicTV.in">
     <display-name>Epic TV</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/41/Epic_TV_%282021%29.jpg"/>
@@ -1240,12 +1240,6 @@
     <display-name>DD National HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/2/2a/Ddnational2023.png"/>
   </channel>
-  <programme start="20260118123000 +0600" stop="20260118130000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Masti Ki Pathshala</title>
-  </programme>
-  <programme start="20260118130000 +0600" stop="20260118133000 +0600" channel="DDNational.in@HD">
-    <title lang="bn">Kookoo TV</title>
-  </programme>
   <programme start="20260118133000 +0600" stop="20260118160000 +0600" channel="DDNational.in@HD">
     <title lang="bn">Zameer</title>
   </programme>
@@ -1327,26 +1321,20 @@
   <programme start="20260119080000 +0600" stop="20260119083000 +0600" channel="DDNational.in@HD">
     <title lang="bn">Chitrahaar</title>
   </programme>
-  <programme start="20260119083000 +0600" stop="20260119090000 +0600" channel="DDNational.in@HD">
+  <programme start="20260119083000 +0600" stop="20260119093000 +0600" channel="DDNational.in@HD">
     <title lang="bn">Morning Show</title>
+  </programme>
+  <programme start="20260119093000 +0600" stop="20260119100000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Chitrahaar</title>
+  </programme>
+  <programme start="20260119100000 +0600" stop="20260119103000 +0600" channel="DDNational.in@HD">
+    <title lang="bn">Kakbhushandi Ramayan</title>
   </programme>
   <channel id="AndTV.in">
     <display-name>&amp;TV HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/4/4c/%26TV_HD_%282025%29.svg"/>
   </channel>
-  <programme start="20260118122700 +0600" stop="20260118130000 +0600" channel="AndTV.in">
-    <title lang="bn">Bhabiji Ghar Par Hai 2.0</title>
-  </programme>
-  <programme start="20260118130000 +0600" stop="20260118133000 +0600" channel="AndTV.in">
-    <title lang="bn">Bhabiji Ghar Par Hai 2.0</title>
-  </programme>
-  <programme start="20260118133000 +0600" stop="20260118140000 +0600" channel="AndTV.in">
-    <title lang="bn">Bhabiji Ghar Par Hai 2.0</title>
-  </programme>
-  <programme start="20260118140000 +0600" stop="20260118141500 +0600" channel="AndTV.in">
-    <title lang="bn">Bhabiji Ghar Par Hai 2.0</title>
-  </programme>
-  <programme start="20260118141500 +0600" stop="20260118143000 +0600" channel="AndTV.in">
+  <programme start="20260118140000 +0600" stop="20260118143000 +0600" channel="AndTV.in">
     <title lang="bn">Bhabiji Ghar Par Hai 2.0</title>
   </programme>
   <programme start="20260118143000 +0600" stop="20260118173500 +0600" channel="AndTV.in">
@@ -1421,22 +1409,25 @@
   <programme start="20260119093600 +0600" stop="20260119100000 +0600" channel="AndTV.in">
     <title lang="bn">Bhabi ji Ghar Par Hai!</title>
   </programme>
-  <programme start="20260119100000 +0600" stop="20260119103000 +0600" channel="AndTV.in">
+  <programme start="20260119100000 +0600" stop="20260119113000 +0600" channel="AndTV.in">
     <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20260119113000 +0600" stop="20260119130000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20260119130000 +0600" stop="20260119143000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20260119143000 +0600" stop="20260119150000 +0600" channel="AndTV.in">
+    <title lang="bn">Bhabi ji Ghar Par Hai!</title>
+  </programme>
+  <programme start="20260119150000 +0600" stop="20260119152100 +0600" channel="AndTV.in">
+    <title lang="bn">Comedy Circus Ka Naya Daur</title>
   </programme>
   <channel id="starjalsha.in">
     <display-name>Star Jalsha</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png"/>
   </channel>
-  <programme start="20260118123000 +0600" stop="20260118130000 +0600" channel="starjalsha.in">
-    <title lang="bn">Professor Bidya Banerjee</title>
-  </programme>
-  <programme start="20260118130000 +0600" stop="20260118133000 +0600" channel="starjalsha.in">
-    <title lang="bn">Lokkhi Jhnapi</title>
-  </programme>
-  <programme start="20260118133000 +0600" stop="20260118140000 +0600" channel="starjalsha.in">
-    <title lang="bn">Bholebaba Paar Karega</title>
-  </programme>
   <programme start="20260118140000 +0600" stop="20260118143000 +0600" channel="starjalsha.in">
     <title lang="bn">O Mor Dorodiya</title>
   </programme>
@@ -1903,12 +1894,6 @@
     <display-name>Sony Ten 1 HD</display-name>
     <icon src="https://static.epg.best/in/SonyTEN1.in.png"/>
   </channel>
-  <programme start="20260118123000 +0600" stop="20260118130000 +0600" channel="sonyten1.in">
-    <title lang="bn">Shrachi Bengal Tigers vs. Hyderabad Toofans; Hockey Ind...</title>
-  </programme>
-  <programme start="20260118130000 +0600" stop="20260118140000 +0600" channel="sonyten1.in">
-    <title lang="bn">Coca-Cola Cup 1998 Final: Australia v India; One-Day In...</title>
-  </programme>
   <programme start="20260118140000 +0600" stop="20260118150000 +0600" channel="sonyten1.in">
     <title lang="bn">UFC 278: Usman vs. Edwards 2</title>
   </programme>
@@ -1939,8 +1924,11 @@
   <programme start="20260118223000 +0600" stop="20260119003000 +0600" channel="sonyten1.in">
     <title lang="bn">Live - FC Augsburg vs. SC Freiburg; Bundesliga Soccer</title>
   </programme>
-  <programme start="20260119003000 +0600" stop="20260119013000 +0600" channel="sonyten1.in">
+  <programme start="20260119003000 +0600" stop="20260119010000 +0600" channel="sonyten1.in">
     <title lang="bn">2025: Super Four: India vs. Pakistan-Asia Cup Highlight...</title>
+  </programme>
+  <programme start="20260119010000 +0600" stop="20260119013000 +0600" channel="sonyten1.in">
+    <title lang="bn">Sports Programme</title>
   </programme>
   <programme start="20260119013000 +0600" stop="20260119023000 +0600" channel="sonyten1.in">
     <title lang="bn">First Semifinal: India U19 vs. Sri Lanka U19-ACC Men's...</title>
@@ -1990,8 +1978,11 @@
   <programme start="20260119220000 +0600" stop="20260119223000 +0600" channel="sonyten1.in">
     <title lang="bn">5th T20: England v India-Women's T20 Cricket</title>
   </programme>
-  <programme start="20260119223000 +0600" stop="20260119230000 +0600" channel="sonyten1.in">
+  <programme start="20260119223000 +0600" stop="20260119233000 +0600" channel="sonyten1.in">
     <title lang="bn">New Zealand vs West Indies 3rd Test 2025-Test Cricket</title>
+  </programme>
+  <programme start="20260119233000 +0600" stop="20260120000000 +0600" channel="sonyten1.in">
+    <title lang="bn">2025: Final: India vs Pakistan-Asia Cup Highlights</title>
   </programme>
   <channel id="sonyten2.in">
     <display-name>Sony Ten 2 HD</display-name>
@@ -2088,10 +2079,7 @@
     <display-name>Zee Bangla Cinema</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/5/59/Zee_Bangla_Cinema_%282025%29.svg"/>
   </channel>
-  <programme start="20260118130000 +0600" stop="20260118133000 +0600" channel="zeebanglacinema.in">
-    <title lang="bn">Abhimaan(1973)</title>
-  </programme>
-  <programme start="20260118133000 +0600" stop="20260118163000 +0600" channel="zeebanglacinema.in">
+  <programme start="20260118160000 +0600" stop="20260118163000 +0600" channel="zeebanglacinema.in">
     <title lang="bn">Bengal Super League 2025; Soccer</title>
   </programme>
   <programme start="20260118163000 +0600" stop="20260118193000 +0600" channel="zeebanglacinema.in">
@@ -2124,10 +2112,7 @@
     <display-name>SUN Bangla</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/en/b/b3/Sun_Bangla.png"/>
   </channel>
-  <programme start="20260118130000 +0600" stop="20260118133000 +0600" channel="sunbangla.in">
-    <title lang="bn">Lakh Takar Lokkhi Labh</title>
-  </programme>
-  <programme start="20260118133000 +0600" stop="20260118143000 +0600" channel="sunbangla.in">
+  <programme start="20260118140000 +0600" stop="20260118143000 +0600" channel="sunbangla.in">
     <title lang="bn">Lakh Takar Lokkhi Labh</title>
   </programme>
   <programme start="20260118143000 +0600" stop="20260118160000 +0600" channel="sunbangla.in">
@@ -2160,8 +2145,11 @@
   <programme start="20260118233700 +0600" stop="20260119003500 +0600" channel="sunbangla.in">
     <title lang="bn">Lakh Takar Lokkhi Labh</title>
   </programme>
-  <programme start="20260119003500 +0600" stop="20260119010500 +0600" channel="sunbangla.in">
+  <programme start="20260119003500 +0600" stop="20260119073000 +0600" channel="sunbangla.in">
     <title lang="bn">Damdar</title>
+  </programme>
+  <programme start="20260119073000 +0600" stop="20260119080000 +0600" channel="sunbangla.in">
+    <title lang="bn">Dui Bon</title>
   </programme>
   <channel id="enter10bangla.in">
     <display-name>Enter 10 Bangla</display-name>
@@ -2179,17 +2167,8 @@
     <display-name>SONY SAB HD</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/1/18/SONY_SAB_SD.png"/>
   </channel>
-  <programme start="20260118123000 +0600" stop="20260118130000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Itti Si Khushi</title>
-  </programme>
-  <programme start="20260118130000 +0600" stop="20260118133000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
-  </programme>
-  <programme start="20260118133000 +0600" stop="20260118140000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
-  </programme>
   <programme start="20260118140000 +0600" stop="20260118143000 +0600" channel="sonysabhd.in">
-    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
+    <title lang="bn">Taarak Mehta Ka Ooltah Chashmah(2008)</title>
   </programme>
   <programme start="20260118143000 +0600" stop="20260118150000 +0600" channel="sonysabhd.in">
     <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
@@ -2218,6 +2197,15 @@
   <programme start="20260118183000 +0600" stop="20260118190000 +0600" channel="sonysabhd.in">
     <title lang="bn">Taarak Mehta Ka Ooltah Chashmah (2008)</title>
   </programme>
+  <programme start="20260118190000 +0600" stop="20260118193000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Gatha Shiv Parivaar Ki Ganesh Kartikey</title>
+  </programme>
+  <programme start="20260118193000 +0600" stop="20260118200000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Gatha Shiv Parivaar Ki Ganesh Kartikey</title>
+  </programme>
+  <programme start="20260118200000 +0600" stop="20260118203000 +0600" channel="sonysabhd.in">
+    <title lang="bn">Gatha Shiv Parivaar Ki Ganesh Kartikey</title>
+  </programme>
   <channel id="RepublicBangla.in">
     <display-name>Republic Bangla</display-name>
     <icon src="https://static.wikia.nocookie.net/logopedia/images/9/93/R.Bangla_logo_with_tagline.jpg"/>
@@ -2226,9 +2214,6 @@
     <display-name>Disney Junior</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/3/36/2019_Disney_Junior_logo.svg"/>
   </channel>
-  <programme start="20260118140000 +0600" stop="20260118143000 +0600" channel="DisneyJunior.in">
-    <title lang="bn">Bluey</title>
-  </programme>
   <programme start="20260118143000 +0600" stop="20260118150000 +0600" channel="DisneyJunior.in">
     <title lang="bn">Nursery Rhymes</title>
   </programme>
@@ -2262,8 +2247,11 @@
   <programme start="20260119033000 +0600" stop="20260119063000 +0600" channel="DisneyJunior.in">
     <title lang="bn">Mickey Mouse Clubhouse (2009)</title>
   </programme>
-  <programme start="20260119063000 +0600" stop="20260119070000 +0600" channel="DisneyJunior.in">
+  <programme start="20260119063000 +0600" stop="20260119073000 +0600" channel="DisneyJunior.in">
     <title lang="bn">PJ Masks (2015)</title>
+  </programme>
+  <programme start="20260119073000 +0600" stop="20260119080000 +0600" channel="DisneyJunior.in">
+    <title lang="bn">The Lion Guard (2015)</title>
   </programme>
   <channel id="DDBharati.in">
     <display-name>DD Bharati</display-name>
@@ -4015,288 +4003,252 @@
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118003000 +0600" stop="20260118010000 +0600" channel="TRT World">
-    <title lang="bn">Just 2 Degrees</title>
+    <title lang="bn">Money Talks</title>
   </programme>
-  <programme start="20260118010000 +0600" stop="20260118011500 +0600" channel="TRT World">
+  <programme start="20260118010000 +0600" stop="20260118013000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260118011500 +0600" stop="20260118013000 +0600" channel="TRT World">
-    <title lang="bn">Debrief</title>
-  </programme>
   <programme start="20260118013000 +0600" stop="20260118020000 +0600" channel="TRT World">
-    <title lang="bn">The Newsmakers</title>
+    <title lang="bn">Africa Matters</title>
   </programme>
   <programme start="20260118020000 +0600" stop="20260118023000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118023000 +0600" stop="20260118030000 +0600" channel="TRT World">
-    <title lang="bn">Forging the Future Cyborg Revolution</title>
+    <title lang="bn">Roundtable</title>
   </programme>
-  <programme start="20260118030000 +0600" stop="20260118040000 +0600" channel="TRT World">
-    <title lang="bn">Storyteller: The Guardians</title>
+  <programme start="20260118030000 +0600" stop="20260118033000 +0600" channel="TRT World">
+    <title lang="bn">Nexus</title>
+  </programme>
+  <programme start="20260118033000 +0600" stop="20260118040000 +0600" channel="TRT World">
+    <title lang="bn">The Newsmakers</title>
   </programme>
   <programme start="20260118040000 +0600" stop="20260118043000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118043000 +0600" stop="20260118050000 +0600" channel="TRT World">
-    <title lang="bn">Bigger Than Five</title>
+    <title lang="bn">Inside America</title>
   </programme>
   <programme start="20260118050000 +0600" stop="20260118053000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118053000 +0600" stop="20260118060000 +0600" channel="TRT World">
-    <title lang="bn">Occupied: Episode 2</title>
+    <title lang="bn">NexTech</title>
   </programme>
   <programme start="20260118060000 +0600" stop="20260118063000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260118063000 +0600" stop="20260118070000 +0600" channel="TRT World">
-    <title lang="bn">Money Talks</title>
+  <programme start="20260118063000 +0600" stop="20260118064500 +0600" channel="TRT World">
+    <title lang="bn">Debrief</title>
+  </programme>
+  <programme start="20260118064500 +0600" stop="20260118070000 +0600" channel="TRT World">
+    <title lang="bn">Newsfeed</title>
   </programme>
   <programme start="20260118070000 +0600" stop="20260118073000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118073000 +0600" stop="20260118080000 +0600" channel="TRT World">
-    <title lang="bn">Africa Matters</title>
+    <title lang="bn">Across the Balkans</title>
   </programme>
   <programme start="20260118080000 +0600" stop="20260118083000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118083000 +0600" stop="20260118090000 +0600" channel="TRT World">
-    <title lang="bn">Roundtable</title>
+    <title lang="bn">Just 2 Degrees</title>
   </programme>
   <programme start="20260118090000 +0600" stop="20260118093000 +0600" channel="TRT World">
-    <title lang="bn">Nexus</title>
+    <title lang="bn">News</title>
   </programme>
   <programme start="20260118093000 +0600" stop="20260118100000 +0600" channel="TRT World">
-    <title lang="bn">The Newsmakers</title>
+    <title lang="bn">My America</title>
   </programme>
   <programme start="20260118100000 +0600" stop="20260118103000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118103000 +0600" stop="20260118110000 +0600" channel="TRT World">
-    <title lang="bn">Inside America</title>
+    <title lang="bn">Roundtable</title>
   </programme>
   <programme start="20260118110000 +0600" stop="20260118113000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118113000 +0600" stop="20260118120000 +0600" channel="TRT World">
-    <title lang="bn">NexTech</title>
+    <title lang="bn">Money Talks</title>
   </programme>
-  <programme start="20260118120000 +0600" stop="20260118123000 +0600" channel="TRT World">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20260118123000 +0600" stop="20260118124500 +0600" channel="TRT World">
-    <title lang="bn">Debrief</title>
-  </programme>
-  <programme start="20260118124500 +0600" stop="20260118130000 +0600" channel="TRT World">
-    <title lang="bn">Newsfeed</title>
+  <programme start="20260118120000 +0600" stop="20260118130000 +0600" channel="TRT World">
+    <title lang="bn">Storyteller: In the Shade of the Hills</title>
   </programme>
   <programme start="20260118130000 +0600" stop="20260118133000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260118133000 +0600" stop="20260118140000 +0600" channel="TRT World">
-    <title lang="bn">Across the Balkans</title>
+  <programme start="20260118133000 +0600" stop="20260118134500 +0600" channel="TRT World">
+    <title lang="bn">Scoreline</title>
+  </programme>
+  <programme start="20260118134500 +0600" stop="20260118140000 +0600" channel="TRT World">
+    <title lang="bn">Debrief</title>
   </programme>
   <programme start="20260118140000 +0600" stop="20260118143000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118143000 +0600" stop="20260118150000 +0600" channel="TRT World">
-    <title lang="bn">Just 2 Degrees</title>
+    <title lang="bn">Strait Talk</title>
   </programme>
   <programme start="20260118150000 +0600" stop="20260118153000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118153000 +0600" stop="20260118160000 +0600" channel="TRT World">
-    <title lang="bn">My America</title>
+    <title lang="bn">The Newsmakers</title>
   </programme>
   <programme start="20260118160000 +0600" stop="20260118163000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118163000 +0600" stop="20260118170000 +0600" channel="TRT World">
-    <title lang="bn">Roundtable</title>
+    <title lang="bn">Occupied: Episode 2</title>
   </programme>
   <programme start="20260118170000 +0600" stop="20260118173000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260118173000 +0600" stop="20260118180000 +0600" channel="TRT World">
-    <title lang="bn">Money Talks</title>
-  </programme>
-  <programme start="20260118180000 +0600" stop="20260118190000 +0600" channel="TRT World">
-    <title lang="bn">Storyteller: In the Shade of the Hills</title>
-  </programme>
-  <programme start="20260118190000 +0600" stop="20260118193000 +0600" channel="TRT World">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20260118193000 +0600" stop="20260118194500 +0600" channel="TRT World">
+  <programme start="20260118173000 +0600" stop="20260118174500 +0600" channel="TRT World">
     <title lang="bn">Scoreline</title>
   </programme>
-  <programme start="20260118194500 +0600" stop="20260118200000 +0600" channel="TRT World">
+  <programme start="20260118174500 +0600" stop="20260118180000 +0600" channel="TRT World">
+    <title lang="bn">Newsfeed</title>
+  </programme>
+  <programme start="20260118180000 +0600" stop="20260118183000 +0600" channel="TRT World">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20260118183000 +0600" stop="20260118190000 +0600" channel="TRT World">
+    <title lang="bn">Across the Balkans</title>
+  </programme>
+  <programme start="20260118190000 +0600" stop="20260118191500 +0600" channel="TRT World">
+    <title lang="bn">News</title>
+  </programme>
+  <programme start="20260118191500 +0600" stop="20260118193000 +0600" channel="TRT World">
     <title lang="bn">Debrief</title>
+  </programme>
+  <programme start="20260118193000 +0600" stop="20260118200000 +0600" channel="TRT World">
+    <title lang="bn">Where To Next</title>
   </programme>
   <programme start="20260118200000 +0600" stop="20260118203000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118203000 +0600" stop="20260118210000 +0600" channel="TRT World">
-    <title lang="bn">Strait Talk</title>
+    <title lang="bn">Money Talks</title>
   </programme>
   <programme start="20260118210000 +0600" stop="20260118213000 +0600" channel="TRT World">
-    <title lang="bn">News</title>
+    <title lang="bn">The Newsmakers</title>
   </programme>
   <programme start="20260118213000 +0600" stop="20260118220000 +0600" channel="TRT World">
-    <title lang="bn">The Newsmakers</title>
+    <title lang="bn">My America</title>
   </programme>
   <programme start="20260118220000 +0600" stop="20260118223000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260118223000 +0600" stop="20260118230000 +0600" channel="TRT World">
-    <title lang="bn">Occupied: Episode 2</title>
+    <title lang="bn">Strait Talk</title>
   </programme>
   <programme start="20260118230000 +0600" stop="20260118233000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260118233000 +0600" stop="20260118234500 +0600" channel="TRT World">
-    <title lang="bn">Scoreline</title>
-  </programme>
-  <programme start="20260118234500 +0600" stop="20260119000000 +0600" channel="TRT World">
-    <title lang="bn">Newsfeed</title>
+  <programme start="20260118233000 +0600" stop="20260119000000 +0600" channel="TRT World">
+    <title lang="bn">Roundtable</title>
   </programme>
   <programme start="20260119000000 +0600" stop="20260119003000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260119003000 +0600" stop="20260119010000 +0600" channel="TRT World">
-    <title lang="bn">Across the Balkans</title>
+    <title lang="bn">Bigger Than Five</title>
   </programme>
-  <programme start="20260119010000 +0600" stop="20260119011500 +0600" channel="TRT World">
-    <title lang="bn">News</title>
+  <programme start="20260119010000 +0600" stop="20260119013000 +0600" channel="TRT World">
+    <title lang="bn">Business News</title>
   </programme>
-  <programme start="20260119011500 +0600" stop="20260119013000 +0600" channel="TRT World">
+  <programme start="20260119013000 +0600" stop="20260119014500 +0600" channel="TRT World">
     <title lang="bn">Debrief</title>
   </programme>
-  <programme start="20260119013000 +0600" stop="20260119020000 +0600" channel="TRT World">
-    <title lang="bn">Where To Next</title>
+  <programme start="20260119014500 +0600" stop="20260119020000 +0600" channel="TRT World">
+    <title lang="bn">Newsfeed</title>
   </programme>
-  <programme start="20260119020000 +0600" stop="20260119023000 +0600" channel="TRT World">
-    <title lang="bn">News</title>
+  <programme start="20260119020000 +0600" stop="20260119030000 +0600" channel="TRT World">
+    <title lang="bn">Newshour</title>
   </programme>
-  <programme start="20260119023000 +0600" stop="20260119030000 +0600" channel="TRT World">
-    <title lang="bn">Money Talks</title>
-  </programme>
-  <programme start="20260119030000 +0600" stop="20260119033000 +0600" channel="TRT World">
-    <title lang="bn">The Newsmakers</title>
-  </programme>
-  <programme start="20260119033000 +0600" stop="20260119040000 +0600" channel="TRT World">
-    <title lang="bn">My America</title>
+  <programme start="20260119030000 +0600" stop="20260119040000 +0600" channel="TRT World">
+    <title lang="bn">Storyteller: In the Shade of the Hills</title>
   </programme>
   <programme start="20260119040000 +0600" stop="20260119043000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260119043000 +0600" stop="20260119050000 +0600" channel="TRT World">
-    <title lang="bn">Strait Talk</title>
+    <title lang="bn">Beyond Borders</title>
   </programme>
   <programme start="20260119050000 +0600" stop="20260119053000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
   <programme start="20260119053000 +0600" stop="20260119060000 +0600" channel="TRT World">
-    <title lang="bn">Roundtable</title>
-  </programme>
-  <programme start="20260119060000 +0600" stop="20260119063000 +0600" channel="TRT World">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20260119063000 +0600" stop="20260119070000 +0600" channel="TRT World">
-    <title lang="bn">Bigger Than Five</title>
-  </programme>
-  <programme start="20260119070000 +0600" stop="20260119073000 +0600" channel="TRT World">
-    <title lang="bn">Business News</title>
-  </programme>
-  <programme start="20260119073000 +0600" stop="20260119074500 +0600" channel="TRT World">
-    <title lang="bn">Debrief</title>
-  </programme>
-  <programme start="20260119074500 +0600" stop="20260119080000 +0600" channel="TRT World">
-    <title lang="bn">Newsfeed</title>
-  </programme>
-  <programme start="20260119080000 +0600" stop="20260119090000 +0600" channel="TRT World">
-    <title lang="bn">Newshour</title>
-  </programme>
-  <programme start="20260119090000 +0600" stop="20260119100000 +0600" channel="TRT World">
-    <title lang="bn">Storyteller: In the Shade of the Hills</title>
-  </programme>
-  <programme start="20260119100000 +0600" stop="20260119103000 +0600" channel="TRT World">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20260119103000 +0600" stop="20260119110000 +0600" channel="TRT World">
-    <title lang="bn">Beyond Borders</title>
-  </programme>
-  <programme start="20260119110000 +0600" stop="20260119113000 +0600" channel="TRT World">
-    <title lang="bn">News</title>
-  </programme>
-  <programme start="20260119113000 +0600" stop="20260119120000 +0600" channel="TRT World">
     <title lang="bn">Across the Balkans</title>
   </programme>
-  <programme start="20260119120000 +0600" stop="20260119130000 +0600" channel="TRT World">
+  <programme start="20260119060000 +0600" stop="20260119070000 +0600" channel="TRT World">
     <title lang="bn">Newshour</title>
   </programme>
-  <programme start="20260119130000 +0600" stop="20260119133000 +0600" channel="TRT World">
+  <programme start="20260119070000 +0600" stop="20260119073000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260119133000 +0600" stop="20260119140000 +0600" channel="TRT World">
+  <programme start="20260119073000 +0600" stop="20260119080000 +0600" channel="TRT World">
     <title lang="bn">Africa Matters</title>
   </programme>
-  <programme start="20260119140000 +0600" stop="20260119143000 +0600" channel="TRT World">
+  <programme start="20260119080000 +0600" stop="20260119083000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260119143000 +0600" stop="20260119150000 +0600" channel="TRT World">
+  <programme start="20260119083000 +0600" stop="20260119090000 +0600" channel="TRT World">
     <title lang="bn">Strait Talk</title>
   </programme>
-  <programme start="20260119150000 +0600" stop="20260119153000 +0600" channel="TRT World">
+  <programme start="20260119090000 +0600" stop="20260119093000 +0600" channel="TRT World">
     <title lang="bn">Roundtable</title>
   </programme>
-  <programme start="20260119153000 +0600" stop="20260119160000 +0600" channel="TRT World">
+  <programme start="20260119093000 +0600" stop="20260119100000 +0600" channel="TRT World">
     <title lang="bn">The Newsmakers</title>
   </programme>
-  <programme start="20260119160000 +0600" stop="20260119170000 +0600" channel="TRT World">
+  <programme start="20260119100000 +0600" stop="20260119110000 +0600" channel="TRT World">
     <title lang="bn">Newshour</title>
   </programme>
-  <programme start="20260119170000 +0600" stop="20260119173000 +0600" channel="TRT World">
+  <programme start="20260119110000 +0600" stop="20260119113000 +0600" channel="TRT World">
     <title lang="bn">News - London</title>
   </programme>
-  <programme start="20260119173000 +0600" stop="20260119180000 +0600" channel="TRT World">
+  <programme start="20260119113000 +0600" stop="20260119120000 +0600" channel="TRT World">
     <title lang="bn">Just 2 Degrees</title>
   </programme>
-  <programme start="20260119180000 +0600" stop="20260119181500 +0600" channel="TRT World">
+  <programme start="20260119120000 +0600" stop="20260119121500 +0600" channel="TRT World">
     <title lang="bn">News - London</title>
   </programme>
-  <programme start="20260119181500 +0600" stop="20260119183000 +0600" channel="TRT World">
+  <programme start="20260119121500 +0600" stop="20260119123000 +0600" channel="TRT World">
     <title lang="bn">Newsfeed</title>
   </programme>
-  <programme start="20260119183000 +0600" stop="20260119190000 +0600" channel="TRT World">
+  <programme start="20260119123000 +0600" stop="20260119130000 +0600" channel="TRT World">
     <title lang="bn">Occupied</title>
   </programme>
-  <programme start="20260119190000 +0600" stop="20260119200000 +0600" channel="TRT World">
+  <programme start="20260119130000 +0600" stop="20260119140000 +0600" channel="TRT World">
     <title lang="bn">Newshour - London</title>
   </programme>
-  <programme start="20260119200000 +0600" stop="20260119203000 +0600" channel="TRT World">
+  <programme start="20260119140000 +0600" stop="20260119143000 +0600" channel="TRT World">
     <title lang="bn">News - London</title>
   </programme>
-  <programme start="20260119203000 +0600" stop="20260119210000 +0600" channel="TRT World">
+  <programme start="20260119143000 +0600" stop="20260119150000 +0600" channel="TRT World">
     <title lang="bn">Nexus</title>
   </programme>
-  <programme start="20260119210000 +0600" stop="20260119213000 +0600" channel="TRT World">
+  <programme start="20260119150000 +0600" stop="20260119153000 +0600" channel="TRT World">
     <title lang="bn">News - London</title>
   </programme>
-  <programme start="20260119213000 +0600" stop="20260119220000 +0600" channel="TRT World">
+  <programme start="20260119153000 +0600" stop="20260119160000 +0600" channel="TRT World">
     <title lang="bn">Roundtable</title>
   </programme>
-  <programme start="20260119220000 +0600" stop="20260119223000 +0600" channel="TRT World">
+  <programme start="20260119160000 +0600" stop="20260119163000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260119223000 +0600" stop="20260119230000 +0600" channel="TRT World">
+  <programme start="20260119163000 +0600" stop="20260119170000 +0600" channel="TRT World">
     <title lang="bn">The Newsmakers</title>
   </programme>
-  <programme start="20260119230000 +0600" stop="20260119233000 +0600" channel="TRT World">
+  <programme start="20260119170000 +0600" stop="20260119173000 +0600" channel="TRT World">
     <title lang="bn">News</title>
   </programme>
-  <programme start="20260119233000 +0600" stop="20260120000000 +0600" channel="TRT World">
+  <programme start="20260119173000 +0600" stop="20260119180000 +0600" channel="TRT World">
     <title lang="bn">Inside America</title>
   </programme>
   <channel id="Bloomberg TV">
