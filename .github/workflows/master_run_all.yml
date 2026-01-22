@@ -37,3 +37,17 @@ jobs:
     if: always()
     uses: ./.github/workflows/Roar-Zone.yml
     secrets: inherit
+
+  wait-before-combined:
+    needs: roarzone
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⏳ Wait 2 minutes
+        run: sleep 120
+
+  combined:
+    needs: wait-before-combined
+    if: always()
+    uses: ./.github/workflows/combined.yml
+    secrets: inherit
