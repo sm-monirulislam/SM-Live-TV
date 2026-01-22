@@ -18,8 +18,11 @@ def generate_playlist():
     try:
         r = requests.get(API_URL, timeout=20)
         r.raise_for_status()
-        channels = r.json()
+        data = r.json()
+
+        channels = data.get("response", [])
         print(f"✅ Total channels: {len(channels)}")
+
     except Exception as e:
         print("❌ Failed to fetch JSON:", e)
         return False
@@ -27,18 +30,23 @@ def generate_playlist():
     m3u = ["#EXTM3U", ""]
 
     for ch in channels:
+        if not isinstance(ch, dict):
+            continue
+
         link = ch.get("link")
         if not link:
             continue
 
         name = ch.get("name", "Toffee Channel")
-        group = ch.get("group", "Toffee")
+        group = ch.get("category_name", "Toffee")
         logo = ch.get("logo", "")
-        ua = ch.get("user_agent", "")
-        cookie = ch.get("cookie", "")
+
+        headers = ch.get("headers", {})
+        ua = headers.get("user-agent", "")
+        cookie = headers.get("cookie", "")
 
         m3u.append(
-            f'#EXTINF:-1 group-title="{group}" tvg-chno="" tvg-id="" tvg-logo="{logo}", {name}'
+            f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}",{name}'
         )
 
         if ua:
@@ -59,6 +67,5 @@ def generate_playlist():
 
 
 if __name__ == "__main__":
-    success = generate_playlist()
-    if not success:
+    if not generate_playlist():
         exit(1)
