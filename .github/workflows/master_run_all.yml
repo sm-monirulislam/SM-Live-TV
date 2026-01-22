@@ -49,5 +49,5 @@ jobs:
   combined:
     needs: wait-before-combined
     if: always()
-    uses: ./.github/workflows/combined.yml
+    uses: ./.github/workflows/main_combined.yml
     secrets: inherit
