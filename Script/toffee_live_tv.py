@@ -2,24 +2,36 @@ import requests
 import os
 from datetime import datetime
 
-# ✅ Toffee JSON API from GitHub Secret
+# ===============================
+# CONFIG
+# ===============================
 API_URL = os.environ.get("TOFFEE_API_URL")
-
-# ✅ Output file
 OUTPUT_FILE = "Toffee.m3u"
 
+# ===============================
+# MAIN FUNCTION
+# ===============================
 def generate_playlist():
     print("🚀 Fetching Toffee channel list...")
 
     if not API_URL:
-        print("⚠️ TOFFEE_API_URL secret not set (script will stop).")
+        print("❌ TOFFEE_API_URL secret not set")
         return False
 
     try:
-        r = requests.get(API_URL, timeout=20)
+        r = requests.get(API_URL, timeout=30)
         r.raise_for_status()
-        channels = r.json()
+        data = r.json()
+
+        # ✅ CORRECT KEY
+        channels = data.get("response", [])
+
+        if not isinstance(channels, list):
+            print("❌ Invalid JSON structure (response is not list)")
+            return False
+
         print(f"✅ Total channels: {len(channels)}")
+
     except Exception as e:
         print("❌ Failed to fetch JSON:", e)
         return False
@@ -27,29 +39,42 @@ def generate_playlist():
     m3u = ["#EXTM3U", ""]
 
     for ch in channels:
+        # 🔒 SAFETY CHECK
+        if not isinstance(ch, dict):
+            continue
+
         link = ch.get("link")
         if not link:
             continue
 
         name = ch.get("name", "Toffee Channel")
-        group = ch.get("group", "Toffee")
+        group = ch.get("category_name", "Toffee")
         logo = ch.get("logo", "")
-        ua = ch.get("user_agent", "")
-        cookie = ch.get("cookie", "")
 
+        headers = ch.get("headers", {})
+        ua = headers.get("user-agent", "")
+        cookie = headers.get("cookie", "")
+
+        # EXTINF
         m3u.append(
-            f'#EXTINF:-1 group-title="{group}" tvg-chno="" tvg-id="" tvg-logo="{logo}", {name}'
+            f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}",{name}'
         )
 
+        # USER AGENT
         if ua:
             m3u.append(f"#EXTVLCOPT:http-user-agent={ua}")
 
+        # COOKIE
         if cookie:
             m3u.append(f'#EXTHTTP:{{"cookie":"{cookie}"}}')
 
+        # STREAM LINK
         m3u.append(link)
         m3u.append("")
 
+    # ===============================
+    # WRITE FILE
+    # ===============================
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(m3u))
 
@@ -58,7 +83,9 @@ def generate_playlist():
     return True
 
 
+# ===============================
+# ENTRY POINT
+# ===============================
 if __name__ == "__main__":
-    success = generate_playlist()
-    if not success:
+    if not generate_playlist():
         exit(1)
