@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-24 15:20:57 (BD Time)
-# 📺 Channels Count: 1179
+# 🕒 Last Updated: 2026-01-24 15:55:10 (BD Time)
+# 📺 Channels Count: 1180
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -425,6 +425,9 @@ https://live-e24.dailyhunt.in/eternowsa/live/amlst:E24_,b256,b512,b1024,b1824,.s
 #EXTINF:-1 tvg-id="MasalaEntertainmentPlus.in" tvg-logo="https://a.jsrdn.com/hls/23029/masala-entertainment-plus/logo_20231219_215407_68.png" group-title="Bangla Channel",ENT | Masala Entertainment Plus
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/masala-entertainment-plus/master.m3u8
 
+#EXTINF:-1 tvg-id="SunTV.in@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/2a/HD.SUN.jpg" group-title="Bangla Channel",ENT | Sun TV
+https://livestream10.sunnxt.com/DolbyVision/SunTV_HDR/SunTV_HDR_Endpoints/SunTV-HDR10-IN-index.m3u8
+
 #EXTINF:-1 tvg-id="TheQTV.in" tvg-logo="https://www.theq.tv/wp-content/uploads/2023/10/The-Q-new-Logo.png" group-title="Bangla Channel",ENT | The Q TV
 https://vg-theqlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-306905/main.m3u8
 
@@ -557,9 +560,6 @@ https://streams.sofast.tv/ptnr-yupptv/title-BABYFIRST-ENG_YuppTV/v1/master/611d7
 #EXTINF:-1 tvg-id="DisneyChannel.us@East" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c0/Disney_Channel_2022.svg" group-title="Bangla Channel",1. Disney Channel East
 http://kstv.us:8080/live/Purn3542/38791114838/40725.ts
 
-#EXTINF:-1 tvg-id="KIDSFLIX" tvg-logo="https://www.kidsflix.com/themes/custom/viva/kidsflix/logo.png" group-title="Bangla Channel",1. KIDS FLIX
-https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
-
 #EXTINF:-1 tvg-id="PappaPigPluto" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c5/Peppa_Pig.svg" group-title="Bangla Channel",1. Pappa Pig Pluto
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fb6c84dd37df3b4290c5livestitch/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d14fb6c84dd37df3b4290c5&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=985&terminate=false&userId=&profilesFromStream=true
 
@@ -568,6 +568,9 @@ http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/453.m3u8
 
 #EXTINF:-1 tvg-id="BoingPlus" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Boing_Plus_logo_2020.svg/735px-Boing_Plus_logo_2020.svg.png?20201201165658" group-title="Bangla Channel",Boing Plus
 http://77.39.161.42:55555/Boing%20Plus
+
+#EXTINF:-1 tvg-id="DisneyJunior.eu" tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
+https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
 
 #EXTINF:-1 tvg-id="NICKHindi" tvg-logo="https://static.wikia.nocookie.net/logopedia-fanon/images/b/ba/NickToons_UK_2007.svg" group-title="Bangla Channel",NICK Hindi
 http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/1034.m3u8
@@ -697,9 +700,6 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 
 #EXTINF:-1 tvg-id="WORLDWIDEMUZZIK" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",OTHER | WORLD WIDE MUZZIK
 https://muzzik-live.morescreens.com/mts-5/playlist.m3u8
-
-#EXTINF:-1 tvg-id="92NewsHD" tvg-logo="https://92newshd.tv/frontn/images/92news-logo.png" group-title="Bangla Channel",NEWS | 92 News HD
-http://92news.vdn.dstreamone.net/92newshd/92hd/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AlVelayatTV" tvg-logo="https://shialivetv.com/shialive/assets/img/velayatiran.jpg" group-title="Bangla Channel",Al Velayat TV
 https://nl2.livekadeh.com/hls2/velayattv_high.m3u8
