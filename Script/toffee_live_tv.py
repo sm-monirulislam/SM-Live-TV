@@ -1,91 +1,70 @@
 import requests
 import os
-from datetime import datetime
 
-# ===============================
-# CONFIG
-# ===============================
 API_URL = os.environ.get("TOFFEE_API_URL")
 OUTPUT_FILE = "Toffee.m3u"
 
-# ===============================
-# MAIN FUNCTION
-# ===============================
 def generate_playlist():
-    print("🚀 Fetching Toffee channel list...")
-
-    if not API_URL:
-        print("❌ TOFFEE_API_URL secret not set")
-        return False
+    # 🔒 API empty / invalid হলে কিছুই করবে না
+    if not API_URL or not isinstance(API_URL, str) or not API_URL.strip():
+        return
 
     try:
-        r = requests.get(API_URL, timeout=30)
-        r.raise_for_status()
+        r = requests.get(API_URL.strip(), timeout=30)
+        if r.status_code != 200:
+            return
+
         data = r.json()
+        if not isinstance(data, dict):
+            return
 
-        # ✅ CORRECT KEY
-        channels = data.get("response", [])
+        channels = data.get("response")
+        if not isinstance(channels, list) or not channels:
+            return
 
-        if not isinstance(channels, list):
-            print("❌ Invalid JSON structure (response is not list)")
-            return False
-
-        print(f"✅ Total channels: {len(channels)}")
-
-    except Exception as e:
-        print("❌ Failed to fetch JSON:", e)
-        return False
+    except Exception:
+        return
 
     m3u = ["#EXTM3U", ""]
+    valid_count = 0
 
     for ch in channels:
-        # 🔒 SAFETY CHECK
         if not isinstance(ch, dict):
             continue
 
         link = ch.get("link")
-        if not link:
+        if not isinstance(link, str) or not link.strip():
             continue
 
-        name = ch.get("name", "Toffee Channel")
-        group = ch.get("category_name", "Toffee")
-        logo = ch.get("logo", "")
+        name = ch.get("name") or "Toffee Channel"
+        group = ch.get("category_name") or "Toffee"
+        logo = ch.get("logo") or ""
 
-        headers = ch.get("headers", {})
-        ua = headers.get("user-agent", "")
-        cookie = headers.get("cookie", "")
+        headers = ch.get("headers") if isinstance(ch.get("headers"), dict) else {}
+        ua = headers.get("user-agent") or ""
+        cookie = headers.get("cookie") or ""
 
-        # EXTINF
         m3u.append(
             f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}",{name}'
         )
 
-        # USER AGENT
-        if ua:
+        if isinstance(ua, str) and ua.strip():
             m3u.append(f"#EXTVLCOPT:http-user-agent={ua}")
 
-        # COOKIE
-        if cookie:
+        if isinstance(cookie, str) and cookie.strip():
             m3u.append(f'#EXTHTTP:{{"cookie":"{cookie}"}}')
 
-        # STREAM LINK
-        m3u.append(link)
+        m3u.append(link.strip())
         m3u.append("")
+        valid_count += 1
 
-    # ===============================
-    # WRITE FILE
-    # ===============================
+    # 🔒 একটাও valid channel না থাকলে কিছুই লিখবে না
+    if valid_count == 0:
+        return
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(m3u))
 
-    print(f"✅ Playlist generated: {OUTPUT_FILE}")
-    print("🕓 Updated:", datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC"))
-    return True
 
-
-# ===============================
-# ENTRY POINT
-# ===============================
 if __name__ == "__main__":
-    if not generate_playlist():
-        exit(1)
+    generate_playlist()
