@@ -2,11 +2,16 @@ name: 🔁 Auto Update IPTV Playlist
 
 on:
   schedule:
-    - cron: "*/40 * * * *"   # প্রতি ৪০ মিনিট পর চলবে
+    - cron: "*/40 * * * *"   # প্রতি ৪০ মিনিট পর
   workflow_dispatch:
 
 permissions:
   contents: write
+
+# ✅ একসাথে একটার বেশি run হতে দেবে না
+concurrency:
+  group: iptv-playlist
+  cancel-in-progress: true
 
 jobs:
   update-playlist:
@@ -31,7 +36,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install aiohttp
 
-      # 4️⃣ 🔐 Decrypt ZIP (Script/combined.zip → main/)
+      # 4️⃣ 🔐 Decrypt ZIP
       - name: 🔓 Decrypt ZIP
         run: |
           python Script/decrypt.py
@@ -54,11 +59,12 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      # 7️⃣ 🚀 Commit & Push (only if changed)
-      - name: 🔄 Commit & Push Updated Files
+      # 7️⃣ 🚀 Commit & Push (SAFE)
+      - name: 🚀 Commit & Push Updated Files
         if: steps.git-check.outputs.changed == 'true'
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "github-actions"
+          git pull --rebase origin main
           git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          git push origin main
