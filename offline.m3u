@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-01-27 13:59:47 (BD Time)
-# 📺 Channels Count: 1180
+# 🕒 Last Updated: 2026-01-27 16:15:30 (BD Time)
+# 📺 Channels Count: 1182
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -383,9 +383,6 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 #EXTINF:-1 tvg-id="TribeTV.in" tvg-logo="https://a.jsrdn.com/hls/23215/tribe-tv/logo_20250429_225821_70.png" group-title="Bangla Channel",IN | Tribe TV
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/tribe-tv/index.m3u8
 
-#EXTINF:-1 tvg-id="GB2700011DR" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB2700011DR_20250107T031058SQUARE.png" group-title="Bangla Channel",Ax Men
-https://bcadcc64.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9BeE1lbl9ITFM/playlist.m3u8?ads.wurl_channel=1634&ads.wurl_name=AxMen&ads.coppa=0&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.consent=%7BTC_STRING%7D
-
 #EXTINF:-1 tvg-id="DocumentaryPlus" tvg-logo="https://a.jsrdn.com/hls/22943/documentary/logo_20231219_193112_63.png" group-title="Bangla Channel",Documentary+
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/documentary/master.m3u8
 
@@ -530,6 +527,9 @@ https://live-hls-web-aje.getaj.net/AJE/04.m3u8
 #EXTINF:-1 tvg-id="BBCNews" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/62/BBC_News_2019.svg" group-title="Bangla Channel",BBC News
 https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8
 
+#EXTINF:-1 tvg-id="EACNewsTV.kh@SD" tvg-logo="https://eacnews.asia/front/img/E-Arts03-01.png" group-title="Bangla Channel",EAC News TV
+https://live-evg17.tv360.metfone.com.kh/LiveApp/streams/eacnews.m3u8
+
 #EXTINF:-1 tvg-id="OANPlus.us" tvg-logo="https://a.jsrdn.com/hls/22866/oan-encore/logo_20231219_220536_57.png" group-title="Bangla Channel",OAN Plus
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/oan-encore/playlist.m3u8
 
@@ -629,6 +629,9 @@ http://45.88.92.3/tr3_MTVHits_SD/index.m3u8?token=test
 #EXTINF:-1 tvg-id="MUZZIK" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/1c/Muzzik1996.png" group-title="Bangla Channel",EN | MUZZIK
 https://muzzik-live.morescreens.com/mts-6/playlist.m3u8
 
+#EXTINF:-1 tvg-id="PlayTV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/32/PlayTV2006.svg" group-title="Bangla Channel",EN | Play TV
+http://connectiktv.ddns.net:5000/playtv/@playtv/chunklist.m3u8
+
 #EXTINF:-1 tvg-id="PopStar" tvg-logo="https://video.popstaronline.com/wp-content/uploads/2024/03/Popstar-Logo_NEW_v10_sq.png" group-title="Bangla Channel",EN | Pop Star
 https://muzzik-live.morescreens.com/mts-3/576p/chunklist.m3u8
 
@@ -688,6 +691,9 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 
 #EXTINF:-1 tvg-id="WORLDWIDEMUZZIK" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",OTHER | WORLD WIDE MUZZIK
 https://muzzik-live.morescreens.com/mts-5/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TopTV" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",TR | Top TV
+http://74.208.199.212:8081/TopTV/live/chunks.m3u8
 
 #EXTINF:-1 tvg-id="aurLIFE.pk" tvg-logo="https://aurlife.tv/wp-content/uploads/2021/11/Aur-life-Logo-png.png" group-title="Bangla Channel",ENT | aur LIFE
 http://124.109.47.101/hls/stream1.m3u8
