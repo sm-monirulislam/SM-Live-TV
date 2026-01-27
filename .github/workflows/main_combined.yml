@@ -2,23 +2,18 @@ name: 🔁 Auto Update IPTV Playlist
 
 on:
   schedule:
-    - cron: "*/40 * * * *"   # প্রতি ৪০ মিনিট পর
-  workflow_dispatch:
+    - cron: "*/40 * * * *" # প্রতি ৪০ মিনিট পর চলবে
+  workflow_dispatch: # ম্যানুয়ালি চালানোর জন্য
 
 permissions:
   contents: write
-
-# ✅ একই সময় একাধিক run বন্ধ
-concurrency:
-  group: iptv-playlist
-  cancel-in-progress: true
 
 jobs:
   update-playlist:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️⃣ Checkout repo
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
@@ -30,48 +25,40 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 3️⃣ Install dependencies
+      # 3️⃣ Install Python Dependencies
       - name: 📥 Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install aiohttp
 
-      # 4️⃣ Decrypt ZIP
+      # 4️⃣ 🔓 Decrypt ZIP
       - name: 🔓 Decrypt ZIP
         run: |
           python Script/decrypt.py
         env:
           ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }}
 
-      # 5️⃣ Run playlist combiner
-      - name: ▶️ Run Playlist Combiner
+      # 5️⃣ ▶️ Run Playlist Combiner
+      - name: ▶️ Run Playlist Combiner Script
         run: |
           python main/combine_playlist.py
 
-      # 6️⃣ Check file changes
+      # 6️⃣ 🔍 Check if Output Changed
       - name: 🔍 Check if Output Changed
         id: git-check
         run: |
-          git status --porcelain
-          if [[ -n "$(git status --porcelain)" ]]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
+          git add Combined_Live_TV.m3u offline.m3u
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      # 7️⃣ Commit & Push (correct order)
-      - name: 🚀 Commit & Push Updated Files
+      # 7️⃣ 🚀 Commit & Push (only if changed)
+      - name: 🔄 Commit & Push Updated Files
         if: steps.git-check.outputs.changed == 'true'
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "github-actions"
-
-          # 🔹 আগে remote update নাও
-          git pull --rebase origin main
-
-          # 🔹 এখন add + commit
-          git add Combined_Live_TV.m3u offline.m3u
-          git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"
-
-          # 🔹 push
-          git push origin main
+          git config --local user.name "GitHub Action"
+          git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
