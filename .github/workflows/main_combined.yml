@@ -2,13 +2,12 @@ name: 🔁 Auto Update IPTV Playlist
 
 on:
   schedule:
-    - cron: "*/40 * * * *"   # প্রতি ৪০ মিনিট পর চলবে
-  workflow_dispatch:        # ম্যানুয়ালি চালানোর জন্য
+    - cron: "*/40 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-# 🔒 অন্য workflow চললে এইটা wait করবে
 concurrency:
   group: iptv-playlist-lock
   cancel-in-progress: false
@@ -18,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repo
+      # 1️⃣ Checkout
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
@@ -30,25 +29,30 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 3️⃣ Install Python Dependencies
+      # 3️⃣ Install deps
       - name: 📥 Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install aiohttp
 
-      # 4️⃣ 🔓 Decrypt ZIP
-      - name: 🔓 Decrypt ZIP
+      # 4️⃣ 🔄 Sync with remote FIRST (🔥 main fix)
+      - name: 🔄 Sync Repository
         run: |
-          python Script/decrypt.py
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull --rebase origin main
+
+      # 5️⃣ 🔓 Decrypt ZIP
+      - name: 🔓 Decrypt ZIP
+        run: python Script/decrypt.py
         env:
           ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }}
 
-      # 5️⃣ ▶️ Run Playlist Combiner
+      # 6️⃣ ▶️ Run Playlist Combiner
       - name: ▶️ Run Playlist Combiner Script
-        run: |
-          python main/combine_playlist.py
+        run: python main/combine_playlist.py
 
-      # 6️⃣ 🔍 Check if Output Changed
+      # 7️⃣ 🔍 Check if Output Changed
       - name: 🔍 Check if Output Changed
         id: git-check
         run: |
@@ -59,17 +63,9 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      # 7️⃣ 🚀 Commit & Push (conflict-proof)
-      - name: 🔄 Commit & Push Updated Files
+      # 8️⃣ 🚀 Commit & Push
+      - name: 🚀 Commit & Push Updated Files
         if: steps.git-check.outputs.changed == 'true'
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-
-          # remote update আগে নিয়ে আসবে
-          git pull --rebase origin main
-
-          # commit না থাকলে fail করবে না
-          git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')" || echo "Nothing to commit"
-
+          git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')"
           git push origin main
