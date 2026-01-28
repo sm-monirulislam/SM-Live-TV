@@ -2,53 +2,45 @@ name: 🔁 Auto Update IPTV Playlist
 
 on:
   schedule:
-    - cron: "10,50 * * * *" # প্রতি ঘণ্টায় ১০ ও ৫০ মিনিটে
+    - cron: "*/40 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: playlist-update
-  cancel-in-progress: false
+  group: iptv-playlist-lock
+  cancel-in-progress: false   # অন্য workflow শেষ হওয়া পর্যন্ত অপেক্ষা করবে
 
 jobs:
   update-playlist:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repo
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Setup Python
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 3️⃣ Install Python Dependencies
-      - name: 📥 Install Python Dependencies
+      - name: 📥 Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install aiohttp
 
-      # 4️⃣ 🔓 Decrypt ZIP
       - name: 🔓 Decrypt ZIP
-        run: |
-          python Script/decrypt.py
+        run: python Script/decrypt.py
         env:
           ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }}
 
-      # 5️⃣ ▶️ Run Playlist Combiner
-      - name: ▶️ Run Playlist Combiner Script
-        run: |
-          python main/combine_playlist.py
+      - name: ▶️ Run Combiner
+        run: python main/combine_playlist.py
 
-      # 6️⃣ 🔍 Check if Output Changed
-      - name: 🔍 Check if Output Changed
+      - name: 🔍 Check Changes
         id: git-check
         run: |
           git add Combined_Live_TV.m3u offline.m3u
@@ -58,14 +50,10 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      # 7️⃣ 🚀 Commit & Push (only if changed)
-      - name: 🔄 Commit & Push Updated Files
+      - name: 🚀 Commit & Push
         if: steps.git-check.outputs.changed == 'true'
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-
-          git pull --rebase origin main
-
-          git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')"
-          git push origin main
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git commit -m "🔁 Auto Update Playlist"
+          git push
