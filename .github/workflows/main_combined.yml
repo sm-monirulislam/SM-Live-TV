@@ -2,11 +2,15 @@ name: 🔁 Auto Update IPTV Playlist
 
 on:
   schedule:
-    - cron: "*/40 * * * *" # প্রতি ৪০ মিনিট পর চলবে
-  workflow_dispatch: # ম্যানুয়ালি চালানোর জন্য
+    - cron: "10,50 * * * *" # প্রতি ঘণ্টায় ১০ ও ৫০ মিনিটে
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: playlist-update
+  cancel-in-progress: false
 
 jobs:
   update-playlist:
@@ -60,5 +64,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
+          git pull --rebase origin main
+
           git commit -m "🔁 Auto Update Playlist: $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          git push origin main
