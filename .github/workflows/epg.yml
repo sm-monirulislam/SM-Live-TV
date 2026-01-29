@@ -2,7 +2,7 @@ name: "🧭 Generate & Publish EPG"
 
 on:
   schedule:
-    - cron: "0 */2 * * *"   # ⏰ প্রতি ২ ঘণ্টায় অটো রান (UTC)
+    - cron: "0 */12 * * *"   # ⏰ প্রতি ১২ ঘণ্টায় অটো রান (UTC)
   workflow_call: {}
   workflow_dispatch: {}
 
@@ -52,13 +52,11 @@ jobs:
 
           git add epg.xml || true
 
-          # কোনো পরিবর্তন আছে কি না চেক করা
           if git diff --cached --quiet; then
             echo "No changes in epg.xml"
             exit 0
           fi
 
-          # আবারো নিরাপদ অবস্থায় সিঙ্ক করে নেওয়া
           git fetch origin main
           git reset --soft origin/main
 
