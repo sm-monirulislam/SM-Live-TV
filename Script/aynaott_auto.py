@@ -10,28 +10,28 @@ def generate_playlist():
 
     if not API_URL:
         print("❌ AYNAOTT_API_URL secret not found")
-        return True  # skip, fail না
+        return True
 
     print("📡 Fetching data from API...")
 
     try:
         response = requests.get(API_URL, timeout=20)
         response.raise_for_status()
-        api_data = response.json()
+        raw = response.json()
     except Exception as e:
         print(f"❌ API Fetch Error: {e}")
         return True
 
-    print("🔍 RAW API RESPONSE:", api_data)
+    print("🔍 RAW API RESPONSE LOADED")
 
-    # ✅ NEW FORMAT HANDLE
-    if not isinstance(api_data, dict):
-        print("⚠️ Invalid API root format")
+    # ✅ Extract channel list from nested response
+    if isinstance(raw, dict) and "response" in raw:
+        data = raw["response"]
+    else:
+        print("⚠️ Invalid API format, skipping update")
         return True
 
-    channels = api_data.get("response")
-
-    if not isinstance(channels, list) or len(channels) == 0:
+    if not isinstance(data, list) or len(data) == 0:
         print("⚠️ No channels found, skipping update")
         return True
 
@@ -43,7 +43,7 @@ def generate_playlist():
 
             channel_count = 0
 
-            for ch in channels:
+            for ch in data:
                 if not isinstance(ch, dict):
                     continue
 
@@ -62,12 +62,9 @@ def generate_playlist():
 
                 channel_count += 1
 
-            # ✅ footer info
             f.write(
                 f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
             )
-            f.write(f"# Channels: {channel_count}\n")
-            f.write(f"# Owner: {api_data.get('owner','')}\n")
 
         print(f"✅ Playlist generated successfully with {channel_count} channels.")
         return True
@@ -82,7 +79,10 @@ if __name__ == "__main__":
     print("🎯 AynaOTT Auto Update M3U Playlist Script")
     print("=========================================")
 
-    generate_playlist()
+    success = generate_playlist()
 
     print("=========================================")
-    print("✅ Process completed successfully!")
+    if success:
+        print("✅ Process completed successfully!")
+    else:
+        print("❌ Process failed.")
