@@ -1,9 +1,8 @@
 import requests
-import json
 import os
 from datetime import datetime
 
-# GitHub Secret
+# ================== SETTINGS ==================
 API_URL = os.environ.get("ROARZONE_API_URL")
 OUTPUT_FILE = "RoarZone.m3u"
 
@@ -20,9 +19,15 @@ def generate_playlist():
         print(f"❌ API error: {e}")
         return False
 
-    # API must be list
-    if not isinstance(data, list) or not data:
-        print("❌ API response is not a list or empty")
+    # ✅ NEW RESPONSE HANDLING
+    if not isinstance(data, dict) or "response" not in data:
+        print("❌ Invalid API structure")
+        return False
+
+    channels = data.get("response", [])
+
+    if not isinstance(channels, list) or not channels:
+        print("❌ Channel list empty")
         return False
 
     channel_count = 0
@@ -32,7 +37,7 @@ def generate_playlist():
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
 
-            for item in data:
+            for item in channels:
                 if not isinstance(item, dict):
                     continue
 
@@ -67,6 +72,5 @@ def generate_playlist():
 
 if __name__ == "__main__":
     print("🎯 RoarZone Auto M3U Generator")
-    success = generate_playlist()
-    if not success:
+    if not generate_playlist():
         exit(1)
