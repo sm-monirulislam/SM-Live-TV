@@ -10,7 +10,7 @@ def generate_playlist():
 
     if not API_URL:
         print("❌ AYNAOTT_API_URL secret not found")
-        return True
+        return True  # fail না করে exit
 
     print("📡 Fetching data from API...")
 
@@ -22,17 +22,29 @@ def generate_playlist():
         print(f"❌ API Fetch Error: {e}")
         return True
 
-    print("🔍 RAW API RESPONSE LOADED")
+    print("🔍 API RESPONSE TYPE:", type(raw))
 
-    # ✅ Extract channel list from nested response
-    if isinstance(raw, dict) and "response" in raw:
-        data = raw["response"]
-    else:
-        print("⚠️ Invalid API format, skipping update")
+    # ===============================
+    # ✅ SAFE & FLEXIBLE RESPONSE PARSE
+    # ===============================
+    if not isinstance(raw, dict):
+        print("⚠️ API root is not JSON object")
         return True
 
-    if not isinstance(data, list) or len(data) == 0:
-        print("⚠️ No channels found, skipping update")
+    data = raw.get("response")
+
+    if data is None:
+        print("⚠️ response key not found in API")
+        print("DEBUG keys:", raw.keys())
+        return True
+
+    if not isinstance(data, list):
+        print("⚠️ response is not a list")
+        print("DEBUG response value:", data)
+        return True
+
+    if len(data) == 0:
+        print("⚠️ Channel list is empty")
         return True
 
     file_path = "AynaOTT.m3u"
@@ -79,10 +91,7 @@ if __name__ == "__main__":
     print("🎯 AynaOTT Auto Update M3U Playlist Script")
     print("=========================================")
 
-    success = generate_playlist()
+    generate_playlist()
 
     print("=========================================")
-    if success:
-        print("✅ Process completed successfully!")
-    else:
-        print("❌ Process failed.")
+    print("✅ Process completed successfully!")
