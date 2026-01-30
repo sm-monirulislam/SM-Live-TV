@@ -10,28 +10,28 @@ def generate_playlist():
 
     if not API_URL:
         print("❌ AYNAOTT_API_URL secret not found")
-        return True   # ❗ fail না করে skip
+        return True  # skip, fail না
 
     print("📡 Fetching data from API...")
 
     try:
         response = requests.get(API_URL, timeout=20)
         response.raise_for_status()
-        data = response.json()
+        api_data = response.json()
     except Exception as e:
         print(f"❌ API Fetch Error: {e}")
-        return True   # ❗ fail না করে skip
-
-    print("🔍 RAW API RESPONSE:", data)
-
-    # ✅ Handle all formats
-    if isinstance(data, dict):
-        data = [data]
-    elif not isinstance(data, list):
-        print("⚠️ Invalid API format, skipping update")
         return True
 
-    if len(data) == 0:
+    print("🔍 RAW API RESPONSE:", api_data)
+
+    # ✅ NEW FORMAT HANDLE
+    if not isinstance(api_data, dict):
+        print("⚠️ Invalid API root format")
+        return True
+
+    channels = api_data.get("response")
+
+    if not isinstance(channels, list) or len(channels) == 0:
         print("⚠️ No channels found, skipping update")
         return True
 
@@ -42,7 +42,8 @@ def generate_playlist():
             f.write("#EXTM3U\n")
 
             channel_count = 0
-            for ch in data:
+
+            for ch in channels:
                 if not isinstance(ch, dict):
                     continue
 
@@ -61,16 +62,19 @@ def generate_playlist():
 
                 channel_count += 1
 
+            # ✅ footer info
             f.write(
                 f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
             )
+            f.write(f"# Channels: {channel_count}\n")
+            f.write(f"# Owner: {api_data.get('owner','')}\n")
 
         print(f"✅ Playlist generated successfully with {channel_count} channels.")
         return True
 
     except Exception as e:
         print(f"❌ Error writing playlist file: {e}")
-        return True   # ❗ fail না
+        return True
 
 
 if __name__ == "__main__":
@@ -78,10 +82,7 @@ if __name__ == "__main__":
     print("🎯 AynaOTT Auto Update M3U Playlist Script")
     print("=========================================")
 
-    success = generate_playlist()
+    generate_playlist()
 
     print("=========================================")
-    if success:
-        print("✅ Process completed successfully!")
-    else:
-        print("❌ Process failed.")
+    print("✅ Process completed successfully!")
