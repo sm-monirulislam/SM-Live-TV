@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-02-02 19:58:47 (BD Time)
-# 📺 Channels Count: 1347
+# 🕒 Last Updated: 2026-02-02 20:37:50 (BD Time)
+# 📺 Channels Count: 1350
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -79,6 +79,9 @@ http://alvetv.com/moviebanglatv/8080/index.m3u8
 https://tvsen4.aynaott.com/durontotv/index.m3u8
 ############## 🌍 Documentary ##############
 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/1d/Love_Nature_TV.png" group-title="SM All TV",Love Nature
+https://cdn1.logichost.in/ajmantv/live/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Animal_Planet_logo.svg/1280px-Animal_Planet_logo.svg.png" group-title="SM All TV",Animal Planet HD
 https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8
 ############## 🎶 Music ##############
@@ -148,9 +151,6 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 #EXTINF:-1 tvg-id="ChannelS.bd" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxT37QeLoNwrMrzrL8NUx_sA4tyZw0hnHoqF5RhwENo_TOP2Z29HYAMAk&s=10" group-title="Bangla Channel",Channel S
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/channels.stream/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="ibtv.us" tvg-logo="https://yt3.googleusercontent.com/pQdSWGqiXZA5QEDm6A3dY2I-kg9IIlkF0YNXqvZKjaF12-HEcobFxEHPlbYNxxqitTlvPJewkT8=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",IB Tv Usa
-http://208.86.19.13:81/509.stream/index.m3u8
 
 #EXTINF:-1 tvg-id="MAASRANGA.bd" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/a3/Maasranga_TV_HD_logo.png" group-title="Bangla Channel",MAASRANGA HD
 http://mtv.sunplex.live/MAASRANGA-TV/index.m3u8
@@ -364,9 +364,6 @@ http://kstv.us:8080/live/Purn3542/38791114838/40725.ts
 
 #EXTINF:-1 tvg-id="PappaPigPluto" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c5/Peppa_Pig.svg" group-title="Bangla Channel",1. Pappa Pig Pluto
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fb6c84dd37df3b4290c5livestitch/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d14fb6c84dd37df3b4290c5&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=985&terminate=false&userId=&profilesFromStream=true
-
-#EXTINF:-1 tvg-id="Ninja Hattori" tvg-logo="https://yt3.googleusercontent.com/QH3scR0Gc7LqcEF1vy9dkdkC6c176m2sgnYGBzyqAjlRScj60kS4cE9xyA7loUPp-1-RZ5MNcA=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",2. Ninja Hattori
-https://live20.bozztv.com/giatvplayout7/giatv-210448/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-id="POGO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d3/Pogo_2016.svg" group-title="Bangla Channel",2. POGO
 http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/453.m3u8
