@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-02-09 15:41:57 (BD Time)
-# 📺 Channels Count: 1342
+# 🕒 Last Updated: 2026-02-09 16:42:09 (BD Time)
+# 📺 Channels Count: 1341
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -26,9 +26,6 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_njjooSlwTJnKdIZCGueYfSfotEcv0VLNzeeX8C_3735g=s160-c-k-c0x00ffffff-no-rj" group-title="SM All TV", Tara TV Bangla
 http://103.145.48.150:90/laosat24/taratv/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://bhichannel.com/wp-content/uploads/2024/11/cropped-WhatsApp-Image-2024-10-30-at-12.25.43-PM-1-120x80.jpeg" group-title="SM All TV", Bhi Channel
-http://15.235.185.236/hls/bhi.m3u8
-
 #EXTINF:-1 tvg-logo="https://i.ibb.co/7t7xNGrk/IMG-20251222-232617-913.jpg" group-title="SM All TV", Sami TV
 https://padmaonline.duckdns.org:8088/SamiTV/index.m3u8
 
@@ -37,9 +34,6 @@ http://103.145.48.150:90/laosat24/filmytv/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_njjooSlwTJnKdIZCGueYfSfotEcv0VLNzeeX8C_3735g=s160-c-k-c0x00ffffff-no-rj" group-title="SM All TV", Tara TV Bangla
 http://103.145.48.150:90/laosat24/taratv/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://bhichannel.com/wp-content/uploads/2024/11/cropped-WhatsApp-Image-2024-10-30-at-12.25.43-PM-1-120x80.jpeg" group-title="SM All TV", Bhi Channel
-http://15.235.185.236/hls/bhi.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/ff/filmy-bangla-tv.png" group-title="SM All TV", Filmy Tv
 http://103.145.48.150:90/laosat24/filmytv/index.m3u8
@@ -371,6 +365,9 @@ http://kstv.us:8080/live/Purn3542/38791114838/40725.ts
 #EXTINF:-1 tvg-id="PappaPigPluto" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c5/Peppa_Pig.svg" group-title="Bangla Channel",1. Pappa Pig Pluto
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fb6c84dd37df3b4290c5livestitch/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d14fb6c84dd37df3b4290c5&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=985&terminate=false&userId=&profilesFromStream=true
 
+#EXTINF:-1 tvg-id="Ninja Hattori" tvg-logo="https://yt3.googleusercontent.com/QH3scR0Gc7LqcEF1vy9dkdkC6c176m2sgnYGBzyqAjlRScj60kS4cE9xyA7loUPp-1-RZ5MNcA=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",2. Ninja Hattori
+https://live20.bozztv.com/giatvplayout7/giatv-210448/tracks-v1a1/mono.ts.m3u8
+
 #EXTINF:-1 tvg-id="POGO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d3/Pogo_2016.svg" group-title="Bangla Channel",2. POGO
 http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/453.m3u8
 
@@ -379,6 +376,9 @@ https://d35yyja0m9lxcw.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 
 #EXTINF:-1 tvg-id="BoingPlus" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Boing_Plus_logo_2020.svg/735px-Boing_Plus_logo_2020.svg.png?20201201165658" group-title="Bangla Channel",Boing Plus
 http://77.39.161.42:55555/Boing%20Plus
+
+#EXTINF:-1 tvg-id="CartoonAnima" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/db/Motu-patlu-cover.jpg" group-title="Bangla Channel",Cartoon Anima
+https://live20.bozztv.com/giatvplayout7/giatv-209624/index.m3u8
 
 #EXTINF:-1 tvg-id="DisneyJunior.eu" tvg-logo="https://static.wikia.nocookie.net/disney/images/a/a8/Disney_Jr._2024_logo.svg" group-title="Bangla Channel",Disney Junior Europe
 https://live20.bozztv.com/giatvplayout7/giatv-209650/index.m3u8
@@ -406,6 +406,9 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 
 #EXTINF:-1 tvg-id="CatchyComedy" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/catchy-comedy-us.png" group-title="Bangla Channel",EN | Catchy Comedy
 https://dvrfl03.bozztv.com/hdirect/hdirect-ovair1-decades/index.m3u8
+
+#EXTINF:-1 tvg-id="HBOComedy.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/hbo-comedy-us.png" group-title="Bangla Channel",EN | HBO Comedy
+http://23.237.104.106:8080/USA_HBO_COMEDY/index.m3u8
 
 #EXTINF:-1 tvg-id="MediacorpEntertainment" tvg-logo="https://a.jsrdn.com/hls/23077/mediacorp-entertainment-english/logo_20240102_190017_70.png" group-title="Bangla Channel",EN | Mediacorp Entertainment
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mediacorp-entertainment-english/manifest.m3u8
@@ -520,9 +523,6 @@ https://g4wlkwx8l23a-hls-live.5centscdn.com/HUM/271ddf829afeece44d8732757fba1a66
 
 #EXTINF:-1 tvg-id="AlVelayatTV" tvg-logo="https://shialivetv.com/shialive/assets/img/velayatiran.jpg" group-title="Bangla Channel",Al Velayat TV
 https://nl2.livekadeh.com/hls2/velayattv_high.m3u8
-
-#EXTINF:-1 tvg-id="IBNTVAfrica.tz" tvg-logo="https://www.ibn-tv.co.tz/img/IBN-NewLogo.png" group-title="Bangla Channel",IBN TV Africa
-http://68.183.41.209:8080/live/5d9a537c64b9c/index.m3u8
 
 #EXTINF:-1 tvg-id="SunnahTV.sa" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/a7/Saudi_Sunnah_TV_2020.png" group-title="Bangla Channel",Sunnah TV
 http://m.live.net.sa:1935/live/sunnah/chunklist.m3u8?v=1
