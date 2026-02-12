@@ -1,7 +1,7 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-02-12 19:55:26 (BD Time)
+# 🕒 Last Updated: 2026-02-12 20:42:11 (BD Time)
 # 📺 Channels Count: 855
 # 🔒 Usage: Personal / Educational
 #=================================
@@ -417,6 +417,9 @@ https://audio.streamcast.xyz/radio/8000/radio.mp3
 
 #EXTINF:-1 tvg-logo="https://spicefmbd.com/logospice.png" group-title="SM All TV",Spice FM
 https://stream.spicefmbd.com/stream.m3u8
+
+#EXTINF:-1 tvg-logo="https://m.economictimes.com/thumb/msid-71679942,width-1200,height-900,resizemode-4,imgsize-42753/radio-mirchi-agencies.jpg" group-title="SM All TV",Radio Mirchi
+https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444
 
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/b30147b97d86754e4b97fc2989628391" group-title="AynaOTT",BTV World
 https://tvsen6.aynascope.net/btv_world/index.m3u8?e=1770909380&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=951325747fd32f86600bb72470019a36
@@ -2594,9 +2597,6 @@ https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8
 
 #EXTINF:-1 tvg-id="BanglaWaz.bd" tvg-logo="https://play-lh.googleusercontent.com/Z-yuraAYw_edO1ItlMj6a9yq9M9YcQZ2Goq4YvXQgN2DNcTVtdb2qS4Bv6IoDbVSDIgF=w240-h480-rw" group-title="Bangla Channel",BanglaWaz
 https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8
-
-#EXTINF:-1 tvg-id="ChannelWIN.in@SD" tvg-logo="https://shiachannel.in/livetv/img/channels/win.png" group-title="Bangla Channel",Channel WIN
-https://cdn.smartstream.video/smartstream-us/channelwinlive/channelwinlive/chunks.m3u8
 
 #EXTINF:-1 tvg-id="HyderTV.ca" tvg-logo="https://hyder.tv/wp-content/uploads/2019/08/Logo_HYDER-TV_high-res_013.png" group-title="Bangla Channel",Hyder TV
 https://cdn.live247stream.com/hyder/tv/playlist.m3u8
