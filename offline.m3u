@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-02-12 23:39:56 (BD Time)
-# 📺 Channels Count: 902
+# 🕒 Last Updated: 2026-02-13 00:35:29 (BD Time)
+# 📺 Channels Count: 906
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -472,6 +472,12 @@ https://atticatv.siliconweb.com/atticatv/atticaliveabr/playlist.m3u8
 
 #EXTINF:-1 tvg-id="CTV Winnipeg" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s10108_h15_ab.png" group-title="Bangla Channel",EN | CTV Winnipeg (CKY)
 http://38.143.48.212:9981/stream/channelid/741174107?profile=pass
+
+#EXTINF:-1 tvg-id="DiscoveryFamily" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/51/Discovery_Family.svg" group-title="Bangla Channel",EN | Discovery Family
+http://fl31.moveonjoy.com:80/DISCOVERY_FAMILY_CHANNEL/index.m3u8
+
+#EXTINF:-1 tvg-id="DiscoveryLife" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/89/Discovery_Life_2016.jpg" group-title="Bangla Channel",EN | Discovery Life
+http://fl31.moveonjoy.com:80/DISCOVERY_LIFE/index.m3u8
 
 #EXTINF:-1 tvg-id="DubaiOne.ae" tvg-logo="https://www.dmi.gov.ae/content/dam/corporate/dev/2023/elogos-ar/dubaione-logo.png" group-title="Bangla Channel",EN | Dubai One
 https://dminnvllta.cdn.mgmlcdn.com/dubaione/smil:dubaione.stream.smil/chunklist.m3u8
