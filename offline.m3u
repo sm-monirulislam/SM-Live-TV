@@ -1,7 +1,7 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-02-15 04:04:10 (BD Time)
+# 🕒 Last Updated: 2026-02-15 04:56:37 (BD Time)
 # 📺 Channels Count: 764
 # 🔒 Usage: Personal / Educational
 #=================================
@@ -13,9 +13,6 @@ http://103.101.197.10:8989/M_Movies/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/football-logo-design-template-bebebf8ff1c25b66b504d37afaee99f0_screen.jpg?ts=1686017774" group-title="Jagobd",group-title="Jagobd",Football match
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/matribhumitv.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEKnvdDZpDGvUszfaNqynrkO-L9CSQEAHkkw&s" group-title="Jagobd",group-title="Jagobd",ETV HD
-http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwUyv4yOvRJxQRRNROFj3e0LVNjDNNi1eE-OPjPeqW2FwSxfcoZSAM1A&s=10" group-title="Jagobd",group-title="Jagobd",Tara Tv
 http://103.145.48.150:90/laosat24/taratv/index.m3u8
@@ -166,6 +163,9 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/bollywoodclassic.jpg" group-title="Jagobd",group-title="Jagobd",Bollywood Classic
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-classic/manifest.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/49/Channel_Vision.jpeg/revision/latest?cb=20191230181808" group-title="SM All TV", Channel Vision TV
+https://channelvision.livebox.co.in/channelvisionhls/live.m3u8
 
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_njjooSlwTJnKdIZCGueYfSfotEcv0VLNzeeX8C_3735g=s160-c-k-c0x00ffffff-no-rj" group-title="SM All TV", Tara TV Bangla
 http://103.145.48.150:90/laosat24/taratv/index.m3u8
@@ -463,9 +463,6 @@ http://kstv.us:8080/live/Purn3542/38791114838/40725.ts
 
 #EXTINF:-1 tvg-id="PappaPigPluto" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c5/Peppa_Pig.svg" group-title="Bangla Channel",1. Pappa Pig Pluto
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fb6c84dd37df3b4290c5livestitch/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d14fb6c84dd37df3b4290c5&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=985&terminate=false&userId=&profilesFromStream=true
-
-#EXTINF:-1 tvg-id="Ninja Hattori" tvg-logo="https://yt3.googleusercontent.com/QH3scR0Gc7LqcEF1vy9dkdkC6c176m2sgnYGBzyqAjlRScj60kS4cE9xyA7loUPp-1-RZ5MNcA=s160-c-k-c0x00ffffff-no-rj" group-title="Bangla Channel",2. Ninja Hattori
-https://live20.bozztv.com/giatvplayout7/giatv-210448/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-id="POGO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d3/Pogo_2016.svg" group-title="Bangla Channel",2. POGO
 http://link.luckonline.eu/live/Ali130225/Cpyej2JL56Xy/453.m3u8
