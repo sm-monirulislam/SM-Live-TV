@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-02-15 00:19:32 (BD Time)
-# 📺 Channels Count: 765
+# 🕒 Last Updated: 2026-02-15 01:06:05 (BD Time)
+# 📺 Channels Count: 766
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -269,6 +269,9 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 #EXTINF:-1 tvg-id="btv.bd" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/12/BTV_HD_Logo.svg" group-title="Bangla Channel",BTV HD
 https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
 
+#EXTINF:-1 tvg-id="btv.bd" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/12/BTV_HD_Logo.svg" group-title="Bangla Channel",BTV SD
+http://103.230.105.252:1935/live/btv/manifest.m3u8
+
 #EXTINF:-1 tvg-id="CB24TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPlClWrsXnqhk5d12YgXqLRCwPTFmVFy0hqj2XScnh7M1OSHEJVms7h_E&s=10" group-title="Bangla Channel",CB 24 TV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/cb24.stream/mono.m3u8
 
@@ -316,6 +319,9 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF9
 
 #EXTINF:-1 tvg-id="ntv.bd" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e1/NTV_Bangladesh.svg" group-title="Bangla Channel",NTV HD
 https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/1716-audio_113462_eng=113200-video=1692000.m3u8
+
+#EXTINF:-1 tvg-id="ntv.bd" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e1/NTV_Bangladesh.svg" group-title="Bangla Channel",NTV SD
+http://103.230.105.252:1935/live/ntv/manifest.m3u8
 
 #EXTINF:-1 tvg-id="rtv.bd" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4e/Rtv_bangladesh.svg" group-title="Bangla Channel",RTV
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/rtv-sg.stream/playlist.m3u8
@@ -371,6 +377,9 @@ https://amg01117-amg01117c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="BollywoodMasala.in" tvg-logo="https://a.jsrdn.com/hls/23142/bollywood-masala/logo_20240213_192946_70.png" group-title="Bangla Channel",ENT | Bollywood Masala
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-masala/index.m3u8
 
+#EXTINF:-1 tvg-id="DANGAL2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ac/Dangal_2.png" group-title="Bangla Channel",ENT | DANGAL2
+https://live-dangal2.akamaized.net/liveabr/playlist.m3u8
+
 #EXTINF:-1 tvg-id="E24.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/48/E24_new.jpg" group-title="Bangla Channel",ENT | E24
 https://live-e24.dailyhunt.in/eternowsa/live/amlst:E24_,b256,b512,b1024,b1824,.smil/playlist.m3u8
 
@@ -394,9 +403,6 @@ https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/chunklist_w1
 
 #EXTINF:-1 tvg-id="ZEECINEMA.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8a/Zee_Cinema_2017_old.png" group-title="Bangla Channel",MOV | ZEE CINEMA HD
 https://smart.bengaldigital.live/ZeeCinema/index.m3u8
-
-#EXTINF:-1 tvg-id="MNTVMusic" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",MU | MNTV Music
-https://mntv.livebox.co.in/musichls/live.m3u8
 
 #EXTINF:-1 tvg-id="Zoom.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b8/Zoom_2018_logo.jpg" group-title="Bangla Channel",MU | Zoom
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom-tv/master.m3u8
