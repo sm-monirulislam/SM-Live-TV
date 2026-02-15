@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-02-15 16:20:49 (BD Time)
-# 📺 Channels Count: 756
+# 🕒 Last Updated: 2026-02-15 16:59:33 (BD Time)
+# 📺 Channels Count: 751
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -259,6 +259,12 @@ https://mytime-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://dtat2ks7dludr.cloudfront.net/spnsportsindia/channel_logos/SONY_SportsTen2_HD.png" group-title="SM All TV",Sony Sports 2 HD
 http://filex.tv:8080/live/Home329/Sohailhome/52083.m3u8
 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/f/f4/Fox_Cricket_Logo.png" group-title="SM All TV",FOX Cricket 501
+http://y3fqd48g.megatv.fun/iptv/NRLXRWSBWBPLN4/19146/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://q7h8x4g8.stackpathcdn.com/wp-content/uploads/2020/09/Sky-Sports-Cricket-2020-logo-250.png" group-title="SM All TV",Sky Sports Cricket
+http://y3fqd48g.megatv.fun/iptv/NRLXRWSBWBPLN4/19132/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.epg.best/qa/beINSports1.qa.png" group-title="SM All TV",BeIN Sports Extra
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
 ############## 📻 FM-Radio ##############
@@ -400,6 +406,9 @@ https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/chunklist_w1
 
 #EXTINF:-1 tvg-id="ZEECINEMA.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8a/Zee_Cinema_2017_old.png" group-title="Bangla Channel",MOV | ZEE CINEMA HD
 https://smart.bengaldigital.live/ZeeCinema/index.m3u8
+
+#EXTINF:-1 tvg-id="MNTVMusic" tvg-logo="https://buddytv.netlify.app/img/no-logo.png" group-title="Bangla Channel",MU | MNTV Music
+https://mntv.livebox.co.in/musichls/live.m3u8
 
 #EXTINF:-1 tvg-id="Zoom.in" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b8/Zoom_2018_logo.jpg" group-title="Bangla Channel",MU | Zoom
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/zoom-tv/master.m3u8
