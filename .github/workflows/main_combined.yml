@@ -1,4 +1,4 @@
-name:  Auto Update IPTV Playlist
+name: Auto Update IPTV Playlist
 
 on:
   schedule:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout
+      # 1️⃣ Checkout Repository
       - name: 📦 Checkout Repository
         uses: actions/checkout@v4
         with:
@@ -29,30 +29,28 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 3️⃣ Install deps
-      - name: 📥 Install Python Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install aiohttp
+      # 3️⃣ Upgrade pip (No extra dependency needed)
+      - name: 📥 Prepare Python
+        run: python -m pip install --upgrade pip
 
-      # 4️⃣ 🔄 Sync with remote FIRST (🔥 main fix)
+      # 4️⃣ Sync with remote (prevent conflict)
       - name: 🔄 Sync Repository
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull --rebase origin main
 
-      # 5️⃣ 🔓 Decrypt ZIP
+      # 5️⃣ Decrypt ZIP (if needed)
       - name: 🔓 Decrypt ZIP
         run: python Script/decrypt.py
         env:
           ZIP_PASSWORD: ${{ secrets.ZIP_PASSWORD }}
 
-      # 6️⃣ ▶️ Run Playlist Combiner
+      # 6️⃣ Run Playlist Combiner
       - name: ▶️ Run Playlist Combiner Script
         run: python main/combine_playlist.py
 
-      # 7️⃣ 🔍 Check if Output Changed
+      # 7️⃣ Check if file changed
       - name: 🔍 Check if Output Changed
         id: git-check
         run: |
@@ -63,7 +61,7 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      # 8️⃣ 🚀 Commit & Push
+      # 8️⃣ Commit & Push if changed
       - name: 🚀 Commit & Push Updated Files
         if: steps.git-check.outputs.changed == 'true'
         run: |
