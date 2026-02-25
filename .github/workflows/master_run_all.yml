@@ -1,9 +1,9 @@
-name:  Run All Playlist Updates (Main Controller)
+name: Run All Playlist Updates (Main Controller)
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/30 * * * *"   # প্রতি ৩০ মিনিট
 
 permissions:
   contents: write
@@ -36,4 +36,10 @@ jobs:
     needs: aynaott
     if: always()
     uses: ./.github/workflows/Roar-Zone.yml
+    secrets: inherit
+
+  main_combined:
+    needs: roarzone
+    if: always()
+    uses: ./.github/workflows/main_combined.yml
     secrets: inherit
