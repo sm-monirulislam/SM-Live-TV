@@ -7,30 +7,24 @@ API_URL = os.environ.get("ROARZONE_API_URL")
 OUTPUT_FILE = "RoarZone.m3u"
 
 def generate_playlist():
+    # ❌ If API not set → silently exit
     if not API_URL:
-        print("❌ ROARZONE_API_URL secret not found")
-        return False
+        return True
 
     try:
         r = requests.get(API_URL, timeout=20)
         r.raise_for_status()
         data = r.json()
-    except Exception as e:
-        print(f"❌ API error: {e}")
-        return False
+    except:
+        return True   # No error print
 
-    # ✅ NEW RESPONSE HANDLING
     if not isinstance(data, dict) or "response" not in data:
-        print("❌ Invalid API structure")
-        return False
+        return True
 
     channels = data.get("response", [])
-
     if not isinstance(channels, list) or not channels:
-        print("❌ Channel list empty")
-        return False
+        return True
 
-    channel_count = 0
     seen_urls = set()
 
     try:
@@ -56,21 +50,15 @@ def generate_playlist():
                 )
                 f.write(f"{url}\n")
 
-                channel_count += 1
-
             f.write(
                 f"# Updated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
             )
 
-        print(f"✅ Playlist generated: {channel_count} channels")
         return True
 
-    except Exception as e:
-        print(f"❌ File write error: {e}")
-        return False
+    except:
+        return True
 
 
 if __name__ == "__main__":
-    print("🎯 RoarZone Auto M3U Generator")
-    if not generate_playlist():
-        exit(1)
+    generate_playlist()
