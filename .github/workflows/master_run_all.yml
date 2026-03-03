@@ -26,14 +26,8 @@ jobs:
     uses: ./.github/workflows/toffee_main.yml
     secrets: inherit
 
-  aynaott:
-    needs: toffee
-    if: always()
-    uses: ./.github/workflows/auto_aynaott.yml
-    secrets: inherit
-
   roarzone:
-    needs: aynaott
+    needs: toffee
     if: always()
     uses: ./.github/workflows/Roar-Zone.yml
     secrets: inherit
@@ -43,3 +37,4 @@ jobs:
     if: always()
     uses: ./.github/workflows/main_combined.yml
     secrets: inherit
+}
