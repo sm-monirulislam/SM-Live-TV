@@ -26,14 +26,8 @@ jobs:
     uses: ./.github/workflows/toffee_main.yml
     secrets: inherit
 
-  roarzone:
-    needs: toffee   
-    if: always()
-    uses: ./.github/workflows/Roar-Zone.yml
-    secrets: inherit
 
   main_combined:
-    needs: roarzone
     if: always()
     uses: ./.github/workflows/main_combined.yml
     secrets: inherit
