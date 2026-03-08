@@ -4,12 +4,14 @@ import os
 API = os.getenv("API_URL")
 OUTPUT = "Fancode.m3u"
 
+playlist = "#EXTM3U\n"
+
 r = requests.get(API)
 data = r.json()
 
-playlist = "#EXTM3U\n"
+matches = data.get("matches", [])
 
-for match in data.get("matches", []):
+for match in matches:
     title = match.get("title", "")
     logo = match.get("src", "")
     group = match.get("event_category", "")
