@@ -26,7 +26,6 @@ jobs:
       - name: 📥 Install Dependencies
         run: pip install requests
 
-      # ✅ PULL BEFORE SCRIPT RUN
       - name: 🔄 Sync with main branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,11 +36,9 @@ jobs:
 
       - name: ▶️ Run Update Script
         env:
-          FANCODE_API_1: ${{ secrets.FANCODE_API_1 }}
-          FANCODE_API_2: ${{ secrets.FANCODE_API_2 }}
+          API_URL: ${{ secrets.FANCODE_API_1 }}
         run: python Script/Fancode_playlist.py
 
-      # ✅ COMMIT ONLY (NO PULL HERE)
       - name: 💾 Commit & Push Safely
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
