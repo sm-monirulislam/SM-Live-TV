@@ -26,8 +26,8 @@ jobs:
     uses: ./.github/workflows/toffee_main.yml
     secrets: inherit
 
-
   main_combined:
+    needs: [crichd, fancode, toffee]
     if: always()
     uses: ./.github/workflows/main_combined.yml
     secrets: inherit
