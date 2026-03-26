@@ -16,8 +16,13 @@ def generate_playlist():
     try:
         response = requests.get(API_URL, timeout=20)
         response.raise_for_status()
-        data = response.json()
-        print(f"✅ JSON data fetched successfully! Total channels: {len(data)}")
+        json_data = response.json()
+
+        # 🔥 NEW: response list extract
+        data = json_data.get("response", [])
+
+        print(f"✅ JSON data fetched! Total channels: {len(data)}")
+
     except Exception as e:
         print("❌ Error fetching JSON:", e)
         return
@@ -25,20 +30,22 @@ def generate_playlist():
     m3u_lines = ["#EXTM3U"]
 
     for ch in data:
-        name = ch.get("name", "Unknown Channel")
+        name = ch.get("title", "Unknown Channel")   # 🔥 title
         logo = ch.get("logo", "")
-        link = ch.get("link", "")
+        link = ch.get("url", "")                    # 🔥 url
         referer = ch.get("referer", "")
-        origin = ch.get("origin", "")
+        category = ch.get("category", "Other")
 
         if not link:
             continue
 
-        m3u_lines.append(f'#EXTINF:-1 tvg-logo="{logo}",{name}')
+        m3u_lines.append(
+            f'#EXTINF:-1 tvg-logo="{logo}" group-title="{category}",{name}'
+        )
+
         if referer:
             m3u_lines.append(f"#EXTVLCOPT:http-referrer={referer}")
-        if origin:
-            m3u_lines.append(f"#EXTVLCOPT:http-origin={origin}")
+
         m3u_lines.append(link)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -46,6 +53,7 @@ def generate_playlist():
 
     print(f"✅ Playlist generated: {OUTPUT_FILE}")
     print("🕓 Updated at:", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
 
 if __name__ == "__main__":
     generate_playlist()
