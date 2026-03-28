@@ -1,45 +1,35 @@
-name: Auto Update Fancode Playlist
+name: Update Fancode Playlist
 
 on:
+  schedule:
+    - cron: "*/30 * * * *"   # প্রতি 30 মিনিটে run
   workflow_dispatch:
-  workflow_call:
-
-permissions:
-  contents: write
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📦 Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v3
 
       - name: 🐍 Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
+          python-version: 3.x
 
-      - name: 📥 Install Dependencies
+      - name: 📦 Install requests
         run: pip install requests
 
-      - name: 🔄 Sync with main branch
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-
-      - name: ▶️ Run Update Script
+      - name: 🚀 Run script
         env:
-          API_URL: ${{ secrets.FANCODE_API_1 }}
-        run: python Script/Fancode_playlist.py
+          API_URL: ${{ secrets.API_URL }}
+        run: python Fancode_playlist.py
 
       - name: 💾 Commit & Push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add Fancode.m3u || true
-          git commit -m "🔁 Auto update Fancode.m3u" || echo "No changes"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add Fancode.m3u
+          git commit -m "🔄 Auto update Fancode playlist" || echo "No changes"
+          git push
