@@ -1,27 +1,50 @@
 import requests
 import os
 
-API = os.getenv("API_URL")
-OUTPUT = "Fancode.m3u"
+# GitHub Secret থেকে API নিবে
+API_URL = os.getenv("FANCODE_API")
 
-playlist = "#EXTM3U\n"
+OUTPUT_FILE = "Fancode.m3u"
 
-r = requests.get(API)
-data = r.json()
+def generate_playlist():
+    if not API_URL:
+        print("❌ FANCODE_API secret not found!")
+        return
 
-matches = data.get("matches", [])
+    print("🚀 Fetching API data...")
 
-for match in matches:
-    title = match.get("title", "")
-    logo = match.get("src", "")
-    group = match.get("event_category", "")
-    url = match.get("adfree_url", "")
+    try:
+        response = requests.get(API_URL, timeout=20)
+        data = response.json()
+    except Exception as e:
+        print("❌ Error fetching API:", e)
+        return
 
-    if url:
-        playlist += f'#EXTINF:-1 tvg-name="{title}" tvg-logo="{logo}" group-title="{group}",{title}\n'
+    matches = data.get("matches", [])
+
+    playlist = "#EXTM3U\n"
+
+    for match in matches:
+        title = match.get("title", "No Title")
+        logo = match.get("src", "")
+        group = match.get("event_category", "Fancode")
+        status = match.get("status", "")
+        url = match.get("adfree_url", "")
+
+        # stream না থাকলে skip
+        if not url:
+            continue
+
+        name = f"{title} [{status}]"
+
+        playlist += f'#EXTINF:-1 tvg-name="{name}" tvg-logo="{logo}" group-title="{group}",{name}\n'
         playlist += f"{url}\n"
 
-with open(OUTPUT, "w", encoding="utf-8") as f:
-    f.write(playlist)
+    # file save
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write(playlist)
 
-print("Fancode.m3u updated")
+    print(f"✅ Playlist saved as {OUTPUT_FILE}")
+
+if __name__ == "__main__":
+    generate_playlist()
