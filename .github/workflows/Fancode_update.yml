@@ -1,9 +1,12 @@
 name: Fancode Playlist Update
 
 on:
-  schedule:
-    - cron: "0 * * * *"   # প্রতি 1 ঘন্টা
   workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: write
+  id-token: write
 
 jobs:
   build:
