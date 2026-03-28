@@ -24,7 +24,7 @@ jobs:
       - name: Run Script
         env:
           FANCODE_API: ${{ secrets.FANCODE_API }}
-        run: python Fancode_playlist.py
+        run: python Script/Fancode_playlist.py
 
       - name: Commit & Push
         run: |
