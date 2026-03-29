@@ -14,14 +14,8 @@ jobs:
     uses: ./.github/workflows/CricHD_update_playlist.yml
     secrets: inherit
 
-  fancode:
-    needs: crichd
-    if: always()
-    uses: ./.github/workflows/Fancode_update.yml
-    secrets: inherit
-
   main_combined:
-    needs: [crichd, fancode]
+    needs: crichd
     if: always()
     uses: ./.github/workflows/main_combined.yml
     secrets: inherit
