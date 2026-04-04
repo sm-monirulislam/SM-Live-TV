@@ -18,7 +18,7 @@ def generate_playlist():
         response.raise_for_status()
         json_data = response.json()
 
-        # 🔥 NEW: response list extract
+        # Extract channel list
         data = json_data.get("response", [])
 
         print(f"✅ JSON data fetched! Total channels: {len(data)}")
@@ -30,11 +30,14 @@ def generate_playlist():
     m3u_lines = ["#EXTM3U"]
 
     for ch in data:
-        name = ch.get("title", "Unknown Channel")   # 🔥 title
+        name = ch.get("title", "Unknown Channel")
         logo = ch.get("logo", "")
-        link = ch.get("url", "")                    # 🔥 url
-        referer = ch.get("referer", "")
-        category = ch.get("category", "Other")
+        link = ch.get("url", "")
+
+        # 🔥 FIX: handle both referer & Referer
+        referer = ch.get("referer") or ch.get("Referer", "")
+
+        category = ch.get("category", "Sports")
 
         if not link:
             continue
