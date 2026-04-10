@@ -1,12 +1,192 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-04-10 17:46:35 (BD Time)
-# 📺 Channels Count: 618
+# 🕒 Last Updated: 2026-04-10 18:12:08 (BD Time)
+# 📺 Channels Count: 620
 # 🔒 Usage: Personal / Educational
 #=================================
 
 #EXTM3U url-tvg="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BTV.png" group-title="SM BDIX",BTV
+http://180.94.28.28:8097//BTV/index.fmp4.m3u8?token=251c927cb1d84960fecba768b136283831aafe2f-001dc1060c8abf0c4df645cf524cc4cf-1775826227-1775822627&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Jamuna Tv.png" group-title="SM BDIX",Jamuna Tv
+http://180.94.28.28:8097//Jamuna-TV/index.fmp4.m3u8?token=35234a9f52f0fbbb7f4622374443490af0cb07d5-30b06f7749c6fde5cee8ec507cc148d0-1775826227-1775822627&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/MAASRANGA TV HD.png" group-title="SM BDIX",MAASRANGA TV HD
+http://180.94.28.28:8097//Maasranga-tv/index.fmp4.m3u8?token=b65dbaec18749c6b00f3dd64ce8894791b5bdce9-9ebc2bb5128132928c367e33c6747439-1775826228-1775822628&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Nagorik TV .png" group-title="SM BDIX",Nagorik TV
+http://180.94.28.28:8097//Nagorik-TV/index.fmp4.m3u8?token=b09815d69a708524007b7efe2ea021a088e3699c-52f7da3740dfa3901143444e82ae8456-1775826229-1775822629&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Somoy TV.png" group-title="SM BDIX",Somoy TV
+http://180.94.28.28:8097//Somoy-TV/index.fmp4.m3u8?token=bf285dc5f18191da7e195df8e12e8b8b42ef975f-2220a939ff15df902b9c71bac5c3ab6f-1775826229-1775822629&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Gazi TV.png" group-title="SM BDIX",Gazi TV
+http://180.94.28.28:8097//GAZI-TV/index.fmp4.m3u8?token=58ca9861faeb25d6143905d8fd0f268455c93d49-f6c6af272981026cd7f3626261db8ceb-1775826230-1775822630&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Ekattur.png" group-title="SM BDIX",Ekattur
+http://180.94.28.28:8097//EKATTOR-TV/index.fmp4.m3u8?token=e961a1c94937b20bc8e30ab23c118f71fd4842fe-de82302f07e43b1825351fe314af179b-1775826230-1775822630&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Channel i .png" group-title="SM BDIX",Channel i
+http://180.94.28.28:8097//CHANNEL-i/index.fmp4.m3u8?token=cdf48170f99daddf59eb956440d34efec5718ef3-23b70361c87db641a4b1c435cbf4db63-1775826231-1775822631&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Channel 24 .png" group-title="SM BDIX",Channel 24
+http://180.94.28.28:8097//CHANNEL-24/index.fmp4.m3u8?token=45a8cc648e76d80d813862901c0a21dc4d8108af-93f3c8899de552b06ac1a23f067a2c98-1775826231-1775822631&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Channel 9 .png" group-title="SM BDIX",Channel 9
+http://180.94.28.28:8097//CHANNEL-9/index.fmp4.m3u8?token=2b3c225a3112c636ce59a892d76c5ed32c56ea59-660dd1eb278cf644869717e845d4a464-1775826232-1775822632&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Deepto  TV .png" group-title="SM BDIX",Deepto  TV
+http://180.94.28.28:8097//DEEPTO-TV/index.fmp4.m3u8?token=5bb4513004f28e83bc57e92758b414834c5c9763-7e58058ce90ce02aae60cf687cc7e8b0-1775826233-1775822633&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/DBC News.png" group-title="SM BDIX",DBC News
+http://180.94.28.28:8097//DBC-NEWS/index.fmp4.m3u8?token=f233fafcf78f6f9dce853a2ea6b8d613bfcceb32-32a7423c91498f3204fdfb2f1080902a-1775826233-1775822633&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Independent TV.png" group-title="SM BDIX",Independent TV
+http://180.94.28.28:8097//Independent-TV/index.fmp4.m3u8?token=772437f4f93be83f8a8b0e20acfaa7896472f5f6-a75a3a89529bf316de032e673824a9c5-1775826234-1775822634&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Rtv .png" group-title="SM BDIX",Rtv
+http://180.94.28.28:8097//RTV/index.fmp4.m3u8?token=9e9f6ce7968bbee4f78211b2ee1951ea68c432dc-1880b8496988c9a491471ecca370b20c-1775826234-1775822634&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Zee Bangla.png" group-title="SM BDIX",Zee Bangla
+http://180.94.28.28:8097//ZEE-BANGLA/index.fmp4.m3u8?token=616e7b1d47f97f3d4467feb42d07672982ab11f4-4aecead6cd06b69cade67a23876bc9c8-1775826235-1775822635&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Jalsha.png" group-title="SM BDIX",Star Jalsha
+http://180.94.28.28:8097//STAR-JALSHA/index.fmp4.m3u8?token=a91048f05043c114d8f5ec631723514b361f66f2-4986a22009a3220b1bc55ed1822f51ae-1775826235-1775822635&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Jalsha Movies.png" group-title="SM BDIX",Jalsha Movies
+http://180.94.28.28:8097//JALSHA-MOVIES/index.fmp4.m3u8?token=6fcba17ea6b604ec5ed5629bdab19d08fb2eab30-d4578be5aa5602e5061a7a9763c58711-1775826236-1775822636&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Enter 10 Bangla.png" group-title="SM BDIX",Enter 10 Bangla
+http://180.94.28.28:8097//ENTER-10-BANGLA/index.fmp4.m3u8?token=67b1692f492117ceb10a7a984a00f1a90d172490-de40e6122b431a396248fc21176e840f-1775826237-1775822637&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Aath.png" group-title="SM BDIX",Sony Aath
+http://180.94.28.28:8097//SONY-AATH/index.fmp4.m3u8?token=3e5bd172b04a355a2e6e1d8ad5fbdfb22cc076c1-1bd1b7631c454ef079c5db7a36489de4-1775826237-1775822637&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Colors Bangla.png" group-title="SM BDIX",Colors Bangla
+http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?token=53d0e78c8b82393e0126082e6512a0a9db873d14-dd209181ac3ae7b65d35b11978e9aac0-1775826238-1775822638&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Color Bangla Cinema.png" group-title="SM BDIX",Color Bangla Cinema
+http://180.94.28.28:8097//COLORS-BANGLA-CINEMA/index.fmp4.m3u8?token=830bd4f31d97c55d16bc5eb164f250192c3d3c55-9ae54f97a259b664c2d8503d43e1e029-1775826238-1775822638&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sun Bangla.png" group-title="SM BDIX",Sun Bangla
+http://180.94.28.28:8097//SUN-BANGLA/index.fmp4.m3u8?token=8825fe113c5584ab5be368331d7a6a998cc58ee8-dccdafd75cf9a8eadb31877ad8efded0-1775826239-1775822639&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/T Sports.png" group-title="SM BDIX",T Sports
+http://180.94.28.28:8097//T-Sports/index.fmp4.m3u8?token=015dc3a08c875b49ac6a01a1229a4da28d3cf446-c3e0e1d230a068f73a18e947bd1c599c-1775826239-1775822639&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Bein Sports Xtra .png" group-title="SM BDIX",Bein Sports Xtra
+http://180.94.28.28:8097//BEIN-SPORTS-USA/index.fmp4.m3u8?token=4a81b5a5d5924dcc7671ef66ec332caf63d431cd-119c8611f4eba664f1222e68fc67c02f-1775826240-1775822640&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Sports 1 .png" group-title="SM BDIX",Star Sports 1
+http://180.94.28.28:8097//STAR-SPORTS-1/index.fmp4.m3u8?token=32ef9f01dafbdfff53919fe70fb31de5aee93ed3-f2ea26a4461776c5ffb7696ee6d71553-1775826240-1775822640&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Sports 2 .png" group-title="SM BDIX",Star Sports 2
+http://180.94.28.28:8097//Star-Sports-2/index.fmp4.m3u8?token=e2ccc561a786cc5f7ca3bb2b325ce7c72bb1e6c4-1c7203a5882a408ba57be0b95adc2b2f-1775826241-1775822641&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/StarSports Select 1 .png" group-title="SM BDIX",StarSports Select 1
+http://180.94.28.28:8097//Star-Sports-Select-1/index.fmp4.m3u8?token=1b25ddd8602868877b1b90af2b81ecee001e9551-7cedb94132ec31026a163307bc6bd3c3-1775826241-1775822641&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Sports Select 2 .png" group-title="SM BDIX",Star Sports Select 2
+http://180.94.28.28:8097//star-Sports-Select-2/index.fmp4.m3u8?token=0353fdb8c86682722dadc718ada3131e251386a4-0a4ca649ef5b0cb044fcb01ae3e743ff-1775826242-1775822642&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Sports 3 .png" group-title="SM BDIX",Star Sports 3
+http://180.94.28.28:8097//Star-Sports-3/index.fmp4.m3u8?token=6383acc5697192d9ce7c21e0bcd89fb9e9bbefdb-38e438540019dc2fa9ae77d265b56047-1775826243-1775822643&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Ten 1 HD.png" group-title="SM BDIX",Sony Ten 1 HD
+http://180.94.28.28:8097//Sony-Ten-1/index.fmp4.m3u8?token=9eb89b8d37c6eda07764d70562efa7aa1486f86d-e367f6a482c378e8e5230e4b551bb7ac-1775826243-1775822643&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Ten 2 HD.png" group-title="SM BDIX",Sony Ten 2 HD
+http://180.94.28.28:8097//Sony-Ten-2/index.fmp4.m3u8?token=cdccae7d52f4153a385b0d264192eb912f97fb87-e0b293876a39e9ab1e6fb1f47caac5ba-1775826244-1775822644&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Ten 3 HD.png" group-title="SM BDIX",Sony Ten 3 HD
+http://180.94.28.28:8097//Sony-Ten-3/index.fmp4.m3u8?token=b0f72412c1b1275a7450577954ca77a36f044b48-4ca08d5a5ff0482e76f51cba3492834e-1775826244-1775822644&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Ten 5 HD.png" group-title="SM BDIX",Sony Ten 5 HD
+http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=a9215cc0e207a15a42c39ca1a082ea582f192d55-c250ff72773ba3648d1ef9903db6e1e9-1775826245-1775822645&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/PTV Sports.png" group-title="SM BDIX",PTV Sports
+http://180.94.28.28:8097//PTV-Sports/index.fmp4.m3u8?token=eb9e2c8b6be019570b508075f82fde35da5b393a-c59e937490ad5cf1488b840e88d17b77-1775826245-1775822645&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/A Sports.png" group-title="SM BDIX",A Sports
+http://180.94.28.28:8097//A-Sports/index.fmp4.m3u8?token=7d3f29b452a3989c596a7c81842525cc2e8fc1c4-34190455a3990fb1b614f83fb5c3c42c-1775826246-1775822646&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Ten Sports.png" group-title="SM BDIX",Ten Sports
+http://180.94.28.28:8097//Ten-Sports/index.fmp4.m3u8?token=957cee6cc999164afe5a3bbc3c2c0c7a1c90be37-f2414c0b888c0a186d231f30f2a06853-1775826246-1775822646&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/ten cricket.png" group-title="SM BDIX",ten cricket
+http://180.94.28.28:8097//Ten-Cricket/index.fmp4.m3u8?token=ac396063578def98a6cffa12e927d2dd77c15ff2-c9b6bac02045588dafa667830a65824d-1775826247-1775822647&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/SuperSportcricket.png" group-title="SM BDIX",SuperSportcricket
+http://180.94.28.28:8097//SUPERSPORT-CRICKET/index.fmp4.m3u8?token=c0bc2d3003434820055cc34066af3d13c2f2d9c0-e92f0274b324356053aaf3ff60f74f16-1775826248-1775822648&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/SKY-SPORTS-CRICKET.png" group-title="SM BDIX",SKY-SPORTS-CRICKET
+http://180.94.28.28:8097//SKY-SPORTS-CRICKET/index.fmp4.m3u8?token=40b4e76284ae324e84406d3273dd0fce71b6f3b4-0ad340a5a0d8039fa11b39c8e6dae4cd-1775826248-1775822648&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/WILLOW_SPORTS.png" group-title="SM BDIX",WILLOW_SPORTS
+http://180.94.28.28:8097//WILLOW-TV/index.fmp4.m3u8?token=c0017e087915aaa19994b5a6441ddff66d02337f-e48a9b9a43fbee6b1b59ca3a94185c1d-1775826249-1775822649&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-ARABIC.png" group-title="SM BDIX",BEIN-SPORTS-ARABIC
+http://180.94.28.28:8097//BEIN-SPORTS-ARABIC/index.fmp4.m3u8?token=14f3aa96c03eeab0d553cd098a31f245fe62c7ef-fdf990164ad8f595fa7de8eae3152d5b-1775826249-1775822649&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-1-ENG.png" group-title="SM BDIX",BEIN-SPORTS-1-ENG
+http://180.94.28.28:8097//BEIN-SPORTS-1-ENG/index.fmp4.m3u8?token=9e9928650aaa5361b7c357c967931be084e2db73-03bab5c6b723b0ed03b1db92fc9711d5-1775826250-1775822650&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-1.png" group-title="SM BDIX",BEIN-SPORTS-1
+http://180.94.28.28:8097//BEIN-SPORTS-1/index.fmp4.m3u8?token=93150d50feca32288dc82c0fd0e1ddfcbaaee4a3-230f0476fcfdd3e80c960afa4b2e3e99-1775826250-1775822650&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-2.png" group-title="SM BDIX",BEIN-SPORTS-2
+http://180.94.28.28:8097//BEIN-SPORTS-2/index.fmp4.m3u8?token=bd703958a36724d979f67b5cf2aaddc38c07abb3-7d1805bf460847aa1fd01345d467ad79-1775826251-1775822651&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-3.png" group-title="SM BDIX",BEIN-SPORTS-3
+http://180.94.28.28:8097//BEIN-SPORTS-3/index.fmp4.m3u8?token=1a4c7ec46117dee458936bbde12a511ce44c4699-44534ac69e9329e21e8e493e3b9479b5-1775826251-1775822651&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/GEO-SUPER.png" group-title="SM BDIX",GEO-SUPER
+http://180.94.28.28:8097//GEO-SUPER/index.fmp4.m3u8?token=8bc69dd1d7f9f5b7621c6bb55ea5d42f1589b773-989aba19b8cb50fdd04408076bf79c2b-1775826252-1775822652&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/ARENA-SPORTS-1.png" group-title="SM BDIX",ARENA-SPORTS-1
+http://180.94.28.28:8097//ARENA-SPORTS-1/index.fmp4.m3u8?token=6125d3e9271a39495339aa7bbefd4b0f5d37a387-8649ceb919ce28e6248c42c1e7ce58aa-1775826252-1775822652&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/DAZN-1.png" group-title="SM BDIX",DAZN-1
+http://180.94.28.28:8097//DAZN-1/index.fmp4.m3u8?token=b8989d07caeabc72565d95cd33d4e29336dc282a-ea93c7fdcfb38b753f19e50ce80c8d6f-1775826253-1775822653&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Plus.png" group-title="SM BDIX",Star Plus
+http://180.94.28.28:8097//STAR-PLUS/index.fmp4.m3u8?token=f84fd29e535ad357499f13fa78aabd567d88737c-11f56e2679d8650bb8803b2870bc48a2-1775826253-1775822653&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Max HD.png" group-title="SM BDIX",Sony Max HD
+http://180.94.28.28:8097//SONY-MAX/index.fmp4.m3u8?token=a726786a0e635501425c29b0d1b9b49ffce9482e-afac7af4536f8369e05418c93a7a67bb-1775826254-1775822654&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony max 2.png" group-title="SM BDIX",Sony max 2
+http://180.94.28.28:8097//SONY-MAX-2/index.fmp4.m3u8?token=8ad75f6e96aea17515e9eb431d7081c99d7308f3-97045b144b441df7130d3de8fafc634c-1775826254-1775822654&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Pix HD.png" group-title="SM BDIX",Sony Pix HD
+http://180.94.28.28:8097//SONY-PIX/index.fmp4.m3u8?token=93a1bf803445a1ee4ede23e9b0414f619b1fc019-76ae55dc6d68727d2bd7ed395380a7c9-1775826255-1775822655&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Zee Cinema HD .png" group-title="SM BDIX",Zee Cinema HD
+http://180.94.28.28:8097//ZEE-CINEMA/index.fmp4.m3u8?token=033b83ed915284abf4ebe566de7769f24a0c04a3-5e0016a7ae2794c7fe7103aa88ab3718-1775826256-1775822656&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/MOVIES-NOW.png" group-title="SM BDIX",MOVIES-NOW
+http://180.94.28.28:8097//MOVIES-NOW/index.fmp4.m3u8?token=d13b3369b6dc112b907e5e1f5723e75921f2cb40-5caa02d43eca9f565633fb608e73297d-1775826256-1775822656&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/CN.png" group-title="SM BDIX",CN
+http://180.94.28.28:8097//CARTOON-NETWORK/index.fmp4.m3u8?token=7697134daedbd50315aa90cb55329a6636d007cf-ce4687d12bb6ced41be23569065d8e6a-1775826257-1775822657&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/POGO1664977122.png" group-title="SM BDIX",POGO1664977122
+http://180.94.28.28:8097//POGO/index.fmp4.m3u8?token=ee43e9d865527d444a52c535ec7802d30677e12f-1f2f49d616a3b11322dc35fdb945c59e-1775826257-1775822657&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Discovery_kids.png" group-title="SM BDIX",Discovery_kids
+http://180.94.28.28:8097//DISCOVERY-KIDS/index.fmp4.m3u8?token=db8f18566d4bf28467491332da57a735b7c6d6db-248c6e573d5399fe4814ddc902abbc4c-1775826258-1775822658&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Duronto-TV.png" group-title="SM BDIX",Duronto-TV
+http://180.94.28.28:8097//Duronto-TV/index.fmp4.m3u8?token=c2f9d8d04fc94caf1db9deeb6d2f99a9dcf4f36d-ef623e51725fe989cf82eefc0a4ce34a-1775826258-1775822658&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Discovery.png" group-title="SM BDIX",Discovery
+http://180.94.28.28:8097//DISCOVERY-BANGLA/index.fmp4.m3u8?token=68f19a5f16d067df8ff9dafdacfe1e77ba51de0d-07385141168429856fa40624322f6eb6-1775826259-1775822659&remote=no_check_ip
+
+#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/National Geography.png" group-title="SM BDIX",National Geography
+http://180.94.28.28:8097//NAT-GEO-BANGLA/index.fmp4.m3u8?token=97148be55bbfc6ea45a20453130cfeafbd5b569a-5f51ee11497010396948ebd4e52da871-1775826259-1775822659&remote=no_check_ip
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/G-Series_Logo.png" group-title="SM All TV",Drama 24
 https://vods2.aynascope.net/gseriesDrama/index.m3u8
@@ -242,186 +422,6 @@ https://stream.spicefmbd.com/stream.m3u8
 #EXTINF:-1 tvg-logo="https://m.economictimes.com/thumb/msid-71679942,width-1200,height-900,resizemode-4,imgsize-42753/radio-mirchi-agencies.jpg" group-title="SM All TV",Radio Mirchi
 https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444
 
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BTV.png" group-title="sm_tv",BTV
-http://180.94.28.28:8097//BTV/index.fmp4.m3u8?token=8de54d764e91bbfc856272f359f4fb79f8bbf64f-550f87ad23665cacabf7156f78da2722-1775824707-1775821107&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Jamuna Tv.png" group-title="sm_tv",Jamuna Tv
-http://180.94.28.28:8097//Jamuna-TV/index.fmp4.m3u8?token=11208d1a6bef12c6154fb43721f146983d8cef8e-8ca16b4c0980d58d325d3372ec7ed550-1775824707-1775821107&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/MAASRANGA TV HD.png" group-title="sm_tv",MAASRANGA TV HD
-http://180.94.28.28:8097//Maasranga-tv/index.fmp4.m3u8?token=fdfbe206470ff84a4115a39bab40a65a3bcdcd41-a5d9597bfc1d2a63ec9851cd3f21fb46-1775824708-1775821108&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Nagorik TV .png" group-title="sm_tv",Nagorik TV
-http://180.94.28.28:8097//Nagorik-TV/index.fmp4.m3u8?token=686d8eb7c9fb61cd87af5057ba5772d961e9dfc2-cbd7d2d2b36f557a613639dbebcd3ef0-1775824709-1775821109&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Somoy TV.png" group-title="sm_tv",Somoy TV
-http://180.94.28.28:8097//Somoy-TV/index.fmp4.m3u8?token=938ca8b2d6c18c53f7fc739f3c22ceb98f5ae194-16b31fa83121326be676812d58c2305e-1775824709-1775821109&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Gazi TV.png" group-title="sm_tv",Gazi TV
-http://180.94.28.28:8097//GAZI-TV/index.fmp4.m3u8?token=096c69f2456f964bd4f531b3e4aed4c817467409-93d89750a25a2aeab94dc4aca3236eb6-1775824710-1775821110&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Ekattur.png" group-title="sm_tv",Ekattur
-http://180.94.28.28:8097//EKATTOR-TV/index.fmp4.m3u8?token=cdb82756ac3eda4c24d5f5bc7da5973ba2696582-cf9cab429270507fa06acdb8255b0a51-1775824710-1775821110&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Channel i .png" group-title="sm_tv",Channel i
-http://180.94.28.28:8097//CHANNEL-i/index.fmp4.m3u8?token=7c3f848bbc84bf917646e5ce9c7987e2afe5b78c-3decd64a992ae38b7a10e33bf46fd82d-1775824711-1775821111&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Channel 24 .png" group-title="sm_tv",Channel 24
-http://180.94.28.28:8097//CHANNEL-24/index.fmp4.m3u8?token=46e315cf1b97262571aab941eb8d2c3298c1cb54-e7ac8d00718a12d8422608b1ad82fdfe-1775824711-1775821111&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Channel 9 .png" group-title="sm_tv",Channel 9
-http://180.94.28.28:8097//CHANNEL-9/index.fmp4.m3u8?token=185f19fed2fb90c7bee8404e3c750e896abbae08-09ac9dcb41444b62004e9e408472e8af-1775824712-1775821112&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Deepto  TV .png" group-title="sm_tv",Deepto  TV
-http://180.94.28.28:8097//DEEPTO-TV/index.fmp4.m3u8?token=ce6d8562659f182b0e9078085ec209974aec2970-fe289a313659db000ef1d1bb6a713edb-1775824713-1775821113&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/DBC News.png" group-title="sm_tv",DBC News
-http://180.94.28.28:8097//DBC-NEWS/index.fmp4.m3u8?token=5497ec5b200dbb113eb6d9f3ba55270dbb7aba9a-9eb5086f2ecddc1644426559a65c8aa6-1775824713-1775821113&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Independent TV.png" group-title="sm_tv",Independent TV
-http://180.94.28.28:8097//Independent-TV/index.fmp4.m3u8?token=0d301edc73e8aed285bce5192643b98a7a47bddc-f47270b555f93ffc431775be66517aaf-1775824714-1775821114&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Rtv .png" group-title="sm_tv",Rtv
-http://180.94.28.28:8097//RTV/index.fmp4.m3u8?token=42d36558f409d03978fd523d36c7f1978838f922-11c1a5e7615972d577209f759d5d170e-1775824714-1775821114&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Zee Bangla.png" group-title="sm_tv",Zee Bangla
-http://180.94.28.28:8097//ZEE-BANGLA/index.fmp4.m3u8?token=8eeb3b950c839e4da36d298ad01a230f0e9ad7ad-055b559ce9946c38b420ef7f56de767c-1775824715-1775821115&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Jalsha.png" group-title="sm_tv",Star Jalsha
-http://180.94.28.28:8097//STAR-JALSHA/index.fmp4.m3u8?token=1a828ae57c9ae13bbf244cfabc77d3854174fa4c-6ff1d9ad670fe8dff707158e0bd5818e-1775824715-1775821115&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Jalsha Movies.png" group-title="sm_tv",Jalsha Movies
-http://180.94.28.28:8097//JALSHA-MOVIES/index.fmp4.m3u8?token=cbebf237ac524fbc472ced13825beb750ca50158-da07d8225c69b1aa50de659094d425c4-1775824716-1775821116&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Enter 10 Bangla.png" group-title="sm_tv",Enter 10 Bangla
-http://180.94.28.28:8097//ENTER-10-BANGLA/index.fmp4.m3u8?token=4cf4aa610d96722d16cbc373063de1ed4d23e545-99870b074d2777f89158f0c998424895-1775824716-1775821116&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Aath.png" group-title="sm_tv",Sony Aath
-http://180.94.28.28:8097//SONY-AATH/index.fmp4.m3u8?token=7b4686f961fd8804329fb45508e90c0e039e91c0-be6b3cdd7e1fa5b6c137e8930804b1db-1775824717-1775821117&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Colors Bangla.png" group-title="sm_tv",Colors Bangla
-http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?token=29f3a91531a8132c2d46be3b83a3f8c38628c9fe-c33a8d196188cab7501f355e1b781018-1775824717-1775821117&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Color Bangla Cinema.png" group-title="sm_tv",Color Bangla Cinema
-http://180.94.28.28:8097//COLORS-BANGLA-CINEMA/index.fmp4.m3u8?token=732acb7f2ee7db4da63b094b3127522c77fb9af7-ee532f80940544577cb7e4c672f4f553-1775824718-1775821118&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sun Bangla.png" group-title="sm_tv",Sun Bangla
-http://180.94.28.28:8097//SUN-BANGLA/index.fmp4.m3u8?token=b817d89154d8ce3321ecf304a57a0b1647ef114a-091c910881cf37c9eb59a4c9068834fc-1775824718-1775821118&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/T Sports.png" group-title="sm_tv",T Sports
-http://180.94.28.28:8097//T-Sports/index.fmp4.m3u8?token=7612facf61c763e33ea4a41134ac6ac78c063e09-c6b550a8fd6ed63bb104ffb0b2f75450-1775824719-1775821119&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Bein Sports Xtra .png" group-title="sm_tv",Bein Sports Xtra
-http://180.94.28.28:8097//BEIN-SPORTS-USA/index.fmp4.m3u8?token=ff11db78c27eb8a29e2cc9bca561f8d4e904a4b5-82f38a32837578fdec9e42c765e7c1b5-1775824720-1775821120&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Sports 1 .png" group-title="sm_tv",Star Sports 1
-http://180.94.28.28:8097//STAR-SPORTS-1/index.fmp4.m3u8?token=e4051ef0e5e264221116bafc35541306dffb1d6f-0309a9dfed1e566e90fd96352eb5ece5-1775824720-1775821120&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Sports 2 .png" group-title="sm_tv",Star Sports 2
-http://180.94.28.28:8097//Star-Sports-2/index.fmp4.m3u8?token=ca8eae8abe47d5fbef762dc96d489965fa80f9d7-d414265014ce0862fcba62b4bc9c05f3-1775824721-1775821121&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/StarSports Select 1 .png" group-title="sm_tv",StarSports Select 1
-http://180.94.28.28:8097//Star-Sports-Select-1/index.fmp4.m3u8?token=7219397d6151693eccf68f9f9bf45f5c666d7ebc-2151bbebb5bdaedf6e74a8e9d61f30c1-1775824721-1775821121&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Sports Select 2 .png" group-title="sm_tv",Star Sports Select 2
-http://180.94.28.28:8097//star-Sports-Select-2/index.fmp4.m3u8?token=8873d0f8266c1f27c1d89a659ae12d969a770d85-2bddcac7fc5981bdf6e0f37b89e26118-1775824722-1775821122&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Sports 3 .png" group-title="sm_tv",Star Sports 3
-http://180.94.28.28:8097//Star-Sports-3/index.fmp4.m3u8?token=a117a55b4257bca0c34a0f8097db447193cea4b8-35177fc6e854400009594943ca395242-1775824722-1775821122&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Ten 1 HD.png" group-title="sm_tv",Sony Ten 1 HD
-http://180.94.28.28:8097//Sony-Ten-1/index.fmp4.m3u8?token=97ee1a0ce644e947fdf44c51f7120286ec734a3f-c8c3a68008280351c8981bb4a6275194-1775824723-1775821123&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Ten 2 HD.png" group-title="sm_tv",Sony Ten 2 HD
-http://180.94.28.28:8097//Sony-Ten-2/index.fmp4.m3u8?token=d7c75a121374e5f9337dfbf419298d1ffe0009da-a8130e6938c684584ed3799abbc48328-1775824724-1775821124&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Ten 3 HD.png" group-title="sm_tv",Sony Ten 3 HD
-http://180.94.28.28:8097//Sony-Ten-3/index.fmp4.m3u8?token=0c6cb679285ed0d0f31861177bad7ef762b88a09-e72931e8b0ac21dacfade6cb3721ea7f-1775824724-1775821124&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Ten 5 HD.png" group-title="sm_tv",Sony Ten 5 HD
-http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=dbac9c08e6e1e9bbbb2d837a7e6115d602fe0096-0acb03f4976c8ef86e5872e7c56d3b49-1775824725-1775821125&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/PTV Sports.png" group-title="sm_tv",PTV Sports
-http://180.94.28.28:8097//PTV-Sports/index.fmp4.m3u8?token=9117d6bb1e6ebe94fac01fc2c122ab2b64c24e5b-239437671e6cea5c3ad8a72bcd80a69c-1775824725-1775821125&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/A Sports.png" group-title="sm_tv",A Sports
-http://180.94.28.28:8097//A-Sports/index.fmp4.m3u8?token=e6e613a2b33f5d2f85d1eba7a5273bbdb739b8c6-cf5400fa33e40c8028201d86fe3ccd07-1775824726-1775821126&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Ten Sports.png" group-title="sm_tv",Ten Sports
-http://180.94.28.28:8097//Ten-Sports/index.fmp4.m3u8?token=267ca52f4ab85815259dc06f6b05c4a1fc529b97-ba86c8763909c23e0f72dac7c346e033-1775824726-1775821126&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/ten cricket.png" group-title="sm_tv",ten cricket
-http://180.94.28.28:8097//Ten-Cricket/index.fmp4.m3u8?token=d3afd5bf5c9825cb73670981734b97fc0560762b-4377621e2a1c3416f51c054f3c16aad7-1775824727-1775821127&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/SuperSportcricket.png" group-title="sm_tv",SuperSportcricket
-http://180.94.28.28:8097//SUPERSPORT-CRICKET/index.fmp4.m3u8?token=1f06343b64496d1979f3a5db2cc9af5b5eb29a59-a3e861b5ea8e5f364cf33f3fbf03502a-1775824727-1775821127&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/SKY-SPORTS-CRICKET.png" group-title="sm_tv",SKY-SPORTS-CRICKET
-http://180.94.28.28:8097//SKY-SPORTS-CRICKET/index.fmp4.m3u8?token=face28bc8af9dcfa3b879f06f69c0c6af7bb51be-eb3054e9a2efb02922f6315208810cd6-1775824728-1775821128&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/WILLOW_SPORTS.png" group-title="sm_tv",WILLOW_SPORTS
-http://180.94.28.28:8097//WILLOW-TV/index.fmp4.m3u8?token=0290298544788e9452781993d370d7a5e96f7e88-9f1c40dafcf437354db25a9e1e3f2db8-1775824728-1775821128&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-ARABIC.png" group-title="sm_tv",BEIN-SPORTS-ARABIC
-http://180.94.28.28:8097//BEIN-SPORTS-ARABIC/index.fmp4.m3u8?token=aacba3bce193b06da5ff9df125bce92b7989981a-976599c36c15fafc525927aeae9bc9af-1775824729-1775821129&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-1-ENG.png" group-title="sm_tv",BEIN-SPORTS-1-ENG
-http://180.94.28.28:8097//BEIN-SPORTS-1-ENG/index.fmp4.m3u8?token=4e7aae3cb5adc46b12ac0fc46929a7218294e3d6-a0a303fe1830c7e1063b6e8fc0e48261-1775824729-1775821129&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-1.png" group-title="sm_tv",BEIN-SPORTS-1
-http://180.94.28.28:8097//BEIN-SPORTS-1/index.fmp4.m3u8?token=8510573ff6784e660d837b396785ec2b36dbfc8e-a766ac62b5945b302414549c20db3e9e-1775824730-1775821130&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-2.png" group-title="sm_tv",BEIN-SPORTS-2
-http://180.94.28.28:8097//BEIN-SPORTS-2/index.fmp4.m3u8?token=a09574fce48208a9c97af710505c50bdd8479682-b54d89a97d21f1c35c91e3a71585e489-1775824731-1775821131&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/BEIN-SPORTS-3.png" group-title="sm_tv",BEIN-SPORTS-3
-http://180.94.28.28:8097//BEIN-SPORTS-3/index.fmp4.m3u8?token=0464315799b8aa816d6e499baccc2b7456f7faa9-a1dc008969ad79331818f1bf90f7161f-1775824731-1775821131&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/GEO-SUPER.png" group-title="sm_tv",GEO-SUPER
-http://180.94.28.28:8097//GEO-SUPER/index.fmp4.m3u8?token=1ecf58218b20ec49ef218d9758260b3234411932-a9c59e6b2ffb4c90b1ce6e5c05861359-1775824732-1775821132&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/ARENA-SPORTS-1.png" group-title="sm_tv",ARENA-SPORTS-1
-http://180.94.28.28:8097//ARENA-SPORTS-1/index.fmp4.m3u8?token=d98923cfb46e80b5e89ec5a9667b9bb0f99fc1d8-530d8a165b3d95a47966a72ce14b0ab3-1775824732-1775821132&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/DAZN-1.png" group-title="sm_tv",DAZN-1
-http://180.94.28.28:8097//DAZN-1/index.fmp4.m3u8?token=cf4b1b5dac864b7b233fe1ea10a6f6c097ff6c1d-b88ff081332d8997c6ce8161fc5419b2-1775824733-1775821133&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Star Plus.png" group-title="sm_tv",Star Plus
-http://180.94.28.28:8097//STAR-PLUS/index.fmp4.m3u8?token=f5cb3b65ba62b8acaafb83d90f80fca77fcd1e69-bd0ee31ecd5c66d180e34a2e39c7a558-1775824733-1775821133&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Max HD.png" group-title="sm_tv",Sony Max HD
-http://180.94.28.28:8097//SONY-MAX/index.fmp4.m3u8?token=cc64dfe2cec95f52d0ba8bd75fd9971da7b32000-c7bbbfe4c1aafbf93479bbf4fb5ddee1-1775824734-1775821134&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony max 2.png" group-title="sm_tv",Sony max 2
-http://180.94.28.28:8097//SONY-MAX-2/index.fmp4.m3u8?token=dd58b623d945db054a8ce15e5a3f7a05b5b8ad06-3f61a3c5ada8d8aca53538f0048fbf63-1775824734-1775821134&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Sony Pix HD.png" group-title="sm_tv",Sony Pix HD
-http://180.94.28.28:8097//SONY-PIX/index.fmp4.m3u8?token=e9d3def5d0d057d3392de3c313177731829f10bd-99e5f39f69f4477ee891e02974df3d8a-1775824735-1775821135&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Zee Cinema HD .png" group-title="sm_tv",Zee Cinema HD
-http://180.94.28.28:8097//ZEE-CINEMA/index.fmp4.m3u8?token=508cbc026a3cee60b9e7f3b145bd7b98b331791b-2480564e593b965cde3ee0594a9b40a5-1775824735-1775821135&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/MOVIES-NOW.png" group-title="sm_tv",MOVIES-NOW
-http://180.94.28.28:8097//MOVIES-NOW/index.fmp4.m3u8?token=a4048f17f64405d96fd7ba0acf96fd65254ae405-61f44f37e485570f08dc3bccd3b8e843-1775824736-1775821136&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/CN.png" group-title="sm_tv",CN
-http://180.94.28.28:8097//CARTOON-NETWORK/index.fmp4.m3u8?token=e1b995f10f7c01590013b59465b75ccd3e263dd1-4d8286b18ebf4828838ccec321f2e249-1775824737-1775821137&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/POGO1664977122.png" group-title="sm_tv",POGO1664977122
-http://180.94.28.28:8097//POGO/index.fmp4.m3u8?token=b6c616a2931c204b0cec4b5540f9630783b4ba47-01adcce7bef6a827d295358166156358-1775824737-1775821137&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Discovery_kids.png" group-title="sm_tv",Discovery_kids
-http://180.94.28.28:8097//DISCOVERY-KIDS/index.fmp4.m3u8?token=560a838f75e143d61a4c1f21ee11017b02d4fe78-b96136445af56753566740cd9d3cf137-1775824738-1775821138&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Duronto-TV.png" group-title="sm_tv",Duronto-TV
-http://180.94.28.28:8097//Duronto-TV/index.fmp4.m3u8?token=69c894e1d04b879a5f0894e6acf00d9302b003fb-70cf718da29eec8bbc10ab80d70c4415-1775824738-1775821138&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/Discovery.png" group-title="sm_tv",Discovery
-http://180.94.28.28:8097//DISCOVERY-BANGLA/index.fmp4.m3u8?token=e21f6c2b4e8162e9a211aedb4aafa03c98b7d497-d9cd4f6b855e404af37a4d7640582de1-1775824739-1775821139&remote=no_check_ip
-
-#EXTINF:-1 tvg-logo="http://ftpbdlive.com/assets/images/National Geography.png" group-title="sm_tv",National Geography
-http://180.94.28.28:8097//NAT-GEO-BANGLA/index.fmp4.m3u8?token=b5d132b590483519a9ec0c33b4cebe7d223718ca-660f31ceb436cbb2855d89c3b2d2f302-1775824739-1775821139&remote=no_check_ip
-
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPkLNzYmE3iWoT0RIUPh5dPx392smbo8bbbTfkUy2nWw&s=10" group-title="PSL + IPL",IPL 2026
 http://sm-monirul.top/AyNa/play.php?id=f064e069-8861-43d5-ac79-828b029a50a1&e=.m3u8
 
@@ -441,22 +441,28 @@ http://103.175.242.10:8080/tsports1/index.m3u8
 https://sm-monirul.top/psl/live.php?id=pcl&e=.m3u8
 
 #EXTINF:-1 tvg-name="Namibia vs Oman (ICC CWC League 2, Namibia) [LIVE]" tvg-logo="https://images.fancode.com/skillup-uploads/cms-media/141650_6025_NAM_OMN_fc-Web.jpg" group-title="Fancode",Namibia vs Oman (ICC CWC League 2, Namibia) [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/141650_english_hls_f2fe6bcb1964793_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775904938~_GO=Generated~acl=/mumbai/141650_english_hls_f2fe6bcb1964793_1ta-di_h264/*~Signature=AfQ_v7TwZ8Ifiv17Nl6RSJ-4YiBGPNChIWItkms088i_TPcb6gQtn2ZNXgMhp85pJVtJXBV5xJE9he7915Yhy_kCmJwG
+https://bd-mc-flive.fancode.com/mumbai/141650_english_hls_f2fe6bcb1964793_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775909025~_GO=Generated~acl=/mumbai/141650_english_hls_f2fe6bcb1964793_1ta-di_h264/*~Signature=AfQ_v7S4THL7a14fcE2RT_s0MwoRlx13jcBllbg1GS5XPI1uJlnEZgIoVixcxe_UQrfUM71kwT0dIhhs8dtLYU25lBgN
 
 #EXTINF:-1 tvg-name="Iconic Super Knights vs Brisbane Stars (Brisbane Champions League 2026 Iconic Super Knights) [LIVE]" tvg-logo="https://images.fancode.com/skillup-uploads/cms-media/141752_6028_ISK_BRS_FC-WEB.jpg" group-title="Fancode",Iconic Super Knights vs Brisbane Stars (Brisbane Champions League 2026 Iconic Super Knights) [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/141752_english_hls_8f6e60e8ee78292_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775904951~_GO=Generated~acl=/mumbai/141752_english_hls_8f6e60e8ee78292_1ta-di_h264/*~Signature=AfQ_v7QwbEjof6ZmESSBd-Qeay79XUH2k0RE-vtAqMhdfO5_ucPHgmA4uqlLi6MDeWzF6FX2zRGtp2_aEcT_SOQ_yIUA
+https://bd-mc-flive.fancode.com/mumbai/141752_english_hls_8f6e60e8ee78292_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775909038~_GO=Generated~acl=/mumbai/141752_english_hls_8f6e60e8ee78292_1ta-di_h264/*~Signature=AfQ_v7Tz-r8FpWWhL5mFWF--4kM1r_FFbztKLfYWNZHpPyMBtHFx-vsOxcAl9P5pj-J1az4jFqnT3smJWtqbDRC38TAK
+
+#EXTINF:-1 tvg-name="Brazil Women vs Mozambique Women (Kalahari Women's T20 2026 Brazil Women) [LIVE]" tvg-logo="https://images.fancode.com/skillup-uploads/cms-media/Kalahari-Women's-T20I-Series--old--psd.png" group-title="Fancode",Brazil Women vs Mozambique Women (Kalahari Women's T20 2026 Brazil Women) [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/141906_english_hls_f0272cc28d49327_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775909051~_GO=Generated~acl=/mumbai/141906_english_hls_f0272cc28d49327_1ta-di_h264/*~Signature=AfQ_v7TmEy9jxleZ1cY6MJ9V3Up7tVJRfk0cqk4k6_nLGC5ZcBS7shKm1glPD6Nr7CfJRjIwKjdvFZgpQs1oOmXzVu8J
+
+#EXTINF:-1 tvg-name="Northeast United Fc vs Sporting Club Delhi (ISL 2025-26 NorthEast United FC Sporting) [LIVE]" tvg-logo="https://images.fancode.com/skillup-uploads/cms-media/140480_5956_NEUFC_SCD_FC-Web_1772964305694.jpg" group-title="Fancode",Northeast United Fc vs Sporting Club Delhi (ISL 2025-26 NorthEast United FC Sporting) [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/140480_english_hls_d5a5d32ccc11400_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1775909070~_GO=Generated~acl=/mumbai/140480_english_hls_d5a5d32ccc11400_1ta-di_h264/*~Signature=AfQ_v7S2bxb9_9RRQKkY9QsGfxKI1bhhlcoJKzfTVRdhGNtUPN3mGScmNwx_zLYu52SxN0kc-akrjLB6c4pF7xq0AGIH
 
 #EXTINF:-1 tvg-name="Central Coast Mariners vs Brisbane Roar (A League 2025-26 Central Coast Mariners) [LIVE]" tvg-logo="https://images.fancode.com/skillup-uploads/cms-media/140929_5802_CCM_BRB_fc-web.jpg" group-title="Fancode",Central Coast Mariners vs Brisbane Roar (A League 2025-26 Central Coast Mariners) [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/140929_english_hls_be087a079b25037_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775904964~_GO=Generated~acl=/mumbai/140929_english_hls_be087a079b25037_1ta-di_h264/*~Signature=AfQ_v7S_E3cRq7Qwi2yLkZVt6S6kaEjEVbJ-kDsNzW-fmbdcjfmP2RfVqF4dnqpCulS-kFRD-IxixlC69JcZJfJaR8EG
+https://bd-mc-flive.fancode.com/mumbai/140929_english_hls_be087a079b25037_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775909080~_GO=Generated~acl=/mumbai/140929_english_hls_be087a079b25037_1ta-di_h264/*~Signature=AfQ_v7SXmlzIaGQYe-CuAOSz1JYbax_LJ4QfF3qz1FfIRqP2r5g1QoY3NxTbL7ojuCEKY-FrKbEUirG5PAm--6VkbfEH
 
 #EXTINF:-1 tvg-name="III vs Monaco (ATP Masters Rolex Monte-Carlo 2026 Court Ranier) [LIVE]" tvg-logo="https://images.fancode.com/skillup-uploads/cms-media/Rolex-Monte-Carlo-Masters_fc-web.jpg" group-title="Fancode",III vs Monaco (ATP Masters Rolex Monte-Carlo 2026 Court Ranier) [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/141917_english_hls_3963999d2134788_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775904978~_GO=Generated~acl=/mumbai/141917_english_hls_3963999d2134788_1ta-di_h264/*~Signature=AfQ_v7SLUK2K1E8ulT-eSRMj-N5mxZg2nvGnrLfPSIvecuXJAIBFD9kHGE1i6ZIL2WSEO_7QfRKY7uIdQDi_nSOROBkJ
+https://bd-mc-flive.fancode.com/mumbai/141917_english_hls_3963999d2134788_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775909093~_GO=Generated~acl=/mumbai/141917_english_hls_3963999d2134788_1ta-di_h264/*~Signature=AfQ_v7TPXkkczoFoxlB1JkfrrMrhk9Y654ObsGlK5yCI13bpCqZ6jhpJqySqY6XF_fVGVVOgud09Md9X7wuOKXBIL5cF
 
 #EXTINF:-1 tvg-name="Princes vs Monaco (ATP Masters Rolex Monte-Carlo 2026 Court des) [LIVE]" tvg-logo="https://images.fancode.com/skillup-uploads/cms-media/Rolex-Monte-Carlo-Masters_fc-web.jpg" group-title="Fancode",Princes vs Monaco (ATP Masters Rolex Monte-Carlo 2026 Court des) [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/141916_english_hls_a1805a07a473338_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775904990~_GO=Generated~acl=/mumbai/141916_english_hls_a1805a07a473338_1ta-di_h264/*~Signature=AfQ_v7QxEWqa_O0BAsxMTsHNEGIjUWd-axtpgPs7eRomsAiWzV94553gTH1547KNtbw2xKRxNLTVQlVbJBEF9yX-fK0H
+https://bd-mc-flive.fancode.com/mumbai/141916_english_hls_a1805a07a473338_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775909116~_GO=Generated~acl=/mumbai/141916_english_hls_a1805a07a473338_1ta-di_h264/*~Signature=AfQ_v7RrxkmWNTrNTdXcWvHmu9pdXuhqrZArdIpTcbT76Awc-5RO4cC-9qGPJ3RxB87t-kFfVQkCI0JVie_Ddee_vQMN
 
 #EXTINF:-1 tvg-name="Zverev vs Fonseca (ATP Masters Rolex Monte-Carlo 2026 Zverev vs) [LIVE]" tvg-logo="https://images.fancode.com/skillup-uploads/cms-media/Alexander-Zverev-vs-Joao-Fonseca_web.jpg" group-title="Fancode",Zverev vs Fonseca (ATP Masters Rolex Monte-Carlo 2026 Zverev vs) [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/141915_english_hls_f65ff8816626522_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775905002~_GO=Generated~acl=/mumbai/141915_english_hls_f65ff8816626522_1ta-di_h264/*~Signature=AfQ_v7Sx6e4V5V-NtZYGSWsyIGD_GmdMDFn1LelprvtzgQQ7TBuifhp2a2jqv2CKkyeEYuwRLoXwPM6u1e7R86ITmT4K
+https://bd-mc-flive.fancode.com/mumbai/141915_english_hls_f65ff8816626522_1ta-di_h264/1080p.m3u8?hdntl=Expires=1775909129~_GO=Generated~acl=/mumbai/141915_english_hls_f65ff8816626522_1ta-di_h264/*~Signature=AfQ_v7QKmFudWgUfdZEdGxYAVUEqiSiqw5gZimXLqOzaRrcDOl_e5SWxGVR7iIAgQDQWwRSQvMrI8G6uYpOSAPFqK5EE
 
 #EXTINF:-1 tvg-id="888a4c91-241e-47de-b9e5-11495d6cc596" tvg-logo="https://s3.aynaott.com/storage/b30147b97d86754e4b97fc2989628391" group-title="AynaOTT",BTV World
 http://sm-monirul.top/AyNa/play.php?id=888a4c91-241e-47de-b9e5-11495d6cc596&e=.m3u8
