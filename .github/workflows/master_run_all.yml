@@ -20,8 +20,14 @@ jobs:
     uses: ./.github/workflows/toffee_main.yml
     secrets: inherit
 
-  main_combined:
+  aynaott:
     needs: toffee
+    if: always()
+    uses: ./.github/workflows/auto_aynaott.yml
+    secrets: inherit
+
+  main_combined:
+    needs: aynaott
     if: always()
     uses: ./.github/workflows/main_combined.yml
     secrets: inherit
