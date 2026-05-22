@@ -1,13 +1,11 @@
 import requests
-import json
-from datetime import datetime
 
 API_URL = "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/refs/heads/main/Sports_data.json"
 
 OUTPUT_FILE = "live_playlist.m3u"
 
 # =========================================
-# Fetch API Data
+# Fetch API
 # =========================================
 response = requests.get(API_URL)
 data = response.json()
@@ -17,13 +15,14 @@ data = response.json()
 # =========================================
 m3u = "#EXTM3U\n\n"
 
-live_count = 0
+total_streams = 0
 
 # =========================================
-# Only LIVE Matches
+# Generate Playlist
 # =========================================
 for match in data.get("matches", []):
 
+    # Only LIVE matches
     if match.get("status") != "LIVE":
         continue
 
@@ -31,53 +30,57 @@ for match in data.get("matches", []):
 
     event_info = match.get("eventInfo", {})
 
+    # Same logo for all servers
     logo = event_info.get("teamAFlag", "")
 
-    for stream in match.get("streams", []):
+    streams = match.get("streams", [])
 
-        channel_name = stream.get("Channel_Name", "Unknown Server")
-        stream_url = stream.get("stream_url", "")
+    for stream in streams:
+
+        channel_name = stream.get("Channel_Name", "Server")
+
         drm_key = stream.get("drm_key", "")
+
+        stream_url = stream.get("stream_url", "").strip()
 
         if not stream_url:
             continue
 
-        # Header split
+        # Remove headers after |
         if "|" in stream_url:
-            url, headers = stream_url.split("|", 1)
-        else:
-            url = stream_url
-            headers = ""
+            stream_url = stream_url.split("|")[0]
 
-        # Playlist Entry
+        # =========================================
+        # Playlist Format
+        # =========================================
         m3u += (
-            f'#EXTINF:-1 tvg-id="{channel_name}" '
-            f'tvg-name="{event_name} - {channel_name}" '
+            f'#EXTINF:-1 '
             f'tvg-logo="{logo}" '
-            f'group-title="LIVE SPORTS",{event_name} | {channel_name}\n'
+            f'group-title="LIVE SPORTS",'
+            f'{event_name} | {channel_name} [DRM]\n'
         )
 
-        # DRM info
+        # DRM Type
+        m3u += '#KODIPROP:inputstream.adaptive.license_type=clearkey\n'
+
+        # DRM Key
         if drm_key:
             m3u += f'#KODIPROP:inputstream.adaptive.license_key={drm_key}\n'
 
-        # Headers
-        if headers:
-            m3u += f'#EXTVLCOPT:http-user-agent={headers.replace("User-Agent=", "")}\n'
+        # Stream URL
+        m3u += f'{stream_url}\n\n'
 
-        m3u += f"{url}\n\n"
-
-        live_count += 1
+        total_streams += 1
 
 # =========================================
 # Save Playlist
 # =========================================
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    f.write(m3u)
+with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
+    file.write(m3u)
 
 print("=================================")
-print("LIVE Playlist Generated")
+print("LIVE DRM Playlist Generated")
 print("=================================")
-print(f"Total Live Streams : {live_count}")
-print(f"Saved File         : {OUTPUT_FILE}")
+print(f"Total Streams : {total_streams}")
+print(f"Saved File    : {OUTPUT_FILE}")
 print("=================================")
