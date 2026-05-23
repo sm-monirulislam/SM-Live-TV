@@ -1,7 +1,20 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/4259/image" group-title="LIVE SPORTS",Manly vs Gold Coast | SKY SPORTS FHD [DRM]
+#EXTINF:-1 tvg-logo="https://www.atptour.com/assets/atpwt/images/tournament/badges/categorystamps_1000.png" group-title="LIVE SPORTS",ATP 250 Geneva | TNT Sports 4 [DRM]
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=fdd24dd2c6c14126ad7c1ad1066b03dd:08289c6d57d54e8d8dca55e1862afb82
-https://dice-live-oc.akamaized.net/hdntl=exp=1779566126~acl=%2F*~id=ddd3ccec-9953-4785-9649-c90d1263e0ac~data=hdntl,aXA9MTcyLjIxNS4yMzEuMTE0JmV4cD0xNzc5NDc5NzU2JmVpZD05NjA0Nzkmb2lkPTEwOCZ0eXBlPVZPRCZ1aWQ9TmNKcjRkfDZlMjc2YTBmLWJkMmUtNDZhMC1iMTJiLTdhMWJlYmEyMzI2YyZjaWQ9ZGNlLnNwdXJzJnB0PW51bGw~hmac=12ba10e59dc89d4636cdb217cfdb65220197a04f0f8a1312134b1b393c91a28e/dash/live/2093722/219032-321033/manifest-d.mpd
+#KODIPROP:inputstream.adaptive.license_key=192b1115da041585c77200128549efa1:634e10efe4abbb14be400a3ccbac0258
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/pnu10tp36z/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://www.atptour.com/assets/atpwt/images/tournament/badges/categorystamps_1000.png" group-title="LIVE SPORTS",ATP 250 Geneva | WILLOW (Ad Free) [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://cdn16348712.blazingcdn.net/dx14fhd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.atptour.com/assets/atpwt/images/tournament/badges/categorystamps_1000.png" group-title="LIVE SPORTS",ATP 250 Geneva | WILLOW FHD [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=290e09c837da78d5cd961978d390515c:b748836c71e6a4ca68ef5b5652db6247
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://www.atptour.com/assets/atpwt/images/tournament/badges/categorystamps_1000.png" group-title="LIVE SPORTS",ATP 250 Geneva | WILLOW SD [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://crichdplayer.com/willow-cricket-live-stream-2026
 
