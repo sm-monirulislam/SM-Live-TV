@@ -1,2 +1,20 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/unique-tournament/2480/image" group-title="LIVE SPORTS",Roland-Garros | TNT Sports 4 [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=192b1115da041585c77200128549efa1:634e10efe4abbb14be400a3ccbac0258
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/pnu10tp36z/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/unique-tournament/2480/image" group-title="LIVE SPORTS",Roland-Garros | WILLOW (Ad Free) [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://cdn16348712.blazingcdn.net/dx14fhd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/unique-tournament/2480/image" group-title="LIVE SPORTS",Roland-Garros | WILLOW FHD [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=290e09c837da78d5cd961978d390515c:b748836c71e6a4ca68ef5b5652db6247
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/unique-tournament/2480/image" group-title="LIVE SPORTS",Roland-Garros | WILLOW SD [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://crichdplayer.com/willow-cricket-live-stream-2026
+
