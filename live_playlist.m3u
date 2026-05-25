@@ -1,19 +1,5 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/2561/image" group-title="LIVE SPORTS",Paderborn vs Wolfsburg | beIN ENGLISH [DRM]
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0b42be2664d7e811d04f3e504e0924c5:ae24090123b8c72ac5404dc152847cb8
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/2561/image" group-title="LIVE SPORTS",Paderborn vs Wolfsburg | SporTV BR [DRM]
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4bbcff3289d457b4dd5dbdd21221de9a:c4906b9a9f8dda3c0725bddb8c497733
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m7duvnk2bu/out/v1/d1ad69118b5647309b1eb7213affdb3d/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/2561/image" group-title="LIVE SPORTS",Paderborn vs Wolfsburg | SKY BUNDESLIGA SD [DRM]
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://instreams.pro/bil2/bundes1/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/2359/image" group-title="LIVE SPORTS",St. Mirren vs Partick Thistle | beIN ENGLISH [DRM]
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
@@ -38,22 +24,6 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3n6slkgh54/out/v1
 #KODIPROP:inputstream.adaptive.license_key=c4088f5f265f9de50cffd80bf89308b7:2c4d2239d96d532b4ec2050653611003
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/h9urpo3cwb/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3652/image" group-title="LIVE SPORTS",Baltimore Orioles vs Rays | SportzX MLB [DRM]
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://chatgpt.hereisman.net/playlist/51168/load-playlist?
-
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3652/image" group-title="LIVE SPORTS",Baltimore Orioles vs Rays | SportzX Live [DRM]
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://edge2caster.pro/hls/16yuitzaerghbhc16.m3u8?
-
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3637/image" group-title="LIVE SPORTS",Pirates vs Chicago Cubs | SportzX MLB [DRM]
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://chatgpt.hereisman.net/playlist/51166/load-playlist?
-
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3637/image" group-title="LIVE SPORTS",Pirates vs Chicago Cubs | SportzX Live [DRM]
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-https://edge2caster.pro/hls/dazhfiach15.m3u8?
-
 #EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3644/image" group-title="LIVE SPORTS",White Sox vs Minnesota Twins | SportzX MLB [DRM]
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 https://chatgpt.hereisman.net/playlist/51171/load-playlist?
@@ -69,4 +39,12 @@ https://chatgpt.hereisman.net/playlist/51170/load-playlist?
 #EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3630/image" group-title="LIVE SPORTS",Milwaukee Brewers vs Cardinals | SportzX Live [DRM]
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 https://mainstreams.pro/hls/Czajafjihafch18.m3u8?
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3651/image" group-title="LIVE SPORTS",Royals vs New York Yankees | SportzX Live [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://mainstreams.pro/hls/bzagLHzach19.m3u8?
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3629/image" group-title="LIVE SPORTS",Mets vs Cincinnati Reds | SportzX Live [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://edgestreams.pro/hls/jkzahzadach20.m3u8?
 
