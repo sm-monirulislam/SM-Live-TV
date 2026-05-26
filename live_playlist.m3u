@@ -1,12 +1,29 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3651/image" group-title="LIVE SPORTS",Royals vs New York Yankees | SportzX Live [DRM]
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3636/image" group-title="LIVE SPORTS",San Diego Padres | SportzX Live [DRM]
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-https://mainstreams.pro/hls/bzagLHzach19.m3u8?
+https://edgestreams.pro/hls/jnzkdzjfanch23.m3u8?
 
-#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3629/image" group-title="LIVE SPORTS",Mets vs Cincinnati Reds | SportzX Live [DRM]
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3647/image" group-title="LIVE SPORTS",Texas Rangers | SportzX MLB [DRM]
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-https://edgestreams.pro/hls/jkzahzadach20.m3u8?
+https://chatgpt.hereisman.net/playlist/51189/load-playlist?
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3647/image" group-title="LIVE SPORTS",Texas Rangers | SportzX Live [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://edgestreams.pro/hls/fskjanach24.m3u8?
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3642/image" group-title="LIVE SPORTS",Miami Marlins | SportzX MLB [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://chatgpt.hereisman.net/playlist/51191/load-playlist?
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3642/image" group-title="LIVE SPORTS",Miami Marlins | SportzX Live [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+https://mainstreams.pro/hls/kjhfzua25.m3u8?
+
+#EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/1982/image" group-title="LIVE SPORTS",Coritiba vs Bahia | SporTV BR [DRM]
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4bbcff3289d457b4dd5dbdd21221de9a:c4906b9a9f8dda3c0725bddb8c497733
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/m7duvnk2bu/out/v1/d1ad69118b5647309b1eb7213affdb3d/cenc.mpd
 
 #EXTINF:-1 tvg-logo="https://img.sofascore.com/api/v1/team/3634/image" group-title="LIVE SPORTS",Giants vs Arizona Diamondbacks | SportzX Live [DRM]
 #KODIPROP:inputstream.adaptive.license_type=clearkey
