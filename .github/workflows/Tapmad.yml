@@ -1,9 +1,11 @@
 name:  Tapmad Playlist BD
 
-on:
-  schedule:
-    - cron: '0 */12 * * *' # প্রতি ১২ ঘণ্টা পর পর অটোমেটিক রান হবে
-  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+ on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: write
 
 jobs:
   update-playlist:
