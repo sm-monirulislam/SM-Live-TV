@@ -3,12 +3,11 @@ name: Update Tapmad Playlist
 on:
   schedule:
     - cron: '0 */12 * * *' # প্রতি ১২ ঘণ্টা পর পর অটোমেটিক রান হবে
-  workflow_dispatch: # চাইলে আপনি নিজেও ম্যানুয়ালি রান করতে পারবেন
+  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
 
 jobs:
   update-playlist:
-    runs-size: ubuntu-latest
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # এখানে ভুল হয়েছিল, এখন ঠিক করা হয়েছে
 
     steps:
     - name: Checkout repository
@@ -26,8 +25,8 @@ jobs:
 
     - name: Run Python script
       env:
-        TAPMAD_API_URL: ${{ secrets.TAPMAD_API_URL }} # Secret থেকে URL নিচ্ছে
-      run: python Tapmad_bd.py
+        TAPMAD_API_URL: ${{ secrets.TAPMAD_API_URL }}
+      run: python update_playlist.py
 
     - name: Commit and Push changes
       run: |
