@@ -32,8 +32,14 @@ jobs:
     uses: ./.github/workflows/roar.yml
     secrets: inherit
 
-  main_combined:
+  tapmad:                 # <--- নতুন Tapmad জব যুক্ত করা হলো
     needs: roar
+    if: always()
+    uses: ./.github/workflows/Tapmad_bd.yml # নিশ্চিত করুন ফাইলের নাম এইটাই
+    secrets: inherit       # এর মাধ্যমে গিটহাব সিক্রেট (API URL) পাস হবে
+
+  main_combined:
+    needs: tapmad         # <--- এখন এটি tapmad-এর পর রান হবে
     if: always()
     uses: ./.github/workflows/main_combined.yml
     secrets: inherit
