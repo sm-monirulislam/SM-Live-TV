@@ -1,15 +1,12 @@
-name:  Tapmad Playlist BD
+name: Tapmad Playlist BD
 
- on:
-  workflow_dispatch:
-  workflow_call:
-
-permissions:
-  contents: write
+on:
+  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
+  workflow_call:     # এটি দিলে Master Controller একে কল করতে পারবে
 
 jobs:
   update-playlist:
-    runs-on: ubuntu-latest # এখানে ভুল হয়েছিল, এখন ঠিক করা হয়েছে
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
@@ -35,5 +32,5 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add Tapmad.m3u
-        git commit -m "Automated Playlist Update" || exit 0
+        git commit -m "Automated Tapmad Playlist Update" || exit 0
         git push
