@@ -1,0 +1,38 @@
+name: Update Tapmad Playlist
+
+on:
+  schedule:
+    - cron: '0 */12 * * *' # প্রতি ১২ ঘণ্টা পর পর অটোমেটিক রান হবে
+  workflow_dispatch: # চাইলে আপনি নিজেও ম্যানুয়ালি রান করতে পারবেন
+
+jobs:
+  update-playlist:
+    runs-size: ubuntu-latest
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Run Python script
+      env:
+        TAPMAD_API_URL: ${{ secrets.TAPMAD_API_URL }} # Secret থেকে URL নিচ্ছে
+      run: python Tapmad_bd.py
+
+    - name: Commit and Push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add Tapmad.m3u
+        git commit -m "Automated Playlist Update" || exit 0
+        git push
