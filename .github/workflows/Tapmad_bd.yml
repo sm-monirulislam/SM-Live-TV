@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # পুরো গিট হিস্ট্রি নেওয়ার জন্য, যা রিব্যাস (rebase) করতে সাহায্য করবে
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -31,6 +33,15 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        
+        # ফাইলটি পরিবর্তন হয়েছে কিনা তা চেক করে অ্যাড করা
         git add Tapmad.m3u
+        
+        # কোনো পরিবর্তন না থাকলে যেন এরর না দেয় (exit 0)
         git commit -m "Automated Tapmad Playlist Update" || exit 0
-        git push
+        
+        # অন্য কোনো জব আগে পুশ করে থাকলে, সেই পরিবর্তনগুলো আগে টেনে আনা
+        git pull --rebase origin main
+        
+        # ফাইনালি পুশ করা
+        git push origin main
