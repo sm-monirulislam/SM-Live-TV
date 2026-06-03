@@ -14,14 +14,8 @@ jobs:
     uses: ./.github/workflows/Fancode_update.yml
     secrets: inherit
 
-  toffee:
-    needs: fancode
-    if: always()
-    uses: ./.github/workflows/toffee_main.yml
-    secrets: inherit
-
   aynaott:
-    needs: toffee
+    needs: fancode
     if: always()
     uses: ./.github/workflows/auto_aynaott.yml
     secrets: inherit
@@ -32,14 +26,14 @@ jobs:
     uses: ./.github/workflows/roar.yml
     secrets: inherit
 
-  tapmad:                 # <--- নতুন Tapmad জব যুক্ত করা হলো
+  tapmad:
     needs: roar
     if: always()
-    uses: ./.github/workflows/Tapmad_bd.yml # নিশ্চিত করুন ফাইলের নাম এইটাই
-    secrets: inherit       # এর মাধ্যমে গিটহাব সিক্রেট (API URL) পাস হবে
+    uses: ./.github/workflows/Tapmad_bd.yml
+    secrets: inherit
 
   main_combined:
-    needs: tapmad         # <--- এখন এটি tapmad-এর পর রান হবে
+    needs: tapmad
     if: always()
     uses: ./.github/workflows/main_combined.yml
     secrets: inherit
