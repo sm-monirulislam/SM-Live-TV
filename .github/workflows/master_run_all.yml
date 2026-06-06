@@ -32,8 +32,14 @@ jobs:
     uses: ./.github/workflows/Tapmad_bd.yml
     secrets: inherit
 
-  main_combined:
+  toffee:
     needs: tapmad
+    if: always()
+    uses: ./.github/workflows/toffee_main.yml
+    secrets: inherit
+
+  main_combined:
+    needs: toffee
     if: always()
     uses: ./.github/workflows/main_combined.yml
     secrets: inherit
