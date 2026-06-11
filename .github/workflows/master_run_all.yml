@@ -20,14 +20,8 @@ jobs:
     uses: ./.github/workflows/auto_aynaott.yml
     secrets: inherit
 
-  roar:
-    needs: aynaott
-    if: always()
-    uses: ./.github/workflows/roar.yml
-    secrets: inherit
-
   tapmad:
-    needs: roar
+    needs: aynaott
     if: always()
     uses: ./.github/workflows/Tapmad_bd.yml
     secrets: inherit
