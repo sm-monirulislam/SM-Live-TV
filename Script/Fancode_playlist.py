@@ -1,11 +1,9 @@
 import requests
 import os
 
-# GitHub Secret থেকে API নিবে
 API_URL = os.getenv("FANCODE_API")
 
 OUTPUT_FILE = "Fancode.m3u"
-
 
 def generate_playlist():
     if not API_URL:
@@ -34,7 +32,6 @@ def generate_playlist():
         return
 
     playlist = "#EXTM3U\n\n"
-
     added = 0
 
     for match in matches:
@@ -43,37 +40,32 @@ def generate_playlist():
         group = match.get("event_category", "Fancode")
         status = match.get("status", "UNKNOWN")
 
-        # Main stream link
-        url = match.get("stream_url", "").strip()
+        # New stream field
+        url = match.get("fancode_bd", "").strip()
 
-        # Empty হলে skip
         if not url:
             continue
 
         name = f"{title} [{status}]"
 
         playlist += (
-            f'#EXTINF:-1 '
-            f'tvg-name="{name}" '
+            f'#EXTINF:-1 tvg-name="{name}" '
             f'tvg-logo="{logo}" '
             f'group-title="{group}",{name}\n'
         )
 
         playlist += f"{url}\n\n"
-
         added += 1
 
     if added == 0:
         print("❌ No valid streams found!")
         return
 
-    # Save playlist
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(playlist)
 
     print(f"✅ Playlist saved: {OUTPUT_FILE}")
     print(f"✅ Total Streams Added: {added}")
-
 
 if __name__ == "__main__":
     generate_playlist()
