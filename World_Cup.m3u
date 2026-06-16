@@ -64,12 +64,6 @@ https://otte-tim.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/aezp9y6l15/out/
 #KODIPROP:inputstream.adaptive.license_key=f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
 https://otte-tim.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/ajfoeddkbz/out/v1/b78800b9b2304879b15843f455836829/cenc.mpd
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/25/FOX_wordmark.svg" ,FOX ONE
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c620c93c60c04999eb9ddc28ecfb70a8:e76a709c251313190e76cb3c3d3a5824
-https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/dash/enc/ap5wz1ofsp/out/v1/7fa6feef143747beaa186ebb6dfb2532/cenc.mpd
 
 #EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/T_Sports.png" ,T Sports HD
 http://starhub.pro/live/farhat-3379/67897-913379/18452.ts
@@ -103,15 +97,6 @@ http://het4444.ycn-redirect.com/live/610303030/index.m3u8?t=XgTsAjb1QkrYQQnjbPWl
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
 http://het4444.ycn-redirect.com/live/1515000000/index.m3u8?t=GL6h-5KFWoH5-xlxp4aZqw&e=1781180635
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3e/BeIN_Max_3_2012.png",BeIN Sports Max 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
-http://het107a.ycn-redirect.com/live/33523510/index.m3u8?t=D3ELE-i9GsmOuKSnXG0bOQ&e=1781182200
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7f/BeIN_Max_4_2012.png" , BeIN 4 MAX FHD
-http://1.la5liga.store:80/play/oOuLyOr0l4zfSQqe-48swyrUC_d5JG7Wj1gX3MfuOaE4OM3tuyzL533bO9nJYOIc
-
-#EXTINF:-1 tvg-logo="https://assets.bein.com/mena/sites/3/2015/06/bein-Logo.png" , BeIN HDR
-http://go8knm.optikl.ink/X/index.php/Besyria3/video.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/CazeTV2022.svg" ,Caze TV HD
 #KODIPROP:inputstream=inputstream.adaptive
@@ -122,11 +107,6 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1
 
 #EXTINF:-1  tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/CazeTV2022.svg", Caze TV Brazil 🇧🇷
 https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/Caze_TV.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f6/TUDN.svg" ,TUDN MX
-https://linear-357.frequency.stream/dist/vizio/357/hls/master/playlist.m3u8
-
-
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/45/DSportsM%C3%A1s.png" , DSPORTS+ FHD
 #KODIPROP:inputstream=inputstream.adaptive
@@ -149,56 +129,13 @@ https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/ubehitlwzo/
 #KODIPROP:inputstream.adaptive.license_key=7df8abb70d323cfaedde886793f3add0:4a31721d34351ef6a63f81d51bae45df
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/l0qqwxo6sc/out/v1/ba9e2a12afb54ab692464f9b7e72b0ba/cenc-sd.mpd
 
-
-
-
-#EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png", D Sports
-https://1nyaler.streamhostingcdn.top/stream/106/index.m3u8
-
-#EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Canal_5_2016.svg", Canal 5
-https://1nyaler.streamhostingcdn.top/stream/52/index.m3u8
-
 #EXTINF:-1  tvg-logo="https://dizplai.com/wp-content/uploads/2025/10/DAZN_Logo_Chalk.svg-800x800.png", Dazn Direct
 https://1nyaler.streamhostingcdn.top/stream/94/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://dizplai.com/wp-content/uploads/2025/10/DAZN_Logo_Chalk.svg-800x800.png" , DAZN HDR
 https://fhd60fps-by-opensourecflix.exmax.workers.dev/index.m3u8
 
-#EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/Logotipo_de_TV_Azteca.png", TV Azteca
-https://1nyaler.streamhostingcdn.top/stream/117/index.m3u8
 
-#EXTINF:-1  tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6b/Match%21_2019.png" ,Матч
-https://bl.video.matchtv.ru/media/playlist/free_d46d0cf1712c0542ec7fd4f0808f600a_hd/17_89756005/1080/e6bef86de8a133cd7b27deb040758a00/4796141934.m3u8
-
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" , FIFA Exclusive
-https://fifaexclusive.myziboplay.xyz/Fifa/index.m3u8?token=fe6Uuugm3xgIm2
-
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" group-title="FIFA WC 2026 LIVE", Super Sports
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://xtream.lazyspace.online/uplink/play/741566/lmND4qC9ustQ/live.m3u8
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" group-title="FIFA WC 2026 LIVE", Fussball TV 1
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://xtream.lazyspace.online/uplink/play/742610/lmND4qC9ustQ/live.m3u8
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" group-title="FIFA WC 2026 LIVE", SUPER SPORTS FIFA
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://xtream.lazyspace.online/uplink/play/741566/lmND4qC9ustQ/live.m3u8
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" group-title="FIFA WC 2026 LIVE", BEIN SPORTS MAX 1 HD
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://xtream.lazyspace.online/uplink/play/744517/lmND4qC9ustQ/live.m3u8
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" group-title="FIFA WC 2026 LIVE", BEIN SPORTS MAX 2 HD
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://xtream.lazyspace.online/uplink/play/744518/lmND4qC9ustQ/live.m3u8
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" group-title="FIFA WC 2026 LIVE", SuperSports World Cup Central
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://xtream.lazyspace.online/uplink/play/745149/lmND4qC9ustQ/live.m3u8
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" group-title="FIFA WC 2026 LIVE", SuperSports World Cup Pass
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://xtream.lazyspace.online/uplink/play/745195/lmND4qC9ustQ/live.m3u8
-#EXTINF:-1 tvg-logo="https://www.edigitalagency.com.au/wp-content/uploads/new-FIFA-World-Cup-2026-logo-white-PNG-small-size.png" group-title="FIFA WC 2026 LIVE", Unite8 Sports 2 HD#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://xtream.lazyspace.online/uplink/play/745202/lmND4qC9ustQ/live.m3u8
-
-#EXTINF:-1  tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/9e/TVRI_Sport_2022.svg" ,TVRI SPORT
-https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
 
 #EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/W-Sport_logo.svg" ,W-SPORTS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
@@ -212,12 +149,6 @@ https://tglmp02.akamaized.net/out/v1/1063ebb215c14312ba9d4e415ac706d2/manifest.m
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2fbdaa3bea0d0323ae011b318d1db716:8726ef7eaf5b9dce15fb6aa9f80bd53f
 https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/dash/enc/oboxe53wyo/out/v1/f7892a9d706d419a846d738fa22ea33e/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://iili.io/KYJqv0G.png" ,Fox Sports 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=5466ebd70704bdeb657f0abf3c5ca4ef:bdd79b72d8e48ed483aa623cc38a8a16
-https://cors-everywhere-wc8b4.ondigitalocean.app/https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/tmpzbbdj9y/out/v1/962736723a534ba294e7592fef49827b/cenc.mpd
 
 #EXTINF:-1 tvg-logo="https://iili.io/KYJC4V9.png" ,Fox Sports 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
