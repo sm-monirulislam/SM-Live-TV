@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-06-17 08:13:54 (BD Time)
-# 📺 Channels Count: 279
+# 🕒 Last Updated: 2026-06-17 13:24:07 (BD Time)
+# 📺 Channels Count: 276
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -428,26 +428,6 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8
 #EXTINF:-1 tvg-name="Toffee" group-title="World_Cup",Toffee
 https://toffee-seg.smartdev.workers.dev/manifest?url=https%3A%2F%2Fprod-cdn01-live.toffeelive.com%2Flive%2FFIFA-2026-3%2F0%2Fmaster_2000.m3u8&cookie=Expires%3D1781743302~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature%3DAduQTZ-IBJK3awEVSUXpj_uwlxEE0LuF5wxPzQDy_iFSBN_m9GiueLyajyncXRt99CvWsh_jcBWsp2svsdHAYujNwAUK
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/60/Willow_HD_2023.svg"  group-title="World_Cup",Wollow Sports
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=290e09c837da78d5cd961978d390515c:b748836c71e6a4ca68ef5b5652db6247
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://iili.io/3DPQBC7.png"  group-title="World_Cup", TNT Sports 1
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d14658a0ede94debcb4013b2056ba6d1:60838a3176127fed0eaf038a5575de11
-https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/vaplpo3app/out/v1/49b4d538ec854efa90d45084866cf7f9/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/30/TSN1_HD.svg" group-title="World_Cup",TSN 1
-http://stalker.hakunamata.workers.dev/play/258/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d2/TSN2_HD_New.svg" group-title="World_Cup",TSN 2
-http://stalker.hakunamata.workers.dev/play/259/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/TSN3_HD.svg" group-title="World_Cup",TSN 3
 http://stalker.hakunamata.workers.dev/play/260/index.m3u8
 
@@ -756,8 +736,11 @@ https://origin-m6web.live.6cloud.fr/out/v1/6play/6play-m6/cmaf_cenc00/dash-short
 #EXTINF:-1 tvg-chno="1433" tvg-name="Zee Bangla Sonar (FIFA BANGLA COMMENTARY)" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Zee Bangla Sonar (FIFA BANGLA COMMENTARY)
 http://str2.v3v3v.xyz:2082/live/rokhsi25_951396/POm6KqnW/277428.ts
 
-#EXTINF:-1 tvg-name="Day 2   Court 1 [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/HSBC-ChampionshipsATP500Grassfcweb.jpg" group-title="Fancode",Day 2   Court 1 [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/143133_english_hls_a34e01f7c792836_1ta-di_h264/1080p.m3u8?hdntl=Expires=1781720774~_GO=Generated~acl=/mumbai/143133_english_hls_a34e01f7c792836_1ta-di_h264/*~Signature=ATZ0w6eu_HMx6S_Ht1nT9Nbbsl9ZmCV3TemkrN3Ij5ZUMBzg4vZHmOt79x96BprqTWScUp43rvhuSTSn6vmwPsiNdiMK
+#EXTINF:-1 tvg-name="Malmo Mavericks Vs Vasteras United [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/143181_6109_MLM_VTU_FC-WEB.jpg" group-title="Fancode",Malmo Mavericks Vs Vasteras United [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143181_english_hls_deaf6dc59582871_1ta-di_h264/1080p.m3u8?hdntl=Expires=1781765046~_GO=Generated~acl=/mumbai/143181_english_hls_deaf6dc59582871_1ta-di_h264/*~Signature=ATZ0w6fjXeU1Yit3Mj0Uf5jGUr_mycBeurR27EVpvTAVcyxRRw3kRUv9WXY3pKgPVEeGdMLHSbHYJ1UyHmOVx6Uv-wME
+
+#EXTINF:-1 tvg-id="tapmad-14407" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17816005561020x576.jpg" group-title="Tapmad", Malmo Mavericks vs Vasteras United | Nordic Smash 2026
+https://tapmad.sm-monirul.top/2107108/testtapmad/master.m3u8
 
 #EXTINF:-1 tvg-id="bdvsnz26" tvg-name="World Cup 2026" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/zUGrjZ4BuUSiBsg_1BeE/posters/92b50328-c79a-450d-a71c-acfbef39398a.png" group-title="Toffee",World Cup 2026
 https://sm-monirul.top/toffee/play/bdvsnz26.m3u8
