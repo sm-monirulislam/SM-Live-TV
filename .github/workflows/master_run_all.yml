@@ -14,14 +14,8 @@ jobs:
     uses: ./.github/workflows/Fancode_update.yml
     secrets: inherit
 
-  aynaott:
-    needs: fancode
-    if: always()
-    uses: ./.github/workflows/auto_aynaott.yml
-    secrets: inherit
-
   tapmad:
-    needs: aynaott
+    needs: fancode
     if: always()
     uses: ./.github/workflows/Tapmad_bd.yml
     secrets: inherit
