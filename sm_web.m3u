@@ -266,34 +266,18 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2e31d831f08640ff92f65003bdc89991/in
 https://dwby15d04agvq.cloudfront.net/index_1.m3u8
 
 
-
-
-
-
-
-############## 📻 FM-Radio ##############
-#EXTINF:-1 tvg-logo="https://cdn.instant.audio/images/logos/radio-bd-com/bangla-net.png" group-title="FM-Radio",Radio Bangla Net
-https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R3563475_SC
-#EXTINF:-1 tvg-logo="https://cdn.instant.audio/images/logos/radio-bd-com/bbc-bangla.png" group-title="FM-Radio",BBC Bangla
-https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/simulcast/dash/nonuk/cellular_main_sd_abr_v2/cfs/bbc_world_service.mpd
-#EXTINF:-1 tvg-logo="https://spicefmbd.com/logospice.png" group-title="FM-Radio",Spice FM
-https://stream.spicefmbd.com/stream.m3u8
-#EXTINF:-1 tvg-logo="https://m.economictimes.com/thumb/msid-71679942,width-1200,height-900,resizemode-4,imgsize-42753/radio-mirchi-agencies.jpg" group-title="FM-Radio",Radio Mirchi
-https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444
-
-
-
-
-
-
-
-
-
 #EXTM3U
-#EXTINF:-1 tvg-id="bdvsnz26" tvg-name="World Cup 2026" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/zUGrjZ4BuUSiBsg_1BeE/posters/92b50328-c79a-450d-a71c-acfbef39398a.png" group-title="Sports Channels",World Cup 2026
-https://sm-monirul.top/toffee/play/bdvsnz26.m3u8
-#EXTINF:-1 tvg-id="bdvsnz26" tvg-name="BD VS AUS" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/JOg0jZ4BIxFjn23xbePr/posters/683d682a-5589-48e4-b08c-1afe5dc9c3e4.png" group-title="Sports Channels",BD VS AUS
-https://sm-monirul.top/toffee/play/bdvsnz26.m3u8
+#====== Toffee World Cup ============
+#EXTINF:-1 tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Sports Channels",Toffee 1
+http://sm-monirul.top/tof/live/gervsivo/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Sports Channels",Toffee 2
+http://sm-monirul.top/tof/live/ecuvscur/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Sports Channels",Toffee 3
+http://sm-monirul.top/tof/live/tunvsjap/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Sports Channels",Toffee 4
+https://sm-monirul.top/tof/live/toffee4/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Sports Channels",Toffee 5
+https://sm-monirul.top/tof/live/toffee5/index.m3u8
 #EXTINF:-1 tvg-id="sports_highlights" tvg-name="TOFFEE Sports VIP" tvg-logo="https://images.toffeelive.com/images/program/19779/logo/240x240/mobile_logo_975410001725875598.png" group-title="LIVE",TOFFEE Sports VIP
 https://sm-monirul.top/toffee/play/sports_highlights.m3u8
 #EXTINF:-1 tvg-id="toffee_movie" tvg-name="TOFFEE Movies VIP" tvg-logo="https://images.toffeelive.com/images/program/2708/logo/240x240/mobile_logo_724353001725875591.png" group-title="LIVE",TOFFEE Movies VIP
