@@ -35,7 +35,9 @@ https://sm-monirul.top/tof/live/toffee5/index.m3u8
 #====== Bioscope World Cup ============
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/X7qgs8BY/images-d47abaf70fb3ea50af7cdf455ccab5a6-goplay-bioscope-icon-transparent-app.png" ,Bioscope 
 #https://sm-monirul.top/ultra_restream/bioscope/index.m3u8
-https://bioscope.sm-monirulislam-exp.workers.dev/index.m3u8
+#https://bioscope.sm-monirulislam-exp.workers.dev/index.m3u8
+#EXTVLCOPT:http-referrer=https://tulnit.com/
+https://fifa.keralive.workers.dev/out/v1/4e21d5a122c549289dd6feab259266e8/index.m3u8
 #======  World Cup ============
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="world cup",Football World Cup
 https://d1211whpimeups.cloudfront.net/smil:rtbgo/chunklist_b4096000_slENG.m3u8
