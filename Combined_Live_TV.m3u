@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-06-23 15:34:56 (BD Time)
-# 📺 Channels Count: 240
+# 🕒 Last Updated: 2026-06-23 18:31:40 (BD Time)
+# 📺 Channels Count: 245
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -428,7 +428,9 @@ https://sm-monirul.top/tof/live/toffee5/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/X7qgs8BY/images-d47abaf70fb3ea50af7cdf455ccab5a6-goplay-bioscope-icon-transparent-app.png"  group-title="World_Cup",Bioscope
 #https://sm-monirul.top/ultra_restream/bioscope/index.m3u8
-https://bioscope.sm-monirulislam-exp.workers.dev/index.m3u8
+#https://bioscope.sm-monirulislam-exp.workers.dev/index.m3u8
+#EXTVLCOPT:http-referrer=https://tulnit.com/
+https://fifa.keralive.workers.dev/out/v1/4e21d5a122c549289dd6feab259266e8/index.m3u8
 #======  World Cup ============
 
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Football World Cup
@@ -542,8 +544,23 @@ https://a83aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/q4u5
 #EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/FIFA%2B_%282025%29.svg"  group-title="World_Cup",FIFA+
 https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Uzbekistan Vs Indonesia [LIVE]" tvg-logo="https://images.fancode.com/aig/match/v1782018540428/143545_CASACARDS_SPORTY_APP.png" group-title="Fancode",Uzbekistan Vs Indonesia [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/143545_english_hls_26bc64239a56042_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782277924~_GO=Generated~acl=/mumbai/143545_english_hls_26bc64239a56042_1ta-di_h264/*~Signature=Afto3p0a1WXFSTWSPG1UUU0mpoxKg7Ohy15zujyE88K0TOkgWyb7XbTIN85BqmaNXUZLBbpUc3o1R0Oz_ORAs5dLsI8L
+#EXTINF:-1 tvg-name="Gulbarga Mystics Vs Shivamogga Yodhas [LIVE]" tvg-logo="https://images.fancode.com/aig/match/v1781841438658/143421_CASACARDS_SPORTY_APP.png" group-title="Fancode",Gulbarga Mystics Vs Shivamogga Yodhas [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143421_english_hls_e14d15b24a67195_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782291063~_GO=Generated~acl=/mumbai/143421_english_hls_e14d15b24a67195_1ta-di_h264/*~Signature=Afto3p3chWfkhc48zfAo047HSFdPt-T8sDjP_mOkX7NyZXbEFKh61kxz6KeI9jaPD4vDiJEgKIAjTvkXtneX26ElqukD
+
+#EXTINF:-1 tvg-name="Gulbarga Mystics Vs Shivamogga Yodhas [LIVE]" tvg-logo="https://images.fancode.com/aig/match/v1781841438658/143421_CASACARDS_SPORTY_APP.png" group-title="Fancode",Gulbarga Mystics Vs Shivamogga Yodhas [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143421_kannada_hls_208dbf663b84255_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782291064~_GO=Generated~acl=/mumbai/143421_kannada_hls_208dbf663b84255_1ta-di_h264/*~Signature=Afto3p0n2DktwsU-X5hxMPrBjkoZIhhmUU8j07g6UAjlls6ZGspUsgSFZLXEM0YPrsyN0B6IYzwv2Otx_H1JOTAou6wE
+
+#EXTINF:-1 tvg-name="Indore Pink Panthers Vs Gwalior Cheetahs [LIVE]" tvg-logo="https://images.fancode.com/aig/match/v1780469022415/143099_CASACARDS_SPORTY_APP.png" group-title="Fancode",Indore Pink Panthers Vs Gwalior Cheetahs [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143099_english_hls_57b3c5021536049_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782292743~_GO=Generated~acl=/mumbai/143099_english_hls_57b3c5021536049_1ta-di_h264/*~Signature=Afto3p12hsnRtwhUSYC1L8NPnr42q8IDZgp6o_ktrfHpu6dHPuOzZpSJDlxiuDwj6DxTXMRL9q5pQSt-NG1nhNYxxSYI
+
+#EXTINF:-1 tvg-name="Thailand Vs Singapore [LIVE]" tvg-logo="https://images.fancode.com/aig/match/v1782018540405/143546_CASACARDS_SPORTY_APP.png" group-title="Fancode",Thailand Vs Singapore [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143546_english_hls_7a05f2037822563_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782296343~_GO=Generated~acl=/mumbai/143546_english_hls_7a05f2037822563_1ta-di_h264/*~Signature=Afto3p2haakTRea7thoOFFFjxA_bQfnnP8-NV7eFeERQnTLO1VkO_V-gi6sFCf_Yh2e7_99CY81kZKCuapJrqMyFtX4K
+
+#EXTINF:-1 tvg-name="Day 2 [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Lexus-Eastbourne-Open-2026_FC-WEB.jpg" group-title="Fancode",Day 2 [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143278_english_hls_14e6d5f7d97697_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782294244~_GO=Generated~acl=/mumbai/143278_english_hls_14e6d5f7d97697_1ta-di_h264/*~Signature=Afto3p0lIsBeaqrXOP09PvzPwKaL958rxYp2aY4D0cc5uPSsi94rZs1uKnhCt6xMdCEpmEsOLB2WcZ0cYdNxllJ8-psJ
+
+#EXTINF:-1 tvg-name="Day 3 [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ATP-Vanda-Pharma_Web-match-card.png" group-title="Fancode",Day 3 [LIVE]
+https://bd-mc-fblive.fancode.com/mumbai/143272_english_hls_f465b38c6c84328_1ta-di_h264/1080p.m3u8
 
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Toffee",Toffee 1
 http://sm-monirul.top/tof/live/gervsivo/index.m3u8
