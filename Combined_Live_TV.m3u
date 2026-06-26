@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-06-26 13:08:24 (BD Time)
-# 📺 Channels Count: 243
+# 🕒 Last Updated: 2026-06-26 16:36:00 (BD Time)
+# 📺 Channels Count: 246
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -17,8 +17,8 @@ https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
 #EXTINF:-1 tvg-id="98000" tvg-name="Somoy TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c3/%E0%A6%9A%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B2_%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg" group-title="SM All TV",Channel 1
 https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8
 
-#EXTINF:-1 tvg-logo="ttps://assets-prod.services.toffeelive.com//Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png"group-title="SM All TV" group-title="SM All TV",Somoy TV
-http://114.130.57.224:8080/Somoy-TV-3Mb/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com//Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png"group-title="SM All TV" group-title="SM All TV",Somoy TV
+http://114.130.57.233:8080/Somoy-TV-3Mb/video.m3u8?token=SkQuhAXZxgBan1
 
 #EXTINF:-1 tvg-id="97000" tvg-name="Jamuna TV" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560213832.png" group-title="SM All TV",Jamuna TV
 https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
@@ -89,9 +89,6 @@ https://stream.channeleuropetvboxlondon.co.uk/live/channeleurope/chunklist_w5722
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/cbn-tv.png" group-title="SM All TV",CBN TV USA
 https://live.cbntvusa.net/hls/cbntv/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/7/76/Desh_TV_logo_2022.png" group-title="SM All TV",Desh TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deshtv.stream/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/NmAlifKhan/Channel-Icon/refs/heads/tv/deepto-tv-seeklogo.png" group-title="SM All TV",Deepto TV
 https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8
 
@@ -102,7 +99,7 @@ https://deshitv.deshitv24.net/live/myStream/playlist.m3u8
 http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/d/dd/Ekhon_TV_logo.png" group-title="SM All TV",Ekhon TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/globaltv.stream/tracks-v1a1/mono.m3u8
+https://sm-monirul.top/toffee/play/ekhon_tv.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/60/Gtvhd.png" group-title="SM All TV",Gazi TV HD
 https://tvsen1.aynaott.com/Ravc7gPCZpxk/tracks-v1a1/mono.ts.m3u8
@@ -550,8 +547,20 @@ https://a83aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/q4u5
 #EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/FIFA%2B_%282025%29.svg"  group-title="World_Cup",FIFA+
 https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Sri Lanka Vs West Indies [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/WI-vs-SL_test_Web-match-card.png" group-title="Fancode",Sri Lanka Vs West Indies [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/142978_english_hls_84812121a130557_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782509824~_GO=Generated~acl=/mumbai/142978_english_hls_84812121a130557_1ta-di_h264/*~Signature=ARZJ1WINeEHeYpViEvVqj5-B-Lyq5tJmJmrCPE8JYBUDIzL8hgTBhxi_HUaT0xHVeJ64wg1Q_x7cx8pxyl0MSvOMoQAL
+#EXTINF:-1 tvg-name="Indonesia Vs Uzbekistan [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/143545_6143_UZB_INA_FC-Web.png" group-title="Fancode",Indonesia Vs Uzbekistan [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143549_english_hls_bef7208e2a30504_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782537544~_GO=Generated~acl=/mumbai/143549_english_hls_bef7208e2a30504_1ta-di_h264/*~Signature=ARZJ1WKIufOTmQrPlMK7H7IZhV40E5ctu6iMkaSfhpV9No2JOmP2NMS4UmqoUi7zEfUjvwxnGdyMhtSJtzqwMeREXVAL
+
+#EXTINF:-1 tvg-name="Rml Sports Vs Kcc [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/KPL-Indo-Nepal-T20_fc-web_1782227515719.jpg" group-title="Fancode",Rml Sports Vs Kcc [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143522_english_hls_e0bf049e9b44320_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782544330~_GO=Generated~acl=/mumbai/143522_english_hls_e0bf049e9b44320_1ta-di_h264/*~Signature=ARZJ1WII9jT6iBfDpVrOQf4jNB11YGl_2PT8RGZKxxgDLte4aJajENOSj5AvzDph7-iOwNwMjRnQtbClWauqkpzTPjgK
+
+#EXTINF:-1 tvg-name="Day 1 [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Tissot-Grand-Prix-of-the-Netherlands-old-match-card.png" group-title="Fancode",Day 1 [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/139954_english_hls_e25248d51c32894_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1782543074~_GO=Generated~acl=/mumbai/139954_english_hls_e25248d51c32894_1ta-di_h264/*~Signature=ARZJ1WLHCmSfSJpWjCUpBgq5nED77SON-7dgewQRYIJOXcBbkVQbjE_LjDpC35L6JBpR6B2tAg7-8pCYy7KnJefCgfUC
+
+#EXTINF:-1 tvg-id="tapmad-14073" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17816020821020x576.jpg" group-title="Tapmad", England vs New Zealand | New Zealand Tour of England 2026
+https://bpl24middleeast.akamaized.net/hls/live/2109311/tapmad-258tjui/master.m3u8
+
+#EXTINF:-1 tvg-id="tapmad-14616" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17822113031020x576.jpg" group-title="Tapmad", Women's Semi-Final A Session, Budapest, Hungary Live | UIPM 2026
+https://t-prod-pk.tapmad.com/v1/019eff56c91d15e8f412028003f9/019eff5a7a6f15e8f060057b6796/main.m3u8
 
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Toffee",Toffee 1
 http://sm-monirul.top/tof/live/gervsivo/index.m3u8
