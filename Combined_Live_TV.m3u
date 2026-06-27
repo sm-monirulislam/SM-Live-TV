@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-06-27 17:53:17 (BD Time)
-# 📺 Channels Count: 223
+# 🕒 Last Updated: 2026-06-27 19:27:51 (BD Time)
+# 📺 Channels Count: 224
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -345,13 +345,24 @@ https://sm-monirul.top/tof/live/toffee6/index.m3u8
 #====== Bioscope World Cup ============
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/X7qgs8BY/images-d47abaf70fb3ea50af7cdf455ccab5a6-goplay-bioscope-icon-transparent-app.png"  group-title="World_Cup",Bioscope
-http://sm-monirul.top/ott/bioscope/index.m3u8
+http://sm-monirul.top/fifa/bioscope/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/X7qgs8BY/images-d47abaf70fb3ea50af7cdf455ccab5a6-goplay-bioscope-icon-transparent-app.png"  group-title="World_Cup",Bioscope
-http://sm-monirul.top/ott/bioscope1/index.m3u8
+http://sm-monirul.top/fifa/bioscope1/index.m3u8
+EXTINF:-1 tvg-logo="https://i.postimg.cc/X7qgs8BY/images-d47abaf70fb3ea50af7cdf455ccab5a6-goplay-bioscope-icon-transparent-app.png" ,Bioscope
+#http://sm-monirul.top/fifa/bioscope1/index.m3u8
+https://d1kep4defqj6r1.cloudfront.net/out/v1/4e21d5a122c549289dd6feab259266e8/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMsc_j3e2KKQ18tD9XCM09UahrLonmSx15vdenZEnMrA&s=10"  group-title="World_Cup",i screen
 http://sm-monirul.top/ott/iscreen/index.m3u8
+
+#EXTINF:-1 tvg-id="iscreenhd" tvg-name="I SCREEN HD" tvg-logo="https://platform.rockstreamer.com/platforms/iscreen.com.bd/assets/logo.png" group-title="World_Cup",I SCREEN HD
+#EXTVLCOPT:http-referrer=https://iscreen.com.bd/
+https://tc-sg.rockstreamer.com/v1/019ed91616121ea540a8171c8e801f/019ed92ac80315fc600b1796d4ad8b/main.m3u8
+
+#EXTINF:-1 tvg-id="bingeplus" tvg-name="Binge+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/64/Logo_of_Binge.svg" group-title="World_Cup",Binge+
+#EXTVLCOPT:http-referrer=https://iscreen.com.bd/
+https://m3u-tvb.pages.dev/ics.m3u8
 #======  World Cup ============
 
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Football World Cup
@@ -465,11 +476,8 @@ https://a83aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/q4u5
 #EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/FIFA%2B_%282025%29.svg"  group-title="World_Cup",FIFA+
 https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Itahari Super Kings Vs Rml Sports [LIVE]" tvg-logo="https://images.fancode.com/aig/match/v1781869172008/143524_CASACARDS_SPORTY_APP.png" group-title="Fancode",Itahari Super Kings Vs Rml Sports [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/143524_english_hls_4cdc10756e30710_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782629885~_GO=Generated~acl=/mumbai/143524_english_hls_4cdc10756e30710_1ta-di_h264/*~Signature=ARZJ1WLSW3YEGYRlrbZwxbEF0UqmW0P8QPthxqU4Z4khrSu_-X3h3M8uEoPaWewAOHynJTDD3sI73-4_T9j-EFgJTyQB
-
 #EXTINF:-1 tvg-name="Namibia Vs Nigeria [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Mini-Match-Card_1782298949083.png" group-title="Fancode",Namibia Vs Nigeria [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/143321_english_hls_96db62182e40570_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782631147~_GO=Generated~acl=/mumbai/143321_english_hls_96db62182e40570_1ta-di_h264/*~Signature=ARZJ1WI7cZbrjhkg8ANqwQBpDJpxUSGkwtr9nSVEWYV0a5hXOeQqtjUdX198o407PyWTFVo-QMnt-f2DMF3bJTLOtE4G
+https://bd-mc-flive.fancode.com/mumbai/143321_english_hls_96db62182e40570_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782645965~_GO=Generated~acl=/mumbai/143321_english_hls_96db62182e40570_1ta-di_h264/*~Signature=ARZJ1WLgrkunVvLxNFMNqkgFgtoBEjC_h6tstq3wzoewFeWhOFPMXYAwNU-k7FSg-InPpLDg9XWFIKa34Fb1JEWPLF8J
 
 #EXTINF:-1 tvg-name="Shivamogga Yodhas Vs Kalyani Bengaluru Blasters [LIVE]" tvg-logo="https://images.fancode.com/aig/match/v1781841438710/143427_CASACARDS_SPORTY_APP.png" group-title="Fancode",Shivamogga Yodhas Vs Kalyani Bengaluru Blasters [LIVE]
 https://bd-mc-flive.fancode.com/mumbai/143427_english_hls_f0d21b9fd237474_1ta-di_h264/1080p.m3u8?hdntl=Expires=1782636245~_GO=Generated~acl=/mumbai/143427_english_hls_f0d21b9fd237474_1ta-di_h264/*~Signature=ARZJ1WLuFKMu42yxSMwJ6baGHVzi_c5gv8ZjTgfYcZVWVm8KQ9fxGMFIrTaSOiS0JtyFt20U8pZe1wT1CEHiK3P_kn0L
@@ -481,16 +489,16 @@ https://bd-mc-flive.fancode.com/mumbai/143427_kannada_hls_325eb2db9513560_1ta-di
 https://bd-mc-flive.fancode.com/mumbai/143557_english_hls_ae6fcdfae786940_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1782638344~_GO=Generated~acl=/mumbai/143557_english_hls_ae6fcdfae786940_1ta-di_h264/*~Signature=ARZJ1WIBS0RFXeBGy0SYS2hH-nP-9fWHn14MCLuXxOyyBiLc5vSATXUozMT2UwpqhABZyPA6mAuezBMhOTstBr2GCzYE
 
 #EXTINF:-1 tvg-name="Netherlands Gp [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Tissot-Grand-Prix-of-the-Netherlands-old-match-card.png" group-title="Fancode",Netherlands Gp [LIVE]
-https://bd-mc-plive.fancode.com/mumbai/139955_english_hls_1ac25133f375303_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1782642611~_GO=Generated~acl=/mumbai/139955_english_hls_1ac25133f375303_1ta-di_h264/*~Signature=ARZJ1WJGMjlHFyWkOIWEedcXk1M04HwJDdEVhBQaIgsfJ_rrnUZTFLrDLYK0KRRR3yb1SQbc9HqYPkUQp50auqG9spII
-
-#EXTINF:-1 tvg-name="Practice 3 [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/F1_Austria_web.jpg" group-title="Fancode",Practice 3 [LIVE]
-https://bd-mc-flive.fancode.com/mumbai/139459_english_dash_96291_1drmta-di_h264/index.mpd
+https://bd-mc-flive.fancode.com/mumbai/139955_english_hls_1ac25133f375303_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1782643025~_GO=Generated~acl=/mumbai/139955_english_hls_1ac25133f375303_1ta-di_h264/*~Signature=ARZJ1WIrxSlI7dZfQnvpA6sfIcekmfvGw1nzNDsDJtNFsucM8_3LM1hxKwnqOGPjeQtSAwQZtqnBH7Nru0GU5Si3NecF
 
 #EXTINF:-1 tvg-id="tapmad-14073" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17816020821020x576.jpg" group-title="Tapmad", England vs New Zealand | New Zealand Tour of England 2026
 https://bpl24middleeast.akamaized.net/hls/live/2109311/tapmad-258tjui/master.m3u8
 
-#EXTINF:-1 tvg-id="tapmad-14723" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17825122581020x576.jpg" group-title="Tapmad", Lamborghini Super Trofeo - Race 2 Live | GT World Challenge EU & Asia 2026
+#EXTINF:-1 tvg-id="tapmad-14729" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17825131381020x576.jpg" group-title="Tapmad", GT3 Legends - Race 2 Live | GT World Challenge EU & Asia 2026
 https://bpl24middleeast.akamaized.net/hls/live/2109311/P2s6L-FiN@L-World_Feed/master.m3u8
+
+#EXTINF:-1 tvg-id="tapmad-14634" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17825090231020x576.jpg" group-title="Tapmad", Men's Semi-Final B Session, Budapest, Hungary Live | UIPM 2026
+https://multiregion-asia-cdn.tapmad.com/v1/019f067c253015e8f412028003fe/019f067d5e3615e8f060213b29a21b/main.m3u8https://multiregion-asia-cdn.tapmad.com/v1/019f067c253015e8f412028003fe/019f067d5e3615e8f060213b29a21b/main.m3u8
 
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Toffee",Toffee 1
 http://sm-monirul.top/tof/live/toffee1/index.m3u8
