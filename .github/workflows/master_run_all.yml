@@ -2,8 +2,6 @@ name: Run All Playlist Updates (Main Controller)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
