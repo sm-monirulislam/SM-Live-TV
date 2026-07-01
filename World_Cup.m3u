@@ -10,16 +10,8 @@
 
 #=================================
 
-#EXTINF:-1 tvg-logo="https://www.somoynews.tv/icon.png" , Somoy TV
-http://ubuntu.moonplex.net:8080/Somoy_TV/index.m3u8
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="world cup",Football World Cup
 http://114.130.57.233:8080/BTV/video.m3u8?token=SkQuhAXZxgBan1
-#EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="world cup",Football World Cup
-http://114.130.57.233:8080/BTV/video.m3u8?token=SkQuhAXZxgBan1
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/dd/Screenshot_2026-06-10_002618.png" ,Unite8 Sports 2 HD
-http://212.102.34.8:9080/AndFlixHD/video.m3u8
-
 #====== Toffee World Cup ============
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Sports Channels",Toffee 1
 https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-3/sst/0/master_1500.m3u8?hdntl=Expires=1782936012~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature=AeQsclDNWmF8yzAv58ND9Th-oc0mKKYsl58H5njPvfWN9WKkVIhCd4BIzQP5qAgv1gKuKWfSPY2IxGzQOQ-DjNWo9xcP
@@ -34,7 +26,7 @@ http://sm-monirul.top/fifa/bioscope/index.m3u8
 EXTINF:-1 tvg-logo="https://i.postimg.cc/X7qgs8BY/images-d47abaf70fb3ea50af7cdf455ccab5a6-goplay-bioscope-icon-transparent-app.png" ,Bioscope 
 https://d1kep4defqj6r1.cloudfront.net/out/v1/4e21d5a122c549289dd6feab259266e8/index.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMsc_j3e2KKQ18tD9XCM09UahrLonmSx15vdenZEnMrA&s=10" ,i screen
-http://exp.sm-monirul.top/ultra_restream/iscreen/index.m3u8
+http://sm-monirul.top/fifa/iscreen/index.m3u8
 #EXTINF:-1 tvg-id="iscreenhd" tvg-name="I SCREEN HD" tvg-logo="https://platform.rockstreamer.com/platforms/iscreen.com.bd/assets/logo.png" group-title="Bangladesh",I SCREEN HD
 #EXTVLCOPT:http-referrer=https://iscreen.com.bd/
 https://tc-sg.rockstreamer.com/v1/019ed91616121ea540a8171c8e801f/019ed92ac80315fc600b1796d4ad8b/main.m3u8
@@ -118,14 +110,6 @@ http://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/ud6bnhthpj/out/v1/26
 #KODIPROP:inputstream.adaptive.license_key=11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
 https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd
 
-#EXTINF:-1  tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/68s5x31616932507.png" ,SPORT 2 🇸🇰
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=https://webtv.sk/tv/
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
-https://dash2.antik.sk/stream/nvidia_sport2/playlist_cenc.mpd
 
 #EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/01/SporTV2_2021.png",SportTV 2
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -133,19 +117,5 @@ https://dash2.antik.sk/stream/nvidia_sport2/playlist_cenc.mpd
 #KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 
-#EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d3/SporTV3_2021.png",SportTV 3
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=902e5ec0e3d05e665daa32fc23f4f59e:7b2322a273843921a43e2c61dac7cae3
-https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/6otiglnptp/out/v1/add7499679b0422cb6791f7701f95ecc/cenc.mpd
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3d/BeIN_Sports_3_2017_Square.png",BEIN SPORTS 3
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://a83aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
 #EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/FIFA%2B_%282025%29.svg" ,FIFA+
 https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
