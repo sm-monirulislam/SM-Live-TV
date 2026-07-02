@@ -8,7 +8,13 @@ permissions:
   id-token: write
 
 jobs:
+  toffee_main:
+    uses: ./.github/workflows/toffee_main.yml
+    secrets: inherit
+
   fancode:
+    needs: toffee_main
+    if: always()
     uses: ./.github/workflows/Fancode_update.yml
     secrets: inherit
 
