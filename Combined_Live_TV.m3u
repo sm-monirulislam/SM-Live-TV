@@ -1,15 +1,15 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-07-03 10:02:15 (BD Time)
-# 📺 Channels Count: 353
+# 🕒 Last Updated: 2026-07-03 11:02:04 (BD Time)
+# 📺 Channels Count: 355
 # 🔒 Usage: Personal / Educational
 #=================================
 
 #EXTM3U url-tvg="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/epg.xml"
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/G-Series_Logo.png" group-title="SM All TV",Drama 24
-http://vods2.aynascope.net/gseriesDrama/index.m3u8
+https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-logo="https://d38ll44lbmt52p.cloudfront.net/cms/channel_poster/1677040358634_BTVogo.png" group-title="SM All TV",BTV National
 https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
@@ -37,6 +37,9 @@ https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8
 
 #EXTINF:-1 tvg-id="93000" tvg-name="ATN News" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1739962961772.png" group-title="SM All TV",ATN News
 https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8
+
+#EXTINF:-1 tvg-id="93000" tvg-name="ATN News" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1739962961772.png" group-title="SM All TV",ATN News
+https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/Channels/908660.m3u8
 
 #EXTINF:-1 tvg-id="186000" tvg-name="News 24 HD" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186895850.png" group-title="SM All TV",News 24 HD
 https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8
@@ -995,6 +998,9 @@ https://book4u.top/worker/index.php?path=api/526bde04a5/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Chhinnamasta Lions Vs Itahari Super Kings [LIVE]" tvg-logo="https://images.fancode.com/aig/match/v1781869171976/143535_CASACARDS_SPORTY_APP.png" group-title="Fancode",Chhinnamasta Lions Vs Itahari Super Kings [LIVE]
 https://bd-mc-flive.fancode.com/mumbai/143535_english_hls_3ce158c10484451_1ta-di_h264/1080p.m3u8?hdntl=Expires=1783134305~_GO=Generated~acl=/mumbai/143535_english_hls_3ce158c10484451_1ta-di_h264/*~Signature=Ac2BFemKoiyGtlXrYECMNPY-5sEgk_mqqjpLJQpGs74uSIlvyz0Qg1J7c8LMnrSYFVCg5iOM41jjXE8PFsw5Nfl2fyEK
+
+#EXTINF:-1 tvg-name="Band E Amir Dragons Vs Mis E Ainak Knights [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/143586_6148_BD_MAK_fc-web_1782725011378.jpg" group-title="Fancode",Band E Amir Dragons Vs Mis E Ainak Knights [LIVE]
+https://bd-mc-flive.fancode.com/mumbai/143586_english_hls_205af5800894171_1ta-di_h264/1080p.m3u8?hdntl=Expires=1783138745~_GO=Generated~acl=/mumbai/143586_english_hls_205af5800894171_1ta-di_h264/*~Signature=Ac2BFelsw09y9lSRJfdl8udJdMxmI4XpWeZPV4wf36EOH7YfgxdAsPR4Am5B5twsATlCNl2RJwLsVE7n0XZgLJFSnL0G
 
 #EXTINF:-1 group-title="Toffee" tvg-logo="https://i.imgur.com/53aSeDH.png",Toffee 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 14; SM-A515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
