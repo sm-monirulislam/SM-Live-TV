@@ -1,34 +1,27 @@
-name: Update M3U8 Links
+name: Browser Request and Scrap M3U8
 
 on:
   schedule:
-    # প্রতি ৬ ঘণ্টা পর পর এটি অটোমেটিকভাবে রান হবে
-    - cron: '0 */6 * * *'
-  workflow_dispatch: # এর মাধ্যমে আপনি যেকোনো সময় ম্যানুয়ালিও রান করতে পারবেন
+    - cron: '0 */6 * * *' # প্রতি ৬ ঘণ্টা পর পর অটো রান হবে
+  workflow_dispatch: # যখন খুশি ম্যানুয়ালি রান করার জন্য
 
 jobs:
-  update-links:
+  scrap-data:
     runs-on: ubuntu-latest
 
     steps:
-    # ১. রিপোজিটরি চেকআউট করা
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    # ২. পাইথন সেটআপ করা
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
-    # ৩. প্রয়োজনীয় লাইব্রেরি ইনস্টল করা
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests
+    - name: Install Requests
+      run: pip install requests
 
-    # ৪. ইনলাইন পাইথন স্ক্রিপ্ট রান করে JSON তৈরি করা
-    - name: Fetch and Process Links
+    - name: Request Browser Data & Scrap
       run: |
         python - <<EOF
         import re
@@ -41,19 +34,28 @@ jobs:
             "https://cdn-tt.pages.dev/ch6.m3u8"
         ]
 
+        # ব্রাউজার ফেক করার জন্য User-Agent Header
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
+
         def extract_highest_quality_link(m3u8_text):
+            # টেক্সট থেকে ব্যান্ডউইথ এবং মূল লিংকের প্যাটার্ন খোঁজা
             pattern = r'BANDWIDTH=(\d+).*?(https?://[a-zA-Z0-9_\-\.\/\?\=\~\&]+)'
             matches = re.findall(pattern, m3u8_text)
             if matches:
+                # হাই কোয়ালিটি লিংক সিলেক্ট করা
                 sorted_matches = sorted(matches, key=lambda x: int(x[0]), reverse=True)
                 return sorted_matches[0][1]
             return None
 
         output_data = []
+
         for url in URLS:
             channel_id = url.split('/')[-1].replace('.m3u8', '')
             try:
-                response = requests.get(url, timeout=10)
+                # ব্রাউজারের মতো রিকোয়েস্ট পাঠানো হচ্ছে
+                response = requests.get(url, headers=headers, timeout=15)
                 if response.status_code == 200:
                     highest_quality_url = extract_highest_quality_link(response.text)
                     if highest_quality_url:
@@ -62,18 +64,17 @@ jobs:
                             "link": highest_quality_url
                         })
             except Exception as e:
-                print(f"Error {channel_id}: {e}")
+                print(f"Error scraping {channel_id}: {e}")
 
+        # স্ক্র্যাপ করা ডাটা JSON ফাইলে সেভ করা
         with open("output.json", "w", encoding="utf-8") as f:
             json.dump(output_data, f, indent=2, ensure_ascii=False)
         EOF
 
-    # ৫. নতুন JSON ফাইলটি রিপোজিটরিতে অটো-কমিট ও পুশ করা
     - name: Commit and Push Changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add output.json
-        # যদি কোনো পরিবর্তন না থাকে তবে এরর এড়ানোর জন্য || exit 0 ব্যবহার করা হয়েছে
-        git commit -m "Automated update: output.json" || exit 0
+        git commit -m "Scraped data from browser request" || exit 0
         git push
