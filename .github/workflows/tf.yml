@@ -1,80 +1,59 @@
-name: Browser Request and Scrap M3U8
+name: Update TF Playlists
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # প্রতি ৬ ঘণ্টা পর পর অটো রান হবে
-  workflow_dispatch: # যখন খুশি ম্যানুয়ালি রান করার জন্য
+    # Runs every 2 hours (at minute 0)
+    - cron: '0 */2 * * *'
+  workflow_dispatch: # Allows you to run this manually from the Actions tab
+
+permissions:
+  contents: write # Needed to push changes back to the repo
 
 jobs:
-  scrap-data:
+  update-links:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v5
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
+      - name: Create playlist directory if not exists
+        run: mkdir -p playlist/TF
 
-    - name: Install Requests
-      run: pip install requests
+      - name: Fetch and Update M3U8 Files
+        run: |
+          # Array mapping source files to destination files
+          # Format: "source_name:destination_name"
+          channels=(
+            "ch1.m3u8:TF-1.m3u8"
+            "ch2.m3u8:TF-2.m3u8"
+            "ch6.m3u8:TF-6.m3u8"
+          )
 
-    - name: Request Browser Data & Scrap
-      run: |
-        python - <<EOF
-        import re
-        import json
-        import requests
+          BASE_URL="https://cdn-tt.pages.dev"
 
-        URLS = [
-            "https://cdn-tt.pages.dev/ch1.m3u8",
-            "https://cdn-tt.pages.dev/ch2.m3u8",
-            "https://cdn-tt.pages.dev/ch6.m3u8"
-        ]
+          for pair in "${channels[@]}"; do
+            # Split the pair by colon
+            src="${pair%%:*}"
+            dest="${pair##*:}"
+            
+            echo "Fetching $BASE_URL/$src -> playlist/TF/$dest"
+            
+            # Fetch content, filter out the JSON block, and save to destination
+            curl -sL "$BASE_URL/$src" | sed '/^{/,/^}/d' > "playlist/TF/$dest"
+          done
 
-        # ব্রাউজার ফেক করার জন্য User-Agent Header
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        }
-
-        def extract_highest_quality_link(m3u8_text):
-            # টেক্সট থেকে ব্যান্ডউইথ এবং মূল লিংকের প্যাটার্ন খোঁজা
-            pattern = r'BANDWIDTH=(\d+).*?(https?://[a-zA-Z0-9_\-\.\/\?\=\~\&]+)'
-            matches = re.findall(pattern, m3u8_text)
-            if matches:
-                # হাই কোয়ালিটি লিংক সিলেক্ট করা
-                sorted_matches = sorted(matches, key=lambda x: int(x[0]), reverse=True)
-                return sorted_matches[0][1]
-            return None
-
-        output_data = []
-
-        for url in URLS:
-            channel_id = url.split('/')[-1].replace('.m3u8', '')
-            try:
-                # ব্রাউজারের মতো রিকোয়েস্ট পাঠানো হচ্ছে
-                response = requests.get(url, headers=headers, timeout=15)
-                if response.status_code == 200:
-                    highest_quality_url = extract_highest_quality_link(response.text)
-                    if highest_quality_url:
-                        output_data.append({
-                            "id": channel_id,
-                            "link": highest_quality_url
-                        })
-            except Exception as e:
-                print(f"Error scraping {channel_id}: {e}")
-
-        # স্ক্র্যাপ করা ডাটা JSON ফাইলে সেভ করা
-        with open("output.json", "w", encoding="utf-8") as f:
-            json.dump(output_data, f, indent=2, ensure_ascii=False)
-        EOF
-
-    - name: Commit and Push Changes
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add output.json
-        git commit -m "Scraped data from browser request" || exit 0
-        git push
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add playlist/TF/
+          
+          # Only commit if there are actual changes to prevent empty commits
+          if git diff-index --quiet HEAD --; then
+            echo "No changes detected in the playlist files."
+          else
+            git commit -m "Automated Playlist Update: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            git push
+          fi
