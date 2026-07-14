@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-07-15 01:01:43 (BD Time)
-# 📺 Channels Count: 348
+# 🕒 Last Updated: 2026-07-15 02:01:46 (BD Time)
+# 📺 Channels Count: 345
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -374,10 +374,10 @@ https://stream.spicefmbd.com/stream.m3u8
 https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444
 
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Football World Cup
-http://103.165.93.31:8095/btv/tracks-v1a1/mono.m3u8
+https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1783440983-0-0-
 
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Football World Cup
-https://flussonic.deltainfonet.com/01_Tsports_HD/tracks-v1a1/mono.m3u8
+https://node8.no-612.workers.dev/resource/MjQwNTk5MDY0MTY5OjI0MDU5OTA2NDE2OToxMjAzNTpsaXZl/index.m3u8
 #====== Toffee World Cup ============
 
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="World_Cup",Toffee
@@ -420,22 +420,19 @@ http://172.16.32.2/SOMOY-TV-SD-3Mb/video.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f6564ec2aee819046328a0e153be574d:ff46a8a1031eb27ef22576a077c98ab7
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/enc/ajfoeddkbz/out/v1/b78800b9b2304879b15843f455836829/cenc.mpd
+#EXTM3U
 
-#EXTINF:-1  tvg-logo="https://bellmedia-images.imgix.net/lede/wp-content/uploads/2014/02/tv1_tsn-white.png"  group-title="World_Cup", TSN SPORTS#KODIPROP:inputstream.adaptive.license_type=clearkey
+#EXTINF:-1 tvg-id="Teleamazonas" tvg-name="Teleamazonas" group-title="World_Cup", Teleamazonas
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=aa78205160ef4b5c972d5e815a8fe6e4:338b545591e45469e71dae3a8fb8dbb0
+https://teleamazonasb.cdn.mdstrm.com/live-stream-mp/dfzu2jckcs3he/a5e7a2777ea24b8ca49b326b536f87b2/6a0cd90eb3852427fcded197/manifest.mpd
+
+#EXTINF:-1  tvg-logo="https://bellmedia-images.imgix.net/lede/wp-content/uploads/2014/02/tv1_tsn-white.png"  group-title="World_Cup", TSN SPORTS
+#KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=14eeabf30c14b7fbf3008c03099ce011:17d2ac8dbc5429bd70af3433aa12158d
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd
-
-#EXTINF:-1  tvg-logo="https://bellmedia-images.imgix.net/lede/wp-content/uploads/2014/02/tv1_tsn-white.png"  group-title="World_Cup", TSN SPORTS#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=85b277daf5aae05833fe43a68f587968:d52d7e9bc0bcd98787efd547ac91eca0
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cjglydxghe/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd
-
-#EXTINF:-1  tvg-logo="https://bellmedia-images.imgix.net/lede/wp-content/uploads/2014/02/tv1_tsn-white.png"  group-title="World_Cup", TSN SPORTS#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d3250252765347a0c2603c6cb4869f8c:0c19319460da7e9ed816db46ce839b37
-https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/lsibpqruq1/out/v1/748887d614a84913ba8bcdf3c82823e6/cenc.mpd
-
-#EXTINF:-1  tvg-logo="https://bellmedia-images.imgix.net/lede/wp-content/uploads/2014/02/tv1_tsn-white.png"  group-title="World_Cup", TSN SPORTS#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=abc5b2883121012850ebda05b528c5ec:e5250924f4b738905f7163a0134587a7
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b0/ITV_Sport_2013.svg"  group-title="World_Cup", ITV SPORTS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
@@ -1007,9 +1004,6 @@ https://bd-mc-flive.fancode.com/mumbai/143491_english_hls_a60884f83292633_1ta-di
 
 #EXTINF:-1 tvg-name="Day 2   World Feed [LIVE]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Plava-Laguna-Croatia-Open-Umag_2026_FC-WEB.jpg" group-title="Fancode",Day 2   World Feed [LIVE]
 https://bd-mc-flive.fancode.com/mumbai/143498_english_hls_80d3de2e3c47007_1ta-di_h264/1080p.m3u8?hdntl=Expires=1784137865~_GO=Generated~acl=/mumbai/143498_english_hls_80d3de2e3c47007_1ta-di_h264/*~Signature=AfBeBziNnXfVLc-n0_wb_15mhGKqixGrKqiVFmd7iGs3LQHLMSD_wlPqBmowKnxCDBluwQdtkvPVoTyOFOL1vblum5IL
-
-#EXTINF:-1 tvg-id="tapmad-14906" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17839260941020x576.jpg" group-title="Tapmad", Dota 2 - Day 7 - Feed 1 | Esports World Cup 2026 (EWC)
-https://serieAleague.akamaized.net/hls/live/2107107/Tapmad-KjL52/master.m3u8
 
 #EXTINF:-1 group-title="Toffee" tvg-logo="https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/5638c4e8-36ba-4e8e-848e-233183b3ec17.png",Toffee Dramas
 #EXTVLCOPT:http-user-agent=okhttp/5.1.0
