@@ -77,3 +77,10 @@ http://172.19.178.149:18190/t_sports_vip/index.fmp4.m3u8?token=9caecc0cb7a1e2c6c
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/SQ5LftTh/1000113687.png",Channel 8
 https://mycoffeetime.net/play/tSDRdsaoGGQ2qYgRPDEe9q-qMIzoahbJArH3W3vOiEaB97nXMpWmLb0Ts759Tjsp/m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/SQ5LftTh/1000113687.png",Channel 9 (DRM Protected)
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=14eeabf30c14b7fbf3008c03099ce011:17d2ac8dbc5429bd70af3433aa12158d
+https://otte-qw.live.pv-cdn.net/lhr-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd
