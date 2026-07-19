@@ -1,8 +1,8 @@
 #=================================
 # 🖥️ Developed by: Monirul Islam
 # 🔗 Telegram: https://t.me/monirul_Islam_SM
-# 🕒 Last Updated: 2026-07-19 23:02:33 (BD Time)
-# 📺 Channels Count: 407
+# 🕒 Last Updated: 2026-07-20 00:02:32 (BD Time)
+# 📺 Channels Count: 410
 # 🔒 Usage: Personal / Educational
 #=================================
 
@@ -569,9 +569,6 @@ http://monirul.bro.bd/sm/live.php?id=madani_tv&e=.m3u8
 http://monirul.bro.bd/sm/live.php?id=peace_tv_bangla&e=.m3u8
 
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Football World Cup
-http://103.151.61.12/tv.bdixbd.net/video.m3u8
-
-#EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Football World Cup
 https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1783440983-0-0-
 
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Football World Cup
@@ -579,7 +576,7 @@ https://node8.no-612.workers.dev/resource/MjQwNTk5MDY0MTY5OjI0MDU5OTA2NDE2OToxMj
 #====== Toffee World Cup ============
 
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="World_Cup",Toffee
-https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/index.m3u8?edge-cache-token=Expires=1784147455~Starts=1784140255~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiOWYxNTYwOWItY2IzZi00ODA4LWJhOTMtYzNjNjM3NWM2ZmVjIn0~Signature=lFJemWHeBIedpFcqHUZTh2sx0HPHbO296AwvYNh9E4IZErb7gPRnU7yloj_I0QlEcwudHGsEpf73QN1U7ua4Dg
+https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8
 #====== Bioscope World Cup ============
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/X7qgs8BY/images-d47abaf70fb3ea50af7cdf455ccab5a6-goplay-bioscope-icon-transparent-app.png"  group-title="World_Cup",Bioscope
@@ -595,6 +592,18 @@ https://tfxl1gwh1hcjigezdncb3fahdrmmcpf5gkce.100ycdn.com/live1.streambylivepulse
 
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup",Football World Cup
 https://live05.miekgo.app/live/78905744.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup", Channel 1 (Caze TV)
+https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/Caze_TV.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup", Channel 2 (Live Stream)
+https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1783440983-0-0-
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup", Channel 3 (Batu Test)
+https://andro.evrenesoglu57.click/checklist/batutest.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="World_Cup", Channel 4 (Live Stream Ali)
+https://live01-cn-ali.bvjicd.com/live/79361366.m3u8?nocache=1784052953102
 
 #EXTINF:-1 tvg-logo="https://otapp.store/uploads/tv_image/sm/t-sports-2.png" group-title="SM_IPTV",T Sports 2
 #EXTVLCOPT:http-user-agent=oxoo/1.3.9.d (Linux;Android 7.1.2) ExoPlayerLib/2.14.1
